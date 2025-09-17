@@ -1,0 +1,14 @@
+# Core Framework
+streamlit>=1.28.0
+
+# Image and Video Processing
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Data Processing and Analysis
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Additional Dependencies (if needed)
+# matplotlib>=3.7.0  # For plotting (optional)
+# seaborn>=0.12.0    # For statistical visualization (optional)

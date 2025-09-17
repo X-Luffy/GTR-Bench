@@ -1,0 +1,4103 @@
+{
+  "cases": [
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "bvkRrY82qj2VowVKhkruVN",
+      "scene": "Track 4",
+      "map_image_path": "./map/tf_map_4_bvkRrY82qj2VowVKhkruVN.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_4_21_28_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            536,
+            569,
+            602,
+            635,
+            668,
+            701
+          ],
+          "bboxes": [
+            [
+              1874.83,
+              590.99,
+              219.01,
+              456.55
+            ],
+            [
+              1386.03,
+              542.6,
+              192.97,
+              439.6
+            ],
+            [
+              1048.5,
+              466.6,
+              208.07,
+              395.44
+            ],
+            [
+              981.8,
+              396.9,
+              114.7,
+              334.74
+            ],
+            [
+              880.8,
+              348.8,
+              91.4,
+              289.42
+            ],
+            [
+              725.67,
+              330.5,
+              83.57,
+              251.36
+            ]
+          ],
+          "start_timestamp": 21.44,
+          "end_timestamp": 28.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_4_27_37_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            665,
+            717,
+            769,
+            821,
+            873,
+            925
+          ],
+          "bboxes": [
+            [
+              -264.5,
+              827.3,
+              289.6,
+              779.0
+            ],
+            [
+              557.34,
+              492.63,
+              185.43,
+              576.43
+            ],
+            [
+              754.75,
+              209.32,
+              145.88,
+              477.08
+            ],
+            [
+              901.43,
+              -9.15,
+              197.82,
+              416.3
+            ],
+            [
+              1135.53,
+              -148.32,
+              123.85,
+              442.3
+            ],
+            [
+              1435.39,
+              -316.1,
+              142.7,
+              426.32
+            ]
+          ],
+          "start_timestamp": 26.6,
+          "end_timestamp": 37.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c03",
+        "B. c14",
+        "C. c12",
+        "D. c09"
+      ],
+      "correct_cam_name": [
+        "A. c03",
+        "C. c12"
+      ],
+      "correct_time_str": [
+        "12:00:38.840-12:00:50.320",
+        "12:01:04.120-12:01:12.520"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "DZX4CVanddFZPeczsC7PLP",
+      "scene": "Track 4",
+      "map_image_path": "./map/tf_map_4_DZX4CVanddFZPeczsC7PLP.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_4_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            971,
+            1028,
+            1085,
+            1142,
+            1199,
+            1256
+          ],
+          "bboxes": [
+            [
+              173.34,
+              1074.01,
+              205.1,
+              341.29
+            ],
+            [
+              346.21,
+              545.46,
+              314.43,
+              487.8
+            ],
+            [
+              723.42,
+              261.1,
+              210.7,
+              454.86
+            ],
+            [
+              1195.9,
+              555.87,
+              333.1,
+              515.13
+            ],
+            [
+              875.26,
+              759.27,
+              603.6,
+              558.2
+            ],
+            [
+              392.97,
+              1043.43,
+              598.23,
+              573.25
+            ]
+          ],
+          "start_timestamp": 38.84,
+          "end_timestamp": 50.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_4_64_73_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1603,
+            1645,
+            1687,
+            1729,
+            1771,
+            1813
+          ],
+          "bboxes": [
+            [
+              1116.5,
+              38.7,
+              173.03,
+              513.44
+            ],
+            [
+              881.29,
+              54.3,
+              174.34,
+              516.98
+            ],
+            [
+              580.98,
+              61.13,
+              200.42,
+              577.81
+            ],
+            [
+              314.51,
+              124.2,
+              214.34,
+              673.02
+            ],
+            [
+              493.6,
+              371.34,
+              276.4,
+              829.09
+            ],
+            [
+              1877.47,
+              1030.01,
+              344.09,
+              830.43
+            ]
+          ],
+          "start_timestamp": 64.12,
+          "end_timestamp": 72.52,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c05",
+        "B. c11",
+        "C. c01",
+        "D. c09",
+        "E. c12",
+        "F. c16"
+      ],
+      "correct_cam_name": [
+        "D. c09",
+        "F. c16"
+      ],
+      "correct_time_str": [
+        "12:01:16.440-12:01:22.560",
+        "12:01:18.440-12:01:46.880"
+      ],
+      "ground_truth": ""
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "jGrZmBNAwct7wHNkWL6n8b",
+      "scene": "Track 4",
+      "map_image_path": "./map/tf_map_4_jGrZmBNAwct7wHNkWL6n8b.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_4_27_37_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            665,
+            717,
+            769,
+            821,
+            873,
+            925
+          ],
+          "bboxes": [
+            [
+              -264.5,
+              827.3,
+              289.6,
+              779.0
+            ],
+            [
+              557.34,
+              492.63,
+              185.43,
+              576.43
+            ],
+            [
+              754.75,
+              209.32,
+              145.88,
+              477.08
+            ],
+            [
+              901.43,
+              -9.15,
+              197.82,
+              416.3
+            ],
+            [
+              1135.53,
+              -148.32,
+              123.85,
+              442.3
+            ],
+            [
+              1435.39,
+              -316.1,
+              142.7,
+              426.32
+            ]
+          ],
+          "start_timestamp": 26.6,
+          "end_timestamp": 37.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_4_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            971,
+            1028,
+            1085,
+            1142,
+            1199,
+            1256
+          ],
+          "bboxes": [
+            [
+              173.34,
+              1074.01,
+              205.1,
+              341.29
+            ],
+            [
+              346.21,
+              545.46,
+              314.43,
+              487.8
+            ],
+            [
+              723.42,
+              261.1,
+              210.7,
+              454.86
+            ],
+            [
+              1195.9,
+              555.87,
+              333.1,
+              515.13
+            ],
+            [
+              875.26,
+              759.27,
+              603.6,
+              558.2
+            ],
+            [
+              392.97,
+              1043.43,
+              598.23,
+              573.25
+            ]
+          ],
+          "start_timestamp": 38.84,
+          "end_timestamp": 50.32,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c09",
+        "C. c05",
+        "D. c03",
+        "E. c14"
+      ],
+      "correct_cam_name": [
+        "A. c12",
+        "B. c09"
+      ],
+      "correct_time_str": [
+        "12:01:04.120-12:01:12.520",
+        "12:01:16.440-12:01:22.560"
+      ],
+      "ground_truth": ""
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "Xatcxh7MUw5m6iYnog5gSG",
+      "scene": "Track 5",
+      "map_image_path": "./map/tf_map_5_Xatcxh7MUw5m6iYnog5gSG.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_5_152_221_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3789,
+            4137,
+            4485,
+            4833,
+            5181,
+            5529
+          ],
+          "bboxes": [
+            [
+              823.49,
+              451.2,
+              38.01,
+              172.18
+            ],
+            [
+              1320.17,
+              380.26,
+              72.89,
+              159.72
+            ],
+            [
+              1601.51,
+              331.77,
+              48.18,
+              143.23
+            ],
+            [
+              1603.32,
+              331.77,
+              40.36,
+              143.23
+            ],
+            [
+              1200.89,
+              242.57,
+              45.94,
+              116.16
+            ],
+            [
+              930.44,
+              132.22,
+              22.73,
+              72.89
+            ]
+          ],
+          "start_timestamp": 151.56,
+          "end_timestamp": 221.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_5_163_213_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4064,
+            4318,
+            4572,
+            4826,
+            5080,
+            5334
+          ],
+          "bboxes": [
+            [
+              869.85,
+              219.34,
+              61.83,
+              150.62
+            ],
+            [
+              100.31,
+              314.29,
+              57.9,
+              171.99
+            ],
+            [
+              102.96,
+              319.69,
+              57.9,
+              171.99
+            ],
+            [
+              107.33,
+              322.39,
+              57.9,
+              172.0
+            ],
+            [
+              324.68,
+              316.09,
+              81.61,
+              187.78
+            ],
+            [
+              871.69,
+              1074.93,
+              120.67,
+              335.32
+            ]
+          ],
+          "start_timestamp": 162.56,
+          "end_timestamp": 213.36,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c03",
+        "C. c09",
+        "D. c14"
+      ],
+      "correct_cam_name": [
+        "B. c03",
+        "A. c12"
+      ],
+      "correct_time_str": [
+        "12:03:56.360-12:04:08.800",
+        "12:04:17.280-12:04:21.040"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "NykKwJTy99ZuicFuo2RKmZ",
+      "scene": "Track 5",
+      "map_image_path": "./map/tf_map_5_NykKwJTy99ZuicFuo2RKmZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_5_163_213_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4064,
+            4318,
+            4572,
+            4826,
+            5080,
+            5334
+          ],
+          "bboxes": [
+            [
+              869.85,
+              219.34,
+              61.83,
+              150.62
+            ],
+            [
+              100.31,
+              314.29,
+              57.9,
+              171.99
+            ],
+            [
+              102.96,
+              319.69,
+              57.9,
+              171.99
+            ],
+            [
+              107.33,
+              322.39,
+              57.9,
+              172.0
+            ],
+            [
+              324.68,
+              316.09,
+              81.61,
+              187.78
+            ],
+            [
+              871.69,
+              1074.93,
+              120.67,
+              335.32
+            ]
+          ],
+          "start_timestamp": 162.56,
+          "end_timestamp": 213.36,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_5_236_249_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5909,
+            5971,
+            6033,
+            6095,
+            6157,
+            6219
+          ],
+          "bboxes": [
+            [
+              128.08,
+              1051.66,
+              210.0,
+              352.12
+            ],
+            [
+              387.16,
+              450.08,
+              217.84,
+              552.46
+            ],
+            [
+              1033.8,
+              287.73,
+              275.42,
+              535.79
+            ],
+            [
+              1205.5,
+              582.24,
+              387.84,
+              556.24
+            ],
+            [
+              729.34,
+              760.29,
+              396.05,
+              725.74
+            ],
+            [
+              -669.14,
+              408.72,
+              708.25,
+              982.66
+            ]
+          ],
+          "start_timestamp": 236.36,
+          "end_timestamp": 248.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c14",
+        "B. c03",
+        "C. c09",
+        "D. c13",
+        "E. c12"
+      ],
+      "correct_cam_name": [
+        "E. c12",
+        "D. c13"
+      ],
+      "correct_time_str": [
+        "12:04:17.280-12:04:21.040",
+        "12:04:18.520-12:04:22.040"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "8VmgX5heUyWfQVmEfkHq8G",
+      "scene": "Track 5",
+      "map_image_path": "./map/tf_map_5_8VmgX5heUyWfQVmEfkHq8G.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_5_73_82_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1831,
+            1877,
+            1923,
+            1969,
+            2015,
+            2061
+          ],
+          "bboxes": [
+            [
+              -874.79,
+              437.02,
+              903.09,
+              1468.29
+            ],
+            [
+              944.42,
+              952.91,
+              660.93,
+              1183.23
+            ],
+            [
+              1420.66,
+              615.42,
+              416.26,
+              917.42
+            ],
+            [
+              1209.84,
+              332.45,
+              264.32,
+              584.77
+            ],
+            [
+              285.66,
+              270.4,
+              301.54,
+              513.22
+            ],
+            [
+              -101.59,
+              930.86,
+              296.08,
+              471.56
+            ]
+          ],
+          "start_timestamp": 73.24,
+          "end_timestamp": 82.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_5_84_95_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2108,
+            2159,
+            2210,
+            2261,
+            2312,
+            2363
+          ],
+          "bboxes": [
+            [
+              1453.28,
+              -290.36,
+              148.16,
+              406.61
+            ],
+            [
+              880.64,
+              -58.43,
+              157.56,
+              429.85
+            ],
+            [
+              572.21,
+              110.49,
+              176.19,
+              556.01
+            ],
+            [
+              290.6,
+              491.94,
+              268.26,
+              665.96
+            ],
+            [
+              1070.42,
+              424.2,
+              295.1,
+              616.5
+            ],
+            [
+              1808.9,
+              437.4,
+              285.24,
+              510.95
+            ]
+          ],
+          "start_timestamp": 84.32,
+          "end_timestamp": 94.56,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c02",
+        "B. c04",
+        "C. c01",
+        "D. c05",
+        "E. c08"
+      ],
+      "correct_cam_name": [
+        "C. c01",
+        "D. c05"
+      ],
+      "correct_time_str": [
+        "12:01:35.040-12:02:24.600",
+        "12:01:44.360-12:02:00.720"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "nscH3GEGNxVweB9GsUJkmi",
+      "scene": "Track 7",
+      "map_image_path": "./map/tf_map_7_nscH3GEGNxVweB9GsUJkmi.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_7_164_174_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4090,
+            4143,
+            4196,
+            4249,
+            4302,
+            4355
+          ],
+          "bboxes": [
+            [
+              925.18,
+              132.54,
+              26.33,
+              83.08
+            ],
+            [
+              771.07,
+              114.17,
+              46.05,
+              104.71
+            ],
+            [
+              740.5,
+              94.13,
+              39.88,
+              97.89
+            ],
+            [
+              725.4,
+              74.29,
+              34.08,
+              93.75
+            ],
+            [
+              776.02,
+              60.05,
+              30.91,
+              89.64
+            ],
+            [
+              854.39,
+              52.77,
+              26.24,
+              86.45
+            ]
+          ],
+          "start_timestamp": 163.6,
+          "end_timestamp": 174.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_7_194_209_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4839,
+            4916,
+            4993,
+            5070,
+            5147,
+            5224
+          ],
+          "bboxes": [
+            [
+              1776.8,
+              907.5,
+              239.7,
+              630.8
+            ],
+            [
+              1649.2,
+              393.5,
+              245.9,
+              585.1
+            ],
+            [
+              831.9,
+              269.0,
+              236.8,
+              571.2
+            ],
+            [
+              304.2,
+              681.5,
+              312.0,
+              510.5
+            ],
+            [
+              476.5,
+              682.9,
+              488.7,
+              995.8
+            ],
+            [
+              1850.3,
+              854.7,
+              482.3,
+              1047.6
+            ]
+          ],
+          "start_timestamp": 193.56,
+          "end_timestamp": 209.0,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c15",
+        "B. c11",
+        "C. c01",
+        "D. c10"
+      ],
+      "correct_cam_name": [
+        "D. c10",
+        "A. c15"
+      ],
+      "correct_time_str": [
+        "12:04:01.280-12:04:08.880",
+        "12:04:49.800-12:04:54.440"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "8D8rWvEvJCwHQhuRXYGofg",
+      "scene": "Track 8",
+      "map_image_path": "./map/tf_map_8_8D8rWvEvJCwHQhuRXYGofg.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_8_146_164_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3661,
+            3746,
+            3831,
+            3916,
+            4001,
+            4086
+          ],
+          "bboxes": [
+            [
+              1397.55,
+              212.47,
+              28.47,
+              104.0
+            ],
+            [
+              1241.01,
+              197.57,
+              35.46,
+              98.24
+            ],
+            [
+              1118.7,
+              175.6,
+              31.6,
+              92.92
+            ],
+            [
+              1040.13,
+              155.87,
+              29.72,
+              86.1
+            ],
+            [
+              982.54,
+              141.21,
+              24.03,
+              80.96
+            ],
+            [
+              930.64,
+              131.97,
+              23.59,
+              78.24
+            ]
+          ],
+          "start_timestamp": 146.44,
+          "end_timestamp": 163.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_8_148_153_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3692,
+            3720,
+            3748,
+            3776,
+            3804,
+            3832
+          ],
+          "bboxes": [
+            [
+              -2.16,
+              701.57,
+              135.06,
+              299.38
+            ],
+            [
+              157.3,
+              729.18,
+              122.9,
+              303.92
+            ],
+            [
+              274.29,
+              792.04,
+              130.81,
+              327.76
+            ],
+            [
+              417.57,
+              873.47,
+              134.29,
+              365.31
+            ],
+            [
+              576.08,
+              963.19,
+              129.96,
+              352.61
+            ],
+            [
+              741.86,
+              1074.36,
+              149.93,
+              347.69
+            ]
+          ],
+          "start_timestamp": 147.68,
+          "end_timestamp": 153.28,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c02",
+        "B. c07",
+        "C. c05",
+        "D. c08",
+        "E. c06"
+      ],
+      "correct_cam_name": [
+        "D. c08",
+        "B. c07"
+      ],
+      "correct_time_str": [
+        "12:02:45.920-12:02:50.600",
+        "12:02:49.000-12:02:59.840"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "HSgsQTEbqKVSNWmA6s3Ykr",
+      "scene": "Track 9",
+      "map_image_path": "./map/tf_map_9_HSgsQTEbqKVSNWmA6s3Ykr.png",
+      "camera_images": [
+        {
+          "camera_id": "c15",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_9_61_102_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1525,
+            1731,
+            1937,
+            2143,
+            2349,
+            2555
+          ],
+          "bboxes": [
+            [
+              547.45,
+              1069.51,
+              358.57,
+              726.42
+            ],
+            [
+              819.56,
+              332.99,
+              204.3,
+              538.01
+            ],
+            [
+              882.15,
+              316.59,
+              204.3,
+              538.01
+            ],
+            [
+              894.65,
+              327.17,
+              197.75,
+              531.85
+            ],
+            [
+              799.46,
+              333.83,
+              197.74,
+              531.85
+            ],
+            [
+              972.65,
+              1012.62,
+              364.01,
+              719.88
+            ]
+          ],
+          "start_timestamp": 61.0,
+          "end_timestamp": 102.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c10",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_9_121_126_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3016,
+            3043,
+            3070,
+            3097,
+            3124,
+            3151
+          ],
+          "bboxes": [
+            [
+              150.79,
+              613.44,
+              127.81,
+              319.44
+            ],
+            [
+              246.6,
+              583.5,
+              273.9,
+              470.7
+            ],
+            [
+              672.8,
+              711.4,
+              255.4,
+              402.72
+            ],
+            [
+              1144.5,
+              757.6,
+              243.9,
+              354.8
+            ],
+            [
+              1311.9,
+              919.5,
+              256.7,
+              284.6
+            ],
+            [
+              1327.4,
+              1067.69,
+              240.16,
+              424.8
+            ]
+          ],
+          "start_timestamp": 120.64,
+          "end_timestamp": 126.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c02",
+        "B. c16",
+        "C. c08",
+        "D. c11",
+        "E. c09",
+        "F. c05"
+      ],
+      "correct_cam_name": [
+        "D. c11",
+        "F. c05"
+      ],
+      "correct_time_str": [
+        "12:02:39.320-12:02:54.040",
+        "12:03:16.160-12:03:38.600"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "2HFBpeoDuj5EcomoPNz3on",
+      "scene": "Track 9",
+      "map_image_path": "./map/tf_map_9_2HFBpeoDuj5EcomoPNz3on.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_9_210_244_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5241,
+            5415,
+            5589,
+            5763,
+            5937,
+            6111
+          ],
+          "bboxes": [
+            [
+              1903.55,
+              1043.22,
+              81.84,
+              237.19
+            ],
+            [
+              715.75,
+              831.75,
+              128.3,
+              234.61
+            ],
+            [
+              937.64,
+              628.16,
+              77.46,
+              213.24
+            ],
+            [
+              1066.02,
+              407.35,
+              53.74,
+              151.15
+            ],
+            [
+              1063.18,
+              286.95,
+              33.44,
+              114.29
+            ],
+            [
+              748.04,
+              261.36,
+              29.28,
+              103.46
+            ]
+          ],
+          "start_timestamp": 209.64,
+          "end_timestamp": 244.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_9_221_247_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5532,
+            5659,
+            5786,
+            5913,
+            6040,
+            6167
+          ],
+          "bboxes": [
+            [
+              914.24,
+              141.14,
+              40.96,
+              110.58
+            ],
+            [
+              787.62,
+              182.29,
+              47.38,
+              124.81
+            ],
+            [
+              782.07,
+              259.4,
+              60.33,
+              144.9
+            ],
+            [
+              808.12,
+              377.98,
+              74.28,
+              177.32
+            ],
+            [
+              997.8,
+              565.2,
+              86.7,
+              219.1
+            ],
+            [
+              1723.17,
+              539.28,
+              103.1,
+              202.43
+            ]
+          ],
+          "start_timestamp": 221.28,
+          "end_timestamp": 246.72,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c04",
+        "B. c01",
+        "C. c02",
+        "D. c08",
+        "E. c06"
+      ],
+      "correct_cam_name": [
+        "C. c02",
+        "A. c04"
+      ],
+      "correct_time_str": [
+        "12:04:13.680-12:04:34.800",
+        "12:04:28.240-12:04:39.400"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "9SBhUvEhhD8UFzxE8dwYvi",
+      "scene": "Track 9",
+      "map_image_path": "./map/tf_map_9_9SBhUvEhhD8UFzxE8dwYvi.png",
+      "camera_images": [
+        {
+          "camera_id": "c10",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_9_121_126_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3016,
+            3043,
+            3070,
+            3097,
+            3124,
+            3151
+          ],
+          "bboxes": [
+            [
+              150.79,
+              613.44,
+              127.81,
+              319.44
+            ],
+            [
+              246.6,
+              583.5,
+              273.9,
+              470.7
+            ],
+            [
+              672.8,
+              711.4,
+              255.4,
+              402.72
+            ],
+            [
+              1144.5,
+              757.6,
+              243.9,
+              354.8
+            ],
+            [
+              1311.9,
+              919.5,
+              256.7,
+              284.6
+            ],
+            [
+              1327.4,
+              1067.69,
+              240.16,
+              424.8
+            ]
+          ],
+          "start_timestamp": 120.64,
+          "end_timestamp": 126.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_9_159_174_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3983,
+            4056,
+            4129,
+            4202,
+            4275,
+            4348
+          ],
+          "bboxes": [
+            [
+              1906.8,
+              313.6,
+              455.4,
+              1122.6
+            ],
+            [
+              657.4,
+              629.7,
+              543.9,
+              1254.9
+            ],
+            [
+              547.5,
+              499.1,
+              410.7,
+              739.1
+            ],
+            [
+              769.1,
+              299.2,
+              167.6,
+              508.4
+            ],
+            [
+              1440.2,
+              527.3,
+              270.3,
+              448.9
+            ],
+            [
+              1588.2,
+              1005.1,
+              284.7,
+              498.6
+            ]
+          ],
+          "start_timestamp": 159.32,
+          "end_timestamp": 174.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c05",
+        "B. c08",
+        "C. c01",
+        "D. c02",
+        "E. c04"
+      ],
+      "correct_cam_name": [
+        "A. c05",
+        "C. c01"
+      ],
+      "correct_time_str": [
+        "12:03:16.160-12:03:38.600",
+        "12:03:29.640-12:04:04.480"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "5DMcRrZ2nLoGThLgQFYPxZ",
+      "scene": "Track 10",
+      "map_image_path": "./map/tf_map_10_5DMcRrZ2nLoGThLgQFYPxZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_10_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            978,
+            1030,
+            1082,
+            1134,
+            1186,
+            1238
+          ],
+          "bboxes": [
+            [
+              771.15,
+              1060.5,
+              549.35,
+              633.1
+            ],
+            [
+              1093.11,
+              593.24,
+              391.99,
+              614.26
+            ],
+            [
+              1303.7,
+              286.4,
+              211.6,
+              537.1
+            ],
+            [
+              715.6,
+              139.2,
+              223.0,
+              478.5
+            ],
+            [
+              157.8,
+              380.1,
+              254.2,
+              476.4
+            ],
+            [
+              -34.24,
+              952.86,
+              282.68,
+              378.3
+            ]
+          ],
+          "start_timestamp": 39.12,
+          "end_timestamp": 49.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_10_52_62_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1295,
+            1348,
+            1401,
+            1454,
+            1507
+          ],
+          "bboxes": [
+            [
+              1449.7,
+              -198.01,
+              108.82,
+              312.68
+            ],
+            [
+              1092.82,
+              -82.48,
+              131.82,
+              387.58
+            ],
+            [
+              833.68,
+              9.98,
+              164.04,
+              450.78
+            ],
+            [
+              659.26,
+              280.9,
+              182.84,
+              550.6
+            ],
+            [
+              929.2,
+              488.77,
+              208.6,
+              590.1
+            ]
+          ],
+          "start_timestamp": 51.8,
+          "end_timestamp": 62.36,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c05",
+        "B. c01",
+        "C. c02",
+        "D. c08",
+        "E. c04"
+      ],
+      "correct_cam_name": [
+        "B. c01",
+        "A. c05"
+      ],
+      "correct_time_str": [
+        "12:01:02.840-12:01:15.600",
+        "12:01:14.480-12:01:16.600"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "QZ6nmJGPV3W4isLpHD7F4f",
+      "scene": "Track 10",
+      "map_image_path": "./map/tf_map_10_QZ6nmJGPV3W4isLpHD7F4f.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_10_24_29_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            611,
+            632,
+            653,
+            674,
+            695,
+            716
+          ],
+          "bboxes": [
+            [
+              -61.12,
+              14.43,
+              158.3,
+              514.46
+            ],
+            [
+              57.1,
+              8.7,
+              171.9,
+              521.0
+            ],
+            [
+              268.4,
+              33.29,
+              173.3,
+              579.55
+            ],
+            [
+              549.18,
+              31.87,
+              234.92,
+              571.27
+            ],
+            [
+              841.9,
+              22.18,
+              162.23,
+              562.8
+            ],
+            [
+              1096.11,
+              36.71,
+              177.95,
+              527.64
+            ]
+          ],
+          "start_timestamp": 24.44,
+          "end_timestamp": 28.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_10_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            978,
+            1030,
+            1082,
+            1134,
+            1186,
+            1238
+          ],
+          "bboxes": [
+            [
+              771.15,
+              1060.5,
+              549.35,
+              633.1
+            ],
+            [
+              1093.11,
+              593.24,
+              391.99,
+              614.26
+            ],
+            [
+              1303.7,
+              286.4,
+              211.6,
+              537.1
+            ],
+            [
+              715.6,
+              139.2,
+              223.0,
+              478.5
+            ],
+            [
+              157.8,
+              380.1,
+              254.2,
+              476.4
+            ],
+            [
+              -34.24,
+              952.86,
+              282.68,
+              378.3
+            ]
+          ],
+          "start_timestamp": 39.12,
+          "end_timestamp": 49.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c01",
+        "B. c02",
+        "C. c06",
+        "D. c05",
+        "E. c04",
+        "F. c08"
+      ],
+      "correct_cam_name": [
+        "F. c08",
+        "A. c01"
+      ],
+      "correct_time_str": [
+        "12:00:51.800-12:01:02.360",
+        "12:01:02.840-12:01:15.600"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "c4ercgL4hQBvtVVEbogqog",
+      "scene": "Track 10",
+      "map_image_path": "./map/tf_map_10_c4ercgL4hQBvtVVEbogqog.png",
+      "camera_images": [
+        {
+          "camera_id": "c13",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_10_5_25_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            118,
+            218,
+            318,
+            418,
+            518,
+            618
+          ],
+          "bboxes": [
+            [
+              341.87,
+              149.24,
+              80.86,
+              237.02
+            ],
+            [
+              775.7,
+              204.2,
+              120.99,
+              320.87
+            ],
+            [
+              1747.9,
+              303.7,
+              138.84,
+              408.18
+            ],
+            [
+              1478.23,
+              263.7,
+              126.57,
+              378.1
+            ],
+            [
+              585.79,
+              187.33,
+              121.91,
+              296.07
+            ],
+            [
+              341.75,
+              140.72,
+              91.91,
+              236.78
+            ]
+          ],
+          "start_timestamp": 4.72,
+          "end_timestamp": 24.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_10_24_29_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            611,
+            632,
+            653,
+            674,
+            695,
+            716
+          ],
+          "bboxes": [
+            [
+              -61.12,
+              14.43,
+              158.3,
+              514.46
+            ],
+            [
+              57.1,
+              8.7,
+              171.9,
+              521.0
+            ],
+            [
+              268.4,
+              33.29,
+              173.3,
+              579.55
+            ],
+            [
+              549.18,
+              31.87,
+              234.92,
+              571.27
+            ],
+            [
+              841.9,
+              22.18,
+              162.23,
+              562.8
+            ],
+            [
+              1096.11,
+              36.71,
+              177.95,
+              527.64
+            ]
+          ],
+          "start_timestamp": 24.44,
+          "end_timestamp": 28.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c06",
+        "C. c03",
+        "D. c14",
+        "E. c05",
+        "F. c08"
+      ],
+      "correct_cam_name": [
+        "C. c03",
+        "F. c08"
+      ],
+      "correct_time_str": [
+        "12:00:39.120-12:00:49.640",
+        "12:00:51.800-12:01:02.360"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "K2Y47P9W65xJ7tT87EuEef",
+      "scene": "Track 11",
+      "map_image_path": "./map/tf_map_11_K2Y47P9W65xJ7tT87EuEef.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_11_95_108_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2379,
+            2442,
+            2505,
+            2568,
+            2631,
+            2694
+          ],
+          "bboxes": [
+            [
+              -182.75,
+              734.49,
+              197.0,
+              560.0
+            ],
+            [
+              271.72,
+              478.41,
+              232.74,
+              608.77
+            ],
+            [
+              535.31,
+              285.42,
+              182.44,
+              500.76
+            ],
+            [
+              727.24,
+              -9.81,
+              163.36,
+              437.39
+            ],
+            [
+              1156.72,
+              -99.76,
+              144.26,
+              387.26
+            ],
+            [
+              1445.13,
+              -265.05,
+              146.09,
+              373.96
+            ]
+          ],
+          "start_timestamp": 95.16,
+          "end_timestamp": 107.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_11_111_125_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2764,
+            2835,
+            2906,
+            2977,
+            3048,
+            3119
+          ],
+          "bboxes": [
+            [
+              51.9,
+              1048.27,
+              267.1,
+              447.83
+            ],
+            [
+              337.2,
+              454.76,
+              226.54,
+              539.18
+            ],
+            [
+              1049.65,
+              297.22,
+              223.05,
+              506.92
+            ],
+            [
+              1068.94,
+              615.38,
+              334.1,
+              571.5
+            ],
+            [
+              491.94,
+              940.5,
+              706.66,
+              694.92
+            ],
+            [
+              -641.83,
+              244.37,
+              700.33,
+              1074.13
+            ]
+          ],
+          "start_timestamp": 110.56,
+          "end_timestamp": 124.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c09",
+        "B. c14",
+        "C. c13",
+        "D. c03",
+        "E. c12"
+      ],
+      "correct_cam_name": [
+        "E. c12",
+        "A. c09"
+      ],
+      "correct_time_str": [
+        "12:02:14.560-12:02:19.240",
+        "12:02:23.360-12:02:30.840"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "irqzuXUHSLAsNimqYLgGSQ",
+      "scene": "Track 11",
+      "map_image_path": "./map/tf_map_11_irqzuXUHSLAsNimqYLgGSQ.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_11_230_235_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5754,
+            5777,
+            5800,
+            5823,
+            5846,
+            5869
+          ],
+          "bboxes": [
+            [
+              1863.12,
+              687.33,
+              303.42,
+              677.55
+            ],
+            [
+              1147.7,
+              403.11,
+              379.87,
+              737.65
+            ],
+            [
+              868.39,
+              208.49,
+              319.81,
+              837.51
+            ],
+            [
+              781.26,
+              96.48,
+              273.47,
+              678.69
+            ],
+            [
+              884.98,
+              35.39,
+              204.69,
+              600.48
+            ],
+            [
+              1097.3,
+              52.2,
+              217.49,
+              526.92
+            ]
+          ],
+          "start_timestamp": 230.16,
+          "end_timestamp": 234.76,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_11_249_260_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6216,
+            6271,
+            6326,
+            6381,
+            6436,
+            6491
+          ],
+          "bboxes": [
+            [
+              1007.9,
+              1076.7,
+              384.77,
+              605.22
+            ],
+            [
+              1423.14,
+              704.22,
+              383.33,
+              685.19
+            ],
+            [
+              1391.96,
+              504.52,
+              271.04,
+              607.68
+            ],
+            [
+              792.31,
+              131.35,
+              261.69,
+              466.75
+            ],
+            [
+              252.7,
+              385.7,
+              240.06,
+              514.95
+            ],
+            [
+              -106.54,
+              992.09,
+              307.7,
+              425.9
+            ]
+          ],
+          "start_timestamp": 248.64,
+          "end_timestamp": 259.72,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c06",
+        "B. c02",
+        "C. c08",
+        "D. c05",
+        "E. c07"
+      ],
+      "correct_cam_name": [
+        "C. c08",
+        "E. c07"
+      ],
+      "correct_time_str": [
+        "12:04:22.600-12:04:32.520",
+        "12:04:32.920-12:04:38.600"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "nbQqRjSbaQYowmQ3xFzSJ9",
+      "scene": "Track 11",
+      "map_image_path": "./map/tf_map_11_nbQqRjSbaQYowmQ3xFzSJ9.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_11_111_125_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2764,
+            2835,
+            2906,
+            2977,
+            3048,
+            3119
+          ],
+          "bboxes": [
+            [
+              51.9,
+              1048.27,
+              267.1,
+              447.83
+            ],
+            [
+              337.2,
+              454.76,
+              226.54,
+              539.18
+            ],
+            [
+              1049.65,
+              297.22,
+              223.05,
+              506.92
+            ],
+            [
+              1068.94,
+              615.38,
+              334.1,
+              571.5
+            ],
+            [
+              491.94,
+              940.5,
+              706.66,
+              694.92
+            ],
+            [
+              -641.83,
+              244.37,
+              700.33,
+              1074.13
+            ]
+          ],
+          "start_timestamp": 110.56,
+          "end_timestamp": 124.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_11_135_139_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3364,
+            3387,
+            3410,
+            3433,
+            3456,
+            3479
+          ],
+          "bboxes": [
+            [
+              1064.25,
+              31.9,
+              212.82,
+              517.7
+            ],
+            [
+              941.0,
+              35.66,
+              182.45,
+              586.94
+            ],
+            [
+              825.77,
+              89.85,
+              209.17,
+              690.42
+            ],
+            [
+              904.7,
+              192.75,
+              272.8,
+              792.45
+            ],
+            [
+              1216.06,
+              382.71,
+              377.44,
+              856.38
+            ],
+            [
+              1814.8,
+              714.41,
+              337.4,
+              842.63
+            ]
+          ],
+          "start_timestamp": 134.56,
+          "end_timestamp": 139.24,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c13",
+        "B. c16",
+        "C. c01",
+        "D. c09",
+        "E. c12",
+        "F. c11"
+      ],
+      "correct_cam_name": [
+        "D. c09",
+        "B. c16"
+      ],
+      "correct_time_str": [
+        "12:02:23.360-12:02:30.840",
+        "12:02:25.840-12:02:32.320"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "3FLPASEr2kpJcLT7KnsD38",
+      "scene": "Track 16",
+      "map_image_path": "./map/tf_map_16_3FLPASEr2kpJcLT7KnsD38.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            868,
+            912,
+            956,
+            1000,
+            1044
+          ],
+          "bboxes": [
+            [
+              1905.1,
+              342.4,
+              190.1,
+              411.9
+            ],
+            [
+              1344.3,
+              316.3,
+              145.9,
+              369.8
+            ],
+            [
+              1004.9,
+              273.4,
+              87.8,
+              311.1
+            ],
+            [
+              675.9,
+              248.1,
+              75.0,
+              272.4
+            ],
+            [
+              431.2,
+              231.6,
+              80.5,
+              208.5
+            ],
+            [
+              304.0,
+              224.5,
+              72.7,
+              192.3
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 41.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_16_94_98_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2338,
+            2359,
+            2380,
+            2401,
+            2422,
+            2443
+          ],
+          "bboxes": [
+            [
+              1899.88,
+              589.76,
+              303.32,
+              711.64
+            ],
+            [
+              1398.35,
+              370.19,
+              273.75,
+              756.1
+            ],
+            [
+              1078.69,
+              219.33,
+              240.78,
+              777.57
+            ],
+            [
+              887.5,
+              115.99,
+              208.7,
+              644.71
+            ],
+            [
+              930.38,
+              51.24,
+              199.67,
+              562.81
+            ],
+            [
+              1078.1,
+              50.79,
+              208.06,
+              539.89
+            ]
+          ],
+          "start_timestamp": 93.52,
+          "end_timestamp": 97.76,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c08",
+        "B. c03",
+        "C. c14",
+        "D. c12",
+        "E. c05",
+        "F. c06"
+      ],
+      "correct_cam_name": [
+        "B. c03",
+        "A. c08"
+      ],
+      "correct_time_str": [
+        "12:01:48.440-12:02:01.000",
+        "12:02:03.720-12:02:14.000"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "Kc8dEMN6KR7ojoyHv92bVu",
+      "scene": "Track 16",
+      "map_image_path": "./map/tf_map_16_Kc8dEMN6KR7ojoyHv92bVu.png",
+      "camera_images": [
+        {
+          "camera_id": "c14",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_16_0_13_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            63,
+            126,
+            189,
+            252,
+            315
+          ],
+          "bboxes": [
+            [
+              518.0,
+              324.32,
+              71.1,
+              230.58
+            ],
+            [
+              656.04,
+              298.04,
+              70.98,
+              191.93
+            ],
+            [
+              770.5,
+              287.9,
+              59.0,
+              171.1
+            ],
+            [
+              857.54,
+              274.38,
+              47.94,
+              151.01
+            ],
+            [
+              906.22,
+              262.33,
+              40.4,
+              129.47
+            ],
+            [
+              957.32,
+              250.29,
+              42.45,
+              136.41
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 12.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            15,
+            70,
+            125,
+            180,
+            235,
+            290
+          ],
+          "bboxes": [
+            [
+              1734.63,
+              88.2,
+              34.13,
+              93.16
+            ],
+            [
+              1754.62,
+              95.4,
+              35.11,
+              99.07
+            ],
+            [
+              1756.57,
+              100.5,
+              30.01,
+              101.7
+            ],
+            [
+              1775.45,
+              107.27,
+              39.31,
+              118.03
+            ],
+            [
+              1831.87,
+              119.33,
+              48.53,
+              128.46
+            ],
+            [
+              1890.62,
+              130.57,
+              50.62,
+              158.66
+            ]
+          ],
+          "start_timestamp": 0.6,
+          "end_timestamp": 11.68,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c03",
+        "C. c13",
+        "D. c09",
+        "E. c14"
+      ],
+      "correct_cam_name": [
+        "D. c09",
+        "A. c12"
+      ],
+      "correct_time_str": [
+        "12:00:32.960-12:00:41.800",
+        "12:01:33.520-12:01:37.760"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "A9APRiFKrfcgofutbDC5LY",
+      "scene": "Track 16",
+      "map_image_path": "./map/tf_map_16_A9APRiFKrfcgofutbDC5LY.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            15,
+            70,
+            125,
+            180,
+            235,
+            290
+          ],
+          "bboxes": [
+            [
+              1734.63,
+              88.2,
+              34.13,
+              93.16
+            ],
+            [
+              1754.62,
+              95.4,
+              35.11,
+              99.07
+            ],
+            [
+              1756.57,
+              100.5,
+              30.01,
+              101.7
+            ],
+            [
+              1775.45,
+              107.27,
+              39.31,
+              118.03
+            ],
+            [
+              1831.87,
+              119.33,
+              48.53,
+              128.46
+            ],
+            [
+              1890.62,
+              130.57,
+              50.62,
+              158.66
+            ]
+          ],
+          "start_timestamp": 0.6,
+          "end_timestamp": 11.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            868,
+            912,
+            956,
+            1000,
+            1044
+          ],
+          "bboxes": [
+            [
+              1905.1,
+              342.4,
+              190.1,
+              411.9
+            ],
+            [
+              1344.3,
+              316.3,
+              145.9,
+              369.8
+            ],
+            [
+              1004.9,
+              273.4,
+              87.8,
+              311.1
+            ],
+            [
+              675.9,
+              248.1,
+              75.0,
+              272.4
+            ],
+            [
+              431.2,
+              231.6,
+              80.5,
+              208.5
+            ],
+            [
+              304.0,
+              224.5,
+              72.7,
+              192.3
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 41.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c14",
+        "C. c09",
+        "D. c03"
+      ],
+      "correct_cam_name": [
+        "A. c12",
+        "D. c03"
+      ],
+      "correct_time_str": [
+        "12:01:33.520-12:01:37.760",
+        "12:01:48.440-12:02:01.000"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "XhxWmoVMVdqTEu25tGzjqu",
+      "scene": "Track 17",
+      "map_image_path": "./map/tf_map_17_XhxWmoVMVdqTEu25tGzjqu.png",
+      "camera_images": [
+        {
+          "camera_id": "c15",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_17_33_88_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            1100,
+            1376,
+            1652,
+            1928,
+            2204
+          ],
+          "bboxes": [
+            [
+              1220.5,
+              1069.24,
+              646.4,
+              1222.46
+            ],
+            [
+              1488.22,
+              206.85,
+              159.41,
+              435.63
+            ],
+            [
+              1524.3,
+              197.48,
+              129.4,
+              445.41
+            ],
+            [
+              1510.98,
+              201.7,
+              139.42,
+              441.19
+            ],
+            [
+              1489.24,
+              205.3,
+              165.16,
+              439.35
+            ],
+            [
+              1658.98,
+              1049.93,
+              468.97,
+              854.54
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 88.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c10",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_17_132_139_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3289,
+            3325,
+            3361,
+            3397,
+            3433,
+            3469
+          ],
+          "bboxes": [
+            [
+              108.88,
+              486.43,
+              142.99,
+              376.56
+            ],
+            [
+              328.9,
+              536.1,
+              223.5,
+              503.9
+            ],
+            [
+              788.45,
+              623.6,
+              250.75,
+              484.5
+            ],
+            [
+              1161.07,
+              696.5,
+              294.53,
+              413.56
+            ],
+            [
+              1303.3,
+              802.3,
+              273.8,
+              307.76
+            ],
+            [
+              1417.9,
+              1063.2,
+              168.4,
+              191.2
+            ]
+          ],
+          "start_timestamp": 131.56,
+          "end_timestamp": 138.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c09",
+        "B. c11",
+        "C. c02",
+        "D. c08",
+        "E. c16",
+        "F. c05"
+      ],
+      "correct_cam_name": [
+        "B. c11",
+        "F. c05"
+      ],
+      "correct_time_str": [
+        "12:02:44.360-12:02:56.840",
+        "12:03:20.520-12:03:35.080"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "ZfbvqdJs4gPdHYChz7nmi8",
+      "scene": "Track 18",
+      "map_image_path": "./map/tf_map_18_ZfbvqdJs4gPdHYChz7nmi8.png",
+      "camera_images": [
+        {
+          "camera_id": "c13",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_18_114_117_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2853,
+            2866,
+            2879,
+            2892,
+            2905,
+            2918
+          ],
+          "bboxes": [
+            [
+              4.54,
+              142.37,
+              74.92,
+              231.53
+            ],
+            [
+              53.31,
+              147.44,
+              98.81,
+              231.82
+            ],
+            [
+              124.98,
+              147.21,
+              106.62,
+              239.41
+            ],
+            [
+              205.58,
+              147.06,
+              99.52,
+              246.84
+            ],
+            [
+              289.53,
+              143.75,
+              83.37,
+              252.01
+            ],
+            [
+              360.6,
+              140.57,
+              78.0,
+              246.03
+            ]
+          ],
+          "start_timestamp": 114.12,
+          "end_timestamp": 116.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_18_116_122_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2892,
+            2923,
+            2954,
+            2985,
+            3016,
+            3047
+          ],
+          "bboxes": [
+            [
+              305.57,
+              -12.67,
+              150.45,
+              364.94
+            ],
+            [
+              71.4,
+              -22.18,
+              174.29,
+              509.98
+            ],
+            [
+              105.87,
+              36.6,
+              229.88,
+              613.05
+            ],
+            [
+              302.17,
+              157.6,
+              332.18,
+              768.85
+            ],
+            [
+              756.51,
+              401.42,
+              314.59,
+              875.66
+            ],
+            [
+              1900.74,
+              908.47,
+              347.03,
+              888.76
+            ]
+          ],
+          "start_timestamp": 115.68,
+          "end_timestamp": 121.88,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c11",
+        "C. c13",
+        "D. c01",
+        "E. c09",
+        "F. c16"
+      ],
+      "correct_cam_name": [
+        "E. c09",
+        "F. c16"
+      ],
+      "correct_time_str": [
+        "12:02:05.280-12:02:11.440",
+        "12:02:08.640-12:02:52.520"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "JAbHHChDXJGJzxsRvbe4n5",
+      "scene": "Track 18",
+      "map_image_path": "./map/tf_map_18_JAbHHChDXJGJzxsRvbe4n5.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_18_116_122_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2892,
+            2923,
+            2954,
+            2985,
+            3016,
+            3047
+          ],
+          "bboxes": [
+            [
+              305.57,
+              -12.67,
+              150.45,
+              364.94
+            ],
+            [
+              71.4,
+              -22.18,
+              174.29,
+              509.98
+            ],
+            [
+              105.87,
+              36.6,
+              229.88,
+              613.05
+            ],
+            [
+              302.17,
+              157.6,
+              332.18,
+              768.85
+            ],
+            [
+              756.51,
+              401.42,
+              314.59,
+              875.66
+            ],
+            [
+              1900.74,
+              908.47,
+              347.03,
+              888.76
+            ]
+          ],
+          "start_timestamp": 115.68,
+          "end_timestamp": 121.88,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_18_125_131_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3132,
+            3163,
+            3194,
+            3225,
+            3256
+          ],
+          "bboxes": [
+            [
+              300.3,
+              264.0,
+              100.88,
+              308.68
+            ],
+            [
+              522.0,
+              271.8,
+              164.1,
+              323.8
+            ],
+            [
+              885.9,
+              270.7,
+              125.5,
+              349.3
+            ],
+            [
+              1192.8,
+              289.3,
+              188.3,
+              375.1
+            ],
+            [
+              1533.3,
+              303.1,
+              180.7,
+              400.3
+            ]
+          ],
+          "start_timestamp": 125.28,
+          "end_timestamp": 131.44,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c09",
+        "B. c16",
+        "C. c03",
+        "D. c11",
+        "E. c12",
+        "F. c14"
+      ],
+      "correct_cam_name": [
+        "B. c16",
+        "F. c14"
+      ],
+      "correct_time_str": [
+        "12:02:08.640-12:02:52.520",
+        "12:02:19.400-12:02:44.120"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "cp74EpLNdnjzBpAv9XwCNE",
+      "scene": "Track 18",
+      "map_image_path": "./map/tf_map_18_cp74EpLNdnjzBpAv9XwCNE.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_18_244_251_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6109,
+            6144,
+            6179,
+            6214,
+            6249,
+            6284
+          ],
+          "bboxes": [
+            [
+              1722.6,
+              100.4,
+              45.51,
+              107.9
+            ],
+            [
+              1752.1,
+              103.1,
+              42.4,
+              112.9
+            ],
+            [
+              1773.22,
+              105.52,
+              40.78,
+              123.2
+            ],
+            [
+              1814.25,
+              115.59,
+              43.75,
+              142.91
+            ],
+            [
+              1856.24,
+              124.94,
+              56.16,
+              135.76
+            ],
+            [
+              1902.56,
+              129.2,
+              63.44,
+              174.6
+            ]
+          ],
+          "start_timestamp": 244.36,
+          "end_timestamp": 251.36,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_18_259_265_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6482,
+            6512,
+            6542,
+            6572,
+            6602
+          ],
+          "bboxes": [
+            [
+              1895.9,
+              326.7,
+              192.2,
+              438.16
+            ],
+            [
+              1504.1,
+              324.4,
+              216.6,
+              419.1
+            ],
+            [
+              1183.4,
+              294.4,
+              120.8,
+              375.0
+            ],
+            [
+              836.8,
+              275.1,
+              111.7,
+              351.7
+            ],
+            [
+              485.7,
+              279.2,
+              180.1,
+              322.4
+            ]
+          ],
+          "start_timestamp": 259.28,
+          "end_timestamp": 265.24,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c12",
+        "B. c14",
+        "C. c09",
+        "D. c03"
+      ],
+      "correct_cam_name": [
+        "A. c12",
+        "D. c03"
+      ],
+      "correct_time_str": [
+        "12:04:27.720-12:04:32.000",
+        "12:04:41.720-12:04:50.920"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "Ki3nyQrTFrhULEgjGeARQ2",
+      "scene": "Track 19",
+      "map_image_path": "./map/tf_map_19_Ki3nyQrTFrhULEgjGeARQ2.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_19_134_139_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3339,
+            3365,
+            3391,
+            3417,
+            3443
+          ],
+          "bboxes": [
+            [
+              1829.57,
+              581.4,
+              237.92,
+              427.81
+            ],
+            [
+              1394.1,
+              502.6,
+              158.7,
+              442.8
+            ],
+            [
+              1120.8,
+              409.4,
+              132.6,
+              363.8
+            ],
+            [
+              985.4,
+              350.7,
+              79.3,
+              291.2
+            ],
+            [
+              885.6,
+              310.0,
+              83.7,
+              267.3
+            ]
+          ],
+          "start_timestamp": 133.56,
+          "end_timestamp": 138.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_19_136_140_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3412,
+            3429,
+            3446,
+            3463,
+            3480
+          ],
+          "bboxes": [
+            [
+              -179.2,
+              843.46,
+              239.3,
+              513.06
+            ],
+            [
+              570.3,
+              783.27,
+              191.9,
+              541.71
+            ],
+            [
+              1102.45,
+              643.06,
+              273.97,
+              541.71
+            ],
+            [
+              1430.24,
+              550.06,
+              242.26,
+              558.1
+            ],
+            [
+              1638.98,
+              502.34,
+              228.58,
+              591.22
+            ]
+          ],
+          "start_timestamp": 136.48,
+          "end_timestamp": 139.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c08",
+        "B. c05",
+        "C. c04",
+        "D. c02",
+        "E. c01"
+      ],
+      "correct_cam_name": [
+        "E. c01",
+        "B. c05"
+      ],
+      "correct_time_str": [
+        "12:02:20.640-12:02:32.880",
+        "12:02:30.200-12:02:33.560"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "oUCryrdjgCsmgPiMTiP3s7",
+      "scene": "Track 19",
+      "map_image_path": "./map/tf_map_19_oUCryrdjgCsmgPiMTiP3s7.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_19_83_88_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2074,
+            2098,
+            2122,
+            2146,
+            2170,
+            2194
+          ],
+          "bboxes": [
+            [
+              1674.88,
+              1056.67,
+              344.44,
+              594.93
+            ],
+            [
+              737.66,
+              515.34,
+              386.54,
+              798.51
+            ],
+            [
+              677.13,
+              207.07,
+              274.77,
+              812.53
+            ],
+            [
+              782.25,
+              74.42,
+              228.25,
+              633.48
+            ],
+            [
+              921.04,
+              36.49,
+              187.76,
+              572.51
+            ],
+            [
+              1091.24,
+              19.99,
+              194.29,
+              528.2
+            ]
+          ],
+          "start_timestamp": 82.96,
+          "end_timestamp": 87.76,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_19_95_108_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2382,
+            2445,
+            2508,
+            2571,
+            2634,
+            2697
+          ],
+          "bboxes": [
+            [
+              -542.0,
+              241.77,
+              582.68,
+              1469.88
+            ],
+            [
+              816.16,
+              699.72,
+              424.44,
+              964.21
+            ],
+            [
+              1318.8,
+              534.51,
+              262.86,
+              584.61
+            ],
+            [
+              933.1,
+              151.43,
+              207.74,
+              434.97
+            ],
+            [
+              318.19,
+              349.15,
+              267.95,
+              450.49
+            ],
+            [
+              -160.65,
+              879.81,
+              245.82,
+              419.98
+            ]
+          ],
+          "start_timestamp": 95.28,
+          "end_timestamp": 107.92,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c06",
+        "B. c07",
+        "C. c05",
+        "D. c08",
+        "E. c02"
+      ],
+      "correct_cam_name": [
+        "D. c08",
+        "B. c07"
+      ],
+      "correct_time_str": [
+        "12:01:53.560-12:02:01.160",
+        "12:02:01.560-12:02:05.760"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "gkYU8iBFSTkAafKzRKvvhK",
+      "scene": "Track 19",
+      "map_image_path": "./map/tf_map_19_gkYU8iBFSTkAafKzRKvvhK.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_19_172_203_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4291,
+            4448,
+            4605,
+            4762,
+            4919,
+            5076
+          ],
+          "bboxes": [
+            [
+              15.8,
+              721.15,
+              97.0,
+              261.17
+            ],
+            [
+              456.33,
+              420.69,
+              64.36,
+              198.67
+            ],
+            [
+              486.16,
+              239.4,
+              46.5,
+              147.3
+            ],
+            [
+              532.18,
+              137.12,
+              38.21,
+              119.06
+            ],
+            [
+              581.84,
+              96.55,
+              40.9,
+              109.23
+            ],
+            [
+              802.39,
+              50.88,
+              30.03,
+              92.9
+            ]
+          ],
+          "start_timestamp": 171.64,
+          "end_timestamp": 203.08,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_19_220_230_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5490,
+            5542,
+            5594,
+            5646,
+            5698,
+            5750
+          ],
+          "bboxes": [
+            [
+              1809.9,
+              899.1,
+              244.0,
+              553.0
+            ],
+            [
+              1429.8,
+              350.5,
+              277.0,
+              565.4
+            ],
+            [
+              622.5,
+              400.4,
+              250.8,
+              605.2
+            ],
+            [
+              430.1,
+              563.2,
+              271.4,
+              691.8
+            ],
+            [
+              468.5,
+              739.5,
+              501.6,
+              1118.2
+            ],
+            [
+              1750.2,
+              706.7,
+              571.2,
+              956.8
+            ]
+          ],
+          "start_timestamp": 219.6,
+          "end_timestamp": 230.08,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c14",
+        "B. c03",
+        "C. c12",
+        "D. c09",
+        "E. c11",
+        "F. c16"
+      ],
+      "correct_cam_name": [
+        "F. c16",
+        "A. c14"
+      ],
+      "correct_time_str": [
+        "12:04:13.040-12:04:15.360",
+        "12:04:14.560-12:04:25.560"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "Y5QJpAx6M8ef8QRq7jgdfN",
+      "scene": "Track 20",
+      "map_image_path": "./map/tf_map_20_Y5QJpAx6M8ef8QRq7jgdfN.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_20_176_181_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4407,
+            4430,
+            4453,
+            4476,
+            4499,
+            4522
+          ],
+          "bboxes": [
+            [
+              1074.66,
+              25.5,
+              177.03,
+              539.54
+            ],
+            [
+              901.23,
+              21.59,
+              197.13,
+              606.25
+            ],
+            [
+              848.0,
+              78.61,
+              237.8,
+              722.76
+            ],
+            [
+              1025.26,
+              175.38,
+              277.94,
+              854.12
+            ],
+            [
+              1316.14,
+              353.5,
+              366.38,
+              843.14
+            ],
+            [
+              1862.53,
+              745.47,
+              336.45,
+              844.95
+            ]
+          ],
+          "start_timestamp": 176.28,
+          "end_timestamp": 180.88,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_20_185_190_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4615,
+            4644,
+            4673,
+            4702,
+            4731,
+            4760
+          ],
+          "bboxes": [
+            [
+              284.13,
+              294.95,
+              92.91,
+              408.65
+            ],
+            [
+              429.3,
+              304.7,
+              155.1,
+              399.5
+            ],
+            [
+              638.7,
+              327.4,
+              161.9,
+              451.0
+            ],
+            [
+              1019.3,
+              354.2,
+              122.7,
+              487.1
+            ],
+            [
+              1426.2,
+              401.4,
+              234.1,
+              541.9
+            ],
+            [
+              1871.1,
+              440.9,
+              258.8,
+              616.8
+            ]
+          ],
+          "start_timestamp": 184.6,
+          "end_timestamp": 190.48,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c11",
+        "B. c03",
+        "C. c14",
+        "D. c09",
+        "E. c12",
+        "F. c16"
+      ],
+      "correct_cam_name": [
+        "C. c14",
+        "F. c16"
+      ],
+      "correct_time_str": [
+        "12:03:16.240-12:03:20.520",
+        "12:03:16.400-12:03:24.760"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "5Uau9CQAJHT4CfcXWWgWt3",
+      "scene": "Track 20",
+      "map_image_path": "./map/tf_map_20_5Uau9CQAJHT4CfcXWWgWt3.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_20_139_152_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3471,
+            3538,
+            3605,
+            3672,
+            3739,
+            3806
+          ],
+          "bboxes": [
+            [
+              1878.5,
+              466.45,
+              145.1,
+              530.65
+            ],
+            [
+              912.43,
+              441.74,
+              175.94,
+              618.41
+            ],
+            [
+              663.63,
+              185.32,
+              212.17,
+              564.48
+            ],
+            [
+              874.05,
+              -43.49,
+              159.93,
+              497.05
+            ],
+            [
+              1219.32,
+              -226.69,
+              131.68,
+              470.23
+            ],
+            [
+              1440.57,
+              -331.62,
+              125.71,
+              466.67
+            ]
+          ],
+          "start_timestamp": 138.84,
+          "end_timestamp": 152.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_20_155_166_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3877,
+            3934,
+            3991,
+            4048,
+            4105
+          ],
+          "bboxes": [
+            [
+              70.0,
+              1033.6,
+              258.34,
+              379.7
+            ],
+            [
+              210.14,
+              495.06,
+              265.54,
+              537.16
+            ],
+            [
+              756.18,
+              254.38,
+              198.56,
+              550.56
+            ],
+            [
+              1291.28,
+              595.32,
+              318.84,
+              532.96
+            ],
+            [
+              1103.37,
+              785.55,
+              414.93,
+              644.93
+            ]
+          ],
+          "start_timestamp": 155.08,
+          "end_timestamp": 166.44,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c14",
+        "B. c03",
+        "C. c13",
+        "D. c09",
+        "E. c12"
+      ],
+      "correct_cam_name": [
+        "E. c12",
+        "D. c09"
+      ],
+      "correct_time_str": [
+        "12:02:56.280-12:03:00.880",
+        "12:03:04.600-12:03:10.480"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "RzrMeMso7my9srpKkYebmk",
+      "scene": "Track 20",
+      "map_image_path": "./map/tf_map_20_RzrMeMso7my9srpKkYebmk.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_20_155_166_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3877,
+            3934,
+            3991,
+            4048,
+            4105
+          ],
+          "bboxes": [
+            [
+              70.0,
+              1033.6,
+              258.34,
+              379.7
+            ],
+            [
+              210.14,
+              495.06,
+              265.54,
+              537.16
+            ],
+            [
+              756.18,
+              254.38,
+              198.56,
+              550.56
+            ],
+            [
+              1291.28,
+              595.32,
+              318.84,
+              532.96
+            ],
+            [
+              1103.37,
+              785.55,
+              414.93,
+              644.93
+            ]
+          ],
+          "start_timestamp": 155.08,
+          "end_timestamp": 166.44,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_20_176_181_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4407,
+            4430,
+            4453,
+            4476,
+            4499,
+            4522
+          ],
+          "bboxes": [
+            [
+              1074.66,
+              25.5,
+              177.03,
+              539.54
+            ],
+            [
+              901.23,
+              21.59,
+              197.13,
+              606.25
+            ],
+            [
+              848.0,
+              78.61,
+              237.8,
+              722.76
+            ],
+            [
+              1025.26,
+              175.38,
+              277.94,
+              854.12
+            ],
+            [
+              1316.14,
+              353.5,
+              366.38,
+              843.14
+            ],
+            [
+              1862.53,
+              745.47,
+              336.45,
+              844.95
+            ]
+          ],
+          "start_timestamp": 176.28,
+          "end_timestamp": 180.88,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c03",
+        "B. c14",
+        "C. c13",
+        "D. c12",
+        "E. c09"
+      ],
+      "correct_cam_name": [
+        "E. c09",
+        "B. c14"
+      ],
+      "correct_time_str": [
+        "12:03:04.600-12:03:10.480",
+        "12:03:16.240-12:03:20.520"
+      ]
+    }
+  ]
+}

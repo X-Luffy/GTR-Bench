@@ -1,0 +1,3819 @@
+{
+  "cases": [
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "CLt7NKyYdTjitUBELAwQeq",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_CLt7NKyYdTjitUBELAwQeq.png",
+      "camera_images": [
+        {
+          "camera_id": "c014",
+          "object_id": 259,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_259_43_56_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            31,
+            57,
+            83,
+            109,
+            135,
+            161
+          ],
+          "bboxes": [
+            [
+              920.0,
+              63.0,
+              262.0,
+              105.0
+            ],
+            [
+              702.0,
+              64.0,
+              180.0,
+              120.0
+            ],
+            [
+              577.0,
+              74.0,
+              184.0,
+              133.0
+            ],
+            [
+              543.0,
+              131.0,
+              218.0,
+              163.0
+            ],
+            [
+              644.0,
+              236.0,
+              322.0,
+              239.0
+            ],
+            [
+              990.0,
+              583.0,
+              627.0,
+              473.0
+            ]
+          ],
+          "start_timestamp": 43.073,
+          "end_timestamp": 56.272999999999996,
+          "direction": ""
+        },
+        {
+          "camera_id": "c087",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_46_47_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197
+          ],
+          "bboxes": [
+            [
+              1017.0,
+              1157.0,
+              1543.0,
+              763.0
+            ],
+            [
+              855.0,
+              1110.0,
+              1693.0,
+              810.0
+            ],
+            [
+              641.0,
+              1070.0,
+              1704.0,
+              850.0
+            ],
+            [
+              572.0,
+              1038.0,
+              1542.0,
+              873.0
+            ],
+            [
+              422.0,
+              1005.0,
+              1506.0,
+              828.0
+            ],
+            [
+              272.0,
+              971.0,
+              1470.0,
+              782.0
+            ],
+            [
+              136.0,
+              942.0,
+              1430.0,
+              755.0
+            ],
+            [
+              0.0,
+              913.0,
+              1390.0,
+              728.0
+            ],
+            [
+              0.0,
+              887.0,
+              1213.0,
+              698.0
+            ]
+          ],
+          "start_timestamp": 45.879,
+          "end_timestamp": 46.679,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c070",
+        "B. c012",
+        "C. c095"
+      ],
+      "correct_cam_name": [
+        "C. c095"
+      ],
+      "correct_time_str": [
+        "12:00:47.000-12:00:59.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "bmyLuSDj9XuA9CGUt72XjU",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_bmyLuSDj9XuA9CGUt72XjU.png",
+      "camera_images": [
+        {
+          "camera_id": "c06",
+          "object_id": 259,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_259_59_59_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            320,
+            321,
+            322
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1079.0,
+              2148.0,
+              841.0
+            ],
+            [
+              442.0,
+              1118.0,
+              2118.0,
+              802.0
+            ],
+            [
+              930.0,
+              1161.0,
+              1630.0,
+              759.0
+            ]
+          ],
+          "start_timestamp": 58.979,
+          "end_timestamp": 59.179,
+          "direction": ""
+        },
+        {
+          "camera_id": "c094",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c016.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_25_31_c016.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            252,
+            263,
+            274,
+            285,
+            296,
+            307
+          ],
+          "bboxes": [
+            [
+              1026.0,
+              778.0,
+              447.0,
+              302.0
+            ],
+            [
+              1049.0,
+              661.0,
+              402.0,
+              305.0
+            ],
+            [
+              1033.0,
+              576.0,
+              334.0,
+              248.0
+            ],
+            [
+              1021.0,
+              513.0,
+              268.0,
+              199.0
+            ],
+            [
+              1016.0,
+              441.0,
+              240.0,
+              175.0
+            ],
+            [
+              1079.0,
+              371.0,
+              220.0,
+              157.0
+            ]
+          ],
+          "start_timestamp": 25.2,
+          "end_timestamp": 31.0,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c034",
+        "B. c078",
+        "C. c059"
+      ],
+      "correct_cam_name": [
+        "A. c034"
+      ],
+      "correct_time_str": [
+        "12:00:56.000-12:01:05.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "5ACkaUNvFTPCmd4nK3dEKn",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_5ACkaUNvFTPCmd4nK3dEKn.png",
+      "camera_images": [
+        {
+          "camera_id": "c085",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_153_159_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            275,
+            287,
+            299,
+            311,
+            323,
+            335
+          ],
+          "bboxes": [
+            [
+              0.0,
+              639.0,
+              694.0,
+              561.0
+            ],
+            [
+              948.0,
+              630.0,
+              205.0,
+              170.0
+            ],
+            [
+              1092.0,
+              597.0,
+              98.0,
+              102.0
+            ],
+            [
+              1097.0,
+              569.0,
+              74.0,
+              75.0
+            ],
+            [
+              1095.0,
+              547.0,
+              57.0,
+              59.0
+            ],
+            [
+              1093.0,
+              531.0,
+              47.0,
+              49.0
+            ]
+          ],
+          "start_timestamp": 152.699,
+          "end_timestamp": 158.899,
+          "direction": ""
+        },
+        {
+          "camera_id": "c013",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_155_177_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            39,
+            82,
+            125,
+            168,
+            211,
+            254
+          ],
+          "bboxes": [
+            [
+              373.0,
+              59.0,
+              247.0,
+              111.0
+            ],
+            [
+              512.0,
+              67.0,
+              181.0,
+              113.0
+            ],
+            [
+              556.0,
+              116.0,
+              164.0,
+              128.0
+            ],
+            [
+              517.0,
+              256.0,
+              194.0,
+              153.0
+            ],
+            [
+              348.0,
+              440.0,
+              274.0,
+              212.0
+            ],
+            [
+              0.0,
+              749.0,
+              361.0,
+              313.0
+            ]
+          ],
+          "start_timestamp": 154.793,
+          "end_timestamp": 176.593,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c011",
+        "B. c038",
+        "C. c030"
+      ],
+      "correct_cam_name": [
+        "C. c030"
+      ],
+      "correct_time_str": [
+        "12:02:35.000-12:03:00.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "9SiA8dGy8JpMP3BxziRaAk",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_9SiA8dGy8JpMP3BxziRaAk.png",
+      "camera_images": [
+        {
+          "camera_id": "c078",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c017.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_26_36_c017.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            115,
+            135,
+            155,
+            175,
+            195,
+            215
+          ],
+          "bboxes": [
+            [
+              857.0,
+              172.0,
+              211.0,
+              113.0
+            ],
+            [
+              1182.0,
+              173.0,
+              187.0,
+              151.0
+            ],
+            [
+              1048.0,
+              194.0,
+              227.0,
+              169.0
+            ],
+            [
+              793.0,
+              225.0,
+              278.0,
+              221.0
+            ],
+            [
+              752.0,
+              292.0,
+              386.0,
+              314.0
+            ],
+            [
+              1144.0,
+              428.0,
+              753.0,
+              574.0
+            ]
+          ],
+          "start_timestamp": 25.817999999999998,
+          "end_timestamp": 36.018,
+          "direction": ""
+        },
+        {
+          "camera_id": "c082",
+          "object_id": 266,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_266_40_40_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            133,
+            134,
+            135
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1071.0,
+              1736.0,
+              849.0
+            ],
+            [
+              164.0,
+              1110.0,
+              2032.0,
+              810.0
+            ],
+            [
+              667.0,
+              1157.0,
+              1893.0,
+              763.0
+            ]
+          ],
+          "start_timestamp": 40.278999999999996,
+          "end_timestamp": 40.479,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c083",
+        "B. c022",
+        "C. c010"
+      ],
+      "correct_cam_name": [
+        "A. c083"
+      ],
+      "correct_time_str": [
+        "12:00:38.000-12:00:45.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "S7LavVARMwiZiVEpGcGodM",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_S7LavVARMwiZiVEpGcGodM.png",
+      "camera_images": [
+        {
+          "camera_id": "c030",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c029.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_134_147_c029.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            85,
+            111,
+            137,
+            163,
+            189,
+            215
+          ],
+          "bboxes": [
+            [
+              1019.0,
+              391.0,
+              168.0,
+              115.0
+            ],
+            [
+              1120.0,
+              383.0,
+              150.0,
+              144.0
+            ],
+            [
+              1057.0,
+              395.0,
+              188.0,
+              166.0
+            ],
+            [
+              905.0,
+              409.0,
+              241.0,
+              202.0
+            ],
+            [
+              617.0,
+              407.0,
+              316.0,
+              284.0
+            ],
+            [
+              0.0,
+              536.0,
+              438.0,
+              398.0
+            ]
+          ],
+          "start_timestamp": 134.288,
+          "end_timestamp": 147.388,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 268,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_268_149_151_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            242,
+            245,
+            248,
+            251,
+            254
+          ],
+          "bboxes": [
+            [
+              1223.0,
+              341.0,
+              377.0,
+              174.0
+            ],
+            [
+              944.0,
+              328.0,
+              478.0,
+              168.0
+            ],
+            [
+              638.0,
+              307.0,
+              510.0,
+              190.0
+            ],
+            [
+              363.0,
+              301.0,
+              501.0,
+              179.0
+            ],
+            [
+              90.0,
+              290.0,
+              504.0,
+              180.0
+            ]
+          ],
+          "start_timestamp": 149.233,
+          "end_timestamp": 150.633,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c042",
+        "B. c088"
+      ],
+      "correct_cam_name": [
+        "A. c042"
+      ],
+      "correct_time_str": [
+        "12:02:26.000-12:02:38.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "V849VLrmtVQKADAj6TaPMm",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_V849VLrmtVQKADAj6TaPMm.png",
+      "camera_images": [
+        {
+          "camera_id": "c064",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_113_119_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            124,
+            136,
+            148,
+            160,
+            172,
+            184
+          ],
+          "bboxes": [
+            [
+              0.0,
+              202.0,
+              142.0,
+              117.0
+            ],
+            [
+              32.0,
+              203.0,
+              249.0,
+              164.0
+            ],
+            [
+              100.0,
+              207.0,
+              277.0,
+              174.0
+            ],
+            [
+              178.0,
+              228.0,
+              353.0,
+              188.0
+            ],
+            [
+              425.0,
+              258.0,
+              521.0,
+              273.0
+            ],
+            [
+              1129.0,
+              379.0,
+              791.0,
+              433.0
+            ]
+          ],
+          "start_timestamp": 112.51,
+          "end_timestamp": 118.61,
+          "direction": ""
+        },
+        {
+          "camera_id": "c028",
+          "object_id": 270,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_270_127_134_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            23,
+            36,
+            49,
+            62,
+            75,
+            94
+          ],
+          "bboxes": [
+            [
+              1254.0,
+              198.0,
+              346.0,
+              289.0
+            ],
+            [
+              807.0,
+              354.0,
+              206.0,
+              161.0
+            ],
+            [
+              630.0,
+              415.0,
+              127.0,
+              113.0
+            ],
+            [
+              555.0,
+              449.0,
+              83.0,
+              82.0
+            ],
+            [
+              510.0,
+              471.0,
+              62.0,
+              64.0
+            ],
+            [
+              474.0,
+              490.0,
+              49.0,
+              54.0
+            ]
+          ],
+          "start_timestamp": 126.619,
+          "end_timestamp": 133.919,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c051",
+        "B. c084",
+        "C. c083"
+      ],
+      "correct_cam_name": [
+        "C. c083"
+      ],
+      "correct_time_str": [
+        "12:02:10.000-12:02:29.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "H35WYd2gkUKZqi5edKygac",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_H35WYd2gkUKZqi5edKygac.png",
+      "camera_images": [
+        {
+          "camera_id": "c029",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_185_190_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            140,
+            151,
+            162,
+            173,
+            184,
+            195
+          ],
+          "bboxes": [
+            [
+              1629.0,
+              160.0,
+              291.0,
+              332.0
+            ],
+            [
+              1567.0,
+              152.0,
+              278.0,
+              265.0
+            ],
+            [
+              1518.0,
+              151.0,
+              227.0,
+              216.0
+            ],
+            [
+              1477.0,
+              153.0,
+              207.0,
+              191.0
+            ],
+            [
+              1455.0,
+              157.0,
+              180.0,
+              156.0
+            ],
+            [
+              1438.0,
+              159.0,
+              157.0,
+              144.0
+            ]
+          ],
+          "start_timestamp": 184.797,
+          "end_timestamp": 190.49699999999999,
+          "direction": ""
+        },
+        {
+          "camera_id": "c018",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c037.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_184_196_c037.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            139,
+            154,
+            169,
+            184,
+            234,
+            249
+          ],
+          "bboxes": [
+            [
+              431.0,
+              162.0,
+              161.0,
+              108.0
+            ],
+            [
+              455.0,
+              132.0,
+              173.0,
+              135.0
+            ],
+            [
+              474.0,
+              129.0,
+              191.0,
+              146.0
+            ],
+            [
+              558.0,
+              152.0,
+              219.0,
+              173.0
+            ],
+            [
+              606.0,
+              401.0,
+              465.0,
+              384.0
+            ],
+            [
+              646.0,
+              496.0,
+              536.0,
+              459.0
+            ]
+          ],
+          "start_timestamp": 184.467,
+          "end_timestamp": 195.667,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c064",
+        "B. c066",
+        "C. c047"
+      ],
+      "correct_cam_name": [
+        "B. c066"
+      ],
+      "correct_time_str": [
+        "12:03:10.000-12:03:19.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "F5NrvE4F7Vm89hHUhyNTpC",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_F5NrvE4F7Vm89hHUhyNTpC.png",
+      "camera_images": [
+        {
+          "camera_id": "c081",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_158_182_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            70,
+            118,
+            166,
+            214,
+            262,
+            310
+          ],
+          "bboxes": [
+            [
+              1554.0,
+              600.0,
+              366.0,
+              368.0
+            ],
+            [
+              1315.0,
+              293.0,
+              256.0,
+              219.0
+            ],
+            [
+              1263.0,
+              164.0,
+              187.0,
+              175.0
+            ],
+            [
+              1258.0,
+              124.0,
+              172.0,
+              164.0
+            ],
+            [
+              1270.0,
+              98.0,
+              164.0,
+              158.0
+            ],
+            [
+              590.0,
+              2.0,
+              326.0,
+              151.0
+            ]
+          ],
+          "start_timestamp": 157.893,
+          "end_timestamp": 181.993,
+          "direction": ""
+        },
+        {
+          "camera_id": "c014",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_140_169_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            46,
+            115,
+            160,
+            239,
+            284
+          ],
+          "bboxes": [
+            [
+              366.0,
+              162.0,
+              73.0,
+              59.0
+            ],
+            [
+              618.0,
+              230.0,
+              140.0,
+              98.0
+            ],
+            [
+              1002.0,
+              332.0,
+              230.0,
+              134.0
+            ],
+            [
+              1041.0,
+              340.0,
+              242.0,
+              151.0
+            ],
+            [
+              1434.0,
+              428.0,
+              353.0,
+              183.0
+            ],
+            [
+              1565.0,
+              455.0,
+              355.0,
+              210.0
+            ]
+          ],
+          "start_timestamp": 140.31799999999998,
+          "end_timestamp": 168.618,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c023",
+        "B. c065",
+        "C. c098"
+      ],
+      "correct_cam_name": [
+        "C. c098"
+      ],
+      "correct_time_str": [
+        "12:02:56.000-12:03:05.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "kwzoZuCBt9ToDcwAaqaE69",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_kwzoZuCBt9ToDcwAaqaE69.png",
+      "camera_images": [
+        {
+          "camera_id": "c031",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_176_183_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            108,
+            121,
+            134,
+            147,
+            160,
+            173
+          ],
+          "bboxes": [
+            [
+              0.0,
+              545.0,
+              206.0,
+              217.0
+            ],
+            [
+              176.0,
+              396.0,
+              419.0,
+              266.0
+            ],
+            [
+              680.0,
+              214.0,
+              487.0,
+              253.0
+            ],
+            [
+              1209.0,
+              104.0,
+              242.0,
+              163.0
+            ],
+            [
+              1378.0,
+              37.0,
+              118.0,
+              106.0
+            ],
+            [
+              1397.0,
+              0.0,
+              65.0,
+              58.0
+            ]
+          ],
+          "start_timestamp": 176.36800000000002,
+          "end_timestamp": 182.96800000000002,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_183_190_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            127,
+            141,
+            155,
+            169,
+            183
+          ],
+          "bboxes": [
+            [
+              1012.0,
+              677.0,
+              730.0,
+              403.0
+            ],
+            [
+              1265.0,
+              342.0,
+              450.0,
+              409.0
+            ],
+            [
+              1238.0,
+              259.0,
+              358.0,
+              285.0
+            ],
+            [
+              1230.0,
+              227.0,
+              274.0,
+              216.0
+            ],
+            [
+              1270.0,
+              200.0,
+              215.0,
+              177.0
+            ]
+          ],
+          "start_timestamp": 183.49699999999999,
+          "end_timestamp": 190.397,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c040",
+        "B. c073",
+        "C. c011"
+      ],
+      "correct_cam_name": [
+        "C. c011"
+      ],
+      "correct_time_str": [
+        "12:03:03.000-12:03:16.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "Y3zSvndNsK5n2UNAFdhzut",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_Y3zSvndNsK5n2UNAFdhzut.png",
+      "camera_images": [
+        {
+          "camera_id": "c055",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_176_183_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            108,
+            121,
+            134,
+            147,
+            160,
+            173
+          ],
+          "bboxes": [
+            [
+              0.0,
+              545.0,
+              206.0,
+              217.0
+            ],
+            [
+              176.0,
+              396.0,
+              419.0,
+              266.0
+            ],
+            [
+              680.0,
+              214.0,
+              487.0,
+              253.0
+            ],
+            [
+              1209.0,
+              104.0,
+              242.0,
+              163.0
+            ],
+            [
+              1378.0,
+              37.0,
+              118.0,
+              106.0
+            ],
+            [
+              1397.0,
+              0.0,
+              65.0,
+              58.0
+            ]
+          ],
+          "start_timestamp": 176.36800000000002,
+          "end_timestamp": 182.96800000000002,
+          "direction": ""
+        },
+        {
+          "camera_id": "c097",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_190_207_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            192,
+            222,
+            252,
+            289,
+            329,
+            359
+          ],
+          "bboxes": [
+            [
+              828.0,
+              352.0,
+              956.0,
+              728.0
+            ],
+            [
+              1236.0,
+              88.0,
+              404.0,
+              453.0
+            ],
+            [
+              1258.0,
+              87.0,
+              237.0,
+              297.0
+            ],
+            [
+              1241.0,
+              123.0,
+              176.0,
+              191.0
+            ],
+            [
+              1246.0,
+              139.0,
+              135.0,
+              148.0
+            ],
+            [
+              1253.0,
+              134.0,
+              100.0,
+              118.0
+            ]
+          ],
+          "start_timestamp": 189.99699999999999,
+          "end_timestamp": 206.797,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c094",
+        "B. c028",
+        "C. c070"
+      ],
+      "correct_cam_name": [
+        "A. c094"
+      ],
+      "correct_time_str": [
+        "12:03:03.000-12:03:20.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "FUBjvnDLkybnqGyv5GanuB",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_FUBjvnDLkybnqGyv5GanuB.png",
+      "camera_images": [
+        {
+          "camera_id": "c043",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_113_119_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            124,
+            136,
+            148,
+            160,
+            172,
+            184
+          ],
+          "bboxes": [
+            [
+              0.0,
+              202.0,
+              142.0,
+              117.0
+            ],
+            [
+              32.0,
+              203.0,
+              249.0,
+              164.0
+            ],
+            [
+              100.0,
+              207.0,
+              277.0,
+              174.0
+            ],
+            [
+              178.0,
+              228.0,
+              353.0,
+              188.0
+            ],
+            [
+              425.0,
+              258.0,
+              521.0,
+              273.0
+            ],
+            [
+              1129.0,
+              379.0,
+              791.0,
+              433.0
+            ]
+          ],
+          "start_timestamp": 112.51,
+          "end_timestamp": 118.61,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 274,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_274_134_141_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            93,
+            111,
+            124,
+            137,
+            150
+          ],
+          "bboxes": [
+            [
+              1323.0,
+              284.0,
+              277.0,
+              197.0
+            ],
+            [
+              765.0,
+              422.0,
+              125.0,
+              94.0
+            ],
+            [
+              629.0,
+              456.0,
+              86.0,
+              68.0
+            ],
+            [
+              560.0,
+              474.0,
+              62.0,
+              55.0
+            ],
+            [
+              517.0,
+              487.0,
+              50.0,
+              45.0
+            ]
+          ],
+          "start_timestamp": 133.619,
+          "end_timestamp": 140.519,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c030",
+        "B. c08",
+        "C. c05"
+      ],
+      "correct_cam_name": [
+        "C. c05"
+      ],
+      "correct_time_str": [
+        "12:02:14.000-12:02:32.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "mmAeU9CBTNRG92n5EcofgF",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_mmAeU9CBTNRG92n5EcofgF.png",
+      "camera_images": [
+        {
+          "camera_id": "c053",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_113_119_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            124,
+            136,
+            148,
+            160,
+            172,
+            184
+          ],
+          "bboxes": [
+            [
+              0.0,
+              202.0,
+              142.0,
+              117.0
+            ],
+            [
+              32.0,
+              203.0,
+              249.0,
+              164.0
+            ],
+            [
+              100.0,
+              207.0,
+              277.0,
+              174.0
+            ],
+            [
+              178.0,
+              228.0,
+              353.0,
+              188.0
+            ],
+            [
+              425.0,
+              258.0,
+              521.0,
+              273.0
+            ],
+            [
+              1129.0,
+              379.0,
+              791.0,
+              433.0
+            ]
+          ],
+          "start_timestamp": 112.51,
+          "end_timestamp": 118.61,
+          "direction": ""
+        },
+        {
+          "camera_id": "c056",
+          "object_id": 275,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_275_141_142_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            163,
+            164,
+            165
+          ],
+          "bboxes": [
+            [
+              0.0,
+              669.0,
+              1269.0,
+              531.0
+            ],
+            [
+              272.0,
+              683.0,
+              1314.0,
+              517.0
+            ],
+            [
+              575.0,
+              703.0,
+              1025.0,
+              497.0
+            ]
+          ],
+          "start_timestamp": 141.333,
+          "end_timestamp": 141.53300000000002,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c085",
+        "B. c025",
+        "C. c013"
+      ],
+      "correct_cam_name": [
+        "B. c025"
+      ],
+      "correct_time_str": [
+        "12:02:06.000-12:02:27.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "kugaZse3T2i4fJeTpdpQwB",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_kugaZse3T2i4fJeTpdpQwB.png",
+      "camera_images": [
+        {
+          "camera_id": "c097",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c029.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_134_147_c029.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            85,
+            111,
+            137,
+            163,
+            189,
+            215
+          ],
+          "bboxes": [
+            [
+              1019.0,
+              391.0,
+              168.0,
+              115.0
+            ],
+            [
+              1120.0,
+              383.0,
+              150.0,
+              144.0
+            ],
+            [
+              1057.0,
+              395.0,
+              188.0,
+              166.0
+            ],
+            [
+              905.0,
+              409.0,
+              241.0,
+              202.0
+            ],
+            [
+              617.0,
+              407.0,
+              316.0,
+              284.0
+            ],
+            [
+              0.0,
+              536.0,
+              438.0,
+              398.0
+            ]
+          ],
+          "start_timestamp": 134.288,
+          "end_timestamp": 147.388,
+          "direction": ""
+        },
+        {
+          "camera_id": "c02",
+          "object_id": 277,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_277_147_148_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232
+          ],
+          "bboxes": [
+            [
+              1038.0,
+              381.0,
+              562.0,
+              261.0
+            ],
+            [
+              881.0,
+              371.0,
+              619.0,
+              265.0
+            ],
+            [
+              725.0,
+              361.0,
+              639.0,
+              270.0
+            ],
+            [
+              571.0,
+              358.0,
+              634.0,
+              263.0
+            ],
+            [
+              418.0,
+              355.0,
+              629.0,
+              257.0
+            ],
+            [
+              281.0,
+              349.0,
+              626.0,
+              259.0
+            ],
+            [
+              144.0,
+              343.0,
+              623.0,
+              260.0
+            ],
+            [
+              36.0,
+              355.0,
+              564.0,
+              226.0
+            ],
+            [
+              0.0,
+              352.0,
+              473.0,
+              223.0
+            ]
+          ],
+          "start_timestamp": 147.433,
+          "end_timestamp": 148.233,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c031",
+        "B. c012",
+        "C. c022"
+      ],
+      "correct_cam_name": [
+        "B. c012"
+      ],
+      "correct_time_str": [
+        "12:02:26.000-12:02:34.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "VAH86qSANfMUMskAumgdBq",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_VAH86qSANfMUMskAumgdBq.png",
+      "camera_images": [
+        {
+          "camera_id": "c037",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_152_152_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            272,
+            273,
+            274
+          ],
+          "bboxes": [
+            [
+              0.0,
+              560.0,
+              1116.0,
+              623.0
+            ],
+            [
+              0.0,
+              581.0,
+              1462.0,
+              619.0
+            ],
+            [
+              324.0,
+              602.0,
+              1276.0,
+              598.0
+            ]
+          ],
+          "start_timestamp": 152.233,
+          "end_timestamp": 152.433,
+          "direction": ""
+        },
+        {
+          "camera_id": "c055",
+          "object_id": 279,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_279_142_152_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            20,
+            43,
+            63,
+            90,
+            105
+          ],
+          "bboxes": [
+            [
+              1192.0,
+              319.0,
+              236.0,
+              117.0
+            ],
+            [
+              778.0,
+              236.0,
+              153.0,
+              89.0
+            ],
+            [
+              600.0,
+              197.0,
+              101.0,
+              67.0
+            ],
+            [
+              437.0,
+              160.0,
+              71.0,
+              51.0
+            ],
+            [
+              373.0,
+              144.0,
+              62.0,
+              46.0
+            ]
+          ],
+          "start_timestamp": 142.218,
+          "end_timestamp": 152.118,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c059",
+        "B. c090"
+      ],
+      "correct_cam_name": [
+        "A. c059"
+      ],
+      "correct_time_str": [
+        "12:02:30.000-12:02:39.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "CYMKV4CWHty2yFaTdt5Mxg",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_CYMKV4CWHty2yFaTdt5Mxg.png",
+      "camera_images": [
+        {
+          "camera_id": "c075",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_152_152_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            272,
+            273,
+            274
+          ],
+          "bboxes": [
+            [
+              0.0,
+              560.0,
+              1116.0,
+              623.0
+            ],
+            [
+              0.0,
+              581.0,
+              1462.0,
+              619.0
+            ],
+            [
+              324.0,
+              602.0,
+              1276.0,
+              598.0
+            ]
+          ],
+          "start_timestamp": 152.233,
+          "end_timestamp": 152.433,
+          "direction": ""
+        },
+        {
+          "camera_id": "c041",
+          "object_id": 280,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_280_142_154_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            19,
+            42,
+            63,
+            94,
+            115,
+            136
+          ],
+          "bboxes": [
+            [
+              1602.0,
+              338.0,
+              310.0,
+              156.0
+            ],
+            [
+              998.0,
+              239.0,
+              190.0,
+              107.0
+            ],
+            [
+              731.0,
+              188.0,
+              123.0,
+              88.0
+            ],
+            [
+              508.0,
+              152.0,
+              81.0,
+              58.0
+            ],
+            [
+              417.0,
+              131.0,
+              64.0,
+              50.0
+            ],
+            [
+              352.0,
+              116.0,
+              53.0,
+              43.0
+            ]
+          ],
+          "start_timestamp": 142.118,
+          "end_timestamp": 153.81799999999998,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c096",
+        "B. c07",
+        "C. c08"
+      ],
+      "correct_cam_name": [
+        "C. c08"
+      ],
+      "correct_time_str": [
+        "12:02:30.000-12:02:39.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "DsRbmAFzUaZHAfENK3HRde",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_DsRbmAFzUaZHAfENK3HRde.png",
+      "camera_images": [
+        {
+          "camera_id": "c075",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_152_152_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            272,
+            273,
+            274
+          ],
+          "bboxes": [
+            [
+              0.0,
+              560.0,
+              1116.0,
+              623.0
+            ],
+            [
+              0.0,
+              581.0,
+              1462.0,
+              619.0
+            ],
+            [
+              324.0,
+              602.0,
+              1276.0,
+              598.0
+            ]
+          ],
+          "start_timestamp": 152.233,
+          "end_timestamp": 152.433,
+          "direction": ""
+        },
+        {
+          "camera_id": "c032",
+          "object_id": 283,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_283_151_154_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            6,
+            11,
+            16,
+            21,
+            26
+          ],
+          "bboxes": [
+            [
+              238.0,
+              575.0,
+              245.0,
+              214.0
+            ],
+            [
+              177.0,
+              603.0,
+              297.0,
+              245.0
+            ],
+            [
+              130.0,
+              639.0,
+              315.0,
+              266.0
+            ],
+            [
+              73.0,
+              680.0,
+              336.0,
+              279.0
+            ],
+            [
+              9.0,
+              730.0,
+              364.0,
+              298.0
+            ],
+            [
+              0.0,
+              806.0,
+              304.0,
+              274.0
+            ]
+          ],
+          "start_timestamp": 150.993,
+          "end_timestamp": 153.593,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c016",
+        "B. c073",
+        "C. c077"
+      ],
+      "correct_cam_name": [
+        "B. c073"
+      ],
+      "correct_time_str": [
+        "12:02:33.000-12:02:39.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "bwp7aozci7Hvi2ctHsETfZ",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_bwp7aozci7Hvi2ctHsETfZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c039",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_153_159_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            275,
+            287,
+            299,
+            311,
+            323,
+            335
+          ],
+          "bboxes": [
+            [
+              0.0,
+              639.0,
+              694.0,
+              561.0
+            ],
+            [
+              948.0,
+              630.0,
+              205.0,
+              170.0
+            ],
+            [
+              1092.0,
+              597.0,
+              98.0,
+              102.0
+            ],
+            [
+              1097.0,
+              569.0,
+              74.0,
+              75.0
+            ],
+            [
+              1095.0,
+              547.0,
+              57.0,
+              59.0
+            ],
+            [
+              1093.0,
+              531.0,
+              47.0,
+              49.0
+            ]
+          ],
+          "start_timestamp": 152.699,
+          "end_timestamp": 158.899,
+          "direction": ""
+        },
+        {
+          "camera_id": "c070",
+          "object_id": 284,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_284_163_164_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            377,
+            379,
+            381,
+            383,
+            385,
+            387,
+            389
+          ],
+          "bboxes": [
+            [
+              1252.0,
+              310.0,
+              348.0,
+              205.0
+            ],
+            [
+              1055.0,
+              296.0,
+              429.0,
+              206.0
+            ],
+            [
+              841.0,
+              281.0,
+              439.0,
+              217.0
+            ],
+            [
+              627.0,
+              272.0,
+              446.0,
+              221.0
+            ],
+            [
+              423.0,
+              272.0,
+              432.0,
+              211.0
+            ],
+            [
+              232.0,
+              271.0,
+              420.0,
+              197.0
+            ],
+            [
+              44.0,
+              264.0,
+              411.0,
+              201.0
+            ]
+          ],
+          "start_timestamp": 162.733,
+          "end_timestamp": 164.03300000000002,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c057",
+        "B. c091",
+        "C. c079"
+      ],
+      "correct_cam_name": [
+        "B. c091"
+      ],
+      "correct_time_str": [
+        "12:02:28.000-12:02:50.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "3r9tRMrd5x8jyYW3jXFRWe",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_3r9tRMrd5x8jyYW3jXFRWe.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_46_54_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            61,
+            76,
+            91,
+            106,
+            121,
+            136
+          ],
+          "bboxes": [
+            [
+              1417.0,
+              357.0,
+              503.0,
+              471.0
+            ],
+            [
+              1044.0,
+              185.0,
+              420.0,
+              334.0
+            ],
+            [
+              897.0,
+              112.0,
+              261.0,
+              227.0
+            ],
+            [
+              839.0,
+              63.0,
+              187.0,
+              179.0
+            ],
+            [
+              882.0,
+              34.0,
+              182.0,
+              166.0
+            ],
+            [
+              1009.0,
+              31.0,
+              145.0,
+              145.0
+            ]
+          ],
+          "start_timestamp": 46.073,
+          "end_timestamp": 53.573,
+          "direction": ""
+        },
+        {
+          "camera_id": "c015",
+          "object_id": 294,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_294_52_58_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            60,
+            73,
+            86,
+            99,
+            112,
+            125
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1174.0,
+              835.0,
+              653.0
+            ],
+            [
+              1401.0,
+              993.0,
+              251.0,
+              223.0
+            ],
+            [
+              1701.0,
+              952.0,
+              156.0,
+              133.0
+            ],
+            [
+              1814.0,
+              938.0,
+              118.0,
+              106.0
+            ],
+            [
+              1889.0,
+              934.0,
+              89.0,
+              82.0
+            ],
+            [
+              1932.0,
+              930.0,
+              73.0,
+              66.0
+            ]
+          ],
+          "start_timestamp": 51.716,
+          "end_timestamp": 58.416,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c072",
+        "B. c010",
+        "C. c055"
+      ],
+      "correct_cam_name": [
+        "B. c010"
+      ],
+      "correct_time_str": [
+        "12:00:53.000-12:01:12.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "4nX8kjWWLoZ8ZSBSuQydrn",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_4nX8kjWWLoZ8ZSBSuQydrn.png",
+      "camera_images": [
+        {
+          "camera_id": "c045",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c022.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_63_72_c022.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            136,
+            154,
+            172,
+            190,
+            208,
+            226
+          ],
+          "bboxes": [
+            [
+              890.0,
+              132.0,
+              87.0,
+              70.0
+            ],
+            [
+              861.0,
+              130.0,
+              110.0,
+              100.0
+            ],
+            [
+              821.0,
+              160.0,
+              134.0,
+              123.0
+            ],
+            [
+              749.0,
+              228.0,
+              184.0,
+              144.0
+            ],
+            [
+              620.0,
+              335.0,
+              244.0,
+              219.0
+            ],
+            [
+              232.0,
+              609.0,
+              451.0,
+              440.0
+            ]
+          ],
+          "start_timestamp": 63.022,
+          "end_timestamp": 72.222,
+          "direction": ""
+        },
+        {
+          "camera_id": "c030",
+          "object_id": 296,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_296_64_65_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            134,
+            135,
+            136,
+            137
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1256.0,
+              1632.0,
+              664.0
+            ],
+            [
+              149.0,
+              1244.0,
+              1954.0,
+              676.0
+            ],
+            [
+              652.0,
+              1226.0,
+              1908.0,
+              694.0
+            ],
+            [
+              1125.0,
+              1218.0,
+              1435.0,
+              702.0
+            ]
+          ],
+          "start_timestamp": 64.253,
+          "end_timestamp": 64.553,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c040",
+        "B. c029",
+        "C. c04"
+      ],
+      "correct_cam_name": [
+        "C. c04"
+      ],
+      "correct_time_str": [
+        "12:01:05.000-12:01:14.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "FZgoZUMdKpPmFM6enoskEo",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_FZgoZUMdKpPmFM6enoskEo.png",
+      "camera_images": [
+        {
+          "camera_id": "c067",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c026.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_79_95_c026.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            86,
+            119,
+            152,
+            185,
+            218
+          ],
+          "bboxes": [
+            [
+              971.0,
+              753.0,
+              429.0,
+              327.0
+            ],
+            [
+              1070.0,
+              313.0,
+              234.0,
+              231.0
+            ],
+            [
+              1099.0,
+              142.0,
+              160.0,
+              147.0
+            ],
+            [
+              1125.0,
+              70.0,
+              116.0,
+              100.0
+            ],
+            [
+              1148.0,
+              34.0,
+              91.0,
+              82.0
+            ]
+          ],
+          "start_timestamp": 79.05,
+          "end_timestamp": 95.45,
+          "direction": ""
+        },
+        {
+          "camera_id": "c091",
+          "object_id": 301,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_301_102_105_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            22,
+            27,
+            32,
+            37,
+            42,
+            47
+          ],
+          "bboxes": [
+            [
+              0.0,
+              114.0,
+              60.0,
+              36.0
+            ],
+            [
+              9.0,
+              105.0,
+              69.0,
+              39.0
+            ],
+            [
+              29.0,
+              99.0,
+              69.0,
+              42.0
+            ],
+            [
+              47.0,
+              96.0,
+              71.0,
+              39.0
+            ],
+            [
+              64.0,
+              92.0,
+              70.0,
+              37.0
+            ],
+            [
+              82.0,
+              88.0,
+              68.0,
+              38.0
+            ]
+          ],
+          "start_timestamp": 102.31,
+          "end_timestamp": 104.91,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c069",
+        "B. c01",
+        "C. c056"
+      ],
+      "correct_cam_name": [
+        "A. c069"
+      ],
+      "correct_time_str": [
+        "12:01:27.000-12:01:52.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "YbFMWAkhB8Y5Vxe42LpvEL",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_YbFMWAkhB8Y5Vxe42LpvEL.png",
+      "camera_images": [
+        {
+          "camera_id": "c038",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_158_182_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            70,
+            118,
+            166,
+            214,
+            262,
+            310
+          ],
+          "bboxes": [
+            [
+              1554.0,
+              600.0,
+              366.0,
+              368.0
+            ],
+            [
+              1315.0,
+              293.0,
+              256.0,
+              219.0
+            ],
+            [
+              1263.0,
+              164.0,
+              187.0,
+              175.0
+            ],
+            [
+              1258.0,
+              124.0,
+              172.0,
+              164.0
+            ],
+            [
+              1270.0,
+              98.0,
+              164.0,
+              158.0
+            ],
+            [
+              590.0,
+              2.0,
+              326.0,
+              151.0
+            ]
+          ],
+          "start_timestamp": 157.893,
+          "end_timestamp": 181.993,
+          "direction": ""
+        },
+        {
+          "camera_id": "c090",
+          "object_id": 303,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_303_181_181_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410
+          ],
+          "bboxes": [
+            [
+              1629.0,
+              342.0,
+              288.0,
+              169.0
+            ],
+            [
+              1591.0,
+              337.0,
+              300.0,
+              167.0
+            ],
+            [
+              1554.0,
+              332.0,
+              292.0,
+              161.0
+            ],
+            [
+              1517.0,
+              326.0,
+              285.0,
+              156.0
+            ],
+            [
+              1480.0,
+              321.0,
+              277.0,
+              150.0
+            ],
+            [
+              1448.0,
+              316.0,
+              269.0,
+              148.0
+            ],
+            [
+              1416.0,
+              311.0,
+              261.0,
+              146.0
+            ]
+          ],
+          "start_timestamp": 180.618,
+          "end_timestamp": 181.218,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c071",
+        "B. c025",
+        "C. c017"
+      ],
+      "correct_cam_name": [
+        "A. c071"
+      ],
+      "correct_time_str": [
+        "12:02:52.000-12:03:03.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "UaLirtUgqQU86s6bmXDuAh",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_UaLirtUgqQU86s6bmXDuAh.png",
+      "camera_images": [
+        {
+          "camera_id": "c078",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_158_182_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            70,
+            118,
+            166,
+            214,
+            262,
+            310
+          ],
+          "bboxes": [
+            [
+              1554.0,
+              600.0,
+              366.0,
+              368.0
+            ],
+            [
+              1315.0,
+              293.0,
+              256.0,
+              219.0
+            ],
+            [
+              1263.0,
+              164.0,
+              187.0,
+              175.0
+            ],
+            [
+              1258.0,
+              124.0,
+              172.0,
+              164.0
+            ],
+            [
+              1270.0,
+              98.0,
+              164.0,
+              158.0
+            ],
+            [
+              590.0,
+              2.0,
+              326.0,
+              151.0
+            ]
+          ],
+          "start_timestamp": 157.893,
+          "end_timestamp": 181.993,
+          "direction": ""
+        },
+        {
+          "camera_id": "c056",
+          "object_id": 305,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_305_171_177_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            14,
+            27,
+            40,
+            53
+          ],
+          "bboxes": [
+            [
+              674.0,
+              181.0,
+              193.0,
+              191.0
+            ],
+            [
+              592.0,
+              178.0,
+              228.0,
+              230.0
+            ],
+            [
+              474.0,
+              188.0,
+              273.0,
+              268.0
+            ],
+            [
+              326.0,
+              208.0,
+              329.0,
+              311.0
+            ],
+            [
+              136.0,
+              232.0,
+              391.0,
+              371.0
+            ]
+          ],
+          "start_timestamp": 170.897,
+          "end_timestamp": 177.297,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c075",
+        "B. c042",
+        "C. c084"
+      ],
+      "correct_cam_name": [
+        "A. c075"
+      ],
+      "correct_time_str": [
+        "12:02:56.000-12:03:07.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "TZexg7nLNZayqg4spJpj7C",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_TZexg7nLNZayqg4spJpj7C.png",
+      "camera_images": [
+        {
+          "camera_id": "c010",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c037.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_183_193_c037.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            122,
+            148,
+            166,
+            184,
+            202,
+            220
+          ],
+          "bboxes": [
+            [
+              208.0,
+              113.0,
+              192.0,
+              156.0
+            ],
+            [
+              201.0,
+              90.0,
+              245.0,
+              204.0
+            ],
+            [
+              231.0,
+              103.0,
+              268.0,
+              243.0
+            ],
+            [
+              291.0,
+              143.0,
+              367.0,
+              344.0
+            ],
+            [
+              359.0,
+              219.0,
+              482.0,
+              455.0
+            ],
+            [
+              499.0,
+              442.0,
+              858.0,
+              646.0
+            ]
+          ],
+          "start_timestamp": 182.767,
+          "end_timestamp": 192.767,
+          "direction": ""
+        },
+        {
+          "camera_id": "c054",
+          "object_id": 309,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_309_172_176_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            216,
+            223,
+            231,
+            238,
+            245
+          ],
+          "bboxes": [
+            [
+              1099.0,
+              77.0,
+              155.0,
+              142.0
+            ],
+            [
+              1080.0,
+              61.0,
+              167.0,
+              142.0
+            ],
+            [
+              982.0,
+              44.0,
+              207.0,
+              137.0
+            ],
+            [
+              811.0,
+              24.0,
+              260.0,
+              145.0
+            ],
+            [
+              602.0,
+              13.0,
+              286.0,
+              145.0
+            ]
+          ],
+          "start_timestamp": 172.493,
+          "end_timestamp": 175.993,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c081",
+        "B. c059",
+        "C. c074"
+      ],
+      "correct_cam_name": [
+        "C. c074"
+      ],
+      "correct_time_str": [
+        "12:02:55.000-12:03:10.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "grvd3SASN4548942SsSJ3P",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_grvd3SASN4548942SsSJ3P.png",
+      "camera_images": [
+        {
+          "camera_id": "c036",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c037.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_183_193_c037.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            122,
+            148,
+            166,
+            184,
+            202,
+            220
+          ],
+          "bboxes": [
+            [
+              208.0,
+              113.0,
+              192.0,
+              156.0
+            ],
+            [
+              201.0,
+              90.0,
+              245.0,
+              204.0
+            ],
+            [
+              231.0,
+              103.0,
+              268.0,
+              243.0
+            ],
+            [
+              291.0,
+              143.0,
+              367.0,
+              344.0
+            ],
+            [
+              359.0,
+              219.0,
+              482.0,
+              455.0
+            ],
+            [
+              499.0,
+              442.0,
+              858.0,
+              646.0
+            ]
+          ],
+          "start_timestamp": 182.767,
+          "end_timestamp": 192.767,
+          "direction": ""
+        },
+        {
+          "camera_id": "c092",
+          "object_id": 312,
+          "video_path": "./raw_video/outdoor_S04_c040.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_312_176_177_c040.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "bboxes": [
+            [
+              1376.0,
+              328.0,
+              163.0,
+              141.0
+            ],
+            [
+              1374.0,
+              345.0,
+              179.0,
+              154.0
+            ],
+            [
+              1370.0,
+              354.0,
+              187.0,
+              163.0
+            ],
+            [
+              1360.0,
+              364.0,
+              219.0,
+              182.0
+            ],
+            [
+              1365.0,
+              371.0,
+              233.0,
+              187.0
+            ],
+            [
+              1385.0,
+              375.0,
+              215.0,
+              200.0
+            ]
+          ],
+          "start_timestamp": 175.938,
+          "end_timestamp": 176.938,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c010",
+        "B. c037",
+        "C. c057"
+      ],
+      "correct_cam_name": [
+        "B. c037"
+      ],
+      "correct_time_str": [
+        "12:02:57.000-12:03:10.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "LxyPcG8iH7mUtPiLXrGh5G",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_LxyPcG8iH7mUtPiLXrGh5G.png",
+      "camera_images": [
+        {
+          "camera_id": "c053",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_176_183_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            108,
+            121,
+            134,
+            147,
+            160,
+            173
+          ],
+          "bboxes": [
+            [
+              0.0,
+              545.0,
+              206.0,
+              217.0
+            ],
+            [
+              176.0,
+              396.0,
+              419.0,
+              266.0
+            ],
+            [
+              680.0,
+              214.0,
+              487.0,
+              253.0
+            ],
+            [
+              1209.0,
+              104.0,
+              242.0,
+              163.0
+            ],
+            [
+              1378.0,
+              37.0,
+              118.0,
+              106.0
+            ],
+            [
+              1397.0,
+              0.0,
+              65.0,
+              58.0
+            ]
+          ],
+          "start_timestamp": 176.36800000000002,
+          "end_timestamp": 182.96800000000002,
+          "direction": ""
+        },
+        {
+          "camera_id": "c091",
+          "object_id": 313,
+          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_313_185_191_c038.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            96,
+            107,
+            118,
+            129,
+            140,
+            151
+          ],
+          "bboxes": [
+            [
+              0.0,
+              671.0,
+              1116.0,
+              782.0
+            ],
+            [
+              1393.0,
+              826.0,
+              442.0,
+              284.0
+            ],
+            [
+              1778.0,
+              866.0,
+              226.0,
+              164.0
+            ],
+            [
+              1935.0,
+              868.0,
+              147.0,
+              131.0
+            ],
+            [
+              2019.0,
+              875.0,
+              107.0,
+              95.0
+            ],
+            [
+              2070.0,
+              879.0,
+              90.0,
+              78.0
+            ]
+          ],
+          "start_timestamp": 185.02599999999998,
+          "end_timestamp": 190.826,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c09",
+        "B. c054",
+        "C. c028"
+      ],
+      "correct_cam_name": [
+        "C. c028"
+      ],
+      "correct_time_str": [
+        "12:03:03.000-12:03:20.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "FXxVAzrzzBrppzKybDfdub",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_FXxVAzrzzBrppzKybDfdub.png",
+      "camera_images": [
+        {
+          "camera_id": "c046",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_185_190_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            140,
+            151,
+            162,
+            173,
+            184,
+            195
+          ],
+          "bboxes": [
+            [
+              1629.0,
+              160.0,
+              291.0,
+              332.0
+            ],
+            [
+              1567.0,
+              152.0,
+              278.0,
+              265.0
+            ],
+            [
+              1518.0,
+              151.0,
+              227.0,
+              216.0
+            ],
+            [
+              1477.0,
+              153.0,
+              207.0,
+              191.0
+            ],
+            [
+              1455.0,
+              157.0,
+              180.0,
+              156.0
+            ],
+            [
+              1438.0,
+              159.0,
+              157.0,
+              144.0
+            ]
+          ],
+          "start_timestamp": 184.797,
+          "end_timestamp": 190.49699999999999,
+          "direction": ""
+        },
+        {
+          "camera_id": "c074",
+          "object_id": 313,
+          "video_path": "./raw_video/outdoor_S04_c039.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_313_184_185_c039.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            88,
+            89,
+            90
+          ],
+          "bboxes": [
+            [
+              0.0,
+              675.0,
+              1947.0,
+              912.0
+            ],
+            [
+              183.0,
+              652.0,
+              2196.0,
+              935.0
+            ],
+            [
+              594.0,
+              645.0,
+              1966.0,
+              927.0
+            ]
+          ],
+          "start_timestamp": 184.44400000000002,
+          "end_timestamp": 184.644,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c062",
+        "B. c049",
+        "C. c01"
+      ],
+      "correct_cam_name": [
+        "B. c049"
+      ],
+      "correct_time_str": [
+        "12:03:05.000-12:03:16.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "e4R492CjLer3yHAqMi5uRR",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_e4R492CjLer3yHAqMi5uRR.png",
+      "camera_images": [
+        {
+          "camera_id": "c022",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_185_190_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            140,
+            151,
+            162,
+            173,
+            184,
+            195
+          ],
+          "bboxes": [
+            [
+              1629.0,
+              160.0,
+              291.0,
+              332.0
+            ],
+            [
+              1567.0,
+              152.0,
+              278.0,
+              265.0
+            ],
+            [
+              1518.0,
+              151.0,
+              227.0,
+              216.0
+            ],
+            [
+              1477.0,
+              153.0,
+              207.0,
+              191.0
+            ],
+            [
+              1455.0,
+              157.0,
+              180.0,
+              156.0
+            ],
+            [
+              1438.0,
+              159.0,
+              157.0,
+              144.0
+            ]
+          ],
+          "start_timestamp": 184.797,
+          "end_timestamp": 190.49699999999999,
+          "direction": ""
+        },
+        {
+          "camera_id": "c060",
+          "object_id": 315,
+          "video_path": "./raw_video/outdoor_S04_c039.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_315_187_187_c039.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            111,
+            112,
+            113
+          ],
+          "bboxes": [
+            [
+              32.0,
+              736.0,
+              1803.0,
+              732.0
+            ],
+            [
+              501.0,
+              727.0,
+              1777.0,
+              737.0
+            ],
+            [
+              948.0,
+              725.0,
+              1612.0,
+              737.0
+            ]
+          ],
+          "start_timestamp": 186.744,
+          "end_timestamp": 186.94400000000002,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c017",
+        "B. c052",
+        "C. c093"
+      ],
+      "correct_cam_name": [
+        "C. c093"
+      ],
+      "correct_time_str": [
+        "12:03:07.000-12:03:16.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "QLCvndozXax2cafozDkXTr",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_QLCvndozXax2cafozDkXTr.png",
+      "camera_images": [
+        {
+          "camera_id": "c04",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_185_190_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            140,
+            151,
+            162,
+            173,
+            184,
+            195
+          ],
+          "bboxes": [
+            [
+              1629.0,
+              160.0,
+              291.0,
+              332.0
+            ],
+            [
+              1567.0,
+              152.0,
+              278.0,
+              265.0
+            ],
+            [
+              1518.0,
+              151.0,
+              227.0,
+              216.0
+            ],
+            [
+              1477.0,
+              153.0,
+              207.0,
+              191.0
+            ],
+            [
+              1455.0,
+              157.0,
+              180.0,
+              156.0
+            ],
+            [
+              1438.0,
+              159.0,
+              157.0,
+              144.0
+            ]
+          ],
+          "start_timestamp": 184.797,
+          "end_timestamp": 190.49699999999999,
+          "direction": ""
+        },
+        {
+          "camera_id": "c021",
+          "object_id": 318,
+          "video_path": "./raw_video/outdoor_S04_c039.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_318_193_193_c039.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            174,
+            175,
+            176
+          ],
+          "bboxes": [
+            [
+              0.0,
+              734.0,
+              1831.0,
+              741.0
+            ],
+            [
+              435.0,
+              708.0,
+              1975.0,
+              773.0
+            ],
+            [
+              1017.0,
+              721.0,
+              1543.0,
+              754.0
+            ]
+          ],
+          "start_timestamp": 193.044,
+          "end_timestamp": 193.244,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c075",
+        "B. c014",
+        "C. c040"
+      ],
+      "correct_cam_name": [
+        "C. c040"
+      ],
+      "correct_time_str": [
+        "12:03:10.000-12:03:19.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "oXvkpqwJRkSTLnDDZspqrZ",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_oXvkpqwJRkSTLnDDZspqrZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c069",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_176_183_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            108,
+            121,
+            134,
+            147,
+            160,
+            173
+          ],
+          "bboxes": [
+            [
+              0.0,
+              545.0,
+              206.0,
+              217.0
+            ],
+            [
+              176.0,
+              396.0,
+              419.0,
+              266.0
+            ],
+            [
+              680.0,
+              214.0,
+              487.0,
+              253.0
+            ],
+            [
+              1209.0,
+              104.0,
+              242.0,
+              163.0
+            ],
+            [
+              1378.0,
+              37.0,
+              118.0,
+              106.0
+            ],
+            [
+              1397.0,
+              0.0,
+              65.0,
+              58.0
+            ]
+          ],
+          "start_timestamp": 176.36800000000002,
+          "end_timestamp": 182.96800000000002,
+          "direction": ""
+        },
+        {
+          "camera_id": "c06",
+          "object_id": 320,
+          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_320_176_182_c038.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            13,
+            25,
+            37,
+            49,
+            61
+          ],
+          "bboxes": [
+            [
+              2014.0,
+              904.0,
+              182.0,
+              178.0
+            ],
+            [
+              2070.0,
+              905.0,
+              151.0,
+              133.0
+            ],
+            [
+              2115.0,
+              906.0,
+              121.0,
+              107.0
+            ],
+            [
+              2148.0,
+              901.0,
+              104.0,
+              94.0
+            ],
+            [
+              2170.0,
+              904.0,
+              92.0,
+              81.0
+            ],
+            [
+              2187.0,
+              904.0,
+              82.0,
+              74.0
+            ]
+          ],
+          "start_timestamp": 175.52599999999998,
+          "end_timestamp": 181.52599999999998,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c045",
+        "B. c073",
+        "C. c055"
+      ],
+      "correct_cam_name": [
+        "C. c055"
+      ],
+      "correct_time_str": [
+        "12:03:03.000-12:03:13.000"
+      ]
+    },
+    {
+      "task_id": "Multi-Target Trajectory Forecasting",
+      "case_id": "n79qCCPFLVnGgC3b3TbCH5",
+      "scene": "S04",
+      "map_image_path": "./map/meeting_prediction_n79qCCPFLVnGgC3b3TbCH5.png",
+      "camera_images": [
+        {
+          "camera_id": "c069",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c026.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_90_102_c026.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            193,
+            217,
+            241,
+            265,
+            289
+          ],
+          "bboxes": [
+            [
+              1041.0,
+              840.0,
+              395.0,
+              239.0
+            ],
+            [
+              1093.0,
+              514.0,
+              258.0,
+              203.0
+            ],
+            [
+              1115.0,
+              323.0,
+              185.0,
+              150.0
+            ],
+            [
+              1121.0,
+              203.0,
+              147.0,
+              124.0
+            ],
+            [
+              1136.0,
+              138.0,
+              125.0,
+              101.0
+            ]
+          ],
+          "start_timestamp": 89.75,
+          "end_timestamp": 101.65,
+          "direction": ""
+        },
+        {
+          "camera_id": "c06",
+          "object_id": 298,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_298_101_108_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            9,
+            23,
+            37,
+            51,
+            65,
+            79
+          ],
+          "bboxes": [
+            [
+              1468.0,
+              346.0,
+              452.0,
+              290.0
+            ],
+            [
+              1054.0,
+              273.0,
+              561.0,
+              266.0
+            ],
+            [
+              609.0,
+              217.0,
+              497.0,
+              210.0
+            ],
+            [
+              322.0,
+              176.0,
+              298.0,
+              155.0
+            ],
+            [
+              120.0,
+              171.0,
+              188.0,
+              117.0
+            ],
+            [
+              0.0,
+              170.0,
+              119.0,
+              86.0
+            ]
+          ],
+          "start_timestamp": 101.01,
+          "end_timestamp": 108.21,
+          "direction": ""
+        }
+      ],
+      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
+      "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
+      "choices": [
+        "A. c036",
+        "B. c017",
+        "C. c091"
+      ],
+      "correct_cam_name": [
+        "A. c036"
+      ],
+      "correct_time_str": [
+        "12:01:49.000-12:02:02.000"
+      ]
+    }
+  ]
+}

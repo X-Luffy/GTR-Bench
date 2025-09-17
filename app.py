@@ -1,0 +1,1023 @@
+import streamlit as st
+import json
+import os
+import cv2
+import numpy as np
+from PIL import Image
+import time
+from datetime import datetime
+import pandas as pd
+from utils.data_loader import DataLoader
+from utils.video_processor import VideoProcessor
+from utils.scoring import ScoringSystem
+from components.question_display import QuestionDisplay
+from components.result_display import ResultDisplay
+
+def seconds_to_time_format(seconds):
+    """
+    将秒数转换为12:00:00.000格式
+    
+    Args:
+        seconds: 秒数（浮点数）
+        
+    Returns:
+        格式化的时间字符串
+    """
+    # 计算小时、分钟、秒和毫秒
+    hours = int(seconds // 3600)
+    minutes = int((seconds % 3600) // 60)
+    secs = int(seconds % 60)
+    milliseconds = int((seconds % 1) * 1000)
+    
+    # 格式化为12:00:00.000格式
+    return f"12:{minutes:02d}:{secs:02d}.{milliseconds:03d}"
+
+# 设置页面配置
+st.set_page_config(
+    page_title="人类水平评估系统",
+    page_icon="🎯",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# 自定义CSS样式
+st.markdown("""
+<style>
+    .main-header {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1f77b4;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .sub-header {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+    .question-container {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 5px solid #1f77b4;
+        margin-bottom: 1rem;
+    }
+    .camera-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    .camera-card {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .submit-button {
+        background-color: #28a745;
+        color: white;
+        padding: 0.75rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .submit-button:hover {
+        background-color: #218838;
+    }
+    .result-correct {
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        color: #155724;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+    }
+    .result-incorrect {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        color: #721c24;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+    }
+    .task-info {
+        background-color: #e3f2fd;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border-left: 4px solid #2196f3;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+def main():
+    # 初始化session state
+    if 'current_task' not in st.session_state:
+        st.session_state.current_task = None
+    if 'current_case_index' not in st.session_state:
+        st.session_state.current_case_index = 0
+    if 'user_answers' not in st.session_state:
+        st.session_state.user_answers = {}
+    if 'start_time' not in st.session_state:
+        st.session_state.start_time = None
+    if 'results' not in st.session_state:
+        st.session_state.results = []
+    if 'data_loader' not in st.session_state:
+        st.session_state.data_loader = DataLoader()
+    if 'video_processor' not in st.session_state:
+        st.session_state.video_processor = VideoProcessor()
+    if 'scoring_system' not in st.session_state:
+        st.session_state.scoring_system = ScoringSystem()
+    if 'editing_mode' not in st.session_state:
+        st.session_state.editing_mode = False
+
+    # 主标题
+    st.markdown('<h1 class="main-header">🎯 人类水平评估系统</h1>', unsafe_allow_html=True)
+
+    # 侧边栏配置
+    with st.sidebar:
+        st.markdown('<h3 class="sub-header">📋 系统配置</h3>', unsafe_allow_html=True)
+        
+        # 场景选择
+        scene = st.selectbox(
+            "选择场景",
+            ["outdoor", "indoor"],
+            index=0
+        )
+        
+        # 任务类型选择
+        task_types = {
+            "outdoor": [
+                "MotionState",
+                "GeoLocation", 
+                "ArrivalTimeInterval",
+                "CasualReordering",
+                "TrajectoryForecasting",
+                "NextSpotForecasting",
+                "MultiTrajectoryForecasting"
+            ],
+            "indoor": [
+                "MotionState",
+                "GeoLocation",
+                "ArrivalTimeInterval", 
+                "CasualReordering",
+                "TrajectoryForecasting",
+                "NextSpotForecasting",
+                "MultiTrajectoryForecasting"
+            ]
+        }
+        
+        task_type = st.selectbox(
+            "选择任务类型",
+            task_types[scene],
+            index=0
+        )
+        
+        # 显示任务说明
+        task_descriptions = {
+            "MotionState": "运动状态推理 - 选择题",
+            "GeoLocation": "地理位置推理 - 选择题", 
+            "ArrivalTimeInterval": "到达时间间隔推理 - 选择题",
+            "CasualReordering": "因果重排序推理 - 选择题",
+            "NextSpotForecasting": "下一位置预测 - 选择题 + 时间范围填空",
+            "TrajectoryForecasting": "轨迹预测 - 预测两个摄像头 + 时间范围",
+            "MultiTrajectoryForecasting": "多轨迹预测 - 选择题 + 时间范围填空"
+        }
+        
+        if task_type in task_descriptions:
+            st.info(f"📝 {task_descriptions[task_type]}")
+        
+        # 加载数据
+        if st.button("🔄 加载题目数据"):
+            try:
+                st.session_state.data_loader.load_data(scene, task_type)
+                st.session_state.current_task = f"{scene}_{task_type}"
+                st.session_state.current_case_index = 0
+                st.session_state.user_answers = {}
+                st.session_state.question_started = False
+                st.session_state.answer_submitted = False
+                st.session_state.start_time = None
+                st.success(f"✅ 成功加载 {scene} - {task_type} 题目数据")
+            except Exception as e:
+                st.error(f"❌ 加载数据失败: {str(e)}")
+        
+        st.markdown("---")
+        
+        # 显示统计信息
+        if st.session_state.data_loader.data:
+            st.markdown('<h4>📊 统计信息</h4>', unsafe_allow_html=True)
+            total_cases = len(st.session_state.data_loader.data.get('cases', []))
+            st.write(f"总题目数: {total_cases}")
+            st.write(f"当前题目: {st.session_state.current_case_index + 1}")
+            
+            # 题目导航
+            if total_cases > 0:
+                case_index = st.slider(
+                    "选择题目",
+                    0, total_cases - 1,
+                    st.session_state.current_case_index
+                )
+                if case_index != st.session_state.current_case_index:
+                    st.session_state.current_case_index = case_index
+                    st.session_state.user_answers = {}
+                    st.session_state.question_started = False
+                    st.session_state.answer_submitted = False
+                    st.session_state.start_time = None
+                    st.rerun()
+        
+        st.markdown("---")
+        
+        # 查看结果
+        if st.button("📈 查看答题结果"):
+            if st.session_state.results:
+                show_results_summary()
+            else:
+                st.warning("暂无答题记录")
+        
+        st.markdown("---")
+        
+        # 题目编辑功能
+        if st.session_state.data_loader.data:
+            st.markdown('<h4>✏️ 题目编辑</h4>', unsafe_allow_html=True)
+            if st.button("📝 编辑当前题目"):
+                st.session_state.editing_mode = True
+                st.rerun()
+            
+            if st.button("🗑️ 删除当前题目"):
+                if st.session_state.data_loader.data and st.session_state.current_case_index < len(st.session_state.data_loader.data.get('cases', [])):
+                    delete_current_case()
+                    st.success("题目已删除")
+                    st.rerun()
+
+    # 主内容区域
+    if st.session_state.data_loader.data and st.session_state.current_task:
+        if st.session_state.editing_mode:
+            # 显示编辑界面
+            current_case = st.session_state.data_loader.data['cases'][st.session_state.current_case_index]
+            display_edit_interface(current_case)
+        else:
+            # 显示正常答题界面
+            display_current_question()
+    else:
+        st.info("👈 请在左侧选择场景和任务类型，然后加载题目数据")
+
+def display_current_question():
+    """显示当前题目"""
+    data = st.session_state.data_loader.data
+    cases = data.get('cases', [])
+    
+    if not cases or st.session_state.current_case_index >= len(cases):
+        st.error("题目数据加载失败或索引超出范围")
+        return
+    
+    current_case = cases[st.session_state.current_case_index]
+    # 提取任务类型，处理不同的格式
+    task_id = current_case.get('task_id', '')
+    if task_id:
+        # 直接使用task_id作为任务类型
+        task_type = task_id
+    else:
+        task_type = ''
+    
+    # 初始化答题状态
+    if 'question_started' not in st.session_state:
+        st.session_state.question_started = False
+    if 'answer_submitted' not in st.session_state:
+        st.session_state.answer_submitted = False
+    
+    # 显示题目信息
+    st.markdown(f'<h2 class="sub-header">📝 题目 {st.session_state.current_case_index + 1}</h2>', unsafe_allow_html=True)
+    
+    # 显示任务类型信息
+    task_descriptions = {
+        "MotionState": "🎯 运动状态推理任务 - 请根据提供的视频信息推理目标的运动状态",
+        "GeoLocation": "🎯 地理位置推理任务 - 请根据提供的视频信息推理目标的空间位置关系",
+        "ArrivalTimeInterval": "🎯 到达时间间隔推理任务 - 请根据提供的视频信息推理目标的时间顺序",
+        "CasualReordering": "🎯 因果重排序推理任务 - 请根据提供的视频信息推理目标的因果关系",
+        "NextSpotForecasting": "🎯 下一位置预测任务 - 请预测目标接下来经过的位置和时间范围",
+        "TrajectoryForecasting": "🎯 轨迹预测任务 - 请预测目标接下来经过的两个位置和对应时间范围",
+        "MultiTrajectoryForecasting": "🎯 多轨迹预测任务 - 请预测多个目标的轨迹和时间范围"
+    }
+    
+    if task_type in task_descriptions:
+        st.markdown(f'<div class="task-info">{task_descriptions[task_type]}</div>', unsafe_allow_html=True)
+    
+    # 自动开始答题（不需要按钮）
+    if not st.session_state.question_started:
+        st.session_state.question_started = True
+        st.session_state.start_time = time.time()
+    
+    # 如果答案已提交，显示结果但不阻止继续操作
+    if st.session_state.answer_submitted:
+        # 答案已提交，但用户可以继续查看题目和结果
+        pass
+    
+    # 显示地图
+    if current_case.get('map_image_path'):
+        # 修改地图路径处理
+        map_path = current_case['map_image_path']
+        if map_path.startswith('./'):
+            # 相对于数据目录的路径
+            scene = st.session_state.current_task.split('_')[0] if st.session_state.current_task else 'indoor'
+            map_path = os.path.join(
+                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data",
+                scene,
+                map_path.replace('./', '')
+            )
+        
+        if os.path.exists(map_path):
+            st.markdown('<h4>🗺️ 场景地图</h4>', unsafe_allow_html=True)
+            try:
+                map_image = Image.open(map_path)
+                # 创建地图容器，限制最大尺寸
+                with st.container():
+                    col1, col2, col3 = st.columns([1, 2, 1])
+                    with col2:
+                        # 限制地图大小
+                        st.image(map_image, use_container_width=True)
+            except Exception as e:
+                st.error(f"无法加载地图图像: {str(e)}")
+        else:
+            st.warning(f"地图文件不存在: {map_path}")
+    
+    # 显示摄像头图像
+    camera_images = current_case.get('camera_images', [])
+    if camera_images:
+        st.markdown('<h4>📹 摄像头图像</h4>', unsafe_allow_html=True)
+        
+        # 为每个摄像头显示图像
+        for i, camera in enumerate(camera_images):
+            camera_id = camera.get('camera_id', f'Camera_{i}')
+            
+            # 对于CasualReordering任务，不显示时间范围
+            if task_type == "CasualReordering":
+                expander_title = f"📹 摄像头 {camera_id}"
+            else:
+                # 转换时间格式
+                start_time_str = seconds_to_time_format(camera['start_timestamp'])
+                end_time_str = seconds_to_time_format(camera['end_timestamp'])
+                expander_title = f"📹 摄像头 {camera_id} (时间: {start_time_str} - {end_time_str})"
+            
+            with st.expander(expander_title):
+                # 显示视频路径信息
+                video_path = camera.get('video_path', '')
+                
+                # 处理相对路径，转换为绝对路径
+                if video_path.startswith('./'):
+                    # 相对于数据目录的路径
+                    scene = st.session_state.current_task.split('_')[0] if st.session_state.current_task else 'indoor'
+                    video_path = os.path.join(
+                        "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data",
+                        scene,
+                        video_path.replace('./', '')
+                    )
+                
+                st.write(f"**视频路径:** {video_path}")
+                
+                # 检查视频文件是否存在
+                if os.path.exists(video_path):
+                    st.success("✅ 视频文件存在")
+                    
+                    # 从视频中提取帧
+                    frames = st.session_state.video_processor.extract_frames(
+                        video_path,
+                        camera['frame_ids'],
+                        camera['bboxes']
+                    )
+                    
+                    if frames:
+                        # 显示3张均匀选择的帧
+                        cols = st.columns(3)
+                        for j, frame in enumerate(frames):
+                            with cols[j]:
+                                st.image(frame, caption=f"帧 {camera['frame_ids'][j]}", use_container_width=True)
+                    else:
+                        st.warning(f"无法从视频中提取帧")
+                        
+                        # 尝试获取视频信息
+                        video_info = st.session_state.video_processor.get_video_info(video_path)
+                        if video_info:
+                            st.write("**视频信息:**")
+                            st.write(f"- 总帧数: {video_info['frame_count']}")
+                            st.write(f"- 帧率: {video_info['fps']:.2f}")
+                            st.write(f"- 分辨率: {video_info['width']}x{video_info['height']}")
+                            st.write(f"- 时长: {video_info['duration']:.2f}秒")
+                        
+                        # 显示请求的帧ID
+                        st.write(f"**请求的帧ID:** {camera['frame_ids']}")
+                        
+                else:
+                    st.error(f"❌ 视频文件不存在: {video_path}")
+                    
+                    # 尝试查找替代路径
+                    alt_paths = [
+                        video_path.replace('/home/mnt/xieqinghongbing/data/indoor/train/../track_processed/', '/home/mnt/xieqinghongbing/data/indoor/track_processed/'),
+                        video_path.replace('/home/mnt/xieqinghongbing/data/indoor/train/../track_processed/', '/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data/indoor/videos/'),
+                    ]
+                    
+                    st.write("**尝试替代路径:**")
+                    for alt_path in alt_paths:
+                        if os.path.exists(alt_path):
+                            st.success(f"✅ 找到替代路径: {alt_path}")
+                            break
+                        else:
+                            st.write(f"❌ {alt_path}")
+    
+    # 显示问题
+    st.markdown('<h4>❓ 问题</h4>', unsafe_allow_html=True)
+    question = current_case.get('question', '')
+    st.markdown(f'<div class="question-container">{question}</div>', unsafe_allow_html=True)
+    
+    # 根据任务类型显示不同的答题界面
+    display_question_interface(current_case, task_type)
+    
+    # 提交和导航按钮
+    col1, col2, col3 = st.columns([1, 1, 1])
+    
+    with col1:
+        # 上一题按钮
+        total_cases = len(st.session_state.data_loader.data.get('cases', []))
+        if st.session_state.current_case_index > 0:
+            if st.button("⬅️ 上一题", use_container_width=True):
+                st.session_state.current_case_index -= 1
+                st.session_state.user_answers = {}
+                st.session_state.question_started = False
+                st.session_state.answer_submitted = False
+                st.session_state.start_time = None
+                st.rerun()
+        else:
+            st.button("⬅️ 上一题", disabled=True, use_container_width=True)
+    
+    with col2:
+        if st.button("✅ 提交答案", type="primary", use_container_width=True):
+            submit_answer(current_case)
+    
+    with col3:
+        # 下一题按钮
+        if st.session_state.current_case_index < total_cases - 1:
+            if st.button("➡️ 下一题", use_container_width=True):
+                st.session_state.current_case_index += 1
+                st.session_state.user_answers = {}
+                st.session_state.question_started = False
+                st.session_state.answer_submitted = False
+                st.session_state.start_time = None
+                st.rerun()
+        else:
+            st.button("➡️ 下一题", disabled=True, use_container_width=True)
+    
+    # 显示答题时间
+    if st.session_state.start_time:
+        elapsed_time = time.time() - st.session_state.start_time
+        st.info(f"⏱️ 答题时间: {elapsed_time:.1f} 秒")
+
+def display_question_interface(case, task_type):
+    """根据任务类型显示不同的答题界面"""
+    
+    # 根据任务类型显示不同的界面
+    if task_type in ["NextSpotForecasting", "MultiTrajectoryForecasting"]:
+        # 选择+时间范围填空任务
+        display_option_and_time_fields(case)
+    elif task_type == "TrajectoryForecasting":
+        # 轨迹预测任务（只有轨迹预测填空）
+        display_trajectory_forecasting_fields(case)
+    else:
+        # 纯选择题任务
+        display_option_only_fields(case)
+
+def display_option_only_fields(case):
+    """显示纯选择题界面"""
+    choices = case.get('choices', [])
+    if choices:
+        st.markdown('<h4>🔘 选项</h4>', unsafe_allow_html=True)
+        
+        # 单选
+        selected_option = st.radio(
+            "Choose the correct answer:",
+            choices,
+            index=st.session_state.user_answers.get('option_index', 0)
+        )
+        st.session_state.user_answers['option_index'] = choices.index(selected_option) if selected_option in choices else 0
+        st.session_state.user_answers['options'] = [selected_option]
+
+def display_option_and_time_fields(case):
+    """显示选项+时间范围填空界面"""
+    choices = case.get('choices', [])
+    if choices:
+        st.markdown('<h4>🔘 选项</h4>', unsafe_allow_html=True)
+        
+        # 单选
+        selected_option = st.radio(
+            "Choose the correct answer:",
+            choices,
+            index=st.session_state.user_answers.get('option_index', 0)
+        )
+        st.session_state.user_answers['option_index'] = choices.index(selected_option) if selected_option in choices else 0
+        st.session_state.user_answers['options'] = [selected_option]
+    
+    # 显示时间范围填空
+    display_time_range_fields(case)
+
+def display_time_range_fields(case):
+    """显示时间范围填空题"""
+    st.markdown('<h4>⏰ 时间范围填空</h4>', unsafe_allow_html=True)
+    
+    # 检查是否有时间信息
+    time_fields = []
+    
+    # 检查correct_time_str字段
+    if 'correct_time_str' in case and case['correct_time_str']:
+        for i, time_str in enumerate(case['correct_time_str']):
+            if '-' in time_str:
+                start_time, end_time = time_str.split('-')
+                time_fields.append((f'time_range_{i}_start', f'时间范围 {i+1} 开始时间', start_time))
+                time_fields.append((f'time_range_{i}_end', f'时间范围 {i+1} 结束时间', end_time))
+            else:
+                time_fields.append((f'time_range_{i}', f'时间范围 {i+1}', time_str))
+    
+    # 检查start_point和end_point字段
+    if 'start_point' in case and case['start_point'].get('time'):
+        time_fields.append(('start_time', '开始时间', case['start_point']['time']))
+    if 'end_point' in case and case['end_point'].get('time'):
+        time_fields.append(('end_time', '结束时间', case['end_point']['time']))
+    
+    if time_fields:
+        time_answers = {}
+        
+        for field_id, field_name, gt_time in time_fields:
+            time_input = st.text_input(
+                f"{field_name} (格式: HH:MM:SS.mmm)",
+                value=st.session_state.user_answers.get(field_id, ''),
+                help=f"正确答案格式: {gt_time}"
+            )
+            # 自动纠正时间格式（将冒号改为点号）
+            if time_input and time_input.count(':') > 2:
+                # 如果冒号超过2个，将最后一个冒号改为点号
+                parts = time_input.split(':')
+                if len(parts) > 3:
+                    time_input = ':'.join(parts[:-1]) + '.' + parts[-1]
+            time_answers[field_id] = time_input
+        
+        st.session_state.user_answers.update(time_answers)
+    else:
+        st.info("该题目没有时间范围填空要求")
+
+def display_trajectory_forecasting_fields(case):
+    """显示轨迹预测填空题"""
+    st.markdown('<h4>🎯 轨迹预测</h4>', unsafe_allow_html=True)
+    
+    # 获取选项和正确答案
+    choices = case.get('choices', [])
+    correct_cam_names = case.get('correct_cam_name', [])
+    correct_time_strs = case.get('correct_time_str', [])
+    
+    # 第一段预测
+    st.markdown("**第一段预测:**")
+    
+    # 第一个摄像头选择
+    if choices:
+        first_camera_option = st.radio(
+            "第一个摄像头:",
+            choices,
+            index=st.session_state.user_answers.get('first_camera_index', 0),
+            key="first_camera_radio"
+        )
+        first_camera_index = choices.index(first_camera_option) if first_camera_option in choices else 0
+        first_camera = first_camera_option
+    else:
+        first_camera = st.text_input(
+            "第一个摄像头ID:",
+            value=st.session_state.user_answers.get('first_camera', ''),
+            help=f"正确答案: {correct_cam_names[0] if len(correct_cam_names) > 0 else '未知'}"
+        )
+        first_camera_index = 0
+    
+    # 第一段时间范围
+    if len(correct_time_strs) > 0:
+        first_time_range = correct_time_strs[0]
+        if '-' in first_time_range:
+            first_start, first_end = first_time_range.split('-')
+        else:
+            first_start = first_end = first_time_range
+    else:
+        first_start = first_end = ""
+    
+    first_start_time = st.text_input(
+        "第一段开始时间 (格式: HH:MM:SS.mmm):",
+        value=st.session_state.user_answers.get('first_start_time', ''),
+        help=f"正确答案: {first_start}"
+    )
+    # 自动纠正时间格式（将冒号改为点号）
+    if first_start_time and first_start_time.count(':') > 2:
+        # 如果冒号超过2个，将最后一个冒号改为点号
+        parts = first_start_time.split(':')
+        if len(parts) > 3:
+            first_start_time = ':'.join(parts[:-1]) + '.' + parts[-1]
+    
+    first_end_time = st.text_input(
+        "第一段结束时间 (格式: HH:MM:SS.mmm):",
+        value=st.session_state.user_answers.get('first_end_time', ''),
+        help=f"正确答案: {first_end}"
+    )
+    # 自动纠正时间格式（将冒号改为点号）
+    if first_end_time and first_end_time.count(':') > 2:
+        # 如果冒号超过2个，将最后一个冒号改为点号
+        parts = first_end_time.split(':')
+        if len(parts) > 3:
+            first_end_time = ':'.join(parts[:-1]) + '.' + parts[-1]
+    
+    # 第二段预测
+    st.markdown("**第二段预测:**")
+    
+    # 第二个摄像头选择
+    if choices:
+        second_camera_option = st.radio(
+            "第二个摄像头:",
+            choices,
+            index=st.session_state.user_answers.get('second_camera_index', 0),
+            key="second_camera_radio"
+        )
+        second_camera_index = choices.index(second_camera_option) if second_camera_option in choices else 0
+        second_camera = second_camera_option
+    else:
+        second_camera = st.text_input(
+            "第二个摄像头ID:",
+            value=st.session_state.user_answers.get('second_camera', ''),
+            help=f"正确答案: {correct_cam_names[1] if len(correct_cam_names) > 1 else '未知'}"
+        )
+        second_camera_index = 0
+    
+    # 第二段时间范围
+    if len(correct_time_strs) > 1:
+        second_time_range = correct_time_strs[1]
+        if '-' in second_time_range:
+            second_start, second_end = second_time_range.split('-')
+        else:
+            second_start = second_end = second_time_range
+    else:
+        second_start = second_end = ""
+    
+    second_start_time = st.text_input(
+        "第二段开始时间 (格式: HH:MM:SS.mmm):",
+        value=st.session_state.user_answers.get('second_start_time', ''),
+        help=f"正确答案: {second_start}"
+    )
+    # 自动纠正时间格式（将冒号改为点号）
+    if second_start_time and second_start_time.count(':') > 2:
+        # 如果冒号超过2个，将最后一个冒号改为点号
+        parts = second_start_time.split(':')
+        if len(parts) > 3:
+            second_start_time = ':'.join(parts[:-1]) + '.' + parts[-1]
+    
+    second_end_time = st.text_input(
+        "第二段结束时间 (格式: HH:MM:SS.mmm):",
+        value=st.session_state.user_answers.get('second_end_time', ''),
+        help=f"正确答案: {second_end}"
+    )
+    # 自动纠正时间格式（将冒号改为点号）
+    if second_end_time and second_end_time.count(':') > 2:
+        # 如果冒号超过2个，将最后一个冒号改为点号
+        parts = second_end_time.split(':')
+        if len(parts) > 3:
+            second_end_time = ':'.join(parts[:-1]) + '.' + parts[-1]
+    
+    # 保存答案
+    st.session_state.user_answers.update({
+        'first_camera': first_camera,
+        'first_camera_index': first_camera_index,
+        'first_start_time': first_start_time,
+        'first_end_time': first_end_time,
+        'second_camera': second_camera,
+        'second_camera_index': second_camera_index,
+        'second_start_time': second_start_time,
+        'second_end_time': second_end_time
+    })
+
+def submit_answer(current_case):
+    """提交答案并计算得分"""
+    end_time = time.time()
+    elapsed_time = end_time - st.session_state.start_time
+    
+    # 计算得分
+    score_result = st.session_state.scoring_system.calculate_score_new(
+        current_case,
+        st.session_state.user_answers,
+        elapsed_time
+    )
+    
+    # 保存结果
+    result = {
+        'case_id': current_case.get('case_id', ''),
+        'task_type': st.session_state.current_task if st.session_state.current_task else '',
+        'user_answers': st.session_state.user_answers.copy(),
+        'ground_truth': current_case.get('correct_cam_name', current_case.get('ground_truth', '')),
+        'score': score_result['score'],
+        'time_score': score_result['time_score'],
+        'accuracy_score': score_result['accuracy_score'],
+        'elapsed_time': elapsed_time,
+        'timestamp': datetime.now().isoformat()
+    }
+    
+    st.session_state.results.append(result)
+    
+    # 显示结果
+    show_result(result, current_case)
+    
+    # 设置答案已提交状态
+    st.session_state.answer_submitted = True
+
+def show_result(result, current_case):
+    """显示答题结果"""
+    st.markdown('<h3 class="sub-header">📊 答题结果</h3>', unsafe_allow_html=True)
+    
+    if result['accuracy_score'] > 0:
+        st.markdown('<div class="result-correct">✅ 回答正确！</div>', unsafe_allow_html=True)
+    else:
+        st.markdown('<div class="result-incorrect">❌ 回答错误</div>', unsafe_allow_html=True)
+    
+    # 显示详细信息
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.metric("总得分", f"{result['score']:.2f}")
+        st.metric("准确率得分", f"{result['accuracy_score']:.2f}")
+        st.metric("时间得分", f"{result['time_score']:.2f}")
+    
+    with col2:
+        st.metric("答题时间", f"{result['elapsed_time']:.1f}秒")
+        st.metric("题目类型", result['task_type'])
+        st.metric("题目ID", result['case_id'])
+    
+    # 显示正确答案
+    st.markdown('<h4>📋 正确答案</h4>', unsafe_allow_html=True)
+    
+    # 直接显示correct_cam_name和correct_time_str字段
+    correct_cam_names = current_case.get('correct_cam_name', [])
+    correct_time_strs = current_case.get('correct_time_str', [])
+    
+    if correct_cam_names:
+        st.info(f"**correct_cam_name:** {correct_cam_names}")
+    
+    if correct_time_strs:
+        st.info(f"**correct_time_str:** {correct_time_strs}")
+    
+    # 如果没有这些字段，显示ground_truth
+    if not correct_cam_names and not correct_time_strs:
+        ground_truth = current_case.get('ground_truth', '')
+        st.info(f"**ground_truth:** {ground_truth}")
+    
+    # 显示用户答案
+    st.markdown('<h4>👤 您的答案</h4>', unsafe_allow_html=True)
+    user_answers = result['user_answers']
+    
+    if 'options' in user_answers:
+        st.write(f"**选项答案:** {', '.join(user_answers['options'])}")
+    
+    time_answers = {k: v for k, v in user_answers.items() if k.endswith('_time')}
+    if time_answers:
+        st.write("**时间答案:**")
+        for field, answer in time_answers.items():
+            st.write(f"- {field}: {answer}")
+    
+    # 显示轨迹预测答案
+    trajectory_fields = ['first_camera', 'first_start_time', 'first_end_time', 
+                        'second_camera', 'second_start_time', 'second_end_time']
+    trajectory_answers = {k: v for k, v in user_answers.items() if k in trajectory_fields}
+    if trajectory_answers:
+        st.write("**轨迹预测答案:**")
+        
+        # 第一段
+        first_camera = trajectory_answers.get('first_camera', '')
+        first_start = trajectory_answers.get('first_start_time', '')
+        first_end = trajectory_answers.get('first_end_time', '')
+        if first_camera:
+            st.write(f"📹 **第一个摄像头ID:** {first_camera}")
+            if first_start and first_end:
+                st.write(f"⏰ **第一段时间范围:** {first_start} - {first_end}")
+            elif first_start:
+                st.write(f"⏰ **第一段时间:** {first_start}")
+        
+        # 第二段
+        second_camera = trajectory_answers.get('second_camera', '')
+        second_start = trajectory_answers.get('second_start_time', '')
+        second_end = trajectory_answers.get('second_end_time', '')
+        if second_camera:
+            st.write(f"📹 **第二个摄像头ID:** {second_camera}")
+            if second_start and second_end:
+                st.write(f"⏰ **第二段时间范围:** {second_start} - {second_end}")
+            elif second_start:
+                st.write(f"⏰ **第二段时间:** {second_start}")
+
+def show_results_summary():
+    """显示答题结果汇总"""
+    if not st.session_state.results:
+        st.warning("暂无答题记录")
+        return
+    
+    st.markdown('<h3 class="sub-header">📈 答题结果汇总</h3>', unsafe_allow_html=True)
+    
+    # 创建结果DataFrame
+    df = pd.DataFrame(st.session_state.results)
+    
+    # 显示统计信息
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric("总题目数", len(df))
+    
+    with col2:
+        correct_count = len(df[df['accuracy_score'] > 0])
+        st.metric("正确题目数", correct_count)
+    
+    with col3:
+        accuracy = correct_count / len(df) * 100 if len(df) > 0 else 0
+        st.metric("正确率", f"{accuracy:.1f}%")
+    
+    with col4:
+        avg_score = df['score'].mean() if len(df) > 0 else 0
+        st.metric("平均得分", f"{avg_score:.2f}")
+    
+    # 显示详细结果表格
+    st.markdown('<h4>📋 详细结果</h4>', unsafe_allow_html=True)
+    
+    # 简化显示列
+    display_df = df[['case_id', 'task_type', 'score', 'accuracy_score', 'time_score', 'elapsed_time']].copy()
+    display_df['elapsed_time'] = display_df['elapsed_time'].round(1)
+    display_df['score'] = display_df['score'].round(2)
+    display_df['accuracy_score'] = display_df['accuracy_score'].round(2)
+    display_df['time_score'] = display_df['time_score'].round(2)
+    
+    st.dataframe(display_df, use_container_width=True)
+    
+    # 导出结果
+    if st.button("📥 导出结果"):
+        csv = df.to_csv(index=False)
+        st.download_button(
+            label="下载CSV文件",
+            data=csv,
+            file_name=f"答题结果_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+            mime="text/csv"
+        )
+
+def delete_current_case():
+    """删除当前题目"""
+    if st.session_state.data_loader.data and st.session_state.current_case_index < len(st.session_state.data_loader.data.get('cases', [])):
+        cases = st.session_state.data_loader.data['cases']
+        del cases[st.session_state.current_case_index]
+        
+        # 如果删除的是最后一题，调整索引
+        if st.session_state.current_case_index >= len(cases):
+            st.session_state.current_case_index = max(0, len(cases) - 1)
+        
+        # 保存修改后的数据
+        save_modified_data()
+
+def save_modified_data():
+    """保存修改后的数据到文件"""
+    try:
+        scene = st.session_state.current_task.split('_')[0] if st.session_state.current_task else 'indoor'
+        task_type = st.session_state.current_task.split('_')[1] if st.session_state.current_task else ''
+        
+        if scene and task_type:
+            filename = f"{scene}_{task_type}_30.json"
+            file_path = os.path.join(
+                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data",
+                scene, filename
+            )
+            
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(st.session_state.data_loader.data, f, ensure_ascii=False, indent=2)
+            
+            st.success("数据已保存")
+    except Exception as e:
+        st.error(f"保存数据时出错: {str(e)}")
+
+def display_edit_interface(current_case):
+    """显示题目编辑界面"""
+    st.markdown('<h3>✏️ 编辑题目</h3>', unsafe_allow_html=True)
+    
+    # 创建编辑表单
+    with st.form("edit_case_form"):
+        # 编辑问题
+        st.markdown('<h4>编辑问题</h4>', unsafe_allow_html=True)
+        edited_question = st.text_area(
+            "Question:",
+            value=current_case.get('question', ''),
+            height=100
+        )
+        
+        # 编辑选项
+        st.markdown('<h4>编辑选项</h4>', unsafe_allow_html=True)
+        choices = current_case.get('choices', [])
+        edited_choices = []
+        
+        for i, choice in enumerate(choices):
+            edited_choice = st.text_input(
+                f"Choice {chr(65+i)}:",
+                value=choice,
+                key=f"choice_{i}"
+            )
+            edited_choices.append(edited_choice)
+        
+        # 编辑正确答案
+        st.markdown('<h4>编辑正确答案</h4>', unsafe_allow_html=True)
+        ground_truth = current_case.get('ground_truth', '')
+        edited_ground_truth = st.text_input(
+            "Ground Truth:",
+            value=ground_truth
+        )
+        
+        # 提交按钮
+        col1, col2, col3 = st.columns([1, 1, 1])
+        with col1:
+            if st.form_submit_button("💾 保存修改"):
+                # 更新数据
+                current_case['question'] = edited_question
+                current_case['choices'] = edited_choices
+                current_case['ground_truth'] = edited_ground_truth
+                
+                # 保存到文件
+                save_modified_data()
+                st.session_state.editing_mode = False
+                st.rerun()
+        
+        with col2:
+            if st.form_submit_button("❌ 取消"):
+                st.session_state.editing_mode = False
+                st.rerun()
+
+def display_ground_truth(case, task_type):
+    """根据任务类型显示正确的GT信息"""
+    
+    # 处理任务类型，确保使用正确的格式
+    if task_type == "Next Spot Forecasting":
+        task_type = "NextSpotForecasting"
+    elif task_type == "Trajectory Forecasting":
+        task_type = "TrajectoryForecasting"
+    elif task_type == "Multi Trajectory Forecasting" or task_type == "Multi-Target Trajectory Forecasting":
+        task_type = "MultiTrajectoryForecasting"
+    elif ' ' in task_type:
+        task_type = task_type.split()[-1]
+    
+    # 纯选择题任务：只显示选项答案
+    if task_type in ["MotionState", "GeoLocation", "ArrivalTimeInterval", "CasualReordering"]:
+        # 尝试从correct_cam_name获取，如果没有则从ground_truth获取
+        correct_cam_names = case.get('correct_cam_name', [])
+        if correct_cam_names:
+            st.info(f"**正确答案:** {correct_cam_names[0]}")
+        else:
+            ground_truth = case.get('ground_truth', '')
+            st.info(f"**正确答案:** {ground_truth}")
+    
+    # 选择+填空任务：显示camera选择和时间范围
+    elif task_type in ["NextSpotForecasting", "MultiTrajectoryForecasting"]:
+        correct_cam_names = case.get('correct_cam_name', [])
+        correct_time_strs = case.get('correct_time_str', [])
+        
+        if correct_cam_names:
+            st.info(f"**摄像头答案:** {correct_cam_names[0]}")
+        
+        if correct_time_strs:
+            for i, time_str in enumerate(correct_time_strs):
+                if '-' in time_str:
+                    start_time, end_time = time_str.split('-')
+                    st.info(f"**时间范围 {i+1}:** {start_time} - {end_time}")
+                else:
+                    st.info(f"**时间点 {i+1}:** {time_str}")
+    
+    # 轨迹预测任务：显示两个camera和两个时间范围
+    elif task_type == "TrajectoryForecasting":
+        correct_cam_names = case.get('correct_cam_name', [])
+        correct_time_strs = case.get('correct_time_str', [])
+        
+        if correct_cam_names and len(correct_cam_names) >= 2:
+            st.info(f"**第一段摄像头:** {correct_cam_names[0]}")
+            st.info(f"**第二段摄像头:** {correct_cam_names[1]}")
+        
+        if correct_time_strs and len(correct_time_strs) >= 2:
+            # 第一段时间
+            first_time = correct_time_strs[0]
+            if '-' in first_time:
+                start_time, end_time = first_time.split('-')
+                st.info(f"**第一段时间范围:** {start_time} - {end_time}")
+            else:
+                st.info(f"**第一段时间点:** {first_time}")
+            
+            # 第二段时间
+            second_time = correct_time_strs[1]
+            if '-' in second_time:
+                start_time, end_time = second_time.split('-')
+                st.info(f"**第二段时间范围:** {start_time} - {end_time}")
+            else:
+                st.info(f"**第二段时间点:** {second_time}")
+    
+    else:
+        # 默认情况
+        ground_truth = case.get('ground_truth', '')
+        st.info(f"**正确答案:** {ground_truth}")
+
+if __name__ == "__main__":
+    main()

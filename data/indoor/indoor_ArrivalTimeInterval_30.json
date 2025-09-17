@@ -1,0 +1,4291 @@
+{
+  "cases": [
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "ZtLHQw96MdB2VwjAV845QK",
+      "scene": "Track 11",
+      "map_image_path": "./map/ArrivalTimeInterval_map_11_ZtLHQw96MdB2VwjAV845QK.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_11_249_260_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6216,
+            6271,
+            6326,
+            6381,
+            6436,
+            6491
+          ],
+          "bboxes": [
+            [
+              1007.9,
+              1076.7,
+              384.77,
+              605.22
+            ],
+            [
+              1423.14,
+              704.22,
+              383.33,
+              685.19
+            ],
+            [
+              1391.96,
+              504.52,
+              271.04,
+              607.68
+            ],
+            [
+              792.31,
+              131.35,
+              261.69,
+              466.75
+            ],
+            [
+              252.7,
+              385.7,
+              240.06,
+              514.95
+            ],
+            [
+              -106.54,
+              992.09,
+              307.7,
+              425.9
+            ]
+          ],
+          "start_timestamp": 248.64,
+          "end_timestamp": 259.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c07",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_11_273_279_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6823,
+            6851,
+            6879,
+            6907,
+            6935,
+            6963
+          ],
+          "bboxes": [
+            [
+              723.8,
+              318.27,
+              108.6,
+              308.9
+            ],
+            [
+              843.58,
+              356.61,
+              127.78,
+              332.29
+            ],
+            [
+              978.71,
+              401.17,
+              128.89,
+              368.61
+            ],
+            [
+              1187.6,
+              453.31,
+              140.86,
+              409.07
+            ],
+            [
+              1473.98,
+              515.75,
+              190.32,
+              451.71
+            ],
+            [
+              1836.3,
+              568.0,
+              178.02,
+              465.57
+            ]
+          ],
+          "start_timestamp": 272.92,
+          "end_timestamp": 278.6,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c03, 12:04:08.640-12:04:19.720) and [end video] (c07, 12:04:32.920-12:04:38.600),\nand knowing the target passed through camera c08, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:04:08.640-12:04:19.720)和[终点视频](c07, 12:04:32.920-12:04:38.600)，\n以及中间经过的摄像头c08，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:04:22.600-12:04:32.520",
+      "choices": [
+        "A. 12:04:25.400-12:04:26.800",
+        "B. 12:04:10.200-12:04:19.600",
+        "C. 12:04:19.800-12:04:35.400",
+        "D. 12:04:22.600-12:04:32.520"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:04:08.640-12:04:19.720"
+      },
+      "end_point": {
+        "camera_id": "c07",
+        "time": "12:04:32.920-12:04:38.600"
+      },
+      "middle_point": {
+        "camera_id": "c08",
+        "time": "12:04:22.600-12:04:32.520"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "Ytros5EYyPFVS8gMJFcbTh",
+      "scene": "Track 11",
+      "map_image_path": "./map/ArrivalTimeInterval_map_11_Ytros5EYyPFVS8gMJFcbTh.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_11_135_139_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3364,
+            3387,
+            3410,
+            3433,
+            3456,
+            3479
+          ],
+          "bboxes": [
+            [
+              1064.25,
+              31.9,
+              212.82,
+              517.7
+            ],
+            [
+              941.0,
+              35.66,
+              182.45,
+              586.94
+            ],
+            [
+              825.77,
+              89.85,
+              209.17,
+              690.42
+            ],
+            [
+              904.7,
+              192.75,
+              272.8,
+              792.45
+            ],
+            [
+              1216.06,
+              382.71,
+              377.44,
+              856.38
+            ],
+            [
+              1814.8,
+              714.41,
+              337.4,
+              842.63
+            ]
+          ],
+          "start_timestamp": 134.56,
+          "end_timestamp": 139.24,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_11_146_152_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3646,
+            3678,
+            3710,
+            3742,
+            3774,
+            3806
+          ],
+          "bboxes": [
+            [
+              1906.5,
+              218.79,
+              135.51,
+              347.56
+            ],
+            [
+              1714.52,
+              221.32,
+              116.04,
+              306.62
+            ],
+            [
+              1683.72,
+              192.69,
+              111.82,
+              283.03
+            ],
+            [
+              1732.32,
+              179.87,
+              105.63,
+              259.53
+            ],
+            [
+              1823.19,
+              170.96,
+              89.78,
+              240.13
+            ],
+            [
+              1912.64,
+              165.49,
+              89.79,
+              239.29
+            ]
+          ],
+          "start_timestamp": 145.84,
+          "end_timestamp": 152.32,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:02:14.560-12:02:19.240) and [end video] (c16, 12:02:25.840-12:02:32.320),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:02:14.560-12:02:19.240)和[终点视频](c16, 12:02:25.840-12:02:32.320)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:02:23.360-12:02:30.840",
+      "choices": [
+        "A. 12:02:21.400-12:02:32.320",
+        "B. 12:02:24.000-12:02:25.200",
+        "C. 12:02:23.360-12:02:30.840",
+        "D. 12:02:17.200-12:02:24.800"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:02:14.560-12:02:19.240"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:02:25.840-12:02:32.320"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:02:23.360-12:02:30.840"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "aFKjwrz49uGJsdkBmUboh2",
+      "scene": "Track 11",
+      "map_image_path": "./map/ArrivalTimeInterval_map_11_aFKjwrz49uGJsdkBmUboh2.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_11_230_235_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5754,
+            5777,
+            5800,
+            5823,
+            5846,
+            5869
+          ],
+          "bboxes": [
+            [
+              1863.12,
+              687.33,
+              303.42,
+              677.55
+            ],
+            [
+              1147.7,
+              403.11,
+              379.87,
+              737.65
+            ],
+            [
+              868.39,
+              208.49,
+              319.81,
+              837.51
+            ],
+            [
+              781.26,
+              96.48,
+              273.47,
+              678.69
+            ],
+            [
+              884.98,
+              35.39,
+              204.69,
+              600.48
+            ],
+            [
+              1097.3,
+              52.2,
+              217.49,
+              526.92
+            ]
+          ],
+          "start_timestamp": 230.16,
+          "end_timestamp": 234.76,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_11_263_273_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6565,
+            6614,
+            6663,
+            6712,
+            6761,
+            6810
+          ],
+          "bboxes": [
+            [
+              1456.24,
+              -217.62,
+              125.16,
+              323.42
+            ],
+            [
+              1210.5,
+              -115.14,
+              147.7,
+              357.64
+            ],
+            [
+              895.44,
+              -75.3,
+              156.9,
+              462.32
+            ],
+            [
+              701.2,
+              102.78,
+              155.22,
+              479.9
+            ],
+            [
+              468.14,
+              333.29,
+              201.32,
+              563.45
+            ],
+            [
+              -178.56,
+              651.87,
+              280.16,
+              603.8
+            ]
+          ],
+          "start_timestamp": 262.6,
+          "end_timestamp": 272.52,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:03:50.160-12:03:54.760) and [end video] (c08, 12:04:22.600-12:04:32.520),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:03:50.160-12:03:54.760)和[终点视频](c08, 12:04:22.600-12:04:32.520)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:04:08.640-12:04:19.720",
+      "choices": [
+        "A. 12:04:03.800-12:04:25.600",
+        "B. 12:03:55.200-12:04:06.400",
+        "C. 12:04:08.640-12:04:19.720",
+        "D. 12:04:20.500-12:04:22.100"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:03:50.160-12:03:54.760"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:04:22.600-12:04:32.520"
+      },
+      "middle_point": {
+        "camera_id": "c03",
+        "time": "12:04:08.640-12:04:19.720"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "MmXsdWu6SENSmijLBVqq3q",
+      "scene": "Track 16",
+      "map_image_path": "./map/ArrivalTimeInterval_map_16_MmXsdWu6SENSmijLBVqq3q.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_16_124_134_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3093,
+            3144,
+            3195,
+            3246,
+            3297,
+            3348
+          ],
+          "bboxes": [
+            [
+              1446.01,
+              -207.54,
+              118.02,
+              331.58
+            ],
+            [
+              1087.22,
+              -89.72,
+              129.18,
+              402.02
+            ],
+            [
+              844.93,
+              48.92,
+              153.07,
+              469.08
+            ],
+            [
+              687.2,
+              304.69,
+              175.92,
+              538.43
+            ],
+            [
+              1009.94,
+              516.32,
+              238.36,
+              608.16
+            ],
+            [
+              1815.79,
+              513.7,
+              194.09,
+              551.1
+            ]
+          ],
+          "start_timestamp": 123.72,
+          "end_timestamp": 134.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_16_146_154_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3642,
+            3682,
+            3722,
+            3762,
+            3802,
+            3842
+          ],
+          "bboxes": [
+            [
+              803.96,
+              1074.52,
+              152.87,
+              360.35
+            ],
+            [
+              622.89,
+              881.54,
+              121.6,
+              322.7
+            ],
+            [
+              477.43,
+              738.04,
+              101.99,
+              266.61
+            ],
+            [
+              327.1,
+              670.34,
+              77.24,
+              265.87
+            ],
+            [
+              223.58,
+              593.96,
+              93.02,
+              245.6
+            ],
+            [
+              129.8,
+              551.53,
+              79.54,
+              233.56
+            ]
+          ],
+          "start_timestamp": 145.68,
+          "end_timestamp": 153.8,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c08, 12:02:03.720-12:02:14.000) and [end video] (c05, 12:02:25.680-12:02:33.800),\nand knowing the target passed through camera c01, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:02:03.720-12:02:14.000)和[终点视频](c05, 12:02:25.680-12:02:33.800)，\n以及中间经过的摄像头c01，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:02:14.320-12:02:33.160",
+      "choices": [
+        "A. 12:02:04.120-12:02:13.980",
+        "B. 12:02:20.500-12:02:21.700",
+        "C. 12:02:10.240-12:02:28.560",
+        "D. 12:02:14.320-12:02:33.160"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:02:03.720-12:02:14.000"
+      },
+      "end_point": {
+        "camera_id": "c05",
+        "time": "12:02:25.680-12:02:33.800"
+      },
+      "middle_point": {
+        "camera_id": "c01",
+        "time": "12:02:14.320-12:02:33.160"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "ZNTWGbxNdqZ2mqpis29QLg",
+      "scene": "Track 16",
+      "map_image_path": "./map/ArrivalTimeInterval_map_16_ZNTWGbxNdqZ2mqpis29QLg.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_16_164_172_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4092,
+            4132,
+            4172,
+            4212,
+            4252,
+            4292
+          ],
+          "bboxes": [
+            [
+              1435.6,
+              252.87,
+              27.65,
+              109.83
+            ],
+            [
+              1291.72,
+              261.34,
+              52.08,
+              99.12
+            ],
+            [
+              1148.72,
+              258.28,
+              33.59,
+              100.2
+            ],
+            [
+              1006.88,
+              258.86,
+              33.12,
+              104.28
+            ],
+            [
+              879.89,
+              261.52,
+              23.81,
+              100.24
+            ],
+            [
+              754.3,
+              269.8,
+              23.82,
+              90.83
+            ]
+          ],
+          "start_timestamp": 163.68,
+          "end_timestamp": 171.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c07",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_16_189_193_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4731,
+            4751,
+            4771,
+            4791,
+            4811,
+            4831
+          ],
+          "bboxes": [
+            [
+              1807.79,
+              573.2,
+              222.5,
+              479.11
+            ],
+            [
+              1592.82,
+              590.85,
+              213.68,
+              480.62
+            ],
+            [
+              1438.1,
+              634.69,
+              208.9,
+              527.14
+            ],
+            [
+              1364.85,
+              725.79,
+              233.0,
+              540.8
+            ],
+            [
+              1373.05,
+              862.67,
+              243.35,
+              497.72
+            ],
+            [
+              1431.22,
+              1069.4,
+              233.1,
+              468.99
+            ]
+          ],
+          "start_timestamp": 189.24,
+          "end_timestamp": 193.24,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c01, 12:02:43.680-12:02:51.720) and [end video] (c07, 12:03:09.240-12:03:13.240),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:02:43.680-12:02:51.720)和[终点视频](c07, 12:03:09.240-12:03:13.240)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:02:44.680-12:02:53.920",
+      "choices": [
+        "A. 12:02:50.120-12:02:51.480",
+        "B. 12:02:43.680-12:03:01.500",
+        "C. 12:02:44.680-12:02:53.920",
+        "D. 12:02:54.000-12:03:03.240"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:02:43.680-12:02:51.720"
+      },
+      "end_point": {
+        "camera_id": "c07",
+        "time": "12:03:09.240-12:03:13.240"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:02:44.680-12:02:53.920"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "kgrRKxb9DYKrFwGmqWHzSx",
+      "scene": "Track 16",
+      "map_image_path": "./map/ArrivalTimeInterval_map_16_kgrRKxb9DYKrFwGmqWHzSx.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            868,
+            912,
+            956,
+            1000,
+            1044
+          ],
+          "bboxes": [
+            [
+              1905.1,
+              342.4,
+              190.1,
+              411.9
+            ],
+            [
+              1344.3,
+              316.3,
+              145.9,
+              369.8
+            ],
+            [
+              1004.9,
+              273.4,
+              87.8,
+              311.1
+            ],
+            [
+              675.9,
+              248.1,
+              75.0,
+              272.4
+            ],
+            [
+              431.2,
+              231.6,
+              80.5,
+              208.5
+            ],
+            [
+              304.0,
+              224.5,
+              72.7,
+              192.3
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 41.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_16_108_121_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2711,
+            2774,
+            2837,
+            2900,
+            2963
+          ],
+          "bboxes": [
+            [
+              1184.18,
+              1057.49,
+              399.82,
+              684.51
+            ],
+            [
+              1471.62,
+              666.3,
+              309.39,
+              617.67
+            ],
+            [
+              1249.92,
+              159.47,
+              162.34,
+              482.03
+            ],
+            [
+              528.64,
+              82.51,
+              164.58,
+              469.79
+            ],
+            [
+              265.2,
+              267.08,
+              217.9,
+              474.24
+            ]
+          ],
+          "start_timestamp": 108.44,
+          "end_timestamp": 121.0,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c09, 12:00:32.960-12:00:41.800) and [end video] (c03, 12:01:48.440-12:02:01.000),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:00:32.960-12:00:41.800)和[终点视频](c03, 12:01:48.440-12:02:01.000)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:01:33.520-12:01:37.760",
+      "choices": [
+        "A. 12:01:05.200-12:01:09.440",
+        "B. 12:01:28.000-12:01:42.500",
+        "C. 12:01:33.520-12:01:37.760",
+        "D. 12:01:36.800-12:01:37.600"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:00:32.960-12:00:41.800"
+      },
+      "end_point": {
+        "camera_id": "c03",
+        "time": "12:01:48.440-12:02:01.000"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:01:33.520-12:01:37.760"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "CeDGeLrJSUgTHWdKuZUqJg",
+      "scene": "Track 18",
+      "map_image_path": "./map/ArrivalTimeInterval_map_18_CeDGeLrJSUgTHWdKuZUqJg.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_18_125_131_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3132,
+            3163,
+            3194,
+            3225,
+            3256
+          ],
+          "bboxes": [
+            [
+              300.3,
+              264.0,
+              100.88,
+              308.68
+            ],
+            [
+              522.0,
+              271.8,
+              164.1,
+              323.8
+            ],
+            [
+              885.9,
+              270.7,
+              125.5,
+              349.3
+            ],
+            [
+              1192.8,
+              289.3,
+              188.3,
+              375.1
+            ],
+            [
+              1533.3,
+              303.1,
+              180.7,
+              400.3
+            ]
+          ],
+          "start_timestamp": 125.28,
+          "end_timestamp": 131.44,
+          "direction": ""
+        },
+        {
+          "camera_id": "c14",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_18_139_164_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3485,
+            3608,
+            3731,
+            3854,
+            3977,
+            4100
+          ],
+          "bboxes": [
+            [
+              1257.8,
+              250.5,
+              35.9,
+              126.4
+            ],
+            [
+              1195.5,
+              250.73,
+              47.7,
+              135.02
+            ],
+            [
+              1195.5,
+              250.73,
+              47.7,
+              135.02
+            ],
+            [
+              1195.5,
+              250.73,
+              47.7,
+              135.02
+            ],
+            [
+              1196.95,
+              248.28,
+              45.35,
+              137.32
+            ],
+            [
+              1196.95,
+              248.9,
+              45.35,
+              136.7
+            ]
+          ],
+          "start_timestamp": 139.4,
+          "end_timestamp": 164.12,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c09, 12:02:05.280-12:02:11.440) and [end video] (c14, 12:02:19.400-12:02:44.120),\nand knowing the target passed through camera c16, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:02:05.280-12:02:11.440)和[终点视频](c14, 12:02:19.400-12:02:44.120)，\n以及中间经过的摄像头c16，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "A. 12:02:08.640-12:02:52.520",
+      "choices": [
+        "A. 12:02:08.640-12:02:52.520",
+        "B. 12:02:11.440-12:02:12.440",
+        "C. 12:02:05.280-12:02:19.400",
+        "D. 12:02:08.640-12:02:30.120"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:02:05.280-12:02:11.440"
+      },
+      "end_point": {
+        "camera_id": "c14",
+        "time": "12:02:19.400-12:02:44.120"
+      },
+      "middle_point": {
+        "camera_id": "c16",
+        "time": "12:02:08.640-12:02:52.520"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "FbNxMZHorriapeKsYo3JQD",
+      "scene": "Track 18",
+      "map_image_path": "./map/ArrivalTimeInterval_map_18_FbNxMZHorriapeKsYo3JQD.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_18_116_122_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2892,
+            2923,
+            2954,
+            2985,
+            3016,
+            3047
+          ],
+          "bboxes": [
+            [
+              305.57,
+              -12.67,
+              150.45,
+              364.94
+            ],
+            [
+              71.4,
+              -22.18,
+              174.29,
+              509.98
+            ],
+            [
+              105.87,
+              36.6,
+              229.88,
+              613.05
+            ],
+            [
+              302.17,
+              157.6,
+              332.18,
+              768.85
+            ],
+            [
+              756.51,
+              401.42,
+              314.59,
+              875.66
+            ],
+            [
+              1900.74,
+              908.47,
+              347.03,
+              888.76
+            ]
+          ],
+          "start_timestamp": 115.68,
+          "end_timestamp": 121.88,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_18_129_173_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3216,
+            3435,
+            3654,
+            3873,
+            4092,
+            4311
+          ],
+          "bboxes": [
+            [
+              1912.22,
+              212.28,
+              97.73,
+              264.56
+            ],
+            [
+              1407.25,
+              116.94,
+              52.85,
+              155.86
+            ],
+            [
+              1549.74,
+              113.47,
+              48.41,
+              150.63
+            ],
+            [
+              1549.95,
+              114.21,
+              48.2,
+              150.84
+            ],
+            [
+              1538.08,
+              114.99,
+              56.01,
+              150.59
+            ],
+            [
+              1405.05,
+              84.87,
+              36.14,
+              105.73
+            ]
+          ],
+          "start_timestamp": 128.64,
+          "end_timestamp": 172.52,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:01:55.680-12:02:01.880) and [end video] (c16, 12:02:08.640-12:02:52.520),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:01:55.680-12:02:01.880)和[终点视频](c16, 12:02:08.640-12:02:52.520)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "B. 12:02:05.280-12:02:11.440",
+      "choices": [
+        "A. 12:01:57.120-12:02:03.440",
+        "B. 12:02:05.280-12:02:11.440",
+        "C. 12:02:01.920-12:02:15.360",
+        "D. 12:02:06.500-12:02:07.800"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:01:55.680-12:02:01.880"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:02:08.640-12:02:52.520"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:02:05.280-12:02:11.440"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "dXE5mWRdoUig9W4TAfb8vN",
+      "scene": "Track 18",
+      "map_image_path": "./map/ArrivalTimeInterval_map_18_dXE5mWRdoUig9W4TAfb8vN.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_18_30_30_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            744,
+            745,
+            746,
+            747,
+            748,
+            749,
+            750,
+            751,
+            752
+          ],
+          "bboxes": [
+            [
+              110.49,
+              1052.54,
+              369.54,
+              528.47
+            ],
+            [
+              82.61,
+              1038.6,
+              369.54,
+              528.47
+            ],
+            [
+              9.1,
+              1019.59,
+              369.54,
+              528.47
+            ],
+            [
+              -17.52,
+              1010.72,
+              369.55,
+              528.47
+            ],
+            [
+              -51.73,
+              1004.39,
+              369.54,
+              528.46
+            ],
+            [
+              -103.7,
+              999.32,
+              369.54,
+              528.46
+            ],
+            [
+              -158.19,
+              1004.39,
+              369.54,
+              528.46
+            ],
+            [
+              -213.96,
+              998.05,
+              369.54,
+              528.46
+            ],
+            [
+              -286.2,
+              1011.99,
+              369.54,
+              528.46
+            ]
+          ],
+          "start_timestamp": 29.76,
+          "end_timestamp": 30.08,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_18_44_48_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1100,
+            1118,
+            1136,
+            1154,
+            1172,
+            1190
+          ],
+          "bboxes": [
+            [
+              359.15,
+              141.9,
+              95.45,
+              239.76
+            ],
+            [
+              315.63,
+              149.41,
+              74.4,
+              249.54
+            ],
+            [
+              202.34,
+              147.57,
+              89.49,
+              245.62
+            ],
+            [
+              81.64,
+              145.7,
+              101.74,
+              234.7
+            ],
+            [
+              13.87,
+              145.82,
+              98.6,
+              229.87
+            ],
+            [
+              -49.9,
+              139.04,
+              89.16,
+              220.22
+            ]
+          ],
+          "start_timestamp": 44.0,
+          "end_timestamp": 47.64,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c03, 12:00:29.760-12:00:30.080) and [end video] (c13, 12:00:44.000-12:00:47.640),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:00:29.760-12:00:30.080)和[终点视频](c13, 12:00:44.000-12:00:47.640)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:00:41.760-12:00:47.240",
+      "choices": [
+        "A. 12:00:38.000-12:00:47.640",
+        "B. 12:00:38.500-12:00:39.500",
+        "C. 12:00:41.760-12:00:47.240",
+        "D. 12:00:31.200-12:00:36.800"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:00:29.760-12:00:30.080"
+      },
+      "end_point": {
+        "camera_id": "c13",
+        "time": "12:00:44.000-12:00:47.640"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:00:41.760-12:00:47.240"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "ThTUYbBBwzPDA7wTHhYxwu",
+      "scene": "Track 19",
+      "map_image_path": "./map/ArrivalTimeInterval_map_19_ThTUYbBBwzPDA7wTHhYxwu.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_19_171_196_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4263,
+            4388,
+            4513,
+            4638,
+            4763,
+            4888
+          ],
+          "bboxes": [
+            [
+              1397.0,
+              221.9,
+              22.38,
+              91.88
+            ],
+            [
+              1311.36,
+              267.78,
+              30.84,
+              109.74
+            ],
+            [
+              1320.05,
+              353.75,
+              42.19,
+              138.41
+            ],
+            [
+              1458.58,
+              508.58,
+              58.7,
+              181.13
+            ],
+            [
+              1554.56,
+              812.73,
+              82.02,
+              261.5
+            ],
+            [
+              1572.18,
+              1059.42,
+              97.36,
+              261.5
+            ]
+          ],
+          "start_timestamp": 170.52,
+          "end_timestamp": 195.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_19_220_230_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5490,
+            5542,
+            5594,
+            5646,
+            5698,
+            5750
+          ],
+          "bboxes": [
+            [
+              1809.9,
+              899.1,
+              244.0,
+              553.0
+            ],
+            [
+              1429.8,
+              350.5,
+              277.0,
+              565.4
+            ],
+            [
+              622.5,
+              400.4,
+              250.8,
+              605.2
+            ],
+            [
+              430.1,
+              563.2,
+              271.4,
+              691.8
+            ],
+            [
+              468.5,
+              739.5,
+              501.6,
+              1118.2
+            ],
+            [
+              1750.2,
+              706.7,
+              571.2,
+              956.8
+            ]
+          ],
+          "start_timestamp": 219.6,
+          "end_timestamp": 230.08,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c01, 12:02:50.520-12:03:15.640) and [end video] (c11, 12:03:39.600-12:03:50.080),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:02:50.520-12:03:15.640)和[终点视频](c11, 12:03:39.600-12:03:50.080)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:02:51.640-12:03:23.080",
+      "choices": [
+        "A. 12:02:55.200-12:02:57.300",
+        "B. 12:03:24.000-12:03:39.000",
+        "C. 12:02:51.640-12:03:45.500",
+        "D. 12:02:51.640-12:03:23.080"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:02:50.520-12:03:15.640"
+      },
+      "end_point": {
+        "camera_id": "c11",
+        "time": "12:03:39.600-12:03:50.080"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:02:51.640-12:03:23.080"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "b2mhGtifTLksQqWC78zWtY",
+      "scene": "Track 19",
+      "map_image_path": "./map/ArrivalTimeInterval_map_19_b2mhGtifTLksQqWC78zWtY.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_19_41_76_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1034,
+            1207,
+            1380,
+            1553,
+            1726,
+            1899
+          ],
+          "bboxes": [
+            [
+              1610.38,
+              142.56,
+              60.8,
+              180.2
+            ],
+            [
+              1593.27,
+              140.61,
+              78.63,
+              182.11
+            ],
+            [
+              1601.6,
+              138.0,
+              73.3,
+              186.1
+            ],
+            [
+              1602.0,
+              142.49,
+              67.1,
+              181.61
+            ],
+            [
+              1557.82,
+              145.54,
+              62.42,
+              190.66
+            ],
+            [
+              1905.04,
+              215.7,
+              94.22,
+              274.0
+            ]
+          ],
+          "start_timestamp": 41.36,
+          "end_timestamp": 76.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_19_83_88_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2074,
+            2098,
+            2122,
+            2146,
+            2170,
+            2194
+          ],
+          "bboxes": [
+            [
+              1674.88,
+              1056.67,
+              344.44,
+              594.93
+            ],
+            [
+              737.66,
+              515.34,
+              386.54,
+              798.51
+            ],
+            [
+              677.13,
+              207.07,
+              274.77,
+              812.53
+            ],
+            [
+              782.25,
+              74.42,
+              228.25,
+              633.48
+            ],
+            [
+              921.04,
+              36.49,
+              187.76,
+              572.51
+            ],
+            [
+              1091.24,
+              19.99,
+              194.29,
+              528.2
+            ]
+          ],
+          "start_timestamp": 82.96,
+          "end_timestamp": 87.76,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c16, 12:00:41.360-12:01:16.000) and [end video] (c12, 12:01:22.960-12:01:27.760),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c16, 12:00:41.360-12:01:16.000)和[终点视频](c12, 12:01:22.960-12:01:27.760)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "B. 12:01:17.080-12:01:20.920",
+      "choices": [
+        "A. 12:01:18.500-12:01:19.200",
+        "B. 12:01:17.080-12:01:20.920",
+        "C. 12:01:10.240-12:01:14.080",
+        "D. 12:01:16.400-12:01:22.600"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c16",
+        "time": "12:00:41.360-12:01:16.000"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:01:22.960-12:01:27.760"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:01:17.080-12:01:20.920"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "SgreNAMHb6pPixvAcA2BqY",
+      "scene": "Track 19",
+      "map_image_path": "./map/ArrivalTimeInterval_map_19_SgreNAMHb6pPixvAcA2BqY.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_19_136_140_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3412,
+            3429,
+            3446,
+            3463,
+            3480
+          ],
+          "bboxes": [
+            [
+              -179.2,
+              843.46,
+              239.3,
+              513.06
+            ],
+            [
+              570.3,
+              783.27,
+              191.9,
+              541.71
+            ],
+            [
+              1102.45,
+              643.06,
+              273.97,
+              541.71
+            ],
+            [
+              1430.24,
+              550.06,
+              242.26,
+              558.1
+            ],
+            [
+              1638.98,
+              502.34,
+              228.58,
+              591.22
+            ]
+          ],
+          "start_timestamp": 136.48,
+          "end_timestamp": 139.84,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_19_150_154_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3755,
+            3772,
+            3789,
+            3806,
+            3823
+          ],
+          "bboxes": [
+            [
+              396.01,
+              1074.9,
+              113.05,
+              257.68
+            ],
+            [
+              298.45,
+              961.16,
+              127.05,
+              269.61
+            ],
+            [
+              230.39,
+              876.2,
+              106.58,
+              294.85
+            ],
+            [
+              154.57,
+              801.77,
+              98.29,
+              288.63
+            ],
+            [
+              104.75,
+              754.02,
+              97.75,
+              276.78
+            ]
+          ],
+          "start_timestamp": 150.2,
+          "end_timestamp": 153.56,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c08, 12:02:16.480-12:02:19.840) and [end video] (c05, 12:02:30.200-12:02:33.560),\nand knowing the target passed through camera c01, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:02:16.480-12:02:19.840)和[终点视频](c05, 12:02:30.200-12:02:33.560)，\n以及中间经过的摄像头c01，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "A. 12:02:20.640-12:02:32.880",
+      "choices": [
+        "A. 12:02:20.640-12:02:32.880",
+        "B. 12:02:22.500-12:02:23.500",
+        "C. 12:02:16.480-12:02:20.000",
+        "D. 12:02:19.200-12:02:33.560"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:02:16.480-12:02:19.840"
+      },
+      "end_point": {
+        "camera_id": "c05",
+        "time": "12:02:30.200-12:02:33.560"
+      },
+      "middle_point": {
+        "camera_id": "c01",
+        "time": "12:02:20.640-12:02:32.880"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "Q3F75sEHvvrTCZsLcttKTv",
+      "scene": "Track 20",
+      "map_image_path": "./map/ArrivalTimeInterval_map_20_Q3F75sEHvvrTCZsLcttKTv.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_20_5_10_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            122,
+            145,
+            168,
+            191,
+            214,
+            237
+          ],
+          "bboxes": [
+            [
+              -206.5,
+              1064.2,
+              229.3,
+              736.0
+            ],
+            [
+              533.3,
+              845.32,
+              180.81,
+              738.48
+            ],
+            [
+              978.8,
+              715.15,
+              259.4,
+              718.35
+            ],
+            [
+              1314.32,
+              632.8,
+              252.98,
+              543.14
+            ],
+            [
+              1598.18,
+              580.48,
+              228.52,
+              542.39
+            ],
+            [
+              1848.69,
+              563.86,
+              151.1,
+              466.4
+            ]
+          ],
+          "start_timestamp": 4.88,
+          "end_timestamp": 9.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_20_34_44_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            843,
+            895,
+            947,
+            999,
+            1051,
+            1103
+          ],
+          "bboxes": [
+            [
+              761.43,
+              256.51,
+              17.04,
+              56.34
+            ],
+            [
+              906.55,
+              251.79,
+              23.29,
+              82.21
+            ],
+            [
+              1056.6,
+              247.2,
+              33.8,
+              110.6
+            ],
+            [
+              1190.3,
+              241.1,
+              42.9,
+              107.9
+            ],
+            [
+              1314.55,
+              230.67,
+              33.77,
+              100.06
+            ],
+            [
+              1393.36,
+              217.62,
+              25.65,
+              102.47
+            ]
+          ],
+          "start_timestamp": 33.72,
+          "end_timestamp": 44.16,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c07, 12:00:04.880-12:00:09.560) and [end video] (c01, 12:00:33.720-12:00:44.160),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c07, 12:00:04.880-12:00:09.560)和[终点视频](c01, 12:00:33.720-12:00:44.160)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "A. 12:00:33.320-12:00:44.920",
+      "choices": [
+        "A. 12:00:33.320-12:00:44.920",
+        "B. 12:00:28.160-12:00:44.160",
+        "C. 12:00:15.440-12:00:26.780",
+        "D. 12:00:33.720-12:00:35.240"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c07",
+        "time": "12:00:04.880-12:00:09.560"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:00:33.720-12:00:44.160"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:00:33.320-12:00:44.920"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "kC5VEU4jUM2zP6a8JoeaFZ",
+      "scene": "Track 20",
+      "map_image_path": "./map/ArrivalTimeInterval_map_20_kC5VEU4jUM2zP6a8JoeaFZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_20_108_136_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2691,
+            2835,
+            2979,
+            3123,
+            3267
+          ],
+          "bboxes": [
+            [
+              710.17,
+              510.15,
+              32.01,
+              176.24
+            ],
+            [
+              1107.67,
+              374.58,
+              52.16,
+              150.6
+            ],
+            [
+              1083.1,
+              265.68,
+              38.0,
+              119.27
+            ],
+            [
+              1095.91,
+              204.67,
+              31.09,
+              94.57
+            ],
+            [
+              1011.62,
+              158.63,
+              25.34,
+              81.19
+            ]
+          ],
+          "start_timestamp": 107.64,
+          "end_timestamp": 136.4,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_20_139_152_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3471,
+            3538,
+            3605,
+            3672,
+            3739,
+            3806
+          ],
+          "bboxes": [
+            [
+              1878.5,
+              466.45,
+              145.1,
+              530.65
+            ],
+            [
+              912.43,
+              441.74,
+              175.94,
+              618.41
+            ],
+            [
+              663.63,
+              185.32,
+              212.17,
+              564.48
+            ],
+            [
+              874.05,
+              -43.49,
+              159.93,
+              497.05
+            ],
+            [
+              1219.32,
+              -226.69,
+              131.68,
+              470.23
+            ],
+            [
+              1440.57,
+              -331.62,
+              125.71,
+              466.67
+            ]
+          ],
+          "start_timestamp": 138.84,
+          "end_timestamp": 152.32,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c01, 12:01:47.640-12:02:16.400) and [end video] (c08, 12:02:18.840-12:02:32.320),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:01:47.640-12:02:16.400)和[终点视频](c08, 12:02:18.840-12:02:32.320)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:01:50.320-12:02:07.680",
+      "choices": [
+        "A. 12:01:55.200-12:01:57.400",
+        "B. 12:01:48.500-12:02:15.300",
+        "C. 12:01:50.320-12:02:07.680",
+        "D. 12:02:08.000-12:02:18.500"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:01:47.640-12:02:16.400"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:02:18.840-12:02:32.320"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:01:50.320-12:02:07.680"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "J4VtZWkvriGeUKME6yQKCA",
+      "scene": "Track 20",
+      "map_image_path": "./map/ArrivalTimeInterval_map_20_J4VtZWkvriGeUKME6yQKCA.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_20_155_166_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3877,
+            3934,
+            3991,
+            4048,
+            4105
+          ],
+          "bboxes": [
+            [
+              70.0,
+              1033.6,
+              258.34,
+              379.7
+            ],
+            [
+              210.14,
+              495.06,
+              265.54,
+              537.16
+            ],
+            [
+              756.18,
+              254.38,
+              198.56,
+              550.56
+            ],
+            [
+              1291.28,
+              595.32,
+              318.84,
+              532.96
+            ],
+            [
+              1103.37,
+              785.55,
+              414.93,
+              644.93
+            ]
+          ],
+          "start_timestamp": 155.08,
+          "end_timestamp": 166.44,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_20_185_190_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4615,
+            4644,
+            4673,
+            4702,
+            4731,
+            4760
+          ],
+          "bboxes": [
+            [
+              284.13,
+              294.95,
+              92.91,
+              408.65
+            ],
+            [
+              429.3,
+              304.7,
+              155.1,
+              399.5
+            ],
+            [
+              638.7,
+              327.4,
+              161.9,
+              451.0
+            ],
+            [
+              1019.3,
+              354.2,
+              122.7,
+              487.1
+            ],
+            [
+              1426.2,
+              401.4,
+              234.1,
+              541.9
+            ],
+            [
+              1871.1,
+              440.9,
+              258.8,
+              616.8
+            ]
+          ],
+          "start_timestamp": 184.6,
+          "end_timestamp": 190.48,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c03, 12:02:35.080-12:02:46.440) and [end video] (c09, 12:03:04.600-12:03:10.480),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:02:35.080-12:02:46.440)和[终点视频](c09, 12:03:04.600-12:03:10.480)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "B. 12:02:56.280-12:03:00.880",
+      "choices": [
+        "A. 12:02:46.500-12:02:51.100",
+        "B. 12:02:56.280-12:03:00.880",
+        "C. 12:02:54.600-12:03:04.200",
+        "D. 12:02:52.300-12:02:53.400"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:02:35.080-12:02:46.440"
+      },
+      "end_point": {
+        "camera_id": "c09",
+        "time": "12:03:04.600-12:03:10.480"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:02:56.280-12:03:00.880"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "ahtLT7jQmSeNXqH2BA77i3",
+      "scene": "Track 21",
+      "map_image_path": "./map/ArrivalTimeInterval_map_21_ahtLT7jQmSeNXqH2BA77i3.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_21_0_6_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            32,
+            64,
+            96,
+            128,
+            160
+          ],
+          "bboxes": [
+            [
+              952.47,
+              668.56,
+              71.16,
+              190.36
+            ],
+            [
+              1003.38,
+              712.75,
+              76.1,
+              208.43
+            ],
+            [
+              1070.07,
+              772.23,
+              78.13,
+              227.11
+            ],
+            [
+              1149.73,
+              845.06,
+              80.84,
+              248.51
+            ],
+            [
+              1241.81,
+              938.55,
+              93.39,
+              239.04
+            ],
+            [
+              1373.58,
+              1067.85,
+              91.55,
+              236.67
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 6.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_21_26_39_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            657,
+            719,
+            781,
+            843,
+            905
+          ],
+          "bboxes": [
+            [
+              -236.7,
+              864.4,
+              287.3,
+              725.5
+            ],
+            [
+              596.04,
+              513.01,
+              234.66,
+              593.19
+            ],
+            [
+              704.7,
+              291.5,
+              239.29,
+              542.84
+            ],
+            [
+              872.35,
+              -14.71,
+              243.85,
+              469.71
+            ],
+            [
+              1109.53,
+              -148.7,
+              155.59,
+              454.64
+            ]
+          ],
+          "start_timestamp": 26.28,
+          "end_timestamp": 38.64,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:06.480) and [end video] (c08, 12:00:26.280-12:00:38.640),\nand knowing the target passed through camera c07, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:06.480)和[终点视频](c08, 12:00:26.280-12:00:38.640)，\n以及中间经过的摄像头c07，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "B. 12:00:20.320-12:00:28.480",
+      "choices": [
+        "A. 12:00:22.500-12:00:23.800",
+        "B. 12:00:20.320-12:00:28.480",
+        "C. 12:00:15.600-12:00:30.400",
+        "D. 12:00:10.240-12:00:18.360"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c02",
+        "time": "12:00:00.000-12:00:06.480"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:00:26.280-12:00:38.640"
+      },
+      "middle_point": {
+        "camera_id": "c07",
+        "time": "12:00:20.320-12:00:28.480"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "4K8F7eCKgB5rgTtH5HfLuv",
+      "scene": "Track 21",
+      "map_image_path": "./map/ArrivalTimeInterval_map_21_4K8F7eCKgB5rgTtH5HfLuv.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_21_76_83_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1895,
+            1929,
+            1963,
+            1997,
+            2031,
+            2065
+          ],
+          "bboxes": [
+            [
+              273.4,
+              261.6,
+              110.0,
+              308.1
+            ],
+            [
+              568.7,
+              258.9,
+              87.6,
+              310.1
+            ],
+            [
+              896.1,
+              260.3,
+              91.2,
+              309.2
+            ],
+            [
+              1189.8,
+              265.6,
+              113.7,
+              317.8
+            ],
+            [
+              1546.9,
+              273.7,
+              109.6,
+              329.4
+            ],
+            [
+              1914.0,
+              286.9,
+              100.6,
+              323.3
+            ]
+          ],
+          "start_timestamp": 75.8,
+          "end_timestamp": 82.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c14",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_21_91_95_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2280,
+            2297,
+            2314,
+            2331,
+            2348
+          ],
+          "bboxes": [
+            [
+              1410.75,
+              255.41,
+              46.65,
+              139.06
+            ],
+            [
+              1422.55,
+              258.93,
+              46.64,
+              139.06
+            ],
+            [
+              1426.59,
+              263.16,
+              46.65,
+              139.06
+            ],
+            [
+              1430.54,
+              264.46,
+              46.64,
+              139.06
+            ],
+            [
+              1432.76,
+              265.09,
+              46.64,
+              139.06
+            ]
+          ],
+          "start_timestamp": 91.2,
+          "end_timestamp": 94.56,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c09, 12:01:15.800-12:01:22.600) and [end video] (c14, 12:01:31.200-12:01:34.560),\nand knowing the target passed through camera c16, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:01:15.800-12:01:22.600)和[终点视频](c14, 12:01:31.200-12:01:34.560)，\n以及中间经过的摄像头c16，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:01:17.120-12:01:40.080",
+      "choices": [
+        "A. 12:01:23.000-12:01:30.800",
+        "B. 12:01:16.000-12:01:34.560",
+        "C. 12:01:17.120-12:01:40.080",
+        "D. 12:01:16.500-12:01:18.200"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:01:15.800-12:01:22.600"
+      },
+      "end_point": {
+        "camera_id": "c14",
+        "time": "12:01:31.200-12:01:34.560"
+      },
+      "middle_point": {
+        "camera_id": "c16",
+        "time": "12:01:17.120-12:01:40.080"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "LE25HuLzgfsWUabVNzHgVc",
+      "scene": "Track 21",
+      "map_image_path": "./map/ArrivalTimeInterval_map_21_LE25HuLzgfsWUabVNzHgVc.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_21_26_39_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            657,
+            719,
+            781,
+            843,
+            905
+          ],
+          "bboxes": [
+            [
+              -236.7,
+              864.4,
+              287.3,
+              725.5
+            ],
+            [
+              596.04,
+              513.01,
+              234.66,
+              593.19
+            ],
+            [
+              704.7,
+              291.5,
+              239.29,
+              542.84
+            ],
+            [
+              872.35,
+              -14.71,
+              243.85,
+              469.71
+            ],
+            [
+              1109.53,
+              -148.7,
+              155.59,
+              454.64
+            ]
+          ],
+          "start_timestamp": 26.28,
+          "end_timestamp": 38.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_21_66_72_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1638,
+            1670,
+            1702,
+            1734,
+            1766,
+            1798
+          ],
+          "bboxes": [
+            [
+              1118.76,
+              35.69,
+              145.17,
+              445.77
+            ],
+            [
+              940.2,
+              33.12,
+              179.9,
+              560.06
+            ],
+            [
+              683.46,
+              47.8,
+              202.04,
+              598.46
+            ],
+            [
+              591.85,
+              122.87,
+              261.63,
+              737.78
+            ],
+            [
+              943.56,
+              310.93,
+              283.49,
+              874.72
+            ],
+            [
+              1862.68,
+              886.41,
+              380.16,
+              877.06
+            ]
+          ],
+          "start_timestamp": 65.52,
+          "end_timestamp": 71.92,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c08, 12:00:26.280-12:00:38.640) and [end video] (c12, 12:01:05.520-12:01:11.920),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:00:26.280-12:00:38.640)和[终点视频](c12, 12:01:05.520-12:01:11.920)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "A. 12:00:40.160-12:00:54.000",
+      "choices": [
+        "A. 12:00:40.160-12:00:54.000",
+        "B. 12:00:38.900-12:00:39.800",
+        "C. 12:00:35.400-12:00:58.600",
+        "D. 12:00:55.200-12:01:04.800"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:00:26.280-12:00:38.640"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:01:05.520-12:01:11.920"
+      },
+      "middle_point": {
+        "camera_id": "c03",
+        "time": "12:00:40.160-12:00:54.000"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "jBoQVRrVDqeW3LQq6QohfS",
+      "scene": "Track 22",
+      "map_image_path": "./map/ArrivalTimeInterval_map_22_jBoQVRrVDqeW3LQq6QohfS.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 22,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_22_74_91_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1845,
+            1929,
+            2013,
+            2097,
+            2181,
+            2265
+          ],
+          "bboxes": [
+            [
+              1443.33,
+              243.24,
+              27.11,
+              116.15
+            ],
+            [
+              1225.25,
+              218.58,
+              39.48,
+              109.71
+            ],
+            [
+              1119.96,
+              190.27,
+              41.59,
+              96.47
+            ],
+            [
+              1049.07,
+              166.13,
+              27.98,
+              87.05
+            ],
+            [
+              980.69,
+              146.4,
+              30.15,
+              82.82
+            ],
+            [
+              931.8,
+              134.3,
+              17.07,
+              73.65
+            ]
+          ],
+          "start_timestamp": 73.8,
+          "end_timestamp": 90.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 22,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_22_94_109_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2347,
+            2423,
+            2499,
+            2575,
+            2651,
+            2727
+          ],
+          "bboxes": [
+            [
+              1884.93,
+              363.65,
+              235.47,
+              658.65
+            ],
+            [
+              559.75,
+              504.21,
+              341.95,
+              668.4
+            ],
+            [
+              681.68,
+              246.35,
+              213.02,
+              522.09
+            ],
+            [
+              843.76,
+              -5.45,
+              277.47,
+              462.55
+            ],
+            [
+              1198.47,
+              -162.58,
+              152.56,
+              439.82
+            ],
+            [
+              1447.9,
+              -323.01,
+              164.88,
+              449.45
+            ]
+          ],
+          "start_timestamp": 93.88,
+          "end_timestamp": 109.2,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c01, 12:01:13.800-12:01:30.600) and [end video] (c08, 12:01:33.880-12:01:49.200),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:01:13.800-12:01:30.600)和[终点视频](c08, 12:01:33.880-12:01:49.200)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:01:15.040-12:01:22.280",
+      "choices": [
+        "A. 12:01:18.400-12:01:19.600",
+        "B. 12:01:23.500-12:01:30.200",
+        "C. 12:01:15.040-12:01:22.280",
+        "D. 12:01:14.200-12:01:28.500"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:01:13.800-12:01:30.600"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:01:33.880-12:01:49.200"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:01:15.040-12:01:22.280"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "Js6wXECEoGauLUQsmEZfiK",
+      "scene": "Track 22",
+      "map_image_path": "./map/ArrivalTimeInterval_map_22_Js6wXECEoGauLUQsmEZfiK.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 22,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_22_112_126_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2794,
+            2866,
+            2938,
+            3010,
+            3082,
+            3154
+          ],
+          "bboxes": [
+            [
+              -7.74,
+              1045.48,
+              259.78,
+              448.12
+            ],
+            [
+              314.52,
+              480.82,
+              334.98,
+              559.26
+            ],
+            [
+              934.78,
+              273.76,
+              348.38,
+              546.58
+            ],
+            [
+              1083.3,
+              582.14,
+              402.2,
+              534.3
+            ],
+            [
+              563.48,
+              786.58,
+              547.9,
+              756.2
+            ],
+            [
+              -712.12,
+              148.91,
+              721.66,
+              1019.82
+            ]
+          ],
+          "start_timestamp": 111.76,
+          "end_timestamp": 126.16,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 22,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_22_142_146_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3538,
+            3562,
+            3586,
+            3610,
+            3634,
+            3658
+          ],
+          "bboxes": [
+            [
+              286.4,
+              262.9,
+              121.43,
+              346.55
+            ],
+            [
+              587.7,
+              255.5,
+              153.2,
+              381.8
+            ],
+            [
+              906.7,
+              258.6,
+              185.0,
+              381.7
+            ],
+            [
+              1240.3,
+              264.0,
+              217.5,
+              389.1
+            ],
+            [
+              1574.4,
+              268.1,
+              221.2,
+              386.3
+            ],
+            [
+              1880.0,
+              259.4,
+              154.6,
+              385.9
+            ]
+          ],
+          "start_timestamp": 141.52,
+          "end_timestamp": 146.44,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c03, 12:01:51.760-12:02:06.160) and [end video] (c09, 12:02:21.520-12:02:26.440),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:01:51.760-12:02:06.160)和[终点视频](c09, 12:02:21.520-12:02:26.440)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:02:15.360-12:02:18.920",
+      "choices": [
+        "A. 12:02:07.200-12:02:10.760",
+        "B. 12:02:13.500-12:02:20.400",
+        "C. 12:02:15.360-12:02:15.980",
+        "D. 12:02:15.360-12:02:18.920"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:01:51.760-12:02:06.160"
+      },
+      "end_point": {
+        "camera_id": "c09",
+        "time": "12:02:21.520-12:02:26.440"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:02:15.360-12:02:18.920"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "bRr3EbNxLjv8dF7cB6HW48",
+      "scene": "Track 22",
+      "map_image_path": "./map/ArrivalTimeInterval_map_22_bRr3EbNxLjv8dF7cB6HW48.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 22,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_22_94_109_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2347,
+            2423,
+            2499,
+            2575,
+            2651,
+            2727
+          ],
+          "bboxes": [
+            [
+              1884.93,
+              363.65,
+              235.47,
+              658.65
+            ],
+            [
+              559.75,
+              504.21,
+              341.95,
+              668.4
+            ],
+            [
+              681.68,
+              246.35,
+              213.02,
+              522.09
+            ],
+            [
+              843.76,
+              -5.45,
+              277.47,
+              462.55
+            ],
+            [
+              1198.47,
+              -162.58,
+              152.56,
+              439.82
+            ],
+            [
+              1447.9,
+              -323.01,
+              164.88,
+              449.45
+            ]
+          ],
+          "start_timestamp": 93.88,
+          "end_timestamp": 109.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 22,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_22_135_139_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3384,
+            3402,
+            3420,
+            3438,
+            3456
+          ],
+          "bboxes": [
+            [
+              1090.04,
+              33.67,
+              189.18,
+              485.84
+            ],
+            [
+              800.94,
+              16.4,
+              341.23,
+              567.28
+            ],
+            [
+              596.02,
+              65.12,
+              361.52,
+              682.83
+            ],
+            [
+              609.35,
+              177.25,
+              331.85,
+              864.15
+            ],
+            [
+              866.55,
+              440.71,
+              461.45,
+              904.88
+            ]
+          ],
+          "start_timestamp": 135.36,
+          "end_timestamp": 138.92,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c08, 12:01:33.880-12:01:49.200) and [end video] (c12, 12:02:15.360-12:02:18.920),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:01:33.880-12:01:49.200)和[终点视频](c12, 12:02:15.360-12:02:18.920)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "A. 12:01:51.760-12:02:06.160",
+      "choices": [
+        "A. 12:01:51.760-12:02:06.160",
+        "B. 12:02:08.400-12:02:14.800",
+        "C. 12:01:35.200-12:01:49.600",
+        "D. 12:01:48.500-12:02:10.300"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:01:33.880-12:01:49.200"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:02:15.360-12:02:18.920"
+      },
+      "middle_point": {
+        "camera_id": "c03",
+        "time": "12:01:51.760-12:02:06.160"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "dx3XHA3gQv4e7k6LLK3FKH",
+      "scene": "Track 27",
+      "map_image_path": "./map/ArrivalTimeInterval_map_27_dx3XHA3gQv4e7k6LLK3FKH.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 27,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_27_139_144_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3482,
+            3505,
+            3528,
+            3551,
+            3574,
+            3597
+          ],
+          "bboxes": [
+            [
+              1088.3,
+              27.59,
+              204.2,
+              539.58
+            ],
+            [
+              882.5,
+              -30.47,
+              251.22,
+              617.07
+            ],
+            [
+              833.94,
+              -0.01,
+              289.33,
+              707.33
+            ],
+            [
+              960.55,
+              71.35,
+              338.27,
+              879.15
+            ],
+            [
+              1144.28,
+              239.41,
+              396.77,
+              978.26
+            ],
+            [
+              1697.47,
+              506.7,
+              457.66,
+              978.24
+            ]
+          ],
+          "start_timestamp": 139.28,
+          "end_timestamp": 144.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 27,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_27_151_184_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3772,
+            3938,
+            4104,
+            4270,
+            4436,
+            4602
+          ],
+          "bboxes": [
+            [
+              1894.57,
+              175.75,
+              144.63,
+              355.98
+            ],
+            [
+              1451.98,
+              107.42,
+              79.07,
+              201.08
+            ],
+            [
+              1508.7,
+              95.18,
+              66.4,
+              142.31
+            ],
+            [
+              1508.82,
+              107.2,
+              74.4,
+              130.29
+            ],
+            [
+              1466.64,
+              83.42,
+              61.82,
+              142.17
+            ],
+            [
+              1689.38,
+              79.43,
+              50.7,
+              122.64
+            ]
+          ],
+          "start_timestamp": 150.88,
+          "end_timestamp": 184.08,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:02:19.280-12:02:24.000) and [end video] (c16, 12:02:30.880-12:03:04.080),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:02:19.280-12:02:24.000)和[终点视频](c16, 12:02:30.880-12:03:04.080)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:02:28.080-12:02:34.000",
+      "choices": [
+        "A. 12:02:28.080-12:02:29.200",
+        "B. 12:02:25.000-12:02:38.000",
+        "C. 12:02:28.080-12:02:34.000",
+        "D. 12:02:24.080-12:02:30.000"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:02:19.280-12:02:24.000"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:02:30.880-12:03:04.080"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:02:28.080-12:02:34.000"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "Rqm9qf7nEnwbU4DdP5BikR",
+      "scene": "Track 27",
+      "map_image_path": "./map/ArrivalTimeInterval_map_27_Rqm9qf7nEnwbU4DdP5BikR.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 27,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_27_199_203_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4968,
+            4988,
+            5008,
+            5028,
+            5048,
+            5068
+          ],
+          "bboxes": [
+            [
+              1898.36,
+              452.3,
+              321.91,
+              638.73
+            ],
+            [
+              1615.9,
+              438.3,
+              300.2,
+              841.6
+            ],
+            [
+              1279.0,
+              472.5,
+              326.7,
+              954.4
+            ],
+            [
+              991.4,
+              568.9,
+              370.1,
+              1074.6
+            ],
+            [
+              578.2,
+              779.6,
+              587.1,
+              1234.7
+            ],
+            [
+              -71.7,
+              1034.9,
+              676.6,
+              1404.6
+            ]
+          ],
+          "start_timestamp": 198.72,
+          "end_timestamp": 202.76,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 27,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_27_213_216_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5333,
+            5348,
+            5363,
+            5378,
+            5393,
+            5408
+          ],
+          "bboxes": [
+            [
+              -54.71,
+              33.63,
+              133.6,
+              493.36
+            ],
+            [
+              69.07,
+              -34.54,
+              288.13,
+              570.09
+            ],
+            [
+              293.46,
+              -21.72,
+              266.04,
+              617.26
+            ],
+            [
+              493.08,
+              -26.9,
+              327.66,
+              625.79
+            ],
+            [
+              752.34,
+              -32.63,
+              292.85,
+              614.05
+            ],
+            [
+              1030.9,
+              -29.08,
+              240.5,
+              603.91
+            ]
+          ],
+          "start_timestamp": 213.32,
+          "end_timestamp": 216.4,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c09, 12:03:18.720-12:03:22.760) and [end video] (c12, 12:03:33.320-12:03:36.400),\nand knowing the target passed through camera c13, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:03:18.720-12:03:22.760)和[终点视频](c12, 12:03:33.320-12:03:36.400)，\n以及中间经过的摄像头c13，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:03:22.680-12:03:33.280",
+      "choices": [
+        "A. 12:03:33.320-12:03:34.200",
+        "B. 12:03:20.500-12:03:35.400",
+        "C. 12:03:18.800-12:03:22.600",
+        "D. 12:03:22.680-12:03:33.280"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:03:18.720-12:03:22.760"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:03:33.320-12:03:36.400"
+      },
+      "middle_point": {
+        "camera_id": "c13",
+        "time": "12:03:22.680-12:03:33.280"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "CMp4ugu2pRTo4wcHUGRLdm",
+      "scene": "Track 27",
+      "map_image_path": "./map/ArrivalTimeInterval_map_27_CMp4ugu2pRTo4wcHUGRLdm.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 27,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_27_98_113_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2439,
+            2517,
+            2595,
+            2673,
+            2751,
+            2829
+          ],
+          "bboxes": [
+            [
+              1876.36,
+              452.98,
+              198.14,
+              564.18
+            ],
+            [
+              645.64,
+              421.03,
+              253.54,
+              706.4
+            ],
+            [
+              659.68,
+              178.18,
+              223.0,
+              598.42
+            ],
+            [
+              864.43,
+              -95.33,
+              174.93,
+              490.91
+            ],
+            [
+              1234.85,
+              -217.74,
+              191.8,
+              451.95
+            ],
+            [
+              1448.03,
+              -327.42,
+              144.9,
+              455.13
+            ]
+          ],
+          "start_timestamp": 97.56,
+          "end_timestamp": 113.16,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 27,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_27_139_144_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3482,
+            3505,
+            3528,
+            3551,
+            3574,
+            3597
+          ],
+          "bboxes": [
+            [
+              1088.3,
+              27.59,
+              204.2,
+              539.58
+            ],
+            [
+              882.5,
+              -30.47,
+              251.22,
+              617.07
+            ],
+            [
+              833.94,
+              -0.01,
+              289.33,
+              707.33
+            ],
+            [
+              960.55,
+              71.35,
+              338.27,
+              879.15
+            ],
+            [
+              1144.28,
+              239.41,
+              396.77,
+              978.26
+            ],
+            [
+              1697.47,
+              506.7,
+              457.66,
+              978.24
+            ]
+          ],
+          "start_timestamp": 139.28,
+          "end_timestamp": 144.0,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c08, 12:01:37.560-12:01:53.160) and [end video] (c12, 12:02:19.280-12:02:24.000),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:01:37.560-12:01:53.160)和[终点视频](c12, 12:02:19.280-12:02:24.000)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:01:55.720-12:02:10.360",
+      "choices": [
+        "A. 12:01:52.500-12:02:15.800",
+        "B. 12:01:40.120-12:01:54.760",
+        "C. 12:02:11.400-12:02:18.200",
+        "D. 12:01:55.720-12:02:10.360"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:01:37.560-12:01:53.160"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:02:19.280-12:02:24.000"
+      },
+      "middle_point": {
+        "camera_id": "c03",
+        "time": "12:01:55.720-12:02:10.360"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "VvzBhGUsaooiZi2jzMbx7K",
+      "scene": "Track 28",
+      "map_image_path": "./map/ArrivalTimeInterval_map_28_VvzBhGUsaooiZi2jzMbx7K.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_28_26_31_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            651,
+            675,
+            699,
+            723,
+            747,
+            771
+          ],
+          "bboxes": [
+            [
+              1065.73,
+              28.4,
+              229.97,
+              535.58
+            ],
+            [
+              909.5,
+              -39.2,
+              220.3,
+              693.59
+            ],
+            [
+              840.9,
+              -20.0,
+              276.53,
+              796.8
+            ],
+            [
+              863.33,
+              87.88,
+              375.81,
+              1033.99
+            ],
+            [
+              1021.84,
+              266.79,
+              524.16,
+              1032.82
+            ],
+            [
+              1811.64,
+              666.64,
+              453.89,
+              1030.48
+            ]
+          ],
+          "start_timestamp": 26.04,
+          "end_timestamp": 30.88,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_28_82_154_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2055,
+            2413,
+            2771,
+            3129,
+            3487,
+            3845
+          ],
+          "bboxes": [
+            [
+              1880.66,
+              528.18,
+              474.05,
+              1293.02
+            ],
+            [
+              1516.82,
+              103.96,
+              69.26,
+              214.14
+            ],
+            [
+              1584.2,
+              106.5,
+              69.0,
+              205.57
+            ],
+            [
+              1568.02,
+              111.35,
+              86.88,
+              199.15
+            ],
+            [
+              1554.72,
+              98.64,
+              72.84,
+              203.68
+            ],
+            [
+              1593.71,
+              67.43,
+              43.39,
+              115.95
+            ]
+          ],
+          "start_timestamp": 82.2,
+          "end_timestamp": 153.92,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:00:26.040-12:00:30.880) and [end video] (c16, 12:01:22.200-12:02:33.920),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:00:26.040-12:00:30.880)和[终点视频](c16, 12:01:22.200-12:02:33.920)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:00:35.480-12:00:37.160",
+      "choices": [
+        "A. 12:00:31.200-12:00:33.040",
+        "B. 12:00:35.480-12:00:42.750",
+        "C. 12:00:34.600-12:00:37.160",
+        "D. 12:00:35.480-12:00:37.160"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:00:26.040-12:00:30.880"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:01:22.200-12:02:33.920"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:00:35.480-12:00:37.160"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "FG8ojZvhXG7moWBXJFJkUQ",
+      "scene": "Track 28",
+      "map_image_path": "./map/ArrivalTimeInterval_map_28_FG8ojZvhXG7moWBXJFJkUQ.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_28_202_208_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5045,
+            5078,
+            5111,
+            5144,
+            5177,
+            5210
+          ],
+          "bboxes": [
+            [
+              1728.0,
+              71.07,
+              48.19,
+              143.33
+            ],
+            [
+              1770.21,
+              80.82,
+              54.64,
+              158.37
+            ],
+            [
+              1807.17,
+              81.7,
+              54.03,
+              158.58
+            ],
+            [
+              1836.78,
+              87.02,
+              62.02,
+              174.37
+            ],
+            [
+              1871.3,
+              92.85,
+              60.24,
+              183.37
+            ],
+            [
+              1912.26,
+              98.32,
+              58.51,
+              176.27
+            ]
+          ],
+          "start_timestamp": 201.8,
+          "end_timestamp": 208.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_28_218_224_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5446,
+            5477,
+            5508,
+            5539,
+            5570,
+            5601
+          ],
+          "bboxes": [
+            [
+              1899.38,
+              398.3,
+              203.72,
+              645.9
+            ],
+            [
+              1469.7,
+              327.4,
+              243.8,
+              680.0
+            ],
+            [
+              944.8,
+              303.5,
+              276.3,
+              606.8
+            ],
+            [
+              604.9,
+              286.5,
+              242.6,
+              510.7
+            ],
+            [
+              413.8,
+              258.1,
+              163.3,
+              467.8
+            ],
+            [
+              268.7,
+              234.6,
+              118.4,
+              437.0
+            ]
+          ],
+          "start_timestamp": 217.84,
+          "end_timestamp": 224.04,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c16, 12:03:21.800-12:03:28.480) and [end video] (c09, 12:03:37.840-12:03:44.040),\nand knowing the target passed through camera c14, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c16, 12:03:21.800-12:03:28.480)和[终点视频](c09, 12:03:37.840-12:03:44.040)，\n以及中间经过的摄像头c14，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:03:30.000-12:03:30.400",
+      "choices": [
+        "A. 12:03:30.000-12:03:32.500",
+        "B. 12:03:29.000-12:03:36.000",
+        "C. 12:03:33.200-12:03:33.600",
+        "D. 12:03:30.000-12:03:30.400"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c16",
+        "time": "12:03:21.800-12:03:28.480"
+      },
+      "end_point": {
+        "camera_id": "c09",
+        "time": "12:03:37.840-12:03:44.040"
+      },
+      "middle_point": {
+        "camera_id": "c14",
+        "time": "12:03:30.000-12:03:30.400"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "ihvbCwbZhvfw5cctQw3nrj",
+      "scene": "Track 28",
+      "map_image_path": "./map/ArrivalTimeInterval_map_28_ihvbCwbZhvfw5cctQw3nrj.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_28_1_17_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            33,
+            109,
+            185,
+            261,
+            337,
+            413
+          ],
+          "bboxes": [
+            [
+              -37.24,
+              1033.19,
+              255.3,
+              437.7
+            ],
+            [
+              285.1,
+              421.49,
+              327.9,
+              594.33
+            ],
+            [
+              987.2,
+              229.7,
+              242.7,
+              655.9
+            ],
+            [
+              1108.08,
+              548.27,
+              324.92,
+              622.23
+            ],
+            [
+              713.38,
+              707.54,
+              528.62,
+              701.0
+            ],
+            [
+              -538.44,
+              208.1,
+              671.65,
+              1113.17
+            ]
+          ],
+          "start_timestamp": 1.32,
+          "end_timestamp": 16.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_28_35_37_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            887,
+            895,
+            903,
+            911,
+            919,
+            927
+          ],
+          "bboxes": [
+            [
+              305.8,
+              172.8,
+              62.5,
+              268.7
+            ],
+            [
+              298.8,
+              169.9,
+              99.7,
+              280.4
+            ],
+            [
+              298.8,
+              169.9,
+              88.3,
+              289.2
+            ],
+            [
+              298.8,
+              169.9,
+              88.3,
+              286.6
+            ],
+            [
+              298.8,
+              169.9,
+              87.4,
+              271.6
+            ],
+            [
+              298.8,
+              169.9,
+              71.5,
+              271.6
+            ]
+          ],
+          "start_timestamp": 35.48,
+          "end_timestamp": 37.16,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c03, 12:00:01.320-12:00:16.640) and [end video] (c09, 12:00:35.480-12:00:37.160),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:00:01.320-12:00:16.640)和[终点视频](c09, 12:00:35.480-12:00:37.160)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:00:26.040-12:00:30.880",
+      "choices": [
+        "A. 12:00:17.500-12:00:22.340",
+        "B. 12:00:31.200-12:00:32.400",
+        "C. 12:00:26.040-12:00:30.880",
+        "D. 12:00:23.800-12:00:33.650"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:00:01.320-12:00:16.640"
+      },
+      "end_point": {
+        "camera_id": "c09",
+        "time": "12:00:35.480-12:00:37.160"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:00:26.040-12:00:30.880"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "MSkfUhbst6rB9ZctoNXso8",
+      "scene": "Track 29",
+      "map_image_path": "./map/ArrivalTimeInterval_map_29_MSkfUhbst6rB9ZctoNXso8.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 29,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_29_31_51_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            785,
+            881,
+            977,
+            1073,
+            1169,
+            1265
+          ],
+          "bboxes": [
+            [
+              921.92,
+              129.27,
+              30.53,
+              87.19
+            ],
+            [
+              608.41,
+              158.3,
+              54.4,
+              131.0
+            ],
+            [
+              581.4,
+              249.22,
+              63.96,
+              161.28
+            ],
+            [
+              665.22,
+              394.37,
+              84.27,
+              213.83
+            ],
+            [
+              1095.4,
+              571.62,
+              120.18,
+              257.42
+            ],
+            [
+              1522.83,
+              1059.19,
+              113.11,
+              313.32
+            ]
+          ],
+          "start_timestamp": 31.4,
+          "end_timestamp": 50.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 29,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_29_68_87_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1710,
+            1802,
+            1894,
+            1986,
+            2078
+          ],
+          "bboxes": [
+            [
+              1568.5,
+              246.76,
+              20.96,
+              99.63
+            ],
+            [
+              1361.05,
+              232.96,
+              39.85,
+              119.53
+            ],
+            [
+              1182.4,
+              200.82,
+              42.2,
+              106.0
+            ],
+            [
+              1069.14,
+              170.65,
+              33.9,
+              97.44
+            ],
+            [
+              987.3,
+              145.05,
+              29.69,
+              83.9
+            ]
+          ],
+          "start_timestamp": 68.4,
+          "end_timestamp": 86.76,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c05, 12:00:31.400-12:00:50.720) and [end video] (c01, 12:01:08.400-12:01:26.760),\nand knowing the target passed through camera c08, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c05, 12:00:31.400-12:00:50.720)和[终点视频](c01, 12:01:08.400-12:01:26.760)，\n以及中间经过的摄像头c08，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "C. 12:00:58.080-12:01:08.440",
+      "choices": [
+        "A. 12:01:08.440-12:01:20.600",
+        "B. 12:00:55.200-12:01:15.300",
+        "C. 12:00:58.080-12:01:08.440",
+        "D. 12:00:50.720-12:00:58.080"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c05",
+        "time": "12:00:31.400-12:00:50.720"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:01:08.400-12:01:26.760"
+      },
+      "middle_point": {
+        "camera_id": "c08",
+        "time": "12:00:58.080-12:01:08.440"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "4rR3y3bhw5N7xoAuGv2sdd",
+      "scene": "Track 29",
+      "map_image_path": "./map/ArrivalTimeInterval_map_29_4rR3y3bhw5N7xoAuGv2sdd.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 29,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_29_90_94_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2259,
+            2279,
+            2299,
+            2319,
+            2339
+          ],
+          "bboxes": [
+            [
+              1083.68,
+              37.2,
+              143.23,
+              525.56
+            ],
+            [
+              948.7,
+              33.52,
+              176.7,
+              619.88
+            ],
+            [
+              791.72,
+              63.16,
+              298.18,
+              732.24
+            ],
+            [
+              710.55,
+              229.65,
+              402.79,
+              906.74
+            ],
+            [
+              790.09,
+              496.89,
+              566.61,
+              924.64
+            ]
+          ],
+          "start_timestamp": 90.36,
+          "end_timestamp": 94.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 29,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_29_98_101_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2442,
+            2459,
+            2476,
+            2493,
+            2510,
+            2527
+          ],
+          "bboxes": [
+            [
+              1901.13,
+              286.96,
+              158.74,
+              405.44
+            ],
+            [
+              1786.44,
+              239.56,
+              157.84,
+              412.44
+            ],
+            [
+              1771.69,
+              215.45,
+              126.89,
+              359.73
+            ],
+            [
+              1795.54,
+              199.47,
+              118.33,
+              331.69
+            ],
+            [
+              1854.53,
+              188.66,
+              92.11,
+              300.12
+            ],
+            [
+              1911.9,
+              195.01,
+              100.02,
+              278.0
+            ]
+          ],
+          "start_timestamp": 97.68,
+          "end_timestamp": 101.12,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:01:30.360-12:01:34.320) and [end video] (c16, 12:01:37.680-12:01:41.120),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:01:30.360-12:01:34.320)和[终点视频](c16, 12:01:37.680-12:01:41.120)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "D. 12:01:37.360-12:01:42.880",
+      "choices": [
+        "A. 12:01:35.600-12:01:36.400",
+        "B. 12:01:34.400-12:01:37.200",
+        "C. 12:01:36.800-12:01:41.120",
+        "D. 12:01:37.360-12:01:42.880"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:01:30.360-12:01:34.320"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:01:37.680-12:01:41.120"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:01:37.360-12:01:42.880"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "ArrivalTimeInterval",
+      "case_id": "6rYgL3JERuJJ5vXrh76TPD",
+      "scene": "Track 29",
+      "map_image_path": "./map/ArrivalTimeInterval_map_29_6rYgL3JERuJJ5vXrh76TPD.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 29,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_29_177_182_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4435,
+            4455,
+            4475,
+            4495,
+            4515,
+            4535
+          ],
+          "bboxes": [
+            [
+              1831.78,
+              740.55,
+              422.7,
+              931.6
+            ],
+            [
+              1020.47,
+              341.47,
+              517.03,
+              931.61
+            ],
+            [
+              669.62,
+              152.9,
+              313.18,
+              896.6
+            ],
+            [
+              607.28,
+              68.08,
+              249.42,
+              762.52
+            ],
+            [
+              823.25,
+              4.12,
+              199.9,
+              606.53
+            ],
+            [
+              1022.53,
+              8.76,
+              170.96,
+              554.04
+            ]
+          ],
+          "start_timestamp": 177.4,
+          "end_timestamp": 181.52,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 29,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_29_200_207_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5011,
+            5045,
+            5079,
+            5113,
+            5147,
+            5181
+          ],
+          "bboxes": [
+            [
+              1452.21,
+              -214.23,
+              124.41,
+              313.19
+            ],
+            [
+              1172.86,
+              -126.1,
+              135.8,
+              401.56
+            ],
+            [
+              794.2,
+              -126.98,
+              166.0,
+              504.28
+            ],
+            [
+              614.75,
+              95.64,
+              167.47,
+              552.12
+            ],
+            [
+              444.9,
+              376.84,
+              199.68,
+              611.6
+            ],
+            [
+              -137.84,
+              662.37,
+              254.25,
+              646.16
+            ]
+          ],
+          "start_timestamp": 200.44,
+          "end_timestamp": 207.36,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
+      "question": "\nBased on the provided [start video] (c12, 12:02:57.400-12:03:01.520) and [end video] (c08, 12:03:20.440-12:03:27.360),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:02:57.400-12:03:01.520)和[终点视频](c08, 12:03:20.440-12:03:27.360)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
+      "ground_truth": "B. 12:03:10.440-12:03:18.280",
+      "choices": [
+        "A. 12:03:02.500-12:03:10.000",
+        "B. 12:03:10.440-12:03:18.280",
+        "C. 12:03:08.440-12:03:20.280",
+        "D. 12:03:19.000-12:03:20.200"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:02:57.400-12:03:01.520"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:03:20.440-12:03:27.360"
+      },
+      "middle_point": {
+        "camera_id": "c03",
+        "time": "12:03:10.440-12:03:18.280"
+      },
+      "middle_path": null
+    }
+  ]
+}

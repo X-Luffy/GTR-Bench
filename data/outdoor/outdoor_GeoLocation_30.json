@@ -1,0 +1,4184 @@
+{
+  "cases": [
+    {
+      "task_id": "GeoLocation",
+      "case_id": "TAFXtPq2mCTSGqjM3nbFZJ",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_259_TAFXtPq2mCTSGqjM3nbFZJ.png",
+      "camera_images": [
+        {
+          "camera_id": "c088",
+          "object_id": 259,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_259_43_56_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            31,
+            57,
+            83,
+            109,
+            135,
+            161
+          ],
+          "bboxes": [
+            [
+              920.0,
+              63.0,
+              262.0,
+              105.0
+            ],
+            [
+              702.0,
+              64.0,
+              180.0,
+              120.0
+            ],
+            [
+              577.0,
+              74.0,
+              184.0,
+              133.0
+            ],
+            [
+              543.0,
+              131.0,
+              218.0,
+              163.0
+            ],
+            [
+              644.0,
+              236.0,
+              322.0,
+              239.0
+            ],
+            [
+              990.0,
+              583.0,
+              627.0,
+              473.0
+            ]
+          ],
+          "start_timestamp": 43.073,
+          "end_timestamp": 56.272999999999996,
+          "direction": "南偏东89.57°"
+        },
+        {
+          "camera_id": "c043",
+          "object_id": 259,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_259_59_59_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            320,
+            321,
+            322
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1079.0,
+              2148.0,
+              841.0
+            ],
+            [
+              442.0,
+              1118.0,
+              2118.0,
+              802.0
+            ],
+            [
+              930.0,
+              1161.0,
+              1630.0,
+              759.0
+            ]
+          ],
+          "start_timestamp": 58.979,
+          "end_timestamp": 59.179,
+          "direction": "北偏西15.06°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c088, 12:00:43.073-12:00:56.273) and end point (c043, 12:00:58.979-12:00:59.179).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c088, 12:00:43.073-12:00:56.273)\n到终点(c043, 12:00:58.979-12:00:59.179)中间经过的摄像头是？\n",
+      "ground_truth": "A. c013",
+      "choices": [
+        "A. c013",
+        "B. c071",
+        "C. c084",
+        "D. c05"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c021",
+        "time": "12:00:43.073-12:00:56.273"
+      },
+      "end_point": {
+        "camera_id": "c019",
+        "time": "12:00:58.979-12:00:59.179"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c020"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "mh3NgqxYDjiR9dRAMDhkCk",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_259_mh3NgqxYDjiR9dRAMDhkCk.png",
+      "camera_images": [
+        {
+          "camera_id": "c066",
+          "object_id": 259,
+          "video_path": "./raw_video/outdoor_S04_c020.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_259_52_59_c020.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            263,
+            276,
+            289,
+            302,
+            315
+          ],
+          "bboxes": [
+            [
+              304.0,
+              760.0,
+              84.0,
+              65.0
+            ],
+            [
+              330.0,
+              765.0,
+              101.0,
+              83.0
+            ],
+            [
+              376.0,
+              771.0,
+              132.0,
+              104.0
+            ],
+            [
+              450.0,
+              785.0,
+              188.0,
+              149.0
+            ],
+            [
+              633.0,
+              819.0,
+              356.0,
+              261.0
+            ]
+          ],
+          "start_timestamp": 52.205,
+          "end_timestamp": 58.605000000000004,
+          "direction": "北偏西80.84°"
+        },
+        {
+          "camera_id": "c058",
+          "object_id": 259,
+          "video_path": "./raw_video/outdoor_S04_c018.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_259_59_65_c018.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            295,
+            305,
+            315,
+            325,
+            335,
+            345
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1222.0,
+              1002.0,
+              698.0
+            ],
+            [
+              1276.0,
+              1243.0,
+              492.0,
+              311.0
+            ],
+            [
+              1796.0,
+              1285.0,
+              307.0,
+              211.0
+            ],
+            [
+              2096.0,
+              1341.0,
+              232.0,
+              156.0
+            ],
+            [
+              2283.0,
+              1368.0,
+              183.0,
+              139.0
+            ],
+            [
+              2412.0,
+              1388.0,
+              148.0,
+              117.0
+            ]
+          ],
+          "start_timestamp": 59.455,
+          "end_timestamp": 64.555,
+          "direction": "北偏东48.46°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c066, 12:00:52.205-12:00:58.605) and end point (c058, 12:00:59.455-12:01:04.555).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c066, 12:00:52.205-12:00:58.605)\n到终点(c058, 12:00:59.455-12:01:04.555)中间经过的摄像头是？\n",
+      "ground_truth": "C. c012",
+      "choices": [
+        "A. c079",
+        "B. c015",
+        "C. c012",
+        "D. c04"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c020",
+        "time": "12:00:52.205-12:00:58.605"
+      },
+      "end_point": {
+        "camera_id": "c018",
+        "time": "12:00:59.455-12:01:04.555"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c019"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "EUua4SuB4wgDmq9wQSAzYc",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_260_EUua4SuB4wgDmq9wQSAzYc.png",
+      "camera_images": [
+        {
+          "camera_id": "c078",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_43_44_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            163,
+            164,
+            165,
+            166
+          ],
+          "bboxes": [
+            [
+              842.0,
+              796.0,
+              1718.0,
+              743.0
+            ],
+            [
+              453.0,
+              764.0,
+              1881.0,
+              743.0
+            ],
+            [
+              75.0,
+              729.0,
+              1879.0,
+              754.0
+            ],
+            [
+              0.0,
+              701.0,
+              1561.0,
+              750.0
+            ]
+          ],
+          "start_timestamp": 43.278999999999996,
+          "end_timestamp": 43.579,
+          "direction": "北偏西15.06°"
+        },
+        {
+          "camera_id": "c016",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_46_54_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            61,
+            76,
+            91,
+            106,
+            121,
+            136
+          ],
+          "bboxes": [
+            [
+              1417.0,
+              357.0,
+              503.0,
+              471.0
+            ],
+            [
+              1044.0,
+              185.0,
+              420.0,
+              334.0
+            ],
+            [
+              897.0,
+              112.0,
+              261.0,
+              227.0
+            ],
+            [
+              839.0,
+              63.0,
+              187.0,
+              179.0
+            ],
+            [
+              882.0,
+              34.0,
+              182.0,
+              166.0
+            ],
+            [
+              1009.0,
+              31.0,
+              145.0,
+              145.0
+            ]
+          ],
+          "start_timestamp": 46.073,
+          "end_timestamp": 53.573,
+          "direction": "南偏东89.57°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c078, 12:00:43.279-12:00:43.579) and end point (c016, 12:00:46.073-12:00:53.573).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c078, 12:00:43.279-12:00:43.579)\n到终点(c016, 12:00:46.073-12:00:53.573)中间经过的摄像头是？\n",
+      "ground_truth": "C. c082",
+      "choices": [
+        "A. c060",
+        "B. c014",
+        "C. c082",
+        "D. c022"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c019",
+        "time": "12:00:43.279-12:00:43.579"
+      },
+      "end_point": {
+        "camera_id": "c021",
+        "time": "12:00:46.073-12:00:53.573"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c020"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "3pV3T8TZQCEkBsqVDX5e3x",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_260_3pV3T8TZQCEkBsqVDX5e3x.png",
+      "camera_images": [
+        {
+          "camera_id": "c079",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_155_170_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            151,
+            181,
+            211,
+            241,
+            271,
+            301
+          ],
+          "bboxes": [
+            [
+              185.0,
+              115.0,
+              59.0,
+              49.0
+            ],
+            [
+              243.0,
+              149.0,
+              82.0,
+              66.0
+            ],
+            [
+              378.0,
+              201.0,
+              120.0,
+              94.0
+            ],
+            [
+              611.0,
+              288.0,
+              237.0,
+              154.0
+            ],
+            [
+              1022.0,
+              398.0,
+              432.0,
+              254.0
+            ],
+            [
+              1430.0,
+              506.0,
+              490.0,
+              362.0
+            ]
+          ],
+          "start_timestamp": 155.31799999999998,
+          "end_timestamp": 170.31799999999998,
+          "direction": "南偏东59.31°"
+        },
+        {
+          "camera_id": "c034",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_176_183_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            108,
+            121,
+            134,
+            147,
+            160,
+            173
+          ],
+          "bboxes": [
+            [
+              0.0,
+              545.0,
+              206.0,
+              217.0
+            ],
+            [
+              176.0,
+              396.0,
+              419.0,
+              266.0
+            ],
+            [
+              680.0,
+              214.0,
+              487.0,
+              253.0
+            ],
+            [
+              1209.0,
+              104.0,
+              242.0,
+              163.0
+            ],
+            [
+              1378.0,
+              37.0,
+              118.0,
+              106.0
+            ],
+            [
+              1397.0,
+              0.0,
+              65.0,
+              58.0
+            ]
+          ],
+          "start_timestamp": 176.36800000000002,
+          "end_timestamp": 182.96800000000002,
+          "direction": "南偏东45.78°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c079, 12:02:35.318-12:02:50.318) and end point (c034, 12:02:56.368-12:03:02.968).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c079, 12:02:35.318-12:02:50.318)\n到终点(c034, 12:02:56.368-12:03:02.968)中间经过的摄像头是？\n",
+      "ground_truth": "D. c040",
+      "choices": [
+        "A. c039",
+        "B. c01",
+        "C. c059",
+        "D. c040"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c034",
+        "time": "12:02:35.318-12:02:50.318"
+      },
+      "end_point": {
+        "camera_id": "c035",
+        "time": "12:02:56.368-12:03:02.968"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c033"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "HmRwGEvJWJu9ziHXeQoubW",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_261_HmRwGEvJWJu9ziHXeQoubW.png",
+      "camera_images": [
+        {
+          "camera_id": "c026",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_76_84_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            307,
+            322,
+            337,
+            352,
+            367,
+            382
+          ],
+          "bboxes": [
+            [
+              1887.0,
+              891.0,
+              63.0,
+              52.0
+            ],
+            [
+              1841.0,
+              889.0,
+              74.0,
+              64.0
+            ],
+            [
+              1768.0,
+              885.0,
+              91.0,
+              78.0
+            ],
+            [
+              1636.0,
+              874.0,
+              128.0,
+              106.0
+            ],
+            [
+              1342.0,
+              854.0,
+              242.0,
+              168.0
+            ],
+            [
+              292.0,
+              823.0,
+              635.0,
+              350.0
+            ]
+          ],
+          "start_timestamp": 76.416,
+          "end_timestamp": 84.116,
+          "direction": "北偏东64.50°"
+        },
+        {
+          "camera_id": "c062",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c025.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_85_93_c025.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            351,
+            366,
+            381,
+            396,
+            411,
+            426
+          ],
+          "bboxes": [
+            [
+              1764.0,
+              898.0,
+              796.0,
+              432.0
+            ],
+            [
+              818.0,
+              974.0,
+              256.0,
+              183.0
+            ],
+            [
+              563.0,
+              991.0,
+              165.0,
+              122.0
+            ],
+            [
+              453.0,
+              1006.0,
+              100.0,
+              82.0
+            ],
+            [
+              389.0,
+              1007.0,
+              81.0,
+              67.0
+            ],
+            [
+              349.0,
+              1006.0,
+              61.0,
+              54.0
+            ]
+          ],
+          "start_timestamp": 85.363,
+          "end_timestamp": 92.863,
+          "direction": "北偏西68.77°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c026, 12:01:16.416-12:01:24.116) and end point (c062, 12:01:25.363-12:01:32.863).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c026, 12:01:16.416-12:01:24.116)\n到终点(c062, 12:01:25.363-12:01:32.863)中间经过的摄像头是？\n",
+      "ground_truth": "B. c098",
+      "choices": [
+        "A. c077",
+        "B. c098",
+        "C. c065",
+        "D. c05"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c023",
+        "time": "12:01:16.416-12:01:24.116"
+      },
+      "end_point": {
+        "camera_id": "c025",
+        "time": "12:01:25.363-12:01:32.863"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c024"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "F8qcsvV3wHB8KMip27eMeB",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_261_F8qcsvV3wHB8KMip27eMeB.png",
+      "camera_images": [
+        {
+          "camera_id": "c035",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_84_85_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342
+          ],
+          "bboxes": [
+            [
+              1693.0,
+              807.0,
+              867.0,
+              488.0
+            ],
+            [
+              1412.0,
+              812.0,
+              1101.0,
+              498.0
+            ],
+            [
+              1129.0,
+              816.0,
+              1103.0,
+              510.0
+            ],
+            [
+              837.0,
+              825.0,
+              1108.0,
+              516.0
+            ],
+            [
+              533.0,
+              833.0,
+              1116.0,
+              521.0
+            ],
+            [
+              228.0,
+              842.0,
+              1117.0,
+              518.0
+            ],
+            [
+              0.0,
+              850.0,
+              1045.0,
+              523.0
+            ]
+          ],
+          "start_timestamp": 84.453,
+          "end_timestamp": 85.053,
+          "direction": "北偏西4.78°"
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c026.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_90_102_c026.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            193,
+            217,
+            241,
+            265,
+            289
+          ],
+          "bboxes": [
+            [
+              1041.0,
+              840.0,
+              395.0,
+              239.0
+            ],
+            [
+              1093.0,
+              514.0,
+              258.0,
+              203.0
+            ],
+            [
+              1115.0,
+              323.0,
+              185.0,
+              150.0
+            ],
+            [
+              1121.0,
+              203.0,
+              147.0,
+              124.0
+            ],
+            [
+              1136.0,
+              138.0,
+              125.0,
+              101.0
+            ]
+          ],
+          "start_timestamp": 89.75,
+          "end_timestamp": 101.65,
+          "direction": "南偏东77.66°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c035, 12:01:24.453-12:01:25.053) and end point (c09, 12:01:29.750-12:01:41.650).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c035, 12:01:24.453-12:01:25.053)\n到终点(c09, 12:01:29.750-12:01:41.650)中间经过的摄像头是？\n",
+      "ground_truth": "C. c043",
+      "choices": [
+        "A. c015",
+        "B. c018",
+        "C. c043",
+        "D. c089"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c024",
+        "time": "12:01:24.453-12:01:25.053"
+      },
+      "end_point": {
+        "camera_id": "c026",
+        "time": "12:01:29.750-12:01:41.650"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c025"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "fn9dZoUEmYbTLZY6sGxecp",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_261_fn9dZoUEmYbTLZY6sGxecp.png",
+      "camera_images": [
+        {
+          "camera_id": "c048",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_51_59_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            112,
+            128,
+            144,
+            160,
+            176,
+            192
+          ],
+          "bboxes": [
+            [
+              1533.0,
+              426.0,
+              387.0,
+              329.0
+            ],
+            [
+              1170.0,
+              264.0,
+              343.0,
+              232.0
+            ],
+            [
+              956.0,
+              158.0,
+              255.0,
+              208.0
+            ],
+            [
+              864.0,
+              114.0,
+              184.0,
+              141.0
+            ],
+            [
+              903.0,
+              75.0,
+              161.0,
+              128.0
+            ],
+            [
+              1010.0,
+              66.0,
+              138.0,
+              108.0
+            ]
+          ],
+          "start_timestamp": 51.173,
+          "end_timestamp": 59.373,
+          "direction": "南偏东89.57°"
+        },
+        {
+          "camera_id": "c014",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_76_84_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            307,
+            322,
+            337,
+            352,
+            367,
+            382
+          ],
+          "bboxes": [
+            [
+              1887.0,
+              891.0,
+              63.0,
+              52.0
+            ],
+            [
+              1841.0,
+              889.0,
+              74.0,
+              64.0
+            ],
+            [
+              1768.0,
+              885.0,
+              91.0,
+              78.0
+            ],
+            [
+              1636.0,
+              874.0,
+              128.0,
+              106.0
+            ],
+            [
+              1342.0,
+              854.0,
+              242.0,
+              168.0
+            ],
+            [
+              292.0,
+              823.0,
+              635.0,
+              350.0
+            ]
+          ],
+          "start_timestamp": 76.416,
+          "end_timestamp": 84.116,
+          "direction": "北偏东64.50°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c048, 12:00:51.173-12:00:59.373) and end point (c014, 12:01:16.416-12:01:24.116).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c048, 12:00:51.173-12:00:59.373)\n到终点(c014, 12:01:16.416-12:01:24.116)中间经过的摄像头是？\n",
+      "ground_truth": "C. c05",
+      "choices": [
+        "A. c046",
+        "B. c066",
+        "C. c05",
+        "D. c02"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c021",
+        "time": "12:00:51.173-12:00:59.373"
+      },
+      "end_point": {
+        "camera_id": "c023",
+        "time": "12:01:16.416-12:01:24.116"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c022"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "TfacCWmWeYTRouZxXmbGb7",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_262_TfacCWmWeYTRouZxXmbGb7.png",
+      "camera_images": [
+        {
+          "camera_id": "c084",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_176_183_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            507,
+            522,
+            537,
+            552,
+            567,
+            582
+          ],
+          "bboxes": [
+            [
+              953.0,
+              485.0,
+              43.0,
+              40.0
+            ],
+            [
+              923.0,
+              494.0,
+              55.0,
+              45.0
+            ],
+            [
+              877.0,
+              498.0,
+              70.0,
+              54.0
+            ],
+            [
+              782.0,
+              494.0,
+              113.0,
+              80.0
+            ],
+            [
+              577.0,
+              470.0,
+              182.0,
+              105.0
+            ],
+            [
+              0.0,
+              369.0,
+              328.0,
+              170.0
+            ]
+          ],
+          "start_timestamp": 175.899,
+          "end_timestamp": 183.399,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c062",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_186_188_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            614,
+            617,
+            620,
+            623,
+            626,
+            629,
+            632
+          ],
+          "bboxes": [
+            [
+              1334.0,
+              301.0,
+              266.0,
+              167.0
+            ],
+            [
+              1204.0,
+              330.0,
+              322.0,
+              144.0
+            ],
+            [
+              1103.0,
+              347.0,
+              282.0,
+              134.0
+            ],
+            [
+              1015.0,
+              366.0,
+              234.0,
+              124.0
+            ],
+            [
+              947.0,
+              381.0,
+              204.0,
+              115.0
+            ],
+            [
+              890.0,
+              396.0,
+              183.0,
+              106.0
+            ],
+            [
+              845.0,
+              411.0,
+              155.0,
+              92.0
+            ]
+          ],
+          "start_timestamp": 185.719,
+          "end_timestamp": 187.519,
+          "direction": "南偏东43.50°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c084, 12:02:55.899-12:03:03.399) and end point (c062, 12:03:05.719-12:03:07.519).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c084, 12:02:55.899-12:03:03.399)\n到终点(c062, 12:03:05.719-12:03:07.519)中间经过的摄像头是？\n",
+      "ground_truth": "B. c044",
+      "choices": [
+        "A. c025",
+        "B. c044",
+        "C. c095",
+        "D. c014"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c032",
+        "time": "12:02:55.899-12:03:03.399"
+      },
+      "end_point": {
+        "camera_id": "c030",
+        "time": "12:03:05.719-12:03:07.519"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c031"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "KBpjUYoX353oUKEwjhH5zi",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_262_KBpjUYoX353oUKEwjhH5zi.png",
+      "camera_images": [
+        {
+          "camera_id": "c093",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_167_180_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            267,
+            302,
+            325,
+            348,
+            371
+          ],
+          "bboxes": [
+            [
+              1684.0,
+              372.0,
+              236.0,
+              141.0
+            ],
+            [
+              834.0,
+              223.0,
+              161.0,
+              94.0
+            ],
+            [
+              631.0,
+              184.0,
+              97.0,
+              63.0
+            ],
+            [
+              497.0,
+              155.0,
+              75.0,
+              52.0
+            ],
+            [
+              412.0,
+              135.0,
+              61.0,
+              46.0
+            ]
+          ],
+          "start_timestamp": 166.91799999999998,
+          "end_timestamp": 179.51799999999997,
+          "direction": "南偏东59.31°"
+        },
+        {
+          "camera_id": "c057",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_184_185_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            588,
+            591,
+            594,
+            597,
+            600,
+            603
+          ],
+          "bboxes": [
+            [
+              1177.0,
+              334.0,
+              423.0,
+              178.0
+            ],
+            [
+              903.0,
+              308.0,
+              526.0,
+              199.0
+            ],
+            [
+              654.0,
+              296.0,
+              521.0,
+              199.0
+            ],
+            [
+              409.0,
+              292.0,
+              509.0,
+              190.0
+            ],
+            [
+              168.0,
+              286.0,
+              502.0,
+              188.0
+            ],
+            [
+              0.0,
+              294.0,
+              413.0,
+              164.0
+            ]
+          ],
+          "start_timestamp": 183.833,
+          "end_timestamp": 185.333,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c093, 12:02:46.918-12:02:59.518) and end point (c057, 12:03:03.833-12:03:05.333).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c093, 12:02:46.918-12:02:59.518)\n到终点(c057, 12:03:03.833-12:03:05.333)中间经过的摄像头是？\n",
+      "ground_truth": "D. c098",
+      "choices": [
+        "A. c056",
+        "B. c082",
+        "C. c036",
+        "D. c098"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c034",
+        "time": "12:02:46.918-12:02:59.518"
+      },
+      "end_point": {
+        "camera_id": "c031",
+        "time": "12:03:03.833-12:03:05.333"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c032"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "bxwTAoWVDdCYxxmXS3EJpq",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_262_bxwTAoWVDdCYxxmXS3EJpq.png",
+      "camera_images": [
+        {
+          "camera_id": "c036",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_155_177_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            39,
+            82,
+            125,
+            168,
+            211,
+            254
+          ],
+          "bboxes": [
+            [
+              373.0,
+              59.0,
+              247.0,
+              111.0
+            ],
+            [
+              512.0,
+              67.0,
+              181.0,
+              113.0
+            ],
+            [
+              556.0,
+              116.0,
+              164.0,
+              128.0
+            ],
+            [
+              517.0,
+              256.0,
+              194.0,
+              153.0
+            ],
+            [
+              348.0,
+              440.0,
+              274.0,
+              212.0
+            ],
+            [
+              0.0,
+              749.0,
+              361.0,
+              313.0
+            ]
+          ],
+          "start_timestamp": 154.793,
+          "end_timestamp": 176.593,
+          "direction": "北偏西76.27°"
+        },
+        {
+          "camera_id": "c025",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_176_183_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            507,
+            522,
+            537,
+            552,
+            567,
+            582
+          ],
+          "bboxes": [
+            [
+              953.0,
+              485.0,
+              43.0,
+              40.0
+            ],
+            [
+              923.0,
+              494.0,
+              55.0,
+              45.0
+            ],
+            [
+              877.0,
+              498.0,
+              70.0,
+              54.0
+            ],
+            [
+              782.0,
+              494.0,
+              113.0,
+              80.0
+            ],
+            [
+              577.0,
+              470.0,
+              182.0,
+              105.0
+            ],
+            [
+              0.0,
+              369.0,
+              328.0,
+              170.0
+            ]
+          ],
+          "start_timestamp": 175.899,
+          "end_timestamp": 183.399,
+          "direction": "北偏西85.86°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c036, 12:02:34.793-12:02:56.593) and end point (c025, 12:02:55.899-12:03:03.399).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c036, 12:02:34.793-12:02:56.593)\n到终点(c025, 12:02:55.899-12:03:03.399)中间经过的摄像头是？\n",
+      "ground_truth": "C. c043",
+      "choices": [
+        "A. c019",
+        "B. c063",
+        "C. c043",
+        "D. c059"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c033",
+        "time": "12:02:34.793-12:02:56.593"
+      },
+      "end_point": {
+        "camera_id": "c032",
+        "time": "12:02:55.899-12:03:03.399"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c034"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "dQP2NgHZCu6QoSbiHiLpxU",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_263_dQP2NgHZCu6QoSbiHiLpxU.png",
+      "camera_images": [
+        {
+          "camera_id": "c054",
+          "object_id": 263,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_263_81_88_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            349,
+            363,
+            377,
+            391,
+            405,
+            419
+          ],
+          "bboxes": [
+            [
+              1898.0,
+              883.0,
+              67.0,
+              60.0
+            ],
+            [
+              1854.0,
+              875.0,
+              76.0,
+              73.0
+            ],
+            [
+              1783.0,
+              872.0,
+              98.0,
+              89.0
+            ],
+            [
+              1649.0,
+              853.0,
+              144.0,
+              130.0
+            ],
+            [
+              1381.0,
+              846.0,
+              243.0,
+              179.0
+            ],
+            [
+              334.0,
+              788.0,
+              676.0,
+              399.0
+            ]
+          ],
+          "start_timestamp": 80.616,
+          "end_timestamp": 87.816,
+          "direction": "北偏东64.50°"
+        },
+        {
+          "camera_id": "c065",
+          "object_id": 263,
+          "video_path": "./raw_video/outdoor_S04_c025.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_263_89_96_c025.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            387,
+            401,
+            415,
+            429,
+            443,
+            457
+          ],
+          "bboxes": [
+            [
+              1727.0,
+              827.0,
+              833.0,
+              533.0
+            ],
+            [
+              809.0,
+              952.0,
+              275.0,
+              202.0
+            ],
+            [
+              561.0,
+              979.0,
+              164.0,
+              128.0
+            ],
+            [
+              451.0,
+              993.0,
+              111.0,
+              96.0
+            ],
+            [
+              382.0,
+              1002.0,
+              88.0,
+              77.0
+            ],
+            [
+              337.0,
+              999.0,
+              74.0,
+              67.0
+            ]
+          ],
+          "start_timestamp": 88.963,
+          "end_timestamp": 96.263,
+          "direction": "北偏西68.77°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c054, 12:01:20.616-12:01:27.816) and end point (c065, 12:01:28.963-12:01:36.263).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c054, 12:01:20.616-12:01:27.816)\n到终点(c065, 12:01:28.963-12:01:36.263)中间经过的摄像头是？\n",
+      "ground_truth": "B. c085",
+      "choices": [
+        "A. c014",
+        "B. c085",
+        "C. c035",
+        "D. c048"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c023",
+        "time": "12:01:20.616-12:01:27.816"
+      },
+      "end_point": {
+        "camera_id": "c025",
+        "time": "12:01:28.963-12:01:36.263"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c024"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "B3osuvm8J8f3PAmoTi63pc",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_263_B3osuvm8J8f3PAmoTi63pc.png",
+      "camera_images": [
+        {
+          "camera_id": "c024",
+          "object_id": 263,
+          "video_path": "./raw_video/outdoor_S04_c022.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_263_75_80_c022.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            259,
+            269,
+            279,
+            289,
+            299,
+            309
+          ],
+          "bboxes": [
+            [
+              887.0,
+              140.0,
+              82.0,
+              67.0
+            ],
+            [
+              874.0,
+              126.0,
+              91.0,
+              83.0
+            ],
+            [
+              853.0,
+              135.0,
+              110.0,
+              95.0
+            ],
+            [
+              840.0,
+              151.0,
+              105.0,
+              99.0
+            ],
+            [
+              815.0,
+              173.0,
+              118.0,
+              110.0
+            ],
+            [
+              785.0,
+              194.0,
+              133.0,
+              128.0
+            ]
+          ],
+          "start_timestamp": 75.322,
+          "end_timestamp": 80.422,
+          "direction": "北偏东78.46°"
+        },
+        {
+          "camera_id": "c029",
+          "object_id": 263,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_263_88_89_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            373,
+            374,
+            375,
+            376,
+            377,
+            378
+          ],
+          "bboxes": [
+            [
+              1576.0,
+              749.0,
+              984.0,
+              590.0
+            ],
+            [
+              1263.0,
+              755.0,
+              1259.0,
+              605.0
+            ],
+            [
+              948.0,
+              751.0,
+              1269.0,
+              613.0
+            ],
+            [
+              617.0,
+              762.0,
+              1274.0,
+              618.0
+            ],
+            [
+              276.0,
+              768.0,
+              1283.0,
+              629.0
+            ],
+            [
+              0.0,
+              781.0,
+              1228.0,
+              624.0
+            ]
+          ],
+          "start_timestamp": 88.15299999999999,
+          "end_timestamp": 88.65299999999999,
+          "direction": "北偏西4.78°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c024, 12:01:15.322-12:01:20.422) and end point (c029, 12:01:28.153-12:01:28.653).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c024, 12:01:15.322-12:01:20.422)\n到终点(c029, 12:01:28.153-12:01:28.653)中间经过的摄像头是？\n",
+      "ground_truth": "A. c037",
+      "choices": [
+        "A. c037",
+        "B. c049",
+        "C. c043",
+        "D. c098"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c022",
+        "time": "12:01:15.322-12:01:20.422"
+      },
+      "end_point": {
+        "camera_id": "c024",
+        "time": "12:01:28.153-12:01:28.653"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c023"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "Vf5eCezGyRy3xNGr9QnHLQ",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_264_Vf5eCezGyRy3xNGr9QnHLQ.png",
+      "camera_images": [
+        {
+          "camera_id": "c027",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_98_99_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            475,
+            476,
+            477,
+            478,
+            479,
+            480
+          ],
+          "bboxes": [
+            [
+              1388.0,
+              803.0,
+              1172.0,
+              514.0
+            ],
+            [
+              1075.0,
+              814.0,
+              1278.0,
+              522.0
+            ],
+            [
+              751.0,
+              822.0,
+              1306.0,
+              527.0
+            ],
+            [
+              423.0,
+              835.0,
+              1317.0,
+              523.0
+            ],
+            [
+              88.0,
+              842.0,
+              1328.0,
+              533.0
+            ],
+            [
+              0.0,
+              850.0,
+              1103.0,
+              536.0
+            ]
+          ],
+          "start_timestamp": 98.35300000000001,
+          "end_timestamp": 98.85300000000001,
+          "direction": "北偏西4.78°"
+        },
+        {
+          "camera_id": "c033",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c026.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_103_118_c026.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            330,
+            359,
+            388,
+            417,
+            446
+          ],
+          "bboxes": [
+            [
+              1027.0,
+              827.0,
+              369.0,
+              253.0
+            ],
+            [
+              1071.0,
+              451.0,
+              258.0,
+              178.0
+            ],
+            [
+              1113.0,
+              241.0,
+              173.0,
+              132.0
+            ],
+            [
+              1135.0,
+              135.0,
+              140.0,
+              111.0
+            ],
+            [
+              1140.0,
+              88.0,
+              108.0,
+              81.0
+            ]
+          ],
+          "start_timestamp": 103.45,
+          "end_timestamp": 117.85,
+          "direction": "南偏东77.66°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c027, 12:01:38.353-12:01:38.853) and end point (c033, 12:01:43.450-12:01:57.850).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c027, 12:01:38.353-12:01:38.853)\n到终点(c033, 12:01:43.450-12:01:57.850)中间经过的摄像头是？\n",
+      "ground_truth": "A. c07",
+      "choices": [
+        "A. c07",
+        "B. c069",
+        "C. c030",
+        "D. c037"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c024",
+        "time": "12:01:38.353-12:01:38.853"
+      },
+      "end_point": {
+        "camera_id": "c026",
+        "time": "12:01:43.450-12:01:57.850"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c025"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "btkKE9cvMicAXyNGgspnNg",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_264_btkKE9cvMicAXyNGgspnNg.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_63_63_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            356,
+            357,
+            358,
+            359,
+            360,
+            361
+          ],
+          "bboxes": [
+            [
+              1401.0,
+              928.0,
+              1159.0,
+              525.0
+            ],
+            [
+              1099.0,
+              907.0,
+              1408.0,
+              527.0
+            ],
+            [
+              762.0,
+              876.0,
+              1506.0,
+              545.0
+            ],
+            [
+              439.0,
+              845.0,
+              1519.0,
+              554.0
+            ],
+            [
+              168.0,
+              829.0,
+              1438.0,
+              538.0
+            ],
+            [
+              0.0,
+              799.0,
+              1297.0,
+              537.0
+            ]
+          ],
+          "start_timestamp": 62.579,
+          "end_timestamp": 63.079,
+          "direction": "北偏西15.06°"
+        },
+        {
+          "camera_id": "c063",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_66_71_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            260,
+            270,
+            280,
+            290,
+            300,
+            310
+          ],
+          "bboxes": [
+            [
+              1481.0,
+              430.0,
+              439.0,
+              347.0
+            ],
+            [
+              1201.0,
+              291.0,
+              410.0,
+              279.0
+            ],
+            [
+              1047.0,
+              222.0,
+              306.0,
+              217.0
+            ],
+            [
+              940.0,
+              160.0,
+              253.0,
+              188.0
+            ],
+            [
+              878.0,
+              125.0,
+              218.0,
+              160.0
+            ],
+            [
+              852.0,
+              94.0,
+              169.0,
+              131.0
+            ]
+          ],
+          "start_timestamp": 65.973,
+          "end_timestamp": 70.973,
+          "direction": "南偏东89.57°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c02, 12:01:02.579-12:01:03.079) and end point (c063, 12:01:05.973-12:01:10.973).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c02, 12:01:02.579-12:01:03.079)\n到终点(c063, 12:01:05.973-12:01:10.973)中间经过的摄像头是？\n",
+      "ground_truth": "C. c052",
+      "choices": [
+        "A. c070",
+        "B. c048",
+        "C. c052",
+        "D. c046"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c019",
+        "time": "12:01:02.579-12:01:03.079"
+      },
+      "end_point": {
+        "camera_id": "c021",
+        "time": "12:01:05.973-12:01:10.973"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c020"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "akuyHJUy2kNvmpxJsgPaMt",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_265_akuyHJUy2kNvmpxJsgPaMt.png",
+      "camera_images": [
+        {
+          "camera_id": "c030",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c018.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_60_65_c018.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            301,
+            310,
+            319,
+            332,
+            341,
+            350
+          ],
+          "bboxes": [
+            [
+              2459.0,
+              1375.0,
+              101.0,
+              80.0
+            ],
+            [
+              2315.0,
+              1345.0,
+              146.0,
+              96.0
+            ],
+            [
+              2149.0,
+              1302.0,
+              161.0,
+              110.0
+            ],
+            [
+              1731.0,
+              1205.0,
+              245.0,
+              158.0
+            ],
+            [
+              1216.0,
+              1133.0,
+              393.0,
+              214.0
+            ],
+            [
+              0.0,
+              1034.0,
+              861.0,
+              419.0
+            ]
+          ],
+          "start_timestamp": 60.055,
+          "end_timestamp": 65.055,
+          "direction": "北偏东48.46°"
+        },
+        {
+          "camera_id": "c074",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c020.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_66_72_c020.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            401,
+            412,
+            423,
+            434,
+            445,
+            456
+          ],
+          "bboxes": [
+            [
+              1772.0,
+              760.0,
+              788.0,
+              473.0
+            ],
+            [
+              883.0,
+              736.0,
+              330.0,
+              193.0
+            ],
+            [
+              627.0,
+              738.0,
+              177.0,
+              122.0
+            ],
+            [
+              517.0,
+              733.0,
+              128.0,
+              96.0
+            ],
+            [
+              447.0,
+              736.0,
+              98.0,
+              74.0
+            ],
+            [
+              405.0,
+              738.0,
+              80.0,
+              61.0
+            ]
+          ],
+          "start_timestamp": 66.005,
+          "end_timestamp": 71.505,
+          "direction": "北偏西80.84°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c030, 12:01:00.055-12:01:05.055) and end point (c074, 12:01:06.005-12:01:11.505).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c030, 12:01:00.055-12:01:05.055)\n到终点(c074, 12:01:06.005-12:01:11.505)中间经过的摄像头是？\n",
+      "ground_truth": "D. c035",
+      "choices": [
+        "A. c056",
+        "B. c068",
+        "C. c014",
+        "D. c035"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c018",
+        "time": "12:01:00.055-12:01:05.055"
+      },
+      "end_point": {
+        "camera_id": "c020",
+        "time": "12:01:06.005-12:01:11.505"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c019"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "PEovMyCEKjY7AbVghLsCLm",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_265_PEovMyCEKjY7AbVghLsCLm.png",
+      "camera_images": [
+        {
+          "camera_id": "c013",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_68_71_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            282,
+            287,
+            292,
+            297,
+            302,
+            307
+          ],
+          "bboxes": [
+            [
+              1498.0,
+              456.0,
+              422.0,
+              340.0
+            ],
+            [
+              1320.0,
+              356.0,
+              431.0,
+              313.0
+            ],
+            [
+              1176.0,
+              297.0,
+              392.0,
+              271.0
+            ],
+            [
+              1099.0,
+              250.0,
+              333.0,
+              235.0
+            ],
+            [
+              1011.0,
+              217.0,
+              306.0,
+              212.0
+            ],
+            [
+              960.0,
+              185.0,
+              270.0,
+              196.0
+            ]
+          ],
+          "start_timestamp": 68.173,
+          "end_timestamp": 70.973,
+          "direction": "南偏东89.57°"
+        },
+        {
+          "camera_id": "c066",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_101_101_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            497,
+            498,
+            499,
+            500,
+            501,
+            502
+          ],
+          "bboxes": [
+            [
+              1561.0,
+              812.0,
+              999.0,
+              492.0
+            ],
+            [
+              1258.0,
+              820.0,
+              1158.0,
+              503.0
+            ],
+            [
+              900.0,
+              792.0,
+              1262.0,
+              559.0
+            ],
+            [
+              576.0,
+              798.0,
+              1294.0,
+              568.0
+            ],
+            [
+              323.0,
+              840.0,
+              1177.0,
+              524.0
+            ],
+            [
+              8.0,
+              850.0,
+              1179.0,
+              521.0
+            ]
+          ],
+          "start_timestamp": 100.553,
+          "end_timestamp": 101.053,
+          "direction": "北偏西4.78°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c013, 12:01:08.173-12:01:10.973) and end point (c066, 12:01:40.553-12:01:41.053).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c013, 12:01:08.173-12:01:10.973)\n到终点(c066, 12:01:40.553-12:01:41.053)中间经过的摄像头是？\n",
+      "ground_truth": "C. c01",
+      "choices": [
+        "A. c053",
+        "B. c084",
+        "C. c01",
+        "D. c068"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c021",
+        "time": "12:01:08.173-12:01:10.973"
+      },
+      "end_point": {
+        "camera_id": "c024",
+        "time": "12:01:40.553-12:01:41.053"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c023"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "YRDGUJoNufMRGbQ6nqHhmM",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_265_YRDGUJoNufMRGbQ6nqHhmM.png",
+      "camera_images": [
+        {
+          "camera_id": "c084",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_65_66_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            383,
+            384,
+            385,
+            386,
+            387
+          ],
+          "bboxes": [
+            [
+              1481.0,
+              956.0,
+              1079.0,
+              542.0
+            ],
+            [
+              1093.0,
+              914.0,
+              1395.0,
+              565.0
+            ],
+            [
+              725.0,
+              880.0,
+              1397.0,
+              568.0
+            ],
+            [
+              357.0,
+              846.0,
+              1399.0,
+              570.0
+            ],
+            [
+              32.0,
+              835.0,
+              1324.0,
+              545.0
+            ]
+          ],
+          "start_timestamp": 65.279,
+          "end_timestamp": 65.679,
+          "direction": "北偏西15.06°"
+        },
+        {
+          "camera_id": "c086",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_68_71_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            282,
+            287,
+            292,
+            297,
+            302,
+            307
+          ],
+          "bboxes": [
+            [
+              1498.0,
+              456.0,
+              422.0,
+              340.0
+            ],
+            [
+              1320.0,
+              356.0,
+              431.0,
+              313.0
+            ],
+            [
+              1176.0,
+              297.0,
+              392.0,
+              271.0
+            ],
+            [
+              1099.0,
+              250.0,
+              333.0,
+              235.0
+            ],
+            [
+              1011.0,
+              217.0,
+              306.0,
+              212.0
+            ],
+            [
+              960.0,
+              185.0,
+              270.0,
+              196.0
+            ]
+          ],
+          "start_timestamp": 68.173,
+          "end_timestamp": 70.973,
+          "direction": "南偏东89.57°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c084, 12:01:05.279-12:01:05.679) and end point (c086, 12:01:08.173-12:01:10.973).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c084, 12:01:05.279-12:01:05.679)\n到终点(c086, 12:01:08.173-12:01:10.973)中间经过的摄像头是？\n",
+      "ground_truth": "A. c087",
+      "choices": [
+        "A. c087",
+        "B. c091",
+        "C. c080",
+        "D. c065"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c019",
+        "time": "12:01:05.279-12:01:05.679"
+      },
+      "end_point": {
+        "camera_id": "c021",
+        "time": "12:01:08.173-12:01:10.973"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c020"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "Gb96KPHovakQg8tkvufbov",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_266_Gb96KPHovakQg8tkvufbov.png",
+      "camera_images": [
+        {
+          "camera_id": "c031",
+          "object_id": 266,
+          "video_path": "./raw_video/outdoor_S04_c020.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_266_34_40_c020.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            82,
+            94,
+            106,
+            118,
+            130
+          ],
+          "bboxes": [
+            [
+              326.0,
+              755.0,
+              82.0,
+              67.0
+            ],
+            [
+              353.0,
+              762.0,
+              104.0,
+              78.0
+            ],
+            [
+              397.0,
+              767.0,
+              142.0,
+              106.0
+            ],
+            [
+              487.0,
+              788.0,
+              195.0,
+              151.0
+            ],
+            [
+              706.0,
+              822.0,
+              400.0,
+              244.0
+            ]
+          ],
+          "start_timestamp": 34.105000000000004,
+          "end_timestamp": 40.005,
+          "direction": "北偏西80.84°"
+        },
+        {
+          "camera_id": "c088",
+          "object_id": 266,
+          "video_path": "./raw_video/outdoor_S04_c018.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_266_41_45_c018.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            109,
+            118,
+            127,
+            136,
+            145
+          ],
+          "bboxes": [
+            [
+              0.0,
+              1259.0,
+              1045.0,
+              661.0
+            ],
+            [
+              1286.0,
+              1258.0,
+              454.0,
+              293.0
+            ],
+            [
+              1776.0,
+              1288.0,
+              292.0,
+              192.0
+            ],
+            [
+              2072.0,
+              1336.0,
+              211.0,
+              141.0
+            ],
+            [
+              2291.0,
+              1361.0,
+              175.0,
+              132.0
+            ]
+          ],
+          "start_timestamp": 40.855,
+          "end_timestamp": 45.254999999999995,
+          "direction": "北偏东48.46°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c031, 12:00:34.105-12:00:40.005) and end point (c088, 12:00:40.855-12:00:45.255).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c031, 12:00:34.105-12:00:40.005)\n到终点(c088, 12:00:40.855-12:00:45.255)中间经过的摄像头是？\n",
+      "ground_truth": "B. c086",
+      "choices": [
+        "A. c074",
+        "B. c086",
+        "C. c064",
+        "D. c05"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c020",
+        "time": "12:00:34.105-12:00:40.005"
+      },
+      "end_point": {
+        "camera_id": "c018",
+        "time": "12:00:40.855-12:00:45.255"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c019"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "Zp4C44yJMfkWpJcmpGFTXP",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_268_Zp4C44yJMfkWpJcmpGFTXP.png",
+      "camera_images": [
+        {
+          "camera_id": "c049",
+          "object_id": 268,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_268_142_149_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            170,
+            182,
+            194,
+            210,
+            222,
+            234
+          ],
+          "bboxes": [
+            [
+              950.0,
+              488.0,
+              43.0,
+              37.0
+            ],
+            [
+              922.0,
+              489.0,
+              51.0,
+              46.0
+            ],
+            [
+              886.0,
+              497.0,
+              61.0,
+              51.0
+            ],
+            [
+              803.0,
+              502.0,
+              89.0,
+              66.0
+            ],
+            [
+              619.0,
+              480.0,
+              178.0,
+              101.0
+            ],
+            [
+              151.0,
+              413.0,
+              320.0,
+              140.0
+            ]
+          ],
+          "start_timestamp": 142.199,
+          "end_timestamp": 148.899,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c036",
+          "object_id": 268,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_268_151_158_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            267,
+            280,
+            293,
+            306,
+            319,
+            332
+          ],
+          "bboxes": [
+            [
+              1290.0,
+              322.0,
+              310.0,
+              155.0
+            ],
+            [
+              882.0,
+              408.0,
+              171.0,
+              93.0
+            ],
+            [
+              693.0,
+              447.0,
+              113.0,
+              74.0
+            ],
+            [
+              599.0,
+              472.0,
+              75.0,
+              57.0
+            ],
+            [
+              545.0,
+              484.0,
+              57.0,
+              46.0
+            ],
+            [
+              512.0,
+              497.0,
+              49.0,
+              38.0
+            ]
+          ],
+          "start_timestamp": 151.019,
+          "end_timestamp": 157.81900000000002,
+          "direction": "南偏东43.50°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c049, 12:02:22.199-12:02:28.899) and end point (c036, 12:02:31.019-12:02:37.819).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c049, 12:02:22.199-12:02:28.899)\n到终点(c036, 12:02:31.019-12:02:37.819)中间经过的摄像头是？\n",
+      "ground_truth": "A. c034",
+      "choices": [
+        "A. c034",
+        "B. c015",
+        "C. c082",
+        "D. c025"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c032",
+        "time": "12:02:22.199-12:02:28.899"
+      },
+      "end_point": {
+        "camera_id": "c030",
+        "time": "12:02:31.019-12:02:37.819"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c031"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "KwC3cRKwrmwuvuqwXeaSRn",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_270_KwC3cRKwrmwuvuqwXeaSRn.png",
+      "camera_images": [
+        {
+          "camera_id": "c047",
+          "object_id": 270,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_270_125_126_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "bboxes": [
+            [
+              996.0,
+              217.0,
+              604.0,
+              302.0
+            ],
+            [
+              755.0,
+              210.0,
+              696.0,
+              293.0
+            ],
+            [
+              518.0,
+              202.0,
+              685.0,
+              292.0
+            ],
+            [
+              288.0,
+              194.0,
+              674.0,
+              290.0
+            ],
+            [
+              70.0,
+              194.0,
+              661.0,
+              281.0
+            ]
+          ],
+          "start_timestamp": 125.333,
+          "end_timestamp": 126.233,
+          "direction": "南偏东27.13°"
+        },
+        {
+          "camera_id": "c049",
+          "object_id": 270,
+          "video_path": "./raw_video/outdoor_S04_c029.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_270_130_149_c029.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            47,
+            77,
+            107,
+            137,
+            177,
+            228
+          ],
+          "bboxes": [
+            [
+              776.0,
+              529.0,
+              524.0,
+              551.0
+            ],
+            [
+              1103.0,
+              324.0,
+              352.0,
+              412.0
+            ],
+            [
+              1278.0,
+              334.0,
+              234.0,
+              292.0
+            ],
+            [
+              1353.0,
+              339.0,
+              174.0,
+              231.0
+            ],
+            [
+              1351.0,
+              348.0,
+              145.0,
+              179.0
+            ],
+            [
+              927.0,
+              339.0,
+              226.0,
+              143.0
+            ]
+          ],
+          "start_timestamp": 130.488,
+          "end_timestamp": 148.688,
+          "direction": "南偏东58.67°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c047, 12:02:05.333-12:02:06.233) and end point (c049, 12:02:10.488-12:02:28.688).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c047, 12:02:05.333-12:02:06.233)\n到终点(c049, 12:02:10.488-12:02:28.688)中间经过的摄像头是？\n",
+      "ground_truth": "D. c086",
+      "choices": [
+        "A. c082",
+        "B. c089",
+        "C. c087",
+        "D. c086"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c031",
+        "time": "12:02:05.333-12:02:06.233"
+      },
+      "end_point": {
+        "camera_id": "c029",
+        "time": "12:02:10.488-12:02:28.688"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c030"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "HmHGXWdYUyHRG6jKLV2WTs",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_271_HmHGXWdYUyHRG6jKLV2WTs.png",
+      "camera_images": [
+        {
+          "camera_id": "c082",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_131_131_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            59,
+            60,
+            61
+          ],
+          "bboxes": [
+            [
+              0.0,
+              606.0,
+              1107.0,
+              594.0
+            ],
+            [
+              171.0,
+              623.0,
+              1221.0,
+              577.0
+            ],
+            [
+              464.0,
+              639.0,
+              1136.0,
+              561.0
+            ]
+          ],
+          "start_timestamp": 130.933,
+          "end_timestamp": 131.133,
+          "direction": "南偏东27.13°"
+        },
+        {
+          "camera_id": "c011",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_140_158_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            36,
+            71,
+            106,
+            141,
+            176
+          ],
+          "bboxes": [
+            [
+              286.0,
+              170.0,
+              77.0,
+              69.0
+            ],
+            [
+              413.0,
+              215.0,
+              122.0,
+              108.0
+            ],
+            [
+              611.0,
+              293.0,
+              205.0,
+              152.0
+            ],
+            [
+              915.0,
+              372.0,
+              353.0,
+              228.0
+            ],
+            [
+              1248.0,
+              454.0,
+              490.0,
+              325.0
+            ],
+            [
+              1546.0,
+              519.0,
+              374.0,
+              369.0
+            ]
+          ],
+          "start_timestamp": 140.31799999999998,
+          "end_timestamp": 157.81799999999998,
+          "direction": "南偏东59.31°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c082, 12:02:10.933-12:02:11.133) and end point (c011, 12:02:20.318-12:02:37.818).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c082, 12:02:10.933-12:02:11.133)\n到终点(c011, 12:02:20.318-12:02:37.818)中间经过的摄像头是？\n",
+      "ground_truth": "A. c038",
+      "choices": [
+        "A. c038",
+        "B. c021",
+        "C. c080",
+        "D. c087"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c031",
+        "time": "12:02:10.933-12:02:11.133"
+      },
+      "end_point": {
+        "camera_id": "c034",
+        "time": "12:02:20.318-12:02:37.818"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c032"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "hpah2oZqzdJFVJ5F27jdvq",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_271_hpah2oZqzdJFVJ5F27jdvq.png",
+      "camera_images": [
+        {
+          "camera_id": "c033",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_124_131_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            13,
+            25,
+            37,
+            49,
+            61
+          ],
+          "bboxes": [
+            [
+              434.0,
+              516.0,
+              54.0,
+              50.0
+            ],
+            [
+              449.0,
+              514.0,
+              64.0,
+              59.0
+            ],
+            [
+              466.0,
+              514.0,
+              88.0,
+              74.0
+            ],
+            [
+              514.0,
+              508.0,
+              122.0,
+              103.0
+            ],
+            [
+              597.0,
+              513.0,
+              217.0,
+              162.0
+            ],
+            [
+              887.0,
+              541.0,
+              659.0,
+              425.0
+            ]
+          ],
+          "start_timestamp": 124.419,
+          "end_timestamp": 130.519,
+          "direction": "南偏东43.50°"
+        },
+        {
+          "camera_id": "c040",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_131_139_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            62,
+            76,
+            90,
+            104,
+            118,
+            132
+          ],
+          "bboxes": [
+            [
+              0.0,
+              685.0,
+              598.0,
+              515.0
+            ],
+            [
+              964.0,
+              657.0,
+              187.0,
+              170.0
+            ],
+            [
+              1104.0,
+              618.0,
+              94.0,
+              98.0
+            ],
+            [
+              1109.0,
+              583.0,
+              71.0,
+              75.0
+            ],
+            [
+              1104.0,
+              558.0,
+              55.0,
+              58.0
+            ],
+            [
+              1099.0,
+              543.0,
+              47.0,
+              46.0
+            ]
+          ],
+          "start_timestamp": 131.399,
+          "end_timestamp": 138.599,
+          "direction": "北偏西85.86°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c033, 12:02:04.419-12:02:10.519) and end point (c040, 12:02:11.399-12:02:18.599).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c033, 12:02:04.419-12:02:10.519)\n到终点(c040, 12:02:11.399-12:02:18.599)中间经过的摄像头是？\n",
+      "ground_truth": "D. c072",
+      "choices": [
+        "A. c042",
+        "B. c01",
+        "C. c086",
+        "D. c072"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c030",
+        "time": "12:02:04.419-12:02:10.519"
+      },
+      "end_point": {
+        "camera_id": "c032",
+        "time": "12:02:11.399-12:02:18.599"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c031"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "RHEUPLrSk9GaqMFnkSRnd5",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_272_RHEUPLrSk9GaqMFnkSRnd5.png",
+      "camera_images": [
+        {
+          "camera_id": "c081",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_140_169_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            46,
+            115,
+            160,
+            239,
+            284
+          ],
+          "bboxes": [
+            [
+              366.0,
+              162.0,
+              73.0,
+              59.0
+            ],
+            [
+              618.0,
+              230.0,
+              140.0,
+              98.0
+            ],
+            [
+              1002.0,
+              332.0,
+              230.0,
+              134.0
+            ],
+            [
+              1041.0,
+              340.0,
+              242.0,
+              151.0
+            ],
+            [
+              1434.0,
+              428.0,
+              353.0,
+              183.0
+            ],
+            [
+              1565.0,
+              455.0,
+              355.0,
+              210.0
+            ]
+          ],
+          "start_timestamp": 140.31799999999998,
+          "end_timestamp": 168.618,
+          "direction": "南偏东59.31°"
+        },
+        {
+          "camera_id": "c057",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_182_184_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            314,
+            317,
+            320,
+            323,
+            326
+          ],
+          "bboxes": [
+            [
+              929.0,
+              61.0,
+              160.0,
+              111.0
+            ],
+            [
+              874.0,
+              59.0,
+              187.0,
+              103.0
+            ],
+            [
+              812.0,
+              53.0,
+              199.0,
+              107.0
+            ],
+            [
+              727.0,
+              40.0,
+              224.0,
+              122.0
+            ],
+            [
+              645.0,
+              39.0,
+              231.0,
+              118.0
+            ]
+          ],
+          "start_timestamp": 182.293,
+          "end_timestamp": 184.293,
+          "direction": "北偏西76.27°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c081, 12:02:20.318-12:02:48.618) and end point (c057, 12:03:02.293-12:03:04.293).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c081, 12:02:20.318-12:02:48.618)\n到终点(c057, 12:03:02.293-12:03:04.293)中间经过的摄像头是？\n",
+      "ground_truth": "B. c089",
+      "choices": [
+        "A. c03",
+        "B. c089",
+        "C. c065",
+        "D. c071"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c034",
+        "time": "12:02:20.318-12:02:48.618"
+      },
+      "end_point": {
+        "camera_id": "c033",
+        "time": "12:03:02.293-12:03:04.293"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c035"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "mgBnKnc6UjHuBv36Kuoe3S",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_272_mgBnKnc6UjHuBv36Kuoe3S.png",
+      "camera_images": [
+        {
+          "camera_id": "c017",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_133_140_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            79,
+            89,
+            99,
+            109,
+            119,
+            142
+          ],
+          "bboxes": [
+            [
+              0.0,
+              533.0,
+              450.0,
+              303.0
+            ],
+            [
+              753.0,
+              587.0,
+              205.0,
+              146.0
+            ],
+            [
+              963.0,
+              581.0,
+              124.0,
+              103.0
+            ],
+            [
+              1028.0,
+              567.0,
+              75.0,
+              69.0
+            ],
+            [
+              1044.0,
+              548.0,
+              58.0,
+              59.0
+            ],
+            [
+              1051.0,
+              523.0,
+              41.0,
+              37.0
+            ]
+          ],
+          "start_timestamp": 133.099,
+          "end_timestamp": 139.599,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c019",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_177_185_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            118,
+            133,
+            148,
+            163,
+            178,
+            193
+          ],
+          "bboxes": [
+            [
+              0.0,
+              495.0,
+              135.0,
+              154.0
+            ],
+            [
+              70.0,
+              412.0,
+              240.0,
+              167.0
+            ],
+            [
+              406.0,
+              248.0,
+              343.0,
+              171.0
+            ],
+            [
+              990.0,
+              108.0,
+              249.0,
+              132.0
+            ],
+            [
+              1291.0,
+              42.0,
+              116.0,
+              84.0
+            ],
+            [
+              1344.0,
+              0.0,
+              55.0,
+              42.0
+            ]
+          ],
+          "start_timestamp": 177.36800000000002,
+          "end_timestamp": 184.86800000000002,
+          "direction": "南偏东45.78°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c017, 12:02:13.099-12:02:19.599) and end point (c019, 12:02:57.368-12:03:04.868).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c017, 12:02:13.099-12:02:19.599)\n到终点(c019, 12:02:57.368-12:03:04.868)中间经过的摄像头是？\n",
+      "ground_truth": "D. c057",
+      "choices": [
+        "A. c070",
+        "B. c04",
+        "C. c041",
+        "D. c057"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c032",
+        "time": "12:02:13.099-12:02:19.599"
+      },
+      "end_point": {
+        "camera_id": "c035",
+        "time": "12:02:57.368-12:03:04.868"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c034"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "nbFjRNWbW69SYJVsW4tUZf",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_273_nbFjRNWbW69SYJVsW4tUZf.png",
+      "camera_images": [
+        {
+          "camera_id": "c030",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_200_204_c038.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            242,
+            251,
+            260,
+            269,
+            278,
+            287
+          ],
+          "bboxes": [
+            [
+              1962.0,
+              825.0,
+              102.0,
+              101.0
+            ],
+            [
+              1908.0,
+              813.0,
+              121.0,
+              115.0
+            ],
+            [
+              1823.0,
+              811.0,
+              153.0,
+              129.0
+            ],
+            [
+              1688.0,
+              780.0,
+              193.0,
+              166.0
+            ],
+            [
+              1427.0,
+              736.0,
+              304.0,
+              221.0
+            ],
+            [
+              859.0,
+              618.0,
+              542.0,
+              350.0
+            ]
+          ],
+          "start_timestamp": 199.62599999999998,
+          "end_timestamp": 204.426,
+          "direction": "北偏东1.28°"
+        },
+        {
+          "camera_id": "c055",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c040.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_206_212_c040.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            300,
+            313,
+            326,
+            339,
+            352
+          ],
+          "bboxes": [
+            [
+              1080.0,
+              237.0,
+              520.0,
+              401.0
+            ],
+            [
+              576.0,
+              473.0,
+              208.0,
+              165.0
+            ],
+            [
+              425.0,
+              523.0,
+              124.0,
+              120.0
+            ],
+            [
+              370.0,
+              554.0,
+              84.0,
+              82.0
+            ],
+            [
+              333.0,
+              570.0,
+              62.0,
+              60.0
+            ]
+          ],
+          "start_timestamp": 205.838,
+          "end_timestamp": 212.238,
+          "direction": "南偏东89.57°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c030, 12:03:19.626-12:03:24.426) and end point (c055, 12:03:25.838-12:03:32.238).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c030, 12:03:19.626-12:03:24.426)\n到终点(c055, 12:03:25.838-12:03:32.238)中间经过的摄像头是？\n",
+      "ground_truth": "D. c071",
+      "choices": [
+        "A. c028",
+        "B. c056",
+        "C. c072",
+        "D. c071"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c038",
+        "time": "12:03:19.626-12:03:24.426"
+      },
+      "end_point": {
+        "camera_id": "c040",
+        "time": "12:03:25.838-12:03:32.238"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c039"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "MVPHMPcGn7dqJNjw6peXoM",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_321_MVPHMPcGn7dqJNjw6peXoM.png",
+      "camera_images": [
+        {
+          "camera_id": "c022",
+          "object_id": 321,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_321_193_203_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            227,
+            246,
+            265,
+            284,
+            303,
+            322
+          ],
+          "bboxes": [
+            [
+              1139.0,
+              133.0,
+              73.0,
+              69.0
+            ],
+            [
+              1140.0,
+              147.0,
+              75.0,
+              68.0
+            ],
+            [
+              1135.0,
+              153.0,
+              80.0,
+              74.0
+            ],
+            [
+              1132.0,
+              159.0,
+              85.0,
+              83.0
+            ],
+            [
+              1121.0,
+              165.0,
+              94.0,
+              88.0
+            ],
+            [
+              1103.0,
+              172.0,
+              104.0,
+              96.0
+            ]
+          ],
+          "start_timestamp": 193.49699999999999,
+          "end_timestamp": 202.997,
+          "direction": "南偏东54.13°"
+        },
+        {
+          "camera_id": "c098",
+          "object_id": 321,
+          "video_path": "./raw_video/outdoor_S04_c039.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_321_204_204_c039.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            284,
+            285,
+            286
+          ],
+          "bboxes": [
+            [
+              0.0,
+              559.0,
+              1932.0,
+              944.0
+            ],
+            [
+              66.0,
+              544.0,
+              2378.0,
+              922.0
+            ],
+            [
+              606.0,
+              544.0,
+              1954.0,
+              950.0
+            ]
+          ],
+          "start_timestamp": 204.044,
+          "end_timestamp": 204.244,
+          "direction": "北偏西30.45°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c022, 12:03:13.497-12:03:22.997) and end point (c098, 12:03:24.044-12:03:24.244).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c022, 12:03:13.497-12:03:22.997)\n到终点(c098, 12:03:24.044-12:03:24.244)中间经过的摄像头是？\n",
+      "ground_truth": "C. c068",
+      "choices": [
+        "A. c045",
+        "B. c092",
+        "C. c068",
+        "D. c03"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c036",
+        "time": "12:03:13.497-12:03:22.997"
+      },
+      "end_point": {
+        "camera_id": "c039",
+        "time": "12:03:24.044-12:03:24.244"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c040"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "Bh6jP8WfRameYANfnKcDaH",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_320_Bh6jP8WfRameYANfnKcDaH.png",
+      "camera_images": [
+        {
+          "camera_id": "c025",
+          "object_id": 320,
+          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_320_176_182_c038.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            13,
+            25,
+            37,
+            49,
+            61
+          ],
+          "bboxes": [
+            [
+              2014.0,
+              904.0,
+              182.0,
+              178.0
+            ],
+            [
+              2070.0,
+              905.0,
+              151.0,
+              133.0
+            ],
+            [
+              2115.0,
+              906.0,
+              121.0,
+              107.0
+            ],
+            [
+              2148.0,
+              901.0,
+              104.0,
+              94.0
+            ],
+            [
+              2170.0,
+              904.0,
+              92.0,
+              81.0
+            ],
+            [
+              2187.0,
+              904.0,
+              82.0,
+              74.0
+            ]
+          ],
+          "start_timestamp": 175.52599999999998,
+          "end_timestamp": 181.52599999999998,
+          "direction": "北偏东1.28°"
+        },
+        {
+          "camera_id": "c027",
+          "object_id": 320,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_320_185_194_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            141,
+            159,
+            177,
+            195,
+            213,
+            231
+          ],
+          "bboxes": [
+            [
+              597.0,
+              204.0,
+              215.0,
+              192.0
+            ],
+            [
+              511.0,
+              216.0,
+              248.0,
+              227.0
+            ],
+            [
+              382.0,
+              234.0,
+              297.0,
+              267.0
+            ],
+            [
+              221.0,
+              259.0,
+              349.0,
+              304.0
+            ],
+            [
+              51.0,
+              271.0,
+              443.0,
+              367.0
+            ],
+            [
+              0.0,
+              303.0,
+              385.0,
+              396.0
+            ]
+          ],
+          "start_timestamp": 184.897,
+          "end_timestamp": 194.097,
+          "direction": "南偏东54.13°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c025, 12:02:55.526-12:03:01.526) and end point (c027, 12:03:04.897-12:03:14.097).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c025, 12:02:55.526-12:03:01.526)\n到终点(c027, 12:03:04.897-12:03:14.097)中间经过的摄像头是？\n",
+      "ground_truth": "B. c012",
+      "choices": [
+        "A. c071",
+        "B. c012",
+        "C. c070",
+        "D. c089"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c038",
+        "time": "12:02:55.526-12:03:01.526"
+      },
+      "end_point": {
+        "camera_id": "c036",
+        "time": "12:03:04.897-12:03:14.097"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c037"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "Ngzx2q2VhWnhj2bQZMeQGN",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_318_Ngzx2q2VhWnhj2bQZMeQGN.png",
+      "camera_images": [
+        {
+          "camera_id": "c034",
+          "object_id": 318,
+          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_318_193_199_c038.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            180,
+            191,
+            202,
+            213,
+            224,
+            235
+          ],
+          "bboxes": [
+            [
+              0.0,
+              717.0,
+              932.0,
+              688.0
+            ],
+            [
+              1475.0,
+              849.0,
+              342.0,
+              223.0
+            ],
+            [
+              1821.0,
+              880.0,
+              177.0,
+              129.0
+            ],
+            [
+              1956.0,
+              882.0,
+              123.0,
+              98.0
+            ],
+            [
+              2032.0,
+              883.0,
+              97.0,
+              81.0
+            ],
+            [
+              2082.0,
+              887.0,
+              79.0,
+              68.0
+            ]
+          ],
+          "start_timestamp": 193.426,
+          "end_timestamp": 199.02599999999998,
+          "direction": "北偏东1.28°"
+        },
+        {
+          "camera_id": "c038",
+          "object_id": 318,
+          "video_path": "./raw_video/outdoor_S04_c037.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_318_200_200_c037.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            292,
+            293,
+            294,
+            295,
+            296,
+            297
+          ],
+          "bboxes": [
+            [
+              1413.0,
+              265.0,
+              424.0,
+              292.0
+            ],
+            [
+              1387.0,
+              251.0,
+              426.0,
+              299.0
+            ],
+            [
+              1375.0,
+              238.0,
+              414.0,
+              304.0
+            ],
+            [
+              1373.0,
+              237.0,
+              389.0,
+              298.0
+            ],
+            [
+              1360.0,
+              250.0,
+              358.0,
+              261.0
+            ],
+            [
+              1348.0,
+              247.0,
+              350.0,
+              256.0
+            ]
+          ],
+          "start_timestamp": 199.767,
+          "end_timestamp": 200.267,
+          "direction": "北偏东65.09°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c034, 12:03:13.426-12:03:19.026) and end point (c038, 12:03:19.767-12:03:20.267).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c034, 12:03:13.426-12:03:19.026)\n到终点(c038, 12:03:19.767-12:03:20.267)中间经过的摄像头是？\n",
+      "ground_truth": "D. c047",
+      "choices": [
+        "A. c050",
+        "B. c061",
+        "C. c04",
+        "D. c047"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c038",
+        "time": "12:03:13.426-12:03:19.026"
+      },
+      "end_point": {
+        "camera_id": "c037",
+        "time": "12:03:19.767-12:03:20.267"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c036"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "SX3Xt8uQu8pUVmeHrdE5Nd",
+      "scene": "S04",
+      "map_image_path": "./map/GeoLocation_map_315_SX3Xt8uQu8pUVmeHrdE5Nd.png",
+      "camera_images": [
+        {
+          "camera_id": "c094",
+          "object_id": 315,
+          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_315_187_192_c038.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            118,
+            127,
+            136,
+            145,
+            154,
+            166
+          ],
+          "bboxes": [
+            [
+              0.0,
+              736.0,
+              976.0,
+              635.0
+            ],
+            [
+              1316.0,
+              842.0,
+              402.0,
+              255.0
+            ],
+            [
+              1697.0,
+              872.0,
+              221.0,
+              154.0
+            ],
+            [
+              1869.0,
+              883.0,
+              163.0,
+              120.0
+            ],
+            [
+              1966.0,
+              881.0,
+              121.0,
+              94.0
+            ],
+            [
+              2047.0,
+              883.0,
+              86.0,
+              74.0
+            ]
+          ],
+          "start_timestamp": 187.226,
+          "end_timestamp": 192.326,
+          "direction": "北偏东1.28°"
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 315,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_315_199_205_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            284,
+            296,
+            308,
+            320,
+            332
+          ],
+          "bboxes": [
+            [
+              733.0,
+              287.0,
+              298.0,
+              242.0
+            ],
+            [
+              605.0,
+              322.0,
+              405.0,
+              311.0
+            ],
+            [
+              489.0,
+              405.0,
+              457.0,
+              401.0
+            ],
+            [
+              312.0,
+              493.0,
+              582.0,
+              490.0
+            ],
+            [
+              148.0,
+              595.0,
+              667.0,
+              485.0
+            ]
+          ],
+          "start_timestamp": 199.197,
+          "end_timestamp": 205.09699999999998,
+          "direction": "南偏东54.13°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c094, 12:03:07.226-12:03:12.326) and end point (c03, 12:03:19.197-12:03:25.097).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c094, 12:03:07.226-12:03:12.326)\n到终点(c03, 12:03:19.197-12:03:25.097)中间经过的摄像头是？\n",
+      "ground_truth": "B. c015",
+      "choices": [
+        "A. c043",
+        "B. c015",
+        "C. c05",
+        "D. c031"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c038",
+        "time": "12:03:07.226-12:03:12.326"
+      },
+      "end_point": {
+        "camera_id": "c036",
+        "time": "12:03:19.197-12:03:25.097"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c037"
+      ]
+    },
+    {
+      "task_id": "GeoLocation",
+      "case_id": "JBTXhcosbEJHXzpGYNVvBy",
+      "scene": "S05",
+      "map_image_path": "./map/GeoLocation_map_359_JBTXhcosbEJHXzpGYNVvBy.png",
+      "camera_images": [
+        {
+          "camera_id": "c045",
+          "object_id": 359,
+          "video_path": "./raw_video/outdoor_S05_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S05_359_221_225_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2211,
+            2219,
+            2227,
+            2235,
+            2243,
+            2251
+          ],
+          "bboxes": [
+            [
+              1704.0,
+              865.0,
+              129.0,
+              106.0
+            ],
+            [
+              1627.0,
+              866.0,
+              153.0,
+              112.0
+            ],
+            [
+              1508.0,
+              848.0,
+              183.0,
+              150.0
+            ],
+            [
+              1324.0,
+              837.0,
+              249.0,
+              182.0
+            ],
+            [
+              932.0,
+              808.0,
+              397.0,
+              277.0
+            ],
+            [
+              0.0,
+              765.0,
+              716.0,
+              493.0
+            ]
+          ],
+          "start_timestamp": 221.1,
+          "end_timestamp": 225.1,
+          "direction": "北偏东64.50°"
+        },
+        {
+          "camera_id": "c046",
+          "object_id": 359,
+          "video_path": "./raw_video/outdoor_S05_c026.avi",
+          "crop_video_path": "./crop_video/outdoor_S05_359_228_235_c026.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2275,
+            2289,
+            2303,
+            2317,
+            2331,
+            2346
+          ],
+          "bboxes": [
+            [
+              1074.0,
+              793.0,
+              380.0,
+              287.0
+            ],
+            [
+              1126.0,
+              599.0,
+              267.0,
+              268.0
+            ],
+            [
+              1121.0,
+              456.0,
+              235.0,
+              213.0
+            ],
+            [
+              1130.0,
+              356.0,
+              187.0,
+              175.0
+            ],
+            [
+              1143.0,
+              275.0,
+              161.0,
+              156.0
+            ],
+            [
+              1147.0,
+              210.0,
+              151.0,
+              136.0
+            ]
+          ],
+          "start_timestamp": 227.5,
+          "end_timestamp": 234.9,
+          "direction": "南偏东77.66°"
+        }
+      ],
+      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
+      "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c045, 12:03:41.100-12:03:45.100) and end point (c046, 12:03:47.500-12:03:54.900).\n",
+      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c045, 12:03:41.100-12:03:45.100)\n到终点(c046, 12:03:47.500-12:03:54.900)中间经过的摄像头是？\n",
+      "ground_truth": "D. c025",
+      "choices": [
+        "A. c07",
+        "B. c041",
+        "C. c024",
+        "D. c025"
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c023",
+        "time": "12:03:41.100-12:03:45.100"
+      },
+      "end_point": {
+        "camera_id": "c026",
+        "time": "12:03:47.500-12:03:54.900"
+      },
+      "middle_point": null,
+      "middle_path": [
+        "c025"
+      ]
+    }
+  ]
+}

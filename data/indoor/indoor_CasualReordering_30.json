@@ -1,0 +1,5486 @@
+{
+  "cases": [
+    {
+      "task_id": "CasualReordering",
+      "case_id": "Zc7Y3Uc9FcCvVr9hNYrhet",
+      "scene": "Track 4",
+      "map_image_path": "./map/CasualReordering_map_4_Zc7Y3Uc9FcCvVr9hNYrhet.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_4_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            971,
+            1028,
+            1085,
+            1142,
+            1199,
+            1256
+          ],
+          "bboxes": [
+            [
+              173.34,
+              1074.01,
+              205.1,
+              341.29
+            ],
+            [
+              346.21,
+              545.46,
+              314.43,
+              487.8
+            ],
+            [
+              723.42,
+              261.1,
+              210.7,
+              454.86
+            ],
+            [
+              1195.9,
+              555.87,
+              333.1,
+              515.13
+            ],
+            [
+              875.26,
+              759.27,
+              603.6,
+              558.2
+            ],
+            [
+              392.97,
+              1043.43,
+              598.23,
+              573.25
+            ]
+          ],
+          "start_timestamp": 38.84,
+          "end_timestamp": 50.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_4_64_73_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1603,
+            1645,
+            1687,
+            1729,
+            1771,
+            1813
+          ],
+          "bboxes": [
+            [
+              1116.5,
+              38.7,
+              173.03,
+              513.44
+            ],
+            [
+              881.29,
+              54.3,
+              174.34,
+              516.98
+            ],
+            [
+              580.98,
+              61.13,
+              200.42,
+              577.81
+            ],
+            [
+              314.51,
+              124.2,
+              214.34,
+              673.02
+            ],
+            [
+              493.6,
+              371.34,
+              276.4,
+              829.09
+            ],
+            [
+              1877.47,
+              1030.01,
+              344.09,
+              830.43
+            ]
+          ],
+          "start_timestamp": 64.12,
+          "end_timestamp": 72.52,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_4_76_83_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1911,
+            1941,
+            1971,
+            2001,
+            2031,
+            2061
+          ],
+          "bboxes": [
+            [
+              310.07,
+              274.0,
+              81.53,
+              312.23
+            ],
+            [
+              522.0,
+              293.9,
+              140.1,
+              317.1
+            ],
+            [
+              849.1,
+              292.3,
+              151.7,
+              332.9
+            ],
+            [
+              1175.6,
+              294.8,
+              128.0,
+              333.2
+            ],
+            [
+              1514.3,
+              302.0,
+              163.2,
+              338.7
+            ],
+            [
+              1830.19,
+              315.2,
+              150.31,
+              339.5
+            ]
+          ],
+          "start_timestamp": 76.44,
+          "end_timestamp": 82.56,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "A. c03 → c12 → c09",
+      "choices": [
+        "A. c03 → c12 → c09",
+        "B. c02 → c12 → c09",
+        "C. c12 → c03 → c09",
+        "D. c09 → c12 → c03"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "42yJyaoH7ZDoevCYYuSXNG",
+      "scene": "Track 4",
+      "map_image_path": "./map/CasualReordering_map_4_42yJyaoH7ZDoevCYYuSXNG.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_4_27_37_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            665,
+            717,
+            769,
+            821,
+            873,
+            925
+          ],
+          "bboxes": [
+            [
+              -264.5,
+              827.3,
+              289.6,
+              779.0
+            ],
+            [
+              557.34,
+              492.63,
+              185.43,
+              576.43
+            ],
+            [
+              754.75,
+              209.32,
+              145.88,
+              477.08
+            ],
+            [
+              901.43,
+              -9.15,
+              197.82,
+              416.3
+            ],
+            [
+              1135.53,
+              -148.32,
+              123.85,
+              442.3
+            ],
+            [
+              1435.39,
+              -316.1,
+              142.7,
+              426.32
+            ]
+          ],
+          "start_timestamp": 26.6,
+          "end_timestamp": 37.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_4_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            971,
+            1028,
+            1085,
+            1142,
+            1199,
+            1256
+          ],
+          "bboxes": [
+            [
+              173.34,
+              1074.01,
+              205.1,
+              341.29
+            ],
+            [
+              346.21,
+              545.46,
+              314.43,
+              487.8
+            ],
+            [
+              723.42,
+              261.1,
+              210.7,
+              454.86
+            ],
+            [
+              1195.9,
+              555.87,
+              333.1,
+              515.13
+            ],
+            [
+              875.26,
+              759.27,
+              603.6,
+              558.2
+            ],
+            [
+              392.97,
+              1043.43,
+              598.23,
+              573.25
+            ]
+          ],
+          "start_timestamp": 38.84,
+          "end_timestamp": 50.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_4_64_73_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1603,
+            1645,
+            1687,
+            1729,
+            1771,
+            1813
+          ],
+          "bboxes": [
+            [
+              1116.5,
+              38.7,
+              173.03,
+              513.44
+            ],
+            [
+              881.29,
+              54.3,
+              174.34,
+              516.98
+            ],
+            [
+              580.98,
+              61.13,
+              200.42,
+              577.81
+            ],
+            [
+              314.51,
+              124.2,
+              214.34,
+              673.02
+            ],
+            [
+              493.6,
+              371.34,
+              276.4,
+              829.09
+            ],
+            [
+              1877.47,
+              1030.01,
+              344.09,
+              830.43
+            ]
+          ],
+          "start_timestamp": 64.12,
+          "end_timestamp": 72.52,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c08 → c03 → c12",
+      "choices": [
+        "A. c08 → c12 → c03",
+        "B. c08 → c03 → c14",
+        "C. c08 → c03 → c12",
+        "D. c08 → c12 → c03"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "Y2YGDTSA9brQ4vRKGnWZvP",
+      "scene": "Track 5",
+      "map_image_path": "./map/CasualReordering_map_5_Y2YGDTSA9brQ4vRKGnWZvP.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_5_236_249_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5909,
+            5971,
+            6033,
+            6095,
+            6157,
+            6219
+          ],
+          "bboxes": [
+            [
+              128.08,
+              1051.66,
+              210.0,
+              352.12
+            ],
+            [
+              387.16,
+              450.08,
+              217.84,
+              552.46
+            ],
+            [
+              1033.8,
+              287.73,
+              275.42,
+              535.79
+            ],
+            [
+              1205.5,
+              582.24,
+              387.84,
+              556.24
+            ],
+            [
+              729.34,
+              760.29,
+              396.05,
+              725.74
+            ],
+            [
+              -669.14,
+              408.72,
+              708.25,
+              982.66
+            ]
+          ],
+          "start_timestamp": 236.36,
+          "end_timestamp": 248.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_5_257_261_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6432,
+            6451,
+            6470,
+            6489,
+            6508
+          ],
+          "bboxes": [
+            [
+              1111.3,
+              1.13,
+              214.31,
+              526.48
+            ],
+            [
+              719.59,
+              -14.29,
+              245.11,
+              610.59
+            ],
+            [
+              417.99,
+              -15.27,
+              260.71,
+              615.87
+            ],
+            [
+              168.1,
+              -40.82,
+              221.67,
+              595.05
+            ],
+            [
+              133.72,
+              -48.9,
+              194.88,
+              536.3
+            ]
+          ],
+          "start_timestamp": 257.28,
+          "end_timestamp": 261.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_5_259_262_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6463,
+            6480,
+            6497,
+            6514,
+            6531,
+            6548
+          ],
+          "bboxes": [
+            [
+              334.0,
+              127.2,
+              85.24,
+              251.9
+            ],
+            [
+              254.54,
+              129.48,
+              108.15,
+              260.46
+            ],
+            [
+              157.4,
+              131.3,
+              87.2,
+              255.9
+            ],
+            [
+              54.65,
+              126.87,
+              84.45,
+              247.7
+            ],
+            [
+              5.36,
+              125.0,
+              75.76,
+              247.7
+            ],
+            [
+              -36.4,
+              120.54,
+              75.75,
+              247.7
+            ]
+          ],
+          "start_timestamp": 258.52,
+          "end_timestamp": 262.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "A. c03 → c12 → c13",
+      "choices": [
+        "A. c03 → c12 → c13",
+        "B. c03 → c13 → c12",
+        "C. c13 → c03 → c12",
+        "D. c03 → c08 → c13"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "koAZUdUAehoitn5JMz3qHq",
+      "scene": "Track 5",
+      "map_image_path": "./map/CasualReordering_map_5_koAZUdUAehoitn5JMz3qHq.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_5_33_41_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            819,
+            858,
+            897,
+            936,
+            975,
+            1014
+          ],
+          "bboxes": [
+            [
+              1841.53,
+              501.7,
+              202.7,
+              513.5
+            ],
+            [
+              1403.4,
+              468.4,
+              205.87,
+              478.53
+            ],
+            [
+              1346.6,
+              424.8,
+              149.17,
+              403.24
+            ],
+            [
+              1221.5,
+              403.5,
+              169.68,
+              409.36
+            ],
+            [
+              1001.5,
+              343.5,
+              158.02,
+              351.01
+            ],
+            [
+              732.17,
+              299.94,
+              112.94,
+              298.34
+            ]
+          ],
+          "start_timestamp": 32.76,
+          "end_timestamp": 40.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_5_39_48_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            982,
+            1024,
+            1066,
+            1108,
+            1150
+          ],
+          "bboxes": [
+            [
+              -148.53,
+              767.8,
+              171.97,
+              550.31
+            ],
+            [
+              528.24,
+              439.15,
+              238.08,
+              649.85
+            ],
+            [
+              715.15,
+              170.83,
+              230.65,
+              583.17
+            ],
+            [
+              883.47,
+              -57.05,
+              170.48,
+              511.1
+            ],
+            [
+              1185.0,
+              -199.2,
+              186.8,
+              484.3
+            ]
+          ],
+          "start_timestamp": 39.28,
+          "end_timestamp": 47.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_5_49_60_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1215,
+            1271,
+            1327,
+            1383,
+            1439,
+            1495
+          ],
+          "bboxes": [
+            [
+              143.2,
+              1062.67,
+              260.29,
+              545.1
+            ],
+            [
+              381.9,
+              468.65,
+              217.1,
+              556.49
+            ],
+            [
+              1041.36,
+              307.92,
+              267.81,
+              568.56
+            ],
+            [
+              1240.08,
+              568.48,
+              354.45,
+              596.96
+            ],
+            [
+              894.78,
+              755.79,
+              432.46,
+              783.25
+            ],
+            [
+              -530.35,
+              808.55,
+              694.52,
+              775.75
+            ]
+          ],
+          "start_timestamp": 48.6,
+          "end_timestamp": 59.92,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c07 → c08 → c03",
+      "choices": [
+        "A. c08 → c07 → c03",
+        "B. c07 → c08 → c03",
+        "C. c07 → c03 → c08",
+        "D. c07 → c08 → c13"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "NEhPbmk5tGk34gqEgTr6wo",
+      "scene": "Track 7",
+      "map_image_path": "./map/CasualReordering_map_7_NEhPbmk5tGk34gqEgTr6wo.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_7_164_174_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4090,
+            4143,
+            4196,
+            4249,
+            4302,
+            4355
+          ],
+          "bboxes": [
+            [
+              925.18,
+              132.54,
+              26.33,
+              83.08
+            ],
+            [
+              771.07,
+              114.17,
+              46.05,
+              104.71
+            ],
+            [
+              740.5,
+              94.13,
+              39.88,
+              97.89
+            ],
+            [
+              725.4,
+              74.29,
+              34.08,
+              93.75
+            ],
+            [
+              776.02,
+              60.05,
+              30.91,
+              89.64
+            ],
+            [
+              854.39,
+              52.77,
+              26.24,
+              86.45
+            ]
+          ],
+          "start_timestamp": 163.6,
+          "end_timestamp": 174.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_7_194_209_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4839,
+            4916,
+            4993,
+            5070,
+            5147,
+            5224
+          ],
+          "bboxes": [
+            [
+              1776.8,
+              907.5,
+              239.7,
+              630.8
+            ],
+            [
+              1649.2,
+              393.5,
+              245.9,
+              585.1
+            ],
+            [
+              831.9,
+              269.0,
+              236.8,
+              571.2
+            ],
+            [
+              304.2,
+              681.5,
+              312.0,
+              510.5
+            ],
+            [
+              476.5,
+              682.9,
+              488.7,
+              995.8
+            ],
+            [
+              1850.3,
+              854.7,
+              482.3,
+              1047.6
+            ]
+          ],
+          "start_timestamp": 193.56,
+          "end_timestamp": 209.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c10",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_7_241_249_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6032,
+            6070,
+            6108,
+            6146,
+            6184,
+            6222
+          ],
+          "bboxes": [
+            [
+              1515.84,
+              1065.34,
+              165.2,
+              442.24
+            ],
+            [
+              1343.6,
+              685.91,
+              186.5,
+              451.01
+            ],
+            [
+              858.74,
+              539.26,
+              212.48,
+              422.62
+            ],
+            [
+              301.75,
+              599.16,
+              305.25,
+              443.74
+            ],
+            [
+              332.43,
+              663.76,
+              209.63,
+              457.51
+            ],
+            [
+              107.26,
+              478.58,
+              151.14,
+              415.52
+            ]
+          ],
+          "start_timestamp": 241.28,
+          "end_timestamp": 248.88,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c05 → c11 → c10",
+      "choices": [
+        "A. c05 → c10 → c11",
+        "B. c05 → c11 → c10",
+        "C. c05 → c10 → c11",
+        "D. c05 → c11 → c15"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "WzkXD4gcUwnLQSydQqzDG6",
+      "scene": "Track 8",
+      "map_image_path": "./map/CasualReordering_map_8_WzkXD4gcUwnLQSydQqzDG6.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_8_148_153_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3692,
+            3720,
+            3748,
+            3776,
+            3804,
+            3832
+          ],
+          "bboxes": [
+            [
+              -2.16,
+              701.57,
+              135.06,
+              299.38
+            ],
+            [
+              157.3,
+              729.18,
+              122.9,
+              303.92
+            ],
+            [
+              274.29,
+              792.04,
+              130.81,
+              327.76
+            ],
+            [
+              417.57,
+              873.47,
+              134.29,
+              365.31
+            ],
+            [
+              576.08,
+              963.19,
+              129.96,
+              352.61
+            ],
+            [
+              741.86,
+              1074.36,
+              149.93,
+              347.69
+            ]
+          ],
+          "start_timestamp": 147.68,
+          "end_timestamp": 153.28,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_8_166_171_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4148,
+            4171,
+            4194,
+            4217,
+            4240,
+            4263
+          ],
+          "bboxes": [
+            [
+              1893.28,
+              459.51,
+              166.1,
+              579.34
+            ],
+            [
+              1590.15,
+              450.86,
+              245.57,
+              641.38
+            ],
+            [
+              1336.8,
+              500.01,
+              212.1,
+              638.95
+            ],
+            [
+              987.3,
+              587.54,
+              234.64,
+              638.95
+            ],
+            [
+              532.68,
+              698.43,
+              201.72,
+              638.95
+            ],
+            [
+              -133.18,
+              800.46,
+              227.48,
+              638.95
+            ]
+          ],
+          "start_timestamp": 165.92,
+          "end_timestamp": 170.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c07",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_8_169_180_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4225,
+            4279,
+            4333,
+            4387,
+            4441,
+            4495
+          ],
+          "bboxes": [
+            [
+              769.88,
+              259.95,
+              72.29,
+              308.85
+            ],
+            [
+              946.3,
+              294.17,
+              115.7,
+              307.79
+            ],
+            [
+              996.7,
+              354.9,
+              146.73,
+              386.54
+            ],
+            [
+              968.57,
+              450.16,
+              195.7,
+              505.48
+            ],
+            [
+              925.1,
+              615.78,
+              276.16,
+              579.63
+            ],
+            [
+              784.98,
+              1042.86,
+              299.26,
+              579.63
+            ]
+          ],
+          "start_timestamp": 169.0,
+          "end_timestamp": 179.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c05 → c08 → c07",
+      "choices": [
+        "A. c07 → c05 → c08",
+        "B. c05 → c07 → c08",
+        "C. c12 → c08 → c07",
+        "D. c05 → c08 → c07"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "LvaHeyWiM8qeJZbepotqPh",
+      "scene": "Track 8",
+      "map_image_path": "./map/CasualReordering_map_8_LvaHeyWiM8qeJZbepotqPh.png",
+      "camera_images": [
+        {
+          "camera_id": "c04",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_8_71_85_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1765,
+            1836,
+            1907,
+            1978,
+            2049,
+            2120
+          ],
+          "bboxes": [
+            [
+              1268.68,
+              1067.85,
+              146.18,
+              341.76
+            ],
+            [
+              1392.5,
+              693.6,
+              135.08,
+              340.6
+            ],
+            [
+              1527.5,
+              470.0,
+              121.39,
+              289.9
+            ],
+            [
+              1707.5,
+              345.87,
+              95.3,
+              242.02
+            ],
+            [
+              1688.8,
+              296.7,
+              111.5,
+              245.3
+            ],
+            [
+              1854.13,
+              219.81,
+              76.9,
+              222.2
+            ]
+          ],
+          "start_timestamp": 70.6,
+          "end_timestamp": 84.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_8_90_128_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2252,
+            2441,
+            2630,
+            2819,
+            3008,
+            3197
+          ],
+          "bboxes": [
+            [
+              860.8,
+              42.84,
+              28.11,
+              86.01
+            ],
+            [
+              779.5,
+              80.08,
+              33.69,
+              110.56
+            ],
+            [
+              710.18,
+              146.15,
+              49.66,
+              134.99
+            ],
+            [
+              607.07,
+              252.41,
+              59.19,
+              171.95
+            ],
+            [
+              378.6,
+              435.34,
+              79.03,
+              235.86
+            ],
+            [
+              -50.61,
+              703.14,
+              111.26,
+              279.4
+            ]
+          ],
+          "start_timestamp": 90.08,
+          "end_timestamp": 127.92,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_8_98_126_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2441,
+            2584,
+            2727,
+            2870,
+            3013,
+            3156
+          ],
+          "bboxes": [
+            [
+              868.6,
+              1073.26,
+              50.86,
+              173.34
+            ],
+            [
+              1076.56,
+              646.3,
+              87.54,
+              243.95
+            ],
+            [
+              1204.32,
+              437.79,
+              66.11,
+              185.47
+            ],
+            [
+              1268.29,
+              323.9,
+              51.31,
+              145.22
+            ],
+            [
+              1337.0,
+              256.89,
+              43.71,
+              121.85
+            ],
+            [
+              1395.44,
+              218.1,
+              28.47,
+              109.61
+            ]
+          ],
+          "start_timestamp": 97.64,
+          "end_timestamp": 126.32,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "A. c04 → c05 → c01",
+      "choices": [
+        "A. c04 → c05 → c01",
+        "B. c05 → c04 → c01",
+        "C. c05 → c04 → c01",
+        "D. c08 → c05 → c01"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "5XRMyswMZHo2AhaPeNMDHW",
+      "scene": "Track 9",
+      "map_image_path": "./map/CasualReordering_map_9_5XRMyswMZHo2AhaPeNMDHW.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_9_210_244_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5241,
+            5415,
+            5589,
+            5763,
+            5937,
+            6111
+          ],
+          "bboxes": [
+            [
+              1903.55,
+              1043.22,
+              81.84,
+              237.19
+            ],
+            [
+              715.75,
+              831.75,
+              128.3,
+              234.61
+            ],
+            [
+              937.64,
+              628.16,
+              77.46,
+              213.24
+            ],
+            [
+              1066.02,
+              407.35,
+              53.74,
+              151.15
+            ],
+            [
+              1063.18,
+              286.95,
+              33.44,
+              114.29
+            ],
+            [
+              748.04,
+              261.36,
+              29.28,
+              103.46
+            ]
+          ],
+          "start_timestamp": 209.64,
+          "end_timestamp": 244.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_9_221_247_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5532,
+            5659,
+            5786,
+            5913,
+            6040,
+            6167
+          ],
+          "bboxes": [
+            [
+              914.24,
+              141.14,
+              40.96,
+              110.58
+            ],
+            [
+              787.62,
+              182.29,
+              47.38,
+              124.81
+            ],
+            [
+              782.07,
+              259.4,
+              60.33,
+              144.9
+            ],
+            [
+              808.12,
+              377.98,
+              74.28,
+              177.32
+            ],
+            [
+              997.8,
+              565.2,
+              86.7,
+              219.1
+            ],
+            [
+              1723.17,
+              539.28,
+              103.1,
+              202.43
+            ]
+          ],
+          "start_timestamp": 221.28,
+          "end_timestamp": 246.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c02",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_9_254_275_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6342,
+            6447,
+            6552,
+            6657,
+            6762,
+            6867
+          ],
+          "bboxes": [
+            [
+              664.57,
+              1063.63,
+              103.3,
+              266.15
+            ],
+            [
+              753.04,
+              768.87,
+              92.48,
+              230.41
+            ],
+            [
+              765.42,
+              614.4,
+              72.67,
+              173.92
+            ],
+            [
+              731.32,
+              520.25,
+              58.18,
+              143.91
+            ],
+            [
+              679.36,
+              455.67,
+              48.24,
+              120.56
+            ],
+            [
+              638.17,
+              410.23,
+              37.43,
+              102.32
+            ]
+          ],
+          "start_timestamp": 253.68,
+          "end_timestamp": 274.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c01 → c05 → c02",
+      "choices": [
+        "A. c02 → c05 → c01",
+        "B. c01 → c05 → c11",
+        "C. c02 → c01 → c05",
+        "D. c01 → c05 → c02"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "efJ6FUHMmA8o5HgAXMaV9y",
+      "scene": "Track 9",
+      "map_image_path": "./map/CasualReordering_map_9_efJ6FUHMmA8o5HgAXMaV9y.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_9_221_247_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5532,
+            5659,
+            5786,
+            5913,
+            6040,
+            6167
+          ],
+          "bboxes": [
+            [
+              914.24,
+              141.14,
+              40.96,
+              110.58
+            ],
+            [
+              787.62,
+              182.29,
+              47.38,
+              124.81
+            ],
+            [
+              782.07,
+              259.4,
+              60.33,
+              144.9
+            ],
+            [
+              808.12,
+              377.98,
+              74.28,
+              177.32
+            ],
+            [
+              997.8,
+              565.2,
+              86.7,
+              219.1
+            ],
+            [
+              1723.17,
+              539.28,
+              103.1,
+              202.43
+            ]
+          ],
+          "start_timestamp": 221.28,
+          "end_timestamp": 246.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c02",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_9_254_275_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6342,
+            6447,
+            6552,
+            6657,
+            6762,
+            6867
+          ],
+          "bboxes": [
+            [
+              664.57,
+              1063.63,
+              103.3,
+              266.15
+            ],
+            [
+              753.04,
+              768.87,
+              92.48,
+              230.41
+            ],
+            [
+              765.42,
+              614.4,
+              72.67,
+              173.92
+            ],
+            [
+              731.32,
+              520.25,
+              58.18,
+              143.91
+            ],
+            [
+              679.36,
+              455.67,
+              48.24,
+              120.56
+            ],
+            [
+              638.17,
+              410.23,
+              37.43,
+              102.32
+            ]
+          ],
+          "start_timestamp": 253.68,
+          "end_timestamp": 274.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c04",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_9_268_279_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6706,
+            6762,
+            6818,
+            6874,
+            6930
+          ],
+          "bboxes": [
+            [
+              -61.4,
+              328.3,
+              72.67,
+              187.82
+            ],
+            [
+              20.3,
+              402.44,
+              89.13,
+              232.22
+            ],
+            [
+              203.6,
+              516.86,
+              102.6,
+              254.84
+            ],
+            [
+              415.3,
+              659.85,
+              131.1,
+              285.15
+            ],
+            [
+              813.65,
+              838.6,
+              109.25,
+              300.69
+            ]
+          ],
+          "start_timestamp": 268.24,
+          "end_timestamp": 279.4,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c05 → c02 → c04",
+      "choices": [
+        "A. c02 → c04 → c05",
+        "B. c05 → c04 → c02",
+        "C. c05 → c02 → c04",
+        "D. c05 → c02 → c01"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "dGxuPxDmWaieSiZjQUN5iZ",
+      "scene": "Track 9",
+      "map_image_path": "./map/CasualReordering_map_9_dGxuPxDmWaieSiZjQUN5iZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c15",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_9_61_102_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1525,
+            1731,
+            1937,
+            2143,
+            2349,
+            2555
+          ],
+          "bboxes": [
+            [
+              547.45,
+              1069.51,
+              358.57,
+              726.42
+            ],
+            [
+              819.56,
+              332.99,
+              204.3,
+              538.01
+            ],
+            [
+              882.15,
+              316.59,
+              204.3,
+              538.01
+            ],
+            [
+              894.65,
+              327.17,
+              197.75,
+              531.85
+            ],
+            [
+              799.46,
+              333.83,
+              197.74,
+              531.85
+            ],
+            [
+              972.65,
+              1012.62,
+              364.01,
+              719.88
+            ]
+          ],
+          "start_timestamp": 61.0,
+          "end_timestamp": 102.32,
+          "direction": ""
+        },
+        {
+          "camera_id": "c10",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_9_121_126_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3016,
+            3043,
+            3070,
+            3097,
+            3124,
+            3151
+          ],
+          "bboxes": [
+            [
+              150.79,
+              613.44,
+              127.81,
+              319.44
+            ],
+            [
+              246.6,
+              583.5,
+              273.9,
+              470.7
+            ],
+            [
+              672.8,
+              711.4,
+              255.4,
+              402.72
+            ],
+            [
+              1144.5,
+              757.6,
+              243.9,
+              354.8
+            ],
+            [
+              1311.9,
+              919.5,
+              256.7,
+              284.6
+            ],
+            [
+              1327.4,
+              1067.69,
+              240.16,
+              424.8
+            ]
+          ],
+          "start_timestamp": 120.64,
+          "end_timestamp": 126.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_9_159_174_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3983,
+            4056,
+            4129,
+            4202,
+            4275,
+            4348
+          ],
+          "bboxes": [
+            [
+              1906.8,
+              313.6,
+              455.4,
+              1122.6
+            ],
+            [
+              657.4,
+              629.7,
+              543.9,
+              1254.9
+            ],
+            [
+              547.5,
+              499.1,
+              410.7,
+              739.1
+            ],
+            [
+              769.1,
+              299.2,
+              167.6,
+              508.4
+            ],
+            [
+              1440.2,
+              527.3,
+              270.3,
+              448.9
+            ],
+            [
+              1588.2,
+              1005.1,
+              284.7,
+              498.6
+            ]
+          ],
+          "start_timestamp": 159.32,
+          "end_timestamp": 174.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c15 → c10 → c11",
+      "choices": [
+        "A. c11 → c10 → c15",
+        "B. c15 → c10 → c11",
+        "C. c10 → c11 → c15",
+        "D. c15 → c10 → c04"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "dShxZNQ783gRoQaMKdQAJb",
+      "scene": "Track 10",
+      "map_image_path": "./map/CasualReordering_map_10_dShxZNQ783gRoQaMKdQAJb.png",
+      "camera_images": [
+        {
+          "camera_id": "c13",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_10_5_25_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            118,
+            218,
+            318,
+            418,
+            518,
+            618
+          ],
+          "bboxes": [
+            [
+              341.87,
+              149.24,
+              80.86,
+              237.02
+            ],
+            [
+              775.7,
+              204.2,
+              120.99,
+              320.87
+            ],
+            [
+              1747.9,
+              303.7,
+              138.84,
+              408.18
+            ],
+            [
+              1478.23,
+              263.7,
+              126.57,
+              378.1
+            ],
+            [
+              585.79,
+              187.33,
+              121.91,
+              296.07
+            ],
+            [
+              341.75,
+              140.72,
+              91.91,
+              236.78
+            ]
+          ],
+          "start_timestamp": 4.72,
+          "end_timestamp": 24.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_10_24_29_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            611,
+            632,
+            653,
+            674,
+            695,
+            716
+          ],
+          "bboxes": [
+            [
+              -61.12,
+              14.43,
+              158.3,
+              514.46
+            ],
+            [
+              57.1,
+              8.7,
+              171.9,
+              521.0
+            ],
+            [
+              268.4,
+              33.29,
+              173.3,
+              579.55
+            ],
+            [
+              549.18,
+              31.87,
+              234.92,
+              571.27
+            ],
+            [
+              841.9,
+              22.18,
+              162.23,
+              562.8
+            ],
+            [
+              1096.11,
+              36.71,
+              177.95,
+              527.64
+            ]
+          ],
+          "start_timestamp": 24.44,
+          "end_timestamp": 28.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_10_39_50_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            978,
+            1030,
+            1082,
+            1134,
+            1186,
+            1238
+          ],
+          "bboxes": [
+            [
+              771.15,
+              1060.5,
+              549.35,
+              633.1
+            ],
+            [
+              1093.11,
+              593.24,
+              391.99,
+              614.26
+            ],
+            [
+              1303.7,
+              286.4,
+              211.6,
+              537.1
+            ],
+            [
+              715.6,
+              139.2,
+              223.0,
+              478.5
+            ],
+            [
+              157.8,
+              380.1,
+              254.2,
+              476.4
+            ],
+            [
+              -34.24,
+              952.86,
+              282.68,
+              378.3
+            ]
+          ],
+          "start_timestamp": 39.12,
+          "end_timestamp": 49.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c13 → c12 → c03",
+      "choices": [
+        "A. c12 → c03 → c13",
+        "B. c13 → c04 → c03",
+        "C. c13 → c12 → c03",
+        "D. c03 → c12 → c13"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "H4bLfiFh7XwCurnfhEKKdV",
+      "scene": "Track 10",
+      "map_image_path": "./map/CasualReordering_map_10_H4bLfiFh7XwCurnfhEKKdV.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_10_52_62_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1295,
+            1348,
+            1401,
+            1454,
+            1507
+          ],
+          "bboxes": [
+            [
+              1449.7,
+              -198.01,
+              108.82,
+              312.68
+            ],
+            [
+              1092.82,
+              -82.48,
+              131.82,
+              387.58
+            ],
+            [
+              833.68,
+              9.98,
+              164.04,
+              450.78
+            ],
+            [
+              659.26,
+              280.9,
+              182.84,
+              550.6
+            ],
+            [
+              929.2,
+              488.77,
+              208.6,
+              590.1
+            ]
+          ],
+          "start_timestamp": 51.8,
+          "end_timestamp": 62.36,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_10_63_76_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1571,
+            1635,
+            1699,
+            1763,
+            1827
+          ],
+          "bboxes": [
+            [
+              938.73,
+              133.83,
+              13.51,
+              71.74
+            ],
+            [
+              963.79,
+              148.4,
+              29.7,
+              72.9
+            ],
+            [
+              1025.92,
+              158.46,
+              28.21,
+              78.92
+            ],
+            [
+              1110.22,
+              175.55,
+              26.73,
+              82.72
+            ],
+            [
+              1215.41,
+              190.23,
+              32.22,
+              86.2
+            ]
+          ],
+          "start_timestamp": 62.84,
+          "end_timestamp": 75.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_10_74_77_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1862,
+            1872,
+            1882,
+            1892,
+            1902,
+            1912
+          ],
+          "bboxes": [
+            [
+              315.29,
+              1066.28,
+              116.81,
+              288.71
+            ],
+            [
+              211.17,
+              1047.99,
+              130.43,
+              288.71
+            ],
+            [
+              106.63,
+              995.94,
+              124.57,
+              288.71
+            ],
+            [
+              1.67,
+              991.62,
+              124.57,
+              288.72
+            ],
+            [
+              -77.72,
+              1015.21,
+              137.47,
+              288.71
+            ],
+            [
+              -122.61,
+              986.93,
+              137.48,
+              288.72
+            ]
+          ],
+          "start_timestamp": 74.48,
+          "end_timestamp": 76.6,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c08 → c01 → c05",
+      "choices": [
+        "A. c05 → c01 → c08",
+        "B. c08 → c06 → c05",
+        "C. c08 → c01 → c05",
+        "D. c05 → c08 → c01"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "V9CZeTSpgpGxFN3Teaep3S",
+      "scene": "Track 16",
+      "map_image_path": "./map/CasualReordering_map_16_V9CZeTSpgpGxFN3Teaep3S.png",
+      "camera_images": [
+        {
+          "camera_id": "c14",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_16_0_13_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            63,
+            126,
+            189,
+            252,
+            315
+          ],
+          "bboxes": [
+            [
+              518.0,
+              324.32,
+              71.1,
+              230.58
+            ],
+            [
+              656.04,
+              298.04,
+              70.98,
+              191.93
+            ],
+            [
+              770.5,
+              287.9,
+              59.0,
+              171.1
+            ],
+            [
+              857.54,
+              274.38,
+              47.94,
+              151.01
+            ],
+            [
+              906.22,
+              262.33,
+              40.4,
+              129.47
+            ],
+            [
+              957.32,
+              250.29,
+              42.45,
+              136.41
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 12.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            15,
+            70,
+            125,
+            180,
+            235,
+            290
+          ],
+          "bboxes": [
+            [
+              1734.63,
+              88.2,
+              34.13,
+              93.16
+            ],
+            [
+              1754.62,
+              95.4,
+              35.11,
+              99.07
+            ],
+            [
+              1756.57,
+              100.5,
+              30.01,
+              101.7
+            ],
+            [
+              1775.45,
+              107.27,
+              39.31,
+              118.03
+            ],
+            [
+              1831.87,
+              119.33,
+              48.53,
+              128.46
+            ],
+            [
+              1890.62,
+              130.57,
+              50.62,
+              158.66
+            ]
+          ],
+          "start_timestamp": 0.6,
+          "end_timestamp": 11.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            868,
+            912,
+            956,
+            1000,
+            1044
+          ],
+          "bboxes": [
+            [
+              1905.1,
+              342.4,
+              190.1,
+              411.9
+            ],
+            [
+              1344.3,
+              316.3,
+              145.9,
+              369.8
+            ],
+            [
+              1004.9,
+              273.4,
+              87.8,
+              311.1
+            ],
+            [
+              675.9,
+              248.1,
+              75.0,
+              272.4
+            ],
+            [
+              431.2,
+              231.6,
+              80.5,
+              208.5
+            ],
+            [
+              304.0,
+              224.5,
+              72.7,
+              192.3
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 41.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c14 → c16 → c09",
+      "choices": [
+        "A. c16 → c09 → c14",
+        "B. c09 → c16 → c14",
+        "C. c01 → c16 → c09",
+        "D. c14 → c16 → c09"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "eWMgiduHqjedF3CySGRTXw",
+      "scene": "Track 16",
+      "map_image_path": "./map/CasualReordering_map_16_eWMgiduHqjedF3CySGRTXw.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            15,
+            70,
+            125,
+            180,
+            235,
+            290
+          ],
+          "bboxes": [
+            [
+              1734.63,
+              88.2,
+              34.13,
+              93.16
+            ],
+            [
+              1754.62,
+              95.4,
+              35.11,
+              99.07
+            ],
+            [
+              1756.57,
+              100.5,
+              30.01,
+              101.7
+            ],
+            [
+              1775.45,
+              107.27,
+              39.31,
+              118.03
+            ],
+            [
+              1831.87,
+              119.33,
+              48.53,
+              128.46
+            ],
+            [
+              1890.62,
+              130.57,
+              50.62,
+              158.66
+            ]
+          ],
+          "start_timestamp": 0.6,
+          "end_timestamp": 11.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            868,
+            912,
+            956,
+            1000,
+            1044
+          ],
+          "bboxes": [
+            [
+              1905.1,
+              342.4,
+              190.1,
+              411.9
+            ],
+            [
+              1344.3,
+              316.3,
+              145.9,
+              369.8
+            ],
+            [
+              1004.9,
+              273.4,
+              87.8,
+              311.1
+            ],
+            [
+              675.9,
+              248.1,
+              75.0,
+              272.4
+            ],
+            [
+              431.2,
+              231.6,
+              80.5,
+              208.5
+            ],
+            [
+              304.0,
+              224.5,
+              72.7,
+              192.3
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 41.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_16_94_98_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2338,
+            2359,
+            2380,
+            2401,
+            2422,
+            2443
+          ],
+          "bboxes": [
+            [
+              1899.88,
+              589.76,
+              303.32,
+              711.64
+            ],
+            [
+              1398.35,
+              370.19,
+              273.75,
+              756.1
+            ],
+            [
+              1078.69,
+              219.33,
+              240.78,
+              777.57
+            ],
+            [
+              887.5,
+              115.99,
+              208.7,
+              644.71
+            ],
+            [
+              930.38,
+              51.24,
+              199.67,
+              562.81
+            ],
+            [
+              1078.1,
+              50.79,
+              208.06,
+              539.89
+            ]
+          ],
+          "start_timestamp": 93.52,
+          "end_timestamp": 97.76,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c16 → c09 → c12",
+      "choices": [
+        "A. c09 → c12 → c16",
+        "B. c09 → c16 → c12",
+        "C. c16 → c09 → c12",
+        "D. c16 → c01 → c12"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "XH5T4kxDmCjhrFatmKKuoU",
+      "scene": "Track 17",
+      "map_image_path": "./map/CasualReordering_map_17_XH5T4kxDmCjhrFatmKKuoU.png",
+      "camera_images": [
+        {
+          "camera_id": "c10",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_17_132_139_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3289,
+            3325,
+            3361,
+            3397,
+            3433,
+            3469
+          ],
+          "bboxes": [
+            [
+              108.88,
+              486.43,
+              142.99,
+              376.56
+            ],
+            [
+              328.9,
+              536.1,
+              223.5,
+              503.9
+            ],
+            [
+              788.45,
+              623.6,
+              250.75,
+              484.5
+            ],
+            [
+              1161.07,
+              696.5,
+              294.53,
+              413.56
+            ],
+            [
+              1303.3,
+              802.3,
+              273.8,
+              307.76
+            ],
+            [
+              1417.9,
+              1063.2,
+              168.4,
+              191.2
+            ]
+          ],
+          "start_timestamp": 131.56,
+          "end_timestamp": 138.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_17_164_177_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4109,
+            4171,
+            4233,
+            4295,
+            4357,
+            4419
+          ],
+          "bboxes": [
+            [
+              1825.4,
+              572.0,
+              426.8,
+              1197.2
+            ],
+            [
+              383.0,
+              400.0,
+              527.5,
+              1213.4
+            ],
+            [
+              408.5,
+              413.6,
+              304.3,
+              733.7
+            ],
+            [
+              911.0,
+              218.2,
+              287.1,
+              568.3
+            ],
+            [
+              1483.4,
+              357.9,
+              283.3,
+              627.8
+            ],
+            [
+              1758.7,
+              930.5,
+              271.4,
+              629.2
+            ]
+          ],
+          "start_timestamp": 164.36,
+          "end_timestamp": 176.84,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_17_201_215_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5013,
+            5086,
+            5159,
+            5232,
+            5305
+          ],
+          "bboxes": [
+            [
+              858.6,
+              41.79,
+              29.11,
+              92.41
+            ],
+            [
+              720.85,
+              46.34,
+              34.19,
+              103.74
+            ],
+            [
+              627.1,
+              52.6,
+              33.09,
+              106.8
+            ],
+            [
+              651.79,
+              54.41,
+              32.41,
+              102.95
+            ],
+            [
+              635.61,
+              38.08,
+              26.65,
+              99.89
+            ]
+          ],
+          "start_timestamp": 200.52,
+          "end_timestamp": 215.08,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c10 → c11 → c05",
+      "choices": [
+        "A. c10 → c05 → c11",
+        "B. c10 → c11 → c05",
+        "C. c05 → c11 → c10",
+        "D. c01 → c11 → c05"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "gRP5xRxPeDpALPJHckRqDd",
+      "scene": "Track 17",
+      "map_image_path": "./map/CasualReordering_map_17_gRP5xRxPeDpALPJHckRqDd.png",
+      "camera_images": [
+        {
+          "camera_id": "c15",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_17_33_88_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            1100,
+            1376,
+            1652,
+            1928,
+            2204
+          ],
+          "bboxes": [
+            [
+              1220.5,
+              1069.24,
+              646.4,
+              1222.46
+            ],
+            [
+              1488.22,
+              206.85,
+              159.41,
+              435.63
+            ],
+            [
+              1524.3,
+              197.48,
+              129.4,
+              445.41
+            ],
+            [
+              1510.98,
+              201.7,
+              139.42,
+              441.19
+            ],
+            [
+              1489.24,
+              205.3,
+              165.16,
+              439.35
+            ],
+            [
+              1658.98,
+              1049.93,
+              468.97,
+              854.54
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 88.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c10",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_17_132_139_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3289,
+            3325,
+            3361,
+            3397,
+            3433,
+            3469
+          ],
+          "bboxes": [
+            [
+              108.88,
+              486.43,
+              142.99,
+              376.56
+            ],
+            [
+              328.9,
+              536.1,
+              223.5,
+              503.9
+            ],
+            [
+              788.45,
+              623.6,
+              250.75,
+              484.5
+            ],
+            [
+              1161.07,
+              696.5,
+              294.53,
+              413.56
+            ],
+            [
+              1303.3,
+              802.3,
+              273.8,
+              307.76
+            ],
+            [
+              1417.9,
+              1063.2,
+              168.4,
+              191.2
+            ]
+          ],
+          "start_timestamp": 131.56,
+          "end_timestamp": 138.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_17_164_177_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4109,
+            4171,
+            4233,
+            4295,
+            4357,
+            4419
+          ],
+          "bboxes": [
+            [
+              1825.4,
+              572.0,
+              426.8,
+              1197.2
+            ],
+            [
+              383.0,
+              400.0,
+              527.5,
+              1213.4
+            ],
+            [
+              408.5,
+              413.6,
+              304.3,
+              733.7
+            ],
+            [
+              911.0,
+              218.2,
+              287.1,
+              568.3
+            ],
+            [
+              1483.4,
+              357.9,
+              283.3,
+              627.8
+            ],
+            [
+              1758.7,
+              930.5,
+              271.4,
+              629.2
+            ]
+          ],
+          "start_timestamp": 164.36,
+          "end_timestamp": 176.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c15 → c10 → c11",
+      "choices": [
+        "A. c11 → c10 → c15",
+        "B. c11 → c10 → c15",
+        "C. c15 → c01 → c11",
+        "D. c15 → c10 → c11"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "Gi7gpmudDrcTzuMSUDbMwv",
+      "scene": "Track 18",
+      "map_image_path": "./map/CasualReordering_map_18_Gi7gpmudDrcTzuMSUDbMwv.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_18_244_251_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6109,
+            6144,
+            6179,
+            6214,
+            6249,
+            6284
+          ],
+          "bboxes": [
+            [
+              1722.6,
+              100.4,
+              45.51,
+              107.9
+            ],
+            [
+              1752.1,
+              103.1,
+              42.4,
+              112.9
+            ],
+            [
+              1773.22,
+              105.52,
+              40.78,
+              123.2
+            ],
+            [
+              1814.25,
+              115.59,
+              43.75,
+              142.91
+            ],
+            [
+              1856.24,
+              124.94,
+              56.16,
+              135.76
+            ],
+            [
+              1902.56,
+              129.2,
+              63.44,
+              174.6
+            ]
+          ],
+          "start_timestamp": 244.36,
+          "end_timestamp": 251.36,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_18_259_265_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6482,
+            6512,
+            6542,
+            6572,
+            6602
+          ],
+          "bboxes": [
+            [
+              1895.9,
+              326.7,
+              192.2,
+              438.16
+            ],
+            [
+              1504.1,
+              324.4,
+              216.6,
+              419.1
+            ],
+            [
+              1183.4,
+              294.4,
+              120.8,
+              375.0
+            ],
+            [
+              836.8,
+              275.1,
+              111.7,
+              351.7
+            ],
+            [
+              485.7,
+              279.2,
+              180.1,
+              322.4
+            ]
+          ],
+          "start_timestamp": 259.28,
+          "end_timestamp": 265.24,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_18_268_272_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6693,
+            6714,
+            6735,
+            6756,
+            6777,
+            6798
+          ],
+          "bboxes": [
+            [
+              1853.2,
+              467.7,
+              355.5,
+              841.45
+            ],
+            [
+              1319.96,
+              294.1,
+              367.17,
+              861.12
+            ],
+            [
+              1058.16,
+              161.23,
+              249.54,
+              787.34
+            ],
+            [
+              913.11,
+              76.89,
+              222.89,
+              683.54
+            ],
+            [
+              933.21,
+              35.08,
+              196.56,
+              572.38
+            ],
+            [
+              1087.99,
+              34.74,
+              178.45,
+              547.46
+            ]
+          ],
+          "start_timestamp": 267.72,
+          "end_timestamp": 272.0,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c16 → c09 → c12",
+      "choices": [
+        "A. c16 → c12 → c09",
+        "B. c16 → c09 → c13",
+        "C. c16 → c09 → c12",
+        "D. c16 → c12 → c09"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "EKimj6kx84DzXB6yYQHzjQ",
+      "scene": "Track 19",
+      "map_image_path": "./map/CasualReordering_map_19_EKimj6kx84DzXB6yYQHzjQ.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_19_171_196_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4263,
+            4388,
+            4513,
+            4638,
+            4763,
+            4888
+          ],
+          "bboxes": [
+            [
+              1397.0,
+              221.9,
+              22.38,
+              91.88
+            ],
+            [
+              1311.36,
+              267.78,
+              30.84,
+              109.74
+            ],
+            [
+              1320.05,
+              353.75,
+              42.19,
+              138.41
+            ],
+            [
+              1458.58,
+              508.58,
+              58.7,
+              181.13
+            ],
+            [
+              1554.56,
+              812.73,
+              82.02,
+              261.5
+            ],
+            [
+              1572.18,
+              1059.42,
+              97.36,
+              261.5
+            ]
+          ],
+          "start_timestamp": 170.52,
+          "end_timestamp": 195.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_19_172_203_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4291,
+            4448,
+            4605,
+            4762,
+            4919,
+            5076
+          ],
+          "bboxes": [
+            [
+              15.8,
+              721.15,
+              97.0,
+              261.17
+            ],
+            [
+              456.33,
+              420.69,
+              64.36,
+              198.67
+            ],
+            [
+              486.16,
+              239.4,
+              46.5,
+              147.3
+            ],
+            [
+              532.18,
+              137.12,
+              38.21,
+              119.06
+            ],
+            [
+              581.84,
+              96.55,
+              40.9,
+              109.23
+            ],
+            [
+              802.39,
+              50.88,
+              30.03,
+              92.9
+            ]
+          ],
+          "start_timestamp": 171.64,
+          "end_timestamp": 203.08,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_19_220_230_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5490,
+            5542,
+            5594,
+            5646,
+            5698,
+            5750
+          ],
+          "bboxes": [
+            [
+              1809.9,
+              899.1,
+              244.0,
+              553.0
+            ],
+            [
+              1429.8,
+              350.5,
+              277.0,
+              565.4
+            ],
+            [
+              622.5,
+              400.4,
+              250.8,
+              605.2
+            ],
+            [
+              430.1,
+              563.2,
+              271.4,
+              691.8
+            ],
+            [
+              468.5,
+              739.5,
+              501.6,
+              1118.2
+            ],
+            [
+              1750.2,
+              706.7,
+              571.2,
+              956.8
+            ]
+          ],
+          "start_timestamp": 219.6,
+          "end_timestamp": 230.08,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c01 → c05 → c11",
+      "choices": [
+        "A. c01 → c11 → c05",
+        "B. c11 → c05 → c01",
+        "C. c01 → c05 → c16",
+        "D. c01 → c05 → c11"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "SxW97jg7jyEJbTi6EWPiqs",
+      "scene": "Track 20",
+      "map_image_path": "./map/CasualReordering_map_20_SxW97jg7jyEJbTi6EWPiqs.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_20_176_181_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4407,
+            4430,
+            4453,
+            4476,
+            4499,
+            4522
+          ],
+          "bboxes": [
+            [
+              1074.66,
+              25.5,
+              177.03,
+              539.54
+            ],
+            [
+              901.23,
+              21.59,
+              197.13,
+              606.25
+            ],
+            [
+              848.0,
+              78.61,
+              237.8,
+              722.76
+            ],
+            [
+              1025.26,
+              175.38,
+              277.94,
+              854.12
+            ],
+            [
+              1316.14,
+              353.5,
+              366.38,
+              843.14
+            ],
+            [
+              1862.53,
+              745.47,
+              336.45,
+              844.95
+            ]
+          ],
+          "start_timestamp": 176.28,
+          "end_timestamp": 180.88,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_20_185_190_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4615,
+            4644,
+            4673,
+            4702,
+            4731,
+            4760
+          ],
+          "bboxes": [
+            [
+              284.13,
+              294.95,
+              92.91,
+              408.65
+            ],
+            [
+              429.3,
+              304.7,
+              155.1,
+              399.5
+            ],
+            [
+              638.7,
+              327.4,
+              161.9,
+              451.0
+            ],
+            [
+              1019.3,
+              354.2,
+              122.7,
+              487.1
+            ],
+            [
+              1426.2,
+              401.4,
+              234.1,
+              541.9
+            ],
+            [
+              1871.1,
+              440.9,
+              258.8,
+              616.8
+            ]
+          ],
+          "start_timestamp": 184.6,
+          "end_timestamp": 190.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c14",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_20_196_201_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4906,
+            4927,
+            4948,
+            4969,
+            4990,
+            5011
+          ],
+          "bboxes": [
+            [
+              887.08,
+              247.19,
+              42.02,
+              128.18
+            ],
+            [
+              877.4,
+              249.31,
+              42.3,
+              132.22
+            ],
+            [
+              858.54,
+              251.96,
+              50.7,
+              140.54
+            ],
+            [
+              848.21,
+              253.29,
+              48.87,
+              146.84
+            ],
+            [
+              832.75,
+              255.4,
+              47.35,
+              152.1
+            ],
+            [
+              814.62,
+              258.99,
+              55.8,
+              162.41
+            ]
+          ],
+          "start_timestamp": 196.24,
+          "end_timestamp": 200.52,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c12 → c09 → c14",
+      "choices": [
+        "A. c01 → c09 → c14",
+        "B. c14 → c09 → c12",
+        "C. c09 → c14 → c12",
+        "D. c12 → c09 → c14"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "89zVytr52c8re7Uatx2CXY",
+      "scene": "Track 20",
+      "map_image_path": "./map/CasualReordering_map_20_89zVytr52c8re7Uatx2CXY.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_20_108_136_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2691,
+            2835,
+            2979,
+            3123,
+            3267
+          ],
+          "bboxes": [
+            [
+              710.17,
+              510.15,
+              32.01,
+              176.24
+            ],
+            [
+              1107.67,
+              374.58,
+              52.16,
+              150.6
+            ],
+            [
+              1083.1,
+              265.68,
+              38.0,
+              119.27
+            ],
+            [
+              1095.91,
+              204.67,
+              31.09,
+              94.57
+            ],
+            [
+              1011.62,
+              158.63,
+              25.34,
+              81.19
+            ]
+          ],
+          "start_timestamp": 107.64,
+          "end_timestamp": 136.4,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_20_110_128_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2758,
+            2845,
+            2932,
+            3019,
+            3106
+          ],
+          "bboxes": [
+            [
+              875.19,
+              197.3,
+              42.41,
+              132.96
+            ],
+            [
+              756.9,
+              255.4,
+              49.7,
+              160.4
+            ],
+            [
+              752.0,
+              359.02,
+              61.2,
+              193.38
+            ],
+            [
+              869.2,
+              496.99,
+              80.2,
+              235.1
+            ],
+            [
+              883.6,
+              701.13,
+              98.2,
+              300.25
+            ]
+          ],
+          "start_timestamp": 110.32,
+          "end_timestamp": 127.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_20_139_152_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3471,
+            3538,
+            3605,
+            3672,
+            3739,
+            3806
+          ],
+          "bboxes": [
+            [
+              1878.5,
+              466.45,
+              145.1,
+              530.65
+            ],
+            [
+              912.43,
+              441.74,
+              175.94,
+              618.41
+            ],
+            [
+              663.63,
+              185.32,
+              212.17,
+              564.48
+            ],
+            [
+              874.05,
+              -43.49,
+              159.93,
+              497.05
+            ],
+            [
+              1219.32,
+              -226.69,
+              131.68,
+              470.23
+            ],
+            [
+              1440.57,
+              -331.62,
+              125.71,
+              466.67
+            ]
+          ],
+          "start_timestamp": 138.84,
+          "end_timestamp": 152.32,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c01 → c05 → c08",
+      "choices": [
+        "A. c08 → c01 → c05",
+        "B. c01 → c08 → c05",
+        "C. c01 → c05 → c08",
+        "D. c01 → c05 → c14"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "cazP4RbxCYhCe998eHENuZ",
+      "scene": "Track 21",
+      "map_image_path": "./map/CasualReordering_map_21_cazP4RbxCYhCe998eHENuZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c14",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_21_113_116_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2829,
+            2844,
+            2859,
+            2874,
+            2889
+          ],
+          "bboxes": [
+            [
+              1891.06,
+              844.55,
+              231.17,
+              723.93
+            ],
+            [
+              1512.97,
+              745.39,
+              258.59,
+              745.23
+            ],
+            [
+              1065.56,
+              741.8,
+              262.74,
+              748.67
+            ],
+            [
+              632.4,
+              754.39,
+              263.2,
+              745.1
+            ],
+            [
+              193.63,
+              762.22,
+              263.2,
+              716.68
+            ]
+          ],
+          "start_timestamp": 113.16,
+          "end_timestamp": 116.12,
+          "direction": ""
+        },
+        {
+          "camera_id": "c10",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_21_137_143_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3428,
+            3457,
+            3486,
+            3515,
+            3544,
+            3573
+          ],
+          "bboxes": [
+            [
+              1674.67,
+              1064.46,
+              133.1,
+              103.44
+            ],
+            [
+              1573.3,
+              796.0,
+              245.4,
+              371.9
+            ],
+            [
+              1272.0,
+              611.4,
+              296.0,
+              408.8
+            ],
+            [
+              863.0,
+              541.6,
+              246.5,
+              408.8
+            ],
+            [
+              425.2,
+              542.4,
+              219.2,
+              457.1
+            ],
+            [
+              120.7,
+              485.4,
+              168.6,
+              452.3
+            ]
+          ],
+          "start_timestamp": 137.12,
+          "end_timestamp": 143.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c15",
+          "object_id": 21,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_21_188_245_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4689,
+            4978,
+            5267,
+            5556,
+            5845,
+            6134
+          ],
+          "bboxes": [
+            [
+              1517.46,
+              1067.51,
+              391.02,
+              932.29
+            ],
+            [
+              1570.9,
+              651.03,
+              359.4,
+              790.06
+            ],
+            [
+              1576.5,
+              641.43,
+              353.8,
+              809.35
+            ],
+            [
+              1579.1,
+              643.9,
+              367.1,
+              803.71
+            ],
+            [
+              1575.64,
+              652.27,
+              371.14,
+              794.2
+            ],
+            [
+              1387.88,
+              1036.06,
+              361.55,
+              941.67
+            ]
+          ],
+          "start_timestamp": 187.56,
+          "end_timestamp": 245.44,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c14 → c10 → c15",
+      "choices": [
+        "A. c10 → c15 → c14",
+        "B. c10 → c14 → c15",
+        "C. c14 → c10 → c15",
+        "D. c14 → c10 → c16"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "PDrKFuKQqEcJyfZmPPjRba",
+      "scene": "Track 25",
+      "map_image_path": "./map/CasualReordering_map_25_PDrKFuKQqEcJyfZmPPjRba.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 25,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_25_166_177_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4153,
+            4205,
+            4257,
+            4309,
+            4361,
+            4413
+          ],
+          "bboxes": [
+            [
+              222.54,
+              1072.54,
+              94.94,
+              251.55
+            ],
+            [
+              147.74,
+              851.86,
+              108.76,
+              251.54
+            ],
+            [
+              89.87,
+              729.33,
+              70.93,
+              227.57
+            ],
+            [
+              78.23,
+              723.93,
+              84.21,
+              233.89
+            ],
+            [
+              158.72,
+              844.46,
+              103.14,
+              262.5
+            ],
+            [
+              168.79,
+              1063.36,
+              104.65,
+              262.5
+            ]
+          ],
+          "start_timestamp": 166.12,
+          "end_timestamp": 176.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 25,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_25_181_196_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4518,
+            4592,
+            4666,
+            4740,
+            4814,
+            4888
+          ],
+          "bboxes": [
+            [
+              1735.3,
+              518.51,
+              63.9,
+              192.79
+            ],
+            [
+              1466.1,
+              626.03,
+              108.97,
+              233.13
+            ],
+            [
+              1147.0,
+              846.86,
+              123.9,
+              292.55
+            ],
+            [
+              508.13,
+              1006.88,
+              117.8,
+              292.55
+            ],
+            [
+              268.4,
+              720.66,
+              105.69,
+              277.74
+            ],
+            [
+              99.47,
+              546.39,
+              92.49,
+              213.54
+            ]
+          ],
+          "start_timestamp": 180.72,
+          "end_timestamp": 195.52,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 25,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_25_181_195_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4531,
+            4599,
+            4667,
+            4735,
+            4803,
+            4871
+          ],
+          "bboxes": [
+            [
+              756.57,
+              253.23,
+              20.51,
+              58.61
+            ],
+            [
+              936.47,
+              223.09,
+              29.43,
+              87.51
+            ],
+            [
+              1080.58,
+              198.01,
+              27.9,
+              89.91
+            ],
+            [
+              1245.88,
+              199.55,
+              32.44,
+              91.05
+            ],
+            [
+              1298.65,
+              226.65,
+              33.05,
+              98.88
+            ],
+            [
+              1423.11,
+              243.58,
+              45.5,
+              113.93
+            ]
+          ],
+          "start_timestamp": 181.24,
+          "end_timestamp": 194.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c02 → c05 → c01",
+      "choices": [
+        "A. c02 → c05 → c06",
+        "B. c02 → c05 → c01",
+        "C. c02 → c01 → c05",
+        "D. c02 → c01 → c05"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "nqk46RGii8zpJ78sTGk52f",
+      "scene": "Track 26",
+      "map_image_path": "./map/CasualReordering_map_26_nqk46RGii8zpJ78sTGk52f.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 26,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_26_90_95_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2239,
+            2265,
+            2291,
+            2317,
+            2343,
+            2369
+          ],
+          "bboxes": [
+            [
+              -169.2,
+              1068.37,
+              320.27,
+              1007.83
+            ],
+            [
+              502.2,
+              775.8,
+              255.9,
+              806.54
+            ],
+            [
+              996.0,
+              638.1,
+              281.5,
+              707.4
+            ],
+            [
+              1403.9,
+              559.61,
+              175.9,
+              677.1
+            ],
+            [
+              1625.9,
+              517.4,
+              216.3,
+              566.4
+            ],
+            [
+              1803.56,
+              563.44,
+              292.01,
+              475.15
+            ]
+          ],
+          "start_timestamp": 89.56,
+          "end_timestamp": 94.84,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 26,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_26_134_144_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3338,
+            3388,
+            3438,
+            3488,
+            3538,
+            3588
+          ],
+          "bboxes": [
+            [
+              1737.1,
+              519.31,
+              118.01,
+              219.09
+            ],
+            [
+              1405.1,
+              482.2,
+              117.9,
+              233.2
+            ],
+            [
+              1032.0,
+              471.4,
+              125.0,
+              237.6
+            ],
+            [
+              855.7,
+              411.58,
+              92.97,
+              233.62
+            ],
+            [
+              811.93,
+              337.81,
+              78.93,
+              204.99
+            ],
+            [
+              892.18,
+              299.02,
+              79.65,
+              186.94
+            ]
+          ],
+          "start_timestamp": 133.52,
+          "end_timestamp": 143.6,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 26,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_26_134_143_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3347,
+            3390,
+            3433,
+            3476,
+            3519,
+            3562
+          ],
+          "bboxes": [
+            [
+              768.75,
+              250.3,
+              20.35,
+              73.4
+            ],
+            [
+              891.5,
+              252.0,
+              26.21,
+              92.41
+            ],
+            [
+              1035.77,
+              252.23,
+              54.49,
+              121.54
+            ],
+            [
+              1056.89,
+              275.32,
+              47.74,
+              133.51
+            ],
+            [
+              1066.61,
+              307.01,
+              55.29,
+              146.09
+            ],
+            [
+              1007.76,
+              319.11,
+              40.62,
+              152.69
+            ]
+          ],
+          "start_timestamp": 133.88,
+          "end_timestamp": 142.56,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c07 → c05 → c01",
+      "choices": [
+        "A. c05 → c07 → c01",
+        "B. c07 → c06 → c01",
+        "C. c01 → c05 → c07",
+        "D. c07 → c05 → c01"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "Cv4RsSSvLrR5HSzCdhjm8M",
+      "scene": "Track 28",
+      "map_image_path": "./map/CasualReordering_map_28_Cv4RsSSvLrR5HSzCdhjm8M.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_28_83_93_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2073,
+            2124,
+            2175,
+            2226,
+            2277,
+            2328
+          ],
+          "bboxes": [
+            [
+              280.4,
+              182.6,
+              92.9,
+              262.8
+            ],
+            [
+              481.4,
+              177.8,
+              95.5,
+              279.0
+            ],
+            [
+              692.3,
+              186.0,
+              141.0,
+              304.2
+            ],
+            [
+              1041.65,
+              187.5,
+              115.1,
+              328.15
+            ],
+            [
+              1502.3,
+              196.9,
+              127.5,
+              349.8
+            ],
+            [
+              1907.83,
+              206.03,
+              156.2,
+              379.8
+            ]
+          ],
+          "start_timestamp": 82.92,
+          "end_timestamp": 93.12,
+          "direction": ""
+        },
+        {
+          "camera_id": "c14",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_28_144_210_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3604,
+            3933,
+            4262,
+            4591,
+            4920
+          ],
+          "bboxes": [
+            [
+              1250.14,
+              228.22,
+              57.05,
+              161.97
+            ],
+            [
+              648.32,
+              293.65,
+              107.68,
+              306.53
+            ],
+            [
+              218.4,
+              567.22,
+              266.8,
+              408.98
+            ],
+            [
+              193.73,
+              547.5,
+              253.8,
+              427.6
+            ],
+            [
+              616.8,
+              285.16,
+              95.4,
+              297.04
+            ]
+          ],
+          "start_timestamp": 144.16,
+          "end_timestamp": 209.92,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 28,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_28_197_201_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4930,
+            4948,
+            4966,
+            4984,
+            5002,
+            5020
+          ],
+          "bboxes": [
+            [
+              1645.55,
+              67.17,
+              39.49,
+              126.78
+            ],
+            [
+              1645.55,
+              67.17,
+              41.26,
+              126.78
+            ],
+            [
+              1649.16,
+              69.12,
+              44.27,
+              122.35
+            ],
+            [
+              1662.71,
+              69.22,
+              40.44,
+              122.35
+            ],
+            [
+              1678.61,
+              71.26,
+              40.43,
+              122.36
+            ],
+            [
+              1692.85,
+              71.07,
+              40.43,
+              122.35
+            ]
+          ],
+          "start_timestamp": 197.2,
+          "end_timestamp": 200.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c09 → c14 → c16",
+      "choices": [
+        "A. c16 → c14 → c09",
+        "B. c09 → c16 → c14",
+        "C. c07 → c14 → c16",
+        "D. c09 → c14 → c16"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "FLmZdhBVirYDS7PztDQEck",
+      "scene": "Track 30",
+      "map_image_path": "./map/CasualReordering_map_30_FLmZdhBVirYDS7PztDQEck.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 30,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_30_74_91_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1852,
+            1934,
+            2016,
+            2098,
+            2180,
+            2262
+          ],
+          "bboxes": [
+            [
+              1569.12,
+              77.57,
+              39.74,
+              112.17
+            ],
+            [
+              1428.6,
+              82.3,
+              42.1,
+              125.68
+            ],
+            [
+              1504.06,
+              92.38,
+              47.82,
+              144.32
+            ],
+            [
+              1530.99,
+              104.57,
+              58.33,
+              167.46
+            ],
+            [
+              1527.42,
+              127.16,
+              76.86,
+              225.58
+            ],
+            [
+              1892.56,
+              171.36,
+              119.48,
+              290.27
+            ]
+          ],
+          "start_timestamp": 74.08,
+          "end_timestamp": 90.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 30,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_30_92_97_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2303,
+            2328,
+            2353,
+            2378,
+            2403,
+            2428
+          ],
+          "bboxes": [
+            [
+              1892.71,
+              284.4,
+              174.26,
+              418.1
+            ],
+            [
+              1629.7,
+              312.6,
+              160.0,
+              490.9
+            ],
+            [
+              1384.4,
+              360.2,
+              197.6,
+              588.5
+            ],
+            [
+              1215.9,
+              440.6,
+              234.4,
+              700.4
+            ],
+            [
+              990.5,
+              613.3,
+              326.2,
+              991.4
+            ],
+            [
+              679.1,
+              1012.6,
+              605.33,
+              1432.8
+            ]
+          ],
+          "start_timestamp": 92.12,
+          "end_timestamp": 97.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 30,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_30_98_123_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2448,
+            2575,
+            2702,
+            2829,
+            2956,
+            3083
+          ],
+          "bboxes": [
+            [
+              1687.9,
+              217.4,
+              101.5,
+              360.99
+            ],
+            [
+              1296.85,
+              207.46,
+              128.29,
+              380.38
+            ],
+            [
+              1809.4,
+              318.6,
+              271.1,
+              499.02
+            ],
+            [
+              1828.4,
+              290.0,
+              222.9,
+              539.8
+            ],
+            [
+              1848.49,
+              271.92,
+              237.31,
+              464.18
+            ],
+            [
+              1664.41,
+              216.4,
+              126.79,
+              344.34
+            ]
+          ],
+          "start_timestamp": 97.92,
+          "end_timestamp": 123.32,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c16 → c09 → c13",
+      "choices": [
+        "A. c05 → c09 → c13",
+        "B. c09 → c13 → c16",
+        "C. c09 → c16 → c13",
+        "D. c16 → c09 → c13"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "LHUw3v55nGFDaigAeiPviN",
+      "scene": "Track 30",
+      "map_image_path": "./map/CasualReordering_map_30_LHUw3v55nGFDaigAeiPviN.png",
+      "camera_images": [
+        {
+          "camera_id": "c04",
+          "object_id": 30,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_30_0_8_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            40,
+            80,
+            120,
+            160,
+            200
+          ],
+          "bboxes": [
+            [
+              720.2,
+              501.87,
+              170.2,
+              285.9
+            ],
+            [
+              1122.2,
+              522.0,
+              162.1,
+              288.9
+            ],
+            [
+              1510.6,
+              432.0,
+              88.5,
+              275.5
+            ],
+            [
+              1670.48,
+              329.22,
+              80.6,
+              247.28
+            ],
+            [
+              1675.0,
+              291.5,
+              110.2,
+              220.2
+            ],
+            [
+              1853.49,
+              266.01,
+              84.3,
+              205.6
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 8.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 30,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_30_13_34_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            332,
+            434,
+            536,
+            638,
+            740,
+            842
+          ],
+          "bboxes": [
+            [
+              865.59,
+              43.23,
+              28.22,
+              90.02
+            ],
+            [
+              755.98,
+              71.88,
+              37.18,
+              108.36
+            ],
+            [
+              871.17,
+              78.8,
+              28.73,
+              101.15
+            ],
+            [
+              870.38,
+              77.74,
+              29.52,
+              102.21
+            ],
+            [
+              741.02,
+              70.74,
+              39.78,
+              105.8
+            ],
+            [
+              862.41,
+              42.57,
+              24.37,
+              96.75
+            ]
+          ],
+          "start_timestamp": 13.28,
+          "end_timestamp": 33.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 30,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_30_45_53_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1130,
+            1170,
+            1210,
+            1250,
+            1290,
+            1330
+          ],
+          "bboxes": [
+            [
+              1862.5,
+              835.6,
+              218.1,
+              437.7
+            ],
+            [
+              1532.5,
+              344.9,
+              258.1,
+              633.9
+            ],
+            [
+              809.1,
+              201.5,
+              319.1,
+              591.2
+            ],
+            [
+              276.5,
+              504.1,
+              368.2,
+              705.6
+            ],
+            [
+              255.2,
+              579.6,
+              513.3,
+              1060.3
+            ],
+            [
+              1732.4,
+              638.7,
+              738.2,
+              1129.7
+            ]
+          ],
+          "start_timestamp": 45.2,
+          "end_timestamp": 53.32,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c04 → c05 → c11",
+      "choices": [
+        "A. c04 → c11 → c05",
+        "B. c04 → c05 → c11",
+        "C. c04 → c09 → c11",
+        "D. c05 → c04 → c11"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "mJUAUL6VAr3Y4ptUbkwo88",
+      "scene": "Track 31",
+      "map_image_path": "./map/CasualReordering_map_31_mJUAUL6VAr3Y4ptUbkwo88.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 31,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_31_0_11_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            57,
+            114,
+            171,
+            228,
+            285
+          ],
+          "bboxes": [
+            [
+              1025.7,
+              211.51,
+              69.9,
+              252.39
+            ],
+            [
+              963.8,
+              208.5,
+              75.6,
+              245.6
+            ],
+            [
+              1036.5,
+              213.2,
+              59.4,
+              245.9
+            ],
+            [
+              1075.2,
+              211.2,
+              85.1,
+              260.1
+            ],
+            [
+              719.3,
+              224.9,
+              125.1,
+              258.8
+            ],
+            [
+              272.6,
+              253.8,
+              108.8,
+              250.9
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 11.4,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 31,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_31_0_8_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            40,
+            80,
+            120,
+            160,
+            200
+          ],
+          "bboxes": [
+            [
+              1189.8,
+              308.3,
+              115.2,
+              476.13
+            ],
+            [
+              1227.21,
+              306.76,
+              164.69,
+              492.8
+            ],
+            [
+              1180.7,
+              283.5,
+              149.51,
+              492.8
+            ],
+            [
+              1221.7,
+              273.1,
+              148.5,
+              441.3
+            ],
+            [
+              1386.2,
+              313.76,
+              151.8,
+              498.54
+            ],
+            [
+              1887.55,
+              404.33,
+              221.3,
+              551.92
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 8.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 31,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_31_14_18_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            352,
+            371,
+            390,
+            409,
+            428
+          ],
+          "bboxes": [
+            [
+              1884.61,
+              826.71,
+              413.99,
+              990.59
+            ],
+            [
+              1277.64,
+              387.78,
+              470.26,
+              1008.34
+            ],
+            [
+              1031.42,
+              207.7,
+              388.18,
+              858.71
+            ],
+            [
+              932.75,
+              104.64,
+              238.95,
+              679.06
+            ],
+            [
+              921.13,
+              27.27,
+              186.07,
+              606.43
+            ]
+          ],
+          "start_timestamp": 14.08,
+          "end_timestamp": 17.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "C. c09 → c16 → c12",
+      "choices": [
+        "A. c12 → c16 → c09",
+        "B. c09 → c12 → c16",
+        "C. c09 → c16 → c12",
+        "D. c09 → c16 → c08"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "jPtAqH86NDLchzEfKturHw",
+      "scene": "Track 32",
+      "map_image_path": "./map/CasualReordering_map_32_jPtAqH86NDLchzEfKturHw.png",
+      "camera_images": [
+        {
+          "camera_id": "c13",
+          "object_id": 32,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_32_211_218_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5285,
+            5318,
+            5351,
+            5384,
+            5417,
+            5450
+          ],
+          "bboxes": [
+            [
+              1641.2,
+              241.1,
+              97.62,
+              315.4
+            ],
+            [
+              1623.23,
+              265.26,
+              122.18,
+              357.33
+            ],
+            [
+              1483.23,
+              278.62,
+              145.83,
+              386.5
+            ],
+            [
+              1431.38,
+              272.14,
+              187.03,
+              376.41
+            ],
+            [
+              1599.64,
+              257.16,
+              122.54,
+              355.94
+            ],
+            [
+              1657.13,
+              240.2,
+              113.47,
+              316.81
+            ]
+          ],
+          "start_timestamp": 211.4,
+          "end_timestamp": 218.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 32,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_32_221_224_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5526,
+            5539,
+            5552,
+            5565,
+            5578,
+            5591
+          ],
+          "bboxes": [
+            [
+              568.66,
+              1037.2,
+              490.3,
+              1107.75
+            ],
+            [
+              910.3,
+              834.7,
+              369.4,
+              987.1
+            ],
+            [
+              1242.3,
+              714.7,
+              319.2,
+              899.6
+            ],
+            [
+              1483.1,
+              628.8,
+              233.8,
+              748.2
+            ],
+            [
+              1663.7,
+              577.7,
+              248.4,
+              728.1
+            ],
+            [
+              1844.3,
+              552.1,
+              296.0,
+              647.8
+            ]
+          ],
+          "start_timestamp": 221.04,
+          "end_timestamp": 223.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 32,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_32_227_257_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5676,
+            5825,
+            5974,
+            6123,
+            6272
+          ],
+          "bboxes": [
+            [
+              1910.87,
+              143.09,
+              68.82,
+              200.64
+            ],
+            [
+              1864.93,
+              148.4,
+              59.87,
+              184.8
+            ],
+            [
+              1867.48,
+              148.4,
+              51.72,
+              181.0
+            ],
+            [
+              1866.2,
+              148.98,
+              53.0,
+              180.42
+            ],
+            [
+              1864.48,
+              149.2,
+              54.72,
+              180.2
+            ]
+          ],
+          "start_timestamp": 227.04,
+          "end_timestamp": 256.8,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c13 → c09 → c16",
+      "choices": [
+        "A. c16 → c09 → c13",
+        "B. c13 → c09 → c16",
+        "C. c07 → c09 → c16",
+        "D. c13 → c16 → c09"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "K8NeqNGwN4BN3d6D7sNJoS",
+      "scene": "Track 36",
+      "map_image_path": "./map/CasualReordering_map_36_K8NeqNGwN4BN3d6D7sNJoS.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 36,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_36_218_229_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5439,
+            5497,
+            5555,
+            5613,
+            5671,
+            5729
+          ],
+          "bboxes": [
+            [
+              -13.28,
+              1010.46,
+              303.82,
+              497.38
+            ],
+            [
+              386.26,
+              453.02,
+              306.8,
+              555.32
+            ],
+            [
+              1051.0,
+              318.88,
+              234.17,
+              542.82
+            ],
+            [
+              949.64,
+              577.9,
+              503.58,
+              648.7
+            ],
+            [
+              377.58,
+              931.59,
+              673.49,
+              763.9
+            ],
+            [
+              -709.07,
+              289.54,
+              735.2,
+              1030.98
+            ]
+          ],
+          "start_timestamp": 217.56,
+          "end_timestamp": 229.16,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 36,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_36_238_247_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5951,
+            5996,
+            6041,
+            6086,
+            6131,
+            6176
+          ],
+          "bboxes": [
+            [
+              1098.05,
+              22.55,
+              189.68,
+              550.08
+            ],
+            [
+              904.01,
+              15.5,
+              243.87,
+              705.24
+            ],
+            [
+              895.26,
+              155.49,
+              341.19,
+              922.76
+            ],
+            [
+              169.6,
+              162.91,
+              358.23,
+              899.74
+            ],
+            [
+              68.88,
+              -0.54,
+              251.11,
+              653.77
+            ],
+            [
+              276.85,
+              -90.12,
+              188.34,
+              494.78
+            ]
+          ],
+          "start_timestamp": 238.04,
+          "end_timestamp": 247.16,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 36,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_36_245_247_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6120,
+            6132,
+            6144,
+            6156,
+            6168,
+            6180
+          ],
+          "bboxes": [
+            [
+              340.47,
+              126.6,
+              85.83,
+              259.4
+            ],
+            [
+              257.61,
+              129.78,
+              102.13,
+              257.39
+            ],
+            [
+              168.24,
+              128.48,
+              82.64,
+              253.96
+            ],
+            [
+              89.6,
+              129.52,
+              84.88,
+              254.24
+            ],
+            [
+              16.24,
+              129.1,
+              108.38,
+              248.93
+            ],
+            [
+              -67.31,
+              126.57,
+              104.23,
+              248.93
+            ]
+          ],
+          "start_timestamp": 244.8,
+          "end_timestamp": 247.2,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "B. c03 → c12 → c13",
+      "choices": [
+        "A. c12 → c03 → c13",
+        "B. c03 → c12 → c13",
+        "C. c02 → c12 → c13",
+        "D. c12 → c03 → c13"
+      ]
+    },
+    {
+      "task_id": "CasualReordering",
+      "case_id": "7aUSCpG8jasHmyGQbCfL5S",
+      "scene": "Track 42",
+      "map_image_path": "./map/CasualReordering_map_42_7aUSCpG8jasHmyGQbCfL5S.png",
+      "camera_images": [
+        {
+          "camera_id": "c06",
+          "object_id": 42,
+          "video_path": "./raw_video/indoor_s01_c06",
+          "crop_video_path": "./crop_video/indoor_s01_42_32_33_c06.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            805,
+            809,
+            813,
+            817,
+            821,
+            825
+          ],
+          "bboxes": [
+            [
+              16.9,
+              113.75,
+              73.18,
+              254.55
+            ],
+            [
+              -9.7,
+              117.9,
+              81.1,
+              259.4
+            ],
+            [
+              -17.07,
+              125.6,
+              70.27,
+              255.67
+            ],
+            [
+              -17.07,
+              126.2,
+              55.29,
+              252.8
+            ],
+            [
+              -34.78,
+              126.2,
+              71.11,
+              252.8
+            ],
+            [
+              -57.6,
+              126.2,
+              68.3,
+              252.8
+            ]
+          ],
+          "start_timestamp": 32.2,
+          "end_timestamp": 33.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c02",
+          "object_id": 42,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_42_56_74_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1407,
+            1497,
+            1587,
+            1677,
+            1767
+          ],
+          "bboxes": [
+            [
+              227.7,
+              1070.47,
+              105.3,
+              245.03
+            ],
+            [
+              245.76,
+              759.83,
+              127.34,
+              265.7
+            ],
+            [
+              352.56,
+              604.84,
+              94.84,
+              202.36
+            ],
+            [
+              387.24,
+              507.16,
+              73.1,
+              165.34
+            ],
+            [
+              513.19,
+              448.79,
+              58.33,
+              139.05
+            ]
+          ],
+          "start_timestamp": 56.28,
+          "end_timestamp": 74.24,
+          "direction": ""
+        },
+        {
+          "camera_id": "c04",
+          "object_id": 42,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_42_60_81_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1499,
+            1605,
+            1711,
+            1817,
+            1923,
+            2029
+          ],
+          "bboxes": [
+            [
+              -36.5,
+              -29.8,
+              42.18,
+              107.2
+            ],
+            [
+              64.47,
+              41.79,
+              76.13,
+              166.04
+            ],
+            [
+              209.01,
+              170.62,
+              86.69,
+              206.68
+            ],
+            [
+              332.0,
+              378.05,
+              103.45,
+              258.71
+            ],
+            [
+              814.8,
+              649.1,
+              138.6,
+              333.5
+            ],
+            [
+              1681.61,
+              1071.74,
+              109.79,
+              337.59
+            ]
+          ],
+          "start_timestamp": 59.96,
+          "end_timestamp": 81.16,
+          "direction": ""
+        }
+      ],
+      "context": "基于时序信息推理目标行动轨迹",
+      "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
+      "ground_truth": "D. c06 → c02 → c04",
+      "choices": [
+        "A. c02 → c06 → c04",
+        "B. c06 → c02 → c09",
+        "C. c04 → c06 → c02",
+        "D. c06 → c02 → c04"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3960 @@
+{
+  "cases": [
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "VL2rYXwoRccyCJkM2cnADw",
+      "scene": "Track 260",
+      "map_image_path": "./map/tf_map_260_VL2rYXwoRccyCJkM2cnADw.png",
+      "camera_images": [
+        {
+          "camera_id": "c074",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_46_54_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            61,
+            76,
+            91,
+            106,
+            121,
+            136
+          ],
+          "bboxes": [
+            [
+              1417.0,
+              357.0,
+              503.0,
+              471.0
+            ],
+            [
+              1044.0,
+              185.0,
+              420.0,
+              334.0
+            ],
+            [
+              897.0,
+              112.0,
+              261.0,
+              227.0
+            ],
+            [
+              839.0,
+              63.0,
+              187.0,
+              179.0
+            ],
+            [
+              882.0,
+              34.0,
+              182.0,
+              166.0
+            ],
+            [
+              1009.0,
+              31.0,
+              145.0,
+              145.0
+            ]
+          ],
+          "start_timestamp": 46.073,
+          "end_timestamp": 53.573,
+          "direction": "南偏东89.57°"
+        },
+        {
+          "camera_id": "c027",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c022.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_63_72_c022.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            136,
+            154,
+            172,
+            190,
+            208,
+            226
+          ],
+          "bboxes": [
+            [
+              890.0,
+              132.0,
+              87.0,
+              70.0
+            ],
+            [
+              861.0,
+              130.0,
+              110.0,
+              100.0
+            ],
+            [
+              821.0,
+              160.0,
+              134.0,
+              123.0
+            ],
+            [
+              749.0,
+              228.0,
+              184.0,
+              144.0
+            ],
+            [
+              620.0,
+              335.0,
+              244.0,
+              219.0
+            ],
+            [
+              232.0,
+              609.0,
+              451.0,
+              440.0
+            ]
+          ],
+          "start_timestamp": 63.022,
+          "end_timestamp": 72.222,
+          "direction": "北偏东78.46°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c038",
+        "B. c092",
+        "C. c067",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08",
+        "B. c092"
+      ],
+      "correct_time_str": [
+        "12:01:07.916-12:01:14.416",
+        "12:01:14.753-12:01:15.153"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "686QiPzVi8UaHkxnuFLbbg",
+      "scene": "Track 260",
+      "map_image_path": "./map/tf_map_260_686QiPzVi8UaHkxnuFLbbg.png",
+      "camera_images": [
+        {
+          "camera_id": "c078",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c027.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_95_112_c027.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            95,
+            129,
+            163,
+            197,
+            231,
+            265
+          ],
+          "bboxes": [
+            [
+              165.0,
+              59.0,
+              68.0,
+              52.0
+            ],
+            [
+              210.0,
+              59.0,
+              80.0,
+              66.0
+            ],
+            [
+              270.0,
+              79.0,
+              114.0,
+              88.0
+            ],
+            [
+              410.0,
+              113.0,
+              138.0,
+              117.0
+            ],
+            [
+              697.0,
+              191.0,
+              262.0,
+              190.0
+            ],
+            [
+              1399.0,
+              409.0,
+              521.0,
+              364.0
+            ]
+          ],
+          "start_timestamp": 94.597,
+          "end_timestamp": 111.697,
+          "direction": "南偏东81.95°"
+        },
+        {
+          "camera_id": "c019",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_113_119_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            124,
+            136,
+            148,
+            160,
+            172,
+            184
+          ],
+          "bboxes": [
+            [
+              0.0,
+              202.0,
+              142.0,
+              117.0
+            ],
+            [
+              32.0,
+              203.0,
+              249.0,
+              164.0
+            ],
+            [
+              100.0,
+              207.0,
+              277.0,
+              174.0
+            ],
+            [
+              178.0,
+              228.0,
+              353.0,
+              188.0
+            ],
+            [
+              425.0,
+              258.0,
+              521.0,
+              273.0
+            ],
+            [
+              1129.0,
+              379.0,
+              791.0,
+              433.0
+            ]
+          ],
+          "start_timestamp": 112.51,
+          "end_timestamp": 118.61,
+          "direction": "南偏东33.05°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c076",
+        "B. c012",
+        "C. c047",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "B. c012",
+        "A. c076"
+      ],
+      "correct_time_str": [
+        "12:02:14.288-12:02:27.388",
+        "12:02:26.419-12:02:31.919"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "Lne7cdygSEexQSQAg5Fydn",
+      "scene": "Track 260",
+      "map_image_path": "./map/tf_map_260_Lne7cdygSEexQSQAg5Fydn.png",
+      "camera_images": [
+        {
+          "camera_id": "c021",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c028.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_113_119_c028.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            124,
+            136,
+            148,
+            160,
+            172,
+            184
+          ],
+          "bboxes": [
+            [
+              0.0,
+              202.0,
+              142.0,
+              117.0
+            ],
+            [
+              32.0,
+              203.0,
+              249.0,
+              164.0
+            ],
+            [
+              100.0,
+              207.0,
+              277.0,
+              174.0
+            ],
+            [
+              178.0,
+              228.0,
+              353.0,
+              188.0
+            ],
+            [
+              425.0,
+              258.0,
+              521.0,
+              273.0
+            ],
+            [
+              1129.0,
+              379.0,
+              791.0,
+              433.0
+            ]
+          ],
+          "start_timestamp": 112.51,
+          "end_timestamp": 118.61,
+          "direction": "南偏东33.05°"
+        },
+        {
+          "camera_id": "c041",
+          "object_id": 260,
+          "video_path": "./raw_video/outdoor_S04_c029.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_260_134_147_c029.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            85,
+            111,
+            137,
+            163,
+            189,
+            215
+          ],
+          "bboxes": [
+            [
+              1019.0,
+              391.0,
+              168.0,
+              115.0
+            ],
+            [
+              1120.0,
+              383.0,
+              150.0,
+              144.0
+            ],
+            [
+              1057.0,
+              395.0,
+              188.0,
+              166.0
+            ],
+            [
+              905.0,
+              409.0,
+              241.0,
+              202.0
+            ],
+            [
+              617.0,
+              407.0,
+              316.0,
+              284.0
+            ],
+            [
+              0.0,
+              536.0,
+              438.0,
+              398.0
+            ]
+          ],
+          "start_timestamp": 134.288,
+          "end_timestamp": 147.388,
+          "direction": "南偏东58.67°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c085",
+        "B. c048",
+        "C. c076",
+        "D. c026"
+      ],
+      "correct_cam_name": [
+        "A. c085",
+        "D. c026"
+      ],
+      "correct_time_str": [
+        "12:02:26.419-12:02:31.919",
+        "12:02:32.233-12:02:32.433"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "EmRtJvLNFQjEPY9Pn66XZw",
+      "scene": "Track 261",
+      "map_image_path": "./map/tf_map_261_EmRtJvLNFQjEPY9Pn66XZw.png",
+      "camera_images": [
+        {
+          "camera_id": "c031",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_51_59_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            112,
+            128,
+            144,
+            160,
+            176,
+            192
+          ],
+          "bboxes": [
+            [
+              1533.0,
+              426.0,
+              387.0,
+              329.0
+            ],
+            [
+              1170.0,
+              264.0,
+              343.0,
+              232.0
+            ],
+            [
+              956.0,
+              158.0,
+              255.0,
+              208.0
+            ],
+            [
+              864.0,
+              114.0,
+              184.0,
+              141.0
+            ],
+            [
+              903.0,
+              75.0,
+              161.0,
+              128.0
+            ],
+            [
+              1010.0,
+              66.0,
+              138.0,
+              108.0
+            ]
+          ],
+          "start_timestamp": 51.173,
+          "end_timestamp": 59.373,
+          "direction": "南偏东89.57°"
+        },
+        {
+          "camera_id": "c027",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c022.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_71_80_c022.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            211,
+            231,
+            251,
+            271,
+            291
+          ],
+          "bboxes": [
+            [
+              885.0,
+              139.0,
+              73.0,
+              65.0
+            ],
+            [
+              844.0,
+              150.0,
+              105.0,
+              86.0
+            ],
+            [
+              811.0,
+              192.0,
+              122.0,
+              92.0
+            ],
+            [
+              764.0,
+              232.0,
+              144.0,
+              124.0
+            ],
+            [
+              663.0,
+              324.0,
+              187.0,
+              173.0
+            ]
+          ],
+          "start_timestamp": 70.52199999999999,
+          "end_timestamp": 80.422,
+          "direction": "北偏东78.46°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c018",
+        "B. c037",
+        "C. c012",
+        "D. c053"
+      ],
+      "correct_cam_name": [
+        "D. c053",
+        "A. c018"
+      ],
+      "correct_time_str": [
+        "12:01:16.416-12:01:24.116",
+        "12:01:24.453-12:01:25.053"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "EBmUnJDQVS5a3p3Qp2DPKC",
+      "scene": "Track 261",
+      "map_image_path": "./map/tf_map_261_EBmUnJDQVS5a3p3Qp2DPKC.png",
+      "camera_images": [
+        {
+          "camera_id": "c012",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c022.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_71_80_c022.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            211,
+            231,
+            251,
+            271,
+            291
+          ],
+          "bboxes": [
+            [
+              885.0,
+              139.0,
+              73.0,
+              65.0
+            ],
+            [
+              844.0,
+              150.0,
+              105.0,
+              86.0
+            ],
+            [
+              811.0,
+              192.0,
+              122.0,
+              92.0
+            ],
+            [
+              764.0,
+              232.0,
+              144.0,
+              124.0
+            ],
+            [
+              663.0,
+              324.0,
+              187.0,
+              173.0
+            ]
+          ],
+          "start_timestamp": 70.52199999999999,
+          "end_timestamp": 80.422,
+          "direction": "北偏东78.46°"
+        },
+        {
+          "camera_id": "c073",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_76_84_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            307,
+            322,
+            337,
+            352,
+            367,
+            382
+          ],
+          "bboxes": [
+            [
+              1887.0,
+              891.0,
+              63.0,
+              52.0
+            ],
+            [
+              1841.0,
+              889.0,
+              74.0,
+              64.0
+            ],
+            [
+              1768.0,
+              885.0,
+              91.0,
+              78.0
+            ],
+            [
+              1636.0,
+              874.0,
+              128.0,
+              106.0
+            ],
+            [
+              1342.0,
+              854.0,
+              242.0,
+              168.0
+            ],
+            [
+              292.0,
+              823.0,
+              635.0,
+              350.0
+            ]
+          ],
+          "start_timestamp": 76.416,
+          "end_timestamp": 84.116,
+          "direction": "北偏东64.50°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c041",
+        "B. c034",
+        "C. c023",
+        "D. c061"
+      ],
+      "correct_cam_name": [
+        "B. c034",
+        "C. c023"
+      ],
+      "correct_time_str": [
+        "12:01:24.453-12:01:25.053",
+        "12:01:25.363-12:01:32.863"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "6sX8LoeVMAfJhrUjeERTRC",
+      "scene": "Track 261",
+      "map_image_path": "./map/tf_map_261_6sX8LoeVMAfJhrUjeERTRC.png",
+      "camera_images": [
+        {
+          "camera_id": "c042",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_76_84_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            307,
+            322,
+            337,
+            352,
+            367,
+            382
+          ],
+          "bboxes": [
+            [
+              1887.0,
+              891.0,
+              63.0,
+              52.0
+            ],
+            [
+              1841.0,
+              889.0,
+              74.0,
+              64.0
+            ],
+            [
+              1768.0,
+              885.0,
+              91.0,
+              78.0
+            ],
+            [
+              1636.0,
+              874.0,
+              128.0,
+              106.0
+            ],
+            [
+              1342.0,
+              854.0,
+              242.0,
+              168.0
+            ],
+            [
+              292.0,
+              823.0,
+              635.0,
+              350.0
+            ]
+          ],
+          "start_timestamp": 76.416,
+          "end_timestamp": 84.116,
+          "direction": "北偏东64.50°"
+        },
+        {
+          "camera_id": "c089",
+          "object_id": 261,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_261_84_85_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342
+          ],
+          "bboxes": [
+            [
+              1693.0,
+              807.0,
+              867.0,
+              488.0
+            ],
+            [
+              1412.0,
+              812.0,
+              1101.0,
+              498.0
+            ],
+            [
+              1129.0,
+              816.0,
+              1103.0,
+              510.0
+            ],
+            [
+              837.0,
+              825.0,
+              1108.0,
+              516.0
+            ],
+            [
+              533.0,
+              833.0,
+              1116.0,
+              521.0
+            ],
+            [
+              228.0,
+              842.0,
+              1117.0,
+              518.0
+            ],
+            [
+              0.0,
+              850.0,
+              1045.0,
+              523.0
+            ]
+          ],
+          "start_timestamp": 84.453,
+          "end_timestamp": 85.053,
+          "direction": "北偏西4.78°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c021",
+        "B. c067",
+        "C. c046",
+        "D. c047"
+      ],
+      "correct_cam_name": [
+        "D. c047",
+        "A. c021"
+      ],
+      "correct_time_str": [
+        "12:01:25.363-12:01:32.863",
+        "12:01:29.750-12:01:41.650"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "aajghDwXdQVmY5G6gdmzNb",
+      "scene": "Track 262",
+      "map_image_path": "./map/tf_map_262_aajghDwXdQVmY5G6gdmzNb.png",
+      "camera_images": [
+        {
+          "camera_id": "c016",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_167_180_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            267,
+            302,
+            325,
+            348,
+            371
+          ],
+          "bboxes": [
+            [
+              1684.0,
+              372.0,
+              236.0,
+              141.0
+            ],
+            [
+              834.0,
+              223.0,
+              161.0,
+              94.0
+            ],
+            [
+              631.0,
+              184.0,
+              97.0,
+              63.0
+            ],
+            [
+              497.0,
+              155.0,
+              75.0,
+              52.0
+            ],
+            [
+              412.0,
+              135.0,
+              61.0,
+              46.0
+            ]
+          ],
+          "start_timestamp": 166.91799999999998,
+          "end_timestamp": 179.51799999999997,
+          "direction": "南偏东59.31°"
+        },
+        {
+          "camera_id": "c025",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_176_183_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            507,
+            522,
+            537,
+            552,
+            567,
+            582
+          ],
+          "bboxes": [
+            [
+              953.0,
+              485.0,
+              43.0,
+              40.0
+            ],
+            [
+              923.0,
+              494.0,
+              55.0,
+              45.0
+            ],
+            [
+              877.0,
+              498.0,
+              70.0,
+              54.0
+            ],
+            [
+              782.0,
+              494.0,
+              113.0,
+              80.0
+            ],
+            [
+              577.0,
+              470.0,
+              182.0,
+              105.0
+            ],
+            [
+              0.0,
+              369.0,
+              328.0,
+              170.0
+            ]
+          ],
+          "start_timestamp": 175.899,
+          "end_timestamp": 183.399,
+          "direction": "北偏西85.86°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c085",
+        "B. c061",
+        "C. c034",
+        "D. c09"
+      ],
+      "correct_cam_name": [
+        "D. c09",
+        "A. c085"
+      ],
+      "correct_time_str": [
+        "12:03:03.833-12:03:05.333",
+        "12:03:05.719-12:03:07.519"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "a5zJi4SrYNcuszKZ7DqQwh",
+      "scene": "Track 262",
+      "map_image_path": "./map/tf_map_262_a5zJi4SrYNcuszKZ7DqQwh.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_155_177_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            39,
+            82,
+            125,
+            168,
+            211,
+            254
+          ],
+          "bboxes": [
+            [
+              373.0,
+              59.0,
+              247.0,
+              111.0
+            ],
+            [
+              512.0,
+              67.0,
+              181.0,
+              113.0
+            ],
+            [
+              556.0,
+              116.0,
+              164.0,
+              128.0
+            ],
+            [
+              517.0,
+              256.0,
+              194.0,
+              153.0
+            ],
+            [
+              348.0,
+              440.0,
+              274.0,
+              212.0
+            ],
+            [
+              0.0,
+              749.0,
+              361.0,
+              313.0
+            ]
+          ],
+          "start_timestamp": 154.793,
+          "end_timestamp": 176.593,
+          "direction": "北偏西76.27°"
+        },
+        {
+          "camera_id": "c075",
+          "object_id": 262,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_262_167_180_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            267,
+            302,
+            325,
+            348,
+            371
+          ],
+          "bboxes": [
+            [
+              1684.0,
+              372.0,
+              236.0,
+              141.0
+            ],
+            [
+              834.0,
+              223.0,
+              161.0,
+              94.0
+            ],
+            [
+              631.0,
+              184.0,
+              97.0,
+              63.0
+            ],
+            [
+              497.0,
+              155.0,
+              75.0,
+              52.0
+            ],
+            [
+              412.0,
+              135.0,
+              61.0,
+              46.0
+            ]
+          ],
+          "start_timestamp": 166.91799999999998,
+          "end_timestamp": 179.51799999999997,
+          "direction": "南偏东59.31°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c018",
+        "B. c035",
+        "C. c087",
+        "D. c071"
+      ],
+      "correct_cam_name": [
+        "C. c087",
+        "D. c071"
+      ],
+      "correct_time_str": [
+        "12:02:55.899-12:03:03.399",
+        "12:03:03.833-12:03:05.333"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "NumjKnKn5QHEBfm3eYeJFg",
+      "scene": "Track 263",
+      "map_image_path": "./map/tf_map_263_NumjKnKn5QHEBfm3eYeJFg.png",
+      "camera_images": [
+        {
+          "camera_id": "c027",
+          "object_id": 263,
+          "video_path": "./raw_video/outdoor_S04_c016.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_263_19_31_c016.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            188,
+            212,
+            236,
+            260,
+            284,
+            308
+          ],
+          "bboxes": [
+            [
+              1569.0,
+              693.0,
+              351.0,
+              369.0
+            ],
+            [
+              1362.0,
+              506.0,
+              294.0,
+              246.0
+            ],
+            [
+              1213.0,
+              350.0,
+              212.0,
+              182.0
+            ],
+            [
+              1143.0,
+              232.0,
+              168.0,
+              141.0
+            ],
+            [
+              1139.0,
+              162.0,
+              128.0,
+              107.0
+            ],
+            [
+              1346.0,
+              119.0,
+              115.0,
+              83.0
+            ]
+          ],
+          "start_timestamp": 18.8,
+          "end_timestamp": 31.0,
+          "direction": "南偏东49.14°"
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 263,
+          "video_path": "./raw_video/outdoor_S04_c017.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_263_36_42_c017.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            212,
+            226,
+            240,
+            254,
+            268
+          ],
+          "bboxes": [
+            [
+              868.0,
+              181.0,
+              180.0,
+              102.0
+            ],
+            [
+              1119.0,
+              182.0,
+              167.0,
+              122.0
+            ],
+            [
+              1208.0,
+              191.0,
+              163.0,
+              143.0
+            ],
+            [
+              1045.0,
+              205.0,
+              221.0,
+              168.0
+            ],
+            [
+              832.0,
+              225.0,
+              239.0,
+              201.0
+            ]
+          ],
+          "start_timestamp": 35.518,
+          "end_timestamp": 42.418,
+          "direction": "南偏东80.02°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c061",
+        "B. c064",
+        "C. c03",
+        "D. c098"
+      ],
+      "correct_cam_name": [
+        "D. c098",
+        "A. c061"
+      ],
+      "correct_time_str": [
+        "12:00:47.655-12:00:53.155",
+        "12:00:53.479-12:00:53.979"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "MYARkuQy2dF2ZJnS2BrPTB",
+      "scene": "Track 264",
+      "map_image_path": "./map/tf_map_264_MYARkuQy2dF2ZJnS2BrPTB.png",
+      "camera_images": [
+        {
+          "camera_id": "c016",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c016.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_25_31_c016.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            252,
+            263,
+            274,
+            285,
+            296,
+            307
+          ],
+          "bboxes": [
+            [
+              1026.0,
+              778.0,
+              447.0,
+              302.0
+            ],
+            [
+              1049.0,
+              661.0,
+              402.0,
+              305.0
+            ],
+            [
+              1033.0,
+              576.0,
+              334.0,
+              248.0
+            ],
+            [
+              1021.0,
+              513.0,
+              268.0,
+              199.0
+            ],
+            [
+              1016.0,
+              441.0,
+              240.0,
+              175.0
+            ],
+            [
+              1079.0,
+              371.0,
+              220.0,
+              157.0
+            ]
+          ],
+          "start_timestamp": 25.2,
+          "end_timestamp": 31.0,
+          "direction": "南偏东49.14°"
+        },
+        {
+          "camera_id": "c025",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c018.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_56_62_c018.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            265,
+            276,
+            287,
+            298,
+            310,
+            321
+          ],
+          "bboxes": [
+            [
+              2461.0,
+              1375.0,
+              99.0,
+              80.0
+            ],
+            [
+              2315.0,
+              1346.0,
+              145.0,
+              96.0
+            ],
+            [
+              2122.0,
+              1295.0,
+              180.0,
+              119.0
+            ],
+            [
+              1823.0,
+              1230.0,
+              229.0,
+              138.0
+            ],
+            [
+              1284.0,
+              1131.0,
+              363.0,
+              190.0
+            ],
+            [
+              161.0,
+              1036.0,
+              828.0,
+              357.0
+            ]
+          ],
+          "start_timestamp": 56.455,
+          "end_timestamp": 62.254999999999995,
+          "direction": "北偏东48.46°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c017",
+        "B. c059",
+        "C. c036",
+        "D. c024"
+      ],
+      "correct_cam_name": [
+        "B. c059",
+        "A. c017"
+      ],
+      "correct_time_str": [
+        "12:01:02.579-12:01:03.079",
+        "12:01:03.405-12:01:09.605"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "XopH6mxRMBvTYsmGm5aQaZ",
+      "scene": "Track 264",
+      "map_image_path": "./map/tf_map_264_XopH6mxRMBvTYsmGm5aQaZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c094",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c021.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_66_71_c021.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            260,
+            270,
+            280,
+            290,
+            300,
+            310
+          ],
+          "bboxes": [
+            [
+              1481.0,
+              430.0,
+              439.0,
+              347.0
+            ],
+            [
+              1201.0,
+              291.0,
+              410.0,
+              279.0
+            ],
+            [
+              1047.0,
+              222.0,
+              306.0,
+              217.0
+            ],
+            [
+              940.0,
+              160.0,
+              253.0,
+              188.0
+            ],
+            [
+              878.0,
+              125.0,
+              218.0,
+              160.0
+            ],
+            [
+              852.0,
+              94.0,
+              169.0,
+              131.0
+            ]
+          ],
+          "start_timestamp": 65.973,
+          "end_timestamp": 70.973,
+          "direction": "南偏东89.57°"
+        },
+        {
+          "camera_id": "c047",
+          "object_id": 264,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_264_91_98_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            450,
+            464,
+            478,
+            492,
+            506,
+            520
+          ],
+          "bboxes": [
+            [
+              1897.0,
+              891.0,
+              64.0,
+              52.0
+            ],
+            [
+              1854.0,
+              888.0,
+              73.0,
+              66.0
+            ],
+            [
+              1782.0,
+              884.0,
+              91.0,
+              81.0
+            ],
+            [
+              1656.0,
+              872.0,
+              131.0,
+              109.0
+            ],
+            [
+              1386.0,
+              862.0,
+              231.0,
+              158.0
+            ],
+            [
+              333.0,
+              824.0,
+              681.0,
+              341.0
+            ]
+          ],
+          "start_timestamp": 90.71600000000001,
+          "end_timestamp": 98.01599999999999,
+          "direction": "北偏东64.50°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c057",
+        "B. c064",
+        "C. c028",
+        "D. c059"
+      ],
+      "correct_cam_name": [
+        "B. c064",
+        "A. c057"
+      ],
+      "correct_time_str": [
+        "12:01:38.353-12:01:38.853",
+        "12:01:39.063-12:01:46.163"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "gai3zizzz3t8RYykGJ8LCm",
+      "scene": "Track 265",
+      "map_image_path": "./map/tf_map_265_gai3zizzz3t8RYykGJ8LCm.png",
+      "camera_images": [
+        {
+          "camera_id": "c025",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c018.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_60_65_c018.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            301,
+            310,
+            319,
+            332,
+            341,
+            350
+          ],
+          "bboxes": [
+            [
+              2459.0,
+              1375.0,
+              101.0,
+              80.0
+            ],
+            [
+              2315.0,
+              1345.0,
+              146.0,
+              96.0
+            ],
+            [
+              2149.0,
+              1302.0,
+              161.0,
+              110.0
+            ],
+            [
+              1731.0,
+              1205.0,
+              245.0,
+              158.0
+            ],
+            [
+              1216.0,
+              1133.0,
+              393.0,
+              214.0
+            ],
+            [
+              0.0,
+              1034.0,
+              861.0,
+              419.0
+            ]
+          ],
+          "start_timestamp": 60.055,
+          "end_timestamp": 65.055,
+          "direction": "北偏东48.46°"
+        },
+        {
+          "camera_id": "c069",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c019.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_65_66_c019.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            383,
+            384,
+            385,
+            386,
+            387
+          ],
+          "bboxes": [
+            [
+              1481.0,
+              956.0,
+              1079.0,
+              542.0
+            ],
+            [
+              1093.0,
+              914.0,
+              1395.0,
+              565.0
+            ],
+            [
+              725.0,
+              880.0,
+              1397.0,
+              568.0
+            ],
+            [
+              357.0,
+              846.0,
+              1399.0,
+              570.0
+            ],
+            [
+              32.0,
+              835.0,
+              1324.0,
+              545.0
+            ]
+          ],
+          "start_timestamp": 65.279,
+          "end_timestamp": 65.679,
+          "direction": "北偏西15.06°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c083",
+        "B. c032",
+        "C. c065",
+        "D. c075"
+      ],
+      "correct_cam_name": [
+        "A. c083",
+        "D. c075"
+      ],
+      "correct_time_str": [
+        "12:01:06.005-12:01:11.505",
+        "12:01:08.173-12:01:10.973"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "cHGrcLMXN4BERaqkQskgeN",
+      "scene": "Track 265",
+      "map_image_path": "./map/tf_map_265_cHGrcLMXN4BERaqkQskgeN.png",
+      "camera_images": [
+        {
+          "camera_id": "c085",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c023.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_93_100_c023.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            471,
+            486,
+            501,
+            516,
+            531
+          ],
+          "bboxes": [
+            [
+              1898.0,
+              891.0,
+              60.0,
+              52.0
+            ],
+            [
+              1854.0,
+              890.0,
+              74.0,
+              62.0
+            ],
+            [
+              1777.0,
+              883.0,
+              97.0,
+              80.0
+            ],
+            [
+              1640.0,
+              877.0,
+              131.0,
+              109.0
+            ],
+            [
+              1274.0,
+              854.0,
+              272.0,
+              183.0
+            ]
+          ],
+          "start_timestamp": 92.816,
+          "end_timestamp": 100.21600000000001,
+          "direction": "北偏东64.50°"
+        },
+        {
+          "camera_id": "c053",
+          "object_id": 265,
+          "video_path": "./raw_video/outdoor_S04_c024.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_265_101_101_c024.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            497,
+            498,
+            499,
+            500,
+            501,
+            502
+          ],
+          "bboxes": [
+            [
+              1561.0,
+              812.0,
+              999.0,
+              492.0
+            ],
+            [
+              1258.0,
+              820.0,
+              1158.0,
+              503.0
+            ],
+            [
+              900.0,
+              792.0,
+              1262.0,
+              559.0
+            ],
+            [
+              576.0,
+              798.0,
+              1294.0,
+              568.0
+            ],
+            [
+              323.0,
+              840.0,
+              1177.0,
+              524.0
+            ],
+            [
+              8.0,
+              850.0,
+              1179.0,
+              521.0
+            ]
+          ],
+          "start_timestamp": 100.553,
+          "end_timestamp": 101.053,
+          "direction": "北偏西4.78°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c068",
+        "B. c014",
+        "C. c072",
+        "D. c090"
+      ],
+      "correct_cam_name": [
+        "C. c072",
+        "D. c090"
+      ],
+      "correct_time_str": [
+        "12:01:41.363-12:01:46.163",
+        "12:01:45.850-12:02:06.250"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "TNByZt4N6K58yU8SE3NJwD",
+      "scene": "Track 271",
+      "map_image_path": "./map/tf_map_271_TNByZt4N6K58yU8SE3NJwD.png",
+      "camera_images": [
+        {
+          "camera_id": "c036",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_131_139_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            62,
+            76,
+            90,
+            104,
+            118,
+            132
+          ],
+          "bboxes": [
+            [
+              0.0,
+              685.0,
+              598.0,
+              515.0
+            ],
+            [
+              964.0,
+              657.0,
+              187.0,
+              170.0
+            ],
+            [
+              1104.0,
+              618.0,
+              94.0,
+              98.0
+            ],
+            [
+              1109.0,
+              583.0,
+              71.0,
+              75.0
+            ],
+            [
+              1104.0,
+              558.0,
+              55.0,
+              58.0
+            ],
+            [
+              1099.0,
+              543.0,
+              47.0,
+              46.0
+            ]
+          ],
+          "start_timestamp": 131.399,
+          "end_timestamp": 138.599,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c065",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_140_158_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            36,
+            71,
+            106,
+            141,
+            176
+          ],
+          "bboxes": [
+            [
+              286.0,
+              170.0,
+              77.0,
+              69.0
+            ],
+            [
+              413.0,
+              215.0,
+              122.0,
+              108.0
+            ],
+            [
+              611.0,
+              293.0,
+              205.0,
+              152.0
+            ],
+            [
+              915.0,
+              372.0,
+              353.0,
+              228.0
+            ],
+            [
+              1248.0,
+              454.0,
+              490.0,
+              325.0
+            ],
+            [
+              1546.0,
+              519.0,
+              374.0,
+              369.0
+            ]
+          ],
+          "start_timestamp": 140.31799999999998,
+          "end_timestamp": 157.81799999999998,
+          "direction": "南偏东59.31°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c062",
+        "B. c056",
+        "C. c033",
+        "D. c041"
+      ],
+      "correct_cam_name": [
+        "D. c041",
+        "C. c033"
+      ],
+      "correct_time_str": [
+        "12:02:30.993-12:02:46.293",
+        "12:02:45.668-12:02:47.368"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "MyqUqWiBZV3sLHLfQZBLcA",
+      "scene": "Track 271",
+      "map_image_path": "./map/tf_map_271_MyqUqWiBZV3sLHLfQZBLcA.png",
+      "camera_images": [
+        {
+          "camera_id": "c082",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_124_131_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            13,
+            25,
+            37,
+            49,
+            61
+          ],
+          "bboxes": [
+            [
+              434.0,
+              516.0,
+              54.0,
+              50.0
+            ],
+            [
+              449.0,
+              514.0,
+              64.0,
+              59.0
+            ],
+            [
+              466.0,
+              514.0,
+              88.0,
+              74.0
+            ],
+            [
+              514.0,
+              508.0,
+              122.0,
+              103.0
+            ],
+            [
+              597.0,
+              513.0,
+              217.0,
+              162.0
+            ],
+            [
+              887.0,
+              541.0,
+              659.0,
+              425.0
+            ]
+          ],
+          "start_timestamp": 124.419,
+          "end_timestamp": 130.519,
+          "direction": "南偏东43.50°"
+        },
+        {
+          "camera_id": "c033",
+          "object_id": 271,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_271_131_131_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            59,
+            60,
+            61
+          ],
+          "bboxes": [
+            [
+              0.0,
+              606.0,
+              1107.0,
+              594.0
+            ],
+            [
+              171.0,
+              623.0,
+              1221.0,
+              577.0
+            ],
+            [
+              464.0,
+              639.0,
+              1136.0,
+              561.0
+            ]
+          ],
+          "start_timestamp": 130.933,
+          "end_timestamp": 131.133,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c010",
+        "B. c058",
+        "C. c043",
+        "D. c038"
+      ],
+      "correct_cam_name": [
+        "D. c038",
+        "B. c058"
+      ],
+      "correct_time_str": [
+        "12:02:11.399-12:02:18.599",
+        "12:02:20.318-12:02:37.818"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "2Kw723544AVGfebXaQL53U",
+      "scene": "Track 272",
+      "map_image_path": "./map/tf_map_272_2Kw723544AVGfebXaQL53U.png",
+      "camera_images": [
+        {
+          "camera_id": "c065",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_177_185_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            118,
+            133,
+            148,
+            163,
+            178,
+            193
+          ],
+          "bboxes": [
+            [
+              0.0,
+              495.0,
+              135.0,
+              154.0
+            ],
+            [
+              70.0,
+              412.0,
+              240.0,
+              167.0
+            ],
+            [
+              406.0,
+              248.0,
+              343.0,
+              171.0
+            ],
+            [
+              990.0,
+              108.0,
+              249.0,
+              132.0
+            ],
+            [
+              1291.0,
+              42.0,
+              116.0,
+              84.0
+            ],
+            [
+              1344.0,
+              0.0,
+              55.0,
+              42.0
+            ]
+          ],
+          "start_timestamp": 177.36800000000002,
+          "end_timestamp": 184.86800000000002,
+          "direction": "南偏东45.78°"
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_182_184_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            314,
+            317,
+            320,
+            323,
+            326
+          ],
+          "bboxes": [
+            [
+              929.0,
+              61.0,
+              160.0,
+              111.0
+            ],
+            [
+              874.0,
+              59.0,
+              187.0,
+              103.0
+            ],
+            [
+              812.0,
+              53.0,
+              199.0,
+              107.0
+            ],
+            [
+              727.0,
+              40.0,
+              224.0,
+              122.0
+            ],
+            [
+              645.0,
+              39.0,
+              231.0,
+              118.0
+            ]
+          ],
+          "start_timestamp": 182.293,
+          "end_timestamp": 184.293,
+          "direction": "北偏西76.27°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c083",
+        "B. c066",
+        "C. c088",
+        "D. c029"
+      ],
+      "correct_cam_name": [
+        "A. c083",
+        "D. c029"
+      ],
+      "correct_time_str": [
+        "12:03:03.497-12:03:10.397",
+        "12:03:04.467-12:03:15.667"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "nPLX2Xrk3XM4TbVE2w3o5b",
+      "scene": "Track 272",
+      "map_image_path": "./map/tf_map_272_nPLX2Xrk3XM4TbVE2w3o5b.png",
+      "camera_images": [
+        {
+          "camera_id": "c014",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_182_184_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            314,
+            317,
+            320,
+            323,
+            326
+          ],
+          "bboxes": [
+            [
+              929.0,
+              61.0,
+              160.0,
+              111.0
+            ],
+            [
+              874.0,
+              59.0,
+              187.0,
+              103.0
+            ],
+            [
+              812.0,
+              53.0,
+              199.0,
+              107.0
+            ],
+            [
+              727.0,
+              40.0,
+              224.0,
+              122.0
+            ],
+            [
+              645.0,
+              39.0,
+              231.0,
+              118.0
+            ]
+          ],
+          "start_timestamp": 182.293,
+          "end_timestamp": 184.293,
+          "direction": "北偏西76.27°"
+        },
+        {
+          "camera_id": "c028",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_183_190_c036.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            127,
+            141,
+            155,
+            169,
+            183
+          ],
+          "bboxes": [
+            [
+              1012.0,
+              677.0,
+              730.0,
+              403.0
+            ],
+            [
+              1265.0,
+              342.0,
+              450.0,
+              409.0
+            ],
+            [
+              1238.0,
+              259.0,
+              358.0,
+              285.0
+            ],
+            [
+              1230.0,
+              227.0,
+              274.0,
+              216.0
+            ],
+            [
+              1270.0,
+              200.0,
+              215.0,
+              177.0
+            ]
+          ],
+          "start_timestamp": 183.49699999999999,
+          "end_timestamp": 190.397,
+          "direction": "南偏东54.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c061",
+        "B. c035",
+        "C. c089",
+        "D. c02"
+      ],
+      "correct_cam_name": [
+        "B. c035",
+        "C. c089"
+      ],
+      "correct_time_str": [
+        "12:03:04.467-12:03:15.667",
+        "12:03:12.926-12:03:18.526"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "JBjoZnTBxzcrXdv62yABhV",
+      "scene": "Track 272",
+      "map_image_path": "./map/tf_map_272_JBjoZnTBxzcrXdv62yABhV.png",
+      "camera_images": [
+        {
+          "camera_id": "c058",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_126_132_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            20,
+            31,
+            42,
+            53,
+            64,
+            75
+          ],
+          "bboxes": [
+            [
+              436.0,
+              523.0,
+              43.0,
+              42.0
+            ],
+            [
+              448.0,
+              522.0,
+              51.0,
+              47.0
+            ],
+            [
+              465.0,
+              519.0,
+              66.0,
+              60.0
+            ],
+            [
+              498.0,
+              519.0,
+              91.0,
+              78.0
+            ],
+            [
+              586.0,
+              517.0,
+              164.0,
+              118.0
+            ],
+            [
+              920.0,
+              504.0,
+              399.0,
+              216.0
+            ]
+          ],
+          "start_timestamp": 126.319,
+          "end_timestamp": 132.119,
+          "direction": "南偏东43.50°"
+        },
+        {
+          "camera_id": "c036",
+          "object_id": 272,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_272_132_133_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            74,
+            75,
+            76,
+            77,
+            78
+          ],
+          "bboxes": [
+            [
+              0.0,
+              481.0,
+              783.0,
+              342.0
+            ],
+            [
+              199.0,
+              489.0,
+              802.0,
+              346.0
+            ],
+            [
+              388.0,
+              466.0,
+              853.0,
+              393.0
+            ],
+            [
+              606.0,
+              475.0,
+              837.0,
+              392.0
+            ],
+            [
+              858.0,
+              503.0,
+              742.0,
+              348.0
+            ]
+          ],
+          "start_timestamp": 132.433,
+          "end_timestamp": 132.833,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c077",
+        "B. c061",
+        "C. c093",
+        "D. c086"
+      ],
+      "correct_cam_name": [
+        "C. c093",
+        "D. c086"
+      ],
+      "correct_time_str": [
+        "12:02:13.099-12:02:19.599",
+        "12:02:20.318-12:02:48.618"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "Fymy5KRF9Hsmzu83WEHNzk",
+      "scene": "Track 273",
+      "map_image_path": "./map/tf_map_273_Fymy5KRF9Hsmzu83WEHNzk.png",
+      "camera_images": [
+        {
+          "camera_id": "c020",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_151_186_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            71,
+            141,
+            211,
+            281
+          ],
+          "bboxes": [
+            [
+              1051.0,
+              227.0,
+              216.0,
+              261.0
+            ],
+            [
+              1035.0,
+              178.0,
+              196.0,
+              244.0
+            ],
+            [
+              1035.0,
+              150.0,
+              185.0,
+              231.0
+            ],
+            [
+              1036.0,
+              125.0,
+              173.0,
+              221.0
+            ],
+            [
+              1029.0,
+              92.0,
+              170.0,
+              212.0
+            ]
+          ],
+          "start_timestamp": 150.993,
+          "end_timestamp": 185.893,
+          "direction": "北偏西76.27°"
+        },
+        {
+          "camera_id": "c043",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c035.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_185_187_c035.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            197,
+            199,
+            201,
+            203,
+            205,
+            207,
+            209
+          ],
+          "bboxes": [
+            [
+              0.0,
+              436.0,
+              185.0,
+              205.0
+            ],
+            [
+              0.0,
+              418.0,
+              217.0,
+              211.0
+            ],
+            [
+              0.0,
+              400.0,
+              254.0,
+              215.0
+            ],
+            [
+              18.0,
+              379.0,
+              283.0,
+              218.0
+            ],
+            [
+              53.0,
+              354.0,
+              300.0,
+              223.0
+            ],
+            [
+              97.0,
+              327.0,
+              315.0,
+              227.0
+            ],
+            [
+              150.0,
+              298.0,
+              330.0,
+              230.0
+            ]
+          ],
+          "start_timestamp": 185.268,
+          "end_timestamp": 186.568,
+          "direction": "南偏东45.78°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c079",
+        "B. c056",
+        "C. c016",
+        "D. c05"
+      ],
+      "correct_cam_name": [
+        "C. c016",
+        "D. c05"
+      ],
+      "correct_time_str": [
+        "12:03:09.997-12:03:26.797",
+        "12:03:10.267-12:03:20.467"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "mCXkTLMzVEdWyHKVSRubvJ",
+      "scene": "Track 273",
+      "map_image_path": "./map/tf_map_273_mCXkTLMzVEdWyHKVSRubvJ.png",
+      "camera_images": [
+        {
+          "camera_id": "c095",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_140_179_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            77,
+            153,
+            229,
+            310,
+            386
+          ],
+          "bboxes": [
+            [
+              246.0,
+              109.0,
+              60.0,
+              62.0
+            ],
+            [
+              471.0,
+              166.0,
+              136.0,
+              120.0
+            ],
+            [
+              779.0,
+              229.0,
+              249.0,
+              189.0
+            ],
+            [
+              917.0,
+              247.0,
+              323.0,
+              232.0
+            ],
+            [
+              1152.0,
+              276.0,
+              400.0,
+              296.0
+            ],
+            [
+              1541.0,
+              330.0,
+              379.0,
+              362.0
+            ]
+          ],
+          "start_timestamp": 140.31799999999998,
+          "end_timestamp": 178.81799999999998,
+          "direction": "南偏东59.31°"
+        },
+        {
+          "camera_id": "c032",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_151_186_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            71,
+            141,
+            211,
+            281
+          ],
+          "bboxes": [
+            [
+              1051.0,
+              227.0,
+              216.0,
+              261.0
+            ],
+            [
+              1035.0,
+              178.0,
+              196.0,
+              244.0
+            ],
+            [
+              1035.0,
+              150.0,
+              185.0,
+              231.0
+            ],
+            [
+              1036.0,
+              125.0,
+              173.0,
+              221.0
+            ],
+            [
+              1029.0,
+              92.0,
+              170.0,
+              212.0
+            ]
+          ],
+          "start_timestamp": 150.993,
+          "end_timestamp": 185.893,
+          "direction": "北偏西76.27°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c088",
+        "B. c064",
+        "C. c013",
+        "D. c011"
+      ],
+      "correct_cam_name": [
+        "B. c064",
+        "C. c013"
+      ],
+      "correct_time_str": [
+        "12:03:05.268-12:03:06.568",
+        "12:03:09.997-12:03:26.797"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "WhzvpNjNLsA632M5CRQjEQ",
+      "scene": "Track 273",
+      "map_image_path": "./map/tf_map_273_WhzvpNjNLsA632M5CRQjEQ.png",
+      "camera_images": [
+        {
+          "camera_id": "c096",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_135_136_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            100,
+            101,
+            102,
+            103,
+            104,
+            105
+          ],
+          "bboxes": [
+            [
+              0.0,
+              302.0,
+              829.0,
+              569.0
+            ],
+            [
+              0.0,
+              301.0,
+              1011.0,
+              570.0
+            ],
+            [
+              130.0,
+              295.0,
+              1074.0,
+              583.0
+            ],
+            [
+              340.0,
+              298.0,
+              1056.0,
+              584.0
+            ],
+            [
+              548.0,
+              299.0,
+              1037.0,
+              589.0
+            ],
+            [
+              756.0,
+              309.0,
+              844.0,
+              580.0
+            ]
+          ],
+          "start_timestamp": 135.03300000000002,
+          "end_timestamp": 135.53300000000002,
+          "direction": "南偏东27.13°"
+        },
+        {
+          "camera_id": "c045",
+          "object_id": 273,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_273_136_144_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            107,
+            122,
+            137,
+            152,
+            167,
+            182
+          ],
+          "bboxes": [
+            [
+              0.0,
+              377.0,
+              576.0,
+              503.0
+            ],
+            [
+              856.0,
+              536.0,
+              206.0,
+              188.0
+            ],
+            [
+              1020.0,
+              546.0,
+              114.0,
+              118.0
+            ],
+            [
+              1048.0,
+              532.0,
+              75.0,
+              79.0
+            ],
+            [
+              1053.0,
+              518.0,
+              59.0,
+              64.0
+            ],
+            [
+              1054.0,
+              508.0,
+              51.0,
+              55.0
+            ]
+          ],
+          "start_timestamp": 135.899,
+          "end_timestamp": 143.699,
+          "direction": "北偏西85.86°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c058",
+        "B. c042",
+        "C. c093",
+        "D. c061"
+      ],
+      "correct_cam_name": [
+        "B. c042",
+        "A. c058"
+      ],
+      "correct_time_str": [
+        "12:02:20.318-12:02:58.818",
+        "12:02:30.993-12:03:05.893"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "UY39gm7LvkaVrdwDkG6zVU",
+      "scene": "Track 274",
+      "map_image_path": "./map/tf_map_274_UY39gm7LvkaVrdwDkG6zVU.png",
+      "camera_images": [
+        {
+          "camera_id": "c021",
+          "object_id": 274,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_274_125_132_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            14,
+            27,
+            40,
+            53,
+            66
+          ],
+          "bboxes": [
+            [
+              962.0,
+              483.0,
+              43.0,
+              39.0
+            ],
+            [
+              938.0,
+              486.0,
+              51.0,
+              47.0
+            ],
+            [
+              902.0,
+              490.0,
+              63.0,
+              61.0
+            ],
+            [
+              825.0,
+              492.0,
+              98.0,
+              80.0
+            ],
+            [
+              634.0,
+              467.0,
+              176.0,
+              117.0
+            ],
+            [
+              0.0,
+              364.0,
+              360.0,
+              181.0
+            ]
+          ],
+          "start_timestamp": 125.29899999999999,
+          "end_timestamp": 131.899,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 274,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_274_132_133_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            72,
+            74,
+            76,
+            78,
+            80,
+            82
+          ],
+          "bboxes": [
+            [
+              1122.0,
+              299.0,
+              478.0,
+              224.0
+            ],
+            [
+              903.0,
+              288.0,
+              498.0,
+              223.0
+            ],
+            [
+              687.0,
+              278.0,
+              492.0,
+              222.0
+            ],
+            [
+              462.0,
+              268.0,
+              491.0,
+              228.0
+            ],
+            [
+              263.0,
+              282.0,
+              448.0,
+              199.0
+            ],
+            [
+              55.0,
+              280.0,
+              444.0,
+              191.0
+            ]
+          ],
+          "start_timestamp": 132.233,
+          "end_timestamp": 133.333,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c049",
+        "B. c034",
+        "C. c020",
+        "D. c078"
+      ],
+      "correct_cam_name": [
+        "C. c020",
+        "B. c034"
+      ],
+      "correct_time_str": [
+        "12:02:13.619-12:02:20.519",
+        "12:02:17.788-12:02:31.788"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "dN8QfGxHb2YPzgptN62kBN",
+      "scene": "Track 275",
+      "map_image_path": "./map/tf_map_275_dN8QfGxHb2YPzgptN62kBN.png",
+      "camera_images": [
+        {
+          "camera_id": "c061",
+          "object_id": 275,
+          "video_path": "./raw_video/outdoor_S04_c029.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_275_126_135_c029.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            19,
+            37,
+            60,
+            78
+          ],
+          "bboxes": [
+            [
+              1016.0,
+              408.0,
+              191.0,
+              155.0
+            ],
+            [
+              943.0,
+              429.0,
+              211.0,
+              172.0
+            ],
+            [
+              808.0,
+              433.0,
+              277.0,
+              195.0
+            ],
+            [
+              622.0,
+              452.0,
+              304.0,
+              243.0
+            ],
+            [
+              350.0,
+              459.0,
+              382.0,
+              329.0
+            ]
+          ],
+          "start_timestamp": 125.88799999999999,
+          "end_timestamp": 135.288,
+          "direction": "南偏东58.67°"
+        },
+        {
+          "camera_id": "c037",
+          "object_id": 275,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_275_134_141_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            93,
+            107,
+            121,
+            135,
+            149,
+            163
+          ],
+          "bboxes": [
+            [
+              426.0,
+              522.0,
+              49.0,
+              42.0
+            ],
+            [
+              440.0,
+              518.0,
+              55.0,
+              51.0
+            ],
+            [
+              459.0,
+              516.0,
+              68.0,
+              63.0
+            ],
+            [
+              491.0,
+              515.0,
+              90.0,
+              81.0
+            ],
+            [
+              544.0,
+              525.0,
+              165.0,
+              141.0
+            ],
+            [
+              791.0,
+              576.0,
+              480.0,
+              354.0
+            ]
+          ],
+          "start_timestamp": 133.619,
+          "end_timestamp": 140.919,
+          "direction": "南偏东43.50°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c042",
+        "B. c013",
+        "C. c019",
+        "D. c092"
+      ],
+      "correct_cam_name": [
+        "A. c042",
+        "D. c092"
+      ],
+      "correct_time_str": [
+        "12:02:21.333-12:02:21.533",
+        "12:02:21.799-12:02:29.399"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "LoX8JFCiuovXrv6GPFvdvD",
+      "scene": "Track 275",
+      "map_image_path": "./map/tf_map_275_LoX8JFCiuovXrv6GPFvdvD.png",
+      "camera_images": [
+        {
+          "camera_id": "c033",
+          "object_id": 275,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_275_134_141_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            93,
+            107,
+            121,
+            135,
+            149,
+            163
+          ],
+          "bboxes": [
+            [
+              426.0,
+              522.0,
+              49.0,
+              42.0
+            ],
+            [
+              440.0,
+              518.0,
+              55.0,
+              51.0
+            ],
+            [
+              459.0,
+              516.0,
+              68.0,
+              63.0
+            ],
+            [
+              491.0,
+              515.0,
+              90.0,
+              81.0
+            ],
+            [
+              544.0,
+              525.0,
+              165.0,
+              141.0
+            ],
+            [
+              791.0,
+              576.0,
+              480.0,
+              354.0
+            ]
+          ],
+          "start_timestamp": 133.619,
+          "end_timestamp": 140.919,
+          "direction": "南偏东43.50°"
+        },
+        {
+          "camera_id": "c084",
+          "object_id": 275,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_275_141_142_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            163,
+            164,
+            165
+          ],
+          "bboxes": [
+            [
+              0.0,
+              669.0,
+              1269.0,
+              531.0
+            ],
+            [
+              272.0,
+              683.0,
+              1314.0,
+              517.0
+            ],
+            [
+              575.0,
+              703.0,
+              1025.0,
+              497.0
+            ]
+          ],
+          "start_timestamp": 141.333,
+          "end_timestamp": 141.53300000000002,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c063",
+        "B. c01",
+        "C. c018",
+        "D. c073"
+      ],
+      "correct_cam_name": [
+        "A. c063",
+        "C. c018"
+      ],
+      "correct_time_str": [
+        "12:02:21.799-12:02:29.399",
+        "12:02:30.993-12:02:51.993"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "DND66RKfzm7FaTZcnspFZe",
+      "scene": "Track 276",
+      "map_image_path": "./map/tf_map_276_DND66RKfzm7FaTZcnspFZe.png",
+      "camera_images": [
+        {
+          "camera_id": "c064",
+          "object_id": 276,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_276_136_141_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            109,
+            119,
+            129,
+            139,
+            149,
+            159
+          ],
+          "bboxes": [
+            [
+              942.0,
+              488.0,
+              43.0,
+              39.0
+            ],
+            [
+              915.0,
+              495.0,
+              51.0,
+              46.0
+            ],
+            [
+              877.0,
+              499.0,
+              64.0,
+              55.0
+            ],
+            [
+              802.0,
+              500.0,
+              93.0,
+              72.0
+            ],
+            [
+              603.0,
+              477.0,
+              165.0,
+              99.0
+            ],
+            [
+              87.0,
+              398.0,
+              323.0,
+              147.0
+            ]
+          ],
+          "start_timestamp": 136.099,
+          "end_timestamp": 141.299,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c021",
+          "object_id": 276,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_276_142_143_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            165,
+            167,
+            169,
+            171,
+            173,
+            175
+          ],
+          "bboxes": [
+            [
+              1239.0,
+              340.0,
+              361.0,
+              167.0
+            ],
+            [
+              1003.0,
+              326.0,
+              442.0,
+              171.0
+            ],
+            [
+              757.0,
+              307.0,
+              469.0,
+              188.0
+            ],
+            [
+              523.0,
+              301.0,
+              465.0,
+              190.0
+            ],
+            [
+              296.0,
+              297.0,
+              461.0,
+              187.0
+            ],
+            [
+              78.0,
+              293.0,
+              455.0,
+              178.0
+            ]
+          ],
+          "start_timestamp": 141.53300000000002,
+          "end_timestamp": 142.633,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c028",
+        "B. c09",
+        "C. c015",
+        "D. c033"
+      ],
+      "correct_cam_name": [
+        "D. c033",
+        "B. c09"
+      ],
+      "correct_time_str": [
+        "12:02:22.919-12:02:28.219",
+        "12:02:26.888-12:02:31.788"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "QmAeAeVLPMBG5XNvV5cQRT",
+      "scene": "Track 278",
+      "map_image_path": "./map/tf_map_278_QmAeAeVLPMBG5XNvV5cQRT.png",
+      "camera_images": [
+        {
+          "camera_id": "c045",
+          "object_id": 278,
+          "video_path": "./raw_video/outdoor_S04_c029.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_278_137_152_c029.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            117,
+            173,
+            194,
+            215,
+            236,
+            257
+          ],
+          "bboxes": [
+            [
+              1021.0,
+              410.0,
+              121.0,
+              92.0
+            ],
+            [
+              1113.0,
+              429.0,
+              129.0,
+              110.0
+            ],
+            [
+              1047.0,
+              440.0,
+              169.0,
+              134.0
+            ],
+            [
+              945.0,
+              447.0,
+              198.0,
+              171.0
+            ],
+            [
+              748.0,
+              463.0,
+              259.0,
+              208.0
+            ],
+            [
+              364.0,
+              522.0,
+              350.0,
+              265.0
+            ]
+          ],
+          "start_timestamp": 137.488,
+          "end_timestamp": 151.788,
+          "direction": "南偏东58.67°"
+        },
+        {
+          "camera_id": "c057",
+          "object_id": 278,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_278_152_158_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            278,
+            289,
+            300,
+            311,
+            322
+          ],
+          "bboxes": [
+            [
+              441.0,
+              525.0,
+              45.0,
+              40.0
+            ],
+            [
+              455.0,
+              522.0,
+              58.0,
+              50.0
+            ],
+            [
+              480.0,
+              520.0,
+              78.0,
+              65.0
+            ],
+            [
+              531.0,
+              520.0,
+              115.0,
+              87.0
+            ],
+            [
+              682.0,
+              509.0,
+              193.0,
+              140.0
+            ]
+          ],
+          "start_timestamp": 152.119,
+          "end_timestamp": 157.519,
+          "direction": "南偏东43.50°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c030",
+        "B. c078",
+        "C. c011",
+        "D. c098"
+      ],
+      "correct_cam_name": [
+        "A. c030",
+        "B. c078"
+      ],
+      "correct_time_str": [
+        "12:02:37.833-12:02:38.333",
+        "12:02:38.599-12:02:50.099"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "M7ix4XUFizvXqhuCL8wrfi",
+      "scene": "Track 278",
+      "map_image_path": "./map/tf_map_278_M7ix4XUFizvXqhuCL8wrfi.png",
+      "camera_images": [
+        {
+          "camera_id": "c066",
+          "object_id": 278,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_278_152_158_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            278,
+            289,
+            300,
+            311,
+            322
+          ],
+          "bboxes": [
+            [
+              441.0,
+              525.0,
+              45.0,
+              40.0
+            ],
+            [
+              455.0,
+              522.0,
+              58.0,
+              50.0
+            ],
+            [
+              480.0,
+              520.0,
+              78.0,
+              65.0
+            ],
+            [
+              531.0,
+              520.0,
+              115.0,
+              87.0
+            ],
+            [
+              682.0,
+              509.0,
+              193.0,
+              140.0
+            ]
+          ],
+          "start_timestamp": 152.119,
+          "end_timestamp": 157.519,
+          "direction": "南偏东43.50°"
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 278,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_278_158_158_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333
+          ],
+          "bboxes": [
+            [
+              0.0,
+              488.0,
+              618.0,
+              339.0
+            ],
+            [
+              49.0,
+              491.0,
+              771.0,
+              349.0
+            ],
+            [
+              219.0,
+              482.0,
+              843.0,
+              383.0
+            ],
+            [
+              422.0,
+              483.0,
+              834.0,
+              388.0
+            ],
+            [
+              626.0,
+              485.0,
+              825.0,
+              394.0
+            ],
+            [
+              861.0,
+              515.0,
+              739.0,
+              350.0
+            ]
+          ],
+          "start_timestamp": 157.833,
+          "end_timestamp": 158.333,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c052",
+        "B. c044",
+        "C. c011",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08",
+        "B. c044"
+      ],
+      "correct_time_str": [
+        "12:02:38.599-12:02:50.099",
+        "12:02:42.318-12:02:50.118"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "d9qv57bSNi2Tvca6GZVa8v",
+      "scene": "Track 279",
+      "map_image_path": "./map/tf_map_279_d9qv57bSNi2Tvca6GZVa8v.png",
+      "camera_images": [
+        {
+          "camera_id": "c049",
+          "object_id": 279,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_279_150_156_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            247,
+            260,
+            273,
+            286,
+            299,
+            312
+          ],
+          "bboxes": [
+            [
+              1004.0,
+              502.0,
+              41.0,
+              39.0
+            ],
+            [
+              992.0,
+              511.0,
+              47.0,
+              45.0
+            ],
+            [
+              973.0,
+              523.0,
+              55.0,
+              55.0
+            ],
+            [
+              926.0,
+              535.0,
+              81.0,
+              71.0
+            ],
+            [
+              755.0,
+              535.0,
+              153.0,
+              100.0
+            ],
+            [
+              16.0,
+              445.0,
+              445.0,
+              185.0
+            ]
+          ],
+          "start_timestamp": 149.899,
+          "end_timestamp": 156.499,
+          "direction": "北偏西85.86°"
+        },
+        {
+          "camera_id": "c087",
+          "object_id": 279,
+          "video_path": "./raw_video/outdoor_S04_c033.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_279_151_151_c033.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "bboxes": [
+            [
+              499.0,
+              761.0,
+              378.0,
+              312.0
+            ],
+            [
+              520.0,
+              773.0,
+              361.0,
+              307.0
+            ],
+            [
+              511.0,
+              782.0,
+              373.0,
+              298.0
+            ],
+            [
+              477.0,
+              789.0,
+              422.0,
+              291.0
+            ],
+            [
+              500.0,
+              809.0,
+              378.0,
+              271.0
+            ]
+          ],
+          "start_timestamp": 150.993,
+          "end_timestamp": 151.393,
+          "direction": "北偏西76.27°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c066",
+        "B. c044",
+        "C. c075",
+        "D. c061"
+      ],
+      "correct_cam_name": [
+        "D. c061",
+        "C. c075"
+      ],
+      "correct_time_str": [
+        "12:02:36.833-12:02:37.733",
+        "12:02:38.019-12:02:54.219"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "nLjtSZTQ97S5GWNCyepMEw",
+      "scene": "Track 280",
+      "map_image_path": "./map/tf_map_280_nLjtSZTQ97S5GWNCyepMEw.png",
+      "camera_images": [
+        {
+          "camera_id": "c086",
+          "object_id": 280,
+          "video_path": "./raw_video/outdoor_S04_c034.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_280_142_154_c034.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            19,
+            42,
+            63,
+            94,
+            115,
+            136
+          ],
+          "bboxes": [
+            [
+              1602.0,
+              338.0,
+              310.0,
+              156.0
+            ],
+            [
+              998.0,
+              239.0,
+              190.0,
+              107.0
+            ],
+            [
+              731.0,
+              188.0,
+              123.0,
+              88.0
+            ],
+            [
+              508.0,
+              152.0,
+              81.0,
+              58.0
+            ],
+            [
+              417.0,
+              131.0,
+              64.0,
+              50.0
+            ],
+            [
+              352.0,
+              116.0,
+              53.0,
+              43.0
+            ]
+          ],
+          "start_timestamp": 142.118,
+          "end_timestamp": 153.81799999999998,
+          "direction": "南偏东59.31°"
+        },
+        {
+          "camera_id": "c074",
+          "object_id": 280,
+          "video_path": "./raw_video/outdoor_S04_c032.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_280_150_157_c032.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            251,
+            262,
+            273,
+            284,
+            295,
+            314
+          ],
+          "bboxes": [
+            [
+              950.0,
+              483.0,
+              42.0,
+              40.0
+            ],
+            [
+              930.0,
+              484.0,
+              49.0,
+              47.0
+            ],
+            [
+              901.0,
+              488.0,
+              63.0,
+              57.0
+            ],
+            [
+              857.0,
+              491.0,
+              80.0,
+              72.0
+            ],
+            [
+              760.0,
+              490.0,
+              119.0,
+              88.0
+            ],
+            [
+              40.0,
+              369.0,
+              365.0,
+              179.0
+            ]
+          ],
+          "start_timestamp": 150.299,
+          "end_timestamp": 156.699,
+          "direction": "北偏西85.86°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c03",
+        "B. c048",
+        "C. c046",
+        "D. c097"
+      ],
+      "correct_cam_name": [
+        "C. c046",
+        "D. c097"
+      ],
+      "correct_time_str": [
+        "12:02:37.033-12:02:38.233",
+        "12:02:38.519-12:02:44.619"
+      ]
+    },
+    {
+      "task_id": "Trajectory Forecasting",
+      "case_id": "HLqwFCqywNMevVyYdpViy3",
+      "scene": "Track 281",
+      "map_image_path": "./map/tf_map_281_HLqwFCqywNMevVyYdpViy3.png",
+      "camera_images": [
+        {
+          "camera_id": "c060",
+          "object_id": 281,
+          "video_path": "./raw_video/outdoor_S04_c030.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_281_157_163_c030.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            326,
+            338,
+            350,
+            362,
+            374,
+            386
+          ],
+          "bboxes": [
+            [
+              444.0,
+              522.0,
+              42.0,
+              40.0
+            ],
+            [
+              455.0,
+              518.0,
+              52.0,
+              48.0
+            ],
+            [
+              476.0,
+              517.0,
+              66.0,
+              58.0
+            ],
+            [
+              505.0,
+              517.0,
+              104.0,
+              82.0
+            ],
+            [
+              609.0,
+              516.0,
+              174.0,
+              122.0
+            ],
+            [
+              1042.0,
+              487.0,
+              558.0,
+              287.0
+            ]
+          ],
+          "start_timestamp": 156.919,
+          "end_timestamp": 163.019,
+          "direction": "南偏东43.50°"
+        },
+        {
+          "camera_id": "c098",
+          "object_id": 281,
+          "video_path": "./raw_video/outdoor_S04_c031.avi",
+          "crop_video_path": "./crop_video/outdoor_S04_281_163_164_c031.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            383,
+            384,
+            385,
+            386,
+            387
+          ],
+          "bboxes": [
+            [
+              9.0,
+              484.0,
+              807.0,
+              350.0
+            ],
+            [
+              230.0,
+              491.0,
+              815.0,
+              353.0
+            ],
+            [
+              464.0,
+              495.0,
+              803.0,
+              356.0
+            ],
+            [
+              687.0,
+              504.0,
+              815.0,
+              353.0
+            ],
+            [
+              919.0,
+              511.0,
+              681.0,
+              351.0
+            ]
+          ],
+          "start_timestamp": 163.333,
+          "end_timestamp": 163.733,
+          "direction": "南偏东27.13°"
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
+      "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
+      "choices": [
+        "A. c087",
+        "B. c058",
+        "C. c057",
+        "D. c010"
+      ],
+      "correct_cam_name": [
+        "B. c058",
+        "C. c057"
+      ],
+      "correct_time_str": [
+        "12:02:43.999-12:02:49.999",
+        "12:02:46.718-12:02:59.818"
+      ]
+    }
+  ]
+}

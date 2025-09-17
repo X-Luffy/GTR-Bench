@@ -1,0 +1,4312 @@
+{
+  "cases": [
+    {
+      "task_id": "MotionState",
+      "case_id": "jLmFyfBrGBaxMkxeofz7iM",
+      "scene": "Track 1",
+      "map_image_path": "./map/MotionState_map_1_jLmFyfBrGBaxMkxeofz7iM.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 1,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_1_0_15_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            77,
+            154,
+            231,
+            308,
+            385
+          ],
+          "bboxes": [
+            [
+              587.58,
+              745.5,
+              85.74,
+              255.32
+            ],
+            [
+              579.55,
+              607.83,
+              66.07,
+              197.05
+            ],
+            [
+              587.37,
+              520.04,
+              52.89,
+              163.74
+            ],
+            [
+              623.65,
+              458.19,
+              44.47,
+              138.78
+            ],
+            [
+              622.15,
+              414.81,
+              35.09,
+              114.99
+            ],
+            [
+              542.12,
+              379.05,
+              27.14,
+              90.56
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 15.44,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 1,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_1_28_34_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            709,
+            739,
+            769,
+            799,
+            829
+          ],
+          "bboxes": [
+            [
+              865.39,
+              39.32,
+              27.75,
+              90.53
+            ],
+            [
+              828.24,
+              45.43,
+              25.44,
+              90.53
+            ],
+            [
+              766.36,
+              45.0,
+              29.3,
+              98.61
+            ],
+            [
+              687.4,
+              42.29,
+              39.21,
+              93.71
+            ],
+            [
+              630.7,
+              36.2,
+              31.1,
+              92.9
+            ]
+          ],
+          "start_timestamp": 28.36,
+          "end_timestamp": 34.32,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:15.440) and [end video] (c05, 12:00:28.360-12:00:34.320),\nand the intermediate camera c04, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:15.440)和[终点视频](c05, 12:00:28.360-12:00:34.320)，\n以及中间经过的摄像头c04，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标向东南以1.7m/s移动2.2米，然后向东加速至2.3m/s移动20.6米，最后向东北以1.1–2.0m/s移动9.4米。",
+      "choices": [
+        "A. The target began moving rapidly toward the northwest at a speed of 2.4 m/s , covering a distance of 3.3 meters, and then proceeded westward at a speed of 1.8 m/s for 16.7 meters.",
+        "B. The target moved southeast at 1.7 m/s for 2.2 meters, then accelerated eastward to 2.3 m/s for 20.6 meters, and finally moved northeast at 1.1–2.0 m/s for 9.4 meters.",
+        "C. The target moved southwest at a speed of 1.1 m/s for 1.4 meters, then accelerated southward to 1.3 m/s and moved 2.4 meters.",
+        "D. The target moved southwest at a speed of 1.4 m/s for 1.8 meters, then walked south at a speed of 1.3 m/s for 1.5 meters, and finally continued moving south at a speed of 0.5 m/s for 1.7 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c02",
+        "time": "12:00:00.000-12:00:15.440"
+      },
+      "end_point": {
+        "camera_id": "c05",
+        "time": "12:00:28.360-12:00:34.320"
+      },
+      "middle_point": {
+        "camera_id": "c04",
+        "time": "12:00:04.800-12:00:23.800"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "bP8hp2f6xDFX5hSmF8vmtw",
+      "scene": "Track 3",
+      "map_image_path": "./map/MotionState_map_3_bP8hp2f6xDFX5hSmF8vmtw.png",
+      "camera_images": [
+        {
+          "camera_id": "c04",
+          "object_id": 3,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_3_13_31_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            337,
+            422,
+            507,
+            592,
+            677,
+            762
+          ],
+          "bboxes": [
+            [
+              -76.3,
+              605.44,
+              84.13,
+              234.58
+            ],
+            [
+              546.93,
+              871.47,
+              121.67,
+              329.2
+            ],
+            [
+              1036.0,
+              847.99,
+              149.2,
+              302.31
+            ],
+            [
+              421.8,
+              476.7,
+              104.2,
+              279.9
+            ],
+            [
+              88.0,
+              251.0,
+              77.7,
+              224.3
+            ],
+            [
+              -53.61,
+              107.79,
+              59.7,
+              168.6
+            ]
+          ],
+          "start_timestamp": 13.48,
+          "end_timestamp": 30.52,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 3,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_3_44_107_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1096,
+            1414,
+            1732,
+            2050,
+            2368
+          ],
+          "bboxes": [
+            [
+              774.35,
+              254.24,
+              14.25,
+              50.47
+            ],
+            [
+              1050.6,
+              586.37,
+              99.14,
+              238.0
+            ],
+            [
+              246.08,
+              742.57,
+              70.19,
+              263.79
+            ],
+            [
+              242.18,
+              738.04,
+              63.89,
+              263.79
+            ],
+            [
+              249.67,
+              740.65,
+              62.05,
+              263.79
+            ]
+          ],
+          "start_timestamp": 43.84,
+          "end_timestamp": 107.4,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c04, 12:00:13.480-12:00:30.520) and [end video] (c01, 12:00:43.840-12:01:47.400),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c04, 12:00:13.480-12:00:30.520)和[终点视频](c01, 12:00:43.840-12:01:47.400)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向北以1.8m/s移动2.2米，然后向东北方向以波动速度移动18.5米，最后转向东南方向以逐渐减速的方式移动。",
+      "choices": [
+        "A. The target moved southeast at a speed of 1.7 m/s for 9.63 meters, then slowed down to 0.9 m/s.",
+        "B. The target moves 5.3 meters to the northwest at a speed of 2.2 m/s, then 3.9 meters to the west at a speed of 3.6 m/s, and finally 0.5 meters to the south at a speed of 0.3 m/s.",
+        "C. The target moved north at 1.8 m/s for 2.2 meters, then traveled northeast for 18.5 meters at a fluctuating speed, and finally turned southeast, moving with a gradual deceleration.",
+        "D. The target moved eastward for 14.9 meters at a speed of 2.0–2.3 m/s, then turned northeast and traveled 6.0 meters at the same speed, and finally moved westward for 19.7 meters at a gradually decreasing speed."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c04",
+        "time": "12:00:13.480-12:00:30.520"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:00:43.840-12:01:47.400"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:00:43.560-12:01:00.640"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "j484MQyBeJyYTk2zNJAei4",
+      "scene": "Track 3",
+      "map_image_path": "./map/MotionState_map_3_j484MQyBeJyYTk2zNJAei4.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 3,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_3_1_40_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            32,
+            226,
+            420,
+            614,
+            808,
+            1002
+          ],
+          "bboxes": [
+            [
+              1908.0,
+              861.44,
+              71.08,
+              255.19
+            ],
+            [
+              1021.01,
+              514.05,
+              58.74,
+              158.83
+            ],
+            [
+              691.29,
+              387.25,
+              36.51,
+              106.04
+            ],
+            [
+              568.68,
+              395.02,
+              35.88,
+              114.34
+            ],
+            [
+              559.3,
+              551.92,
+              55.22,
+              185.88
+            ],
+            [
+              387.53,
+              1068.59,
+              111.73,
+              286.58
+            ]
+          ],
+          "start_timestamp": 1.28,
+          "end_timestamp": 40.16,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 3,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_3_44_61_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1089,
+            1174,
+            1259,
+            1344,
+            1429,
+            1514
+          ],
+          "bboxes": [
+            [
+              1744.19,
+              496.92,
+              67.07,
+              210.52
+            ],
+            [
+              1124.44,
+              451.76,
+              84.97,
+              225.12
+            ],
+            [
+              730.3,
+              338.06,
+              60.2,
+              199.91
+            ],
+            [
+              676.29,
+              230.61,
+              51.39,
+              160.36
+            ],
+            [
+              729.24,
+              157.66,
+              52.02,
+              132.54
+            ],
+            [
+              920.42,
+              124.89,
+              29.97,
+              105.61
+            ]
+          ],
+          "start_timestamp": 43.56,
+          "end_timestamp": 60.64,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c02, 12:00:01.280-12:00:40.160) and [end video] (c05, 12:00:43.560-12:01:00.640),\nand the intermediate camera c04, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c02, 12:00:01.280-12:00:40.160)和[终点视频](c05, 12:00:43.560-12:01:00.640)，\n以及中间经过的摄像头c04，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标向东以2.0–2.3m/s的速度移动14.9米，然后转向西北以2.0–2.3m/s的速度走了6.0米，最后向西以逐步减速从2.0m/s到0.9m/s的速度移动19.7米。",
+      "choices": [
+        "A. The target moved westward at a speed of 1.6 m/s for approximately 27.2 meters, and then moved eastward at a speed of 2.0 m/s for approximately 57.78 meters.",
+        "B. The target moved southeast at a speed of 1.7 m/s for 9.63 meters, then slowed down to 0.9 m/s.",
+        "C. The target moves southeast at 1.2 m/s for 1.7 meters, then continues southeast, accelerating to 1.5 m/s for another 1.7 meters, and finally accelerates further to 2.1 m/s, traveling 2.1 meters southeast.",
+        "D. The target moved eastward for 14.9 meters at a speed of 2.0–2.3 m/s, then turned northwest and traveled 6.0 meters at a speed of 2.0–2.3 m/s, and finally moved westward for 19.7 meters at a gradually decreasing speed from 2.0 m/s to 0.9 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c02",
+        "time": "12:00:01.280-12:00:40.160"
+      },
+      "end_point": {
+        "camera_id": "c05",
+        "time": "12:00:43.560-12:01:00.640"
+      },
+      "middle_point": {
+        "camera_id": "c04",
+        "time": "12:00:13.480-12:00:30.520"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "MWw4bL4ZivBAiQytUr89Lj",
+      "scene": "Track 4",
+      "map_image_path": "./map/MotionState_map_4_MWw4bL4ZivBAiQytUr89Lj.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_4_64_73_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1603,
+            1645,
+            1687,
+            1729,
+            1771,
+            1813
+          ],
+          "bboxes": [
+            [
+              1116.5,
+              38.7,
+              173.03,
+              513.44
+            ],
+            [
+              881.29,
+              54.3,
+              174.34,
+              516.98
+            ],
+            [
+              580.98,
+              61.13,
+              200.42,
+              577.81
+            ],
+            [
+              314.51,
+              124.2,
+              214.34,
+              673.02
+            ],
+            [
+              493.6,
+              371.34,
+              276.4,
+              829.09
+            ],
+            [
+              1877.47,
+              1030.01,
+              344.09,
+              830.43
+            ]
+          ],
+          "start_timestamp": 64.12,
+          "end_timestamp": 72.52,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_4_78_107_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1961,
+            2103,
+            2245,
+            2387,
+            2529,
+            2671
+          ],
+          "bboxes": [
+            [
+              1908.75,
+              230.59,
+              120.76,
+              348.26
+            ],
+            [
+              1518.03,
+              152.6,
+              62.57,
+              200.1
+            ],
+            [
+              1373.1,
+              117.52,
+              50.25,
+              142.4
+            ],
+            [
+              1313.56,
+              97.99,
+              32.8,
+              111.72
+            ],
+            [
+              1135.56,
+              85.98,
+              40.13,
+              105.57
+            ],
+            [
+              1101.3,
+              79.34,
+              31.62,
+              105.57
+            ]
+          ],
+          "start_timestamp": 78.44,
+          "end_timestamp": 106.88,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c12, 12:01:04.120-12:01:12.520) and [end video] (c16, 12:01:18.440-12:01:46.880),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:01:04.120-12:01:12.520)和[终点视频](c16, 12:01:18.440-12:01:46.880)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向东以逐渐加速的速度移动了10.46米。",
+      "choices": [
+        "A. The target moved eastward for 10.46 meters with gradually increasing speed.",
+        "B. The target moved west at a speed of 1.7 m/s for 1.9 meters, then accelerated northwest to 2.1 m/s and traveled 2.8 meters.",
+        "C. The target moved eastward by 0.8 meters at a speed of 0.9 m/s.",
+        "D. The target moved south for 1.6 meters at a speed of 0.8 m/s, then continued south for another 1.6 meters at a speed of 1.2 m/s, and finally moved rapidly southwest for 0.6 meters at a speed of 1.7 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:01:04.120-12:01:12.520"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:01:18.440-12:01:46.880"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:01:16.440-12:01:22.560"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "HZta3vVpH26Myud6UngAi2",
+      "scene": "Track 4",
+      "map_image_path": "./map/MotionState_map_4_HZta3vVpH26Myud6UngAi2.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_4_0_6_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            31,
+            62,
+            93,
+            124,
+            155
+          ],
+          "bboxes": [
+            [
+              894.46,
+              673.54,
+              51.67,
+              187.19
+            ],
+            [
+              940.5,
+              722.15,
+              55.82,
+              208.02
+            ],
+            [
+              994.06,
+              776.74,
+              71.31,
+              225.3
+            ],
+            [
+              1058.56,
+              853.2,
+              97.53,
+              236.2
+            ],
+            [
+              1131.74,
+              942.83,
+              95.03,
+              243.23
+            ],
+            [
+              1247.03,
+              1070.46,
+              79.26,
+              245.96
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 6.24,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_4_27_37_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            665,
+            717,
+            769,
+            821,
+            873,
+            925
+          ],
+          "bboxes": [
+            [
+              -264.5,
+              827.3,
+              289.6,
+              779.0
+            ],
+            [
+              557.34,
+              492.63,
+              185.43,
+              576.43
+            ],
+            [
+              754.75,
+              209.32,
+              145.88,
+              477.08
+            ],
+            [
+              901.43,
+              -9.15,
+              197.82,
+              416.3
+            ],
+            [
+              1135.53,
+              -148.32,
+              123.85,
+              442.3
+            ],
+            [
+              1435.39,
+              -316.1,
+              142.7,
+              426.32
+            ]
+          ],
+          "start_timestamp": 26.6,
+          "end_timestamp": 37.04,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:06.240) and [end video] (c08, 12:00:26.600-12:00:37.040),\nand the intermediate camera c07, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:06.240)和[终点视频](c08, 12:00:26.600-12:00:37.040)，\n以及中间经过的摄像头c07，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标向西以1.4m/s速度移动2.0米，然后向西北以1.4m/s速度移动3.0米，最后向北以1.3m/s速度移动1.4米。",
+      "choices": [
+        "A. The target moves west at a speed of 0.6 m/s for 0.8 meters, then walks north at a speed of 0.9 m/s for 1.9 meters, and then turns southeast and moves 1.7 meters at a speed of 0.6 m/s.",
+        "B. The target moves west at a speed of 1.4 m/s for 2.0 meters, then moves northwest at a speed of 1.4 m/s for 3.0 meters, and finally moves north at a speed of 1.3 m/s for 1.4 meters.",
+        "C. The target moved south at a speed of 1.4 m/s for a distance of 4.9 meters.",
+        "D. The target moves south at a speed of 0.8 m/s for 0.9 meters, then accelerates to 1.2 m/s and continues moving south for another 1.6 meters, and finally moves south at 0.5 m/s for 0.7 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c02",
+        "time": "12:00:00.000-12:00:06.240"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:00:26.600-12:00:37.040"
+      },
+      "middle_point": {
+        "camera_id": "c07",
+        "time": "12:00:21.440-12:00:28.040"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "hXntFLYqbNbq7P5RKqsJtx",
+      "scene": "Track 5",
+      "map_image_path": "./map/MotionState_map_5_hXntFLYqbNbq7P5RKqsJtx.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_5_236_249_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5909,
+            5971,
+            6033,
+            6095,
+            6157,
+            6219
+          ],
+          "bboxes": [
+            [
+              128.08,
+              1051.66,
+              210.0,
+              352.12
+            ],
+            [
+              387.16,
+              450.08,
+              217.84,
+              552.46
+            ],
+            [
+              1033.8,
+              287.73,
+              275.42,
+              535.79
+            ],
+            [
+              1205.5,
+              582.24,
+              387.84,
+              556.24
+            ],
+            [
+              729.34,
+              760.29,
+              396.05,
+              725.74
+            ],
+            [
+              -669.14,
+              408.72,
+              708.25,
+              982.66
+            ]
+          ],
+          "start_timestamp": 236.36,
+          "end_timestamp": 248.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_5_259_262_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6463,
+            6480,
+            6497,
+            6514,
+            6531,
+            6548
+          ],
+          "bboxes": [
+            [
+              334.0,
+              127.2,
+              85.24,
+              251.9
+            ],
+            [
+              254.54,
+              129.48,
+              108.15,
+              260.46
+            ],
+            [
+              157.4,
+              131.3,
+              87.2,
+              255.9
+            ],
+            [
+              54.65,
+              126.87,
+              84.45,
+              247.7
+            ],
+            [
+              5.36,
+              125.0,
+              75.76,
+              247.7
+            ],
+            [
+              -36.4,
+              120.54,
+              75.75,
+              247.7
+            ]
+          ],
+          "start_timestamp": 258.52,
+          "end_timestamp": 262.04,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c03, 12:03:56.360-12:04:08.800) and [end video] (c13, 12:04:18.520-12:04:22.040),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:03:56.360-12:04:08.800)和[终点视频](c13, 12:04:18.520-12:04:22.040)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向东以1.2m/s速度移动1.6米，然后向东南以0.8m/s速度行进1.1米。",
+      "choices": [
+        "A. The target moves east at a speed of 1.2 m/s for 1.6 meters, then proceeds southeast at a speed of 0.8 m/s for 1.1 meters.",
+        "B. The target moves west at a speed of 1.0 m/s for 1.5 meters, then turns northwest and moves 1.2 meters at a speed of 1.0 m/s, and finally continues west for 2.2 meters at a speed of 1.5 m/s.",
+        "C. The target moved southwest at a speed of 1.2 m/s for 2.5 meters, and then walked west at a speed of 0.6 m/s for 0.9 meters.",
+        "D. The target moved west at 0.6 m/s for 1.4 meters, then accelerated northwest to 1.1 m/s and traveled 1.3 meters, and then turned south, moving rapidly at 3.9 m/s for 1.0 meter."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:03:56.360-12:04:08.800"
+      },
+      "end_point": {
+        "camera_id": "c13",
+        "time": "12:04:18.520-12:04:22.040"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:04:17.280-12:04:21.040"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "V5WXrXdHGdFnW4wGuUedjs",
+      "scene": "Track 5",
+      "map_image_path": "./map/MotionState_map_5_V5WXrXdHGdFnW4wGuUedjs.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_5_0_9_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            44,
+            88,
+            132,
+            176,
+            220
+          ],
+          "bboxes": [
+            [
+              243.39,
+              586.9,
+              66.73,
+              196.43
+            ],
+            [
+              165.44,
+              635.98,
+              84.08,
+              219.14
+            ],
+            [
+              96.76,
+              692.69,
+              101.1,
+              238.05
+            ],
+            [
+              96.99,
+              778.59,
+              122.83,
+              267.85
+            ],
+            [
+              132.7,
+              906.22,
+              128.31,
+              280.65
+            ],
+            [
+              210.9,
+              1073.7,
+              128.31,
+              280.66
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 8.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_5_39_48_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            982,
+            1024,
+            1066,
+            1108,
+            1150
+          ],
+          "bboxes": [
+            [
+              -148.53,
+              767.8,
+              171.97,
+              550.31
+            ],
+            [
+              528.24,
+              439.15,
+              238.08,
+              649.85
+            ],
+            [
+              715.15,
+              170.83,
+              230.65,
+              583.17
+            ],
+            [
+              883.47,
+              -57.05,
+              170.48,
+              511.1
+            ],
+            [
+              1185.0,
+              -199.2,
+              186.8,
+              484.3
+            ]
+          ],
+          "start_timestamp": 39.28,
+          "end_timestamp": 47.64,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:08.800) and [end video] (c08, 12:00:39.280-12:00:47.640),\nand the intermediate camera c07, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:08.800)和[终点视频](c08, 12:00:39.280-12:00:47.640)，\n以及中间经过的摄像头c07，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向西以1.0m/s速度移动1.5米，然后转向西北以1.0m/s速度移动1.2米，接着再次向北以1.0m/s速度移动1.3米。",
+      "choices": [
+        "A. The target moves east at a speed of 1.2 m/s for 1.6 meters, and then proceeds southeast at a speed of 0.8 m/s for 1.1 meters.",
+        "B. The target moves east at a speed of 1.1 m/s for 4.2 meters, then turns northeast and moves 1.6 meters at a speed of 1.3 m/s, and finally continues east, accelerating to 1.7 m/s.",
+        "C. The target moves west at a speed of 1.0 m/s for 1.5 meters, then turns northwest and moves 1.2 meters at 1.0 m/s, then moves north again at 1.0 m/s for 1.3 meters.",
+        "D. The target moved northwest for 2.1 meters at a speed of 1.7 m/s, then walked west for 1.3 meters at a speed of 1.1 m/s. Next, the target briskly walked west for 6.8 meters at a speed of 1.7 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c02",
+        "time": "12:00:00.000-12:00:08.800"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:00:39.280-12:00:47.640"
+      },
+      "middle_point": {
+        "camera_id": "c07",
+        "time": "12:00:32.760-12:00:40.600"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "AtesridmSvkyyK5vCHK6Sa",
+      "scene": "Track 5",
+      "map_image_path": "./map/MotionState_map_5_AtesridmSvkyyK5vCHK6Sa.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_5_152_221_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3789,
+            4137,
+            4485,
+            4833,
+            5181,
+            5529
+          ],
+          "bboxes": [
+            [
+              823.49,
+              451.2,
+              38.01,
+              172.18
+            ],
+            [
+              1320.17,
+              380.26,
+              72.89,
+              159.72
+            ],
+            [
+              1601.51,
+              331.77,
+              48.18,
+              143.23
+            ],
+            [
+              1603.32,
+              331.77,
+              40.36,
+              143.23
+            ],
+            [
+              1200.89,
+              242.57,
+              45.94,
+              116.16
+            ],
+            [
+              930.44,
+              132.22,
+              22.73,
+              72.89
+            ]
+          ],
+          "start_timestamp": 151.56,
+          "end_timestamp": 221.2,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_5_236_249_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5909,
+            5971,
+            6033,
+            6095,
+            6157,
+            6219
+          ],
+          "bboxes": [
+            [
+              128.08,
+              1051.66,
+              210.0,
+              352.12
+            ],
+            [
+              387.16,
+              450.08,
+              217.84,
+              552.46
+            ],
+            [
+              1033.8,
+              287.73,
+              275.42,
+              535.79
+            ],
+            [
+              1205.5,
+              582.24,
+              387.84,
+              556.24
+            ],
+            [
+              729.34,
+              760.29,
+              396.05,
+              725.74
+            ],
+            [
+              -669.14,
+              408.72,
+              708.25,
+              982.66
+            ]
+          ],
+          "start_timestamp": 236.36,
+          "end_timestamp": 248.8,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c01, 12:02:31.560-12:03:41.200) and [end video] (c03, 12:03:56.360-12:04:08.800),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:02:31.560-12:03:41.200)和[终点视频](c03, 12:03:56.360-12:04:08.800)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标向西以1.7m/s的速度移动18.2米，然后向西北以1.9m/s的速度移动至1.0m/s，最终向西以1.3m/s的速度移动1.6米。",
+      "choices": [
+        "A. The target moves east for 1.4 meters at 0.6 m/s, then walks briskly northeast for 1.3 meters at 1.1 m/s, followed by a brisk walk southeast for 3.8 meters at 1.5 m/s, and finally makes a rapid dash south for 1.0 meter at 3.9 m/s.",
+        "B. The target moved southwest at a speed of 1.2 m/s for a distance of 2.5 meters, and then walked west at a speed of 0.6 m/s for 0.9 meters.",
+        "C. The target moves northwest at a speed of 2.0 m/s for a distance of 5.0 meters, then moves west at a speed of 0.6 m/s for 1.5 meters, and then moves south at a speed of 1.2 m/s for 2.8 meters.",
+        "D. The target moves west at a speed of 1.7 m/s for 18.2 meters, then moves northwest at a speed decreasing from 1.9 m/s to 1.0 m/s, and finally moves west again at a speed of 1.3 m/s for 1.6 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:02:31.560-12:03:41.200"
+      },
+      "end_point": {
+        "camera_id": "c03",
+        "time": "12:03:56.360-12:04:08.800"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:02:42.560-12:03:33.360"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "Xmm9KAbqLANqMRyk4usgiF",
+      "scene": "Track 7",
+      "map_image_path": "./map/MotionState_map_7_Xmm9KAbqLANqMRyk4usgiF.png",
+      "camera_images": [
+        {
+          "camera_id": "c06",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c06",
+          "crop_video_path": "./crop_video/indoor_s01_7_32_33_c06.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            795,
+            799,
+            803,
+            807,
+            811
+          ],
+          "bboxes": [
+            [
+              31.68,
+              154.3,
+              72.22,
+              224.42
+            ],
+            [
+              1.45,
+              172.54,
+              92.0,
+              222.5
+            ],
+            [
+              -19.11,
+              173.7,
+              80.71,
+              220.21
+            ],
+            [
+              -23.38,
+              176.42,
+              81.2,
+              230.7
+            ],
+            [
+              -36.6,
+              176.42,
+              81.7,
+              230.7
+            ]
+          ],
+          "start_timestamp": 31.8,
+          "end_timestamp": 32.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_7_50_69_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1252,
+            1348,
+            1444,
+            1540,
+            1636,
+            1732
+          ],
+          "bboxes": [
+            [
+              772.79,
+              251.92,
+              21.1,
+              52.75
+            ],
+            [
+              980.69,
+              270.53,
+              29.55,
+              103.88
+            ],
+            [
+              1075.46,
+              322.56,
+              49.34,
+              129.82
+            ],
+            [
+              1152.22,
+              308.69,
+              61.33,
+              126.81
+            ],
+            [
+              1299.98,
+              259.66,
+              36.33,
+              106.15
+            ],
+            [
+              1392.28,
+              222.04,
+              29.76,
+              99.45
+            ]
+          ],
+          "start_timestamp": 50.08,
+          "end_timestamp": 69.28,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c06, 12:00:31.800-12:00:32.560) and [end video] (c01, 12:00:50.080-12:01:09.280),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c06, 12:00:31.800-12:00:32.560)和[终点视频](c01, 12:00:50.080-12:01:09.280)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向北以约1.5m/s的速度移动约9.7米，然后向东以约1.4m/s的速度移动约4.7米，最后向西北以逐步加速至2.1m/s的速度移动约17.6米。",
+      "choices": [
+        "A. The target moved north at approximately 1.5 m/s for about 9.7 meters, then moved east at approximately 1.4 m/s for about 4.7 meters, and finally moved northwest, gradually accelerating to 2.1 m/s, for about 17.6 meters.",
+        "B. The target moved northeast at a speed of 8.0 m/s for 9.6 meters, then continued northeast at 4.3 m/s for 4.9 meters, and finally moved northeast at 1.9 m/s for 2.8 meters.",
+        "C. The target moves east at a speed of 0.8 m/s for a distance of 1.0 meter.",
+        "D. The target moved east at a speed of 3.2 m/s for 5.4 meters, then shifted southeast at a speed of 1.3 m/s for 1.8 meters, and finally moved east again at a speed of 0.8 m/s for 0.4 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c06",
+        "time": "12:00:31.800-12:00:32.560"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:00:50.080-12:01:09.280"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:00:49.240-12:01:10.040"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "6G5nFKGZEQtRmKtwYNrZHk",
+      "scene": "Track 8",
+      "map_image_path": "./map/MotionState_map_8_6G5nFKGZEQtRmKtwYNrZHk.png",
+      "camera_images": [
+        {
+          "camera_id": "c04",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_8_71_85_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1765,
+            1836,
+            1907,
+            1978,
+            2049,
+            2120
+          ],
+          "bboxes": [
+            [
+              1268.68,
+              1067.85,
+              146.18,
+              341.76
+            ],
+            [
+              1392.5,
+              693.6,
+              135.08,
+              340.6
+            ],
+            [
+              1527.5,
+              470.0,
+              121.39,
+              289.9
+            ],
+            [
+              1707.5,
+              345.87,
+              95.3,
+              242.02
+            ],
+            [
+              1688.8,
+              296.7,
+              111.5,
+              245.3
+            ],
+            [
+              1854.13,
+              219.81,
+              76.9,
+              222.2
+            ]
+          ],
+          "start_timestamp": 70.6,
+          "end_timestamp": 84.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_8_98_126_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2441,
+            2584,
+            2727,
+            2870,
+            3013,
+            3156
+          ],
+          "bboxes": [
+            [
+              868.6,
+              1073.26,
+              50.86,
+              173.34
+            ],
+            [
+              1076.56,
+              646.3,
+              87.54,
+              243.95
+            ],
+            [
+              1204.32,
+              437.79,
+              66.11,
+              185.47
+            ],
+            [
+              1268.29,
+              323.9,
+              51.31,
+              145.22
+            ],
+            [
+              1337.0,
+              256.89,
+              43.71,
+              121.85
+            ],
+            [
+              1395.44,
+              218.1,
+              28.47,
+              109.61
+            ]
+          ],
+          "start_timestamp": 97.64,
+          "end_timestamp": 126.32,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c04, 12:01:10.600-12:01:24.800) and [end video] (c01, 12:01:37.640-12:02:06.320),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c04, 12:01:10.600-12:01:24.800)和[终点视频](c01, 12:01:37.640-12:02:06.320)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向西以1.6m/s移动12.6米。",
+      "choices": [
+        "A. The target accelerates southeast at 1.3 m/s for 3.3 meters, then continues to move slowly southeast at 0.7 m/s.",
+        "B. The target moves eastward at a speed of 0.9 m/s for 1.4 meters, then accelerates to 1.2 m/s and continues moving eastward for another 1.4 meters, and then moves northward at a speed of 1.7 m/s for 1.8 meters.",
+        "C. The target moves west at 1.6 m/s for 12.6 meters.",
+        "D. The target moved southeast for 1.9 meters at a speed of 0.9 m/s, then moved south for 1.1 meters at a speed of 0.7 m/s, and finally accelerated eastward to 2.9 m/s, covering a distance of 10.8 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c04",
+        "time": "12:01:10.600-12:01:24.800"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:01:37.640-12:02:06.320"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:01:30.080-12:02:07.920"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "JQ94Z5SSmJEcHMqvctCaZo",
+      "scene": "Track 8",
+      "map_image_path": "./map/MotionState_map_8_JQ94Z5SSmJEcHMqvctCaZo.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_8_146_164_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3661,
+            3746,
+            3831,
+            3916,
+            4001,
+            4086
+          ],
+          "bboxes": [
+            [
+              1397.55,
+              212.47,
+              28.47,
+              104.0
+            ],
+            [
+              1241.01,
+              197.57,
+              35.46,
+              98.24
+            ],
+            [
+              1118.7,
+              175.6,
+              31.6,
+              92.92
+            ],
+            [
+              1040.13,
+              155.87,
+              29.72,
+              86.1
+            ],
+            [
+              982.54,
+              141.21,
+              24.03,
+              80.96
+            ],
+            [
+              930.64,
+              131.97,
+              23.59,
+              78.24
+            ]
+          ],
+          "start_timestamp": 146.44,
+          "end_timestamp": 163.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c08",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_8_166_171_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4148,
+            4171,
+            4194,
+            4217,
+            4240,
+            4263
+          ],
+          "bboxes": [
+            [
+              1893.28,
+              459.51,
+              166.1,
+              579.34
+            ],
+            [
+              1590.15,
+              450.86,
+              245.57,
+              641.38
+            ],
+            [
+              1336.8,
+              500.01,
+              212.1,
+              638.95
+            ],
+            [
+              987.3,
+              587.54,
+              234.64,
+              638.95
+            ],
+            [
+              532.68,
+              698.43,
+              201.72,
+              638.95
+            ],
+            [
+              -133.18,
+              800.46,
+              227.48,
+              638.95
+            ]
+          ],
+          "start_timestamp": 165.92,
+          "end_timestamp": 170.6,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c01, 12:02:26.440-12:02:43.560) and [end video] (c08, 12:02:45.920-12:02:50.600),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:02:26.440-12:02:43.560)和[终点视频](c08, 12:02:45.920-12:02:50.600)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标向北以0.6m/s移动3.6米，然后继续向西南加速至0.9m/s行进10.0米。",
+      "choices": [
+        "A. The target moves south at 0.5 m/s for 0.8 meters, then accelerates northwest to 1.3 m/s for 3.3 meters, and finally continues slowly northwest at 0.7 m/s.",
+        "B. The target moves north at 0.6 m/s for 1.6 meters, then accelerates northeast at 0.9 m/s for 1.0 meter, and finally turns northwest, moving 1.6 meters at a speed of 0.9–1.2 m/s.",
+        "C. The target moves east at 0.9 m/s for 1.4 meters, then accelerates to 1.2 m/s and continues moving east for another 1.4 meters, and then moves north at 1.7 m/s for 1.8 meters.",
+        "D. The target moves north at 0.6 m/s for 3.6 meters, then continues accelerating southwest to 0.9 m/s for 10.0 meter."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:02:26.440-12:02:43.560"
+      },
+      "end_point": {
+        "camera_id": "c08",
+        "time": "12:02:45.920-12:02:50.600"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:02:27.680-12:02:33.280"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "NKxCwQyy8mmNvJh22YMc5j",
+      "scene": "Track 9",
+      "map_image_path": "./map/MotionState_map_9_NKxCwQyy8mmNvJh22YMc5j.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_9_210_244_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5241,
+            5415,
+            5589,
+            5763,
+            5937,
+            6111
+          ],
+          "bboxes": [
+            [
+              1903.55,
+              1043.22,
+              81.84,
+              237.19
+            ],
+            [
+              715.75,
+              831.75,
+              128.3,
+              234.61
+            ],
+            [
+              937.64,
+              628.16,
+              77.46,
+              213.24
+            ],
+            [
+              1066.02,
+              407.35,
+              53.74,
+              151.15
+            ],
+            [
+              1063.18,
+              286.95,
+              33.44,
+              114.29
+            ],
+            [
+              748.04,
+              261.36,
+              29.28,
+              103.46
+            ]
+          ],
+          "start_timestamp": 209.64,
+          "end_timestamp": 244.48,
+          "direction": ""
+        },
+        {
+          "camera_id": "c02",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_9_254_275_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6342,
+            6447,
+            6552,
+            6657,
+            6762,
+            6867
+          ],
+          "bboxes": [
+            [
+              664.57,
+              1063.63,
+              103.3,
+              266.15
+            ],
+            [
+              753.04,
+              768.87,
+              92.48,
+              230.41
+            ],
+            [
+              765.42,
+              614.4,
+              72.67,
+              173.92
+            ],
+            [
+              731.32,
+              520.25,
+              58.18,
+              143.91
+            ],
+            [
+              679.36,
+              455.67,
+              48.24,
+              120.56
+            ],
+            [
+              638.17,
+              410.23,
+              37.43,
+              102.32
+            ]
+          ],
+          "start_timestamp": 253.68,
+          "end_timestamp": 274.8,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c01, 12:03:29.640-12:04:04.480) and [end video] (c02, 12:04:13.680-12:04:34.800),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:03:29.640-12:04:04.480)和[终点视频](c02, 12:04:13.680-12:04:34.800)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标向北以0.7m/s移动3.8米，然后向西南以1.1m/s快走5.9米。",
+      "choices": [
+        "A. The target moved southwest at a speed of 0.9 m/s for 7.1 meters, then quickly moved west at a speed of 1.5 m/s for 1.8 meters.",
+        "B. The target moves northwest at a speed of 1.4 m/s for 1.7 meters, then accelerates to 1.4 m/s towards the southeast and continues to move quickly for another 2.5 meters.",
+        "C. The target moved westward at a speed of 1.4 m/s for 6.1 meters, then briefly accelerated to 2.2 m/s and dashed 0.7 meters in the northwest direction.",
+        "D. The target moved north at 0.7 m/s for 3.8 meters, then walked briskly southwest at 1.1 m/s for 5.9 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:03:29.640-12:04:04.480"
+      },
+      "end_point": {
+        "camera_id": "c02",
+        "time": "12:04:13.680-12:04:34.800"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:03:41.280-12:04:06.720"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "ZqCZDkuHhvqYHYM3oYdu9B",
+      "scene": "Track 9",
+      "map_image_path": "./map/MotionState_map_9_ZqCZDkuHhvqYHYM3oYdu9B.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_9_221_247_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5532,
+            5659,
+            5786,
+            5913,
+            6040,
+            6167
+          ],
+          "bboxes": [
+            [
+              914.24,
+              141.14,
+              40.96,
+              110.58
+            ],
+            [
+              787.62,
+              182.29,
+              47.38,
+              124.81
+            ],
+            [
+              782.07,
+              259.4,
+              60.33,
+              144.9
+            ],
+            [
+              808.12,
+              377.98,
+              74.28,
+              177.32
+            ],
+            [
+              997.8,
+              565.2,
+              86.7,
+              219.1
+            ],
+            [
+              1723.17,
+              539.28,
+              103.1,
+              202.43
+            ]
+          ],
+          "start_timestamp": 221.28,
+          "end_timestamp": 246.72,
+          "direction": ""
+        },
+        {
+          "camera_id": "c04",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_9_268_279_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6706,
+            6762,
+            6818,
+            6874,
+            6930
+          ],
+          "bboxes": [
+            [
+              -61.4,
+              328.3,
+              72.67,
+              187.82
+            ],
+            [
+              20.3,
+              402.44,
+              89.13,
+              232.22
+            ],
+            [
+              203.6,
+              516.86,
+              102.6,
+              254.84
+            ],
+            [
+              415.3,
+              659.85,
+              131.1,
+              285.15
+            ],
+            [
+              813.65,
+              838.6,
+              109.25,
+              300.69
+            ]
+          ],
+          "start_timestamp": 268.24,
+          "end_timestamp": 279.4,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c05, 12:03:41.280-12:04:06.720) and [end video] (c04, 12:04:28.240-12:04:39.400),\nand the intermediate camera c02, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c05, 12:03:41.280-12:04:06.720)和[终点视频](c04, 12:04:28.240-12:04:39.400)，\n以及中间经过的摄像头c02，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向东南以1.0m/s速度移动1.7米，然后加速至1.2m/s继续向东南行走1.6米，最后向东以1.3m/s速度行进。",
+      "choices": [
+        "A. The target moves southeast at a speed of 1.0 m/s for 1.7 meters, then accelerates to 1.2 m/s and continues moving southeast for another 1.6 meters, and finally proceeds east at a speed of 1.3 m/s.",
+        "B. The target moves southwest at a speed of 0.9 m/s for 7.1 meters, then quickly moves west at a speed of 1.5 m/s for 1.8 meters.",
+        "C. The target moved eastward at a speed of 1.0 m/s for 33.6 meters, then accelerated to 1.7 m/s and continued heading east.",
+        "D. The target moved westward at a speed of 1.4 m/s for a distance of 6.1 meters, then briefly accelerated to 2.2 m/s and dashed 0.7 meters in the northwest direction."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c05",
+        "time": "12:03:41.280-12:04:06.720"
+      },
+      "end_point": {
+        "camera_id": "c04",
+        "time": "12:04:28.240-12:04:39.400"
+      },
+      "middle_point": {
+        "camera_id": "c02",
+        "time": "12:04:13.680-12:04:34.800"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "JKMShGuKrVVsrEocFyGtiP",
+      "scene": "Track 10",
+      "map_image_path": "./map/MotionState_map_10_JKMShGuKrVVsrEocFyGtiP.png",
+      "camera_images": [
+        {
+          "camera_id": "c04",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c04",
+          "crop_video_path": "./crop_video/indoor_s01_10_202_209_c04.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5055,
+            5089,
+            5123,
+            5157,
+            5191,
+            5225
+          ],
+          "bboxes": [
+            [
+              1474.9,
+              1069.07,
+              130.22,
+              315.92
+            ],
+            [
+              1065.8,
+              933.06,
+              107.02,
+              319.17
+            ],
+            [
+              685.08,
+              801.77,
+              144.35,
+              302.47
+            ],
+            [
+              365.4,
+              695.22,
+              141.9,
+              306.88
+            ],
+            [
+              92.4,
+              597.24,
+              129.1,
+              266.96
+            ],
+            [
+              -69.35,
+              503.55,
+              91.47,
+              252.99
+            ]
+          ],
+          "start_timestamp": 202.2,
+          "end_timestamp": 209.04,
+          "direction": ""
+        },
+        {
+          "camera_id": "c06",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c06",
+          "crop_video_path": "./crop_video/indoor_s01_10_232_232_c06.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5791,
+            5794,
+            5797,
+            5800,
+            5803,
+            5806
+          ],
+          "bboxes": [
+            [
+              -57.93,
+              162.86,
+              64.29,
+              241.84
+            ],
+            [
+              -42.82,
+              161.06,
+              65.23,
+              238.09
+            ],
+            [
+              -19.78,
+              171.26,
+              71.03,
+              232.96
+            ],
+            [
+              -10.98,
+              163.3,
+              82.78,
+              240.08
+            ],
+            [
+              -2.2,
+              151.99,
+              91.63,
+              240.08
+            ],
+            [
+              21.51,
+              142.1,
+              87.84,
+              232.79
+            ]
+          ],
+          "start_timestamp": 231.64,
+          "end_timestamp": 232.28,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c04, 12:03:22.200-12:03:29.040) and [end video] (c06, 12:03:51.640-12:03:52.280),\nand the intermediate camera c02, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c04, 12:03:22.200-12:03:29.040)和[终点视频](c06, 12:03:51.640-12:03:52.280)，\n以及中间经过的摄像头c02，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向西以0.9m/s的速度移动2.4米，然后加速至1.5m/s继续向西移动1.5米，最后以1.2–1.7m/s的速度向西南移动15.9米。",
+      "choices": [
+        "A. The target moved 1.2 meters to the northeast at 1.1 m/s, then accelerated eastward to 1.8 m/s and traveled 2.7 meters, and finally walked 1.3 meters north at 0.9 m/s.",
+        "B. The target continues to move northwest at a speed of 0.87 m/s for a distance of 3.6 meters.",
+        "C. The target moves west at a speed of 0.9 m/s for 2.4 meters, then accelerates to 1.5 m/s and continues west for another 1.5 meters, and finally moves southwest at a speed of 1.2–1.7 m/s for 15.9 meters.",
+        "D. The target first moves north at a speed of 2.3 m/s for 4.4 meters, then continues north at a speed of 1.1 m/s for another 3.0 meters. After that, it turns southwest and quickly moves 11.5 meters at a speed of 2.5 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c04",
+        "time": "12:03:22.200-12:03:29.040"
+      },
+      "end_point": {
+        "camera_id": "c06",
+        "time": "12:03:51.640-12:03:52.280"
+      },
+      "middle_point": {
+        "camera_id": "c02",
+        "time": "12:03:29.280-12:03:44.440"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "AGmTNkQGKk3X6xQykquhEe",
+      "scene": "Track 10",
+      "map_image_path": "./map/MotionState_map_10_AGmTNkQGKk3X6xQykquhEe.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_10_52_62_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1295,
+            1348,
+            1401,
+            1454,
+            1507
+          ],
+          "bboxes": [
+            [
+              1449.7,
+              -198.01,
+              108.82,
+              312.68
+            ],
+            [
+              1092.82,
+              -82.48,
+              131.82,
+              387.58
+            ],
+            [
+              833.68,
+              9.98,
+              164.04,
+              450.78
+            ],
+            [
+              659.26,
+              280.9,
+              182.84,
+              550.6
+            ],
+            [
+              929.2,
+              488.77,
+              208.6,
+              590.1
+            ]
+          ],
+          "start_timestamp": 51.8,
+          "end_timestamp": 62.36,
+          "direction": ""
+        },
+        {
+          "camera_id": "c05",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_10_74_77_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1862,
+            1872,
+            1882,
+            1892,
+            1902,
+            1912
+          ],
+          "bboxes": [
+            [
+              315.29,
+              1066.28,
+              116.81,
+              288.71
+            ],
+            [
+              211.17,
+              1047.99,
+              130.43,
+              288.71
+            ],
+            [
+              106.63,
+              995.94,
+              124.57,
+              288.71
+            ],
+            [
+              1.67,
+              991.62,
+              124.57,
+              288.72
+            ],
+            [
+              -77.72,
+              1015.21,
+              137.47,
+              288.71
+            ],
+            [
+              -122.61,
+              986.93,
+              137.48,
+              288.72
+            ]
+          ],
+          "start_timestamp": 74.48,
+          "end_timestamp": 76.6,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c08, 12:00:51.800-12:01:02.360) and [end video] (c05, 12:01:14.480-12:01:16.600),\nand the intermediate camera c01, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:00:51.800-12:01:02.360)和[终点视频](c05, 12:01:14.480-12:01:16.600)，\n以及中间经过的摄像头c01，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向东北以1.1m/s移动1.2米，然后向东加速至1.8m/s走了2.7米，最后向北以0.9m/s行走1.3米。",
+      "choices": [
+        "A. The target moves east at a speed of 2.1 m/s for a distance of 2.9 meters.",
+        "B. The target moves south at a speed of 2.5 m/s for 6.7 meters, then walks southwest at a speed of 0.8 m/s for 1.1 meters.",
+        "C. The target moved northeast at 1.1 m/s for 1.2 meters, then accelerated eastward to 1.8 m/s and traveled 2.7 meters, and finally walked north at 0.9 m/s for 1.3 meters.",
+        "D. The target continued moving southwest at an average speed of 4.69 m/s, covering a total distance of 14.99 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:00:51.800-12:01:02.360"
+      },
+      "end_point": {
+        "camera_id": "c05",
+        "time": "12:01:14.480-12:01:16.600"
+      },
+      "middle_point": {
+        "camera_id": "c01",
+        "time": "12:01:02.840-12:01:15.600"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "LRVuCesrbor2z32U5e5xsT",
+      "scene": "Track 11",
+      "map_image_path": "./map/MotionState_map_11_LRVuCesrbor2z32U5e5xsT.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_11_135_139_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3364,
+            3387,
+            3410,
+            3433,
+            3456,
+            3479
+          ],
+          "bboxes": [
+            [
+              1064.25,
+              31.9,
+              212.82,
+              517.7
+            ],
+            [
+              941.0,
+              35.66,
+              182.45,
+              586.94
+            ],
+            [
+              825.77,
+              89.85,
+              209.17,
+              690.42
+            ],
+            [
+              904.7,
+              192.75,
+              272.8,
+              792.45
+            ],
+            [
+              1216.06,
+              382.71,
+              377.44,
+              856.38
+            ],
+            [
+              1814.8,
+              714.41,
+              337.4,
+              842.63
+            ]
+          ],
+          "start_timestamp": 134.56,
+          "end_timestamp": 139.24,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_11_146_152_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3646,
+            3678,
+            3710,
+            3742,
+            3774,
+            3806
+          ],
+          "bboxes": [
+            [
+              1906.5,
+              218.79,
+              135.51,
+              347.56
+            ],
+            [
+              1714.52,
+              221.32,
+              116.04,
+              306.62
+            ],
+            [
+              1683.72,
+              192.69,
+              111.82,
+              283.03
+            ],
+            [
+              1732.32,
+              179.87,
+              105.63,
+              259.53
+            ],
+            [
+              1823.19,
+              170.96,
+              89.78,
+              240.13
+            ],
+            [
+              1912.64,
+              165.49,
+              89.79,
+              239.29
+            ]
+          ],
+          "start_timestamp": 145.84,
+          "end_timestamp": 152.32,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c12, 12:02:14.560-12:02:19.240) and [end video] (c16, 12:02:25.840-12:02:32.320),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:02:14.560-12:02:19.240)和[终点视频](c16, 12:02:25.840-12:02:32.320)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标向东北以1.6m/s的速度移动4.4米，然后向东以1.5m/s的速度移动1.8米，最后再次向东北以1.0m/s的速度移动1.6米。",
+      "choices": [
+        "A. The target quickly moves 6.1 meters to the southwest at a speed of 3.9 m/s, then gradually accelerates westward to a speed of 2.7 m/s, and finally decelerates while moving northwest at a speed of 0.8 m/s.",
+        "B. The target moves northeast at a speed of 1.6 m/s for 4.4 meters, then moves east at a speed of 1.5 m/s for 1.8 meters, and finally moves northeast again at a speed of 1.0 m/s for 1.6 meters.",
+        "C. The target moved south for 2.1 meters at a speed of 1.6 m/s, then continued south for another 1.1 meters at a speed of 1.1 m/s, and subsequently turned southwest, moving 1.2 meters at a speed of 1.0 m/s.",
+        "D. The target moves south at a speed of 1.7 m/s for a distance of 1.9 meters, and then moves southeast at a speed of 1.0 m/s for a distance of 0.6 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:02:14.560-12:02:19.240"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:02:25.840-12:02:32.320"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:02:23.360-12:02:30.840"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "acscYPWZghFWXE9RsYEbN2",
+      "scene": "Track 11",
+      "map_image_path": "./map/MotionState_map_11_acscYPWZghFWXE9RsYEbN2.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_11_222_228_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5560,
+            5586,
+            5612,
+            5638,
+            5664,
+            5690
+          ],
+          "bboxes": [
+            [
+              1887.8,
+              424.5,
+              228.8,
+              535.78
+            ],
+            [
+              1453.1,
+              388.5,
+              229.7,
+              525.0
+            ],
+            [
+              1082.2,
+              357.4,
+              255.4,
+              471.6
+            ],
+            [
+              784.4,
+              330.0,
+              205.5,
+              432.0
+            ],
+            [
+              519.8,
+              311.1,
+              157.9,
+              391.6
+            ],
+            [
+              266.6,
+              303.2,
+              150.8,
+              366.5
+            ]
+          ],
+          "start_timestamp": 222.4,
+          "end_timestamp": 227.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_11_249_260_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6216,
+            6271,
+            6326,
+            6381,
+            6436,
+            6491
+          ],
+          "bboxes": [
+            [
+              1007.9,
+              1076.7,
+              384.77,
+              605.22
+            ],
+            [
+              1423.14,
+              704.22,
+              383.33,
+              685.19
+            ],
+            [
+              1391.96,
+              504.52,
+              271.04,
+              607.68
+            ],
+            [
+              792.31,
+              131.35,
+              261.69,
+              466.75
+            ],
+            [
+              252.7,
+              385.7,
+              240.06,
+              514.95
+            ],
+            [
+              -106.54,
+              992.09,
+              307.7,
+              425.9
+            ]
+          ],
+          "start_timestamp": 248.64,
+          "end_timestamp": 259.72,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c09, 12:03:42.400-12:03:47.640) and [end video] (c03, 12:04:08.640-12:04:19.720),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:03:42.400-12:03:47.640)和[终点视频](c03, 12:04:08.640-12:04:19.720)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向西以0.8m/s移动0.9米，然后继续向西以1.0m/s走了1.1米，接着向北以1.2m/s移动2.9米，最后向西北以2.2m/s突进0.8米。",
+      "choices": [
+        "A. The target first moves west at a speed of 0.8 m/s for 12 meters, then accelerates to 2.3 m/s and quickly moves west for another 1.8 meters, and finally continues moving in the northwest direction.",
+        "B. The target moved northeast at 1.0 m/s for 1.0 meter, then continued northeast at 1.2 m/s for 1.5 meters, and then moved west at 1.3 m/s for 1.4 meters.",
+        "C. The target moved west for 0.9 meters at a speed of 0.8 m/s, then continued west for 1.1 meters at 1.0 m/s, followed by moving north for 2.9 meters at 1.2 m/s, and finally dashed northwest for 0.8 meters at 2.2 m/s.",
+        "D. The target moves 1.6 meters to the northeast at a speed of 1.0 m/s, then quickly moves 1.7 meters to the east at 1.5 m/s, and then moves 2.0 meters to the southeast at 1.6 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:03:42.400-12:03:47.640"
+      },
+      "end_point": {
+        "camera_id": "c03",
+        "time": "12:04:08.640-12:04:19.720"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:03:50.160-12:03:54.760"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "4G7WB7gXX2QZDBnPWZZ44y",
+      "scene": "Track 11",
+      "map_image_path": "./map/MotionState_map_11_4G7WB7gXX2QZDBnPWZZ44y.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_11_263_273_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6565,
+            6614,
+            6663,
+            6712,
+            6761,
+            6810
+          ],
+          "bboxes": [
+            [
+              1456.24,
+              -217.62,
+              125.16,
+              323.42
+            ],
+            [
+              1210.5,
+              -115.14,
+              147.7,
+              357.64
+            ],
+            [
+              895.44,
+              -75.3,
+              156.9,
+              462.32
+            ],
+            [
+              701.2,
+              102.78,
+              155.22,
+              479.9
+            ],
+            [
+              468.14,
+              333.29,
+              201.32,
+              563.45
+            ],
+            [
+              -178.56,
+              651.87,
+              280.16,
+              603.8
+            ]
+          ],
+          "start_timestamp": 262.6,
+          "end_timestamp": 272.52,
+          "direction": ""
+        },
+        {
+          "camera_id": "c02",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_11_293_294_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            7316,
+            7325,
+            7334,
+            7343,
+            7352,
+            7361
+          ],
+          "bboxes": [
+            [
+              1498.61,
+              1072.68,
+              83.06,
+              211.7
+            ],
+            [
+              1438.69,
+              1035.55,
+              83.06,
+              211.7
+            ],
+            [
+              1388.03,
+              996.59,
+              88.99,
+              211.69
+            ],
+            [
+              1320.66,
+              961.7,
+              98.26,
+              226.92
+            ],
+            [
+              1277.63,
+              932.58,
+              94.31,
+              229.12
+            ],
+            [
+              1225.7,
+              901.08,
+              100.67,
+              232.12
+            ]
+          ],
+          "start_timestamp": 292.64,
+          "end_timestamp": 294.44,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c08, 12:04:22.600-12:04:32.520) and [end video] (c02, 12:04:52.640-12:04:54.440),\nand the intermediate camera c07, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c08, 12:04:22.600-12:04:32.520)和[终点视频](c02, 12:04:52.640-12:04:54.440)，\n以及中间经过的摄像头c07，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标向东南以0.7m/s移动6.05米，随后加速至1.2m/s并持续1.2秒。",
+      "choices": [
+        "A. The target moved northeast at 1.0 m/s for 1.0 meter, then continued northeast at 1.2 m/s for 1.5 meters, and subsequently moved west at 1.3 m/s for 3.7 meters.",
+        "B. The target moved southeast at 0.7 m/s for 6.05 meters, then accelerated to 1.2 m/s and maintained this speed for 1.2 seconds.",
+        "C. The target moves northeast at a speed of 1.6 m/s for 4.4 meters, then moves east at a speed of 1.5 m/s for 1.8 meters, and finally moves northeast again at a speed of 1.0 m/s for 1.6 meters.",
+        "D. The target moves 1.6 meters to the northeast at a speed of 1.0 m/s, then quickly moves 1.7 meters to the east at a speed of 1.5 m/s, and then moves 2.0 meters to the southeast at a speed of 1.6 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c08",
+        "time": "12:04:22.600-12:04:32.520"
+      },
+      "end_point": {
+        "camera_id": "c02",
+        "time": "12:04:52.640-12:04:54.440"
+      },
+      "middle_point": {
+        "camera_id": "c07",
+        "time": "12:04:32.920-12:04:38.600"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "FFoT5sWD3KvWn39cKLMajM",
+      "scene": "Track 15",
+      "map_image_path": "./map/MotionState_map_15_FFoT5sWD3KvWn39cKLMajM.png",
+      "camera_images": [
+        {
+          "camera_id": "c06",
+          "object_id": 15,
+          "video_path": "./raw_video/indoor_s01_c06",
+          "crop_video_path": "./crop_video/indoor_s01_15_35_36_c06.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            863,
+            868,
+            873,
+            878,
+            883,
+            888
+          ],
+          "bboxes": [
+            [
+              34.06,
+              203.43,
+              65.99,
+              210.17
+            ],
+            [
+              12.28,
+              211.26,
+              71.01,
+              238.1
+            ],
+            [
+              -6.71,
+              220.77,
+              79.91,
+              246.43
+            ],
+            [
+              -17.88,
+              220.77,
+              73.8,
+              248.63
+            ],
+            [
+              -31.29,
+              239.76,
+              73.8,
+              241.94
+            ],
+            [
+              -53.63,
+              244.8,
+              62.63,
+              230.18
+            ]
+          ],
+          "start_timestamp": 34.52,
+          "end_timestamp": 35.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 15,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_15_84_116_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2104,
+            2261,
+            2418,
+            2575,
+            2732,
+            2889
+          ],
+          "bboxes": [
+            [
+              767.94,
+              263.66,
+              21.1,
+              61.9
+            ],
+            [
+              1074.25,
+              299.18,
+              46.4,
+              114.8
+            ],
+            [
+              1083.71,
+              421.16,
+              67.31,
+              156.79
+            ],
+            [
+              1143.32,
+              576.68,
+              82.28,
+              223.72
+            ],
+            [
+              1283.69,
+              331.5,
+              58.91,
+              146.08
+            ],
+            [
+              1437.18,
+              238.72,
+              25.73,
+              112.19
+            ]
+          ],
+          "start_timestamp": 84.16,
+          "end_timestamp": 115.6,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c06, 12:00:34.520-12:00:35.560) and [end video] (c01, 12:01:24.160-12:01:55.600),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c06, 12:00:34.520-12:00:35.560)和[终点视频](c01, 12:01:24.160-12:01:55.600)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标先向北以1.0–1.7m/s速度移动，随后转向东北以1.3–1.5m/s速度行进，最后向东北以1.2m/s速度完成最后1.9米移动。",
+      "choices": [
+        "A. The target is moving northeast at a speed of 1.6 meters per second for 0.9m.",
+        "B. The target first moved north at a speed of 1.0–1.7 m/s, then turned northeast and proceeded at a speed of 1.3–1.5 m/s, and finally completed the last 1.9 meters moving northeast at a speed of 1.2 m/s.",
+        "C. The target moves west at 1.0 m/s for 1.1 meters, then turns northwest and travels 1.6 meters at 1.4 m/s, and finally accelerates eastward to 1.3 m/s and moves 1.9 meters.",
+        "D. The target moves northeast at a speed of 3.8 m/s for 4.6 meters, then moves east at a speed of 2.7 m/s for 2.9 meters, and finally continues east at a speed of 1.7 m/s for 2.2 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c06",
+        "time": "12:00:34.520-12:00:35.560"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:01:24.160-12:01:55.600"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:01:23.200-12:01:56.480"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "95nqyPKpSdnnKLNXkwmX5J",
+      "scene": "Track 16",
+      "map_image_path": "./map/MotionState_map_16_95nqyPKpSdnnKLNXkwmX5J.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            868,
+            912,
+            956,
+            1000,
+            1044
+          ],
+          "bboxes": [
+            [
+              1905.1,
+              342.4,
+              190.1,
+              411.9
+            ],
+            [
+              1344.3,
+              316.3,
+              145.9,
+              369.8
+            ],
+            [
+              1004.9,
+              273.4,
+              87.8,
+              311.1
+            ],
+            [
+              675.9,
+              248.1,
+              75.0,
+              272.4
+            ],
+            [
+              431.2,
+              231.6,
+              80.5,
+              208.5
+            ],
+            [
+              304.0,
+              224.5,
+              72.7,
+              192.3
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 41.8,
+          "direction": ""
+        },
+        {
+          "camera_id": "c03",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_16_108_121_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2711,
+            2774,
+            2837,
+            2900,
+            2963
+          ],
+          "bboxes": [
+            [
+              1184.18,
+              1057.49,
+              399.82,
+              684.51
+            ],
+            [
+              1471.62,
+              666.3,
+              309.39,
+              617.67
+            ],
+            [
+              1249.92,
+              159.47,
+              162.34,
+              482.03
+            ],
+            [
+              528.64,
+              82.51,
+              164.58,
+              469.79
+            ],
+            [
+              265.2,
+              267.08,
+              217.9,
+              474.24
+            ]
+          ],
+          "start_timestamp": 108.44,
+          "end_timestamp": 121.0,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c09, 12:00:32.960-12:00:41.800) and [end video] (c03, 12:01:48.440-12:02:01.000),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:00:32.960-12:00:41.800)和[终点视频](c03, 12:01:48.440-12:02:01.000)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标向西南以1.4m/s速度移动2.0米，然后向南以1.3m/s速度走了1.4米。",
+      "choices": [
+        "A. The target moved south at a speed of 2.0 m/s for 2.3 meters, then continued heading south at a speed of 1.0–1.2 m/s for 6.2 meters, and then accelerated to 1.4 m/s to continue moving south for another 1.9 meters.",
+        "B. The target moved southeast at a speed of 1.8 m/s for 6.8 meters, and then walked east at a speed of 1.1 m/s for 4.4 meters.",
+        "C. The target moved east for 2.0 meters at a speed of 1.8 m/s, then continued east for 2.7 meters at 1.9 m/s. Next, it moved southeast for 5.2 meters at a high speed of 3.6 m/s, followed by moving south for 3.6 meters at 3.1 m/s. It then moved west for 2.4 meters at 2.4 m/s, and finally moved west again for 4.6 meters at a high speed of 4.0 m/s.",
+        "D. The target moved southwest at a speed of 1.4 m/s for a distance of 2.0 meters, and then moved south at a speed of 1.3 m/s for 1.4 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:00:32.960-12:00:41.800"
+      },
+      "end_point": {
+        "camera_id": "c03",
+        "time": "12:01:48.440-12:02:01.000"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:01:33.520-12:01:37.760"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "AURohsy6BnLMDw9ainAeQV",
+      "scene": "Track 16",
+      "map_image_path": "./map/MotionState_map_16_AURohsy6BnLMDw9ainAeQV.png",
+      "camera_images": [
+        {
+          "camera_id": "c16",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            15,
+            70,
+            125,
+            180,
+            235,
+            290
+          ],
+          "bboxes": [
+            [
+              1734.63,
+              88.2,
+              34.13,
+              93.16
+            ],
+            [
+              1754.62,
+              95.4,
+              35.11,
+              99.07
+            ],
+            [
+              1756.57,
+              100.5,
+              30.01,
+              101.7
+            ],
+            [
+              1775.45,
+              107.27,
+              39.31,
+              118.03
+            ],
+            [
+              1831.87,
+              119.33,
+              48.53,
+              128.46
+            ],
+            [
+              1890.62,
+              130.57,
+              50.62,
+              158.66
+            ]
+          ],
+          "start_timestamp": 0.6,
+          "end_timestamp": 11.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_16_94_98_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2338,
+            2359,
+            2380,
+            2401,
+            2422,
+            2443
+          ],
+          "bboxes": [
+            [
+              1899.88,
+              589.76,
+              303.32,
+              711.64
+            ],
+            [
+              1398.35,
+              370.19,
+              273.75,
+              756.1
+            ],
+            [
+              1078.69,
+              219.33,
+              240.78,
+              777.57
+            ],
+            [
+              887.5,
+              115.99,
+              208.7,
+              644.71
+            ],
+            [
+              930.38,
+              51.24,
+              199.67,
+              562.81
+            ],
+            [
+              1078.1,
+              50.79,
+              208.06,
+              539.89
+            ]
+          ],
+          "start_timestamp": 93.52,
+          "end_timestamp": 97.76,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c16, 12:00:00.600-12:00:11.680) and [end video] (c12, 12:01:33.520-12:01:37.760),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c16, 12:00:00.600-12:00:11.680)和[终点视频](c12, 12:01:33.520-12:01:37.760)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标持续向西以平均速度2.15m/s移动了19.02米。",
+      "choices": [
+        "A. The target moved south at a speed of 2.0 m/s for 2.3 meters, then continued south at a speed of 1.0–1.2 m/s for 6.2 meters, and then accelerated to 1.4 m/s to continue moving south for another 1.9 meters.",
+        "B. The target continued moving westward for 19.02 meters at an average speed of 2.15 m/s.",
+        "C. The target moved west for 4.2 meters at a speed of 0.5 m/s, then turned southeast and traveled 1.0 meter at a speed of 1.0 m/s, and finally moved east for 2.2 meters at a speed of 0.9 m/s.",
+        "D. The target moved north at a speed of 1.6 m/s for 8.52 meters, then walked east at a speed of 1.27 m/s for 15.33 meters, and finally turned northeast and walked 0.8 meters at a speed of 0.8 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c16",
+        "time": "12:00:00.600-12:00:11.680"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:01:33.520-12:01:37.760"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:00:32.960-12:00:41.800"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "ALjJUQzSfaiym8xmeUTsrd",
+      "scene": "Track 18",
+      "map_image_path": "./map/MotionState_map_18_ALjJUQzSfaiym8xmeUTsrd.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_18_116_122_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2892,
+            2923,
+            2954,
+            2985,
+            3016,
+            3047
+          ],
+          "bboxes": [
+            [
+              305.57,
+              -12.67,
+              150.45,
+              364.94
+            ],
+            [
+              71.4,
+              -22.18,
+              174.29,
+              509.98
+            ],
+            [
+              105.87,
+              36.6,
+              229.88,
+              613.05
+            ],
+            [
+              302.17,
+              157.6,
+              332.18,
+              768.85
+            ],
+            [
+              756.51,
+              401.42,
+              314.59,
+              875.66
+            ],
+            [
+              1900.74,
+              908.47,
+              347.03,
+              888.76
+            ]
+          ],
+          "start_timestamp": 115.68,
+          "end_timestamp": 121.88,
+          "direction": ""
+        },
+        {
+          "camera_id": "c16",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c16",
+          "crop_video_path": "./crop_video/indoor_s01_18_129_173_c16.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3216,
+            3435,
+            3654,
+            3873,
+            4092,
+            4311
+          ],
+          "bboxes": [
+            [
+              1912.22,
+              212.28,
+              97.73,
+              264.56
+            ],
+            [
+              1407.25,
+              116.94,
+              52.85,
+              155.86
+            ],
+            [
+              1549.74,
+              113.47,
+              48.41,
+              150.63
+            ],
+            [
+              1549.95,
+              114.21,
+              48.2,
+              150.84
+            ],
+            [
+              1538.08,
+              114.99,
+              56.01,
+              150.59
+            ],
+            [
+              1405.05,
+              84.87,
+              36.14,
+              105.73
+            ]
+          ],
+          "start_timestamp": 128.64,
+          "end_timestamp": 172.52,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c12, 12:01:55.680-12:02:01.880) and [end video] (c16, 12:02:08.640-12:02:52.520),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c12, 12:01:55.680-12:02:01.880)和[终点视频](c16, 12:02:08.640-12:02:52.520)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标持续向东以1.4m/s移动11.09米。",
+      "choices": [
+        "A. The target moves 2.3 meters southwest at a speed of 1.7 m/s, then remains stationary for 14.2 seconds.",
+        "B. The target moved south at a speed of 1.0 m/s for 1.2 meters, then accelerated westward to 1.4 m/s and traveled 1.8 meters, and finally continued west at a speed of 1.2 m/s for 1.2 meters.",
+        "C. The target moves northeast at a speed of 1.3 m/s for 2.3 meters, then slows down to 1.0 m/s and continues moving northeast for another 0.8 meters.",
+        "D. The target continued moving east at 1.4 m/s for 11.09 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c12",
+        "time": "12:01:55.680-12:02:01.880"
+      },
+      "end_point": {
+        "camera_id": "c16",
+        "time": "12:02:08.640-12:02:52.520"
+      },
+      "middle_point": {
+        "camera_id": "c09",
+        "time": "12:02:05.280-12:02:11.440"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "j8hpqS5cazDMRz4NYznXUT",
+      "scene": "Track 18",
+      "map_image_path": "./map/MotionState_map_18_j8hpqS5cazDMRz4NYznXUT.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_18_30_30_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            744,
+            745,
+            746,
+            747,
+            748,
+            749,
+            750,
+            751,
+            752
+          ],
+          "bboxes": [
+            [
+              110.49,
+              1052.54,
+              369.54,
+              528.47
+            ],
+            [
+              82.61,
+              1038.6,
+              369.54,
+              528.47
+            ],
+            [
+              9.1,
+              1019.59,
+              369.54,
+              528.47
+            ],
+            [
+              -17.52,
+              1010.72,
+              369.55,
+              528.47
+            ],
+            [
+              -51.73,
+              1004.39,
+              369.54,
+              528.46
+            ],
+            [
+              -103.7,
+              999.32,
+              369.54,
+              528.46
+            ],
+            [
+              -158.19,
+              1004.39,
+              369.54,
+              528.46
+            ],
+            [
+              -213.96,
+              998.05,
+              369.54,
+              528.46
+            ],
+            [
+              -286.2,
+              1011.99,
+              369.54,
+              528.46
+            ]
+          ],
+          "start_timestamp": 29.76,
+          "end_timestamp": 30.08,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_18_44_48_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1100,
+            1118,
+            1136,
+            1154,
+            1172,
+            1190
+          ],
+          "bboxes": [
+            [
+              359.15,
+              141.9,
+              95.45,
+              239.76
+            ],
+            [
+              315.63,
+              149.41,
+              74.4,
+              249.54
+            ],
+            [
+              202.34,
+              147.57,
+              89.49,
+              245.62
+            ],
+            [
+              81.64,
+              145.7,
+              101.74,
+              234.7
+            ],
+            [
+              13.87,
+              145.82,
+              98.6,
+              229.87
+            ],
+            [
+              -49.9,
+              139.04,
+              89.16,
+              220.22
+            ]
+          ],
+          "start_timestamp": 44.0,
+          "end_timestamp": 47.64,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c03, 12:00:29.760-12:00:30.080) and [end video] (c13, 12:00:44.000-12:00:47.640),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:00:29.760-12:00:30.080)和[终点视频](c13, 12:00:44.000-12:00:47.640)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "B. 目标向东南以1.0m/s速度移动1.4米，然后向西以0.6m/s速度移动1.2米。",
+      "choices": [
+        "A. The target moved 1.39 meters to the southeast at a speed of 3.3 m/s.",
+        "B. The target moves southeast for 1.4 meters at a speed of 1.0 m/s, and then moves west for 1.2 meters at a speed of 0.6 m/s.",
+        "C. The target moves northwest at 1.1 m/s for 1.1 meters, then continues northwest at 0.4 m/s for 0.4 meters. Next, it turns south and moves 1.3 meters at 1.2 m/s, and finally walks briskly southeast for 3.3 meters at a speed greater than 1.4 m/s.",
+        "D. The target moves northeast at a speed of 1.3 m/s for 2.3 meters, then slows down to 1.0 m/s and continues moving northeast for another 0.8 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:00:29.760-12:00:30.080"
+      },
+      "end_point": {
+        "camera_id": "c13",
+        "time": "12:00:44.000-12:00:47.640"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:00:41.760-12:00:47.240"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "WEjd4TNam8wFiKnZbiT4rP",
+      "scene": "Track 18",
+      "map_image_path": "./map/MotionState_map_18_WEjd4TNam8wFiKnZbiT4rP.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_18_125_131_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3132,
+            3163,
+            3194,
+            3225,
+            3256
+          ],
+          "bboxes": [
+            [
+              300.3,
+              264.0,
+              100.88,
+              308.68
+            ],
+            [
+              522.0,
+              271.8,
+              164.1,
+              323.8
+            ],
+            [
+              885.9,
+              270.7,
+              125.5,
+              349.3
+            ],
+            [
+              1192.8,
+              289.3,
+              188.3,
+              375.1
+            ],
+            [
+              1533.3,
+              303.1,
+              180.7,
+              400.3
+            ]
+          ],
+          "start_timestamp": 125.28,
+          "end_timestamp": 131.44,
+          "direction": ""
+        },
+        {
+          "camera_id": "c14",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_18_139_164_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3485,
+            3608,
+            3731,
+            3854,
+            3977,
+            4100
+          ],
+          "bboxes": [
+            [
+              1257.8,
+              250.5,
+              35.9,
+              126.4
+            ],
+            [
+              1195.5,
+              250.73,
+              47.7,
+              135.02
+            ],
+            [
+              1195.5,
+              250.73,
+              47.7,
+              135.02
+            ],
+            [
+              1195.5,
+              250.73,
+              47.7,
+              135.02
+            ],
+            [
+              1196.95,
+              248.28,
+              45.35,
+              137.32
+            ],
+            [
+              1196.95,
+              248.9,
+              45.35,
+              136.7
+            ]
+          ],
+          "start_timestamp": 139.4,
+          "end_timestamp": 164.12,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c09, 12:02:05.280-12:02:11.440) and [end video] (c14, 12:02:19.400-12:02:44.120),\nand the intermediate camera c16, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:02:05.280-12:02:11.440)和[终点视频](c14, 12:02:19.400-12:02:44.120)，\n以及中间经过的摄像头c16，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向东北方向以约2.3m/s的速度移动了27.2米，然后向东方向静止约24.7秒，最后恢复向东以2.0m/s的速度移动至12:02:52.200。",
+      "choices": [
+        "A. The target moved northeast at approximately 2.3 m/s for 27.2 meters, then remained stationary in the east direction for about 24.7 seconds, and finally resumed moving east at 2.0 m/s until 12:02:52.200.",
+        "B. The target moves southeast for 1.4 meters at 0.9 m/s, then moves west for 4.5 meters at 1.0 m/s, followed by moving northwest for 2.2 meters at 2.0 m/s, and finally continues west for 2.5 meters at 1.7 m/s.",
+        "C. The target moves northwest at 1.1 m/s for 1.1 meters, then continues northwest at 0.4 m/s for 0.4 meters, and then turns south to move 1.3 meters at 1.2 m/s.",
+        "D. The target moves southeast at a speed of 2.1 m/s for a distance of 3.4 meters, then turns south and moves 0.1 meters at a speed of 2.0 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:02:05.280-12:02:11.440"
+      },
+      "end_point": {
+        "camera_id": "c14",
+        "time": "12:02:19.400-12:02:44.120"
+      },
+      "middle_point": {
+        "camera_id": "c16",
+        "time": "12:02:08.640-12:02:52.520"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "4Q8ZZAdpeyHZtUTWo3hmhe",
+      "scene": "Track 19",
+      "map_image_path": "./map/MotionState_map_19_4Q8ZZAdpeyHZtUTWo3hmhe.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_19_171_196_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4263,
+            4388,
+            4513,
+            4638,
+            4763,
+            4888
+          ],
+          "bboxes": [
+            [
+              1397.0,
+              221.9,
+              22.38,
+              91.88
+            ],
+            [
+              1311.36,
+              267.78,
+              30.84,
+              109.74
+            ],
+            [
+              1320.05,
+              353.75,
+              42.19,
+              138.41
+            ],
+            [
+              1458.58,
+              508.58,
+              58.7,
+              181.13
+            ],
+            [
+              1554.56,
+              812.73,
+              82.02,
+              261.5
+            ],
+            [
+              1572.18,
+              1059.42,
+              97.36,
+              261.5
+            ]
+          ],
+          "start_timestamp": 170.52,
+          "end_timestamp": 195.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c11",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_19_220_230_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5490,
+            5542,
+            5594,
+            5646,
+            5698,
+            5750
+          ],
+          "bboxes": [
+            [
+              1809.9,
+              899.1,
+              244.0,
+              553.0
+            ],
+            [
+              1429.8,
+              350.5,
+              277.0,
+              565.4
+            ],
+            [
+              622.5,
+              400.4,
+              250.8,
+              605.2
+            ],
+            [
+              430.1,
+              563.2,
+              271.4,
+              691.8
+            ],
+            [
+              468.5,
+              739.5,
+              501.6,
+              1118.2
+            ],
+            [
+              1750.2,
+              706.7,
+              571.2,
+              956.8
+            ]
+          ],
+          "start_timestamp": 219.6,
+          "end_timestamp": 230.08,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c01, 12:02:50.520-12:03:15.640) and [end video] (c11, 12:03:39.600-12:03:50.080),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c01, 12:02:50.520-12:03:15.640)和[终点视频](c11, 12:03:39.600-12:03:50.080)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向东北以2.9m/s的速度快速移动5.2米，然后减速至1.9m/s继续向东北移动3.0米，最后进一步减速至1.7m/s向东北移动2.0米。",
+      "choices": [
+        "A. The target moves rapidly toward the northeast at a speed of 2.9 m/s for a distance of 5.2 meters, then slows down to 1.9 m/s and continues moving northeast for another 3.0 meters, and finally further reduces its speed to 1.7 m/s, moving northeast for an additional 2.0 meters.",
+        "B. The target moved southeast at a speed of 1.3 m/s for 2.2 meters, then walked quickly eastward at a speed of 1.2–1.5 m/s for 24.0 meters, and finally moved slowly eastward at a speed of 0.5–1.1 m/s for 1.9 meters.",
+        "C. The target moves north at 1.9 m/s for 3.0 meters, then walks northwest at 1.2 m/s for 1.5 meters, and then continues southeast at 0.7 m/s for 2.8 meters.",
+        "D. The target first moves south at a speed of 1.8 m/s for a distance of 2.2 meters, then walks southwest at a speed of 1.1 m/s for 1.3 meters, and finally proceeds west at a speed of 1.0 m/s for 1.5 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c01",
+        "time": "12:02:50.520-12:03:15.640"
+      },
+      "end_point": {
+        "camera_id": "c11",
+        "time": "12:03:39.600-12:03:50.080"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:02:51.640-12:03:23.080"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "F3S7JW3823ii5XAaX6rX5N",
+      "scene": "Track 19",
+      "map_image_path": "./map/MotionState_map_19_F3S7JW3823ii5XAaX6rX5N.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_19_272_276_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6799,
+            6817,
+            6835,
+            6853,
+            6871,
+            6889
+          ],
+          "bboxes": [
+            [
+              1904.29,
+              460.2,
+              165.11,
+              470.0
+            ],
+            [
+              1663.6,
+              430.9,
+              217.3,
+              519.2
+            ],
+            [
+              1488.7,
+              471.1,
+              206.6,
+              607.5
+            ],
+            [
+              1265.8,
+              578.4,
+              248.2,
+              729.8
+            ],
+            [
+              937.0,
+              749.0,
+              344.7,
+              834.4
+            ],
+            [
+              598.7,
+              1001.0,
+              419.4,
+              924.6
+            ]
+          ],
+          "start_timestamp": 271.96,
+          "end_timestamp": 275.64,
+          "direction": ""
+        },
+        {
+          "camera_id": "c12",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_19_289_290_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            7225,
+            7230,
+            7235,
+            7240,
+            7245,
+            7250
+          ],
+          "bboxes": [
+            [
+              -71.41,
+              -49.09,
+              204.12,
+              455.7
+            ],
+            [
+              -4.16,
+              -45.14,
+              188.03,
+              451.74
+            ],
+            [
+              79.55,
+              -51.94,
+              198.39,
+              454.78
+            ],
+            [
+              122.2,
+              -63.33,
+              220.0,
+              449.39
+            ],
+            [
+              230.98,
+              -66.66,
+              187.48,
+              434.38
+            ],
+            [
+              291.74,
+              -60.96,
+              187.48,
+              434.38
+            ]
+          ],
+          "start_timestamp": 289.0,
+          "end_timestamp": 290.08,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c09, 12:04:31.960-12:04:35.640) and [end video] (c12, 12:04:49.000-12:04:50.080),\nand the intermediate camera c13, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c09, 12:04:31.960-12:04:35.640)和[终点视频](c12, 12:04:49.000-12:04:50.080)，\n以及中间经过的摄像头c13，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "C. 目标向西移动7.0米，随后继续向西移动3.5米。",
+      "choices": [
+        "A. The target first moved northwest at a speed of 1.3 m/s for approximately 3.3 meters, then traveled west at a speed of 2.0 m/s for about 8.0 meters, and finally moved southwest at a speed of 1.7 m/s for approximately 3.0 meters.",
+        "B. The target moves east at 1.5 m/s for 2 meters, then moves southwest at 3.3 m/s for 21.15 meters.",
+        "C. The target moved 7.0 meters to the west, and then continued to move another 3.5 meters to the west.",
+        "D. The target moves east at 2.1 m/s for 3.2 meters, then moves northeast at 1.4 m/s for 3.6 meters, followed by moving southwest at 2.5 m/s for 6.2 meters, and finally moves south at 1.9 m/s for 2.2 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c09",
+        "time": "12:04:31.960-12:04:35.640"
+      },
+      "end_point": {
+        "camera_id": "c12",
+        "time": "12:04:49.000-12:04:50.080"
+      },
+      "middle_point": {
+        "camera_id": "c13",
+        "time": "12:04:41.360-12:04:50.200"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "RrLKBjsQ3Guv3j2rxmhWHr",
+      "scene": "Track 20",
+      "map_image_path": "./map/MotionState_map_20_RrLKBjsQ3Guv3j2rxmhWHr.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_20_5_10_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            122,
+            145,
+            168,
+            191,
+            214,
+            237
+          ],
+          "bboxes": [
+            [
+              -206.5,
+              1064.2,
+              229.3,
+              736.0
+            ],
+            [
+              533.3,
+              845.32,
+              180.81,
+              738.48
+            ],
+            [
+              978.8,
+              715.15,
+              259.4,
+              718.35
+            ],
+            [
+              1314.32,
+              632.8,
+              252.98,
+              543.14
+            ],
+            [
+              1598.18,
+              580.48,
+              228.52,
+              542.39
+            ],
+            [
+              1848.69,
+              563.86,
+              151.1,
+              466.4
+            ]
+          ],
+          "start_timestamp": 4.88,
+          "end_timestamp": 9.56,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 20,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_20_34_44_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            843,
+            895,
+            947,
+            999,
+            1051,
+            1103
+          ],
+          "bboxes": [
+            [
+              761.43,
+              256.51,
+              17.04,
+              56.34
+            ],
+            [
+              906.55,
+              251.79,
+              23.29,
+              82.21
+            ],
+            [
+              1056.6,
+              247.2,
+              33.8,
+              110.6
+            ],
+            [
+              1190.3,
+              241.1,
+              42.9,
+              107.9
+            ],
+            [
+              1314.55,
+              230.67,
+              33.77,
+              100.06
+            ],
+            [
+              1393.36,
+              217.62,
+              25.65,
+              102.47
+            ]
+          ],
+          "start_timestamp": 33.72,
+          "end_timestamp": 44.16,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c07, 12:00:04.880-12:00:09.560) and [end video] (c01, 12:00:33.720-12:00:44.160),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c07, 12:00:04.880-12:00:09.560)和[终点视频](c01, 12:00:33.720-12:00:44.160)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向北以2.03m/s的速度移动23.57米，然后向西北转向以1.2m/s的速度行走。",
+      "choices": [
+        "A. The target moved north at a speed of 2.03 m/s for 23.57 meters, then turned northwest and proceeded at a speed of 1.2 m/s.",
+        "B. The target moved eastward for 6.5 meters at a speed of 1.52 m/s.",
+        "C. The target moves northeast at 1.7 m/s for 2.9 meters, then moves east at 1.6 m/s for 3.1 meters, and then continues moving east at 1.8 m/s for 6.0 meters.",
+        "D. The target first moves west at a speed of 0.5 m/s for 2.5 meters, then travels north at a speed of 1.1 m/s for 1.3 meters, and finally moves rapidly southeast at a speed of 2.3 m/s for 2.7 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c07",
+        "time": "12:00:04.880-12:00:09.560"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:00:33.720-12:00:44.160"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:00:33.320-12:00:44.920"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "bhiUWW8UTGVZ9Q2KGQiXHn",
+      "scene": "Track 128",
+      "map_image_path": "/home/mnt/xieqinghongbing/data/question_generation/benchmark/grounding_reasoning/media/gr3_motion_map_128_bhiUWW8UTGVZ9Q2KGQiXHn.png",
+      "camera_images": [
+        {
+          "camera_id": "c14",
+          "object_id": 128,
+          "video_path": "./raw_video/indoor_s01_c14",
+          "crop_video_path": "./crop_video/indoor_s01_128_0_32_c14.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            0,
+            158,
+            316,
+            474,
+            632,
+            790
+          ],
+          "bboxes": [
+            [
+              1668.87,
+              372.45,
+              128.18,
+              346.34
+            ],
+            [
+              1725.92,
+              296.42,
+              69.4,
+              215.58
+            ],
+            [
+              1640.6,
+              281.9,
+              75.06,
+              173.54
+            ],
+            [
+              1647.5,
+              281.9,
+              75.02,
+              184.63
+            ],
+            [
+              1639.6,
+              281.76,
+              66.57,
+              164.05
+            ],
+            [
+              1454.38,
+              258.19,
+              48.6,
+              129.94
+            ]
+          ],
+          "start_timestamp": 0.0,
+          "end_timestamp": 31.68,
+          "direction": ""
+        },
+        {
+          "camera_id": "c09",
+          "object_id": 128,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_128_44_47_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1098,
+            1115,
+            1132,
+            1149,
+            1166,
+            1183
+          ],
+          "bboxes": [
+            [
+              1913.2,
+              567.35,
+              193.9,
+              505.65
+            ],
+            [
+              1742.1,
+              512.7,
+              229.4,
+              694.7
+            ],
+            [
+              1604.2,
+              590.1,
+              271.1,
+              801.1
+            ],
+            [
+              1405.2,
+              677.4,
+              319.3,
+              843.1
+            ],
+            [
+              1109.7,
+              834.5,
+              484.3,
+              865.9
+            ],
+            [
+              757.4,
+              1069.1,
+              417.0,
+              783.4
+            ]
+          ],
+          "start_timestamp": 43.92,
+          "end_timestamp": 47.32,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c14, 12:00:00.000-12:00:31.680) and [end video] (c09, 12:00:43.920-12:00:47.320),\nand the intermediate camera c16, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c14, 12:00:00.000-12:00:31.680)和[终点视频](c09, 12:00:43.920-12:00:47.320)，\n以及中间经过的摄像头c16，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "D. 目标向西南以8.2m/s速度移动11.7米，然后向东南以4.6m/s移动5.4米，最后向西南累计移动约16.8米。",
+      "choices": [
+        "A. The target moves 1.4 meters to the northeast at 1.0 m/s, and then continues to move 3.5 meters to the north at 1.7 m/s.",
+        "B. The target moved east at a speed of 1.8 m/s for approximately 6 meters, then turned south and walked about 15.65 meters at a speed of 0.8 m/s.",
+        "C. The target moves southwest for 2.7 meters at a speed of 1.4 m/s, then moves west for 6.1 meters at a speed of 1.4 m/s, and finally moves northwest for 1.5 meters at a speed of 1.3 m/s.",
+        "D. The target moved southwest for 11.7 meters at a speed of 8.2 m/s, then moved southeast for 5.4 meters at a speed of 4.6 m/s, and finally accumulated a total movement of approximately 16.8 meters to the southwest."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c14",
+        "time": "12:00:00.000-12:00:31.680"
+      },
+      "end_point": {
+        "camera_id": "c09",
+        "time": "12:00:43.920-12:00:47.320"
+      },
+      "middle_point": {
+        "camera_id": "c16",
+        "time": "12:00:04.680-12:00:39.760"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "QMVBrotKc3ZjkPhGUEzDCG",
+      "scene": "Track 114",
+      "map_image_path": "/home/mnt/xieqinghongbing/data/question_generation/benchmark/grounding_reasoning/media/gr3_motion_map_114_QMVBrotKc3ZjkPhGUEzDCG.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 114,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_114_164_176_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4107,
+            4165,
+            4223,
+            4281,
+            4339,
+            4397
+          ],
+          "bboxes": [
+            [
+              -132.55,
+              889.84,
+              248.41,
+              426.21
+            ],
+            [
+              203.59,
+              393.07,
+              240.11,
+              601.15
+            ],
+            [
+              948.56,
+              164.64,
+              272.94,
+              555.55
+            ],
+            [
+              1249.34,
+              525.24,
+              322.23,
+              553.72
+            ],
+            [
+              899.02,
+              678.44,
+              479.34,
+              713.8
+            ],
+            [
+              -458.97,
+              713.24,
+              595.67,
+              858.42
+            ]
+          ],
+          "start_timestamp": 164.28,
+          "end_timestamp": 176.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c13",
+          "object_id": 114,
+          "video_path": "./raw_video/indoor_s01_c13",
+          "crop_video_path": "./crop_video/indoor_s01_114_187_294_c13.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4665,
+            5204,
+            5743,
+            6282,
+            6821,
+            7360
+          ],
+          "bboxes": [
+            [
+              329.4,
+              118.52,
+              85.94,
+              257.27
+            ],
+            [
+              272.5,
+              446.8,
+              280.62,
+              401.7
+            ],
+            [
+              272.5,
+              453.92,
+              299.82,
+              394.58
+            ],
+            [
+              272.5,
+              455.2,
+              299.3,
+              393.3
+            ],
+            [
+              272.5,
+              459.1,
+              267.0,
+              389.4
+            ],
+            [
+              271.8,
+              461.9,
+              247.8,
+              386.6
+            ]
+          ],
+          "start_timestamp": 186.6,
+          "end_timestamp": 294.44,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c03, 12:02:44.280-12:02:56.000) and [end video] (c13, 12:03:06.600-12:04:54.440),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c03, 12:02:44.280-12:02:56.000)和[终点视频](c13, 12:03:06.600-12:04:54.440)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标向东南以0.9m/s移动1.1米，然后继续向东南以0.6m/s行进1.6米。",
+      "choices": [
+        "A. The target moves southeast for 1.1 meters at a speed of 0.9 m/s, and then continues southeast for another 1.6 meters at a speed of 0.6 m/s.",
+        "B. The target moves east at a speed of 0.6 m/s for 0.9 meters, then turns northeast and travels 1.7 meters at a speed of 0.9 m/s, and finally turns north and moves quickly for 2.1 meters at a speed of 1.4 m/s.",
+        "C. The target moved southeast for 10.5 meters at an average speed of approximately 1.2 m/s, then remained stationary in the east direction for 95.4 seconds.",
+        "D. The target moved northwest at a speed of 1.3 m/s for a distance of 2.9 meters, then quickly moved southeast at a speed of 2.4 m/s for a distance of 4.2 meters."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c03",
+        "time": "12:02:44.280-12:02:56.000"
+      },
+      "end_point": {
+        "camera_id": "c13",
+        "time": "12:03:06.600-12:04:54.440"
+      },
+      "middle_point": {
+        "camera_id": "c12",
+        "time": "12:03:04.640-12:03:08.600"
+      },
+      "middle_path": null
+    },
+    {
+      "task_id": "MotionState",
+      "case_id": "eS5qJT3yVGdFXnny38mpwk",
+      "scene": "Track 112",
+      "map_image_path": "/home/mnt/xieqinghongbing/data/question_generation/benchmark/grounding_reasoning/media/gr3_motion_map_112_eS5qJT3yVGdFXnny38mpwk.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 112,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_112_80_84_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1994,
+            2015,
+            2036,
+            2057,
+            2078,
+            2099
+          ],
+          "bboxes": [
+            [
+              -194.4,
+              808.78,
+              237.81,
+              832.42
+            ],
+            [
+              459.56,
+              716.35,
+              206.54,
+              796.43
+            ],
+            [
+              949.51,
+              661.73,
+              197.83,
+              753.06
+            ],
+            [
+              1281.29,
+              580.89,
+              224.41,
+              655.09
+            ],
+            [
+              1579.96,
+              521.07,
+              206.84,
+              582.39
+            ],
+            [
+              1826.63,
+              526.61,
+              279.0,
+              528.6
+            ]
+          ],
+          "start_timestamp": 79.76,
+          "end_timestamp": 84.0,
+          "direction": ""
+        },
+        {
+          "camera_id": "c01",
+          "object_id": 112,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_112_92_100_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2310,
+            2346,
+            2382,
+            2418,
+            2454
+          ],
+          "bboxes": [
+            [
+              774.55,
+              249.32,
+              15.95,
+              52.75
+            ],
+            [
+              909.8,
+              249.26,
+              29.3,
+              89.13
+            ],
+            [
+              1047.7,
+              248.32,
+              48.64,
+              118.81
+            ],
+            [
+              1186.8,
+              249.9,
+              60.99,
+              124.36
+            ],
+            [
+              1318.43,
+              253.8,
+              64.37,
+              118.91
+            ]
+          ],
+          "start_timestamp": 92.4,
+          "end_timestamp": 99.56,
+          "direction": ""
+        }
+      ],
+      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
+      "question": "\nBased on the provided [start video] (c07, 12:01:19.760-12:01:24.000) and [end video] (c01, 12:01:32.400-12:01:39.560),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
+      "question_cn": "\n基于提供的[起点视频](c07, 12:01:19.760-12:01:24.000)和[终点视频](c01, 12:01:32.400-12:01:39.560)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
+      "ground_truth": "A. 目标先向东北以约2.1m/s的速度移动了18米，然后向北以0.8m/s的速度走了4.36米。",
+      "choices": [
+        "A. The target first moved northeast at a speed of approximately 2.1 m/s for 18 meters, and then walked north at a speed of 0.8 m/s for 4.36 meters.",
+        "B. The target first moves south at a speed of 1.3 m/s for 1.9 meters, then accelerates to 2.4 m/s heading due south and quickly covers 3.2 meters, and finally maintains a speed of 1.8 m/s for the last 2.7 meters.",
+        "C. The target moves southwest for 2.1 meters at a speed of 1.7 m/s, then turns west and travels 20.94 meters at 1.7 m/s, and finally makes a slight right turn to the southwest and moves 0.3 meters at 1.7 m/s.",
+        "D. The target moves 1.2 meters to the southwest at 1.1 m/s, then continues moving 5.2 meters to the west at 1.3 m/s, and finally moves 1.5 meters to the northwest at 1.1 m/s."
+      ],
+      "target_time": null,
+      "target_location": null,
+      "start_point": {
+        "camera_id": "c07",
+        "time": "12:01:19.760-12:01:24.000"
+      },
+      "end_point": {
+        "camera_id": "c01",
+        "time": "12:01:32.400-12:01:39.560"
+      },
+      "middle_point": {
+        "camera_id": "c05",
+        "time": "12:01:32.080-12:01:42.240"
+      },
+      "middle_path": null
+    }
+  ]
+}

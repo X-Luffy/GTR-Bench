@@ -1,0 +1,2367 @@
+{
+  "cases": [
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "WAAGReEpzGHYNLDT2hmsAn",
+      "scene": "Track 4",
+      "map_image_path": "./map/NextSpotForecasting_map_4_WAAGReEpzGHYNLDT2hmsAn.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_4_76_83_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1911,
+            1941,
+            1971,
+            2001,
+            2031,
+            2061
+          ],
+          "bboxes": [
+            [
+              310.07,
+              274.0,
+              81.53,
+              312.23
+            ],
+            [
+              522.0,
+              293.9,
+              140.1,
+              317.1
+            ],
+            [
+              849.1,
+              292.3,
+              151.7,
+              332.9
+            ],
+            [
+              1175.6,
+              294.8,
+              128.0,
+              333.2
+            ],
+            [
+              1514.3,
+              302.0,
+              163.2,
+              338.7
+            ],
+            [
+              1830.19,
+              315.2,
+              150.31,
+              339.5
+            ]
+          ],
+          "start_timestamp": 76.44,
+          "end_timestamp": 82.56,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c09",
+        "B. c16",
+        "C. c11",
+        "D. c01"
+      ],
+      "correct_cam_name": [
+        "B. c16"
+      ],
+      "correct_time_str": [
+        "12:01:18.440-12:01:46.880"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "TUjrUQGa9x9XpdMyRpxSZ2",
+      "scene": "Track 4",
+      "map_image_path": "./map/NextSpotForecasting_map_4_TUjrUQGa9x9XpdMyRpxSZ2.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_4_21_28_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            536,
+            569,
+            602,
+            635,
+            668,
+            701
+          ],
+          "bboxes": [
+            [
+              1874.83,
+              590.99,
+              219.01,
+              456.55
+            ],
+            [
+              1386.03,
+              542.6,
+              192.97,
+              439.6
+            ],
+            [
+              1048.5,
+              466.6,
+              208.07,
+              395.44
+            ],
+            [
+              981.8,
+              396.9,
+              114.7,
+              334.74
+            ],
+            [
+              880.8,
+              348.8,
+              91.4,
+              289.42
+            ],
+            [
+              725.67,
+              330.5,
+              83.57,
+              251.36
+            ]
+          ],
+          "start_timestamp": 21.44,
+          "end_timestamp": 28.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c05",
+        "B. c06",
+        "C. c02",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08"
+      ],
+      "correct_time_str": [
+        "12:00:26.600-12:00:37.040"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "TTxKP4aUzcRNLXjMwsiCWx",
+      "scene": "Track 4",
+      "map_image_path": "./map/NextSpotForecasting_map_4_TTxKP4aUzcRNLXjMwsiCWx.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_4_21_28_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            536,
+            569,
+            602,
+            635,
+            668,
+            701
+          ],
+          "bboxes": [
+            [
+              1874.83,
+              590.99,
+              219.01,
+              456.55
+            ],
+            [
+              1386.03,
+              542.6,
+              192.97,
+              439.6
+            ],
+            [
+              1048.5,
+              466.6,
+              208.07,
+              395.44
+            ],
+            [
+              981.8,
+              396.9,
+              114.7,
+              334.74
+            ],
+            [
+              880.8,
+              348.8,
+              91.4,
+              289.42
+            ],
+            [
+              725.67,
+              330.5,
+              83.57,
+              251.36
+            ]
+          ],
+          "start_timestamp": 21.44,
+          "end_timestamp": 28.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c05",
+        "B. c02",
+        "C. c06",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08"
+      ],
+      "correct_time_str": [
+        "12:00:26.600-12:00:37.040"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "9misJeWB7Yv5BBan6AencZ",
+      "scene": "Track 5",
+      "map_image_path": "./map/NextSpotForecasting_map_5_9misJeWB7Yv5BBan6AencZ.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_5_84_95_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2108,
+            2159,
+            2210,
+            2261,
+            2312,
+            2363
+          ],
+          "bboxes": [
+            [
+              1453.28,
+              -290.36,
+              148.16,
+              406.61
+            ],
+            [
+              880.64,
+              -58.43,
+              157.56,
+              429.85
+            ],
+            [
+              572.21,
+              110.49,
+              176.19,
+              556.01
+            ],
+            [
+              290.6,
+              491.94,
+              268.26,
+              665.96
+            ],
+            [
+              1070.42,
+              424.2,
+              295.1,
+              616.5
+            ],
+            [
+              1808.9,
+              437.4,
+              285.24,
+              510.95
+            ]
+          ],
+          "start_timestamp": 84.32,
+          "end_timestamp": 94.56,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c02",
+        "B. c04",
+        "C. c06",
+        "D. c01"
+      ],
+      "correct_cam_name": [
+        "D. c01"
+      ],
+      "correct_time_str": [
+        "12:01:35.040-12:02:24.600"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "VUPgEemeP2sVzPoiucmjNd",
+      "scene": "Track 5",
+      "map_image_path": "./map/NextSpotForecasting_map_5_VUPgEemeP2sVzPoiucmjNd.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_5_33_41_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            819,
+            858,
+            897,
+            936,
+            975,
+            1014
+          ],
+          "bboxes": [
+            [
+              1841.53,
+              501.7,
+              202.7,
+              513.5
+            ],
+            [
+              1403.4,
+              468.4,
+              205.87,
+              478.53
+            ],
+            [
+              1346.6,
+              424.8,
+              149.17,
+              403.24
+            ],
+            [
+              1221.5,
+              403.5,
+              169.68,
+              409.36
+            ],
+            [
+              1001.5,
+              343.5,
+              158.02,
+              351.01
+            ],
+            [
+              732.17,
+              299.94,
+              112.94,
+              298.34
+            ]
+          ],
+          "start_timestamp": 32.76,
+          "end_timestamp": 40.6,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c05",
+        "B. c02",
+        "C. c06",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08"
+      ],
+      "correct_time_str": [
+        "12:00:39.280-12:00:47.640"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "HCkAmK2iizLLxfRYQAD7cY",
+      "scene": "Track 5",
+      "map_image_path": "./map/NextSpotForecasting_map_5_HCkAmK2iizLLxfRYQAD7cY.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 5,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_5_163_213_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4064,
+            4318,
+            4572,
+            4826,
+            5080,
+            5334
+          ],
+          "bboxes": [
+            [
+              869.85,
+              219.34,
+              61.83,
+              150.62
+            ],
+            [
+              100.31,
+              314.29,
+              57.9,
+              171.99
+            ],
+            [
+              102.96,
+              319.69,
+              57.9,
+              171.99
+            ],
+            [
+              107.33,
+              322.39,
+              57.9,
+              172.0
+            ],
+            [
+              324.68,
+              316.09,
+              81.61,
+              187.78
+            ],
+            [
+              871.69,
+              1074.93,
+              120.67,
+              335.32
+            ]
+          ],
+          "start_timestamp": 162.56,
+          "end_timestamp": 213.36,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c03",
+        "B. c09",
+        "C. c12",
+        "D. c14"
+      ],
+      "correct_cam_name": [
+        "A. c03"
+      ],
+      "correct_time_str": [
+        "12:03:56.360-12:04:08.800"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "SCXjXGmeqxMDDAFs4dUHdx",
+      "scene": "Track 7",
+      "map_image_path": "./map/NextSpotForecasting_map_7_SCXjXGmeqxMDDAFs4dUHdx.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_7_164_174_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4090,
+            4143,
+            4196,
+            4249,
+            4302,
+            4355
+          ],
+          "bboxes": [
+            [
+              925.18,
+              132.54,
+              26.33,
+              83.08
+            ],
+            [
+              771.07,
+              114.17,
+              46.05,
+              104.71
+            ],
+            [
+              740.5,
+              94.13,
+              39.88,
+              97.89
+            ],
+            [
+              725.4,
+              74.29,
+              34.08,
+              93.75
+            ],
+            [
+              776.02,
+              60.05,
+              30.91,
+              89.64
+            ],
+            [
+              854.39,
+              52.77,
+              26.24,
+              86.45
+            ]
+          ],
+          "start_timestamp": 163.6,
+          "end_timestamp": 174.2,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c16",
+        "B. c09",
+        "C. c11",
+        "D. c13"
+      ],
+      "correct_cam_name": [
+        "C. c11"
+      ],
+      "correct_time_str": [
+        "12:03:13.560-12:03:29.000"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "jdybPsUj5HkeiSL2bjmB4W",
+      "scene": "Track 7",
+      "map_image_path": "./map/NextSpotForecasting_map_7_jdybPsUj5HkeiSL2bjmB4W.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_7_49_70_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1231,
+            1335,
+            1439,
+            1543,
+            1647,
+            1751
+          ],
+          "bboxes": [
+            [
+              1782.0,
+              546.04,
+              75.1,
+              193.09
+            ],
+            [
+              1220.6,
+              508.44,
+              83.9,
+              213.8
+            ],
+            [
+              849.37,
+              390.77,
+              57.63,
+              192.43
+            ],
+            [
+              748.88,
+              356.9,
+              67.92,
+              181.4
+            ],
+            [
+              437.88,
+              497.63,
+              64.22,
+              218.67
+            ],
+            [
+              -11.1,
+              712.77,
+              121.66,
+              278.61
+            ]
+          ],
+          "start_timestamp": 49.24,
+          "end_timestamp": 70.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c01",
+        "B. c02",
+        "C. c04",
+        "D. c06"
+      ],
+      "correct_cam_name": [
+        "A. c01"
+      ],
+      "correct_time_str": [
+        "12:00:50.080-12:01:09.280"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "32iaxzQTxxaMjhz3Psix2n",
+      "scene": "Track 7",
+      "map_image_path": "./map/NextSpotForecasting_map_7_32iaxzQTxxaMjhz3Psix2n.png",
+      "camera_images": [
+        {
+          "camera_id": "c10",
+          "object_id": 7,
+          "video_path": "./raw_video/indoor_s01_c10",
+          "crop_video_path": "./crop_video/indoor_s01_7_241_249_c10.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6032,
+            6070,
+            6108,
+            6146,
+            6184,
+            6222
+          ],
+          "bboxes": [
+            [
+              1515.84,
+              1065.34,
+              165.2,
+              442.24
+            ],
+            [
+              1343.6,
+              685.91,
+              186.5,
+              451.01
+            ],
+            [
+              858.74,
+              539.26,
+              212.48,
+              422.62
+            ],
+            [
+              301.75,
+              599.16,
+              305.25,
+              443.74
+            ],
+            [
+              332.43,
+              663.76,
+              209.63,
+              457.51
+            ],
+            [
+              107.26,
+              478.58,
+              151.14,
+              415.52
+            ]
+          ],
+          "start_timestamp": 241.28,
+          "end_timestamp": 248.88,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c15",
+        "B. c11",
+        "C. c10",
+        "D. c01"
+      ],
+      "correct_cam_name": [
+        "A. c15"
+      ],
+      "correct_time_str": [
+        "12:04:49.800-12:04:54.440"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "D9FBPKA4MXX2scwtfPit9z",
+      "scene": "Track 8",
+      "map_image_path": "./map/NextSpotForecasting_map_8_D9FBPKA4MXX2scwtfPit9z.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_8_248_257_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6189,
+            6234,
+            6279,
+            6324,
+            6369,
+            6414
+          ],
+          "bboxes": [
+            [
+              110.65,
+              1043.05,
+              293.92,
+              457.59
+            ],
+            [
+              469.46,
+              304.1,
+              207.24,
+              529.26
+            ],
+            [
+              991.9,
+              304.1,
+              206.7,
+              547.5
+            ],
+            [
+              995.11,
+              559.8,
+              473.19,
+              585.9
+            ],
+            [
+              410.1,
+              782.2,
+              682.9,
+              819.9
+            ],
+            [
+              -521.04,
+              188.74,
+              592.9,
+              1111.65
+            ]
+          ],
+          "start_timestamp": 247.56,
+          "end_timestamp": 256.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c12",
+        "B. c14",
+        "C. c03",
+        "D. c09"
+      ],
+      "correct_cam_name": [
+        "A. c12"
+      ],
+      "correct_time_str": [
+        "12:04:23.120-12:04:29.000"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "2RLiJjW3rXPJZBWHtZhXLK",
+      "scene": "Track 8",
+      "map_image_path": "./map/NextSpotForecasting_map_8_2RLiJjW3rXPJZBWHtZhXLK.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_8_148_153_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3692,
+            3720,
+            3748,
+            3776,
+            3804,
+            3832
+          ],
+          "bboxes": [
+            [
+              -2.16,
+              701.57,
+              135.06,
+              299.38
+            ],
+            [
+              157.3,
+              729.18,
+              122.9,
+              303.92
+            ],
+            [
+              274.29,
+              792.04,
+              130.81,
+              327.76
+            ],
+            [
+              417.57,
+              873.47,
+              134.29,
+              365.31
+            ],
+            [
+              576.08,
+              963.19,
+              129.96,
+              352.61
+            ],
+            [
+              741.86,
+              1074.36,
+              149.93,
+              347.69
+            ]
+          ],
+          "start_timestamp": 147.68,
+          "end_timestamp": 153.28,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c06",
+        "B. c05",
+        "C. c02",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08"
+      ],
+      "correct_time_str": [
+        "12:02:45.920-12:02:50.600"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "MDjG8U6AB6ZDSDhH9JqJeK",
+      "scene": "Track 8",
+      "map_image_path": "./map/NextSpotForecasting_map_8_MDjG8U6AB6ZDSDhH9JqJeK.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 8,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_8_90_128_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2252,
+            2441,
+            2630,
+            2819,
+            3008,
+            3197
+          ],
+          "bboxes": [
+            [
+              860.8,
+              42.84,
+              28.11,
+              86.01
+            ],
+            [
+              779.5,
+              80.08,
+              33.69,
+              110.56
+            ],
+            [
+              710.18,
+              146.15,
+              49.66,
+              134.99
+            ],
+            [
+              607.07,
+              252.41,
+              59.19,
+              171.95
+            ],
+            [
+              378.6,
+              435.34,
+              79.03,
+              235.86
+            ],
+            [
+              -50.61,
+              703.14,
+              111.26,
+              279.4
+            ]
+          ],
+          "start_timestamp": 90.08,
+          "end_timestamp": 127.92,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c06",
+        "B. c04",
+        "C. c02",
+        "D. c01"
+      ],
+      "correct_cam_name": [
+        "D. c01"
+      ],
+      "correct_time_str": [
+        "12:01:37.640-12:02:06.320"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "LFRJGfuzJm6vRew5Dgpraq",
+      "scene": "Track 9",
+      "map_image_path": "./map/NextSpotForecasting_map_9_LFRJGfuzJm6vRew5Dgpraq.png",
+      "camera_images": [
+        {
+          "camera_id": "c11",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_9_159_174_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3983,
+            4056,
+            4129,
+            4202,
+            4275,
+            4348
+          ],
+          "bboxes": [
+            [
+              1906.8,
+              313.6,
+              455.4,
+              1122.6
+            ],
+            [
+              657.4,
+              629.7,
+              543.9,
+              1254.9
+            ],
+            [
+              547.5,
+              499.1,
+              410.7,
+              739.1
+            ],
+            [
+              769.1,
+              299.2,
+              167.6,
+              508.4
+            ],
+            [
+              1440.2,
+              527.3,
+              270.3,
+              448.9
+            ],
+            [
+              1588.2,
+              1005.1,
+              284.7,
+              498.6
+            ]
+          ],
+          "start_timestamp": 159.32,
+          "end_timestamp": 174.04,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c08",
+        "B. c02",
+        "C. c06",
+        "D. c05"
+      ],
+      "correct_cam_name": [
+        "D. c05"
+      ],
+      "correct_time_str": [
+        "12:03:16.160-12:03:38.600"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "VQfZ7YbdM9o7YmgZmpEoQr",
+      "scene": "Track 9",
+      "map_image_path": "./map/NextSpotForecasting_map_9_VQfZ7YbdM9o7YmgZmpEoQr.png",
+      "camera_images": [
+        {
+          "camera_id": "c15",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_9_61_102_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            1525,
+            1731,
+            1937,
+            2143,
+            2349,
+            2555
+          ],
+          "bboxes": [
+            [
+              547.45,
+              1069.51,
+              358.57,
+              726.42
+            ],
+            [
+              819.56,
+              332.99,
+              204.3,
+              538.01
+            ],
+            [
+              882.15,
+              316.59,
+              204.3,
+              538.01
+            ],
+            [
+              894.65,
+              327.17,
+              197.75,
+              531.85
+            ],
+            [
+              799.46,
+              333.83,
+              197.74,
+              531.85
+            ],
+            [
+              972.65,
+              1012.62,
+              364.01,
+              719.88
+            ]
+          ],
+          "start_timestamp": 61.0,
+          "end_timestamp": 102.32,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c01",
+        "B. c11",
+        "C. c15",
+        "D. c10"
+      ],
+      "correct_cam_name": [
+        "D. c10"
+      ],
+      "correct_time_str": [
+        "12:02:00.640-12:02:06.040"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "9BHntb4ycxcbA4XYe5VhdB",
+      "scene": "Track 9",
+      "map_image_path": "./map/NextSpotForecasting_map_9_9BHntb4ycxcbA4XYe5VhdB.png",
+      "camera_images": [
+        {
+          "camera_id": "c05",
+          "object_id": 9,
+          "video_path": "./raw_video/indoor_s01_c05",
+          "crop_video_path": "./crop_video/indoor_s01_9_196_219_c05.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4904,
+            5016,
+            5128,
+            5240,
+            5352,
+            5464
+          ],
+          "bboxes": [
+            [
+              858.22,
+              49.72,
+              33.0,
+              91.28
+            ],
+            [
+              699.3,
+              65.59,
+              32.77,
+              91.53
+            ],
+            [
+              502.86,
+              75.52,
+              38.18,
+              95.74
+            ],
+            [
+              447.01,
+              98.01,
+              32.21,
+              101.52
+            ],
+            [
+              657.3,
+              117.24,
+              39.57,
+              106.43
+            ],
+            [
+              918.94,
+              130.92,
+              35.59,
+              105.4
+            ]
+          ],
+          "start_timestamp": 196.16,
+          "end_timestamp": 218.6,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c06",
+        "B. c04",
+        "C. c01",
+        "D. c02"
+      ],
+      "correct_cam_name": [
+        "C. c01"
+      ],
+      "correct_time_str": [
+        "12:03:29.640-12:04:04.480"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "UmiAce3qz9WnMQrgFjbtVh",
+      "scene": "Track 10",
+      "map_image_path": "./map/NextSpotForecasting_map_10_UmiAce3qz9WnMQrgFjbtVh.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_10_24_29_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            611,
+            632,
+            653,
+            674,
+            695,
+            716
+          ],
+          "bboxes": [
+            [
+              -61.12,
+              14.43,
+              158.3,
+              514.46
+            ],
+            [
+              57.1,
+              8.7,
+              171.9,
+              521.0
+            ],
+            [
+              268.4,
+              33.29,
+              173.3,
+              579.55
+            ],
+            [
+              549.18,
+              31.87,
+              234.92,
+              571.27
+            ],
+            [
+              841.9,
+              22.18,
+              162.23,
+              562.8
+            ],
+            [
+              1096.11,
+              36.71,
+              177.95,
+              527.64
+            ]
+          ],
+          "start_timestamp": 24.44,
+          "end_timestamp": 28.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c12",
+        "B. c09",
+        "C. c14",
+        "D. c03"
+      ],
+      "correct_cam_name": [
+        "D. c03"
+      ],
+      "correct_time_str": [
+        "12:00:39.120-12:00:49.640"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "PM3urvk2BwNssNVuNiNVJW",
+      "scene": "Track 10",
+      "map_image_path": "./map/NextSpotForecasting_map_10_PM3urvk2BwNssNVuNiNVJW.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_10_178_195_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4442,
+            4527,
+            4612,
+            4697,
+            4782,
+            4867
+          ],
+          "bboxes": [
+            [
+              564.4,
+              1069.62,
+              77.86,
+              207.2
+            ],
+            [
+              493.92,
+              860.73,
+              113.78,
+              254.83
+            ],
+            [
+              566.64,
+              666.71,
+              80.86,
+              199.89
+            ],
+            [
+              668.31,
+              546.22,
+              51.59,
+              151.68
+            ],
+            [
+              667.98,
+              466.15,
+              43.42,
+              128.25
+            ],
+            [
+              654.65,
+              416.26,
+              39.95,
+              106.94
+            ]
+          ],
+          "start_timestamp": 177.68,
+          "end_timestamp": 194.68,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c04",
+        "B. c06",
+        "C. c01",
+        "D. c02"
+      ],
+      "correct_cam_name": [
+        "A. c04"
+      ],
+      "correct_time_str": [
+        "12:03:09.680-12:03:18.400"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "HngEdS874RPCRNhmSY4qRv",
+      "scene": "Track 10",
+      "map_image_path": "./map/NextSpotForecasting_map_10_HngEdS874RPCRNhmSY4qRv.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 10,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_10_209_224_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5232,
+            5308,
+            5384,
+            5460,
+            5536
+          ],
+          "bboxes": [
+            [
+              724.85,
+              417.23,
+              39.95,
+              106.94
+            ],
+            [
+              840.23,
+              470.59,
+              42.33,
+              120.65
+            ],
+            [
+              959.55,
+              526.95,
+              47.16,
+              146.12
+            ],
+            [
+              1149.18,
+              623.26,
+              64.68,
+              172.38
+            ],
+            [
+              1437.61,
+              752.29,
+              97.75,
+              209.21
+            ]
+          ],
+          "start_timestamp": 209.28,
+          "end_timestamp": 224.44,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c02",
+        "B. c07",
+        "C. c06",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "C. c06"
+      ],
+      "correct_time_str": [
+        "12:03:51.640-12:03:52.280"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "66drKxdXcLJQeBurccFDo6",
+      "scene": "Track 11",
+      "map_image_path": "./map/NextSpotForecasting_map_11_66drKxdXcLJQeBurccFDo6.png",
+      "camera_images": [
+        {
+          "camera_id": "c07",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c07",
+          "crop_video_path": "./crop_video/indoor_s01_11_88_96_c07.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2204,
+            2244,
+            2284,
+            2324,
+            2364,
+            2404
+          ],
+          "bboxes": [
+            [
+              -215.0,
+              994.33,
+              300.2,
+              731.17
+            ],
+            [
+              354.36,
+              665.93,
+              225.94,
+              634.87
+            ],
+            [
+              663.3,
+              510.1,
+              183.38,
+              476.69
+            ],
+            [
+              816.76,
+              416.4,
+              132.46,
+              387.95
+            ],
+            [
+              892.97,
+              360.2,
+              99.13,
+              323.5
+            ],
+            [
+              747.9,
+              338.23,
+              103.14,
+              280.48
+            ]
+          ],
+          "start_timestamp": 88.16,
+          "end_timestamp": 96.28,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c05",
+        "B. c02",
+        "C. c06",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08"
+      ],
+      "correct_time_str": [
+        "12:01:35.160-12:01:47.800"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "98HRBSU5wPnsFPFjj63ak4",
+      "scene": "Track 11",
+      "map_image_path": "./map/NextSpotForecasting_map_11_98HRBSU5wPnsFPFjj63ak4.png",
+      "camera_images": [
+        {
+          "camera_id": "c02",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c02",
+          "crop_video_path": "./crop_video/indoor_s01_11_19_36_c02.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            483,
+            568,
+            653,
+            738,
+            823,
+            908
+          ],
+          "bboxes": [
+            [
+              366.55,
+              1071.77,
+              107.98,
+              310.25
+            ],
+            [
+              69.89,
+              884.37,
+              104.31,
+              274.63
+            ],
+            [
+              69.89,
+              763.66,
+              91.51,
+              253.24
+            ],
+            [
+              52.05,
+              707.63,
+              70.15,
+              235.57
+            ],
+            [
+              113.88,
+              812.66,
+              93.42,
+              256.04
+            ],
+            [
+              214.39,
+              1061.34,
+              94.5,
+              252.61
+            ]
+          ],
+          "start_timestamp": 19.32,
+          "end_timestamp": 36.4,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c06",
+        "B. c04",
+        "C. c02",
+        "D. c01"
+      ],
+      "correct_cam_name": [
+        "B. c04"
+      ],
+      "correct_time_str": [
+        "12:00:21.880-12:00:32.720"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "m96cSghcAVAT6wAtNpjxj4",
+      "scene": "Track 11",
+      "map_image_path": "./map/NextSpotForecasting_map_11_m96cSghcAVAT6wAtNpjxj4.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 11,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_11_222_228_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            5560,
+            5586,
+            5612,
+            5638,
+            5664,
+            5690
+          ],
+          "bboxes": [
+            [
+              1887.8,
+              424.5,
+              228.8,
+              535.78
+            ],
+            [
+              1453.1,
+              388.5,
+              229.7,
+              525.0
+            ],
+            [
+              1082.2,
+              357.4,
+              255.4,
+              471.6
+            ],
+            [
+              784.4,
+              330.0,
+              205.5,
+              432.0
+            ],
+            [
+              519.8,
+              311.1,
+              157.9,
+              391.6
+            ],
+            [
+              266.6,
+              303.2,
+              150.8,
+              366.5
+            ]
+          ],
+          "start_timestamp": 222.4,
+          "end_timestamp": 227.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c03",
+        "B. c14",
+        "C. c09",
+        "D. c12"
+      ],
+      "correct_cam_name": [
+        "D. c12"
+      ],
+      "correct_time_str": [
+        "12:03:50.160-12:03:54.760"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "apm2gJzcFVUn3MWt8dQUqj",
+      "scene": "Track 16",
+      "map_image_path": "./map/NextSpotForecasting_map_16_apm2gJzcFVUn3MWt8dQUqj.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_16_108_121_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2711,
+            2774,
+            2837,
+            2900,
+            2963
+          ],
+          "bboxes": [
+            [
+              1184.18,
+              1057.49,
+              399.82,
+              684.51
+            ],
+            [
+              1471.62,
+              666.3,
+              309.39,
+              617.67
+            ],
+            [
+              1249.92,
+              159.47,
+              162.34,
+              482.03
+            ],
+            [
+              528.64,
+              82.51,
+              164.58,
+              469.79
+            ],
+            [
+              265.2,
+              267.08,
+              217.9,
+              474.24
+            ]
+          ],
+          "start_timestamp": 108.44,
+          "end_timestamp": 121.0,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c08",
+        "B. c02",
+        "C. c06",
+        "D. c05"
+      ],
+      "correct_cam_name": [
+        "A. c08"
+      ],
+      "correct_time_str": [
+        "12:02:03.720-12:02:14.000"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "5E73rosHH9pjPSjKbF6pLe",
+      "scene": "Track 16",
+      "map_image_path": "./map/NextSpotForecasting_map_16_5E73rosHH9pjPSjKbF6pLe.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_16_108_121_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            2711,
+            2774,
+            2837,
+            2900,
+            2963
+          ],
+          "bboxes": [
+            [
+              1184.18,
+              1057.49,
+              399.82,
+              684.51
+            ],
+            [
+              1471.62,
+              666.3,
+              309.39,
+              617.67
+            ],
+            [
+              1249.92,
+              159.47,
+              162.34,
+              482.03
+            ],
+            [
+              528.64,
+              82.51,
+              164.58,
+              469.79
+            ],
+            [
+              265.2,
+              267.08,
+              217.9,
+              474.24
+            ]
+          ],
+          "start_timestamp": 108.44,
+          "end_timestamp": 121.0,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c02",
+        "B. c06",
+        "C. c05",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "D. c08"
+      ],
+      "correct_time_str": [
+        "12:02:03.720-12:02:14.000"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "MCNP5a3PJnWi8wvCMxLSfJ",
+      "scene": "Track 16",
+      "map_image_path": "./map/NextSpotForecasting_map_16_MCNP5a3PJnWi8wvCMxLSfJ.png",
+      "camera_images": [
+        {
+          "camera_id": "c08",
+          "object_id": 16,
+          "video_path": "./raw_video/indoor_s01_c08",
+          "crop_video_path": "./crop_video/indoor_s01_16_124_134_c08.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            3093,
+            3144,
+            3195,
+            3246,
+            3297,
+            3348
+          ],
+          "bboxes": [
+            [
+              1446.01,
+              -207.54,
+              118.02,
+              331.58
+            ],
+            [
+              1087.22,
+              -89.72,
+              129.18,
+              402.02
+            ],
+            [
+              844.93,
+              48.92,
+              153.07,
+              469.08
+            ],
+            [
+              687.2,
+              304.69,
+              175.92,
+              538.43
+            ],
+            [
+              1009.94,
+              516.32,
+              238.36,
+              608.16
+            ],
+            [
+              1815.79,
+              513.7,
+              194.09,
+              551.1
+            ]
+          ],
+          "start_timestamp": 123.72,
+          "end_timestamp": 134.0,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c01",
+        "B. c06",
+        "C. c02",
+        "D. c04"
+      ],
+      "correct_cam_name": [
+        "A. c01"
+      ],
+      "correct_time_str": [
+        "12:02:14.320-12:02:33.160"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "XfyikZiZue3impRjaapC5s",
+      "scene": "Track 17",
+      "map_image_path": "./map/NextSpotForecasting_map_17_XfyikZiZue3impRjaapC5s.png",
+      "camera_images": [
+        {
+          "camera_id": "c11",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c11",
+          "crop_video_path": "./crop_video/indoor_s01_17_164_177_c11.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4109,
+            4171,
+            4233,
+            4295,
+            4357,
+            4419
+          ],
+          "bboxes": [
+            [
+              1825.4,
+              572.0,
+              426.8,
+              1197.2
+            ],
+            [
+              383.0,
+              400.0,
+              527.5,
+              1213.4
+            ],
+            [
+              408.5,
+              413.6,
+              304.3,
+              733.7
+            ],
+            [
+              911.0,
+              218.2,
+              287.1,
+              568.3
+            ],
+            [
+              1483.4,
+              357.9,
+              283.3,
+              627.8
+            ],
+            [
+              1758.7,
+              930.5,
+              271.4,
+              629.2
+            ]
+          ],
+          "start_timestamp": 164.36,
+          "end_timestamp": 176.84,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c08",
+        "B. c05",
+        "C. c02",
+        "D. c06"
+      ],
+      "correct_cam_name": [
+        "B. c05"
+      ],
+      "correct_time_str": [
+        "12:03:20.520-12:03:35.080"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "kQr263DLCcvzGvrsudZBsy",
+      "scene": "Track 17",
+      "map_image_path": "./map/NextSpotForecasting_map_17_kQr263DLCcvzGvrsudZBsy.png",
+      "camera_images": [
+        {
+          "camera_id": "c15",
+          "object_id": 17,
+          "video_path": "./raw_video/indoor_s01_c15",
+          "crop_video_path": "./crop_video/indoor_s01_17_33_88_c15.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            824,
+            1100,
+            1376,
+            1652,
+            1928,
+            2204
+          ],
+          "bboxes": [
+            [
+              1220.5,
+              1069.24,
+              646.4,
+              1222.46
+            ],
+            [
+              1488.22,
+              206.85,
+              159.41,
+              435.63
+            ],
+            [
+              1524.3,
+              197.48,
+              129.4,
+              445.41
+            ],
+            [
+              1510.98,
+              201.7,
+              139.42,
+              441.19
+            ],
+            [
+              1489.24,
+              205.3,
+              165.16,
+              439.35
+            ],
+            [
+              1658.98,
+              1049.93,
+              468.97,
+              854.54
+            ]
+          ],
+          "start_timestamp": 32.96,
+          "end_timestamp": 88.2,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c15",
+        "B. c10",
+        "C. c11",
+        "D. c01"
+      ],
+      "correct_cam_name": [
+        "B. c10"
+      ],
+      "correct_time_str": [
+        "12:02:11.560-12:02:18.800"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "bA7MCVXvg87doqqHCisjdP",
+      "scene": "Track 18",
+      "map_image_path": "./map/NextSpotForecasting_map_18_bA7MCVXvg87doqqHCisjdP.png",
+      "camera_images": [
+        {
+          "camera_id": "c09",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_18_259_265_c09.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6482,
+            6512,
+            6542,
+            6572,
+            6602
+          ],
+          "bboxes": [
+            [
+              1895.9,
+              326.7,
+              192.2,
+              438.16
+            ],
+            [
+              1504.1,
+              324.4,
+              216.6,
+              419.1
+            ],
+            [
+              1183.4,
+              294.4,
+              120.8,
+              375.0
+            ],
+            [
+              836.8,
+              275.1,
+              111.7,
+              351.7
+            ],
+            [
+              485.7,
+              279.2,
+              180.1,
+              322.4
+            ]
+          ],
+          "start_timestamp": 259.28,
+          "end_timestamp": 265.24,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c09",
+        "B. c14",
+        "C. c12",
+        "D. c03"
+      ],
+      "correct_cam_name": [
+        "C. c12"
+      ],
+      "correct_time_str": [
+        "12:04:27.720-12:04:32.000"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "fibUDbQh8Kqqhh5h9647bb",
+      "scene": "Track 18",
+      "map_image_path": "./map/NextSpotForecasting_map_18_fibUDbQh8Kqqhh5h9647bb.png",
+      "camera_images": [
+        {
+          "camera_id": "c12",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c12",
+          "crop_video_path": "./crop_video/indoor_s01_18_268_272_c12.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            6693,
+            6714,
+            6735,
+            6756,
+            6777,
+            6798
+          ],
+          "bboxes": [
+            [
+              1853.2,
+              467.7,
+              355.5,
+              841.45
+            ],
+            [
+              1319.96,
+              294.1,
+              367.17,
+              861.12
+            ],
+            [
+              1058.16,
+              161.23,
+              249.54,
+              787.34
+            ],
+            [
+              913.11,
+              76.89,
+              222.89,
+              683.54
+            ],
+            [
+              933.21,
+              35.08,
+              196.56,
+              572.38
+            ],
+            [
+              1087.99,
+              34.74,
+              178.45,
+              547.46
+            ]
+          ],
+          "start_timestamp": 267.72,
+          "end_timestamp": 272.0,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c09",
+        "B. c03",
+        "C. c14",
+        "D. c12"
+      ],
+      "correct_cam_name": [
+        "B. c03"
+      ],
+      "correct_time_str": [
+        "12:04:41.720-12:04:50.920"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "iozqdpQiXqm43riqFcKLsc",
+      "scene": "Track 18",
+      "map_image_path": "./map/NextSpotForecasting_map_18_iozqdpQiXqm43riqFcKLsc.png",
+      "camera_images": [
+        {
+          "camera_id": "c03",
+          "object_id": 18,
+          "video_path": "./raw_video/indoor_s01_c03",
+          "crop_video_path": "./crop_video/indoor_s01_18_30_30_c03.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            744,
+            745,
+            746,
+            747,
+            748,
+            749,
+            750,
+            751,
+            752
+          ],
+          "bboxes": [
+            [
+              110.49,
+              1052.54,
+              369.54,
+              528.47
+            ],
+            [
+              82.61,
+              1038.6,
+              369.54,
+              528.47
+            ],
+            [
+              9.1,
+              1019.59,
+              369.54,
+              528.47
+            ],
+            [
+              -17.52,
+              1010.72,
+              369.55,
+              528.47
+            ],
+            [
+              -51.73,
+              1004.39,
+              369.54,
+              528.46
+            ],
+            [
+              -103.7,
+              999.32,
+              369.54,
+              528.46
+            ],
+            [
+              -158.19,
+              1004.39,
+              369.54,
+              528.46
+            ],
+            [
+              -213.96,
+              998.05,
+              369.54,
+              528.46
+            ],
+            [
+              -286.2,
+              1011.99,
+              369.54,
+              528.46
+            ]
+          ],
+          "start_timestamp": 29.76,
+          "end_timestamp": 30.08,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c14",
+        "B. c03",
+        "C. c12",
+        "D. c09"
+      ],
+      "correct_cam_name": [
+        "C. c12"
+      ],
+      "correct_time_str": [
+        "12:00:41.760-12:00:47.240"
+      ]
+    },
+    {
+      "task_id": "NextSpotForecasting",
+      "case_id": "Fs2Em8YTr6CpQVwpe6YgNC",
+      "scene": "Track 19",
+      "map_image_path": "./map/NextSpotForecasting_map_19_Fs2Em8YTr6CpQVwpe6YgNC.png",
+      "camera_images": [
+        {
+          "camera_id": "c01",
+          "object_id": 19,
+          "video_path": "./raw_video/indoor_s01_c01",
+          "crop_video_path": "./crop_video/indoor_s01_19_171_196_c01.mp4",
+          "grid_frame_path": "",
+          "frame_ids": [
+            4263,
+            4388,
+            4513,
+            4638,
+            4763,
+            4888
+          ],
+          "bboxes": [
+            [
+              1397.0,
+              221.9,
+              22.38,
+              91.88
+            ],
+            [
+              1311.36,
+              267.78,
+              30.84,
+              109.74
+            ],
+            [
+              1320.05,
+              353.75,
+              42.19,
+              138.41
+            ],
+            [
+              1458.58,
+              508.58,
+              58.7,
+              181.13
+            ],
+            [
+              1554.56,
+              812.73,
+              82.02,
+              261.5
+            ],
+            [
+              1572.18,
+              1059.42,
+              97.36,
+              261.5
+            ]
+          ],
+          "start_timestamp": 170.52,
+          "end_timestamp": 195.64,
+          "direction": ""
+        }
+      ],
+      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
+      "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
+      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
+      "choices": [
+        "A. c02",
+        "B. c06",
+        "C. c05",
+        "D. c08"
+      ],
+      "correct_cam_name": [
+        "C. c05"
+      ],
+      "correct_time_str": [
+        "12:02:51.640-12:03:23.080"
+      ]
+    }
+  ]
+}
