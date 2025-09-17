@@ -1,0 +1,55 @@
+# Main configuration for GTR-Bench
+# This file contains default settings for the benchmark evaluation
+
+# Data configuration
+data:
+  root_dir: "./data"
+  processed_dir: "./data/processed" 
+  annotations_dir: "./data/annotations"
+  splits: ["train", "val", "test"]
+  sample_data_dir: "./data/samples"
+
+# Model configuration
+model:
+  name: "default"
+  checkpoint_path: null
+  device: "auto"  # auto, cpu, cuda, cuda:0, etc.
+  batch_size: 32
+  max_length: 512
+
+# Task configuration
+tasks:
+  - spatial_reasoning
+  - spatial_understanding
+  - spatial_navigation
+  - object_relations
+
+# Evaluation configuration
+evaluation:
+  metrics:
+    - accuracy
+    - f1_score
+    - spatial_accuracy
+    - reasoning_score
+  output_dir: "./results/outputs"
+  save_predictions: true
+  save_analysis: true
+
+# Experiment tracking
+experiment:
+  name: "default_experiment"
+  tags: []
+  log_dir: "./experiments/logs"
+  wandb:
+    enabled: false
+    project: "gtr-bench"
+    entity: null
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null  # Set to path for file logging
+
+# Random seed for reproducibility
+seed: 42

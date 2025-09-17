@@ -1,0 +1,40 @@
+# Spatial Reasoning Task Configuration
+task_name: "spatial_reasoning"
+description: "Evaluate model's ability to reason about spatial relationships between objects"
+
+# Data configuration
+data:
+  dataset_name: "spatial_reasoning_dataset"
+  num_samples: null  # null means all samples
+  shuffle: true
+  
+# Task-specific parameters
+task_config:
+  question_types:
+    - "spatial_relationship"
+    - "relative_position" 
+    - "directional_reasoning"
+    - "spatial_transformation"
+  
+  difficulty_levels:
+    - "easy"
+    - "medium"
+    - "hard"
+  
+  answer_format: "multiple_choice"  # multiple_choice, free_text, yes_no
+  num_choices: 4
+
+# Evaluation metrics
+metrics:
+  - name: "accuracy"
+    weight: 1.0
+  - name: "spatial_accuracy"  
+    weight: 1.0
+  - name: "reasoning_consistency"
+    weight: 0.5
+
+# Prompting strategy
+prompting:
+  instruction: "Answer the following spatial reasoning question based on the image."
+  few_shot_examples: 3
+  chain_of_thought: true
