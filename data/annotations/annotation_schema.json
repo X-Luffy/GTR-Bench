@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GTR-Bench Annotation Schema",
+  "description": "Schema for GTR-Bench annotation files",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version"
+    },
+    "task": {
+      "type": "string",
+      "enum": ["spatial_reasoning", "spatial_understanding", "spatial_navigation", "object_relations"],
+      "description": "Task type"
+    },
+    "split": {
+      "type": "string", 
+      "enum": ["train", "val", "test"],
+      "description": "Data split"
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique sample identifier"
+          },
+          "image_path": {
+            "type": "string",
+            "description": "Path to the image file"
+          },
+          "question": {
+            "type": "string",
+            "description": "Question text"
+          },
+          "answer": {
+            "type": "string",
+            "description": "Ground truth answer"
+          },
+          "answer_type": {
+            "type": "string",
+            "enum": ["multiple_choice", "free_text", "yes_no"],
+            "description": "Type of answer format"
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Multiple choice options (if applicable)"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard"],
+            "description": "Difficulty level"
+          },
+          "spatial_relations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Spatial relationships involved"
+          },
+          "objects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {"type": "string"},
+                "bbox": {
+                  "type": "array",
+                  "items": {"type": "number"},
+                  "minItems": 4,
+                  "maxItems": 4,
+                  "description": "[x1, y1, x2, y2] coordinates"
+                }
+              },
+              "required": ["name"]
+            },
+            "description": "Objects in the image"
+          },
+          "metadata": {
+            "type": "object",
+            "description": "Additional task-specific metadata"
+          }
+        },
+        "required": ["id", "image_path", "question", "answer", "answer_type"]
+      }
+    }
+  },
+  "required": ["version", "task", "split", "samples"]
+}
