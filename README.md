@@ -1,4 +1,4 @@
-# Human-Level Visual Reasoning Assessment System
+# GTR-Bench
 
 A comprehensive Streamlit-based assessment system for evaluating human performance on visual reasoning tasks across multiple scenarios and task types.
 
@@ -40,8 +40,8 @@ A comprehensive Streamlit-based assessment system for evaluating human performan
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd human_level
+git clone https://github.com/X-Luffy/GTR-Bench.git
+cd GTR-Bench
 ```
 
 ### 2. Install Dependencies
@@ -95,7 +95,7 @@ For temporal reasoning tasks, the system calculates time IoU between user answer
 ## 📁 Project Structure
 
 ```
-human_level/
+GTR-Bench/
 ├── app.py                      # Main application file
 ├── requirements.txt            # Python dependencies
 ├── README.md                  # Project documentation

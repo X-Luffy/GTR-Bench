@@ -1,6 +1,6 @@
 # Data Directory
 
-This directory contains the assessment data for the Human-Level Visual Reasoning Assessment System.
+This directory contains the assessment data for GTR-Bench.
 
 ## Data Structure
 
