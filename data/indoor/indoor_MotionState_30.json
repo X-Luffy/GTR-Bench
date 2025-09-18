@@ -3,7 +3,6 @@
     {
       "task_id": "MotionState",
       "case_id": "jLmFyfBrGBaxMkxeofz7iM",
-      "scene": "Track 1",
       "map_image_path": "./map/MotionState_map_1_jLmFyfBrGBaxMkxeofz7iM.png",
       "camera_images": [
         {
@@ -141,7 +140,6 @@
     {
       "task_id": "MotionState",
       "case_id": "bP8hp2f6xDFX5hSmF8vmtw",
-      "scene": "Track 3",
       "map_image_path": "./map/MotionState_map_3_bP8hp2f6xDFX5hSmF8vmtw.png",
       "camera_images": [
         {
@@ -279,7 +277,6 @@
     {
       "task_id": "MotionState",
       "case_id": "j484MQyBeJyYTk2zNJAei4",
-      "scene": "Track 3",
       "map_image_path": "./map/MotionState_map_3_j484MQyBeJyYTk2zNJAei4.png",
       "camera_images": [
         {
@@ -424,7 +421,6 @@
     {
       "task_id": "MotionState",
       "case_id": "MWw4bL4ZivBAiQytUr89Lj",
-      "scene": "Track 4",
       "map_image_path": "./map/MotionState_map_4_MWw4bL4ZivBAiQytUr89Lj.png",
       "camera_images": [
         {
@@ -569,7 +565,6 @@
     {
       "task_id": "MotionState",
       "case_id": "HZta3vVpH26Myud6UngAi2",
-      "scene": "Track 4",
       "map_image_path": "./map/MotionState_map_4_HZta3vVpH26Myud6UngAi2.png",
       "camera_images": [
         {
@@ -714,7 +709,6 @@
     {
       "task_id": "MotionState",
       "case_id": "hXntFLYqbNbq7P5RKqsJtx",
-      "scene": "Track 5",
       "map_image_path": "./map/MotionState_map_5_hXntFLYqbNbq7P5RKqsJtx.png",
       "camera_images": [
         {
@@ -859,7 +853,6 @@
     {
       "task_id": "MotionState",
       "case_id": "V5WXrXdHGdFnW4wGuUedjs",
-      "scene": "Track 5",
       "map_image_path": "./map/MotionState_map_5_V5WXrXdHGdFnW4wGuUedjs.png",
       "camera_images": [
         {
@@ -997,7 +990,6 @@
     {
       "task_id": "MotionState",
       "case_id": "AtesridmSvkyyK5vCHK6Sa",
-      "scene": "Track 5",
       "map_image_path": "./map/MotionState_map_5_AtesridmSvkyyK5vCHK6Sa.png",
       "camera_images": [
         {
@@ -1142,7 +1134,6 @@
     {
       "task_id": "MotionState",
       "case_id": "Xmm9KAbqLANqMRyk4usgiF",
-      "scene": "Track 7",
       "map_image_path": "./map/MotionState_map_7_Xmm9KAbqLANqMRyk4usgiF.png",
       "camera_images": [
         {
@@ -1280,7 +1271,6 @@
     {
       "task_id": "MotionState",
       "case_id": "6G5nFKGZEQtRmKtwYNrZHk",
-      "scene": "Track 8",
       "map_image_path": "./map/MotionState_map_8_6G5nFKGZEQtRmKtwYNrZHk.png",
       "camera_images": [
         {
@@ -1425,7 +1415,6 @@
     {
       "task_id": "MotionState",
       "case_id": "JQ94Z5SSmJEcHMqvctCaZo",
-      "scene": "Track 8",
       "map_image_path": "./map/MotionState_map_8_JQ94Z5SSmJEcHMqvctCaZo.png",
       "camera_images": [
         {
@@ -1570,7 +1559,6 @@
     {
       "task_id": "MotionState",
       "case_id": "NKxCwQyy8mmNvJh22YMc5j",
-      "scene": "Track 9",
       "map_image_path": "./map/MotionState_map_9_NKxCwQyy8mmNvJh22YMc5j.png",
       "camera_images": [
         {
@@ -1715,7 +1703,6 @@
     {
       "task_id": "MotionState",
       "case_id": "ZqCZDkuHhvqYHYM3oYdu9B",
-      "scene": "Track 9",
       "map_image_path": "./map/MotionState_map_9_ZqCZDkuHhvqYHYM3oYdu9B.png",
       "camera_images": [
         {
@@ -1853,7 +1840,6 @@
     {
       "task_id": "MotionState",
       "case_id": "JKMShGuKrVVsrEocFyGtiP",
-      "scene": "Track 10",
       "map_image_path": "./map/MotionState_map_10_JKMShGuKrVVsrEocFyGtiP.png",
       "camera_images": [
         {
@@ -1998,7 +1984,6 @@
     {
       "task_id": "MotionState",
       "case_id": "AGmTNkQGKk3X6xQykquhEe",
-      "scene": "Track 10",
       "map_image_path": "./map/MotionState_map_10_AGmTNkQGKk3X6xQykquhEe.png",
       "camera_images": [
         {
@@ -2136,7 +2121,6 @@
     {
       "task_id": "MotionState",
       "case_id": "LRVuCesrbor2z32U5e5xsT",
-      "scene": "Track 11",
       "map_image_path": "./map/MotionState_map_11_LRVuCesrbor2z32U5e5xsT.png",
       "camera_images": [
         {
@@ -2281,7 +2265,6 @@
     {
       "task_id": "MotionState",
       "case_id": "acscYPWZghFWXE9RsYEbN2",
-      "scene": "Track 11",
       "map_image_path": "./map/MotionState_map_11_acscYPWZghFWXE9RsYEbN2.png",
       "camera_images": [
         {
@@ -2426,7 +2409,6 @@
     {
       "task_id": "MotionState",
       "case_id": "4G7WB7gXX2QZDBnPWZZ44y",
-      "scene": "Track 11",
       "map_image_path": "./map/MotionState_map_11_4G7WB7gXX2QZDBnPWZZ44y.png",
       "camera_images": [
         {
@@ -2571,7 +2553,6 @@
     {
       "task_id": "MotionState",
       "case_id": "FFoT5sWD3KvWn39cKLMajM",
-      "scene": "Track 15",
       "map_image_path": "./map/MotionState_map_15_FFoT5sWD3KvWn39cKLMajM.png",
       "camera_images": [
         {
@@ -2716,7 +2697,6 @@
     {
       "task_id": "MotionState",
       "case_id": "95nqyPKpSdnnKLNXkwmX5J",
-      "scene": "Track 16",
       "map_image_path": "./map/MotionState_map_16_95nqyPKpSdnnKLNXkwmX5J.png",
       "camera_images": [
         {
@@ -2854,7 +2834,6 @@
     {
       "task_id": "MotionState",
       "case_id": "AURohsy6BnLMDw9ainAeQV",
-      "scene": "Track 16",
       "map_image_path": "./map/MotionState_map_16_AURohsy6BnLMDw9ainAeQV.png",
       "camera_images": [
         {
@@ -2999,7 +2978,6 @@
     {
       "task_id": "MotionState",
       "case_id": "ALjJUQzSfaiym8xmeUTsrd",
-      "scene": "Track 18",
       "map_image_path": "./map/MotionState_map_18_ALjJUQzSfaiym8xmeUTsrd.png",
       "camera_images": [
         {
@@ -3144,7 +3122,6 @@
     {
       "task_id": "MotionState",
       "case_id": "j8hpqS5cazDMRz4NYznXUT",
-      "scene": "Track 18",
       "map_image_path": "./map/MotionState_map_18_j8hpqS5cazDMRz4NYznXUT.png",
       "camera_images": [
         {
@@ -3310,7 +3287,6 @@
     {
       "task_id": "MotionState",
       "case_id": "WEjd4TNam8wFiKnZbiT4rP",
-      "scene": "Track 18",
       "map_image_path": "./map/MotionState_map_18_WEjd4TNam8wFiKnZbiT4rP.png",
       "camera_images": [
         {
@@ -3448,7 +3424,6 @@
     {
       "task_id": "MotionState",
       "case_id": "4Q8ZZAdpeyHZtUTWo3hmhe",
-      "scene": "Track 19",
       "map_image_path": "./map/MotionState_map_19_4Q8ZZAdpeyHZtUTWo3hmhe.png",
       "camera_images": [
         {
@@ -3593,7 +3568,6 @@
     {
       "task_id": "MotionState",
       "case_id": "F3S7JW3823ii5XAaX6rX5N",
-      "scene": "Track 19",
       "map_image_path": "./map/MotionState_map_19_F3S7JW3823ii5XAaX6rX5N.png",
       "camera_images": [
         {
@@ -3738,7 +3712,6 @@
     {
       "task_id": "MotionState",
       "case_id": "RrLKBjsQ3Guv3j2rxmhWHr",
-      "scene": "Track 20",
       "map_image_path": "./map/MotionState_map_20_RrLKBjsQ3Guv3j2rxmhWHr.png",
       "camera_images": [
         {
@@ -3883,7 +3856,6 @@
     {
       "task_id": "MotionState",
       "case_id": "bhiUWW8UTGVZ9Q2KGQiXHn",
-      "scene": "Track 128",
       "map_image_path": "/home/mnt/xieqinghongbing/data/question_generation/benchmark/grounding_reasoning/media/gr3_motion_map_128_bhiUWW8UTGVZ9Q2KGQiXHn.png",
       "camera_images": [
         {
@@ -4028,7 +4000,6 @@
     {
       "task_id": "MotionState",
       "case_id": "QMVBrotKc3ZjkPhGUEzDCG",
-      "scene": "Track 114",
       "map_image_path": "/home/mnt/xieqinghongbing/data/question_generation/benchmark/grounding_reasoning/media/gr3_motion_map_114_QMVBrotKc3ZjkPhGUEzDCG.png",
       "camera_images": [
         {
@@ -4173,7 +4144,6 @@
     {
       "task_id": "MotionState",
       "case_id": "eS5qJT3yVGdFXnny38mpwk",
-      "scene": "Track 112",
       "map_image_path": "/home/mnt/xieqinghongbing/data/question_generation/benchmark/grounding_reasoning/media/gr3_motion_map_112_eS5qJT3yVGdFXnny38mpwk.png",
       "camera_images": [
         {

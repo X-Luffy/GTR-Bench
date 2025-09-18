@@ -3,7 +3,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Zc7Y3Uc9FcCvVr9hNYrhet",
-      "scene": "Track 4",
       "map_image_path": "./map/CasualReordering_map_4_Zc7Y3Uc9FcCvVr9hNYrhet.png",
       "camera_images": [
         {
@@ -189,7 +188,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "42yJyaoH7ZDoevCYYuSXNG",
-      "scene": "Track 4",
       "map_image_path": "./map/CasualReordering_map_4_42yJyaoH7ZDoevCYYuSXNG.png",
       "camera_images": [
         {
@@ -375,7 +373,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Y2YGDTSA9brQ4vRKGnWZvP",
-      "scene": "Track 5",
       "map_image_path": "./map/CasualReordering_map_5_Y2YGDTSA9brQ4vRKGnWZvP.png",
       "camera_images": [
         {
@@ -554,7 +551,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "koAZUdUAehoitn5JMz3qHq",
-      "scene": "Track 5",
       "map_image_path": "./map/CasualReordering_map_5_koAZUdUAehoitn5JMz3qHq.png",
       "camera_images": [
         {
@@ -733,7 +729,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "NEhPbmk5tGk34gqEgTr6wo",
-      "scene": "Track 7",
       "map_image_path": "./map/CasualReordering_map_7_NEhPbmk5tGk34gqEgTr6wo.png",
       "camera_images": [
         {
@@ -919,7 +914,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "WzkXD4gcUwnLQSydQqzDG6",
-      "scene": "Track 8",
       "map_image_path": "./map/CasualReordering_map_8_WzkXD4gcUwnLQSydQqzDG6.png",
       "camera_images": [
         {
@@ -1105,7 +1099,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "LvaHeyWiM8qeJZbepotqPh",
-      "scene": "Track 8",
       "map_image_path": "./map/CasualReordering_map_8_LvaHeyWiM8qeJZbepotqPh.png",
       "camera_images": [
         {
@@ -1291,7 +1284,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "5XRMyswMZHo2AhaPeNMDHW",
-      "scene": "Track 9",
       "map_image_path": "./map/CasualReordering_map_9_5XRMyswMZHo2AhaPeNMDHW.png",
       "camera_images": [
         {
@@ -1477,7 +1469,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "efJ6FUHMmA8o5HgAXMaV9y",
-      "scene": "Track 9",
       "map_image_path": "./map/CasualReordering_map_9_efJ6FUHMmA8o5HgAXMaV9y.png",
       "camera_images": [
         {
@@ -1656,7 +1647,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "dGxuPxDmWaieSiZjQUN5iZ",
-      "scene": "Track 9",
       "map_image_path": "./map/CasualReordering_map_9_dGxuPxDmWaieSiZjQUN5iZ.png",
       "camera_images": [
         {
@@ -1842,7 +1832,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "dShxZNQ783gRoQaMKdQAJb",
-      "scene": "Track 10",
       "map_image_path": "./map/CasualReordering_map_10_dShxZNQ783gRoQaMKdQAJb.png",
       "camera_images": [
         {
@@ -2028,7 +2017,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "H4bLfiFh7XwCurnfhEKKdV",
-      "scene": "Track 10",
       "map_image_path": "./map/CasualReordering_map_10_H4bLfiFh7XwCurnfhEKKdV.png",
       "camera_images": [
         {
@@ -2200,7 +2188,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "V9CZeTSpgpGxFN3Teaep3S",
-      "scene": "Track 16",
       "map_image_path": "./map/CasualReordering_map_16_V9CZeTSpgpGxFN3Teaep3S.png",
       "camera_images": [
         {
@@ -2386,7 +2373,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "eWMgiduHqjedF3CySGRTXw",
-      "scene": "Track 16",
       "map_image_path": "./map/CasualReordering_map_16_eWMgiduHqjedF3CySGRTXw.png",
       "camera_images": [
         {
@@ -2572,7 +2558,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "XH5T4kxDmCjhrFatmKKuoU",
-      "scene": "Track 17",
       "map_image_path": "./map/CasualReordering_map_17_XH5T4kxDmCjhrFatmKKuoU.png",
       "camera_images": [
         {
@@ -2751,7 +2736,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "gRP5xRxPeDpALPJHckRqDd",
-      "scene": "Track 17",
       "map_image_path": "./map/CasualReordering_map_17_gRP5xRxPeDpALPJHckRqDd.png",
       "camera_images": [
         {
@@ -2937,7 +2921,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Gi7gpmudDrcTzuMSUDbMwv",
-      "scene": "Track 18",
       "map_image_path": "./map/CasualReordering_map_18_Gi7gpmudDrcTzuMSUDbMwv.png",
       "camera_images": [
         {
@@ -3116,7 +3099,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "EKimj6kx84DzXB6yYQHzjQ",
-      "scene": "Track 19",
       "map_image_path": "./map/CasualReordering_map_19_EKimj6kx84DzXB6yYQHzjQ.png",
       "camera_images": [
         {
@@ -3302,7 +3284,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "SxW97jg7jyEJbTi6EWPiqs",
-      "scene": "Track 20",
       "map_image_path": "./map/CasualReordering_map_20_SxW97jg7jyEJbTi6EWPiqs.png",
       "camera_images": [
         {
@@ -3488,7 +3469,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "89zVytr52c8re7Uatx2CXY",
-      "scene": "Track 20",
       "map_image_path": "./map/CasualReordering_map_20_89zVytr52c8re7Uatx2CXY.png",
       "camera_images": [
         {
@@ -3660,7 +3640,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "cazP4RbxCYhCe998eHENuZ",
-      "scene": "Track 21",
       "map_image_path": "./map/CasualReordering_map_21_cazP4RbxCYhCe998eHENuZ.png",
       "camera_images": [
         {
@@ -3839,7 +3818,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "PDrKFuKQqEcJyfZmPPjRba",
-      "scene": "Track 25",
       "map_image_path": "./map/CasualReordering_map_25_PDrKFuKQqEcJyfZmPPjRba.png",
       "camera_images": [
         {
@@ -4025,7 +4003,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "nqk46RGii8zpJ78sTGk52f",
-      "scene": "Track 26",
       "map_image_path": "./map/CasualReordering_map_26_nqk46RGii8zpJ78sTGk52f.png",
       "camera_images": [
         {
@@ -4211,7 +4188,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Cv4RsSSvLrR5HSzCdhjm8M",
-      "scene": "Track 28",
       "map_image_path": "./map/CasualReordering_map_28_Cv4RsSSvLrR5HSzCdhjm8M.png",
       "camera_images": [
         {
@@ -4390,7 +4366,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "FLmZdhBVirYDS7PztDQEck",
-      "scene": "Track 30",
       "map_image_path": "./map/CasualReordering_map_30_FLmZdhBVirYDS7PztDQEck.png",
       "camera_images": [
         {
@@ -4576,7 +4551,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "LHUw3v55nGFDaigAeiPviN",
-      "scene": "Track 30",
       "map_image_path": "./map/CasualReordering_map_30_LHUw3v55nGFDaigAeiPviN.png",
       "camera_images": [
         {
@@ -4762,7 +4736,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "mJUAUL6VAr3Y4ptUbkwo88",
-      "scene": "Track 31",
       "map_image_path": "./map/CasualReordering_map_31_mJUAUL6VAr3Y4ptUbkwo88.png",
       "camera_images": [
         {
@@ -4941,7 +4914,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "jPtAqH86NDLchzEfKturHw",
-      "scene": "Track 32",
       "map_image_path": "./map/CasualReordering_map_32_jPtAqH86NDLchzEfKturHw.png",
       "camera_images": [
         {
@@ -5120,7 +5092,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "K8NeqNGwN4BN3d6D7sNJoS",
-      "scene": "Track 36",
       "map_image_path": "./map/CasualReordering_map_36_K8NeqNGwN4BN3d6D7sNJoS.png",
       "camera_images": [
         {
@@ -5306,7 +5277,6 @@
     {
       "task_id": "CasualReordering",
       "case_id": "7aUSCpG8jasHmyGQbCfL5S",
-      "scene": "Track 42",
       "map_image_path": "./map/CasualReordering_map_42_7aUSCpG8jasHmyGQbCfL5S.png",
       "camera_images": [
         {

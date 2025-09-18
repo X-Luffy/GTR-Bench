@@ -14,23 +14,17 @@ A comprehensive Streamlit-based assessment system for evaluating human performan
 
 ## 📋 Supported Task Types
 
-### Outdoor Scenario (CityFlow)
-- **MotionState**: Motion state reasoning - multiple choice questions
-- **GeoLocation**: Geographic location reasoning - multiple choice questions  
-- **ArrivalTimeInterval**: Arrival time interval reasoning - multiple choice questions
-- **CasualReordering**: Causal reordering reasoning - multiple choice questions
-- **TrajectoryForecasting**: Trajectory prediction - predict two cameras + time ranges
-- **NextSpotForecasting**: Next location forecasting - multiple choice + time range fill-in
-- **MultiTrajectoryForecasting**: Multi-trajectory forecasting - multiple choice + time range fill-in
+| Task Type | Task Name | Task Definition | Metric |
+|-----------|-----------|-----------------|---------|
+| **Basic** | **Geo-Location (GL)** | Given the starting and ending locations of a target, infer the intermediate locations the target passes through. *Example: Based on the provided [start video] and [end video], infer which camera the target passed through between the start point (c016, 12:00:10-12:00:22) and end point (c018, 12:00:37-12:00:42).* | MCQ Acc |
+| **Basic** | **Arrival Time-Interval (ATI)** | Given the starting point, ending point, and intermediate location, infer when the target will arrive at specific intermediate interval. *Example: Based on the provided [start video] (c018, 12:00:37-12:00:42) and [end video] (c020, 12:00:43-12:00:50), and knowing the target passed through camera c019, infer when the target arrived at the intermediate camera.* | MCQ Acc |
+| **Basic** | **Motion-State (MS)** | Given the starting point, ending point, and intermediate location, infer the reasonable motion state of the target at intermediate locations. *Example: Based on the provided [start video] (c016, 12:00:10-12:00:22) and [end video] (c018, 12:00:37-12:00:42), and the intermediate camera c017 infer the target's motion state during the intermediate time period.* | MCQ Acc |
+| **Combinatorial** | **Causal Reordering (CR)** | Given a set of unordered video clips from different cameras and a map, determine the correct chronological sequence of cameras the target passed through. *Example: Based on the provided [local map] and [videos], analyze the target's activity trajectory. Please infer the correct order in which the target passed through these cameras.* | MCQ Acc |
+| **Combinatorial** | **Next Spot Forecasting (NSF)** | Given the target's last observed appearance in a single camera video and a map, predict the most probable next camera location and the corresponding time interval of appearance. *Example: Based on the provided [local map] and [video], which camera from the following list will likely capture the target next? You need to select one option as the answer and infer a time range.* | ST-IoU |
+| **Combinatorial** | **Trajectory Forecasting (TF)** | Building upon multiple historical observations across several cameras, predict the target's complete future trajectory by forecasting the sequence of cameras it will pass through. *Example: Based on the provided [local map] and [videos], predict the next two cameras that the target will likely pass through. You need to select a correct option sequence and infer a time range sequence simultaneously.* | ST-IoU |
+| **Combinatorial** | **Multi-Target Trajectory Forecasting (MTTF)** | This extends single-target prediction by requiring the model to forecast the future meeting point (location and time) of two distinct targets. *Example: Based on the provided [local map] and [videos] showing the movement trajectories of two [Target], predict where and when these [Target] will most likely meet.* | ST-IoU |
 
-### Indoor Scenario (MTMMC)
-- **MotionState**: Motion state reasoning - multiple choice questions
-- **GeoLocation**: Geographic location reasoning - multiple choice questions
-- **ArrivalTimeInterval**: Arrival time interval reasoning - multiple choice questions
-- **CasualReordering**: Causal reordering reasoning - multiple choice questions
-- **TrajectoryForecasting**: Trajectory prediction - predict two cameras + time ranges
-- **NextSpotForecasting**: Next location forecasting - multiple choice + time range fill-in
-- **MultiTrajectoryForecasting**: Multi-trajectory forecasting - multiple choice + time range fill-in
+GTR-Bench is divided into basic and combinatorial level, evaluated by either Multiple-Choice Question Accuracy (MCQ Acc) or Spatial-Temporal Intersection over Union (ST-IoU).
 
 ## 🚀 Installation and Setup
 
@@ -82,15 +76,14 @@ Open your browser and navigate to: http://localhost:8501
 
 ## 🏆 Scoring System
 
-### Score Calculation
-- **Accuracy Score** (70% weight): Based on correctness of option answers and time answers
-- **Time Score** (30% weight): Based on response time, faster responses receive higher scores
+### Metric Design
+We employ two primary metrics to evaluate model performance: standard accuracy for multiple-choice questions (MCQ) and a novel Spatial-Temporal Intersection over Union (ST-IoU) for predictive tasks. For the basic tasks and the CR task, which are formatted as MCQs, we report the accuracy. For predictive tasks (NSF, TF, and MTTF), we use ST-IoU to provide a more comprehensive assessment. The ST-IoU metric is designed to holistically evaluate a model's spatial-temporal prediction capabilities by jointly considering the correctness of the predicted location and the overlap of the predicted time interval. For a given prediction i, the ST-IoU is calculated as follows:
 
-### Time IoU Calculation
-For temporal reasoning tasks, the system calculates time IoU between user answers and ground truth:
-- Supports time range format: "HH:MM:SS.mmm-HH:MM:SS.mmm"
-- Supports single time point format: "HH:MM:SS.mmm"
-- Allows 0.5-second error tolerance
+```
+ST-IoU = (1/N) * Σ(i=1 to N) I(C_pi = C_gti) * |T_pi ∩ T_gti| / |T_pi ∪ T_gti|
+```
+
+where N is the total number of predictions, I(·) is the indicator function which equals 1 if the predicted camera C_pi matches the ground truth camera C_gti and 0 otherwise. T_pi and T_gti represent the predicted and ground-truth time intervals, respectively, and the fraction calculates their temporal Intersection over Union.
 
 ## 📁 Project Structure
 
@@ -136,21 +129,21 @@ The system supports JSON format for question data. Each question contains:
 {
   "cases": [
     {
-      "case_id": "unique_case_id",
       "task_id": "MotionState",
-      "scene": "Track 4",
-      "map_image_path": "./map/MotionState_map_259_xxx.png",
-      "question": "What is the motion state of the target?",
+      "case_id": "KehMGKMHJJ2RiWzTpeXKYQ",
+      "map_image_path": "./map/MotionState_map_259_KehMGKMHJJ2RiWzTpeXKYQ.png",
+      "question": "Based on the provided [start video] (c016, 12:00:10-12:00:22) and [end video] (c018, 12:00:37-12:00:42), and the intermediate camera c017, infer the target's motion state during the intermediate time period.",
       "choices": ["Walking", "Running", "Standing", "Sitting"],
       "correct_cam_name": ["Walking"],
+      "correct_time_str": ["12:00:25.000-12:00:30.000"],
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 259,
           "video_path": "./raw_video/outdoor_S04_c020.avi",
           "crop_video_path": "./crop_video/outdoor_S04_259_52_59_c020.mp4",
-          "frame_ids": [263, 276, 289],
-          "bboxes": [[x1, y1, x2, y2], ...],
+          "frame_ids": [263, 276, 289, 302, 315],
+          "bboxes": [[304.0, 760.0, 84.0, 65.0], [330.0, 765.0, 101.0, 83.0], ...],
           "start_timestamp": 10.5,
           "end_timestamp": 15.2
         }
@@ -160,35 +153,6 @@ The system supports JSON format for question data. Each question contains:
 }
 ```
 
-## ⚠️ Important Notes
-
-1. **File Paths**: Ensure video file paths are correct and accessible
-2. **Time Format**: Time must be entered in strict "HH:MM:SS.mmm" format
-3. **Performance**: System automatically caches video frames for improved performance
-4. **Session Management**: Assessment results are saved in session; refreshing the page will lose current progress
-5. **Browser Compatibility**: Recommended to use modern browsers (Chrome, Firefox, Safari, Edge)
-
-## 🛠️ Technical Stack
-
-- **Frontend Framework**: Streamlit
-- **Image Processing**: OpenCV, Pillow
-- **Data Processing**: Pandas, NumPy
-- **Video Processing**: OpenCV
-- **Scoring Algorithm**: Custom scoring system with IoU calculations
-
-## 🔧 Development
-
-### Adding New Task Types
-1. Update task type mappings in `app.py`
-2. Add corresponding question display logic
-3. Update scoring system if needed
-4. Add sample data in appropriate scenario folder
-
-### Customizing Scoring
-Modify the scoring logic in `utils/scoring.py` to adjust:
-- Accuracy vs. time score weights
-- Time IoU tolerance
-- Scoring thresholds
 
 ## 📄 License
 

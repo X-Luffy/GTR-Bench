@@ -3,7 +3,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "STBTLSTCz3idDVkLG7m2qm",
-      "scene": "Track 1",
       "map_image_path": "./map/GeoLocation_map_1_STBTLSTCz3idDVkLG7m2qm.png",
       "camera_images": [
         {
@@ -147,7 +146,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "YdSKMhib7zGgV58FLX5h2y",
-      "scene": "Track 1",
       "map_image_path": "./map/GeoLocation_map_1_YdSKMhib7zGgV58FLX5h2y.png",
       "camera_images": [
         {
@@ -291,7 +289,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "bwKyPknJnEjvujBmrg7nMy",
-      "scene": "Track 1",
       "map_image_path": "./map/GeoLocation_map_1_bwKyPknJnEjvujBmrg7nMy.png",
       "camera_images": [
         {
@@ -428,7 +425,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "a53GFstdrZaLN8Dn4hTpKq",
-      "scene": "Track 3",
       "map_image_path": "./map/GeoLocation_map_3_a53GFstdrZaLN8Dn4hTpKq.png",
       "camera_images": [
         {
@@ -572,7 +568,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "nx2usSQTrgfgHNVaycwvCU",
-      "scene": "Track 3",
       "map_image_path": "./map/GeoLocation_map_3_nx2usSQTrgfgHNVaycwvCU.png",
       "camera_images": [
         {
@@ -709,7 +704,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "X2C6ZDAxwWfmAd4fPJTnov",
-      "scene": "Track 3",
       "map_image_path": "./map/GeoLocation_map_3_X2C6ZDAxwWfmAd4fPJTnov.png",
       "camera_images": [
         {
@@ -853,7 +847,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "ZKpno7wJEbgZrqPD633uDW",
-      "scene": "Track 4",
       "map_image_path": "./map/GeoLocation_map_4_ZKpno7wJEbgZrqPD633uDW.png",
       "camera_images": [
         {
@@ -997,7 +990,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "TbsCcZS5HTPPbbA6TNiMER",
-      "scene": "Track 4",
       "map_image_path": "./map/GeoLocation_map_4_TbsCcZS5HTPPbbA6TNiMER.png",
       "camera_images": [
         {
@@ -1141,7 +1133,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "GuHfk6HuR3EAgKx5JE76d4",
-      "scene": "Track 4",
       "map_image_path": "./map/GeoLocation_map_4_GuHfk6HuR3EAgKx5JE76d4.png",
       "camera_images": [
         {
@@ -1285,7 +1276,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Pkyndy5oYpfvSbapHGGX7T",
-      "scene": "Track 5",
       "map_image_path": "./map/GeoLocation_map_5_Pkyndy5oYpfvSbapHGGX7T.png",
       "camera_images": [
         {
@@ -1422,7 +1412,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "AWdun6evAkqbWKbqMRk3PF",
-      "scene": "Track 5",
       "map_image_path": "./map/GeoLocation_map_5_AWdun6evAkqbWKbqMRk3PF.png",
       "camera_images": [
         {
@@ -1566,7 +1555,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "ZE2uVc8PC4MDhvR6vqa5di",
-      "scene": "Track 5",
       "map_image_path": "./map/GeoLocation_map_5_ZE2uVc8PC4MDhvR6vqa5di.png",
       "camera_images": [
         {
@@ -1703,7 +1691,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "PMExC7c2BTw332zHAfanbL",
-      "scene": "Track 7",
       "map_image_path": "./map/GeoLocation_map_7_PMExC7c2BTw332zHAfanbL.png",
       "camera_images": [
         {
@@ -1840,7 +1827,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "5NVSVpQVhqFB6jLWJkrNFJ",
-      "scene": "Track 7",
       "map_image_path": "./map/GeoLocation_map_7_5NVSVpQVhqFB6jLWJkrNFJ.png",
       "camera_images": [
         {
@@ -1984,7 +1970,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "f9i2i9mFRHj4xzQuWqZ9aS",
-      "scene": "Track 7",
       "map_image_path": "./map/GeoLocation_map_7_f9i2i9mFRHj4xzQuWqZ9aS.png",
       "camera_images": [
         {
@@ -2128,7 +2113,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Q6HyGWBQSVbsttdUusBRSP",
-      "scene": "Track 8",
       "map_image_path": "./map/GeoLocation_map_8_Q6HyGWBQSVbsttdUusBRSP.png",
       "camera_images": [
         {
@@ -2272,7 +2256,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "88KhUXrbyzmAhf9kv8gqm8",
-      "scene": "Track 8",
       "map_image_path": "./map/GeoLocation_map_8_88KhUXrbyzmAhf9kv8gqm8.png",
       "camera_images": [
         {
@@ -2416,7 +2399,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "X8n7mTq4m3iFn5ZMMmmudr",
-      "scene": "Track 8",
       "map_image_path": "./map/GeoLocation_map_8_X8n7mTq4m3iFn5ZMMmmudr.png",
       "camera_images": [
         {
@@ -2560,7 +2542,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "cbsjEXtCnLCNuFF3mAGWkp",
-      "scene": "Track 9",
       "map_image_path": "./map/GeoLocation_map_9_cbsjEXtCnLCNuFF3mAGWkp.png",
       "camera_images": [
         {
@@ -2704,7 +2685,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "dv682eUWKPbfGzLD6Twqeb",
-      "scene": "Track 9",
       "map_image_path": "./map/GeoLocation_map_9_dv682eUWKPbfGzLD6Twqeb.png",
       "camera_images": [
         {
@@ -2848,7 +2828,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Y7Ntyu7z6ZczGnvo4HgNpe",
-      "scene": "Track 9",
       "map_image_path": "./map/GeoLocation_map_9_Y7Ntyu7z6ZczGnvo4HgNpe.png",
       "camera_images": [
         {
@@ -2985,7 +2964,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "PB6QKmFg7xFBTkauYc8ddC",
-      "scene": "Track 10",
       "map_image_path": "./map/GeoLocation_map_10_PB6QKmFg7xFBTkauYc8ddC.png",
       "camera_images": [
         {
@@ -3122,7 +3100,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "mpzhd3tqQ7eCpSGTtKx8j6",
-      "scene": "Track 10",
       "map_image_path": "./map/GeoLocation_map_10_mpzhd3tqQ7eCpSGTtKx8j6.png",
       "camera_images": [
         {
@@ -3266,7 +3243,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "QxP8aSfYD28w6BLGGzDZ2t",
-      "scene": "Track 10",
       "map_image_path": "./map/GeoLocation_map_10_QxP8aSfYD28w6BLGGzDZ2t.png",
       "camera_images": [
         {
@@ -3403,7 +3379,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "kA8wM3STxVpdPiP4YtgnGW",
-      "scene": "Track 11",
       "map_image_path": "./map/GeoLocation_map_11_kA8wM3STxVpdPiP4YtgnGW.png",
       "camera_images": [
         {
@@ -3547,7 +3522,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "WBUwHXiJkS29JaVYBRHfSx",
-      "scene": "Track 11",
       "map_image_path": "./map/GeoLocation_map_11_WBUwHXiJkS29JaVYBRHfSx.png",
       "camera_images": [
         {
@@ -3691,7 +3665,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "3CsiYnPbr2aN9eLzN5LRfP",
-      "scene": "Track 11",
       "map_image_path": "./map/GeoLocation_map_11_3CsiYnPbr2aN9eLzN5LRfP.png",
       "camera_images": [
         {
@@ -3835,7 +3808,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "5dx8yYN6b5RQpdhX27CBHT",
-      "scene": "Track 16",
       "map_image_path": "./map/GeoLocation_map_16_5dx8yYN6b5RQpdhX27CBHT.png",
       "camera_images": [
         {
@@ -3979,7 +3951,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "2TYnpyVFwN5aFt5sfJGbpY",
-      "scene": "Track 16",
       "map_image_path": "./map/GeoLocation_map_16_2TYnpyVFwN5aFt5sfJGbpY.png",
       "camera_images": [
         {
@@ -4116,7 +4087,6 @@
     {
       "task_id": "GeoLocation",
       "case_id": "43TvqXwsvGUiihZ4M9pCFr",
-      "scene": "Track 16",
       "map_image_path": "./map/GeoLocation_map_16_43TvqXwsvGUiihZ4M9pCFr.png",
       "camera_images": [
         {

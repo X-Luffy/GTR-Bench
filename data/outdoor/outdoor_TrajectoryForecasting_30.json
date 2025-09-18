@@ -3,7 +3,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "VL2rYXwoRccyCJkM2cnADw",
-      "scene": "Track 260",
       "map_image_path": "./map/tf_map_260_VL2rYXwoRccyCJkM2cnADw.png",
       "camera_images": [
         {
@@ -140,7 +139,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "686QiPzVi8UaHkxnuFLbbg",
-      "scene": "Track 260",
       "map_image_path": "./map/tf_map_260_686QiPzVi8UaHkxnuFLbbg.png",
       "camera_images": [
         {
@@ -277,7 +275,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "Lne7cdygSEexQSQAg5Fydn",
-      "scene": "Track 260",
       "map_image_path": "./map/tf_map_260_Lne7cdygSEexQSQAg5Fydn.png",
       "camera_images": [
         {
@@ -414,7 +411,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "EmRtJvLNFQjEPY9Pn66XZw",
-      "scene": "Track 261",
       "map_image_path": "./map/tf_map_261_EmRtJvLNFQjEPY9Pn66XZw.png",
       "camera_images": [
         {
@@ -544,7 +540,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "EBmUnJDQVS5a3p3Qp2DPKC",
-      "scene": "Track 261",
       "map_image_path": "./map/tf_map_261_EBmUnJDQVS5a3p3Qp2DPKC.png",
       "camera_images": [
         {
@@ -674,7 +669,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "6sX8LoeVMAfJhrUjeERTRC",
-      "scene": "Track 261",
       "map_image_path": "./map/tf_map_261_6sX8LoeVMAfJhrUjeERTRC.png",
       "camera_images": [
         {
@@ -818,7 +812,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "aajghDwXdQVmY5G6gdmzNb",
-      "scene": "Track 262",
       "map_image_path": "./map/tf_map_262_aajghDwXdQVmY5G6gdmzNb.png",
       "camera_images": [
         {
@@ -948,7 +941,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "a5zJi4SrYNcuszKZ7DqQwh",
-      "scene": "Track 262",
       "map_image_path": "./map/tf_map_262_a5zJi4SrYNcuszKZ7DqQwh.png",
       "camera_images": [
         {
@@ -1078,7 +1070,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "NumjKnKn5QHEBfm3eYeJFg",
-      "scene": "Track 263",
       "map_image_path": "./map/tf_map_263_NumjKnKn5QHEBfm3eYeJFg.png",
       "camera_images": [
         {
@@ -1208,7 +1199,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "MYARkuQy2dF2ZJnS2BrPTB",
-      "scene": "Track 264",
       "map_image_path": "./map/tf_map_264_MYARkuQy2dF2ZJnS2BrPTB.png",
       "camera_images": [
         {
@@ -1345,7 +1335,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "XopH6mxRMBvTYsmGm5aQaZ",
-      "scene": "Track 264",
       "map_image_path": "./map/tf_map_264_XopH6mxRMBvTYsmGm5aQaZ.png",
       "camera_images": [
         {
@@ -1482,7 +1471,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "gai3zizzz3t8RYykGJ8LCm",
-      "scene": "Track 265",
       "map_image_path": "./map/tf_map_265_gai3zizzz3t8RYykGJ8LCm.png",
       "camera_images": [
         {
@@ -1612,7 +1600,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "cHGrcLMXN4BERaqkQskgeN",
-      "scene": "Track 265",
       "map_image_path": "./map/tf_map_265_cHGrcLMXN4BERaqkQskgeN.png",
       "camera_images": [
         {
@@ -1742,7 +1729,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "TNByZt4N6K58yU8SE3NJwD",
-      "scene": "Track 271",
       "map_image_path": "./map/tf_map_271_TNByZt4N6K58yU8SE3NJwD.png",
       "camera_images": [
         {
@@ -1879,7 +1865,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "MyqUqWiBZV3sLHLfQZBLcA",
-      "scene": "Track 271",
       "map_image_path": "./map/tf_map_271_MyqUqWiBZV3sLHLfQZBLcA.png",
       "camera_images": [
         {
@@ -1995,7 +1980,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "2Kw723544AVGfebXaQL53U",
-      "scene": "Track 272",
       "map_image_path": "./map/tf_map_272_2Kw723544AVGfebXaQL53U.png",
       "camera_images": [
         {
@@ -2125,7 +2109,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "nPLX2Xrk3XM4TbVE2w3o5b",
-      "scene": "Track 272",
       "map_image_path": "./map/tf_map_272_nPLX2Xrk3XM4TbVE2w3o5b.png",
       "camera_images": [
         {
@@ -2248,7 +2231,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "JBjoZnTBxzcrXdv62yABhV",
-      "scene": "Track 272",
       "map_image_path": "./map/tf_map_272_JBjoZnTBxzcrXdv62yABhV.png",
       "camera_images": [
         {
@@ -2378,7 +2360,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "Fymy5KRF9Hsmzu83WEHNzk",
-      "scene": "Track 273",
       "map_image_path": "./map/tf_map_273_Fymy5KRF9Hsmzu83WEHNzk.png",
       "camera_images": [
         {
@@ -2515,7 +2496,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "mCXkTLMzVEdWyHKVSRubvJ",
-      "scene": "Track 273",
       "map_image_path": "./map/tf_map_273_mCXkTLMzVEdWyHKVSRubvJ.png",
       "camera_images": [
         {
@@ -2645,7 +2625,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "WhzvpNjNLsA632M5CRQjEQ",
-      "scene": "Track 273",
       "map_image_path": "./map/tf_map_273_WhzvpNjNLsA632M5CRQjEQ.png",
       "camera_images": [
         {
@@ -2782,7 +2761,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "UY39gm7LvkaVrdwDkG6zVU",
-      "scene": "Track 274",
       "map_image_path": "./map/tf_map_274_UY39gm7LvkaVrdwDkG6zVU.png",
       "camera_images": [
         {
@@ -2919,7 +2897,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "dN8QfGxHb2YPzgptN62kBN",
-      "scene": "Track 275",
       "map_image_path": "./map/tf_map_275_dN8QfGxHb2YPzgptN62kBN.png",
       "camera_images": [
         {
@@ -3049,7 +3026,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "LoX8JFCiuovXrv6GPFvdvD",
-      "scene": "Track 275",
       "map_image_path": "./map/tf_map_275_LoX8JFCiuovXrv6GPFvdvD.png",
       "camera_images": [
         {
@@ -3165,7 +3141,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "DND66RKfzm7FaTZcnspFZe",
-      "scene": "Track 276",
       "map_image_path": "./map/tf_map_276_DND66RKfzm7FaTZcnspFZe.png",
       "camera_images": [
         {
@@ -3302,7 +3277,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "QmAeAeVLPMBG5XNvV5cQRT",
-      "scene": "Track 278",
       "map_image_path": "./map/tf_map_278_QmAeAeVLPMBG5XNvV5cQRT.png",
       "camera_images": [
         {
@@ -3432,7 +3406,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "M7ix4XUFizvXqhuCL8wrfi",
-      "scene": "Track 278",
       "map_image_path": "./map/tf_map_278_M7ix4XUFizvXqhuCL8wrfi.png",
       "camera_images": [
         {
@@ -3562,7 +3535,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "d9qv57bSNi2Tvca6GZVa8v",
-      "scene": "Track 279",
       "map_image_path": "./map/tf_map_279_d9qv57bSNi2Tvca6GZVa8v.png",
       "camera_images": [
         {
@@ -3692,7 +3664,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "nLjtSZTQ97S5GWNCyepMEw",
-      "scene": "Track 280",
       "map_image_path": "./map/tf_map_280_nLjtSZTQ97S5GWNCyepMEw.png",
       "camera_images": [
         {
@@ -3829,7 +3800,6 @@
     {
       "task_id": "Trajectory Forecasting",
       "case_id": "HLqwFCqywNMevVyYdpViy3",
-      "scene": "Track 281",
       "map_image_path": "./map/tf_map_281_HLqwFCqywNMevVyYdpViy3.png",
       "camera_images": [
         {
