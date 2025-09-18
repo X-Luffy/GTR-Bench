@@ -12,19 +12,22 @@ A comprehensive Streamlit-based assessment system for evaluating human performan
 - **Result Analysis**: Detailed statistics and performance analytics
 - **Data Export**: Export assessment results to CSV format
 
-## 📋 Supported Task Types
+## 📋 Task Types
 
-| Task Type | Task Name | Task Definition | Metric |
-|-----------|-----------|-----------------|---------|
-| **Basic** | **Geo-Location (GL)** | Given the starting and ending locations of a target, infer the intermediate locations the target passes through. *Example: Based on the provided [start video] and [end video], infer which camera the target passed through between the start point (c016, 12:00:10-12:00:22) and end point (c018, 12:00:37-12:00:42).* | MCQ Acc |
-| **Basic** | **Arrival Time-Interval (ATI)** | Given the starting point, ending point, and intermediate location, infer when the target will arrive at specific intermediate interval. *Example: Based on the provided [start video] (c018, 12:00:37-12:00:42) and [end video] (c020, 12:00:43-12:00:50), and knowing the target passed through camera c019, infer when the target arrived at the intermediate camera.* | MCQ Acc |
-| **Basic** | **Motion-State (MS)** | Given the starting point, ending point, and intermediate location, infer the reasonable motion state of the target at intermediate locations. *Example: Based on the provided [start video] (c016, 12:00:10-12:00:22) and [end video] (c018, 12:00:37-12:00:42), and the intermediate camera c017 infer the target's motion state during the intermediate time period.* | MCQ Acc |
-| **Combinatorial** | **Causal Reordering (CR)** | Given a set of unordered video clips from different cameras and a map, determine the correct chronological sequence of cameras the target passed through. *Example: Based on the provided [local map] and [videos], analyze the target's activity trajectory. Please infer the correct order in which the target passed through these cameras.* | MCQ Acc |
-| **Combinatorial** | **Next Spot Forecasting (NSF)** | Given the target's last observed appearance in a single camera video and a map, predict the most probable next camera location and the corresponding time interval of appearance. *Example: Based on the provided [local map] and [video], which camera from the following list will likely capture the target next? You need to select one option as the answer and infer a time range.* | ST-IoU |
-| **Combinatorial** | **Trajectory Forecasting (TF)** | Building upon multiple historical observations across several cameras, predict the target's complete future trajectory by forecasting the sequence of cameras it will pass through. *Example: Based on the provided [local map] and [videos], predict the next two cameras that the target will likely pass through. You need to select a correct option sequence and infer a time range sequence simultaneously.* | ST-IoU |
-| **Combinatorial** | **Multi-Target Trajectory Forecasting (MTTF)** | This extends single-target prediction by requiring the model to forecast the future meeting point (location and time) of two distinct targets. *Example: Based on the provided [local map] and [videos] showing the movement trajectories of two [Target], predict where and when these [Target] will most likely meet.* | ST-IoU |
+GTR-Bench includes 7 different reasoning tasks across two complexity levels:
 
-GTR-Bench is divided into basic and combinatorial level, evaluated by either Multiple-Choice Question Accuracy (MCQ Acc) or Spatial-Temporal Intersection over Union (ST-IoU).
+### Basic Tasks
+- **Geo-Location (GL)**: Infer intermediate camera locations between start and end points
+- **Arrival Time-Interval (ATI)**: Predict arrival time at intermediate locations  
+- **Motion-State (MS)**: Determine target's motion state at intermediate locations
+
+### Combinatorial Tasks
+- **Causal Reordering (CR)**: Determine correct chronological sequence of camera visits
+- **Next Spot Forecasting (NSF)**: Predict next camera location and time interval
+- **Trajectory Forecasting (TF)**: Forecast complete future trajectory across multiple cameras
+- **Multi-Target Trajectory Forecasting (MTTF)**: Predict meeting point of two targets
+
+**Evaluation Metrics**: Basic tasks use Multiple-Choice Question Accuracy (MCQ Acc), while combinatorial tasks use Spatial-Temporal Intersection over Union (ST-IoU).
 
 ## 🚀 Installation and Setup
 
@@ -74,16 +77,14 @@ Open your browser and navigate to: http://localhost:8501
 - Navigate to results summary page
 - Click "📥 Export Results" to download CSV file
 
-## 🏆 Scoring System
+## 🏆 Evaluation Metrics
 
-### Metric Design
-We employ two primary metrics to evaluate model performance: standard accuracy for multiple-choice questions (MCQ) and a novel Spatial-Temporal Intersection over Union (ST-IoU) for predictive tasks. For the basic tasks and the CR task, which are formatted as MCQs, we report the accuracy. For predictive tasks (NSF, TF, and MTTF), we use ST-IoU to provide a more comprehensive assessment. The ST-IoU metric is designed to holistically evaluate a model's spatial-temporal prediction capabilities by jointly considering the correctness of the predicted location and the overlap of the predicted time interval. For a given prediction i, the ST-IoU is calculated as follows:
+GTR-Bench uses two evaluation metrics:
 
-```
-ST-IoU = (1/N) * Σ(i=1 to N) I(C_pi = C_gti) * |T_pi ∩ T_gti| / |T_pi ∪ T_gti|
-```
+- **MCQ Accuracy**: For basic reasoning tasks (GL, ATI, MS, CR)
+- **ST-IoU**: For predictive tasks (NSF, TF, MTTF) - combines spatial correctness and temporal overlap
 
-where N is the total number of predictions, I(·) is the indicator function which equals 1 if the predicted camera C_pi matches the ground truth camera C_gti and 0 otherwise. T_pi and T_gti represent the predicted and ground-truth time intervals, respectively, and the fraction calculates their temporal Intersection over Union.
+The ST-IoU metric evaluates both location accuracy and time interval overlap for comprehensive assessment of spatial-temporal reasoning capabilities.
 
 ## 📁 Project Structure
 
@@ -129,23 +130,23 @@ The system supports JSON format for question data. Each question contains:
 {
   "cases": [
     {
-      "task_id": "MotionState",
-      "case_id": "KehMGKMHJJ2RiWzTpeXKYQ",
-      "map_image_path": "./map/MotionState_map_259_KehMGKMHJJ2RiWzTpeXKYQ.png",
-      "question": "Based on the provided [start video] (c016, 12:00:10-12:00:22) and [end video] (c018, 12:00:37-12:00:42), and the intermediate camera c017, infer the target's motion state during the intermediate time period.",
-      "choices": ["Walking", "Running", "Standing", "Sitting"],
-      "correct_cam_name": ["Walking"],
-      "correct_time_str": ["12:00:25.000-12:00:30.000"],
+      "task_id": "NextSpotForecasting",
+      "case_id": "WAAGReEpzGHYNLDT2hmsAn",
+      "map_image_path": "./map/NextSpotForecasting_map_4_WAAGReEpzGHYNLDT2hmsAn.png",
+      "question": "Based on the provided [local map] and [camera information], which camera from the following list will most likely capture the target next?",
+      "choices": ["A. c09", "B. c16", "C. c11", "D. c01"],
+      "correct_cam_name": ["B. c16"],
+      "correct_time_str": ["12:01:18.440-12:01:46.880"],
       "camera_images": [
         {
-          "camera_id": "c03",
-          "object_id": 259,
-          "video_path": "./raw_video/outdoor_S04_c020.avi",
-          "crop_video_path": "./crop_video/outdoor_S04_259_52_59_c020.mp4",
-          "frame_ids": [263, 276, 289, 302, 315],
-          "bboxes": [[304.0, 760.0, 84.0, 65.0], [330.0, 765.0, 101.0, 83.0], ...],
-          "start_timestamp": 10.5,
-          "end_timestamp": 15.2
+          "camera_id": "c09",
+          "object_id": 4,
+          "video_path": "./raw_video/indoor_s01_c09",
+          "crop_video_path": "./crop_video/indoor_s01_4_76_83_c09.mp4",
+          "frame_ids": [1911, 1941, 1971, 2001, 2031, 2061],
+          "bboxes": [[310.07, 274.0, 81.53, 312.23], [522.0, 293.9, 140.1, 317.1], ...],
+          "start_timestamp": 76.44,
+          "end_timestamp": 82.56
         }
       ]
     }
@@ -154,16 +155,42 @@ The system supports JSON format for question data. Each question contains:
 ```
 
 
-## 📄 License
-
-This project is for research purposes only.
-
 ## 🤝 Contributing
 
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Setup
+```bash
+# Clone and setup
+git clone https://github.com/X-Luffy/GTR-Bench.git
+cd GTR-Bench
+pip install -r requirements.txt
+
+# Run the application
+streamlit run app.py
+```
+
+### Development Workflow
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Make your changes and test
+4. Commit: `git commit -m "Add: your feature"`
+5. Push: `git push origin feature/your-feature`
+6. Create a Pull Request
+
+## 📊 Data Download
+
+Due to file size limitations, media files are hosted separately. Download instructions are available in each data directory:
+- `data/outdoor/raw_video/README.md`
+- `data/outdoor/crop_video/README.md`
+- `data/outdoor/map/README.md`
+- `data/indoor/raw_video/README.md`
+- `data/indoor/crop_video/README.md`
+- `data/indoor/map/README.md`
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Support
 
