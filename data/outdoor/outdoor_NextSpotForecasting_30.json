@@ -3,13 +3,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "HYLBobFmnMsBo6XjBKaivm",
-      "map_image_path": "./map/NextSpotForecasting_map_259_HYLBobFmnMsBo6XjBKaivm.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_259_HYLBobFmnMsBo6XjBKaivm.png",
       "camera_images": [
         {
           "camera_id": "c083",
           "object_id": 259,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
           "frame_ids": [
             263,
             276,
@@ -72,13 +71,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "7q6qvuWqWeXfoHr99HCbJU",
-      "map_image_path": "./map/NextSpotForecasting_map_260_7q6qvuWqWeXfoHr99HCbJU.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_260_7q6qvuWqWeXfoHr99HCbJU.png",
       "camera_images": [
         {
           "camera_id": "c093",
           "object_id": 260,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
           "frame_ids": [
             78,
             88,
@@ -148,13 +146,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "MV7DJoc73cGMcroZpwopwB",
-      "map_image_path": "./map/NextSpotForecasting_map_260_MV7DJoc73cGMcroZpwopwB.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_260_MV7DJoc73cGMcroZpwopwB.png",
       "camera_images": [
         {
           "camera_id": "c014",
           "object_id": 260,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             272,
             273,
@@ -203,13 +200,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "TwVPUQrhkBJ9TRrrRhbJbY",
-      "map_image_path": "./map/NextSpotForecasting_map_261_TwVPUQrhkBJ9TRrrRhbJbY.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_261_TwVPUQrhkBJ9TRrrRhbJbY.png",
       "camera_images": [
         {
           "camera_id": "c086",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             189,
             190,
@@ -300,13 +296,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "5P5jd85JgawUmdVFC7oBDD",
-      "map_image_path": "./map/NextSpotForecasting_map_261_5P5jd85JgawUmdVFC7oBDD.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_261_5P5jd85JgawUmdVFC7oBDD.png",
       "camera_images": [
         {
           "camera_id": "c026",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c025/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c025/vdo.avi",
           "frame_ids": [
             351,
             366,
@@ -376,13 +371,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "Mm3QjLvdRejT54AFBcqih4",
-      "map_image_path": "./map/NextSpotForecasting_map_261_Mm3QjLvdRejT54AFBcqih4.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_261_Mm3QjLvdRejT54AFBcqih4.png",
       "camera_images": [
         {
           "camera_id": "c025",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c026/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c026/vdo.avi",
           "frame_ids": [
             193,
             217,
@@ -445,13 +439,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "6uETzf5qZJKgUQCzotcxq2",
-      "map_image_path": "./map/NextSpotForecasting_map_262_6uETzf5qZJKgUQCzotcxq2.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_262_6uETzf5qZJKgUQCzotcxq2.png",
       "camera_images": [
         {
           "camera_id": "c045",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             267,
             302,
@@ -514,13 +507,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "fVM35GsweXXP3h4LugHjxQ",
-      "map_image_path": "./map/NextSpotForecasting_map_262_fVM35GsweXXP3h4LugHjxQ.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_262_fVM35GsweXXP3h4LugHjxQ.png",
       "camera_images": [
         {
           "camera_id": "c052",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             588,
             591,
@@ -590,13 +582,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "8z4wPo6WWiCqswhNiGkGE6",
-      "map_image_path": "./map/NextSpotForecasting_map_262_8z4wPo6WWiCqswhNiGkGE6.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_262_8z4wPo6WWiCqswhNiGkGE6.png",
       "camera_images": [
         {
           "camera_id": "c010",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             267,
             302,
@@ -659,13 +650,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "54RDbfsUqvQASjpKF7td5i",
-      "map_image_path": "./map/NextSpotForecasting_map_263_54RDbfsUqvQASjpKF7td5i.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_263_54RDbfsUqvQASjpKF7td5i.png",
       "camera_images": [
         {
           "camera_id": "c014",
           "object_id": 263,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             373,
             374,
@@ -735,13 +725,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "fkwWpnRhC9mFqniahmadH6",
-      "map_image_path": "./map/NextSpotForecasting_map_263_fkwWpnRhC9mFqniahmadH6.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_263_fkwWpnRhC9mFqniahmadH6.png",
       "camera_images": [
         {
           "camera_id": "c093",
           "object_id": 263,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c017/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c017/vdo.avi",
           "frame_ids": [
             212,
             226,
@@ -804,13 +793,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "ESHsHaQcSNdcpHonhRKDJf",
-      "map_image_path": "./map/NextSpotForecasting_map_264_ESHsHaQcSNdcpHonhRKDJf.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_264_ESHsHaQcSNdcpHonhRKDJf.png",
       "camera_images": [
         {
           "camera_id": "c095",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c016/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c016/vdo.avi",
           "frame_ids": [
             252,
             263,
@@ -880,13 +868,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "YeYvfE2esWnxmi3eF6r9Vw",
-      "map_image_path": "./map/NextSpotForecasting_map_264_YeYvfE2esWnxmi3eF6r9Vw.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_264_YeYvfE2esWnxmi3eF6r9Vw.png",
       "camera_images": [
         {
           "camera_id": "c074",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             475,
             476,
@@ -956,13 +943,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "YtRGyRArFTYBCSesqSYC8z",
-      "map_image_path": "./map/NextSpotForecasting_map_264_YtRGyRArFTYBCSesqSYC8z.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_264_YtRGyRArFTYBCSesqSYC8z.png",
       "camera_images": [
         {
           "camera_id": "c094",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
           "frame_ids": [
             375,
             387,
@@ -1032,13 +1018,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "4SGcdpx6QqCC3FhkYxycib",
-      "map_image_path": "./map/NextSpotForecasting_map_264_4SGcdpx6QqCC3FhkYxycib.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_264_4SGcdpx6QqCC3FhkYxycib.png",
       "camera_images": [
         {
           "camera_id": "c088",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             450,
             464,
@@ -1108,13 +1093,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "d35C6y33MtdW7drZQPKCkF",
-      "map_image_path": "./map/NextSpotForecasting_map_265_d35C6y33MtdW7drZQPKCkF.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_265_d35C6y33MtdW7drZQPKCkF.png",
       "camera_images": [
         {
           "camera_id": "c035",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             383,
             384,
@@ -1177,13 +1161,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "DA7gw5LPEcLhJMGTFzHadu",
-      "map_image_path": "./map/NextSpotForecasting_map_265_DA7gw5LPEcLhJMGTFzHadu.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_265_DA7gw5LPEcLhJMGTFzHadu.png",
       "camera_images": [
         {
           "camera_id": "c016",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             282,
             287,
@@ -1253,13 +1236,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "NRHxsVaBfoPqQuzT6Wo9FB",
-      "map_image_path": "./map/NextSpotForecasting_map_265_NRHxsVaBfoPqQuzT6Wo9FB.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_265_NRHxsVaBfoPqQuzT6Wo9FB.png",
       "camera_images": [
         {
           "camera_id": "c046",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             497,
             498,
@@ -1329,13 +1311,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "gPVYDkp3mrQWgHYeXbpZp4",
-      "map_image_path": "./map/NextSpotForecasting_map_265_gPVYDkp3mrQWgHYeXbpZp4.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_265_gPVYDkp3mrQWgHYeXbpZp4.png",
       "camera_images": [
         {
           "camera_id": "c09",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             497,
             498,
@@ -1405,13 +1386,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "HPvbRdGjQC3tSJ66rR9JyX",
-      "map_image_path": "./map/NextSpotForecasting_map_271_HPvbRdGjQC3tSJ66rR9JyX.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_271_HPvbRdGjQC3tSJ66rR9JyX.png",
       "camera_images": [
         {
           "camera_id": "c069",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             1,
             23,
@@ -1481,13 +1461,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "hbzefFsBmJyWF8aTDQ3hDJ",
-      "map_image_path": "./map/NextSpotForecasting_map_271_hbzefFsBmJyWF8aTDQ3hDJ.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_271_hbzefFsBmJyWF8aTDQ3hDJ.png",
       "camera_images": [
         {
           "camera_id": "c028",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             59,
             60,
@@ -1536,13 +1515,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "UNbsKYoiv5emyax9oUK8qZ",
-      "map_image_path": "./map/NextSpotForecasting_map_271_UNbsKYoiv5emyax9oUK8qZ.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_271_UNbsKYoiv5emyax9oUK8qZ.png",
       "camera_images": [
         {
           "camera_id": "c073",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             59,
             60,
@@ -1591,13 +1569,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "8zUkX3SFAE3E4bq8c9nVPK",
-      "map_image_path": "./map/NextSpotForecasting_map_272_8zUkX3SFAE3E4bq8c9nVPK.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_272_8zUkX3SFAE3E4bq8c9nVPK.png",
       "camera_images": [
         {
           "camera_id": "c089",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             1,
             46,
@@ -1667,13 +1644,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "9LcfKxyXRaeHKrL7qCVwDu",
-      "map_image_path": "./map/NextSpotForecasting_map_272_9LcfKxyXRaeHKrL7qCVwDu.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_272_9LcfKxyXRaeHKrL7qCVwDu.png",
       "camera_images": [
         {
           "camera_id": "c044",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             314,
             317,
@@ -1736,13 +1712,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "dkJFEx46F6HbgoniJFkFoH",
-      "map_image_path": "./map/NextSpotForecasting_map_272_dkJFEx46F6HbgoniJFkFoH.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_272_dkJFEx46F6HbgoniJFkFoH.png",
       "camera_images": [
         {
           "camera_id": "c051",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
           "frame_ids": [
             118,
             133,
@@ -1812,13 +1787,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "2y87cSs4fpd94EtTzhziMe",
-      "map_image_path": "./map/NextSpotForecasting_map_272_2y87cSs4fpd94EtTzhziMe.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_272_2y87cSs4fpd94EtTzhziMe.png",
       "camera_images": [
         {
           "camera_id": "c095",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             20,
             31,
@@ -1888,13 +1862,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "RVdEGv7LPTf3Yqok4Pvo9X",
-      "map_image_path": "./map/NextSpotForecasting_map_272_RVdEGv7LPTf3Yqok4Pvo9X.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_272_RVdEGv7LPTf3Yqok4Pvo9X.png",
       "camera_images": [
         {
           "camera_id": "c084",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             74,
             75,
@@ -1957,13 +1930,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "VSz3WWCzcCM9GxMkruyYXA",
-      "map_image_path": "./map/NextSpotForecasting_map_273_VSz3WWCzcCM9GxMkruyYXA.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_273_VSz3WWCzcCM9GxMkruyYXA.png",
       "camera_images": [
         {
           "camera_id": "c042",
           "object_id": 273,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c036/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c036/vdo.avi",
           "frame_ids": [
             192,
             222,
@@ -2033,13 +2005,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "Nq8JcLjroDsoyrpkbg7ywr",
-      "map_image_path": "./map/NextSpotForecasting_map_273_Nq8JcLjroDsoyrpkbg7ywr.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_273_Nq8JcLjroDsoyrpkbg7ywr.png",
       "camera_images": [
         {
           "camera_id": "c041",
           "object_id": 273,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c037/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c037/vdo.avi",
           "frame_ids": [
             197,
             217,
@@ -2109,13 +2080,12 @@
     {
       "task_id": "NextSpotForecasting",
       "case_id": "RzGkTFLPmNkTHFuM8wTAJx",
-      "map_image_path": "./map/NextSpotForecasting_map_273_RzGkTFLPmNkTHFuM8wTAJx.png",
+      "map_image_path": "./data/outdoor/map/NextSpotForecasting_map_273_RzGkTFLPmNkTHFuM8wTAJx.png",
       "camera_images": [
         {
           "camera_id": "c037",
           "object_id": 273,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             1,
             77,

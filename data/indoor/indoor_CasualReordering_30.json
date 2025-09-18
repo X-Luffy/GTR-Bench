@@ -3,13 +3,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Zc7Y3Uc9FcCvVr9hNYrhet",
-      "map_image_path": "./map/CasualReordering_map_4_Zc7Y3Uc9FcCvVr9hNYrhet.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_4_Zc7Y3Uc9FcCvVr9hNYrhet.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             971,
             1028,
@@ -63,8 +62,7 @@
         {
           "camera_id": "c12",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             1603,
             1645,
@@ -118,8 +116,7 @@
         {
           "camera_id": "c09",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             1911,
             1941,
@@ -185,13 +182,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "42yJyaoH7ZDoevCYYuSXNG",
-      "map_image_path": "./map/CasualReordering_map_4_42yJyaoH7ZDoevCYYuSXNG.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_4_42yJyaoH7ZDoevCYYuSXNG.png",
       "camera_images": [
         {
           "camera_id": "c08",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             665,
             717,
@@ -245,8 +241,7 @@
         {
           "camera_id": "c03",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             971,
             1028,
@@ -300,8 +295,7 @@
         {
           "camera_id": "c12",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             1603,
             1645,
@@ -367,13 +361,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Y2YGDTSA9brQ4vRKGnWZvP",
-      "map_image_path": "./map/CasualReordering_map_5_Y2YGDTSA9brQ4vRKGnWZvP.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_5_Y2YGDTSA9brQ4vRKGnWZvP.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             5909,
             5971,
@@ -427,8 +420,7 @@
         {
           "camera_id": "c12",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             6432,
             6451,
@@ -475,8 +467,7 @@
         {
           "camera_id": "c13",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             6463,
             6480,
@@ -542,13 +533,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "koAZUdUAehoitn5JMz3qHq",
-      "map_image_path": "./map/CasualReordering_map_5_koAZUdUAehoitn5JMz3qHq.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_5_koAZUdUAehoitn5JMz3qHq.png",
       "camera_images": [
         {
           "camera_id": "c07",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             819,
             858,
@@ -602,8 +592,7 @@
         {
           "camera_id": "c08",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             982,
             1024,
@@ -650,8 +639,7 @@
         {
           "camera_id": "c03",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             1215,
             1271,
@@ -717,13 +705,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "NEhPbmk5tGk34gqEgTr6wo",
-      "map_image_path": "./map/CasualReordering_map_7_NEhPbmk5tGk34gqEgTr6wo.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_7_NEhPbmk5tGk34gqEgTr6wo.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             4090,
             4143,
@@ -777,8 +764,7 @@
         {
           "camera_id": "c11",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             4839,
             4916,
@@ -832,8 +818,7 @@
         {
           "camera_id": "c10",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c10/rgb",
           "frame_ids": [
             6032,
             6070,
@@ -899,13 +884,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "WzkXD4gcUwnLQSydQqzDG6",
-      "map_image_path": "./map/CasualReordering_map_8_WzkXD4gcUwnLQSydQqzDG6.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_8_WzkXD4gcUwnLQSydQqzDG6.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             3692,
             3720,
@@ -959,8 +943,7 @@
         {
           "camera_id": "c08",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             4148,
             4171,
@@ -1014,8 +997,7 @@
         {
           "camera_id": "c07",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             4225,
             4279,
@@ -1081,13 +1063,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "LvaHeyWiM8qeJZbepotqPh",
-      "map_image_path": "./map/CasualReordering_map_8_LvaHeyWiM8qeJZbepotqPh.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_8_LvaHeyWiM8qeJZbepotqPh.png",
       "camera_images": [
         {
           "camera_id": "c04",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             1765,
             1836,
@@ -1141,8 +1122,7 @@
         {
           "camera_id": "c05",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             2252,
             2441,
@@ -1196,8 +1176,7 @@
         {
           "camera_id": "c01",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             2441,
             2584,
@@ -1263,13 +1242,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "5XRMyswMZHo2AhaPeNMDHW",
-      "map_image_path": "./map/CasualReordering_map_9_5XRMyswMZHo2AhaPeNMDHW.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_9_5XRMyswMZHo2AhaPeNMDHW.png",
       "camera_images": [
         {
           "camera_id": "c01",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             5241,
             5415,
@@ -1323,8 +1301,7 @@
         {
           "camera_id": "c05",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             5532,
             5659,
@@ -1378,8 +1355,7 @@
         {
           "camera_id": "c02",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             6342,
             6447,
@@ -1445,13 +1421,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "efJ6FUHMmA8o5HgAXMaV9y",
-      "map_image_path": "./map/CasualReordering_map_9_efJ6FUHMmA8o5HgAXMaV9y.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_9_efJ6FUHMmA8o5HgAXMaV9y.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             5532,
             5659,
@@ -1505,8 +1480,7 @@
         {
           "camera_id": "c02",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             6342,
             6447,
@@ -1560,8 +1534,7 @@
         {
           "camera_id": "c04",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             6706,
             6762,
@@ -1620,13 +1593,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "dGxuPxDmWaieSiZjQUN5iZ",
-      "map_image_path": "./map/CasualReordering_map_9_dGxuPxDmWaieSiZjQUN5iZ.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_9_dGxuPxDmWaieSiZjQUN5iZ.png",
       "camera_images": [
         {
           "camera_id": "c15",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             1525,
             1731,
@@ -1680,8 +1652,7 @@
         {
           "camera_id": "c10",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c10/rgb",
           "frame_ids": [
             3016,
             3043,
@@ -1735,8 +1706,7 @@
         {
           "camera_id": "c11",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             3983,
             4056,
@@ -1802,13 +1772,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "dShxZNQ783gRoQaMKdQAJb",
-      "map_image_path": "./map/CasualReordering_map_10_dShxZNQ783gRoQaMKdQAJb.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_10_dShxZNQ783gRoQaMKdQAJb.png",
       "camera_images": [
         {
           "camera_id": "c13",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             118,
             218,
@@ -1862,8 +1831,7 @@
         {
           "camera_id": "c12",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             611,
             632,
@@ -1917,8 +1885,7 @@
         {
           "camera_id": "c03",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             978,
             1030,
@@ -1984,13 +1951,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "H4bLfiFh7XwCurnfhEKKdV",
-      "map_image_path": "./map/CasualReordering_map_10_H4bLfiFh7XwCurnfhEKKdV.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_10_H4bLfiFh7XwCurnfhEKKdV.png",
       "camera_images": [
         {
           "camera_id": "c08",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             1295,
             1348,
@@ -2037,8 +2003,7 @@
         {
           "camera_id": "c01",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             1571,
             1635,
@@ -2085,8 +2050,7 @@
         {
           "camera_id": "c05",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             1862,
             1872,
@@ -2152,13 +2116,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "V9CZeTSpgpGxFN3Teaep3S",
-      "map_image_path": "./map/CasualReordering_map_16_V9CZeTSpgpGxFN3Teaep3S.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_16_V9CZeTSpgpGxFN3Teaep3S.png",
       "camera_images": [
         {
           "camera_id": "c14",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             0,
             63,
@@ -2212,8 +2175,7 @@
         {
           "camera_id": "c16",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             15,
             70,
@@ -2267,8 +2229,7 @@
         {
           "camera_id": "c09",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             824,
             868,
@@ -2334,13 +2295,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "eWMgiduHqjedF3CySGRTXw",
-      "map_image_path": "./map/CasualReordering_map_16_eWMgiduHqjedF3CySGRTXw.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_16_eWMgiduHqjedF3CySGRTXw.png",
       "camera_images": [
         {
           "camera_id": "c16",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             15,
             70,
@@ -2394,8 +2354,7 @@
         {
           "camera_id": "c09",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             824,
             868,
@@ -2449,8 +2408,7 @@
         {
           "camera_id": "c12",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             2338,
             2359,
@@ -2516,13 +2474,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "XH5T4kxDmCjhrFatmKKuoU",
-      "map_image_path": "./map/CasualReordering_map_17_XH5T4kxDmCjhrFatmKKuoU.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_17_XH5T4kxDmCjhrFatmKKuoU.png",
       "camera_images": [
         {
           "camera_id": "c10",
           "object_id": 17,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c10/rgb",
           "frame_ids": [
             3289,
             3325,
@@ -2576,8 +2533,7 @@
         {
           "camera_id": "c11",
           "object_id": 17,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             4109,
             4171,
@@ -2631,8 +2587,7 @@
         {
           "camera_id": "c05",
           "object_id": 17,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             5013,
             5086,
@@ -2691,13 +2646,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "gRP5xRxPeDpALPJHckRqDd",
-      "map_image_path": "./map/CasualReordering_map_17_gRP5xRxPeDpALPJHckRqDd.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_17_gRP5xRxPeDpALPJHckRqDd.png",
       "camera_images": [
         {
           "camera_id": "c15",
           "object_id": 17,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             824,
             1100,
@@ -2751,8 +2705,7 @@
         {
           "camera_id": "c10",
           "object_id": 17,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c10/rgb",
           "frame_ids": [
             3289,
             3325,
@@ -2806,8 +2759,7 @@
         {
           "camera_id": "c11",
           "object_id": 17,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             4109,
             4171,
@@ -2873,13 +2825,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Gi7gpmudDrcTzuMSUDbMwv",
-      "map_image_path": "./map/CasualReordering_map_18_Gi7gpmudDrcTzuMSUDbMwv.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_18_Gi7gpmudDrcTzuMSUDbMwv.png",
       "camera_images": [
         {
           "camera_id": "c16",
           "object_id": 18,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             6109,
             6144,
@@ -2933,8 +2884,7 @@
         {
           "camera_id": "c09",
           "object_id": 18,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             6482,
             6512,
@@ -2981,8 +2931,7 @@
         {
           "camera_id": "c12",
           "object_id": 18,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             6693,
             6714,
@@ -3048,13 +2997,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "EKimj6kx84DzXB6yYQHzjQ",
-      "map_image_path": "./map/CasualReordering_map_19_EKimj6kx84DzXB6yYQHzjQ.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_19_EKimj6kx84DzXB6yYQHzjQ.png",
       "camera_images": [
         {
           "camera_id": "c01",
           "object_id": 19,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             4263,
             4388,
@@ -3108,8 +3056,7 @@
         {
           "camera_id": "c05",
           "object_id": 19,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             4291,
             4448,
@@ -3163,8 +3110,7 @@
         {
           "camera_id": "c11",
           "object_id": 19,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             5490,
             5542,
@@ -3230,13 +3176,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "SxW97jg7jyEJbTi6EWPiqs",
-      "map_image_path": "./map/CasualReordering_map_20_SxW97jg7jyEJbTi6EWPiqs.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_20_SxW97jg7jyEJbTi6EWPiqs.png",
       "camera_images": [
         {
           "camera_id": "c12",
           "object_id": 20,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             4407,
             4430,
@@ -3290,8 +3235,7 @@
         {
           "camera_id": "c09",
           "object_id": 20,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             4615,
             4644,
@@ -3345,8 +3289,7 @@
         {
           "camera_id": "c14",
           "object_id": 20,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             4906,
             4927,
@@ -3412,13 +3355,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "89zVytr52c8re7Uatx2CXY",
-      "map_image_path": "./map/CasualReordering_map_20_89zVytr52c8re7Uatx2CXY.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_20_89zVytr52c8re7Uatx2CXY.png",
       "camera_images": [
         {
           "camera_id": "c01",
           "object_id": 20,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             2691,
             2835,
@@ -3465,8 +3407,7 @@
         {
           "camera_id": "c05",
           "object_id": 20,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             2758,
             2845,
@@ -3513,8 +3454,7 @@
         {
           "camera_id": "c08",
           "object_id": 20,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             3471,
             3538,
@@ -3580,13 +3520,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "cazP4RbxCYhCe998eHENuZ",
-      "map_image_path": "./map/CasualReordering_map_21_cazP4RbxCYhCe998eHENuZ.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_21_cazP4RbxCYhCe998eHENuZ.png",
       "camera_images": [
         {
           "camera_id": "c14",
           "object_id": 21,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             2829,
             2844,
@@ -3633,8 +3572,7 @@
         {
           "camera_id": "c10",
           "object_id": 21,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c10/rgb",
           "frame_ids": [
             3428,
             3457,
@@ -3688,8 +3626,7 @@
         {
           "camera_id": "c15",
           "object_id": 21,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             4689,
             4978,
@@ -3755,13 +3692,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "PDrKFuKQqEcJyfZmPPjRba",
-      "map_image_path": "./map/CasualReordering_map_25_PDrKFuKQqEcJyfZmPPjRba.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_25_PDrKFuKQqEcJyfZmPPjRba.png",
       "camera_images": [
         {
           "camera_id": "c02",
           "object_id": 25,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             4153,
             4205,
@@ -3815,8 +3751,7 @@
         {
           "camera_id": "c05",
           "object_id": 25,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             4518,
             4592,
@@ -3870,8 +3805,7 @@
         {
           "camera_id": "c01",
           "object_id": 25,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             4531,
             4599,
@@ -3937,13 +3871,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "nqk46RGii8zpJ78sTGk52f",
-      "map_image_path": "./map/CasualReordering_map_26_nqk46RGii8zpJ78sTGk52f.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_26_nqk46RGii8zpJ78sTGk52f.png",
       "camera_images": [
         {
           "camera_id": "c07",
           "object_id": 26,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             2239,
             2265,
@@ -3997,8 +3930,7 @@
         {
           "camera_id": "c05",
           "object_id": 26,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             3338,
             3388,
@@ -4052,8 +3984,7 @@
         {
           "camera_id": "c01",
           "object_id": 26,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             3347,
             3390,
@@ -4119,13 +4050,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "Cv4RsSSvLrR5HSzCdhjm8M",
-      "map_image_path": "./map/CasualReordering_map_28_Cv4RsSSvLrR5HSzCdhjm8M.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_28_Cv4RsSSvLrR5HSzCdhjm8M.png",
       "camera_images": [
         {
           "camera_id": "c09",
           "object_id": 28,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             2073,
             2124,
@@ -4179,8 +4109,7 @@
         {
           "camera_id": "c14",
           "object_id": 28,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             3604,
             3933,
@@ -4227,8 +4156,7 @@
         {
           "camera_id": "c16",
           "object_id": 28,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             4930,
             4948,
@@ -4294,13 +4222,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "FLmZdhBVirYDS7PztDQEck",
-      "map_image_path": "./map/CasualReordering_map_30_FLmZdhBVirYDS7PztDQEck.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_30_FLmZdhBVirYDS7PztDQEck.png",
       "camera_images": [
         {
           "camera_id": "c16",
           "object_id": 30,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             1852,
             1934,
@@ -4354,8 +4281,7 @@
         {
           "camera_id": "c09",
           "object_id": 30,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             2303,
             2328,
@@ -4409,8 +4335,7 @@
         {
           "camera_id": "c13",
           "object_id": 30,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             2448,
             2575,
@@ -4476,13 +4401,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "LHUw3v55nGFDaigAeiPviN",
-      "map_image_path": "./map/CasualReordering_map_30_LHUw3v55nGFDaigAeiPviN.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_30_LHUw3v55nGFDaigAeiPviN.png",
       "camera_images": [
         {
           "camera_id": "c04",
           "object_id": 30,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             0,
             40,
@@ -4536,8 +4460,7 @@
         {
           "camera_id": "c05",
           "object_id": 30,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             332,
             434,
@@ -4591,8 +4514,7 @@
         {
           "camera_id": "c11",
           "object_id": 30,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             1130,
             1170,
@@ -4658,13 +4580,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "mJUAUL6VAr3Y4ptUbkwo88",
-      "map_image_path": "./map/CasualReordering_map_31_mJUAUL6VAr3Y4ptUbkwo88.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_31_mJUAUL6VAr3Y4ptUbkwo88.png",
       "camera_images": [
         {
           "camera_id": "c09",
           "object_id": 31,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             0,
             57,
@@ -4718,8 +4639,7 @@
         {
           "camera_id": "c16",
           "object_id": 31,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             0,
             40,
@@ -4773,8 +4693,7 @@
         {
           "camera_id": "c12",
           "object_id": 31,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             352,
             371,
@@ -4833,13 +4752,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "jPtAqH86NDLchzEfKturHw",
-      "map_image_path": "./map/CasualReordering_map_32_jPtAqH86NDLchzEfKturHw.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_32_jPtAqH86NDLchzEfKturHw.png",
       "camera_images": [
         {
           "camera_id": "c13",
           "object_id": 32,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             5285,
             5318,
@@ -4893,8 +4811,7 @@
         {
           "camera_id": "c09",
           "object_id": 32,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             5526,
             5539,
@@ -4948,8 +4865,7 @@
         {
           "camera_id": "c16",
           "object_id": 32,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             5676,
             5825,
@@ -5008,13 +4924,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "K8NeqNGwN4BN3d6D7sNJoS",
-      "map_image_path": "./map/CasualReordering_map_36_K8NeqNGwN4BN3d6D7sNJoS.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_36_K8NeqNGwN4BN3d6D7sNJoS.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 36,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             5439,
             5497,
@@ -5068,8 +4983,7 @@
         {
           "camera_id": "c12",
           "object_id": 36,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             5951,
             5996,
@@ -5123,8 +5037,7 @@
         {
           "camera_id": "c13",
           "object_id": 36,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             6120,
             6132,
@@ -5190,13 +5103,12 @@
     {
       "task_id": "CasualReordering",
       "case_id": "7aUSCpG8jasHmyGQbCfL5S",
-      "map_image_path": "./map/CasualReordering_map_42_7aUSCpG8jasHmyGQbCfL5S.png",
+      "map_image_path": "./data/indoor/map/CasualReordering_map_42_7aUSCpG8jasHmyGQbCfL5S.png",
       "camera_images": [
         {
           "camera_id": "c06",
           "object_id": 42,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c06/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c06/rgb",
           "frame_ids": [
             805,
             809,
@@ -5250,8 +5162,7 @@
         {
           "camera_id": "c02",
           "object_id": 42,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             1407,
             1497,
@@ -5298,8 +5209,7 @@
         {
           "camera_id": "c04",
           "object_id": 42,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             1499,
             1605,

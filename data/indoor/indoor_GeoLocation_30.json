@@ -3,13 +3,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "STBTLSTCz3idDVkLG7m2qm",
-      "map_image_path": "./map/GeoLocation_map_1_STBTLSTCz3idDVkLG7m2qm.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_1_STBTLSTCz3idDVkLG7m2qm.png",
       "camera_images": [
         {
           "camera_id": "c11",
           "object_id": 1,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             2392,
             2450,
@@ -63,8 +62,7 @@
         {
           "camera_id": "c15",
           "object_id": 1,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             4156,
             4455,
@@ -144,13 +142,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "YdSKMhib7zGgV58FLX5h2y",
-      "map_image_path": "./map/GeoLocation_map_1_YdSKMhib7zGgV58FLX5h2y.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_1_YdSKMhib7zGgV58FLX5h2y.png",
       "camera_images": [
         {
           "camera_id": "c15",
           "object_id": 1,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             4156,
             4455,
@@ -204,8 +201,7 @@
         {
           "camera_id": "c14",
           "object_id": 1,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             6450,
             6473,
@@ -285,13 +281,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "bwKyPknJnEjvujBmrg7nMy",
-      "map_image_path": "./map/GeoLocation_map_1_bwKyPknJnEjvujBmrg7nMy.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_1_bwKyPknJnEjvujBmrg7nMy.png",
       "camera_images": [
         {
           "camera_id": "c02",
           "object_id": 1,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             0,
             77,
@@ -345,8 +340,7 @@
         {
           "camera_id": "c05",
           "object_id": 1,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             709,
             739,
@@ -419,13 +413,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "a53GFstdrZaLN8Dn4hTpKq",
-      "map_image_path": "./map/GeoLocation_map_3_a53GFstdrZaLN8Dn4hTpKq.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_3_a53GFstdrZaLN8Dn4hTpKq.png",
       "camera_images": [
         {
           "camera_id": "c02",
           "object_id": 3,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             32,
             226,
@@ -479,8 +472,7 @@
         {
           "camera_id": "c05",
           "object_id": 3,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             1089,
             1174,
@@ -560,13 +552,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "nx2usSQTrgfgHNVaycwvCU",
-      "map_image_path": "./map/GeoLocation_map_3_nx2usSQTrgfgHNVaycwvCU.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_3_nx2usSQTrgfgHNVaycwvCU.png",
       "camera_images": [
         {
           "camera_id": "c04",
           "object_id": 3,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             337,
             422,
@@ -620,8 +611,7 @@
         {
           "camera_id": "c01",
           "object_id": 3,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             1096,
             1414,
@@ -694,13 +684,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "X2C6ZDAxwWfmAd4fPJTnov",
-      "map_image_path": "./map/GeoLocation_map_3_X2C6ZDAxwWfmAd4fPJTnov.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_3_X2C6ZDAxwWfmAd4fPJTnov.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 3,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             3527,
             3567,
@@ -754,8 +743,7 @@
         {
           "camera_id": "c07",
           "object_id": 3,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             4012,
             4046,
@@ -835,13 +823,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "ZKpno7wJEbgZrqPD633uDW",
-      "map_image_path": "./map/GeoLocation_map_4_ZKpno7wJEbgZrqPD633uDW.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_4_ZKpno7wJEbgZrqPD633uDW.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             971,
             1028,
@@ -895,8 +882,7 @@
         {
           "camera_id": "c09",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             1911,
             1941,
@@ -976,13 +962,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "TbsCcZS5HTPPbbA6TNiMER",
-      "map_image_path": "./map/GeoLocation_map_4_TbsCcZS5HTPPbbA6TNiMER.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_4_TbsCcZS5HTPPbbA6TNiMER.png",
       "camera_images": [
         {
           "camera_id": "c12",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             1603,
             1645,
@@ -1036,8 +1021,7 @@
         {
           "camera_id": "c16",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             1961,
             2103,
@@ -1117,13 +1101,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "GuHfk6HuR3EAgKx5JE76d4",
-      "map_image_path": "./map/GeoLocation_map_4_GuHfk6HuR3EAgKx5JE76d4.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_4_GuHfk6HuR3EAgKx5JE76d4.png",
       "camera_images": [
         {
           "camera_id": "c14",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             2825,
             2842,
@@ -1177,8 +1160,7 @@
         {
           "camera_id": "c15",
           "object_id": 4,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             4683,
             4977,
@@ -1258,13 +1240,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Pkyndy5oYpfvSbapHGGX7T",
-      "map_image_path": "./map/GeoLocation_map_5_Pkyndy5oYpfvSbapHGGX7T.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_5_Pkyndy5oYpfvSbapHGGX7T.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             4064,
             4318,
@@ -1318,8 +1299,7 @@
         {
           "camera_id": "c12",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             6432,
             6451,
@@ -1392,13 +1372,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "AWdun6evAkqbWKbqMRk3PF",
-      "map_image_path": "./map/GeoLocation_map_5_AWdun6evAkqbWKbqMRk3PF.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_5_AWdun6evAkqbWKbqMRk3PF.png",
       "camera_images": [
         {
           "camera_id": "c07",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             819,
             858,
@@ -1452,8 +1431,7 @@
         {
           "camera_id": "c03",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             1215,
             1271,
@@ -1533,13 +1511,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "ZE2uVc8PC4MDhvR6vqa5di",
-      "map_image_path": "./map/GeoLocation_map_5_ZE2uVc8PC4MDhvR6vqa5di.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_5_ZE2uVc8PC4MDhvR6vqa5di.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             1831,
             1877,
@@ -1593,8 +1570,7 @@
         {
           "camera_id": "c01",
           "object_id": 5,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             2376,
             2624,
@@ -1667,13 +1643,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "PMExC7c2BTw332zHAfanbL",
-      "map_image_path": "./map/GeoLocation_map_7_PMExC7c2BTw332zHAfanbL.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_7_PMExC7c2BTw332zHAfanbL.png",
       "camera_images": [
         {
           "camera_id": "c06",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c06/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c06/rgb",
           "frame_ids": [
             795,
             799,
@@ -1720,8 +1695,7 @@
         {
           "camera_id": "c01",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             1252,
             1348,
@@ -1801,13 +1775,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "5NVSVpQVhqFB6jLWJkrNFJ",
-      "map_image_path": "./map/GeoLocation_map_7_5NVSVpQVhqFB6jLWJkrNFJ.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_7_5NVSVpQVhqFB6jLWJkrNFJ.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             4090,
             4143,
@@ -1861,8 +1834,7 @@
         {
           "camera_id": "c10",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c10/rgb",
           "frame_ids": [
             6032,
             6070,
@@ -1942,13 +1914,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "f9i2i9mFRHj4xzQuWqZ9aS",
-      "map_image_path": "./map/GeoLocation_map_7_f9i2i9mFRHj4xzQuWqZ9aS.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_7_f9i2i9mFRHj4xzQuWqZ9aS.png",
       "camera_images": [
         {
           "camera_id": "c11",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             4839,
             4916,
@@ -2002,8 +1973,7 @@
         {
           "camera_id": "c15",
           "object_id": 7,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             7245,
             7268,
@@ -2083,13 +2053,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Q6HyGWBQSVbsttdUusBRSP",
-      "map_image_path": "./map/GeoLocation_map_8_Q6HyGWBQSVbsttdUusBRSP.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_8_Q6HyGWBQSVbsttdUusBRSP.png",
       "camera_images": [
         {
           "camera_id": "c08",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             5935,
             5983,
@@ -2143,8 +2112,7 @@
         {
           "camera_id": "c12",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             6578,
             6607,
@@ -2224,13 +2192,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "88KhUXrbyzmAhf9kv8gqm8",
-      "map_image_path": "./map/GeoLocation_map_8_88KhUXrbyzmAhf9kv8gqm8.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_8_88KhUXrbyzmAhf9kv8gqm8.png",
       "camera_images": [
         {
           "camera_id": "c04",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             1765,
             1836,
@@ -2284,8 +2251,7 @@
         {
           "camera_id": "c01",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             2441,
             2584,
@@ -2365,13 +2331,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "X8n7mTq4m3iFn5ZMMmmudr",
-      "map_image_path": "./map/GeoLocation_map_8_X8n7mTq4m3iFn5ZMMmmudr.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_8_X8n7mTq4m3iFn5ZMMmmudr.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             3692,
             3720,
@@ -2425,8 +2390,7 @@
         {
           "camera_id": "c07",
           "object_id": 8,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             4225,
             4279,
@@ -2506,13 +2470,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "cbsjEXtCnLCNuFF3mAGWkp",
-      "map_image_path": "./map/GeoLocation_map_9_cbsjEXtCnLCNuFF3mAGWkp.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_9_cbsjEXtCnLCNuFF3mAGWkp.png",
       "camera_images": [
         {
           "camera_id": "c15",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c15/rgb",
           "frame_ids": [
             1525,
             1731,
@@ -2566,8 +2529,7 @@
         {
           "camera_id": "c11",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c11/rgb",
           "frame_ids": [
             3983,
             4056,
@@ -2647,13 +2609,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "dv682eUWKPbfGzLD6Twqeb",
-      "map_image_path": "./map/GeoLocation_map_9_dv682eUWKPbfGzLD6Twqeb.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_9_dv682eUWKPbfGzLD6Twqeb.png",
       "camera_images": [
         {
           "camera_id": "c01",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             5241,
             5415,
@@ -2707,8 +2668,7 @@
         {
           "camera_id": "c02",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             6342,
             6447,
@@ -2788,13 +2748,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Y7Ntyu7z6ZczGnvo4HgNpe",
-      "map_image_path": "./map/GeoLocation_map_9_Y7Ntyu7z6ZczGnvo4HgNpe.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_9_Y7Ntyu7z6ZczGnvo4HgNpe.png",
       "camera_images": [
         {
           "camera_id": "c05",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             5532,
             5659,
@@ -2848,8 +2807,7 @@
         {
           "camera_id": "c04",
           "object_id": 9,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c04/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c04/rgb",
           "frame_ids": [
             6706,
             6762,
@@ -2922,13 +2880,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "PB6QKmFg7xFBTkauYc8ddC",
-      "map_image_path": "./map/GeoLocation_map_10_PB6QKmFg7xFBTkauYc8ddC.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_10_PB6QKmFg7xFBTkauYc8ddC.png",
       "camera_images": [
         {
           "camera_id": "c12",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             611,
             632,
@@ -2982,8 +2939,7 @@
         {
           "camera_id": "c08",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             1295,
             1348,
@@ -3056,13 +3012,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "mpzhd3tqQ7eCpSGTtKx8j6",
-      "map_image_path": "./map/GeoLocation_map_10_mpzhd3tqQ7eCpSGTtKx8j6.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_10_mpzhd3tqQ7eCpSGTtKx8j6.png",
       "camera_images": [
         {
           "camera_id": "c13",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             118,
             218,
@@ -3116,8 +3071,7 @@
         {
           "camera_id": "c03",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             978,
             1030,
@@ -3197,13 +3151,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "QxP8aSfYD28w6BLGGzDZ2t",
-      "map_image_path": "./map/GeoLocation_map_10_QxP8aSfYD28w6BLGGzDZ2t.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_10_QxP8aSfYD28w6BLGGzDZ2t.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             978,
             1030,
@@ -3257,8 +3210,7 @@
         {
           "camera_id": "c01",
           "object_id": 10,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             1571,
             1635,
@@ -3331,13 +3283,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "kA8wM3STxVpdPiP4YtgnGW",
-      "map_image_path": "./map/GeoLocation_map_11_kA8wM3STxVpdPiP4YtgnGW.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_11_kA8wM3STxVpdPiP4YtgnGW.png",
       "camera_images": [
         {
           "camera_id": "c08",
           "object_id": 11,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             2379,
             2442,
@@ -3391,8 +3342,7 @@
         {
           "camera_id": "c12",
           "object_id": 11,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             3364,
             3387,
@@ -3472,13 +3422,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "WBUwHXiJkS29JaVYBRHfSx",
-      "map_image_path": "./map/GeoLocation_map_11_WBUwHXiJkS29JaVYBRHfSx.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_11_WBUwHXiJkS29JaVYBRHfSx.png",
       "camera_images": [
         {
           "camera_id": "c01",
           "object_id": 11,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             0,
             49,
@@ -3532,8 +3481,7 @@
         {
           "camera_id": "c02",
           "object_id": 11,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c02/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c02/rgb",
           "frame_ids": [
             483,
             568,
@@ -3613,13 +3561,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "3CsiYnPbr2aN9eLzN5LRfP",
-      "map_image_path": "./map/GeoLocation_map_11_3CsiYnPbr2aN9eLzN5LRfP.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_11_3CsiYnPbr2aN9eLzN5LRfP.png",
       "camera_images": [
         {
           "camera_id": "c12",
           "object_id": 11,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             3364,
             3387,
@@ -3673,8 +3620,7 @@
         {
           "camera_id": "c16",
           "object_id": 11,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             3646,
             3678,
@@ -3754,13 +3700,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "5dx8yYN6b5RQpdhX27CBHT",
-      "map_image_path": "./map/GeoLocation_map_16_5dx8yYN6b5RQpdhX27CBHT.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_16_5dx8yYN6b5RQpdhX27CBHT.png",
       "camera_images": [
         {
           "camera_id": "c08",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c08/rgb",
           "frame_ids": [
             3093,
             3144,
@@ -3814,8 +3759,7 @@
         {
           "camera_id": "c05",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c05/rgb",
           "frame_ids": [
             3642,
             3682,
@@ -3895,13 +3839,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "2TYnpyVFwN5aFt5sfJGbpY",
-      "map_image_path": "./map/GeoLocation_map_16_2TYnpyVFwN5aFt5sfJGbpY.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_16_2TYnpyVFwN5aFt5sfJGbpY.png",
       "camera_images": [
         {
           "camera_id": "c03",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             2711,
             2774,
@@ -3948,8 +3891,7 @@
         {
           "camera_id": "c01",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             3358,
             3452,
@@ -4029,13 +3971,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "43TvqXwsvGUiihZ4M9pCFr",
-      "map_image_path": "./map/GeoLocation_map_16_43TvqXwsvGUiihZ4M9pCFr.png",
+      "map_image_path": "./data/indoor/map/GeoLocation_map_16_43TvqXwsvGUiihZ4M9pCFr.png",
       "camera_images": [
         {
           "camera_id": "c16",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c16/rgb",
           "frame_ids": [
             15,
             70,
@@ -4089,8 +4030,7 @@
         {
           "camera_id": "c12",
           "object_id": 16,
-          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
-          "grid_frame_path": "",
+          "video_path": "./data/indoor/mtmmc/train/s01/c12/rgb",
           "frame_ids": [
             2338,
             2359,

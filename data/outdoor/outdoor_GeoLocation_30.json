@@ -3,13 +3,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "TAFXtPq2mCTSGqjM3nbFZJ",
-      "map_image_path": "./map/GeoLocation_map_259_TAFXtPq2mCTSGqjM3nbFZJ.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_259_TAFXtPq2mCTSGqjM3nbFZJ.png",
       "camera_images": [
         {
           "camera_id": "c088",
           "object_id": 259,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             31,
             57,
@@ -63,8 +62,7 @@
         {
           "camera_id": "c043",
           "object_id": 259,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             320,
             321,
@@ -123,13 +121,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "mh3NgqxYDjiR9dRAMDhkCk",
-      "map_image_path": "./map/GeoLocation_map_259_mh3NgqxYDjiR9dRAMDhkCk.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_259_mh3NgqxYDjiR9dRAMDhkCk.png",
       "camera_images": [
         {
           "camera_id": "c066",
           "object_id": 259,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
           "frame_ids": [
             263,
             276,
@@ -176,8 +173,7 @@
         {
           "camera_id": "c058",
           "object_id": 259,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
           "frame_ids": [
             295,
             305,
@@ -257,13 +253,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "EUua4SuB4wgDmq9wQSAzYc",
-      "map_image_path": "./map/GeoLocation_map_260_EUua4SuB4wgDmq9wQSAzYc.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_260_EUua4SuB4wgDmq9wQSAzYc.png",
       "camera_images": [
         {
           "camera_id": "c078",
           "object_id": 260,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             163,
             164,
@@ -303,8 +298,7 @@
         {
           "camera_id": "c016",
           "object_id": 260,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             61,
             76,
@@ -384,13 +378,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "3pV3T8TZQCEkBsqVDX5e3x",
-      "map_image_path": "./map/GeoLocation_map_260_3pV3T8TZQCEkBsqVDX5e3x.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_260_3pV3T8TZQCEkBsqVDX5e3x.png",
       "camera_images": [
         {
           "camera_id": "c079",
           "object_id": 260,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             151,
             181,
@@ -444,8 +437,7 @@
         {
           "camera_id": "c034",
           "object_id": 260,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
           "frame_ids": [
             108,
             121,
@@ -525,13 +517,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "HmRwGEvJWJu9ziHXeQoubW",
-      "map_image_path": "./map/GeoLocation_map_261_HmRwGEvJWJu9ziHXeQoubW.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_261_HmRwGEvJWJu9ziHXeQoubW.png",
       "camera_images": [
         {
           "camera_id": "c026",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             307,
             322,
@@ -585,8 +576,7 @@
         {
           "camera_id": "c062",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c025/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c025/vdo.avi",
           "frame_ids": [
             351,
             366,
@@ -666,13 +656,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "F8qcsvV3wHB8KMip27eMeB",
-      "map_image_path": "./map/GeoLocation_map_261_F8qcsvV3wHB8KMip27eMeB.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_261_F8qcsvV3wHB8KMip27eMeB.png",
       "camera_images": [
         {
           "camera_id": "c035",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             336,
             337,
@@ -733,8 +722,7 @@
         {
           "camera_id": "c09",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c026/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c026/vdo.avi",
           "frame_ids": [
             193,
             217,
@@ -807,13 +795,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "fn9dZoUEmYbTLZY6sGxecp",
-      "map_image_path": "./map/GeoLocation_map_261_fn9dZoUEmYbTLZY6sGxecp.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_261_fn9dZoUEmYbTLZY6sGxecp.png",
       "camera_images": [
         {
           "camera_id": "c048",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             112,
             128,
@@ -867,8 +854,7 @@
         {
           "camera_id": "c014",
           "object_id": 261,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             307,
             322,
@@ -948,13 +934,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "TfacCWmWeYTRouZxXmbGb7",
-      "map_image_path": "./map/GeoLocation_map_262_TfacCWmWeYTRouZxXmbGb7.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_262_TfacCWmWeYTRouZxXmbGb7.png",
       "camera_images": [
         {
           "camera_id": "c084",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             507,
             522,
@@ -1008,8 +993,7 @@
         {
           "camera_id": "c062",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             614,
             617,
@@ -1096,13 +1080,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "KBpjUYoX353oUKEwjhH5zi",
-      "map_image_path": "./map/GeoLocation_map_262_KBpjUYoX353oUKEwjhH5zi.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_262_KBpjUYoX353oUKEwjhH5zi.png",
       "camera_images": [
         {
           "camera_id": "c093",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             267,
             302,
@@ -1149,8 +1132,7 @@
         {
           "camera_id": "c057",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             588,
             591,
@@ -1230,13 +1212,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "bxwTAoWVDdCYxxmXS3EJpq",
-      "map_image_path": "./map/GeoLocation_map_262_bxwTAoWVDdCYxxmXS3EJpq.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_262_bxwTAoWVDdCYxxmXS3EJpq.png",
       "camera_images": [
         {
           "camera_id": "c036",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             39,
             82,
@@ -1290,8 +1271,7 @@
         {
           "camera_id": "c025",
           "object_id": 262,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             507,
             522,
@@ -1371,13 +1351,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "dQP2NgHZCu6QoSbiHiLpxU",
-      "map_image_path": "./map/GeoLocation_map_263_dQP2NgHZCu6QoSbiHiLpxU.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_263_dQP2NgHZCu6QoSbiHiLpxU.png",
       "camera_images": [
         {
           "camera_id": "c054",
           "object_id": 263,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             349,
             363,
@@ -1431,8 +1410,7 @@
         {
           "camera_id": "c065",
           "object_id": 263,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c025/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c025/vdo.avi",
           "frame_ids": [
             387,
             401,
@@ -1512,13 +1490,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "B3osuvm8J8f3PAmoTi63pc",
-      "map_image_path": "./map/GeoLocation_map_263_B3osuvm8J8f3PAmoTi63pc.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_263_B3osuvm8J8f3PAmoTi63pc.png",
       "camera_images": [
         {
           "camera_id": "c024",
           "object_id": 263,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
           "frame_ids": [
             259,
             269,
@@ -1572,8 +1549,7 @@
         {
           "camera_id": "c029",
           "object_id": 263,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             373,
             374,
@@ -1653,13 +1629,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Vf5eCezGyRy3xNGr9QnHLQ",
-      "map_image_path": "./map/GeoLocation_map_264_Vf5eCezGyRy3xNGr9QnHLQ.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_264_Vf5eCezGyRy3xNGr9QnHLQ.png",
       "camera_images": [
         {
           "camera_id": "c027",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             475,
             476,
@@ -1713,8 +1688,7 @@
         {
           "camera_id": "c033",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c026/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c026/vdo.avi",
           "frame_ids": [
             330,
             359,
@@ -1787,13 +1761,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "btkKE9cvMicAXyNGgspnNg",
-      "map_image_path": "./map/GeoLocation_map_264_btkKE9cvMicAXyNGgspnNg.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_264_btkKE9cvMicAXyNGgspnNg.png",
       "camera_images": [
         {
           "camera_id": "c02",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             356,
             357,
@@ -1847,8 +1820,7 @@
         {
           "camera_id": "c063",
           "object_id": 264,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             260,
             270,
@@ -1928,13 +1900,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "akuyHJUy2kNvmpxJsgPaMt",
-      "map_image_path": "./map/GeoLocation_map_265_akuyHJUy2kNvmpxJsgPaMt.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_265_akuyHJUy2kNvmpxJsgPaMt.png",
       "camera_images": [
         {
           "camera_id": "c030",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
           "frame_ids": [
             301,
             310,
@@ -1988,8 +1959,7 @@
         {
           "camera_id": "c074",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
           "frame_ids": [
             401,
             412,
@@ -2069,13 +2039,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "PEovMyCEKjY7AbVghLsCLm",
-      "map_image_path": "./map/GeoLocation_map_265_PEovMyCEKjY7AbVghLsCLm.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_265_PEovMyCEKjY7AbVghLsCLm.png",
       "camera_images": [
         {
           "camera_id": "c013",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             282,
             287,
@@ -2129,8 +2098,7 @@
         {
           "camera_id": "c066",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             497,
             498,
@@ -2210,13 +2178,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "YRDGUJoNufMRGbQ6nqHhmM",
-      "map_image_path": "./map/GeoLocation_map_265_YRDGUJoNufMRGbQ6nqHhmM.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_265_YRDGUJoNufMRGbQ6nqHhmM.png",
       "camera_images": [
         {
           "camera_id": "c084",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             383,
             384,
@@ -2263,8 +2230,7 @@
         {
           "camera_id": "c086",
           "object_id": 265,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             282,
             287,
@@ -2344,13 +2310,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Gb96KPHovakQg8tkvufbov",
-      "map_image_path": "./map/GeoLocation_map_266_Gb96KPHovakQg8tkvufbov.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_266_Gb96KPHovakQg8tkvufbov.png",
       "camera_images": [
         {
           "camera_id": "c031",
           "object_id": 266,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi",
           "frame_ids": [
             82,
             94,
@@ -2397,8 +2362,7 @@
         {
           "camera_id": "c088",
           "object_id": 266,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
           "frame_ids": [
             109,
             118,
@@ -2471,13 +2435,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Zp4C44yJMfkWpJcmpGFTXP",
-      "map_image_path": "./map/GeoLocation_map_268_Zp4C44yJMfkWpJcmpGFTXP.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_268_Zp4C44yJMfkWpJcmpGFTXP.png",
       "camera_images": [
         {
           "camera_id": "c049",
           "object_id": 268,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             170,
             182,
@@ -2531,8 +2494,7 @@
         {
           "camera_id": "c036",
           "object_id": 268,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             267,
             280,
@@ -2612,13 +2574,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "KwC3cRKwrmwuvuqwXeaSRn",
-      "map_image_path": "./map/GeoLocation_map_270_KwC3cRKwrmwuvuqwXeaSRn.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_270_KwC3cRKwrmwuvuqwXeaSRn.png",
       "camera_images": [
         {
           "camera_id": "c047",
           "object_id": 270,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             3,
             5,
@@ -2665,8 +2626,7 @@
         {
           "camera_id": "c049",
           "object_id": 270,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
           "frame_ids": [
             47,
             77,
@@ -2746,13 +2706,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "HmHGXWdYUyHRG6jKLV2WTs",
-      "map_image_path": "./map/GeoLocation_map_271_HmHGXWdYUyHRG6jKLV2WTs.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_271_HmHGXWdYUyHRG6jKLV2WTs.png",
       "camera_images": [
         {
           "camera_id": "c082",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             59,
             60,
@@ -2785,8 +2744,7 @@
         {
           "camera_id": "c011",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             1,
             36,
@@ -2866,13 +2824,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "hpah2oZqzdJFVJ5F27jdvq",
-      "map_image_path": "./map/GeoLocation_map_271_hpah2oZqzdJFVJ5F27jdvq.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_271_hpah2oZqzdJFVJ5F27jdvq.png",
       "camera_images": [
         {
           "camera_id": "c033",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             1,
             13,
@@ -2926,8 +2883,7 @@
         {
           "camera_id": "c040",
           "object_id": 271,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             62,
             76,
@@ -3007,13 +2963,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "RHEUPLrSk9GaqMFnkSRnd5",
-      "map_image_path": "./map/GeoLocation_map_272_RHEUPLrSk9GaqMFnkSRnd5.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_272_RHEUPLrSk9GaqMFnkSRnd5.png",
       "camera_images": [
         {
           "camera_id": "c081",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             1,
             46,
@@ -3067,8 +3022,7 @@
         {
           "camera_id": "c057",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             314,
             317,
@@ -3141,13 +3095,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "mgBnKnc6UjHuBv36Kuoe3S",
-      "map_image_path": "./map/GeoLocation_map_272_mgBnKnc6UjHuBv36Kuoe3S.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_272_mgBnKnc6UjHuBv36Kuoe3S.png",
       "camera_images": [
         {
           "camera_id": "c017",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             79,
             89,
@@ -3201,8 +3154,7 @@
         {
           "camera_id": "c019",
           "object_id": 272,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
           "frame_ids": [
             118,
             133,
@@ -3282,13 +3234,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "nbFjRNWbW69SYJVsW4tUZf",
-      "map_image_path": "./map/GeoLocation_map_273_nbFjRNWbW69SYJVsW4tUZf.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_273_nbFjRNWbW69SYJVsW4tUZf.png",
       "camera_images": [
         {
           "camera_id": "c030",
           "object_id": 273,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c038/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c038/vdo.avi",
           "frame_ids": [
             242,
             251,
@@ -3342,8 +3293,7 @@
         {
           "camera_id": "c055",
           "object_id": 273,
-          "video_path": "/home/mnt/xieqinghongbing/data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c040/vdo.avi",
-          "grid_frame_path": "",
+          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c040/vdo.avi",
           "frame_ids": [
             300,
             313,
@@ -3416,13 +3366,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "MVPHMPcGn7dqJNjw6peXoM",
-      "map_image_path": "./map/GeoLocation_map_321_MVPHMPcGn7dqJNjw6peXoM.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_321_MVPHMPcGn7dqJNjw6peXoM.png",
       "camera_images": [
         {
           "camera_id": "c022",
           "object_id": 321,
           "video_path": "./raw_video/outdoor_S04_c036.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             227,
             246,
@@ -3477,7 +3426,6 @@
           "camera_id": "c098",
           "object_id": 321,
           "video_path": "./raw_video/outdoor_S04_c039.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             284,
             285,
@@ -3536,13 +3484,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Bh6jP8WfRameYANfnKcDaH",
-      "map_image_path": "./map/GeoLocation_map_320_Bh6jP8WfRameYANfnKcDaH.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_320_Bh6jP8WfRameYANfnKcDaH.png",
       "camera_images": [
         {
           "camera_id": "c025",
           "object_id": 320,
           "video_path": "./raw_video/outdoor_S04_c038.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             1,
             13,
@@ -3597,7 +3544,6 @@
           "camera_id": "c027",
           "object_id": 320,
           "video_path": "./raw_video/outdoor_S04_c036.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             141,
             159,
@@ -3677,13 +3623,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "Ngzx2q2VhWnhj2bQZMeQGN",
-      "map_image_path": "./map/GeoLocation_map_318_Ngzx2q2VhWnhj2bQZMeQGN.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_318_Ngzx2q2VhWnhj2bQZMeQGN.png",
       "camera_images": [
         {
           "camera_id": "c034",
           "object_id": 318,
           "video_path": "./raw_video/outdoor_S04_c038.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             180,
             191,
@@ -3738,7 +3683,6 @@
           "camera_id": "c038",
           "object_id": 318,
           "video_path": "./raw_video/outdoor_S04_c037.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             292,
             293,
@@ -3818,13 +3762,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "SX3Xt8uQu8pUVmeHrdE5Nd",
-      "map_image_path": "./map/GeoLocation_map_315_SX3Xt8uQu8pUVmeHrdE5Nd.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_315_SX3Xt8uQu8pUVmeHrdE5Nd.png",
       "camera_images": [
         {
           "camera_id": "c094",
           "object_id": 315,
           "video_path": "./raw_video/outdoor_S04_c038.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             118,
             127,
@@ -3879,7 +3822,6 @@
           "camera_id": "c03",
           "object_id": 315,
           "video_path": "./raw_video/outdoor_S04_c036.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             284,
             296,
@@ -3952,13 +3894,12 @@
     {
       "task_id": "GeoLocation",
       "case_id": "JBTXhcosbEJHXzpGYNVvBy",
-      "map_image_path": "./map/GeoLocation_map_359_JBTXhcosbEJHXzpGYNVvBy.png",
+      "map_image_path": "./data/outdoor/map/GeoLocation_map_359_JBTXhcosbEJHXzpGYNVvBy.png",
       "camera_images": [
         {
           "camera_id": "c045",
           "object_id": 359,
           "video_path": "./raw_video/outdoor_S05_c023.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             2211,
             2219,
@@ -4013,7 +3954,6 @@
           "camera_id": "c046",
           "object_id": 359,
           "video_path": "./raw_video/outdoor_S05_c026.avi",
-          "grid_frame_path": "",
           "frame_ids": [
             2275,
             2289,

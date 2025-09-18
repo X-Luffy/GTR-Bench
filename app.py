@@ -408,20 +408,6 @@ def display_current_question():
                         
                 else:
                     st.error(f"❌ 视频文件不存在: {video_path}")
-                    
-                    # 尝试查找替代路径
-                    alt_paths = [
-                        video_path.replace('/home/mnt/xieqinghongbing/data/indoor/train/../track_processed/', '/home/mnt/xieqinghongbing/data/indoor/track_processed/'),
-                        video_path.replace('/home/mnt/xieqinghongbing/data/indoor/train/../track_processed/', '/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data/indoor/videos/'),
-                    ]
-                    
-                    st.write("**尝试替代路径:**")
-                    for alt_path in alt_paths:
-                        if os.path.exists(alt_path):
-                            st.success(f"✅ 找到替代路径: {alt_path}")
-                            break
-                        else:
-                            st.write(f"❌ {alt_path}")
     
     # 显示问题
     st.markdown('<h4>❓ 问题</h4>', unsafe_allow_html=True)
