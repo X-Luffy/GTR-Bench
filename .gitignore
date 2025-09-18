@@ -47,18 +47,13 @@ Thumbs.db
 # Streamlit
 .streamlit/
 
-# Data files - exclude large video and image files
+# Data files - exclude large video files but include map images
 data/outdoor/raw_video/
 data/outdoor/crop_video/
 data/indoor/raw_video/
 data/indoor/crop_video/
-data/outdoor/map/
-data/indoor/map/
 *.avi
 *.mp4
-*.png
-*.jpg
-*.jpeg
 
 # Logs
 *.log
