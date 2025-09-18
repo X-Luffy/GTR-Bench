@@ -8,8 +8,7 @@
         {
           "camera_id": "c07",
           "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c07",
-          "crop_video_path": "./crop_video/indoor_s01_4_21_28_c07.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             536,
@@ -64,8 +63,7 @@
         {
           "camera_id": "c08",
           "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_4_27_37_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             665,
@@ -144,8 +142,7 @@
         {
           "camera_id": "c03",
           "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_4_39_50_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             971,
@@ -200,8 +197,7 @@
         {
           "camera_id": "c12",
           "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_4_64_73_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             1603,
@@ -283,8 +279,7 @@
         {
           "camera_id": "c08",
           "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_4_27_37_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             665,
@@ -339,8 +334,7 @@
         {
           "camera_id": "c03",
           "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_4_39_50_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             971,
@@ -421,8 +415,7 @@
         {
           "camera_id": "c01",
           "object_id": 5,
-          "video_path": "./raw_video/indoor_s01_c01",
-          "crop_video_path": "./crop_video/indoor_s01_5_152_221_c01.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3789,
@@ -477,8 +470,7 @@
         {
           "camera_id": "c05",
           "object_id": 5,
-          "video_path": "./raw_video/indoor_s01_c05",
-          "crop_video_path": "./crop_video/indoor_s01_5_163_213_c05.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4064,
@@ -557,8 +549,7 @@
         {
           "camera_id": "c05",
           "object_id": 5,
-          "video_path": "./raw_video/indoor_s01_c05",
-          "crop_video_path": "./crop_video/indoor_s01_5_163_213_c05.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4064,
@@ -613,8 +604,7 @@
         {
           "camera_id": "c03",
           "object_id": 5,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_5_236_249_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             5909,
@@ -694,8 +684,7 @@
         {
           "camera_id": "c03",
           "object_id": 5,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_5_73_82_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             1831,
@@ -750,8 +739,7 @@
         {
           "camera_id": "c08",
           "object_id": 5,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_5_84_95_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2108,
@@ -831,8 +819,7 @@
         {
           "camera_id": "c05",
           "object_id": 7,
-          "video_path": "./raw_video/indoor_s01_c05",
-          "crop_video_path": "./crop_video/indoor_s01_7_164_174_c05.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4090,
@@ -887,8 +874,7 @@
         {
           "camera_id": "c11",
           "object_id": 7,
-          "video_path": "./raw_video/indoor_s01_c11",
-          "crop_video_path": "./crop_video/indoor_s01_7_194_209_c11.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4839,
@@ -967,8 +953,7 @@
         {
           "camera_id": "c01",
           "object_id": 8,
-          "video_path": "./raw_video/indoor_s01_c01",
-          "crop_video_path": "./crop_video/indoor_s01_8_146_164_c01.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3661,
@@ -1023,8 +1008,7 @@
         {
           "camera_id": "c05",
           "object_id": 8,
-          "video_path": "./raw_video/indoor_s01_c05",
-          "crop_video_path": "./crop_video/indoor_s01_8_148_153_c05.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3692,
@@ -1104,8 +1088,7 @@
         {
           "camera_id": "c15",
           "object_id": 9,
-          "video_path": "./raw_video/indoor_s01_c15",
-          "crop_video_path": "./crop_video/indoor_s01_9_61_102_c15.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             1525,
@@ -1160,8 +1143,7 @@
         {
           "camera_id": "c10",
           "object_id": 9,
-          "video_path": "./raw_video/indoor_s01_c10",
-          "crop_video_path": "./crop_video/indoor_s01_9_121_126_c10.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3016,
@@ -1242,8 +1224,7 @@
         {
           "camera_id": "c01",
           "object_id": 9,
-          "video_path": "./raw_video/indoor_s01_c01",
-          "crop_video_path": "./crop_video/indoor_s01_9_210_244_c01.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c01/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             5241,
@@ -1298,8 +1279,7 @@
         {
           "camera_id": "c05",
           "object_id": 9,
-          "video_path": "./raw_video/indoor_s01_c05",
-          "crop_video_path": "./crop_video/indoor_s01_9_221_247_c05.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             5532,
@@ -1379,8 +1359,7 @@
         {
           "camera_id": "c10",
           "object_id": 9,
-          "video_path": "./raw_video/indoor_s01_c10",
-          "crop_video_path": "./crop_video/indoor_s01_9_121_126_c10.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3016,
@@ -1435,8 +1414,7 @@
         {
           "camera_id": "c11",
           "object_id": 9,
-          "video_path": "./raw_video/indoor_s01_c11",
-          "crop_video_path": "./crop_video/indoor_s01_9_159_174_c11.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3983,
@@ -1516,8 +1494,7 @@
         {
           "camera_id": "c03",
           "object_id": 10,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_10_39_50_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             978,
@@ -1572,8 +1549,7 @@
         {
           "camera_id": "c08",
           "object_id": 10,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_10_52_62_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             1295,
@@ -1646,8 +1622,7 @@
         {
           "camera_id": "c12",
           "object_id": 10,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_10_24_29_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             611,
@@ -1702,8 +1677,7 @@
         {
           "camera_id": "c03",
           "object_id": 10,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_10_39_50_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             978,
@@ -1784,8 +1758,7 @@
         {
           "camera_id": "c13",
           "object_id": 10,
-          "video_path": "./raw_video/indoor_s01_c13",
-          "crop_video_path": "./crop_video/indoor_s01_10_5_25_c13.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             118,
@@ -1840,8 +1813,7 @@
         {
           "camera_id": "c12",
           "object_id": 10,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_10_24_29_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             611,
@@ -1922,8 +1894,7 @@
         {
           "camera_id": "c08",
           "object_id": 11,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_11_95_108_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2379,
@@ -1978,8 +1949,7 @@
         {
           "camera_id": "c03",
           "object_id": 11,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_11_111_125_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2764,
@@ -2059,8 +2029,7 @@
         {
           "camera_id": "c12",
           "object_id": 11,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_11_230_235_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             5754,
@@ -2115,8 +2084,7 @@
         {
           "camera_id": "c03",
           "object_id": 11,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_11_249_260_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             6216,
@@ -2196,8 +2164,7 @@
         {
           "camera_id": "c03",
           "object_id": 11,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_11_111_125_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2764,
@@ -2252,8 +2219,7 @@
         {
           "camera_id": "c12",
           "object_id": 11,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_11_135_139_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3364,
@@ -2334,8 +2300,7 @@
         {
           "camera_id": "c09",
           "object_id": 16,
-          "video_path": "./raw_video/indoor_s01_c09",
-          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             824,
@@ -2390,8 +2355,7 @@
         {
           "camera_id": "c12",
           "object_id": 16,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_16_94_98_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2338,
@@ -2472,8 +2436,7 @@
         {
           "camera_id": "c14",
           "object_id": 16,
-          "video_path": "./raw_video/indoor_s01_c14",
-          "crop_video_path": "./crop_video/indoor_s01_16_0_13_c14.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c14/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             0,
@@ -2528,8 +2491,7 @@
         {
           "camera_id": "c16",
           "object_id": 16,
-          "video_path": "./raw_video/indoor_s01_c16",
-          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             15,
@@ -2609,8 +2571,7 @@
         {
           "camera_id": "c16",
           "object_id": 16,
-          "video_path": "./raw_video/indoor_s01_c16",
-          "crop_video_path": "./crop_video/indoor_s01_16_1_12_c16.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             15,
@@ -2665,8 +2626,7 @@
         {
           "camera_id": "c09",
           "object_id": 16,
-          "video_path": "./raw_video/indoor_s01_c09",
-          "crop_video_path": "./crop_video/indoor_s01_16_33_42_c09.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             824,
@@ -2745,8 +2705,7 @@
         {
           "camera_id": "c15",
           "object_id": 17,
-          "video_path": "./raw_video/indoor_s01_c15",
-          "crop_video_path": "./crop_video/indoor_s01_17_33_88_c15.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c15/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             824,
@@ -2801,8 +2760,7 @@
         {
           "camera_id": "c10",
           "object_id": 17,
-          "video_path": "./raw_video/indoor_s01_c10",
-          "crop_video_path": "./crop_video/indoor_s01_17_132_139_c10.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c10/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3289,
@@ -2883,8 +2841,7 @@
         {
           "camera_id": "c13",
           "object_id": 18,
-          "video_path": "./raw_video/indoor_s01_c13",
-          "crop_video_path": "./crop_video/indoor_s01_18_114_117_c13.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c13/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2853,
@@ -2939,8 +2896,7 @@
         {
           "camera_id": "c12",
           "object_id": 18,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_18_116_122_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2892,
@@ -3021,8 +2977,7 @@
         {
           "camera_id": "c12",
           "object_id": 18,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_18_116_122_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2892,
@@ -3077,8 +3032,7 @@
         {
           "camera_id": "c09",
           "object_id": 18,
-          "video_path": "./raw_video/indoor_s01_c09",
-          "crop_video_path": "./crop_video/indoor_s01_18_125_131_c09.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3132,
@@ -3152,8 +3106,7 @@
         {
           "camera_id": "c16",
           "object_id": 18,
-          "video_path": "./raw_video/indoor_s01_c16",
-          "crop_video_path": "./crop_video/indoor_s01_18_244_251_c16.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c16/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             6109,
@@ -3208,8 +3161,7 @@
         {
           "camera_id": "c09",
           "object_id": 18,
-          "video_path": "./raw_video/indoor_s01_c09",
-          "crop_video_path": "./crop_video/indoor_s01_18_259_265_c09.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             6482,
@@ -3281,8 +3233,7 @@
         {
           "camera_id": "c07",
           "object_id": 19,
-          "video_path": "./raw_video/indoor_s01_c07",
-          "crop_video_path": "./crop_video/indoor_s01_19_134_139_c07.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c07/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3339,
@@ -3330,8 +3281,7 @@
         {
           "camera_id": "c08",
           "object_id": 19,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_19_136_140_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3412,
@@ -3404,8 +3354,7 @@
         {
           "camera_id": "c12",
           "object_id": 19,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_19_83_88_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2074,
@@ -3460,8 +3409,7 @@
         {
           "camera_id": "c03",
           "object_id": 19,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_19_95_108_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             2382,
@@ -3541,8 +3489,7 @@
         {
           "camera_id": "c05",
           "object_id": 19,
-          "video_path": "./raw_video/indoor_s01_c05",
-          "crop_video_path": "./crop_video/indoor_s01_19_172_203_c05.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c05/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4291,
@@ -3597,8 +3544,7 @@
         {
           "camera_id": "c11",
           "object_id": 19,
-          "video_path": "./raw_video/indoor_s01_c11",
-          "crop_video_path": "./crop_video/indoor_s01_19_220_230_c11.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c11/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             5490,
@@ -3679,8 +3625,7 @@
         {
           "camera_id": "c12",
           "object_id": 20,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_20_176_181_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4407,
@@ -3735,8 +3680,7 @@
         {
           "camera_id": "c09",
           "object_id": 20,
-          "video_path": "./raw_video/indoor_s01_c09",
-          "crop_video_path": "./crop_video/indoor_s01_20_185_190_c09.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c09/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4615,
@@ -3817,8 +3761,7 @@
         {
           "camera_id": "c08",
           "object_id": 20,
-          "video_path": "./raw_video/indoor_s01_c08",
-          "crop_video_path": "./crop_video/indoor_s01_20_139_152_c08.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c08/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3471,
@@ -3873,8 +3816,7 @@
         {
           "camera_id": "c03",
           "object_id": 20,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_20_155_166_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3877,
@@ -3947,8 +3889,7 @@
         {
           "camera_id": "c03",
           "object_id": 20,
-          "video_path": "./raw_video/indoor_s01_c03",
-          "crop_video_path": "./crop_video/indoor_s01_20_155_166_c03.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c03/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             3877,
@@ -3996,8 +3937,7 @@
         {
           "camera_id": "c12",
           "object_id": 20,
-          "video_path": "./raw_video/indoor_s01_c12",
-          "crop_video_path": "./crop_video/indoor_s01_20_176_181_c12.mp4",
+          "video_path": "/home/mnt/xieqinghongbing/data/mtmmc/train/s01/c12/rgb",
           "grid_frame_path": "",
           "frame_ids": [
             4407,
