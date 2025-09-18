@@ -321,11 +321,9 @@ def display_current_question():
         # 修改地图路径处理
         map_path = current_case['map_image_path']
         if map_path.startswith('./'):
-            # 相对于数据目录的路径
-            scene = st.session_state.current_task.split('_')[0] if st.session_state.current_task else 'indoor'
+            # 相对于项目根目录的路径，现在路径已经包含了data目录
             map_path = os.path.join(
-                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data",
-                scene,
+                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level",
                 map_path.replace('./', '')
             )
         
@@ -368,11 +366,9 @@ def display_current_question():
                 
                 # 处理相对路径，转换为绝对路径
                 if video_path.startswith('./'):
-                    # 相对于数据目录的路径
-                    scene = st.session_state.current_task.split('_')[0] if st.session_state.current_task else 'indoor'
+                    # 相对于项目根目录的路径，现在路径已经包含了data目录
                     video_path = os.path.join(
-                        "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data",
-                        scene,
+                        "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level",
                         video_path.replace('./', '')
                     )
                 
@@ -884,7 +880,8 @@ def save_modified_data():
         if scene and task_type:
             filename = f"{scene}_{task_type}_30.json"
             file_path = os.path.join(
-                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data",
+                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level",
+                "data",
                 scene, filename
             )
             
