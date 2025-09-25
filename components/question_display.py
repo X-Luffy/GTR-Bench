@@ -8,7 +8,7 @@ class QuestionDisplay:
     
     @staticmethod
     def display_map(case: Dict) -> None:
-        """显示地图"""
+        """Display map"""
         if case.get('map_image_path'):
             map_path = os.path.join(
                 os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -53,7 +53,7 @@ class QuestionDisplay:
     
     @staticmethod
     def display_choices(case: Dict, user_answers: Dict) -> None:
-        """显示选项"""
+        """Display options"""
         choices = case.get('choices_cn', case.get('choices', []))
         if choices:
             st.markdown('<h4>🔘 选项</h4>', unsafe_allow_html=True)

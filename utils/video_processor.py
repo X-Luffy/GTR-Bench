@@ -15,9 +15,9 @@ class VideoProcessor:
         从视频或帧文件夹中提取指定帧并绘制边界框
         
         Args:
-            video_path: 视频文件路径或帧文件夹路径
+            video_path: Video file path或帧文件夹路径
             frame_ids: 帧ID列表
-            bboxes: 边界框列表，格式为 [x, y, width, height]
+            bboxes: List of bounding boxes，格式为 [x, y, width, height]
             
         Returns:
             处理后的图像列表
@@ -50,7 +50,7 @@ class VideoProcessor:
             # 打开视频
             cap = cv2.VideoCapture(video_path)
             if not cap.isOpened():
-                print(f"无法打开视频文件: {video_path}")
+                print(f"Cannot open video file: {video_path}")
                 return []
             
             # 获取视频信息
@@ -92,7 +92,7 @@ class VideoProcessor:
                 
                 if ret:
                     print(f"成功读取帧 {target_frame_id}")
-                    # 绘制边界框
+                    # Draw bounding boxes
                     processed_frame = self.draw_bbox(frame, bbox)
                     
                     # 转换为PIL图像
@@ -156,7 +156,7 @@ class VideoProcessor:
                         frame = cv2.imread(frame_path)
                         if frame is not None:
                             print(f"成功读取帧图片 {frame_filename}")
-                            # 绘制边界框
+                            # Draw bounding boxes
                             processed_frame = self.draw_bbox(frame, bbox)
                             
                             # 转换为PIL图像
@@ -204,7 +204,7 @@ class VideoProcessor:
         w = max(1, min(w, width - x))
         h = max(1, min(h, height - y))
         
-        # 绘制边界框
+        # Draw bounding boxes
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         
         # 添加标签
@@ -229,7 +229,7 @@ class VideoProcessor:
         从视频或帧文件夹中提取单个帧
         
         Args:
-            video_path: 视频文件路径或帧文件夹路径
+            video_path: Video file path或帧文件夹路径
             frame_id: 帧ID
             
         Returns:
@@ -296,7 +296,7 @@ class VideoProcessor:
         获取视频信息
         
         Args:
-            video_path: 视频文件路径
+            video_path: Video file path
             
         Returns:
             视频信息字典

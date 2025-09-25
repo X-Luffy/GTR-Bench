@@ -38,7 +38,7 @@ def get_eval_type(task_name):
         task_name (str): 任务名称
         
     Returns:
-        str: 评估类型 (MCQ_Acc 或 ST-IoU)
+        str: Evaluation type (MCQ_Acc 或 ST-IoU)
     """
     return EVAL_TYPES.get(task_name, "MCQ_Acc")
 

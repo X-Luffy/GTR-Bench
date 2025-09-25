@@ -19,7 +19,7 @@ class OpenAIModel:
     def generate(self, prompt: str, images: List[Dict] = None) -> str:
         """生成响应"""
         try:
-            # 构建消息
+            # Build message
             messages = []
             
             # 添加文本提示

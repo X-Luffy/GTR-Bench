@@ -252,7 +252,7 @@ def calculate_metrics(case: Dict[str, Any], user_answers: Dict[str, Any]) -> Dic
             second_score = calculate_trajectory_segment_score(case, user_answers, 'second')
             score = (first_score + second_score) / 2.0
             
-            # 计算准确率：每个摄像头选择正确得0.5分
+            # Calculate accuracy：每个摄像头选择正确得0.5分
             first_camera_correct = check_trajectory_camera_selection(case, user_answers, 'first')
             second_camera_correct = check_trajectory_camera_selection(case, user_answers, 'second')
             accuracy_score = (0.5 if first_camera_correct else 0.0) + (0.5 if second_camera_correct else 0.0)

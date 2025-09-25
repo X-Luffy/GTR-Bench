@@ -4,9 +4,9 @@
 # 测试所有420道题目（indoor/outdoor各7种任务类型，每种30道题）
 
 # 配置参数
-API_KEY="sk-iJSpd4xMNFA5yQ7aE125C9Ba1e4544499cC5347794271c6f"
-BASE_URL="https://api.apiyi.com/v1/chat/completions"
-MODEL_NAME="claude-sonnet-4-20250514-thinking"
+API_KEY="sk-XXXXXXXXXXXx"
+BASE_URL="xxxxxxxx"
+MODEL_NAME="XXXXXXX"
 
 # 数据目录
 DATA_DIR="../data"

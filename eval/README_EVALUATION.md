@@ -1,19 +1,19 @@
-# GTR-Bench 评估系统
+# GTR-Bench Evaluation System
 
-## 概述
+## Overview
 
-本评估系统用于测试视觉推理模型在GTR-Bench数据集上的性能。系统支持多种任务类型，包括轨迹预测、时间间隔预测等。
+This evaluation system is used to test the performance of visual reasoning models on the GTR-Bench dataset. The system supports multiple task types including trajectory prediction, time interval prediction, etc.
 
-## 主要功能
+## Main Features
 
-### 1. 整合结果文件
-- 所有测试案例的结果将保存在一个JSON文件中
-- 文件名格式：`{model_name}_{timestamp}.json`
+### 1. Consolidated Result Files
+- Results from all test cases will be saved in a single JSON file
+- Filename format: `{model_name}_{timestamp}.json`
 - 例如：`claude_sonnet_4_20250514_thinking_20250925_143000.json`
 
 ### 2. Prompt文件管理
 - 每个案例的完整对话记录保存在单独的prompt文件中
-- 文件名格式：`prompt_{model_name}_{case_id}_{task_id}_{timestamp}.json`
+- Filename format: `prompt_{model_name}_{case_id}_{task_id}_{timestamp}.json`
 - 所有prompt文件保存在`results/prompt/`目录下
 
 ### 3. 结果文件结构
@@ -43,7 +43,7 @@
 ]
 ```
 
-## 使用方法
+## Usage
 
 ### 1. 完整评估（420个案例）
 ```bash
@@ -96,7 +96,7 @@ python eval.py \
 - **MCQacc**: 多选题准确率
 - **TimeIoU**: 时间范围IoU得分
 
-## 注意事项
+## Notes
 
 1. 确保数据目录结构正确
 2. API密钥需要有足够的额度

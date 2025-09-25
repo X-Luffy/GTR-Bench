@@ -75,10 +75,10 @@ class OpenAIModel:
         return "Error: Max retries exceeded"
 
 def load_test_cases(data_dir):
-    """加载测试案例"""
+    """Load test cases"""
     test_cases = []
     
-    # 加载所有JSON文件
+    # Load all JSON files
     json_files = []
     for scene in ['outdoor', 'indoor']:
         scene_dir = os.path.join(data_dir, scene)
@@ -107,68 +107,68 @@ def load_test_cases(data_dir):
     return test_cases
 
 def fix_paths(case, data_dir=None, project_dir=None):
-    """修复路径"""
+    """Fix paths"""
     if data_dir is None:
         data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data')
     if project_dir is None:
         project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     
-    # 修复video_path
+    # Fix video_path
     if 'camera_images' in case:
         for camera in case['camera_images']:
             if 'video_path' in camera:
                 video_path = camera['video_path']
                 if video_path.startswith('./data/outdoor/') or video_path.startswith('./data/indoor/'):
-                    # 处理包含outdoor/indoor前缀的路径
+                    # Handle paths with outdoor/indoor prefix
                     path_parts = video_path.replace('./data/', '').split('/')
                     if 'cityflow' in path_parts:
                         cityflow_index = path_parts.index('cityflow')
                         actual_path = '/'.join(path_parts[cityflow_index:])
                         camera['video_path'] = os.path.join(data_dir, actual_path)
                     else:
-                        # 对于mtmmc路径，直接去掉outdoor/indoor前缀
+                        # For mtmmc paths, directly remove outdoor/indoor prefix
                         actual_path = '/'.join(path_parts[1:])
                         camera['video_path'] = os.path.join(data_dir, actual_path)
                 elif video_path.startswith('./data/'):
-                    # 替换为实际路径
+                    # Replace with actual path
                     camera['video_path'] = video_path.replace('./data/', os.path.join(data_dir, '') + '/')
                 elif video_path.startswith('./'):
-                    # 处理其他相对路径，去掉outdoor/indoor前缀
+                    # Handle other relative paths, remove outdoor/indoor prefix
                     path_parts = video_path.replace('./', '').split('/')
                     if len(path_parts) > 1 and path_parts[0] in ['outdoor', 'indoor']:
-                        # 去掉outdoor/indoor前缀，直接使用cityflow路径
+                        # Remove outdoor/indoor prefix, use cityflow path directly
                         if 'cityflow' in path_parts:
                             cityflow_index = path_parts.index('cityflow')
                             actual_path = '/'.join(path_parts[cityflow_index:])
                             camera['video_path'] = os.path.join(data_dir, actual_path)
                         else:
-                            # 对于mtmmc路径，直接去掉outdoor/indoor前缀
+                            # For mtmmc paths, directly remove outdoor/indoor prefix
                             actual_path = '/'.join(path_parts[1:])
                             camera['video_path'] = os.path.join(data_dir, actual_path)
                     else:
                         camera['video_path'] = os.path.join(data_dir, video_path.replace('./', ''))
     
-    # 修复map_image_path
+    # Fix map_image_path
     if 'map_image_path' in case:
         map_path = case['map_image_path']
         if map_path.startswith('./'):
-            # 处理相对路径
+            # Handle relative paths
             case['map_image_path'] = os.path.join(project_dir, map_path.replace('./', ''))
     
     return case
 
 def create_prompt(case):
-    """创建完整的prompt"""
+    """Create complete prompt"""
     messages = []
     
-    # 1. 添加地图信息
+    # 1. Add map information
     if 'map_image_path' in case and os.path.exists(case['map_image_path']):
         map_messages = make_map_prompt([], [], case['map_image_path'])
         messages.extend(map_messages)
     
-    # 2. 添加摄像头视频信息
+    # 2. Add camera video information
     if 'camera_images' in case:
-        # 对于CausalReordering任务，不使用时间戳
+        # For CausalReordering task, do not use timestamps
         task_id = case.get('task_id', '')
         with_timestamp = task_id != 'CausalReordering'
         
@@ -177,16 +177,16 @@ def create_prompt(case):
                                             is_resize=False, frame_limited=3)
         messages.extend(video_messages)
     
-    # 3. 添加问题信息
+    # 3. Add question information
     question_messages = make_question_prompt(case)
     messages.extend(question_messages)
     
     return messages
 
 def calculate_metrics(case, answer):
-    """计算指标 - 与app.py中的得分设计保持一致"""
+    """Calculate metrics - consistent with scoring design in app.py"""
     try:
-        # 检查是否是错误响应
+        # Check if it is an error response
         if isinstance(answer, str) and answer.startswith('Error:'):
             return {
                 'score': 0.0,
@@ -200,10 +200,10 @@ def calculate_metrics(case, answer):
         # 初始化评分系统
         scoring_system = ScoringSystem()
         
-        # 解析模型回答
+        # Parse model response
         user_answers = parse_model_answer(answer, eval_type)
         
-        # 计算得分
+        # Calculate score
         score_result = scoring_system.calculate_score_new(case, user_answers, 0.0)
         
         return {
@@ -341,17 +341,17 @@ def parse_model_answer(answer, eval_type):
     return user_answers
 
 def save_individual_prompt_file(messages, case, model_response, metrics, result_dir, model_name):
-    """保存单个案例的完整prompt到文件"""
+    """Save complete prompt for single case to file"""
     os.makedirs(result_dir, exist_ok=True)
     
-    # 创建文件名，添加model_name
+    # Create filename, add model_name
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     case_id = case.get('case_id', 'unknown')
     task_id = case.get('task_id', 'unknown')
-    # 清理model_name中的特殊字符，用于文件名
+    # Clean special characters in model_name for filename
     clean_model_name = model_name.replace('-', '_').replace('.', '_')
     filename = f"prompt_{clean_model_name}_{case_id}_{task_id}_{timestamp}.json"
-    # 创建prompt子目录
+    # Create prompt subdirectory
     prompt_dir = os.path.join(result_dir, "prompt")
     os.makedirs(prompt_dir, exist_ok=True)
     filepath = os.path.join(prompt_dir, filename)
@@ -385,7 +385,7 @@ def save_individual_prompt_file(messages, case, model_response, metrics, result_
             "content": model_response
         })
     
-    # 解析模型回答，提取elements
+    # Parse model response，提取elements
     parsed_elements = {}
     if model_response is not None:
         try:
@@ -393,10 +393,10 @@ def save_individual_prompt_file(messages, case, model_response, metrics, result_
             eval_type = get_eval_type(task_type)
             parsed_elements = parse_model_answer(model_response, eval_type)
         except Exception as e:
-            print(f"解析模型回答时出错: {str(e)}")
+            print(f"Error parsing model response: {str(e)}")
             parsed_elements = {}
     
-    # 处理ground_truth字段
+    # Handle ground_truth field
     if 'ground_truth' in case:
         ground_truth = case['ground_truth']
     else:
@@ -405,7 +405,7 @@ def save_individual_prompt_file(messages, case, model_response, metrics, result_
             "correct_time_str": case.get('correct_time_str', [])
         }
     
-    # 处理time_duration字段
+    # Handle time_duration field
     time_duration = []
     i = 0
     while f'time_range_{i}_start' in parsed_elements and f'time_range_{i}_end' in parsed_elements:
@@ -441,7 +441,7 @@ def save_individual_prompt_file(messages, case, model_response, metrics, result_
         }
     }
     
-    # 保存到文件
+    # Save to file
     try:
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(export_data, f, ensure_ascii=False, indent=2)
@@ -452,8 +452,8 @@ def save_individual_prompt_file(messages, case, model_response, metrics, result_
         return None
 
 def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, max_tokens=16384, temperature=0.1):
-    """评估模型"""
-    # 初始化模型
+    """Evaluate model"""
+    # Initialize model
     model = OpenAIModel(model_name, api_key, base_url)
     
     results = []
@@ -462,20 +462,20 @@ def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, m
     print(f"Starting evaluation with {model_name}")
     print(f"Total cases: {total_cases}")
     
-    # 创建统一的timestamp用于所有文件
+    # Create unified timestamp for all files
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     for i, case in enumerate(test_cases):
         print(f"Processing case {i+1}/{total_cases}: {case.get('case_id', 'unknown')}")
         
         try:
-            # 修复路径
+            # Fix paths
             case = fix_paths(case, args.data_dir, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
             
-            # 创建提示
+            # Create prompt
             messages = create_prompt(case)
             
-            # 准备图像数据
+            # Prepare image data
             images = []
             prompt_text = ""
             
@@ -488,16 +488,16 @@ def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, m
                         'image_url': message['image_url']
                     })
             
-            # 调用模型
+            # Call model
             answer = model.generate_with_retry(prompt_text, images, max_tokens=max_tokens, temperature=temperature)
             
-            # 计算指标
+            # Calculate metrics
             metrics = calculate_metrics(case, answer)
             
-            # 保存完整的prompt到单独文件
+            # Save complete prompt to separate file
             save_individual_prompt_file(messages, case, answer, metrics, result_dir, model_name)
             
-            # 处理ground_truth字段
+            # Handle ground_truth field
             if 'ground_truth' in case:
                 ground_truth = case['ground_truth']
             else:
@@ -506,7 +506,7 @@ def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, m
                     'correct_time_str': case.get('correct_time_str', [])
                 }
             
-            # 解析模型回答，提取elements
+            # Parse model response，提取elements
             parsed_elements = {}
             if answer is not None:
                 try:
@@ -514,10 +514,10 @@ def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, m
                     eval_type = get_eval_type(task_type)
                     parsed_elements = parse_model_answer(answer, eval_type)
                 except Exception as e:
-                    print(f"解析模型回答时出错: {str(e)}")
+                    print(f"Error parsing model response: {str(e)}")
                     parsed_elements = {}
             
-            # 处理time_duration字段
+            # Handle time_duration field
             time_duration = []
             j = 0
             while f'time_range_{j}_start' in parsed_elements and f'time_range_{j}_end' in parsed_elements:
@@ -548,13 +548,13 @@ def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, m
             
             results.append(result)
             
-            # 显示进度
+            # Display progress
             if (i + 1) % 10 == 0:
                 print(f"Completed {i+1}/{total_cases} cases")
                 
         except Exception as e:
             print(f"Error processing case {i+1}: {str(e)}")
-            # 处理ground_truth字段
+            # Handle ground_truth field
             if 'ground_truth' in case:
                 ground_truth = case['ground_truth']
             else:
@@ -584,18 +584,18 @@ def evaluate_model(model_name, api_key, test_cases, result_dir, base_url=None, m
             }
             results.append(result)
     
-    # 保存整合的结果文件
-    # 清理model_name中的特殊字符，用于文件名
+    # Save consolidated result file
+    # Clean special characters in model_name for filename
     clean_model_name = model_name.replace('-', '_').replace('.', '_')
     result_file = os.path.join(result_dir, f"{clean_model_name}_{timestamp}.json")
     
-    # 保存评估结果
+    # Save evaluation results
     with open(result_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
     print(f"Results saved to {result_file}")
     
-    # 计算总体统计
+    # Calculate overall statistics
     total_cases = len(results)
     correct_cases = sum(1 for r in results if r.get('metrics', {}).get('MCQacc', 0) > 0)
     accuracy = correct_cases / total_cases if total_cases > 0 else 0
@@ -629,17 +629,17 @@ def main():
     
     args = parser.parse_args()
     
-    # 设置输出目录
+    # Set output directory
     if args.output_dir:
         args.result_dir = args.output_dir
     
-    # 创建结果目录
+    # Create result directory
     os.makedirs(args.result_dir, exist_ok=True)
     
-    # 加载测试案例
+    # Load test cases
     test_cases = load_test_cases(args.data_dir)
     
-    # 应用过滤器
+    # Apply filters
     if args.scene:
         test_cases = [case for case in test_cases if case.get('scene') == args.scene]
         if args.verbose:
@@ -650,9 +650,9 @@ def main():
         if args.verbose:
             print(f"Filtered by task type: {args.task_type} ({len(test_cases)} cases)")
     
-    # 限制测试案例数量或指定特定案例
+    # Limit number of test cases or specify specific cases
     if args.case_id:
-        # 查找指定的案例
+        # Find specified cases
         filtered_cases = []
         for case_id in args.case_id:
             found_cases = [case for case in test_cases if case.get('case_id') == case_id]
@@ -668,9 +668,9 @@ def main():
         test_cases = filtered_cases
         print(f"Testing specific cases: {args.case_id}")
     elif args.max_cases:
-        # 如果没有指定scene和task_type，说明是"全部场景-任务"模式
+        # If scene and task_type not specified, this is "all scenes-tasks" mode
         if not args.scene and not args.task_type:
-            # 按场景和任务类型分组，每个组合取max_cases个案例
+            # Group by scene and task type, take max_cases from each combination
             grouped_cases = {}
             for case in test_cases:
                 scene = case.get('scene', 'unknown')
@@ -680,7 +680,7 @@ def main():
                     grouped_cases[key] = []
                 grouped_cases[key].append(case)
             
-            # 从每个组合中取max_cases个案例
+            # Take max_cases from each combination
             selected_cases = []
             for key, cases in grouped_cases.items():
                 selected_cases.extend(cases[:args.max_cases])
@@ -689,7 +689,7 @@ def main():
             test_cases = selected_cases
             print(f"Total selected cases: {len(test_cases)}")
         else:
-            # 特定场景-任务模式，直接限制数量
+            # Specific scene-task mode, directly limit quantity
             test_cases = test_cases[:args.max_cases]
             print(f"Limited to {len(test_cases)} cases for testing")
     

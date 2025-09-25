@@ -3,7 +3,7 @@ import os
 from typing import Dict, List, Optional
 
 class DataLoader:
-    """数据加载器类，负责加载和管理题目数据"""
+    """Data loader class responsible for loading and managing question data"""
     
     def __init__(self):
         self.data = None
@@ -15,12 +15,12 @@ class DataLoader:
         
         Args:
             scene: 场景名称 (cityflow 或 mtmmc)
-            task_type: 任务类型
+            task_type: Task type
             
         Returns:
             加载的数据字典
         """
-        # 构建文件路径
+        # Build file path
         filename = f"{scene}_{task_type}_30.json"
         file_path = os.path.join(self.base_path, scene, filename)
         

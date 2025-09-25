@@ -75,7 +75,7 @@ class ScoringSystem:
             second_score = self.calculate_trajectory_segment_score(case, user_answers, 'second')
             score = (first_score + second_score) / 2.0
             
-            # 计算准确率：两个摄像头都选择正确才算正确
+            # Calculate accuracy：两个摄像头都选择正确才算正确
             first_camera_correct = self.check_trajectory_camera_selection(case, user_answers, 'first')
             second_camera_correct = self.check_trajectory_camera_selection(case, user_answers, 'second')
             accuracy_score = 1.0 if (first_camera_correct and second_camera_correct) else 0.0
@@ -308,7 +308,7 @@ class ScoringSystem:
             # 解析用户时间
             user_seconds = self.time_to_seconds(user_time)
             
-            # 计算IoU
+            # Calculate IoU
             intersection_start = max(gt_start_seconds, user_seconds - 0.5)
             intersection_end = min(gt_end_seconds, user_seconds + 0.5)
             

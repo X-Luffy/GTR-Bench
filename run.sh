@@ -1,55 +1,55 @@
 #!/bin/bash
 
-# 人类水平评估系统启动脚本
+# Human-Level Evaluation System Startup Script
 
-echo "🎯 启动人类水平评估系统..."
+echo "🎯 Starting Human-Level Evaluation System..."
 
-# 激活conda环境
-echo "🔧 激活conda环境..."
-# 注意：请根据您的实际conda环境路径修改以下路径
+# Activate conda environment
+echo "🔧 Activating conda environment..."
+# Note: Please modify the following path according to your actual conda environment path
 # conda activate your_conda_environment_name
-echo "⚠️  请手动激活您的conda环境，例如：conda activate your_env_name"
+echo "⚠️  Please manually activate your conda environment, e.g.: conda activate your_env_name"
 
-# 检查Python环境
+# Check Python environment
 if ! command -v python &> /dev/null; then
-    echo "❌ Python 未安装，请先安装Python"
+    echo "❌ Python is not installed, please install Python first"
     exit 1
 fi
 
-# 检查依赖
-echo "📦 检查依赖..."
-python -c "import streamlit, cv2, PIL, numpy, pandas, subprocess, threading, queue; print('✅ 所有依赖都已安装')" || {
-    echo "❌ 缺少依赖，请安装requirements.txt中的包"
+# Check dependencies
+echo "🔍 Checking project dependencies..."
+python -c "import streamlit, cv2, PIL, numpy, pandas, subprocess, threading, queue; print('✅ All dependencies are installed')" || {
+    echo "❌ Missing dependencies, please install packages from requirements.txt"
     exit 1
 }
 
-# 检查eval目录
+# Check eval directory
 if [ ! -d "eval" ]; then
-    echo "❌ eval目录不存在，请确保eval目录存在"
+    echo "❌ eval directory does not exist"
     exit 1
 fi
 
-# 检查eval.py
+# Check eval.py file
 if [ ! -f "eval/eval.py" ]; then
-    echo "❌ eval/eval.py文件不存在"
+    echo "❌ eval/eval.py file does not exist"
     exit 1
 fi
 
-# 创建必要目录
-echo "📁 创建必要目录..."
+# Create necessary directories
+echo "📁 Creating necessary directories..."
 mkdir -p eval/results
 mkdir -p eval/results/prompt
 
-# 启动应用
-echo "🚀 启动Streamlit应用..."
-echo "📊 系统功能："
-echo "   - 人类答题评估"
-echo "   - 模型自动评估"
-echo "   - 结果可视化分析"
-echo "   - 实时进度监控"
+# Start application
+echo "🚀 Starting Streamlit application..."
+echo "🎯 Features include:"
+echo "   - Human assessment evaluation"
+echo "   - Automated model evaluation"
+echo "   - Result visualization and analysis"
+echo "   - Real-time progress monitoring"
 echo ""
-echo "🌐 访问地址: http://localhost:8505"
-echo "⏹️  按 Ctrl+C 停止服务"
+echo "📝 Application will run at http://localhost:8505"
+echo "🔧 To stop the application, press Ctrl+C"
 echo ""
 
 streamlit run app.py --server.port 8506 --server.address 0.0.0.0
