@@ -37,7 +37,7 @@ def seconds_to_time_format(seconds):
 
 # Set page configuration
 st.set_page_config(
-    page_title="Human-Level Evaluation System",
+    page_title="GTR-Bench Evaluation System",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -149,7 +149,7 @@ def main():
         st.session_state.eval_status = "idle"  # idle, running, completed, error
 
     # Main title
-    st.markdown('<h1 class="main-header">🎯 Human-Level Evaluation System</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🎯 GTR-Bench Evaluation System</h1>', unsafe_allow_html=True)
 
     # Sidebar configuration
     with st.sidebar:
