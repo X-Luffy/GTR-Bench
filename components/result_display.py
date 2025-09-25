@@ -74,7 +74,7 @@ class ResultDisplay:
         
         with col4:
             avg_score = df['score'].mean() if len(df) > 0 else 0
-            st.metric("平均得分", f"{avg_score:.2f}")
+            st.metric("Average Score", f"{avg_score:.2f}")
         
         # 显示详细结果表格
         st.markdown('<h4>📋 详细结果</h4>', unsafe_allow_html=True)
@@ -92,9 +92,9 @@ class ResultDisplay:
         if st.button("📥 导出结果"):
             csv = df.to_csv(index=False)
             st.download_button(
-                label="下载CSV文件",
+                label="Download CSV File",
                 data=csv,
-                file_name=f"答题结果_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                file_name=f"answer_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                 mime="text/csv"
             )
     

@@ -120,7 +120,7 @@ Thumbs.db
 eval/results/
 
 # 数据文件（如果包含敏感信息）
-# data/
+data/
 # 注意：如果data目录包含公开数据集，可以注释掉上面这行
 
 # 临时文件

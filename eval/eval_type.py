@@ -1,88 +1,88 @@
 """
 GTR-Bench 评估类型定义
-定义七种任务类型及其对应的评估指标
+Define seven task types and their corresponding evaluation metrics
 """
 
-# 任务类型与评估指标的映射
+# Mapping of task types to evaluation metrics
 EVAL_TYPES = {
-    "GeoLocation": "MCQ_Acc",           # 地理位置推理 - 选择题准确率
-    "ArrivalTimeInterval": "MCQ_Acc",  # 到达时间间隔推理 - 选择题准确率
-    "MotionState": "MCQ_Acc",           # 运动状态推理 - 选择题准确率
-    "CausalReordering": "MCQ_Acc",      # 因果重排序推理 - 选择题准确率
-    "NextSpotForecasting": "ST-IoU",   # 下一位置预测 - 选择题+时间范围IoU
-    "TrajectoryForecasting": "ST-IoU",  # 轨迹预测 - 选择题+时间范围IoU
-    "MultiTargetTrajectoryForecasting": "ST-IoU"  # 多轨迹预测 - 选择题+时间范围IoU
+    "GeoLocation": "MCQ_Acc",           # Geographic location reasoning - MCQ accuracy
+    "ArrivalTimeInterval": "MCQ_Acc",  # Arrival time interval reasoning - MCQ accuracy
+    "MotionState": "MCQ_Acc",           # Motion state reasoning - MCQ accuracy
+    "CausalReordering": "MCQ_Acc",      # Causal reordering reasoning - MCQ accuracy
+    "NextSpotForecasting": "ST-IoU",   # Next spot forecasting - MCQ + time range IoU
+    "TrajectoryForecasting": "ST-IoU",  # Trajectory forecasting - MCQ + time range IoU
+    "MultiTargetTrajectoryForecasting": "ST-IoU"  # Multi-target trajectory forecasting - MCQ + time range IoU
 }
 
-# 评估类型说明
+# Evaluation type descriptions
 EVAL_TYPE_DESCRIPTIONS = {
     "MCQ_Acc": {
         "name": "Multiple Choice Question Accuracy",
-        "description": "选择题准确率评估",
+        "description": "Multiple choice question accuracy evaluation",
         "metrics": ["accuracy_score"],
-        "calculation": "选择题是否正确"
+        "calculation": "Whether multiple choice question is correct"
     },
     "ST-IoU": {
         "name": "Spatial-Temporal Intersection over Union",
-        "description": "空间-时间交并比评估",
+        "description": "Spatial-temporal intersection over union evaluation",
         "metrics": ["accuracy_score", "time_score"],
-        "calculation": "选择题是否正确 + 时间范围IoU"
+        "calculation": "Whether MCQ is correct + time range IoU"
     }
 }
 
 def get_eval_type(task_name):
     """
-    获取任务对应的评估类型
+    Get evaluation type corresponding to task
     
     Args:
-        task_name (str): 任务名称
+        task_name (str): Task name
         
     Returns:
-        str: Evaluation type (MCQ_Acc 或 ST-IoU)
+        str: Evaluation type (MCQ_Acc or ST-IoU)
     """
     return EVAL_TYPES.get(task_name, "MCQ_Acc")
 
 def get_eval_description(eval_type):
     """
-    获取评估类型的详细描述
+    Get detailed description of evaluation type
     
     Args:
-        eval_type (str): 评估类型
+        eval_type (str): Evaluation type
         
     Returns:
-        dict: 评估类型描述
+        dict: Evaluation type description
     """
     return EVAL_TYPE_DESCRIPTIONS.get(eval_type, {})
 
 def is_mcq_task(task_name):
     """
-    判断是否为选择题任务
+    Determine if it is an MCQ task
     
     Args:
-        task_name (str): 任务名称
+        task_name (str): Task name
         
     Returns:
-        bool: 是否为选择题任务
+        bool: Whether it is an MCQ task
     """
     return get_eval_type(task_name) == "MCQ_Acc"
 
 def is_st_iou_task(task_name):
     """
-    判断是否为ST-IoU任务
+    Determine if it is an ST-IoU task
     
     Args:
-        task_name (str): 任务名称
+        task_name (str): Task name
         
     Returns:
-        bool: 是否为ST-IoU任务
+        bool: Whether it is an ST-IoU task
     """
     return get_eval_type(task_name) == "ST-IoU"
 
-# 任务类型列表
+# Task type list
 TASK_TYPES = list(EVAL_TYPES.keys())
 
-# MCQ任务列表
+# MCQ task list
 MCQ_TASKS = [task for task, eval_type in EVAL_TYPES.items() if eval_type == "MCQ_Acc"]
 
-# ST-IoU任务列表
+# ST-IoU task list
 ST_IOU_TASKS = [task for task, eval_type in EVAL_TYPES.items() if eval_type == "ST-IoU"]

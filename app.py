@@ -43,7 +43,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS样式
+# Custom CSS styles
 st.markdown("""
 <style>
     .main-header {
@@ -136,7 +136,7 @@ def main():
     if 'scoring_system' not in st.session_state:
         st.session_state.scoring_system = ScoringSystem()
     
-    # 评估功能相关状态
+    # Evaluation function related states
     if 'eval_process' not in st.session_state:
         st.session_state.eval_process = None
     if 'eval_output' not in st.session_state:
@@ -148,21 +148,21 @@ def main():
     if 'eval_status' not in st.session_state:
         st.session_state.eval_status = "idle"  # idle, running, completed, error
 
-    # 主标题
-    st.markdown('<h1 class="main-header">🎯 人类水平评估系统</h1>', unsafe_allow_html=True)
+    # Main title
+    st.markdown('<h1 class="main-header">🎯 Human-Level Evaluation System</h1>', unsafe_allow_html=True)
 
-    # 侧边栏配置
+    # Sidebar configuration
     with st.sidebar:
-        st.markdown('<h3 class="sub-header">📋 系统配置</h3>', unsafe_allow_html=True)
+        st.markdown('<h3 class="sub-header">📋 System Configuration</h3>', unsafe_allow_html=True)
         
-        # 场景选择
+        # Scene selection
         scene = st.selectbox(
             "Select Scene",
             ["outdoor", "indoor"],
             index=0
         )
         
-        # 任务类型选择
+        # Task type selection
         task_types = {
             "outdoor": [
                 "MotionState",
@@ -190,15 +190,15 @@ def main():
             index=0
         )
         
-        # 显示任务说明
+        # Display task descriptions
         task_descriptions = {
-            "MotionState": "运动状态推理 - 选择题",
-            "GeoLocation": "地理位置推理 - 选择题", 
-            "ArrivalTimeInterval": "到达时间间隔推理 - 选择题",
-            "CausalReordering": "因果重排序推理 - 选择题",
-            "NextSpotForecasting": "下一位置预测 - 选择题 + 时间范围填空",
-            "TrajectoryForecasting": "轨迹预测 - 预测两个摄像头 + 时间范围",
-            "MultiTrajectoryForecasting": "多轨迹预测 - 选择题 + 时间范围填空"
+            "MotionState": "Motion State Reasoning - Multiple Choice",
+            "GeoLocation": "Geographic Location Reasoning - Multiple Choice", 
+            "ArrivalTimeInterval": "Arrival Time Interval Reasoning - Multiple Choice",
+            "CausalReordering": "Causal Reordering Reasoning - Multiple Choice",
+            "NextSpotForecasting": "Next Spot Forecasting - Multiple Choice + Time Range",
+            "TrajectoryForecasting": "Trajectory Forecasting - Predict Two Cameras + Time Range",
+            "MultiTargetTrajectoryForecasting": "Multi-Target Trajectory Forecasting - Multiple Choice + Time Range"
         }
         
         if task_type in task_descriptions:
@@ -275,7 +275,7 @@ def main():
         # 显示模型评估界面
         display_eval_interface()
     elif 'show_results' in st.session_state and st.session_state.show_results:
-        # Display results可视化界面
+        # Display results visualization interface
         display_results_visualization()
     elif st.session_state.data_loader.data and st.session_state.current_task:
         # 显示正常答题界面
@@ -390,7 +390,7 @@ def display_current_question():
                         video_path.replace('./', '')
                     )
                 
-                st.write(f"**视频路径:** {video_path}")
+                st.write(f"**Video Path:** {video_path}")
                 
                 # Check if video file exists
                 if os.path.exists(video_path):
@@ -858,7 +858,7 @@ def show_results_summary():
         st.download_button(
             label="Download CSV File",
             data=csv,
-            file_name=f"答题结果_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+            file_name=f"answer_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
             mime="text/csv"
         )
 
@@ -916,7 +916,7 @@ def display_results_visualization():
             st.error(f"❌ 加载结果文件失败: {str(e)}")
             return
     
-    # Display results统计
+    # Display results statistics
     if st.session_state.selected_file in st.session_state.results_data:
         results = st.session_state.results_data[st.session_state.selected_file]
         # Extract model name from filename for display
@@ -1082,7 +1082,7 @@ def display_detailed_results(results, scene_filter, task_filter):
         st.download_button(
             label="Download CSV File",
             data=csv,
-            file_name=f"评估结果_{scene_filter}_{task_filter}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+            file_name=f"evaluation_results_{scene_filter}_{task_filter}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
             mime="text/csv"
         )
 
@@ -1121,7 +1121,7 @@ def display_case_details(result):
                     for i, choice in enumerate(choices):
                         st.write(f"{chr(65+i)}. {choice}")
                 
-                # Display map图像
+                # Display map image
                 if case_data.get('map_image_path'):
                     st.markdown('<h6>🗺️ 场景地图</h6>', unsafe_allow_html=True)
                     map_path = case_data['map_image_path']
@@ -1168,7 +1168,7 @@ def display_case_details(result):
                                     video_path.replace('./', '')
                                 )
                             
-                            st.write(f"**视频路径:** {video_path}")
+                            st.write(f"**Video Path:** {video_path}")
                             
                             # Check if video file exists
                             if os.path.exists(video_path):
@@ -1244,9 +1244,9 @@ def display_eval_interface():
     with col1:
         # 模型配置
         st.markdown('<h4>🔧 模型配置</h4>', unsafe_allow_html=True)
-        model_name = st.text_input("Model Name", help="例如: claude-sonnet-4-20250514-thinking, gpt-4o")
-        api_key = st.text_input("API Key", type="password", help="OpenAI API密钥")
-        base_url = st.text_input("Base URL", help="API基础URL")
+        model_name = st.text_input("Model Name", help="e.g.: claude-sonnet-4-20250514-thinking, gpt-4o")
+        api_key = st.text_input("API Key", type="password", help="OpenAI API key")
+        base_url = st.text_input("Base URL", help="API base URL")
         
         # 模型参数
         st.markdown('<h4>🎛️ 模型参数</h4>', unsafe_allow_html=True)
@@ -1259,9 +1259,9 @@ def display_eval_interface():
         
         # 测试范围选择
         test_scope = st.radio(
-            "测试范围",
+            "Test Scope",
             ["Specific Scene-Task", "All Scenes-Tasks"],
-            help="选择特定场景任务或全部场景任务"
+            help="Choose specific scene-task or all scene-tasks"
         )
         
         if test_scope == "Specific Scene-Task":
@@ -1480,7 +1480,7 @@ def display_eval_completion():
             else:
                 st.text(line)
     
-    # Reset status按钮
+    # Reset status button
     if st.button("🔄 Restart Evaluation"):
         st.session_state.eval_status = "idle"
         st.session_state.eval_output = []
@@ -1510,7 +1510,7 @@ def display_eval_error():
         for line in st.session_state.eval_output:
             st.error(line)
     
-    # Reset status按钮
+    # Reset status button
     if st.button("🔄 Restart Evaluation"):
         st.session_state.eval_status = "idle"
         st.session_state.eval_output = []
