@@ -116,9 +116,8 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-# 评估结果文件
-eval/results/*.json
-eval/results/prompt/*.json
+# 评估结果文件 - 完全排除results目录
+eval/results/
 
 # 数据文件（如果包含敏感信息）
 # data/
