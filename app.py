@@ -204,7 +204,7 @@ def main():
         if task_type in task_descriptions:
             st.info(f"📝 {task_descriptions[task_type]}")
         
-        # 加载数据
+        # Load data
         if st.button("🔄 Load Question Data"):
             try:
                 st.session_state.data_loader.load_data(scene, task_type)
@@ -219,24 +219,24 @@ def main():
                     del st.session_state.show_results
                 if 'show_eval' in st.session_state:
                     del st.session_state.show_eval
-                st.success(f"✅ 成功加载 {scene} - {task_type} 题目数据")
+                st.success(f"✅ Successfully loaded {scene} - {task_type} question data")
                 st.rerun()
             except Exception as e:
-                st.error(f"❌ 加载数据失败: {str(e)}")
+                st.error(f"❌ Failed to load data: {str(e)}")
         
         st.markdown("---")
         
         # Display statistics
         if st.session_state.data_loader.data:
-            st.markdown('<h4>📊 统计信息</h4>', unsafe_allow_html=True)
+            st.markdown('<h4>📊 Statistics</h4>', unsafe_allow_html=True)
             total_cases = len(st.session_state.data_loader.data.get('cases', []))
-            st.write(f"总题目数: {total_cases}")
-            st.write(f"当前题目: {st.session_state.current_case_index + 1}")
+            st.write(f"Total Questions: {total_cases}")
+            st.write(f"Current Question: {st.session_state.current_case_index + 1}")
             
-            # 题目导航
+            # Question navigation
             if total_cases > 0:
                 case_index = st.slider(
-                    "选择题目",
+                    "Select Question",
                     0, total_cases - 1,
                     st.session_state.current_case_index
                 )
@@ -250,41 +250,41 @@ def main():
         
         st.markdown("---")
         
-        # 查看结果
-        if st.button("📈 查看答题结果"):
+        # View results
+        if st.button("📈 View Answer Results"):
             if st.session_state.results:
                 show_results_summary()
             else:
-                st.warning("暂无答题记录")
+                st.warning("No answer records yet")
         
         st.markdown("---")
         
-        # 模型评估功能
-        st.markdown('<h4>🤖 模型评估</h4>', unsafe_allow_html=True)
+        # Model evaluation function
+        st.markdown('<h4>🤖 Model Evaluation</h4>', unsafe_allow_html=True)
         if st.button("🚀 Launch Model Evaluation"):
             st.session_state.show_eval = True
-            st.rerun()
-        
-        # 查看评估结果
+                st.rerun()
+            
+        # View evaluation results
         if st.button("📈 View Evaluation Results"):
             st.session_state.show_results = True
-            st.rerun()
+                    st.rerun()
 
-    # 主内容区域
+    # Main content area
     if 'show_eval' in st.session_state and st.session_state.show_eval:
-        # 显示模型评估界面
+        # Display model evaluation interface
         display_eval_interface()
     elif 'show_results' in st.session_state and st.session_state.show_results:
         # Display results visualization interface
         display_results_visualization()
     elif st.session_state.data_loader.data and st.session_state.current_task:
-        # 显示正常答题界面
-        display_current_question()
+        # Display normal question answering interface
+            display_current_question()
     else:
         st.info("👈 Please select scene and task type in sidebar, then load question data")
 
 def display_current_question():
-    """显示当前题目"""
+    """Display current question"""
     data = st.session_state.data_loader.data
     cases = data.get('cases', [])
     
@@ -293,45 +293,45 @@ def display_current_question():
         return
     
     current_case = cases[st.session_state.current_case_index]
-    # 提取任务类型，处理不同的格式
+    # Extract task type, handle different formats
     task_id = current_case.get('task_id', '')
     if task_id:
-        # 直接使用task_id作为任务类型
-        task_type = task_id
+        # Use task_id directly as task type
+            task_type = task_id
     else:
         task_type = ''
     
-    # 初始化答题状态
+    # Initialize answer state
     if 'question_started' not in st.session_state:
         st.session_state.question_started = False
     if 'answer_submitted' not in st.session_state:
         st.session_state.answer_submitted = False
     
-    # 显示题目信息
-    st.markdown(f'<h2 class="sub-header">📝 题目 {st.session_state.current_case_index + 1}</h2>', unsafe_allow_html=True)
+    # Display question information
+    st.markdown(f'<h2 class="sub-header">📝 Question {st.session_state.current_case_index + 1}</h2>', unsafe_allow_html=True)
     
-    # 显示任务类型信息
+    # Display task type information
     task_descriptions = {
-        "MotionState": "🎯 运动状态推理任务 - 请根据提供的视频信息推理目标的运动状态",
-        "GeoLocation": "🎯 地理位置推理任务 - 请根据提供的视频信息推理目标的空间位置关系",
-        "ArrivalTimeInterval": "🎯 到达时间间隔推理任务 - 请根据提供的视频信息推理目标的时间顺序",
-        "CausalReordering": "🎯 因果重排序推理任务 - 请根据提供的视频信息推理目标的因果关系",
-        "NextSpotForecasting": "🎯 下一位置预测任务 - 请预测目标接下来经过的位置和时间范围",
-        "TrajectoryForecasting": "🎯 轨迹预测任务 - 请预测目标接下来经过的两个位置和对应时间范围",
-        "MultiTrajectoryForecasting": "🎯 多轨迹预测任务 - 请预测多个目标的轨迹和时间范围"
+        "MotionState": "🎯 Motion State Reasoning Task - Infer target's motion state based on provided video information",
+        "GeoLocation": "🎯 Geographic Location Reasoning Task - Infer target's spatial position relationship based on provided video information",
+        "ArrivalTimeInterval": "🎯 Arrival Time Interval Reasoning Task - Infer target's temporal sequence based on provided video information",
+        "CausalReordering": "🎯 Causal Reordering Reasoning Task - Infer target's causal relationships based on provided video information",
+        "NextSpotForecasting": "🎯 Next Spot Forecasting Task - Predict target's next location and time range",
+        "TrajectoryForecasting": "🎯 Trajectory Forecasting Task - Predict target's next two locations and corresponding time ranges",
+        "MultiTrajectoryForecasting": "🎯 Multi-Trajectory Forecasting Task - Predict multiple targets' trajectories and time ranges"
     }
     
     if task_type in task_descriptions:
         st.markdown(f'<div class="task-info">{task_descriptions[task_type]}</div>', unsafe_allow_html=True)
     
-    # 自动开始答题（不需要按钮）
+    # Auto start answering (no button needed)
     if not st.session_state.question_started:
-        st.session_state.question_started = True
-        st.session_state.start_time = time.time()
-    
-    # 如果答案已提交，显示结果但不阻止继续操作
+                st.session_state.question_started = True
+                st.session_state.start_time = time.time()
+        
+    # If answer is submitted, show results but don't prevent continued operation
     if st.session_state.answer_submitted:
-        # 答案已提交，但用户可以继续查看题目和结果
+        # Answer submitted, but user can continue viewing question and results
         pass
     
     # Display map
@@ -346,37 +346,37 @@ def display_current_question():
             )
         
         if os.path.exists(map_path):
-            st.markdown('<h4>🗺️ 场景地图</h4>', unsafe_allow_html=True)
+            st.markdown('<h4>🗺️ Scene Map</h4>', unsafe_allow_html=True)
             try:
                 map_image = Image.open(map_path)
-                # 创建地图容器，限制最大尺寸
+                # Create map container, limit maximum size
                 with st.container():
                     col1, col2, col3 = st.columns([1, 2, 1])
                     with col2:
-                        # 限制地图大小
+                        # Limit map size
                         st.image(map_image, use_container_width=True)
             except Exception as e:
-                st.error(f"无法加载地图图像: {str(e)}")
+                st.error(f"Unable to load map image: {str(e)}")
         else:
-            st.warning(f"地图文件不存在: {map_path}")
+            st.warning(f"Map file does not exist: {map_path}")
     
     # Display camera images
     camera_images = current_case.get('camera_images', [])
     if camera_images:
-        st.markdown('<h4>📹 摄像头图像</h4>', unsafe_allow_html=True)
+        st.markdown('<h4>📹 Camera Images</h4>', unsafe_allow_html=True)
         
-        # 为每个摄像头显示图像
+        # Display images for each camera
         for i, camera in enumerate(camera_images):
             camera_id = camera.get('camera_id', f'Camera_{i}')
             
             # For CausalReordering task, do not display time range
             if task_type == "CausalReordering":
-                expander_title = f"📹 摄像头 {camera_id}"
+                expander_title = f"📹 Camera {camera_id}"
             else:
                 # Convert time format
-                start_time_str = seconds_to_time_format(camera['start_timestamp'])
-                end_time_str = seconds_to_time_format(camera['end_timestamp'])
-                expander_title = f"📹 摄像头 {camera_id} (时间: {start_time_str} - {end_time_str})"
+            start_time_str = seconds_to_time_format(camera['start_timestamp'])
+            end_time_str = seconds_to_time_format(camera['end_timestamp'])
+                expander_title = f"📹 Camera {camera_id} (Time: {start_time_str} - {end_time_str})"
             
             with st.expander(expander_title):
                 # Display video path information
@@ -404,42 +404,42 @@ def display_current_question():
                     )
                     
                     if frames:
-                        # 显示3张均匀选择的帧
+                        # Display 3 evenly selected frames
                         cols = st.columns(3)
                         for j, frame in enumerate(frames):
                             with cols[j]:
-                                st.image(frame, caption=f"帧 {camera['frame_ids'][j]}", use_container_width=True)
+                                st.image(frame, caption=f"Frame {camera['frame_ids'][j]}", use_container_width=True)
                     else:
                         st.warning(f"Unable to extract frames from video")
                         
-                        # 尝试获取视频信息
+                        # Try to get video information
                         video_info = st.session_state.video_processor.get_video_info(video_path)
                         if video_info:
-                            st.write("**视频信息:**")
-                            st.write(f"- 总帧数: {video_info['frame_count']}")
-                            st.write(f"- 帧率: {video_info['fps']:.2f}")
-                            st.write(f"- 分辨率: {video_info['width']}x{video_info['height']}")
-                            st.write(f"- 时长: {video_info['duration']:.2f}秒")
+                            st.write("**Video Information:**")
+                            st.write(f"- Total Frames: {video_info['frame_count']}")
+                            st.write(f"- Frame Rate: {video_info['fps']:.2f}")
+                            st.write(f"- Resolution: {video_info['width']}x{video_info['height']}")
+                            st.write(f"- Duration: {video_info['duration']:.2f} seconds")
                         
-                        # 显示请求的帧ID
-                        st.write(f"**请求的帧ID:** {camera['frame_ids']}")
+                        # Display requested frame IDs
+                        st.write(f"**Requested Frame IDs:** {camera['frame_ids']}")
                         
                 else:
-                    st.error(f"❌ 视频文件不存在: {video_path}")
+                    st.error(f"❌ Video file does not exist: {video_path}")
     
-    # 显示问题
-    st.markdown('<h4>❓ 问题</h4>', unsafe_allow_html=True)
+    # Display question
+    st.markdown('<h4>❓ Question</h4>', unsafe_allow_html=True)
     question = current_case.get('question', '')
     st.markdown(f'<div class="question-container">{question}</div>', unsafe_allow_html=True)
     
-    # 根据任务类型显示不同的答题界面
+    # Display different answer interfaces based on task type
     display_question_interface(current_case, task_type)
     
-    # 提交和导航按钮
+    # Submit and navigation buttons
     col1, col2, col3 = st.columns([1, 1, 1])
     
     with col1:
-        # 上一题按钮
+        # Previous question button
         total_cases = len(st.session_state.data_loader.data.get('cases', []))
         if st.session_state.current_case_index > 0:
             if st.button("⬅️ Previous", use_container_width=True):
@@ -453,12 +453,12 @@ def display_current_question():
             st.button("⬅️ Previous", disabled=True, use_container_width=True)
     
     with col2:
-        if st.button("✅ 提交答案", type="primary", use_container_width=True):
+        if st.button("✅ Submit Answer", type="primary", use_container_width=True):
             submit_answer(current_case)
     
     with col3:
-        # 下一题按钮
-        if st.session_state.current_case_index < total_cases - 1:
+        # Next question button
+            if st.session_state.current_case_index < total_cases - 1:
             if st.button("➡️ Next", use_container_width=True):
                 st.session_state.current_case_index += 1
                 st.session_state.user_answers = {}
@@ -466,35 +466,35 @@ def display_current_question():
                 st.session_state.answer_submitted = False
                 st.session_state.start_time = None
                 st.rerun()
-        else:
+            else:
             st.button("➡️ Next", disabled=True, use_container_width=True)
     
-    # 显示答题时间
+    # Display answer time
     if st.session_state.start_time:
         elapsed_time = time.time() - st.session_state.start_time
-        st.info(f"⏱️ 答题时间: {elapsed_time:.1f} 秒")
+        st.info(f"⏱️ Answer Time: {elapsed_time:.1f} seconds")
 
 def display_question_interface(case, task_type):
-    """根据任务类型显示不同的答题界面"""
+    """Display different answer interfaces based on task type"""
     
-    # 根据任务类型显示不同的界面
+    # Display different interfaces based on task type
     if task_type in ["NextSpotForecasting", "MultiTrajectoryForecasting"]:
-        # 选择+时间范围填空任务
+        # Choice + time range fill-in task
         display_option_and_time_fields(case)
     elif task_type == "TrajectoryForecasting":
-        # 轨迹预测任务（只有轨迹预测填空）
+        # Trajectory forecasting task (only trajectory forecasting fill-in)
         display_trajectory_forecasting_fields(case)
     else:
-        # 纯选择题任务
+        # Pure multiple choice task
         display_option_only_fields(case)
 
 def display_option_only_fields(case):
-    """显示纯选择题界面"""
+    """Display pure multiple choice interface"""
     choices = case.get('choices', [])
     if choices:
-        st.markdown('<h4>🔘 选项</h4>', unsafe_allow_html=True)
+        st.markdown('<h4>🔘 Options</h4>', unsafe_allow_html=True)
         
-        # 单选
+        # Single choice
         selected_option = st.radio(
             "Choose the correct answer:",
             choices,
@@ -504,12 +504,12 @@ def display_option_only_fields(case):
         st.session_state.user_answers['options'] = [selected_option]
 
 def display_option_and_time_fields(case):
-    """显示选项+时间范围填空界面"""
+    """Display option + time range fill-in interface"""
     choices = case.get('choices', [])
     if choices:
-        st.markdown('<h4>🔘 选项</h4>', unsafe_allow_html=True)
+        st.markdown('<h4>🔘 Options</h4>', unsafe_allow_html=True)
         
-        # 单选
+        # Single choice
         selected_option = st.radio(
             "Choose the correct answer:",
             choices,
@@ -518,44 +518,44 @@ def display_option_and_time_fields(case):
         st.session_state.user_answers['option_index'] = choices.index(selected_option) if selected_option in choices else 0
         st.session_state.user_answers['options'] = [selected_option]
     
-    # 显示时间范围填空
+    # Display time range fill-in
     display_time_range_fields(case)
 
 def display_time_range_fields(case):
-    """显示时间范围填空题"""
-    st.markdown('<h4>⏰ 时间范围填空</h4>', unsafe_allow_html=True)
+    """Display time range fill-in questions"""
+    st.markdown('<h4>⏰ Time Range Fill-in</h4>', unsafe_allow_html=True)
     
-    # 检查是否有时间信息
+    # Check if there is time information
     time_fields = []
     
-    # 检查correct_time_str字段
+    # Check correct_time_str field
     if 'correct_time_str' in case and case['correct_time_str']:
         for i, time_str in enumerate(case['correct_time_str']):
             if '-' in time_str:
                 start_time, end_time = time_str.split('-')
-                time_fields.append((f'time_range_{i}_start', f'时间范围 {i+1} 开始时间', start_time))
-                time_fields.append((f'time_range_{i}_end', f'时间范围 {i+1} 结束时间', end_time))
+                time_fields.append((f'time_range_{i}_start', f'Time Range {i+1} Start Time', start_time))
+                time_fields.append((f'time_range_{i}_end', f'Time Range {i+1} End Time', end_time))
             else:
-                time_fields.append((f'time_range_{i}', f'时间范围 {i+1}', time_str))
+                time_fields.append((f'time_range_{i}', f'Time Range {i+1}', time_str))
     
-    # 检查start_point和end_point字段
+    # Check start_point and end_point fields
     if 'start_point' in case and case['start_point'].get('time'):
-        time_fields.append(('start_time', '开始时间', case['start_point']['time']))
+        time_fields.append(('start_time', 'Start Time', case['start_point']['time']))
     if 'end_point' in case and case['end_point'].get('time'):
-        time_fields.append(('end_time', '结束时间', case['end_point']['time']))
+        time_fields.append(('end_time', 'End Time', case['end_point']['time']))
     
     if time_fields:
         time_answers = {}
         
         for field_id, field_name, gt_time in time_fields:
             time_input = st.text_input(
-                f"{field_name} (格式: HH:MM:SS.mmm)",
+                f"{field_name} (Format: HH:MM:SS.mmm)",
                 value=st.session_state.user_answers.get(field_id, ''),
-                help=f"正确答案格式: {gt_time}"
+                help=f"Correct answer format: {gt_time}"
             )
-            # 自动纠正时间格式（将冒号改为点号）
+            # Auto-correct time format (change colon to dot)
             if time_input and time_input.count(':') > 2:
-                # 如果冒号超过2个，将最后一个冒号改为点号
+                # If there are more than 2 colons, change the last colon to a dot
                 parts = time_input.split(':')
                 if len(parts) > 3:
                     time_input = ':'.join(parts[:-1]) + '.' + parts[-1]
@@ -563,24 +563,24 @@ def display_time_range_fields(case):
         
         st.session_state.user_answers.update(time_answers)
     else:
-        st.info("该题目没有时间范围填空要求")
+        st.info("This question has no time range fill-in requirements")
 
 def display_trajectory_forecasting_fields(case):
-    """显示轨迹预测填空题"""
-    st.markdown('<h4>🎯 轨迹预测</h4>', unsafe_allow_html=True)
+    """Display trajectory forecasting fill-in questions"""
+    st.markdown('<h4>🎯 Trajectory Forecasting</h4>', unsafe_allow_html=True)
     
-    # 获取选项和正确答案
+    # Get options and correct answers
     choices = case.get('choices', [])
     correct_cam_names = case.get('correct_cam_name', [])
     correct_time_strs = case.get('correct_time_str', [])
     
-    # 第一段预测
-    st.markdown("**第一段预测:**")
+    # First segment prediction
+    st.markdown("**First Segment Prediction:**")
     
-    # 第一个摄像头选择
+    # First camera selection
     if choices:
         first_camera_option = st.radio(
-            "第一个摄像头:",
+            "First Camera:",
             choices,
             index=st.session_state.user_answers.get('first_camera_index', 0),
             key="first_camera_radio"
@@ -589,13 +589,13 @@ def display_trajectory_forecasting_fields(case):
         first_camera = first_camera_option
     else:
         first_camera = st.text_input(
-            "第一个摄像头ID:",
+            "First Camera ID:",
             value=st.session_state.user_answers.get('first_camera', ''),
-            help=f"正确答案: {correct_cam_names[0] if len(correct_cam_names) > 0 else '未知'}"
+            help=f"Correct answer: {correct_cam_names[0] if len(correct_cam_names) > 0 else 'Unknown'}"
         )
         first_camera_index = 0
     
-    # 第一段时间范围
+    # First time range
     if len(correct_time_strs) > 0:
         first_time_range = correct_time_strs[0]
         if '-' in first_time_range:
@@ -606,36 +606,36 @@ def display_trajectory_forecasting_fields(case):
         first_start = first_end = ""
     
     first_start_time = st.text_input(
-        "第一段开始时间 (格式: HH:MM:SS.mmm):",
+        "First Segment Start Time (Format: HH:MM:SS.mmm):",
         value=st.session_state.user_answers.get('first_start_time', ''),
-        help=f"正确答案: {first_start}"
+        help=f"Correct answer: {first_start}"
     )
-    # 自动纠正时间格式（将冒号改为点号）
+    # Auto-correct time format (change colon to dot)
     if first_start_time and first_start_time.count(':') > 2:
-        # 如果冒号超过2个，将最后一个冒号改为点号
+        # If there are more than 2 colons, change the last colon to a dot
         parts = first_start_time.split(':')
         if len(parts) > 3:
             first_start_time = ':'.join(parts[:-1]) + '.' + parts[-1]
     
     first_end_time = st.text_input(
-        "第一段结束时间 (格式: HH:MM:SS.mmm):",
+        "First Segment End Time (Format: HH:MM:SS.mmm):",
         value=st.session_state.user_answers.get('first_end_time', ''),
-        help=f"正确答案: {first_end}"
+        help=f"Correct answer: {first_end}"
     )
-    # 自动纠正时间格式（将冒号改为点号）
+    # Auto-correct time format (change colon to dot)
     if first_end_time and first_end_time.count(':') > 2:
-        # 如果冒号超过2个，将最后一个冒号改为点号
+        # If there are more than 2 colons, change the last colon to a dot
         parts = first_end_time.split(':')
         if len(parts) > 3:
             first_end_time = ':'.join(parts[:-1]) + '.' + parts[-1]
     
-    # 第二段预测
-    st.markdown("**第二段预测:**")
+    # Second segment prediction
+    st.markdown("**Second Segment Prediction:**")
     
-    # 第二个摄像头选择
+    # Second camera selection
     if choices:
         second_camera_option = st.radio(
-            "第二个摄像头:",
+            "Second Camera:",
             choices,
             index=st.session_state.user_answers.get('second_camera_index', 0),
             key="second_camera_radio"
@@ -644,13 +644,13 @@ def display_trajectory_forecasting_fields(case):
         second_camera = second_camera_option
     else:
         second_camera = st.text_input(
-            "第二个摄像头ID:",
+            "Second Camera ID:",
             value=st.session_state.user_answers.get('second_camera', ''),
-            help=f"正确答案: {correct_cam_names[1] if len(correct_cam_names) > 1 else '未知'}"
+            help=f"Correct answer: {correct_cam_names[1] if len(correct_cam_names) > 1 else 'Unknown'}"
         )
         second_camera_index = 0
     
-    # 第二段时间范围
+    # Second time range
     if len(correct_time_strs) > 1:
         second_time_range = correct_time_strs[1]
         if '-' in second_time_range:
@@ -661,30 +661,30 @@ def display_trajectory_forecasting_fields(case):
         second_start = second_end = ""
     
     second_start_time = st.text_input(
-        "第二段开始时间 (格式: HH:MM:SS.mmm):",
+        "Second Segment Start Time (Format: HH:MM:SS.mmm):",
         value=st.session_state.user_answers.get('second_start_time', ''),
-        help=f"正确答案: {second_start}"
+        help=f"Correct answer: {second_start}"
     )
-    # 自动纠正时间格式（将冒号改为点号）
+    # Auto-correct time format (change colon to dot)
     if second_start_time and second_start_time.count(':') > 2:
-        # 如果冒号超过2个，将最后一个冒号改为点号
+        # If there are more than 2 colons, change the last colon to a dot
         parts = second_start_time.split(':')
         if len(parts) > 3:
             second_start_time = ':'.join(parts[:-1]) + '.' + parts[-1]
     
     second_end_time = st.text_input(
-        "第二段结束时间 (格式: HH:MM:SS.mmm):",
+        "Second Segment End Time (Format: HH:MM:SS.mmm):",
         value=st.session_state.user_answers.get('second_end_time', ''),
-        help=f"正确答案: {second_end}"
+        help=f"Correct answer: {second_end}"
     )
-    # 自动纠正时间格式（将冒号改为点号）
+    # Auto-correct time format (change colon to dot)
     if second_end_time and second_end_time.count(':') > 2:
-        # 如果冒号超过2个，将最后一个冒号改为点号
+        # If there are more than 2 colons, change the last colon to a dot
         parts = second_end_time.split(':')
         if len(parts) > 3:
             second_end_time = ':'.join(parts[:-1]) + '.' + parts[-1]
     
-    # 保存答案
+    # Save answers
     st.session_state.user_answers.update({
         'first_camera': first_camera,
         'first_camera_index': first_camera_index,
@@ -697,7 +697,7 @@ def display_trajectory_forecasting_fields(case):
     })
 
 def submit_answer(current_case):
-    """提交答案并计算得分"""
+    """Submit answer and calculate score"""
     end_time = time.time()
     elapsed_time = end_time - st.session_state.start_time
     
@@ -708,7 +708,7 @@ def submit_answer(current_case):
         elapsed_time
     )
     
-    # 保存结果
+    # Save results
     result = {
         'case_id': current_case.get('case_id', ''),
         'task_type': st.session_state.current_task if st.session_state.current_task else '',
@@ -726,35 +726,35 @@ def submit_answer(current_case):
     # Display results
     show_result(result, current_case)
     
-    # 设置答案已提交状态
+    # Set answer submitted state
     st.session_state.answer_submitted = True
 
 def show_result(result, current_case):
-    """显示答题结果"""
-    st.markdown('<h3 class="sub-header">📊 答题结果</h3>', unsafe_allow_html=True)
+    """Display answer results"""
+    st.markdown('<h3 class="sub-header">📊 Answer Results</h3>', unsafe_allow_html=True)
     
     if result['accuracy_score'] > 0:
-        st.markdown('<div class="result-correct">✅ 回答正确！</div>', unsafe_allow_html=True)
+        st.markdown('<div class="result-correct">✅ Correct Answer!</div>', unsafe_allow_html=True)
     else:
-        st.markdown('<div class="result-incorrect">❌ 回答错误</div>', unsafe_allow_html=True)
+        st.markdown('<div class="result-incorrect">❌ Incorrect Answer</div>', unsafe_allow_html=True)
     
-    # 显示详细信息
+    # Display detailed information
     col1, col2 = st.columns(2)
     
     with col1:
-        st.metric("总得分", f"{result['score']:.2f}")
-        st.metric("准确率得分", f"{result['accuracy_score']:.2f}")
-        st.metric("时间得分", f"{result['time_score']:.2f}")
+        st.metric("Total Score", f"{result['score']:.2f}")
+        st.metric("Accuracy Score", f"{result['accuracy_score']:.2f}")
+        st.metric("Time Score", f"{result['time_score']:.2f}")
     
     with col2:
-        st.metric("答题时间", f"{result['elapsed_time']:.1f}秒")
-        st.metric("题目类型", result['task_type'])
-        st.metric("题目ID", result['case_id'])
+        st.metric("Answer Time", f"{result['elapsed_time']:.1f} seconds")
+        st.metric("Question Type", result['task_type'])
+        st.metric("Question ID", result['case_id'])
     
-    # 显示正确答案
-    st.markdown('<h4>📋 正确答案</h4>', unsafe_allow_html=True)
+    # Display correct answers
+    st.markdown('<h4>📋 Correct Answers</h4>', unsafe_allow_html=True)
     
-    # 直接显示correct_cam_name和correct_time_str字段
+    # Directly display correct_cam_name and correct_time_str fields
     correct_cam_names = current_case.get('correct_cam_name', [])
     correct_time_strs = current_case.get('correct_time_str', [])
     
@@ -764,86 +764,86 @@ def show_result(result, current_case):
     if correct_time_strs:
         st.info(f"**correct_time_str:** {correct_time_strs}")
     
-    # 如果没有这些字段，显示ground_truth
+    # If these fields don't exist, display ground_truth
     if not correct_cam_names and not correct_time_strs:
         ground_truth = current_case.get('ground_truth', '')
         st.info(f"**ground_truth:** {ground_truth}")
     
-    # 显示用户答案
-    st.markdown('<h4>👤 您的答案</h4>', unsafe_allow_html=True)
+    # Display user answers
+    st.markdown('<h4>👤 Your Answers</h4>', unsafe_allow_html=True)
     user_answers = result['user_answers']
     
     if 'options' in user_answers:
-        st.write(f"**选项答案:** {', '.join(user_answers['options'])}")
+        st.write(f"**Option Answers:** {', '.join(user_answers['options'])}")
     
     time_answers = {k: v for k, v in user_answers.items() if k.endswith('_time')}
     if time_answers:
-        st.write("**时间答案:**")
+        st.write("**Time Answers:**")
         for field, answer in time_answers.items():
             st.write(f"- {field}: {answer}")
     
-    # 显示轨迹预测答案
+    # Display trajectory forecasting answers
     trajectory_fields = ['first_camera', 'first_start_time', 'first_end_time', 
                         'second_camera', 'second_start_time', 'second_end_time']
     trajectory_answers = {k: v for k, v in user_answers.items() if k in trajectory_fields}
     if trajectory_answers:
-        st.write("**轨迹预测答案:**")
+        st.write("**Trajectory Forecasting Answers:**")
         
-        # 第一段
+        # First segment
         first_camera = trajectory_answers.get('first_camera', '')
         first_start = trajectory_answers.get('first_start_time', '')
         first_end = trajectory_answers.get('first_end_time', '')
         if first_camera:
-            st.write(f"📹 **第一个摄像头ID:** {first_camera}")
+            st.write(f"📹 **First Camera ID:** {first_camera}")
             if first_start and first_end:
-                st.write(f"⏰ **第一段时间范围:** {first_start} - {first_end}")
+                st.write(f"⏰ **First Time Range:** {first_start} - {first_end}")
             elif first_start:
-                st.write(f"⏰ **第一段时间:** {first_start}")
+                st.write(f"⏰ **First Time:** {first_start}")
         
-        # 第二段
+        # Second segment
         second_camera = trajectory_answers.get('second_camera', '')
         second_start = trajectory_answers.get('second_start_time', '')
         second_end = trajectory_answers.get('second_end_time', '')
         if second_camera:
-            st.write(f"📹 **第二个摄像头ID:** {second_camera}")
+            st.write(f"📹 **Second Camera ID:** {second_camera}")
             if second_start and second_end:
-                st.write(f"⏰ **第二段时间范围:** {second_start} - {second_end}")
+                st.write(f"⏰ **Second Time Range:** {second_start} - {second_end}")
             elif second_start:
-                st.write(f"⏰ **第二段时间:** {second_start}")
+                st.write(f"⏰ **Second Time:** {second_start}")
 
 def show_results_summary():
-    """显示答题结果汇总"""
+    """Display answer results summary"""
     if not st.session_state.results:
-        st.warning("暂无答题记录")
+        st.warning("No answer records yet")
         return
     
-    st.markdown('<h3 class="sub-header">📈 答题结果汇总</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 class="sub-header">📈 Answer Results Summary</h3>', unsafe_allow_html=True)
     
-    # 创建结果DataFrame
+    # Create results DataFrame
     df = pd.DataFrame(st.session_state.results)
     
     # Display statistics
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        st.metric("总题目数", len(df))
+        st.metric("Total Questions", len(df))
     
     with col2:
         correct_count = len(df[df['accuracy_score'] > 0])
-        st.metric("正确题目数", correct_count)
+        st.metric("Correct Questions", correct_count)
     
     with col3:
         accuracy = correct_count / len(df) * 100 if len(df) > 0 else 0
-        st.metric("正确率", f"{accuracy:.1f}%")
+        st.metric("Accuracy Rate", f"{accuracy:.1f}%")
     
     with col4:
         avg_score = df['score'].mean() if len(df) > 0 else 0
         st.metric("Average Score", f"{avg_score:.2f}")
     
     # Display detailed results table
-    st.markdown('<h4>📋 详细结果</h4>', unsafe_allow_html=True)
+    st.markdown('<h4>📋 Detailed Results</h4>', unsafe_allow_html=True)
     
-    # 简化显示列
+    # Simplify display columns
     display_df = df[['case_id', 'task_type', 'score', 'accuracy_score', 'time_score', 'elapsed_time']].copy()
     display_df['elapsed_time'] = display_df['elapsed_time'].round(1)
     display_df['score'] = display_df['score'].round(2)
@@ -852,8 +852,8 @@ def show_results_summary():
     
     st.dataframe(display_df, use_container_width=True)
     
-    # 导出结果
-    if st.button("📥 导出结果"):
+    # Export results
+    if st.button("📥 Export Results"):
         csv = df.to_csv(index=False)
         st.download_button(
             label="Download CSV File",
@@ -864,8 +864,8 @@ def show_results_summary():
 
 
 def display_results_visualization():
-    """显示结果可视化界面"""
-    st.markdown('<h2 class="sub-header">📊 评估结果可视化</h2>', unsafe_allow_html=True)
+    """Display results visualization interface"""
+    st.markdown('<h2 class="sub-header">📊 Evaluation Results Visualization</h2>', unsafe_allow_html=True)
     
     # Initialize session state
     if 'results_data' not in st.session_state:
@@ -878,7 +878,7 @@ def display_results_visualization():
         st.session_state.selected_task = None
     
     # Result file selection
-    st.markdown('<h3>📁 选择结果文件</h3>', unsafe_allow_html=True)
+    st.markdown('<h3>📁 Select Result File</h3>', unsafe_allow_html=True)
     
     # Find result files
     result_files = []
@@ -911,9 +911,9 @@ def display_results_visualization():
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             st.session_state.results_data[st.session_state.selected_file] = data
-            st.success(f"✅ 已加载评估结果文件: {st.session_state.selected_file}")
+            st.success(f"✅ Successfully loaded evaluation result file: {st.session_state.selected_file}")
         except Exception as e:
-            st.error(f"❌ 加载结果文件失败: {str(e)}")
+            st.error(f"❌ Failed to load result file: {str(e)}")
             return
     
     # Display results statistics
@@ -924,11 +924,11 @@ def display_results_visualization():
         display_results_statistics(results, model_name)
         
         # Scene and task type filtering
-        st.markdown('<h3>🔍 结果筛选</h3>', unsafe_allow_html=True)
+        st.markdown('<h3>🔍 Result Filtering</h3>', unsafe_allow_html=True)
         
         # Get all scenes and task types
         scenes = list(set([r.get('scene', 'unknown') for r in results]))
-        task_types = list(set([r.get('task_id', 'unknown') for r in results]))  # 使用task_id字段
+        task_types = list(set([r.get('task_id', 'unknown') for r in results]))  # Use task_id field
         
         col1, col2 = st.columns(2)
         with col1:
@@ -936,27 +936,27 @@ def display_results_visualization():
         with col2:
             selected_task = st.selectbox("Select Task Type", ["All"] + task_types, index=0)
         
-        # 过滤结果
+        # Filter results
         filtered_results = results
         if selected_scene != "All":
             filtered_results = [r for r in filtered_results if r.get('scene') == selected_scene]
         if selected_task != "All":
-            filtered_results = [r for r in filtered_results if r.get('task_id') == selected_task]  # 使用task_id字段
+            filtered_results = [r for r in filtered_results if r.get('task_id') == selected_task]  # Use task_id field
         
-        # 显示详细结果
+        # Display detailed results
         if filtered_results:
             display_detailed_results(filtered_results, selected_scene, selected_task)
         else:
-            st.info("没有符合条件的结果")
+            st.info("No results matching the criteria")
     
-    # 返回按钮
+    # Return button
     if st.button("🔙 Return to Main Interface"):
         st.session_state.show_results = False
         st.rerun()
 
 def display_results_statistics(results, model_name):
-    """显示结果统计信息"""
-    st.markdown('<h3>📈 总体统计</h3>', unsafe_allow_html=True)
+    """Display results statistics"""
+    st.markdown('<h3>📈 Overall Statistics</h3>', unsafe_allow_html=True)
     
     total_cases = len(results)
     correct_cases = sum(1 for r in results if r.get('metrics', {}).get('MCQacc', 0) > 0)
@@ -967,18 +967,18 @@ def display_results_statistics(results, model_name):
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.metric("模型", model_name)
+        st.metric("Model", model_name)
     with col2:
-        st.metric("总题目数", total_cases)
+        st.metric("Total Questions", total_cases)
     with col3:
-        st.metric("正确题目数", correct_cases)
+        st.metric("Correct Questions", correct_cases)
     with col4:
         st.metric("Average Score", f"{avg_score:.3f}")
     with col5:
         st.metric("Average MCQ", f"{avg_mcq:.3f}")
     
-    # 按场景统计
-    st.markdown('<h4>📊 按场景统计</h4>', unsafe_allow_html=True)
+    # Statistics by scene
+    st.markdown('<h4>📊 Statistics by Scene</h4>', unsafe_allow_html=True)
     scene_stats = {}
     for result in results:
         scene = result.get('scene', 'unknown')
@@ -993,20 +993,20 @@ def display_results_statistics(results, model_name):
     
     scene_df = pd.DataFrame([
         {
-            '场景': scene,
-            '题目数': stats['total'],
-            '正确数': stats['correct'],
-            '正确率': f"{stats['correct']/stats['total']*100:.1f}%" if stats['total'] > 0 else "0%",
-            '平均得分': f"{sum(stats['scores'])/len(stats['scores']):.3f}" if stats['scores'] else "0.000",
-            '平均MCQ': f"{sum(stats['mcqs'])/len(stats['mcqs']):.3f}" if stats['mcqs'] else "0.000"
+            'Scene': scene,
+            'Questions': stats['total'],
+            'Correct': stats['correct'],
+            'Accuracy': f"{stats['correct']/stats['total']*100:.1f}%" if stats['total'] > 0 else "0%",
+            'Avg Score': f"{sum(stats['scores'])/len(stats['scores']):.3f}" if stats['scores'] else "0.000",
+            'Avg MCQ': f"{sum(stats['mcqs'])/len(stats['mcqs']):.3f}" if stats['mcqs'] else "0.000"
         }
         for scene, stats in scene_stats.items()
     ])
     
     st.dataframe(scene_df, use_container_width=True)
     
-    # 按任务类型统计
-    st.markdown('<h4>📊 按任务类型统计</h4>', unsafe_allow_html=True)
+    # Statistics by task type
+    st.markdown('<h4>📊 Statistics by Task Type</h4>', unsafe_allow_html=True)
     task_stats = {}
     for result in results:
         task = result.get('task_id', 'unknown')  # 使用task_id字段
@@ -1021,12 +1021,12 @@ def display_results_statistics(results, model_name):
     
     task_df = pd.DataFrame([
         {
-            '任务类型': task,
-            '题目数': stats['total'],
-            '正确数': stats['correct'],
-            '正确率': f"{stats['correct']/stats['total']*100:.1f}%" if stats['total'] > 0 else "0%",
-            '平均得分': f"{sum(stats['scores'])/len(stats['scores']):.3f}" if stats['scores'] else "0.000",
-            '平均MCQ': f"{sum(stats['mcqs'])/len(stats['mcqs']):.3f}" if stats['mcqs'] else "0.000"
+            'Task Type': task,
+            'Questions': stats['total'],
+            'Correct': stats['correct'],
+            'Accuracy': f"{stats['correct']/stats['total']*100:.1f}%" if stats['total'] > 0 else "0%",
+            'Avg Score': f"{sum(stats['scores'])/len(stats['scores']):.3f}" if stats['scores'] else "0.000",
+            'Avg MCQ': f"{sum(stats['mcqs'])/len(stats['mcqs']):.3f}" if stats['mcqs'] else "0.000"
         }
         for task, stats in task_stats.items()
     ])
@@ -1034,13 +1034,13 @@ def display_results_statistics(results, model_name):
     st.dataframe(task_df, use_container_width=True)
 
 def display_detailed_results(results, scene_filter, task_filter):
-    """显示详细结果"""
-    st.markdown('<h3>📋 详细结果</h3>', unsafe_allow_html=True)
+    """Display detailed results"""
+    st.markdown('<h3>📋 Detailed Results</h3>', unsafe_allow_html=True)
     
-    # 创建结果表格
+    # Create results table
     display_data = []
     for result in results:
-        # 获取ground_truth
+        # Get ground_truth
         ground_truth = result.get('response', {}).get('ground_truth', {})
         if isinstance(ground_truth, dict):
             ground_truth_str = str(ground_truth)
@@ -1049,35 +1049,35 @@ def display_detailed_results(results, scene_filter, task_filter):
         
         display_data.append({
             'Case ID': result.get('case_id', ''),
-            '场景': result.get('scene', ''),
-            '任务类型': result.get('task_id', ''),  # 使用task_id字段
-            '得分': f"{result.get('metrics', {}).get('score', 0):.3f}",
+            'Scene': result.get('scene', ''),
+            'Task Type': result.get('task_id', ''),  # Use task_id field
+            'Score': f"{result.get('metrics', {}).get('score', 0):.3f}",
             'MCQ': f"{result.get('metrics', {}).get('MCQacc', 0):.3f}",
             'TimeIoU': f"{result.get('metrics', {}).get('TimeIoU', 0):.3f}",
-            '模型答案': result.get('response', {}).get('model_answer', '')[:100] + '...' if len(result.get('response', {}).get('model_answer', '')) > 100 else result.get('response', {}).get('model_answer', ''),
-            '提取答案': str(result.get('response', {}).get('answer', [])),
-            '时间范围': str(result.get('response', {}).get('time_duration', [])),
-            '正确答案': ground_truth_str[:100] + '...' if len(ground_truth_str) > 100 else ground_truth_str
+            'Model Answer': result.get('response', {}).get('model_answer', '')[:100] + '...' if len(result.get('response', {}).get('model_answer', '')) > 100 else result.get('response', {}).get('model_answer', ''),
+            'Extracted Answer': str(result.get('response', {}).get('answer', [])),
+            'Time Range': str(result.get('response', {}).get('time_duration', [])),
+            'Ground Truth': ground_truth_str[:100] + '...' if len(ground_truth_str) > 100 else ground_truth_str
         })
     
     df = pd.DataFrame(display_data)
     st.dataframe(df, use_container_width=True)
     
-    # 添加题目详情查看功能
-    st.markdown('<h4>🔍 查看题目详情</h4>', unsafe_allow_html=True)
+    # Add question detail viewing functionality
+    st.markdown('<h4>🔍 View Question Details</h4>', unsafe_allow_html=True)
     
-    # 选择要查看的案例
+    # Select case to view
     case_ids = [result.get('case_id', '') for result in results]
-    selected_case_id = st.selectbox("选择Case ID查看详情", case_ids, index=0)
+    selected_case_id = st.selectbox("Select Case ID to view details", case_ids, index=0)
     
     if selected_case_id:
-        # 从结果中找到选中的案例
+        # Find selected case from results
         selected_result = next((r for r in results if r.get('case_id') == selected_case_id), None)
         if selected_result:
             display_case_details(selected_result)
     
-    # 导出功能
-    if st.button("📥 导出结果"):
+    # Export functionality
+    if st.button("📥 Export Results"):
         csv = df.to_csv(index=False)
         st.download_button(
             label="Download CSV File",
@@ -1087,12 +1087,12 @@ def display_detailed_results(results, scene_filter, task_filter):
         )
 
 def display_case_details(result):
-    """显示单个案例的详细信息"""
+    """Display detailed information for a single case"""
     case_id = result.get('case_id', '')
     scene = result.get('scene', '')
-    task_type = result.get('task_id', '')  # 使用task_id字段
+    task_type = result.get('task_id', '')  # Use task_id field
     
-    st.markdown(f'<h5>📝 案例详情: {case_id}</h5>', unsafe_allow_html=True)
+    st.markdown(f'<h5>📝 Case Details: {case_id}</h5>', unsafe_allow_html=True)
     
     # Try to load question details from original data
     try:
@@ -1111,19 +1111,19 @@ def display_case_details(result):
             
             if case_data:
                 # Display question content
-                st.markdown('<h6>📋 题目内容</h6>', unsafe_allow_html=True)
+                st.markdown('<h6>📋 Question Content</h6>', unsafe_allow_html=True)
                 st.write(case_data.get('question', ''))
                 
                 # Display options
                 choices = case_data.get('choices', [])
                 if choices:
-                    st.markdown('<h6>🔘 选项</h6>', unsafe_allow_html=True)
+                    st.markdown('<h6>🔘 Options</h6>', unsafe_allow_html=True)
                     for i, choice in enumerate(choices):
                         st.write(f"{chr(65+i)}. {choice}")
                 
                 # Display map image
                 if case_data.get('map_image_path'):
-                    st.markdown('<h6>🗺️ 场景地图</h6>', unsafe_allow_html=True)
+                    st.markdown('<h6>🗺️ Scene Map</h6>', unsafe_allow_html=True)
                     map_path = case_data['map_image_path']
                     if map_path.startswith('./'):
                         map_path = os.path.join(
@@ -1136,26 +1136,26 @@ def display_case_details(result):
                             map_image = Image.open(map_path)
                             st.image(map_image, use_container_width=True)
                         except Exception as e:
-                            st.error(f"无法加载地图图像: {str(e)}")
+                            st.error(f"Unable to load map image: {str(e)}")
                     else:
-                        st.warning(f"地图文件不存在: {map_path}")
+                        st.warning(f"Map file does not exist: {map_path}")
                 
                 # Display camera images
                 camera_images = case_data.get('camera_images', [])
                 if camera_images:
-                    st.markdown('<h6>📹 摄像头图像</h6>', unsafe_allow_html=True)
+                    st.markdown('<h6>📹 Camera Images</h6>', unsafe_allow_html=True)
                     
                     for i, camera in enumerate(camera_images):
                         camera_id = camera.get('camera_id', f'Camera_{i}')
                         
                         # For CausalReordering task, do not display time range
                         if task_type == "CausalReordering":
-                            expander_title = f"📹 摄像头 {camera_id}"
+                            expander_title = f"📹 Camera {camera_id}"
                         else:
                             # Convert time format
                             start_time_str = seconds_to_time_format(camera['start_timestamp'])
                             end_time_str = seconds_to_time_format(camera['end_timestamp'])
-                            expander_title = f"📹 摄像头 {camera_id} (时间: {start_time_str} - {end_time_str})"
+                            expander_title = f"📹 Camera {camera_id} (Time: {start_time_str} - {end_time_str})"
                         
                         with st.expander(expander_title):
                             # Display video path information
@@ -1182,24 +1182,24 @@ def display_case_details(result):
                                 )
                                 
                                 if frames:
-                                    # 显示3张均匀选择的帧
+                                    # Display 3 evenly selected frames
                                     cols = st.columns(3)
                                     for j, frame in enumerate(frames):
                                         with cols[j]:
-                                            st.image(frame, caption=f"帧 {camera['frame_ids'][j]}", use_container_width=True)
+                                            st.image(frame, caption=f"Frame {camera['frame_ids'][j]}", use_container_width=True)
                                 else:
                                     st.warning(f"Unable to extract frames from video")
                             else:
-                                st.error(f"❌ 视频文件不存在: {video_path}")
+                                st.error(f"❌ Video file does not exist: {video_path}")
             else:
-                st.warning(f"未找到案例 {case_id} 的原始数据")
+                st.warning(f"Original data for case {case_id} not found")
         else:
-            st.warning(f"数据文件不存在: {data_file}")
+            st.warning(f"Data file does not exist: {data_file}")
     except Exception as e:
-        st.error(f"加载题目详情时出错: {str(e)}")
+        st.error(f"Error loading question details: {str(e)}")
     
-    # 显示评估结果
-    st.markdown('<h6>📊 评估结果</h6>', unsafe_allow_html=True)
+    # Display evaluation results
+    st.markdown('<h6>📊 Evaluation Results</h6>', unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -1209,55 +1209,55 @@ def display_case_details(result):
     with col3:
         st.metric("TimeIoU", f"{result.get('metrics', {}).get('TimeIoU', 0):.3f}")
     
-    # 显示模型回答
-    st.markdown('<h6>🤖 模型回答</h6>', unsafe_allow_html=True)
+    # Display model answer
+    st.markdown('<h6>🤖 Model Answer</h6>', unsafe_allow_html=True)
     model_answer = result.get('response', {}).get('model_answer', '')
     st.text_area("Model Raw Response", model_answer, height=200, disabled=True)
     
-    # 显示提取的答案
-    st.markdown('<h6>📝 提取的答案</h6>', unsafe_allow_html=True)
+    # Display extracted answers
+    st.markdown('<h6>📝 Extracted Answers</h6>', unsafe_allow_html=True)
     extracted_answer = result.get('response', {}).get('answer', [])
     time_duration = result.get('response', {}).get('time_duration', [])
     
-    st.write(f"**选择题答案**: {extracted_answer}")
-    st.write(f"**时间范围**: {time_duration}")
+    st.write(f"**Multiple Choice Answers**: {extracted_answer}")
+    st.write(f"**Time Range**: {time_duration}")
     
-    # 显示正确答案
-    st.markdown('<h6>✅ 正确答案</h6>', unsafe_allow_html=True)
+    # Display correct answers
+    st.markdown('<h6>✅ Correct Answers</h6>', unsafe_allow_html=True)
     ground_truth = result.get('response', {}).get('ground_truth', {})
     st.write(f"**Ground Truth**: {ground_truth}")
 
 def display_eval_interface():
-    """显示模型评估界面"""
-    st.markdown('<h2 class="sub-header">🤖 模型评估系统</h2>', unsafe_allow_html=True)
+    """Display model evaluation interface"""
+    st.markdown('<h2 class="sub-header">🤖 Model Evaluation System</h2>', unsafe_allow_html=True)
     
-    # 返回按钮
+    # Return button
     if st.button("🔙 Return to Main Interface"):
         st.session_state.show_eval = False
         st.rerun()
     
-    # 评估配置
-    st.markdown('<h3>⚙️ 评估配置</h3>', unsafe_allow_html=True)
+    # Evaluation configuration
+    st.markdown('<h3>⚙️ Evaluation Configuration</h3>', unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
     with col1:
-        # 模型配置
-        st.markdown('<h4>🔧 模型配置</h4>', unsafe_allow_html=True)
+        # Model configuration
+        st.markdown('<h4>🔧 Model Configuration</h4>', unsafe_allow_html=True)
         model_name = st.text_input("Model Name", help="e.g.: claude-sonnet-4-20250514-thinking, gpt-4o")
         api_key = st.text_input("API Key", type="password", help="OpenAI API key")
         base_url = st.text_input("Base URL", help="API base URL")
         
-        # 模型参数
-        st.markdown('<h4>🎛️ 模型参数</h4>', unsafe_allow_html=True)
+        # Model parameters
+        st.markdown('<h4>🎛️ Model Parameters</h4>', unsafe_allow_html=True)
         max_tokens = st.number_input("Max Tokens", min_value=1, max_value=32768, value=16384)
         temperature = st.slider("Temperature", min_value=0.0, max_value=2.0, value=0.1, step=0.1)
     
     with col2:
-        # 测试配置
-        st.markdown('<h4>📋 测试配置</h4>', unsafe_allow_html=True)
+        # Test configuration
+        st.markdown('<h4>📋 Test Configuration</h4>', unsafe_allow_html=True)
         
-        # 测试范围选择
+        # Test scope selection
         test_scope = st.radio(
             "Test Scope",
             ["Specific Scene-Task", "All Scenes-Tasks"],
@@ -1265,35 +1265,35 @@ def display_eval_interface():
         )
         
         if test_scope == "Specific Scene-Task":
-            # 特定场景任务选择
+            # Specific scene-task selection
             scene = st.selectbox("Scene", ["indoor", "outdoor"])
             task_type = st.selectbox(
                 "Task Type",
                 ["MotionState", "GeoLocation", "ArrivalTimeInterval", "CausalReordering", 
                  "TrajectoryForecasting", "NextSpotForecasting", "MultiTargetTrajectoryForecasting"]
             )
-            max_cases = st.number_input("测试案例数", min_value=1, max_value=30, value=5)
+            max_cases = st.number_input("Test Cases", min_value=1, max_value=30, value=5)
             
-            # 计算总案例数
+            # Calculate total cases
             total_cases = max_cases
             
         else:
-            # 全部场景任务
+            # All scenes-tasks
             max_cases_per_scene = st.number_input("Test Cases per Scene", min_value=1, max_value=30, value=5)
             
-            # 计算总案例数 (2个场景 × 7个任务类型 × 每个场景案例数)
+            # Calculate total cases (2 scenes × 7 task types × cases per scene)
             total_cases = 2 * 7 * max_cases_per_scene
     
-    # 显示预估信息
-    st.info(f"📊 预估总测试案例数: {total_cases}")
+    # Display estimated information
+    st.info(f"📊 Estimated Total Test Cases: {total_cases}")
     
-    # 开始评估和停止评估按钮
+    # Start evaluation and stop evaluation buttons
     col1, col2 = st.columns(2)
     
     with col1:
         if st.button("🚀 Start Evaluation", type="primary", use_container_width=True):
             if not model_name or not api_key or not base_url:
-                st.error("❌ 请填写完整的模型配置信息")
+                st.error("❌ Please fill in complete model configuration information")
             else:
                 start_evaluation(model_name, api_key, base_url, max_tokens, temperature, 
                                test_scope, scene if test_scope == "Specific Scene-Task" else None,
@@ -1304,7 +1304,7 @@ def display_eval_interface():
         if st.button("⏹️ Stop Evaluation", use_container_width=True):
             stop_evaluation()
     
-    # 显示评估进度
+    # Display evaluation progress
     if st.session_state.eval_status == "running":
         display_eval_progress()
     elif st.session_state.eval_status == "completed":
@@ -1313,13 +1313,13 @@ def display_eval_interface():
         display_eval_error()
 
 def start_evaluation(model_name, api_key, base_url, max_tokens, temperature, test_scope, scene, task_type, max_cases):
-    """开始评估"""
+    """Start evaluation"""
     st.session_state.eval_status = "running"
     st.session_state.eval_progress = 0
     st.session_state.eval_total = 0
     st.session_state.eval_output = []
     
-    # 构建eval.py命令
+    # Build eval.py command
     cmd = [
         "python", "eval/eval.py",
         "--model", model_name,
@@ -1336,11 +1336,11 @@ def start_evaluation(model_name, api_key, base_url, max_tokens, temperature, tes
     if test_scope == "Specific Scene-Task":
         cmd.extend(["--scene", scene, "--task-type", task_type])
     
-    # 使用队列在线程间传递数据
+    # Use queues to pass data between threads
     output_queue = queue.Queue()
     status_queue = queue.Queue()
     
-    # 在后台线程中运行评估
+    # Run evaluation in background thread
     def run_eval():
         try:
             process = subprocess.Popen(
@@ -1351,14 +1351,14 @@ def start_evaluation(model_name, api_key, base_url, max_tokens, temperature, tes
                 bufsize=1
             )
             
-            # 读取输出
+            # Read output
             for line in iter(process.stdout.readline, ''):
                 if line:
                     output_queue.put(line.strip())
                     
-                    # 解析进度信息
+                    # Parse progress information
                     if "Processing case" in line:
-                        # 提取当前进度
+                        # Extract current progress
                         try:
                             parts = line.split("Processing case ")[1].split("/")
                             current = int(parts[0])
@@ -1367,7 +1367,7 @@ def start_evaluation(model_name, api_key, base_url, max_tokens, temperature, tes
                         except:
                             pass
             
-            # 等待进程完成
+            # Wait for process to complete
             return_code = process.wait()
             
             if return_code == 0:
@@ -1379,32 +1379,32 @@ def start_evaluation(model_name, api_key, base_url, max_tokens, temperature, tes
             output_queue.put(f"Error: {str(e)}")
             status_queue.put(("status", "error"))
     
-    # 启动后台线程
+    # Start background thread
     thread = threading.Thread(target=run_eval)
     thread.daemon = True
     thread.start()
     
-    # 将队列存储到session_state中
+    # Store queues in session_state
     st.session_state.eval_output_queue = output_queue
     st.session_state.eval_status_queue = status_queue
     
-    st.success("✅ 评估已开始，请查看下方进度信息")
+    st.success("✅ Evaluation started, please check progress information below")
 
 def stop_evaluation():
-    """停止评估"""
+    """Stop evaluation"""
     if 'eval_process' in st.session_state and st.session_state.eval_process:
         try:
             st.session_state.eval_process.terminate()
             st.session_state.eval_status = "stopped"
             st.success("⏹️ Evaluation stopped")
         except Exception as e:
-            st.error(f"停止评估时出错: {str(e)}")
+            st.error(f"Error stopping evaluation: {str(e)}")
     else:
         st.warning("No running evaluation process")
 
 def display_eval_progress():
-    """显示评估进度"""
-    st.markdown('<h3>📊 评估进度</h3>', unsafe_allow_html=True)
+    """Display evaluation progress"""
+    st.markdown('<h3>📊 Evaluation Progress</h3>', unsafe_allow_html=True)
     
     # Process data from queue
     if 'eval_output_queue' in st.session_state:
@@ -1433,15 +1433,15 @@ def display_eval_progress():
     if st.session_state.eval_total > 0:
         progress = st.session_state.eval_progress / st.session_state.eval_total
         st.progress(progress)
-        st.write(f"进度: {st.session_state.eval_progress}/{st.session_state.eval_total} ({progress*100:.1f}%)")
+        st.write(f"Progress: {st.session_state.eval_progress}/{st.session_state.eval_total} ({progress*100:.1f}%)")
     else:
         st.progress(0)
         st.write("Initializing...")
     
     # Display prompt file paths
-    st.markdown('<h4>📁 Prompt文件路径</h4>', unsafe_allow_html=True)
+    st.markdown('<h4>📁 Prompt File Paths</h4>', unsafe_allow_html=True)
     
-    # 从输出中提取prompt文件路径
+    # Extract prompt file paths from output
     prompt_files = []
     if st.session_state.eval_output:
         for line in st.session_state.eval_output:
@@ -1450,8 +1450,8 @@ def display_eval_progress():
                 prompt_files.append(file_path)
     
     if prompt_files:
-        # 显示最新的几个prompt文件路径
-        recent_files = prompt_files[-5:]  # 显示最近5个文件
+        # Display latest prompt file paths
+        recent_files = prompt_files[-5:]  # Show latest 5 files
         for file_path in recent_files:
             st.text(f"📄 {file_path}")
     else:
@@ -1462,14 +1462,14 @@ def display_eval_progress():
     st.rerun()
 
 def display_eval_completion():
-    """显示评估完成"""
-    st.markdown('<h3>✅ 评估完成</h3>', unsafe_allow_html=True)
+    """Display evaluation completion"""
+    st.markdown('<h3>✅ Evaluation Completed</h3>', unsafe_allow_html=True)
     
-    # 显示最终输出
-    st.markdown('<h4>📝 最终输出</h4>', unsafe_allow_html=True)
+    # Display final output
+    st.markdown('<h4>📝 Final Output</h4>', unsafe_allow_html=True)
     
     if st.session_state.eval_output:
-        # 显示所有输出
+        # Display all output
         for line in st.session_state.eval_output:
             if "Error" in line or "Failed" in line:
                 st.error(line)
@@ -1493,18 +1493,18 @@ def display_eval_completion():
             del st.session_state.eval_status_queue
         st.rerun()
     
-    # 查看结果按钮
+    # View results button
     if st.button("📈 View Evaluation Results"):
         st.session_state.show_eval = False
         st.session_state.show_results = True
         st.rerun()
 
 def display_eval_error():
-    """显示评估错误"""
-    st.markdown('<h3>❌ 评估出错</h3>', unsafe_allow_html=True)
+    """Display evaluation error"""
+    st.markdown('<h3>❌ Evaluation Error</h3>', unsafe_allow_html=True)
     
-    # 显示错误输出
-    st.markdown('<h4>📝 错误信息</h4>', unsafe_allow_html=True)
+    # Display error output
+    st.markdown('<h4>📝 Error Information</h4>', unsafe_allow_html=True)
     
     if st.session_state.eval_output:
         for line in st.session_state.eval_output:
@@ -1524,9 +1524,9 @@ def display_eval_error():
         st.rerun()
 
 def display_ground_truth(case, task_type):
-    """根据任务类型显示正确的GT信息"""
+    """Display correct GT information based on task type"""
     
-    # 处理任务类型，确保使用正确的格式
+    # Process task type to ensure correct format
     if task_type == "Next Spot Forecasting":
         task_type = "NextSpotForecasting"
     elif task_type == "Trajectory Forecasting":
@@ -1536,62 +1536,62 @@ def display_ground_truth(case, task_type):
     elif ' ' in task_type:
         task_type = task_type.split()[-1]
     
-    # 纯选择题任务：只显示选项答案
+    # Pure multiple choice tasks: only display option answers
     if task_type in ["MotionState", "GeoLocation", "ArrivalTimeInterval", "CausalReordering"]:
-        # 尝试从correct_cam_name获取，如果没有则从ground_truth获取
+        # Try to get from correct_cam_name, if not available then from ground_truth
         correct_cam_names = case.get('correct_cam_name', [])
         if correct_cam_names:
-            st.info(f"**正确答案:** {correct_cam_names[0]}")
+            st.info(f"**Correct Answer:** {correct_cam_names[0]}")
         else:
             ground_truth = case.get('ground_truth', '')
-            st.info(f"**正确答案:** {ground_truth}")
+            st.info(f"**Correct Answer:** {ground_truth}")
     
-    # 选择+填空任务：显示camera选择和时间范围
+    # Choice + fill-in tasks: display camera selection and time range
     elif task_type in ["NextSpotForecasting", "MultiTrajectoryForecasting"]:
         correct_cam_names = case.get('correct_cam_name', [])
         correct_time_strs = case.get('correct_time_str', [])
         
         if correct_cam_names:
-            st.info(f"**摄像头答案:** {correct_cam_names[0]}")
+            st.info(f"**Camera Answer:** {correct_cam_names[0]}")
         
         if correct_time_strs:
             for i, time_str in enumerate(correct_time_strs):
                 if '-' in time_str:
                     start_time, end_time = time_str.split('-')
-                    st.info(f"**时间范围 {i+1}:** {start_time} - {end_time}")
+                    st.info(f"**Time Range {i+1}:** {start_time} - {end_time}")
                 else:
-                    st.info(f"**时间点 {i+1}:** {time_str}")
+                    st.info(f"**Time Point {i+1}:** {time_str}")
     
-    # 轨迹预测任务：显示两个camera和两个时间范围
+    # Trajectory forecasting task: display two cameras and two time ranges
     elif task_type == "TrajectoryForecasting":
         correct_cam_names = case.get('correct_cam_name', [])
         correct_time_strs = case.get('correct_time_str', [])
         
         if correct_cam_names and len(correct_cam_names) >= 2:
-            st.info(f"**第一段摄像头:** {correct_cam_names[0]}")
-            st.info(f"**第二段摄像头:** {correct_cam_names[1]}")
+            st.info(f"**First Segment Camera:** {correct_cam_names[0]}")
+            st.info(f"**Second Segment Camera:** {correct_cam_names[1]}")
         
         if correct_time_strs and len(correct_time_strs) >= 2:
-            # 第一段时间
+            # First time
             first_time = correct_time_strs[0]
             if '-' in first_time:
                 start_time, end_time = first_time.split('-')
-                st.info(f"**第一段时间范围:** {start_time} - {end_time}")
+                st.info(f"**First Time Range:** {start_time} - {end_time}")
             else:
-                st.info(f"**第一段时间点:** {first_time}")
+                st.info(f"**First Time Point:** {first_time}")
             
-            # 第二段时间
+            # Second time
             second_time = correct_time_strs[1]
             if '-' in second_time:
                 start_time, end_time = second_time.split('-')
-                st.info(f"**第二段时间范围:** {start_time} - {end_time}")
+                st.info(f"**Second Time Range:** {start_time} - {end_time}")
             else:
-                st.info(f"**第二段时间点:** {second_time}")
+                st.info(f"**Second Time Point:** {second_time}")
     
     else:
-        # 默认情况
+        # Default case
         ground_truth = case.get('ground_truth', '')
-        st.info(f"**正确答案:** {ground_truth}")
+        st.info(f"**Correct Answer:** {ground_truth}")
 
 if __name__ == "__main__":
     main()
