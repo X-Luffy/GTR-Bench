@@ -263,12 +263,12 @@ def main():
         st.markdown('<h4>🤖 Model Evaluation</h4>', unsafe_allow_html=True)
         if st.button("🚀 Launch Model Evaluation"):
             st.session_state.show_eval = True
-                st.rerun()
+            st.rerun()
             
         # View evaluation results
         if st.button("📈 View Evaluation Results"):
             st.session_state.show_results = True
-                    st.rerun()
+            st.rerun()
 
     # Main content area
     if 'show_eval' in st.session_state and st.session_state.show_eval:
@@ -374,8 +374,8 @@ def display_current_question():
                 expander_title = f"📹 Camera {camera_id}"
             else:
                 # Convert time format
-            start_time_str = seconds_to_time_format(camera['start_timestamp'])
-            end_time_str = seconds_to_time_format(camera['end_timestamp'])
+                start_time_str = seconds_to_time_format(camera['start_timestamp'])
+                end_time_str = seconds_to_time_format(camera['end_timestamp'])
                 expander_title = f"📹 Camera {camera_id} (Time: {start_time_str} - {end_time_str})"
             
             with st.expander(expander_title):
@@ -442,7 +442,7 @@ def display_current_question():
         # Previous question button
         total_cases = len(st.session_state.data_loader.data.get('cases', []))
         if st.session_state.current_case_index > 0:
-            if st.button("⬅️ Previous", use_container_width=True):
+            if st.button("⬅️ Previous", use_container_width=True, key="prev_enabled"):
                 st.session_state.current_case_index -= 1
                 st.session_state.user_answers = {}
                 st.session_state.question_started = False
@@ -450,24 +450,24 @@ def display_current_question():
                 st.session_state.start_time = None
                 st.rerun()
         else:
-            st.button("⬅️ Previous", disabled=True, use_container_width=True)
+            st.button("⬅️ Previous", disabled=True, use_container_width=True, key="prev_disabled")
     
     with col2:
-        if st.button("✅ Submit Answer", type="primary", use_container_width=True):
+        if st.button("✅ Submit Answer", type="primary", use_container_width=True, key="submit_answer"):
             submit_answer(current_case)
     
     with col3:
         # Next question button
-            if st.session_state.current_case_index < total_cases - 1:
-            if st.button("➡️ Next", use_container_width=True):
+        if st.session_state.current_case_index < total_cases - 1:
+            if st.button("➡️ Next", use_container_width=True, key="next_enabled"):
                 st.session_state.current_case_index += 1
                 st.session_state.user_answers = {}
                 st.session_state.question_started = False
                 st.session_state.answer_submitted = False
                 st.session_state.start_time = None
                 st.rerun()
-            else:
-            st.button("➡️ Next", disabled=True, use_container_width=True)
+        else:
+            st.button("➡️ Next", disabled=True, use_container_width=True, key="next_disabled")
     
     # Display answer time
     if st.session_state.start_time:
