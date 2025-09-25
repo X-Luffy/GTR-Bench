@@ -11,7 +11,7 @@ class QuestionDisplay:
         """显示地图"""
         if case.get('map_image_path'):
             map_path = os.path.join(
-                "/home/mnt/xieqinghongbing/data/question_generation/benchmark/selected",
+                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                 case['map_image_path'].replace('./', '')
             )
             if os.path.exists(map_path):

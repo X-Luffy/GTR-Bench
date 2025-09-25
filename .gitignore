@@ -21,12 +21,83 @@ wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment
-venv/
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
 env/
+venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
 # IDE
 .vscode/
@@ -44,36 +115,53 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Streamlit
-.streamlit/
+# Project specific
+# 评估结果文件
+eval/results/*.json
+eval/results/prompt/*.json
 
-# Data files - exclude large video files but include map images
-data/outdoor/raw_video/
-data/outdoor/crop_video/
-data/indoor/raw_video/
-data/indoor/crop_video/
-*.avi
-*.mp4
+# 数据文件（如果包含敏感信息）
+# data/
+# 注意：如果data目录包含公开数据集，可以注释掉上面这行
 
-# Logs
-*.log
-logs/
-
-# Temporary files
+# 临时文件
 *.tmp
 *.temp
 temp/
 tmp/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# 日志文件
+*.log
+logs/
 
-# pytest
-.pytest_cache/
-.coverage
-htmlcov/
+# 配置文件（如果包含敏感信息）
+config.ini
+secrets.json
+.secrets
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# 模型文件（通常很大）
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# 视频和图像文件（如果很大）
+# *.mp4
+# *.avi
+# *.mov
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+*.7z

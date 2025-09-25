@@ -1,201 +1,166 @@
-# GTR-Bench
+# GTR-Bench: 人类水平评估系统
 
-A comprehensive Streamlit-based assessment system for evaluating human performance on visual reasoning tasks across multiple scenarios and task types.
+一个基于Streamlit的视觉推理模型评估系统，支持人类答题和模型自动评估。
 
-## 🎯 Features
+## 🎯 项目简介
 
-- **Multi-Scenario Support**: Supports both outdoor (CityFlow) and indoor (MTMMC) scenarios
-- **Diverse Task Types**: 7 different reasoning task types including motion, spatial, temporal, and trajectory forecasting
-- **Video Frame Extraction**: Automatic extraction of key frames from videos with bounding box visualization
-- **Time IoU Calculation**: Advanced time interval overlap calculation for temporal reasoning tasks
-- **Real-time Scoring**: Comprehensive scoring system based on accuracy and response time
-- **Result Analysis**: Detailed statistics and performance analytics
-- **Data Export**: Export assessment results to CSV format
+GTR-Bench是一个综合性的视觉推理评估平台，旨在评估模型在复杂视觉场景下的推理能力。系统支持两种评估模式：
 
-## 📋 Task Types
+1. **人类答题评估**: 通过Web界面进行人工评估，建立人类基准
+2. **模型自动评估**: 通过API调用自动评估各种视觉推理模型
 
-GTR-Bench includes 7 different reasoning tasks across two complexity levels:
+## ✨ 主要特性
 
-### Basic Tasks
-- **Geo-Location (GL)**: Infer intermediate camera locations between start and end points
-- **Arrival Time-Interval (ATI)**: Predict arrival time at intermediate locations  
-- **Motion-State (MS)**: Determine target's motion state at intermediate locations
+### 🧠 支持的任务类型
+- **MotionState**: 运动状态推理
+- **GeoLocation**: 地理位置推理  
+- **ArrivalTimeInterval**: 到达时间间隔推理
+- **CausalReordering**: 因果重排序推理
+- **TrajectoryForecasting**: 轨迹预测
+- **NextSpotForecasting**: 下一位置预测
+- **MultiTargetTrajectoryForecasting**: 多目标轨迹预测
 
-### Combinatorial Tasks
-- **Causal Reordering (CR)**: Determine correct chronological sequence of camera visits
-- **Next Spot Forecasting (NSF)**: Predict next camera location and time interval
-- **Trajectory Forecasting (TF)**: Forecast complete future trajectory across multiple cameras
-- **Multi-Target Trajectory Forecasting (MTTF)**: Predict meeting point of two targets
+### 🌍 支持的数据场景
+- **Indoor**: 室内场景
+- **Outdoor**: 室外场景
 
-**Evaluation Metrics**: Basic tasks use Multiple-Choice Question Accuracy (MCQ Acc), while combinatorial tasks use Spatial-Temporal Intersection over Union (ST-IoU).
+### 🤖 模型评估功能
+- 支持OpenAI兼容的API接口
+- 实时进度监控
+- 自动结果分析和可视化
+- 支持批量评估和单案例测试
 
-## 🚀 Installation and Setup
+## 🚀 快速开始
 
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
+### 环境要求
+- Python 3.8+
+- Streamlit
+- OpenCV
+- PIL/Pillow
+- NumPy
+- Pandas
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/X-Luffy/GTR-Bench.git
-cd GTR-Bench
-```
-
-### 2. Install Dependencies
+### 安装依赖
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Application
+### 启动系统
 ```bash
-streamlit run app.py
+# 方法1: 使用启动脚本
+chmod +x run.sh
+./run.sh
+
+# 方法2: 直接启动
+streamlit run app.py --server.port 8505
 ```
 
-### 4. Access the Application
-Open your browser and navigate to: http://localhost:8501
+### 访问系统
+打开浏览器访问: `http://localhost:8505`
 
-## 📖 Usage Guide
-
-### 1. Load Assessment Data
-- Select scenario (outdoor or indoor) from the left sidebar
-- Choose task type from the dropdown menu
-- Click "🔄 Load Question Data" button
-
-### 2. Assessment Process
-- Review the scenario map and camera images
-- Read the question description carefully
-- Select the correct answer(s) (single or multiple choice)
-- Fill in time information if required
-- Click "✅ Submit Answer" button
-
-### 3. View Results
-- System displays assessment results and scores
-- Compare your answers with ground truth
-- Click "📈 View Assessment Results" in sidebar for summary statistics
-
-### 4. Export Results
-- Navigate to results summary page
-- Click "📥 Export Results" to download CSV file
-
-## 🏆 Evaluation Metrics
-
-GTR-Bench uses two evaluation metrics:
-
-- **MCQ Accuracy**: For basic reasoning tasks (GL, ATI, MS, CR)
-- **ST-IoU**: For predictive tasks (NSF, TF, MTTF) - combines spatial correctness and temporal overlap
-
-The ST-IoU metric evaluates both location accuracy and time interval overlap for comprehensive assessment of spatial-temporal reasoning capabilities.
-
-## 📁 Project Structure
+## 📁 项目结构
 
 ```
-GTR-Bench/
-├── app.py                      # Main application file
-├── requirements.txt            # Python dependencies
-├── README.md                  # Project documentation
-├── utils/                     # Utility modules
-│   ├── __init__.py
-│   ├── data_loader.py         # Data loading utilities
-│   ├── video_processor.py     # Video processing utilities
-│   └── scoring.py             # Scoring system
-├── components/                # UI components
-│   ├── __init__.py
-│   ├── question_display.py    # Question display components
-│   └── result_display.py      # Result display components
-└── data/                      # Assessment data
-    ├── outdoor/               # Outdoor scenario data
-    │   ├── raw_video/         # Raw video files
-    │   ├── crop_video/        # Cropped video files
-    │   ├── map/               # Map images
-    │   └── *.json             # Question data files
-    └── indoor/                # Indoor scenario data
-        ├── raw_video/         # Raw video files
-        ├── crop_video/        # Cropped video files
-        ├── map/               # Map images
-        └── *.json             # Question data files
+├── app.py                          # 主应用文件
+├── run.sh                          # 启动脚本
+├── requirements.txt                 # 依赖包列表
+├── README.md                       # 项目说明
+├── README_EVAL_FEATURE.md          # 评估功能详细说明
+├── .gitignore                      # Git忽略文件
+├── data/                           # 数据目录
+│   ├── indoor/                     # 室内场景数据
+│   └── outdoor/                    # 室外场景数据
+├── eval/                           # 评估模块
+│   ├── eval.py                     # 主评估脚本
+│   ├── eval_type.py                # 评估类型定义
+│   ├── run_full_evaluation.sh      # 完整评估脚本
+│   ├── results/                    # 评估结果目录
+│   └── prompt/                     # 提示词模块
+│       ├── question_info.py        # 问题信息
+│       ├── map_info.py             # 地图信息
+│       └── video_info.py           # 视频信息
+├── utils/                          # 工具模块
+│   ├── data_loader.py              # 数据加载器
+│   ├── video_processor.py          # 视频处理器
+│   └── scoring.py                  # 评分系统
+└── components/                     # UI组件
+    ├── question_display.py         # 问题显示组件
+    └── result_display.py           # 结果显示组件
 ```
 
-## 📊 Data Format
+## 🎮 使用指南
 
-The system supports JSON format for question data. Each question contains:
-- Scene map path
-- Camera image information (video path, frame IDs, bounding boxes)
-- Question description
-- Answer choices
-- Ground truth answers
-- Time information (optional)
+### 人类答题评估
+1. 在侧边栏选择场景和任务类型
+2. 点击"🔄 加载题目数据"
+3. 查看地图和摄像头图像
+4. 回答问题并提交
+5. 查看评分结果
 
-### Example Question Structure
-```json
-{
-  "cases": [
-    {
-      "task_id": "NextSpotForecasting",
-      "case_id": "WAAGReEpzGHYNLDT2hmsAn",
-      "map_image_path": "./map/NextSpotForecasting_map_4_WAAGReEpzGHYNLDT2hmsAn.png",
-      "question": "Based on the provided [local map] and [camera information], which camera from the following list will most likely capture the target next?",
-      "choices": ["A. c09", "B. c16", "C. c11", "D. c01"],
-      "correct_cam_name": ["B. c16"],
-      "correct_time_str": ["12:01:18.440-12:01:46.880"],
-      "camera_images": [
-        {
-          "camera_id": "c09",
-          "object_id": 4,
-          "video_path": "./raw_video/indoor_s01_c09",
-          "crop_video_path": "./crop_video/indoor_s01_4_76_83_c09.mp4",
-          "frame_ids": [1911, 1941, 1971, 2001, 2031, 2061],
-          "bboxes": [[310.07, 274.0, 81.53, 312.23], [522.0, 293.9, 140.1, 317.1], ...],
-          "start_timestamp": 76.44,
-          "end_timestamp": 82.56
-        }
-      ]
-    }
-  ]
-}
-```
+### 模型自动评估
+1. 点击"🚀 启动模型评估"
+2. 配置模型参数（API Key、Base URL等）
+3. 选择测试范围和案例数量
+4. 点击"🚀 开始评估"
+5. 实时监控评估进度
+6. 查看评估结果
 
+### 结果分析
+1. 点击"📈 查看评估结果"
+2. 选择评估结果文件
+3. 查看统计信息和详细结果
+4. 分析模型表现
 
-## 🤝 Contributing
+## 🔧 配置说明
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+### 环境配置
+- 确保Python环境已正确安装
+- 安装所有必需的依赖包
+- 配置conda环境（如需要）
 
-### Development Setup
-```bash
-# Clone and setup
-git clone https://github.com/X-Luffy/GTR-Bench.git
-cd GTR-Bench
-pip install -r requirements.txt
+### API配置
+- 准备OpenAI兼容的API密钥
+- 配置正确的Base URL
+- 设置合适的模型参数
 
-# Run the application
-streamlit run app.py
-```
+### 数据配置
+- 确保数据文件位于正确的目录
+- 检查数据文件格式是否正确
+- 验证图像和视频文件路径
 
-### Development Workflow
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make your changes and test
-4. Commit: `git commit -m "Add: your feature"`
-5. Push: `git push origin feature/your-feature`
-6. Create a Pull Request
+## 📊 评估指标
 
-## 📊 Data Download
+系统支持多种评估指标：
 
-Due to file size limitations, media files are hosted separately. Download instructions are available in each data directory:
-- `data/outdoor/raw_video/README.md`
-- `data/outdoor/crop_video/README.md`
-- `data/outdoor/map/README.md`
-- `data/indoor/raw_video/README.md`
-- `data/indoor/crop_video/README.md`
-- `data/indoor/map/README.md`
+- **MCQ Accuracy**: 选择题准确率
+- **Time IoU**: 时间范围重叠度
+- **Overall Score**: 综合得分
 
-## 📄 License
+详细指标说明请参考 `README_EVAL_FEATURE.md`。
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🤝 贡献指南
 
-## 📞 Support
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开 Pull Request
 
-For questions or issues, please open an issue in the GitHub repository.
+## 📝 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+
+## 📞 联系方式
+
+如有问题或建议，请通过以下方式联系：
+
+- 创建 [Issue](https://github.com/your-username/gtr-bench/issues)
+- 发送邮件至: your-email@example.com
+
+## 🙏 致谢
+
+感谢所有为这个项目做出贡献的开发者和研究人员。
 
 ---
 
-**Note**: This system is designed for research and educational purposes. Ensure compliance with data usage policies and ethical guidelines when using with human subjects.
+**注意**: 使用前请确保已正确配置所有必要的环境和数据文件。

@@ -7,7 +7,7 @@ class DataLoader:
     
     def __init__(self):
         self.data = None
-        self.base_path = "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level/data"
+        self.base_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
         
     def load_data(self, scene: str, task_type: str) -> Dict:
         """

@@ -1,14 +1,14 @@
 {
   "cases": [
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "VL2rYXwoRccyCJkM2cnADw",
       "map_image_path": "./data/outdoor/map/tf_map_260_VL2rYXwoRccyCJkM2cnADw.png",
       "camera_images": [
         {
           "camera_id": "c074",
           "object_id": 260,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             61,
             76,
@@ -62,7 +62,7 @@
         {
           "camera_id": "c027",
           "object_id": 260,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
           "frame_ids": [
             136,
             154,
@@ -133,14 +133,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "686QiPzVi8UaHkxnuFLbbg",
       "map_image_path": "./data/outdoor/map/tf_map_260_686QiPzVi8UaHkxnuFLbbg.png",
       "camera_images": [
         {
           "camera_id": "c078",
           "object_id": 260,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c027/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c027/vdo.avi",
           "frame_ids": [
             95,
             129,
@@ -194,7 +194,7 @@
         {
           "camera_id": "c019",
           "object_id": 260,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c028/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c028/vdo.avi",
           "frame_ids": [
             124,
             136,
@@ -265,14 +265,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "Lne7cdygSEexQSQAg5Fydn",
       "map_image_path": "./data/outdoor/map/tf_map_260_Lne7cdygSEexQSQAg5Fydn.png",
       "camera_images": [
         {
           "camera_id": "c021",
           "object_id": 260,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c028/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c028/vdo.avi",
           "frame_ids": [
             124,
             136,
@@ -326,7 +326,7 @@
         {
           "camera_id": "c041",
           "object_id": 260,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
           "frame_ids": [
             85,
             111,
@@ -397,14 +397,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "EmRtJvLNFQjEPY9Pn66XZw",
       "map_image_path": "./data/outdoor/map/tf_map_261_EmRtJvLNFQjEPY9Pn66XZw.png",
       "camera_images": [
         {
           "camera_id": "c031",
           "object_id": 261,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             112,
             128,
@@ -458,7 +458,7 @@
         {
           "camera_id": "c027",
           "object_id": 261,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
           "frame_ids": [
             211,
             231,
@@ -522,14 +522,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "EBmUnJDQVS5a3p3Qp2DPKC",
       "map_image_path": "./data/outdoor/map/tf_map_261_EBmUnJDQVS5a3p3Qp2DPKC.png",
       "camera_images": [
         {
           "camera_id": "c012",
           "object_id": 261,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c022/vdo.avi",
           "frame_ids": [
             211,
             231,
@@ -576,7 +576,7 @@
         {
           "camera_id": "c073",
           "object_id": 261,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             307,
             322,
@@ -647,14 +647,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "6sX8LoeVMAfJhrUjeERTRC",
       "map_image_path": "./data/outdoor/map/tf_map_261_6sX8LoeVMAfJhrUjeERTRC.png",
       "camera_images": [
         {
           "camera_id": "c042",
           "object_id": 261,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             307,
             322,
@@ -708,7 +708,7 @@
         {
           "camera_id": "c089",
           "object_id": 261,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             336,
             337,
@@ -786,14 +786,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "aajghDwXdQVmY5G6gdmzNb",
       "map_image_path": "./data/outdoor/map/tf_map_262_aajghDwXdQVmY5G6gdmzNb.png",
       "camera_images": [
         {
           "camera_id": "c016",
           "object_id": 262,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             267,
             302,
@@ -840,7 +840,7 @@
         {
           "camera_id": "c025",
           "object_id": 262,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             507,
             522,
@@ -911,14 +911,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "a5zJi4SrYNcuszKZ7DqQwh",
       "map_image_path": "./data/outdoor/map/tf_map_262_a5zJi4SrYNcuszKZ7DqQwh.png",
       "camera_images": [
         {
           "camera_id": "c08",
           "object_id": 262,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             39,
             82,
@@ -972,7 +972,7 @@
         {
           "camera_id": "c075",
           "object_id": 262,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             267,
             302,
@@ -1036,14 +1036,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "NumjKnKn5QHEBfm3eYeJFg",
       "map_image_path": "./data/outdoor/map/tf_map_263_NumjKnKn5QHEBfm3eYeJFg.png",
       "camera_images": [
         {
           "camera_id": "c027",
           "object_id": 263,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c016/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c016/vdo.avi",
           "frame_ids": [
             188,
             212,
@@ -1097,7 +1097,7 @@
         {
           "camera_id": "c05",
           "object_id": 263,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c017/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c017/vdo.avi",
           "frame_ids": [
             212,
             226,
@@ -1161,14 +1161,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "MYARkuQy2dF2ZJnS2BrPTB",
       "map_image_path": "./data/outdoor/map/tf_map_264_MYARkuQy2dF2ZJnS2BrPTB.png",
       "camera_images": [
         {
           "camera_id": "c016",
           "object_id": 264,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c016/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c016/vdo.avi",
           "frame_ids": [
             252,
             263,
@@ -1222,7 +1222,7 @@
         {
           "camera_id": "c025",
           "object_id": 264,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
           "frame_ids": [
             265,
             276,
@@ -1293,14 +1293,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "XopH6mxRMBvTYsmGm5aQaZ",
       "map_image_path": "./data/outdoor/map/tf_map_264_XopH6mxRMBvTYsmGm5aQaZ.png",
       "camera_images": [
         {
           "camera_id": "c094",
           "object_id": 264,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c021/vdo.avi",
           "frame_ids": [
             260,
             270,
@@ -1354,7 +1354,7 @@
         {
           "camera_id": "c047",
           "object_id": 264,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             450,
             464,
@@ -1425,14 +1425,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "gai3zizzz3t8RYykGJ8LCm",
       "map_image_path": "./data/outdoor/map/tf_map_265_gai3zizzz3t8RYykGJ8LCm.png",
       "camera_images": [
         {
           "camera_id": "c025",
           "object_id": 265,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c018/vdo.avi",
           "frame_ids": [
             301,
             310,
@@ -1486,7 +1486,7 @@
         {
           "camera_id": "c069",
           "object_id": 265,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c019/vdo.avi",
           "frame_ids": [
             383,
             384,
@@ -1550,14 +1550,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "cHGrcLMXN4BERaqkQskgeN",
       "map_image_path": "./data/outdoor/map/tf_map_265_cHGrcLMXN4BERaqkQskgeN.png",
       "camera_images": [
         {
           "camera_id": "c085",
           "object_id": 265,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c023/vdo.avi",
           "frame_ids": [
             471,
             486,
@@ -1604,7 +1604,7 @@
         {
           "camera_id": "c053",
           "object_id": 265,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c024/vdo.avi",
           "frame_ids": [
             497,
             498,
@@ -1675,14 +1675,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "TNByZt4N6K58yU8SE3NJwD",
       "map_image_path": "./data/outdoor/map/tf_map_271_TNByZt4N6K58yU8SE3NJwD.png",
       "camera_images": [
         {
           "camera_id": "c036",
           "object_id": 271,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             62,
             76,
@@ -1736,7 +1736,7 @@
         {
           "camera_id": "c065",
           "object_id": 271,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             1,
             36,
@@ -1807,14 +1807,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "MyqUqWiBZV3sLHLfQZBLcA",
       "map_image_path": "./data/outdoor/map/tf_map_271_MyqUqWiBZV3sLHLfQZBLcA.png",
       "camera_images": [
         {
           "camera_id": "c082",
           "object_id": 271,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             1,
             13,
@@ -1868,7 +1868,7 @@
         {
           "camera_id": "c033",
           "object_id": 271,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             59,
             60,
@@ -1918,14 +1918,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "2Kw723544AVGfebXaQL53U",
       "map_image_path": "./data/outdoor/map/tf_map_272_2Kw723544AVGfebXaQL53U.png",
       "camera_images": [
         {
           "camera_id": "c065",
           "object_id": 272,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
           "frame_ids": [
             118,
             133,
@@ -1979,7 +1979,7 @@
         {
           "camera_id": "c09",
           "object_id": 272,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             314,
             317,
@@ -2043,14 +2043,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "nPLX2Xrk3XM4TbVE2w3o5b",
       "map_image_path": "./data/outdoor/map/tf_map_272_nPLX2Xrk3XM4TbVE2w3o5b.png",
       "camera_images": [
         {
           "camera_id": "c014",
           "object_id": 272,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             314,
             317,
@@ -2097,7 +2097,7 @@
         {
           "camera_id": "c028",
           "object_id": 272,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c036/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c036/vdo.avi",
           "frame_ids": [
             127,
             141,
@@ -2161,14 +2161,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "JBjoZnTBxzcrXdv62yABhV",
       "map_image_path": "./data/outdoor/map/tf_map_272_JBjoZnTBxzcrXdv62yABhV.png",
       "camera_images": [
         {
           "camera_id": "c058",
           "object_id": 272,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             20,
             31,
@@ -2222,7 +2222,7 @@
         {
           "camera_id": "c036",
           "object_id": 272,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             74,
             75,
@@ -2286,14 +2286,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "Fymy5KRF9Hsmzu83WEHNzk",
       "map_image_path": "./data/outdoor/map/tf_map_273_Fymy5KRF9Hsmzu83WEHNzk.png",
       "camera_images": [
         {
           "camera_id": "c020",
           "object_id": 273,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             1,
             71,
@@ -2340,7 +2340,7 @@
         {
           "camera_id": "c043",
           "object_id": 273,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c035/vdo.avi",
           "frame_ids": [
             197,
             199,
@@ -2418,14 +2418,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "mCXkTLMzVEdWyHKVSRubvJ",
       "map_image_path": "./data/outdoor/map/tf_map_273_mCXkTLMzVEdWyHKVSRubvJ.png",
       "camera_images": [
         {
           "camera_id": "c095",
           "object_id": 273,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             1,
             77,
@@ -2479,7 +2479,7 @@
         {
           "camera_id": "c032",
           "object_id": 273,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             1,
             71,
@@ -2543,14 +2543,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "WhzvpNjNLsA632M5CRQjEQ",
       "map_image_path": "./data/outdoor/map/tf_map_273_WhzvpNjNLsA632M5CRQjEQ.png",
       "camera_images": [
         {
           "camera_id": "c096",
           "object_id": 273,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             100,
             101,
@@ -2604,7 +2604,7 @@
         {
           "camera_id": "c045",
           "object_id": 273,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             107,
             122,
@@ -2675,14 +2675,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "UY39gm7LvkaVrdwDkG6zVU",
       "map_image_path": "./data/outdoor/map/tf_map_274_UY39gm7LvkaVrdwDkG6zVU.png",
       "camera_images": [
         {
           "camera_id": "c021",
           "object_id": 274,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             1,
             14,
@@ -2736,7 +2736,7 @@
         {
           "camera_id": "c09",
           "object_id": 274,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             72,
             74,
@@ -2807,14 +2807,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "dN8QfGxHb2YPzgptN62kBN",
       "map_image_path": "./data/outdoor/map/tf_map_275_dN8QfGxHb2YPzgptN62kBN.png",
       "camera_images": [
         {
           "camera_id": "c061",
           "object_id": 275,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
           "frame_ids": [
             1,
             19,
@@ -2861,7 +2861,7 @@
         {
           "camera_id": "c037",
           "object_id": 275,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             93,
             107,
@@ -2932,14 +2932,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "LoX8JFCiuovXrv6GPFvdvD",
       "map_image_path": "./data/outdoor/map/tf_map_275_LoX8JFCiuovXrv6GPFvdvD.png",
       "camera_images": [
         {
           "camera_id": "c033",
           "object_id": 275,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             93,
             107,
@@ -2993,7 +2993,7 @@
         {
           "camera_id": "c084",
           "object_id": 275,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             163,
             164,
@@ -3043,14 +3043,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "DND66RKfzm7FaTZcnspFZe",
       "map_image_path": "./data/outdoor/map/tf_map_276_DND66RKfzm7FaTZcnspFZe.png",
       "camera_images": [
         {
           "camera_id": "c064",
           "object_id": 276,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             109,
             119,
@@ -3104,7 +3104,7 @@
         {
           "camera_id": "c021",
           "object_id": 276,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             165,
             167,
@@ -3175,14 +3175,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "QmAeAeVLPMBG5XNvV5cQRT",
       "map_image_path": "./data/outdoor/map/tf_map_278_QmAeAeVLPMBG5XNvV5cQRT.png",
       "camera_images": [
         {
           "camera_id": "c045",
           "object_id": 278,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c029/vdo.avi",
           "frame_ids": [
             117,
             173,
@@ -3236,7 +3236,7 @@
         {
           "camera_id": "c057",
           "object_id": 278,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             278,
             289,
@@ -3300,14 +3300,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "M7ix4XUFizvXqhuCL8wrfi",
       "map_image_path": "./data/outdoor/map/tf_map_278_M7ix4XUFizvXqhuCL8wrfi.png",
       "camera_images": [
         {
           "camera_id": "c066",
           "object_id": 278,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             278,
             289,
@@ -3354,7 +3354,7 @@
         {
           "camera_id": "c09",
           "object_id": 278,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             328,
             329,
@@ -3425,14 +3425,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "d9qv57bSNi2Tvca6GZVa8v",
       "map_image_path": "./data/outdoor/map/tf_map_279_d9qv57bSNi2Tvca6GZVa8v.png",
       "camera_images": [
         {
           "camera_id": "c049",
           "object_id": 279,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             247,
             260,
@@ -3486,7 +3486,7 @@
         {
           "camera_id": "c087",
           "object_id": 279,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c033/vdo.avi",
           "frame_ids": [
             1,
             2,
@@ -3550,14 +3550,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "nLjtSZTQ97S5GWNCyepMEw",
       "map_image_path": "./data/outdoor/map/tf_map_280_nLjtSZTQ97S5GWNCyepMEw.png",
       "camera_images": [
         {
           "camera_id": "c086",
           "object_id": 280,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c034/vdo.avi",
           "frame_ids": [
             19,
             42,
@@ -3611,7 +3611,7 @@
         {
           "camera_id": "c074",
           "object_id": 280,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c032/vdo.avi",
           "frame_ids": [
             251,
             262,
@@ -3682,14 +3682,14 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "HLqwFCqywNMevVyYdpViy3",
       "map_image_path": "./data/outdoor/map/tf_map_281_HLqwFCqywNMevVyYdpViy3.png",
       "camera_images": [
         {
           "camera_id": "c060",
           "object_id": 281,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c030/vdo.avi",
           "frame_ids": [
             326,
             338,
@@ -3743,7 +3743,7 @@
         {
           "camera_id": "c098",
           "object_id": 281,
-          "video_path": "./data/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c031/vdo.avi",
           "frame_ids": [
             383,
             384,

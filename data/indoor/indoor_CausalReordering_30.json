@@ -1,9 +1,9 @@
 {
   "cases": [
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "Zc7Y3Uc9FcCvVr9hNYrhet",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_4_Zc7Y3Uc9FcCvVr9hNYrhet.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_4_Zc7Y3Uc9FcCvVr9hNYrhet.png",
       "camera_images": [
         {
           "camera_id": "c03",
@@ -180,9 +180,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "42yJyaoH7ZDoevCYYuSXNG",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_4_42yJyaoH7ZDoevCYYuSXNG.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_4_42yJyaoH7ZDoevCYYuSXNG.png",
       "camera_images": [
         {
           "camera_id": "c08",
@@ -359,9 +359,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "Y2YGDTSA9brQ4vRKGnWZvP",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_5_Y2YGDTSA9brQ4vRKGnWZvP.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_5_Y2YGDTSA9brQ4vRKGnWZvP.png",
       "camera_images": [
         {
           "camera_id": "c03",
@@ -531,9 +531,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "koAZUdUAehoitn5JMz3qHq",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_5_koAZUdUAehoitn5JMz3qHq.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_5_koAZUdUAehoitn5JMz3qHq.png",
       "camera_images": [
         {
           "camera_id": "c07",
@@ -703,9 +703,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "NEhPbmk5tGk34gqEgTr6wo",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_7_NEhPbmk5tGk34gqEgTr6wo.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_7_NEhPbmk5tGk34gqEgTr6wo.png",
       "camera_images": [
         {
           "camera_id": "c05",
@@ -882,9 +882,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "WzkXD4gcUwnLQSydQqzDG6",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_8_WzkXD4gcUwnLQSydQqzDG6.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_8_WzkXD4gcUwnLQSydQqzDG6.png",
       "camera_images": [
         {
           "camera_id": "c05",
@@ -1061,9 +1061,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "LvaHeyWiM8qeJZbepotqPh",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_8_LvaHeyWiM8qeJZbepotqPh.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_8_LvaHeyWiM8qeJZbepotqPh.png",
       "camera_images": [
         {
           "camera_id": "c04",
@@ -1240,9 +1240,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "5XRMyswMZHo2AhaPeNMDHW",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_9_5XRMyswMZHo2AhaPeNMDHW.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_9_5XRMyswMZHo2AhaPeNMDHW.png",
       "camera_images": [
         {
           "camera_id": "c01",
@@ -1419,9 +1419,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "efJ6FUHMmA8o5HgAXMaV9y",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_9_efJ6FUHMmA8o5HgAXMaV9y.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_9_efJ6FUHMmA8o5HgAXMaV9y.png",
       "camera_images": [
         {
           "camera_id": "c05",
@@ -1591,9 +1591,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "dGxuPxDmWaieSiZjQUN5iZ",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_9_dGxuPxDmWaieSiZjQUN5iZ.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_9_dGxuPxDmWaieSiZjQUN5iZ.png",
       "camera_images": [
         {
           "camera_id": "c15",
@@ -1770,9 +1770,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "dShxZNQ783gRoQaMKdQAJb",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_10_dShxZNQ783gRoQaMKdQAJb.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_10_dShxZNQ783gRoQaMKdQAJb.png",
       "camera_images": [
         {
           "camera_id": "c13",
@@ -1949,9 +1949,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "H4bLfiFh7XwCurnfhEKKdV",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_10_H4bLfiFh7XwCurnfhEKKdV.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_10_H4bLfiFh7XwCurnfhEKKdV.png",
       "camera_images": [
         {
           "camera_id": "c08",
@@ -2114,9 +2114,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "V9CZeTSpgpGxFN3Teaep3S",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_16_V9CZeTSpgpGxFN3Teaep3S.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_16_V9CZeTSpgpGxFN3Teaep3S.png",
       "camera_images": [
         {
           "camera_id": "c14",
@@ -2293,9 +2293,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "eWMgiduHqjedF3CySGRTXw",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_16_eWMgiduHqjedF3CySGRTXw.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_16_eWMgiduHqjedF3CySGRTXw.png",
       "camera_images": [
         {
           "camera_id": "c16",
@@ -2472,9 +2472,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "XH5T4kxDmCjhrFatmKKuoU",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_17_XH5T4kxDmCjhrFatmKKuoU.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_17_XH5T4kxDmCjhrFatmKKuoU.png",
       "camera_images": [
         {
           "camera_id": "c10",
@@ -2644,9 +2644,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "gRP5xRxPeDpALPJHckRqDd",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_17_gRP5xRxPeDpALPJHckRqDd.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_17_gRP5xRxPeDpALPJHckRqDd.png",
       "camera_images": [
         {
           "camera_id": "c15",
@@ -2823,9 +2823,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "Gi7gpmudDrcTzuMSUDbMwv",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_18_Gi7gpmudDrcTzuMSUDbMwv.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_18_Gi7gpmudDrcTzuMSUDbMwv.png",
       "camera_images": [
         {
           "camera_id": "c16",
@@ -2995,9 +2995,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "EKimj6kx84DzXB6yYQHzjQ",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_19_EKimj6kx84DzXB6yYQHzjQ.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_19_EKimj6kx84DzXB6yYQHzjQ.png",
       "camera_images": [
         {
           "camera_id": "c01",
@@ -3174,9 +3174,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "SxW97jg7jyEJbTi6EWPiqs",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_20_SxW97jg7jyEJbTi6EWPiqs.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_20_SxW97jg7jyEJbTi6EWPiqs.png",
       "camera_images": [
         {
           "camera_id": "c12",
@@ -3353,9 +3353,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "89zVytr52c8re7Uatx2CXY",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_20_89zVytr52c8re7Uatx2CXY.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_20_89zVytr52c8re7Uatx2CXY.png",
       "camera_images": [
         {
           "camera_id": "c01",
@@ -3518,9 +3518,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "cazP4RbxCYhCe998eHENuZ",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_21_cazP4RbxCYhCe998eHENuZ.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_21_cazP4RbxCYhCe998eHENuZ.png",
       "camera_images": [
         {
           "camera_id": "c14",
@@ -3690,9 +3690,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "PDrKFuKQqEcJyfZmPPjRba",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_25_PDrKFuKQqEcJyfZmPPjRba.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_25_PDrKFuKQqEcJyfZmPPjRba.png",
       "camera_images": [
         {
           "camera_id": "c02",
@@ -3869,9 +3869,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "nqk46RGii8zpJ78sTGk52f",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_26_nqk46RGii8zpJ78sTGk52f.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_26_nqk46RGii8zpJ78sTGk52f.png",
       "camera_images": [
         {
           "camera_id": "c07",
@@ -4048,9 +4048,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "Cv4RsSSvLrR5HSzCdhjm8M",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_28_Cv4RsSSvLrR5HSzCdhjm8M.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_28_Cv4RsSSvLrR5HSzCdhjm8M.png",
       "camera_images": [
         {
           "camera_id": "c09",
@@ -4220,9 +4220,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "FLmZdhBVirYDS7PztDQEck",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_30_FLmZdhBVirYDS7PztDQEck.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_30_FLmZdhBVirYDS7PztDQEck.png",
       "camera_images": [
         {
           "camera_id": "c16",
@@ -4399,9 +4399,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "LHUw3v55nGFDaigAeiPviN",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_30_LHUw3v55nGFDaigAeiPviN.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_30_LHUw3v55nGFDaigAeiPviN.png",
       "camera_images": [
         {
           "camera_id": "c04",
@@ -4578,9 +4578,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "mJUAUL6VAr3Y4ptUbkwo88",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_31_mJUAUL6VAr3Y4ptUbkwo88.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_31_mJUAUL6VAr3Y4ptUbkwo88.png",
       "camera_images": [
         {
           "camera_id": "c09",
@@ -4750,9 +4750,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "jPtAqH86NDLchzEfKturHw",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_32_jPtAqH86NDLchzEfKturHw.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_32_jPtAqH86NDLchzEfKturHw.png",
       "camera_images": [
         {
           "camera_id": "c13",
@@ -4922,9 +4922,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "K8NeqNGwN4BN3d6D7sNJoS",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_36_K8NeqNGwN4BN3d6D7sNJoS.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_36_K8NeqNGwN4BN3d6D7sNJoS.png",
       "camera_images": [
         {
           "camera_id": "c03",
@@ -5101,9 +5101,9 @@
       ]
     },
     {
-      "task_id": "CasualReordering",
+      "task_id": "CausalReordering",
       "case_id": "7aUSCpG8jasHmyGQbCfL5S",
-      "map_image_path": "./data/indoor/map/CasualReordering_map_42_7aUSCpG8jasHmyGQbCfL5S.png",
+      "map_image_path": "./data/indoor/map/CausalReordering_map_42_7aUSCpG8jasHmyGQbCfL5S.png",
       "camera_images": [
         {
           "camera_id": "c06",

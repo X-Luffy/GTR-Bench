@@ -7,6 +7,9 @@ from PIL import Image
 import time
 from datetime import datetime
 import pandas as pd
+import subprocess
+import threading
+import queue
 from utils.data_loader import DataLoader
 from utils.video_processor import VideoProcessor
 from utils.scoring import ScoringSystem
@@ -132,8 +135,18 @@ def main():
         st.session_state.video_processor = VideoProcessor()
     if 'scoring_system' not in st.session_state:
         st.session_state.scoring_system = ScoringSystem()
-    if 'editing_mode' not in st.session_state:
-        st.session_state.editing_mode = False
+    
+    # 评估功能相关状态
+    if 'eval_process' not in st.session_state:
+        st.session_state.eval_process = None
+    if 'eval_output' not in st.session_state:
+        st.session_state.eval_output = []
+    if 'eval_progress' not in st.session_state:
+        st.session_state.eval_progress = 0
+    if 'eval_total' not in st.session_state:
+        st.session_state.eval_total = 0
+    if 'eval_status' not in st.session_state:
+        st.session_state.eval_status = "idle"  # idle, running, completed, error
 
     # 主标题
     st.markdown('<h1 class="main-header">🎯 人类水平评估系统</h1>', unsafe_allow_html=True)
@@ -155,7 +168,7 @@ def main():
                 "MotionState",
                 "GeoLocation", 
                 "ArrivalTimeInterval",
-                "CasualReordering",
+                "CausalReordering",
                 "TrajectoryForecasting",
                 "NextSpotForecasting",
                 "MultiTrajectoryForecasting"
@@ -164,7 +177,7 @@ def main():
                 "MotionState",
                 "GeoLocation",
                 "ArrivalTimeInterval", 
-                "CasualReordering",
+                "CausalReordering",
                 "TrajectoryForecasting",
                 "NextSpotForecasting",
                 "MultiTrajectoryForecasting"
@@ -182,7 +195,7 @@ def main():
             "MotionState": "运动状态推理 - 选择题",
             "GeoLocation": "地理位置推理 - 选择题", 
             "ArrivalTimeInterval": "到达时间间隔推理 - 选择题",
-            "CasualReordering": "因果重排序推理 - 选择题",
+            "CausalReordering": "因果重排序推理 - 选择题",
             "NextSpotForecasting": "下一位置预测 - 选择题 + 时间范围填空",
             "TrajectoryForecasting": "轨迹预测 - 预测两个摄像头 + 时间范围",
             "MultiTrajectoryForecasting": "多轨迹预测 - 选择题 + 时间范围填空"
@@ -201,7 +214,13 @@ def main():
                 st.session_state.question_started = False
                 st.session_state.answer_submitted = False
                 st.session_state.start_time = None
+                # 清除其他界面状态，确保回到主界面
+                if 'show_results' in st.session_state:
+                    del st.session_state.show_results
+                if 'show_eval' in st.session_state:
+                    del st.session_state.show_eval
                 st.success(f"✅ 成功加载 {scene} - {task_type} 题目数据")
+                st.rerun()
             except Exception as e:
                 st.error(f"❌ 加载数据失败: {str(e)}")
         
@@ -240,28 +259,27 @@ def main():
         
         st.markdown("---")
         
-        # 题目编辑功能
-        if st.session_state.data_loader.data:
-            st.markdown('<h4>✏️ 题目编辑</h4>', unsafe_allow_html=True)
-            if st.button("📝 编辑当前题目"):
-                st.session_state.editing_mode = True
-                st.rerun()
-            
-            if st.button("🗑️ 删除当前题目"):
-                if st.session_state.data_loader.data and st.session_state.current_case_index < len(st.session_state.data_loader.data.get('cases', [])):
-                    delete_current_case()
-                    st.success("题目已删除")
-                    st.rerun()
+        # 模型评估功能
+        st.markdown('<h4>🤖 模型评估</h4>', unsafe_allow_html=True)
+        if st.button("🚀 启动模型评估"):
+            st.session_state.show_eval = True
+            st.rerun()
+        
+        # 查看评估结果
+        if st.button("📈 查看评估结果"):
+            st.session_state.show_results = True
+            st.rerun()
 
     # 主内容区域
-    if st.session_state.data_loader.data and st.session_state.current_task:
-        if st.session_state.editing_mode:
-            # 显示编辑界面
-            current_case = st.session_state.data_loader.data['cases'][st.session_state.current_case_index]
-            display_edit_interface(current_case)
-        else:
-            # 显示正常答题界面
-            display_current_question()
+    if 'show_eval' in st.session_state and st.session_state.show_eval:
+        # 显示模型评估界面
+        display_eval_interface()
+    elif 'show_results' in st.session_state and st.session_state.show_results:
+        # 显示结果可视化界面
+        display_results_visualization()
+    elif st.session_state.data_loader.data and st.session_state.current_task:
+        # 显示正常答题界面
+        display_current_question()
     else:
         st.info("👈 请在左侧选择场景和任务类型，然后加载题目数据")
 
@@ -297,7 +315,7 @@ def display_current_question():
         "MotionState": "🎯 运动状态推理任务 - 请根据提供的视频信息推理目标的运动状态",
         "GeoLocation": "🎯 地理位置推理任务 - 请根据提供的视频信息推理目标的空间位置关系",
         "ArrivalTimeInterval": "🎯 到达时间间隔推理任务 - 请根据提供的视频信息推理目标的时间顺序",
-        "CasualReordering": "🎯 因果重排序推理任务 - 请根据提供的视频信息推理目标的因果关系",
+        "CausalReordering": "🎯 因果重排序推理任务 - 请根据提供的视频信息推理目标的因果关系",
         "NextSpotForecasting": "🎯 下一位置预测任务 - 请预测目标接下来经过的位置和时间范围",
         "TrajectoryForecasting": "🎯 轨迹预测任务 - 请预测目标接下来经过的两个位置和对应时间范围",
         "MultiTrajectoryForecasting": "🎯 多轨迹预测任务 - 请预测多个目标的轨迹和时间范围"
@@ -323,7 +341,7 @@ def display_current_question():
         if map_path.startswith('./'):
             # 相对于项目根目录的路径，现在路径已经包含了data目录
             map_path = os.path.join(
-                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level",
+                os.getcwd(),
                 map_path.replace('./', '')
             )
         
@@ -351,8 +369,8 @@ def display_current_question():
         for i, camera in enumerate(camera_images):
             camera_id = camera.get('camera_id', f'Camera_{i}')
             
-            # 对于CasualReordering任务，不显示时间范围
-            if task_type == "CasualReordering":
+            # 对于CausalReordering任务，不显示时间范围
+            if task_type == "CausalReordering":
                 expander_title = f"📹 摄像头 {camera_id}"
             else:
                 # 转换时间格式
@@ -368,7 +386,7 @@ def display_current_question():
                 if video_path.startswith('./'):
                     # 相对于项目根目录的路径，现在路径已经包含了data目录
                     video_path = os.path.join(
-                        "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level",
+                        os.getcwd(),
                         video_path.replace('./', '')
                     )
                 
@@ -844,93 +862,666 @@ def show_results_summary():
             mime="text/csv"
         )
 
-def delete_current_case():
-    """删除当前题目"""
-    if st.session_state.data_loader.data and st.session_state.current_case_index < len(st.session_state.data_loader.data.get('cases', [])):
-        cases = st.session_state.data_loader.data['cases']
-        del cases[st.session_state.current_case_index]
-        
-        # 如果删除的是最后一题，调整索引
-        if st.session_state.current_case_index >= len(cases):
-            st.session_state.current_case_index = max(0, len(cases) - 1)
-        
-        # 保存修改后的数据
-        save_modified_data()
 
-def save_modified_data():
-    """保存修改后的数据到文件"""
-    try:
-        scene = st.session_state.current_task.split('_')[0] if st.session_state.current_task else 'indoor'
-        task_type = st.session_state.current_task.split('_')[1] if st.session_state.current_task else ''
-        
-        if scene and task_type:
-            filename = f"{scene}_{task_type}_30.json"
-            file_path = os.path.join(
-                "/home/mnt/xieqinghongbing/code/xiazhaoyuan/paper/human_level",
-                "data",
-                scene, filename
-            )
-            
-            with open(file_path, 'w', encoding='utf-8') as f:
-                json.dump(st.session_state.data_loader.data, f, ensure_ascii=False, indent=2)
-            
-            st.success("数据已保存")
-    except Exception as e:
-        st.error(f"保存数据时出错: {str(e)}")
-
-def display_edit_interface(current_case):
-    """显示题目编辑界面"""
-    st.markdown('<h3>✏️ 编辑题目</h3>', unsafe_allow_html=True)
+def display_results_visualization():
+    """显示结果可视化界面"""
+    st.markdown('<h2 class="sub-header">📊 评估结果可视化</h2>', unsafe_allow_html=True)
     
-    # 创建编辑表单
-    with st.form("edit_case_form"):
-        # 编辑问题
-        st.markdown('<h4>编辑问题</h4>', unsafe_allow_html=True)
-        edited_question = st.text_area(
-            "Question:",
-            value=current_case.get('question', ''),
-            height=100
-        )
+    # 初始化session state
+    if 'results_data' not in st.session_state:
+        st.session_state.results_data = {}
+    if 'selected_file' not in st.session_state:
+        st.session_state.selected_file = None
+    if 'selected_scene' not in st.session_state:
+        st.session_state.selected_scene = None
+    if 'selected_task' not in st.session_state:
+        st.session_state.selected_task = None
+    
+    # 结果文件选择
+    st.markdown('<h3>📁 选择结果文件</h3>', unsafe_allow_html=True)
+    
+    # 查找结果文件
+    result_files = []
+    eval_dir = "./eval/results"
+    if os.path.exists(eval_dir):
+        for file in os.listdir(eval_dir):
+            if file.endswith('.json') and not file.startswith('prompt_'):
+                result_files.append(file)
+    
+    if not result_files:
+        st.warning("未找到评估结果文件，请先运行评估脚本")
+        if st.button("🔙 返回主界面"):
+            st.session_state.show_results = False
+            st.rerun()
+        return
+    
+    # 结果文件选择
+    selected_file = st.selectbox("选择评估结果文件", result_files, index=0)
+    
+    if selected_file != st.session_state.get('selected_file'):
+        st.session_state.selected_file = selected_file
+        st.session_state.results_data = {}
+        st.rerun()
+    
+    # 加载选中的结果文件
+    if st.session_state.selected_file and st.session_state.selected_file not in st.session_state.results_data:
+        file_path = os.path.join(eval_dir, st.session_state.selected_file)
         
-        # 编辑选项
-        st.markdown('<h4>编辑选项</h4>', unsafe_allow_html=True)
-        choices = current_case.get('choices', [])
-        edited_choices = []
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            st.session_state.results_data[st.session_state.selected_file] = data
+            st.success(f"✅ 已加载评估结果文件: {st.session_state.selected_file}")
+        except Exception as e:
+            st.error(f"❌ 加载结果文件失败: {str(e)}")
+            return
+    
+    # 显示结果统计
+    if st.session_state.selected_file in st.session_state.results_data:
+        results = st.session_state.results_data[st.session_state.selected_file]
+        # 从文件名中提取模型名称用于显示
+        model_name = st.session_state.selected_file.split('_')[0] + '_' + st.session_state.selected_file.split('_')[1] if '_' in st.session_state.selected_file else st.session_state.selected_file.split('_')[0]
+        display_results_statistics(results, model_name)
         
-        for i, choice in enumerate(choices):
-            edited_choice = st.text_input(
-                f"Choice {chr(65+i)}:",
-                value=choice,
-                key=f"choice_{i}"
-            )
-            edited_choices.append(edited_choice)
+        # 场景和任务类型过滤
+        st.markdown('<h3>🔍 结果筛选</h3>', unsafe_allow_html=True)
         
-        # 编辑正确答案
-        st.markdown('<h4>编辑正确答案</h4>', unsafe_allow_html=True)
-        ground_truth = current_case.get('ground_truth', '')
-        edited_ground_truth = st.text_input(
-            "Ground Truth:",
-            value=ground_truth
-        )
+        # 获取所有场景和任务类型
+        scenes = list(set([r.get('scene', 'unknown') for r in results]))
+        task_types = list(set([r.get('task_id', 'unknown') for r in results]))  # 使用task_id字段
         
-        # 提交按钮
-        col1, col2, col3 = st.columns([1, 1, 1])
+        col1, col2 = st.columns(2)
         with col1:
-            if st.form_submit_button("💾 保存修改"):
-                # 更新数据
-                current_case['question'] = edited_question
-                current_case['choices'] = edited_choices
-                current_case['ground_truth'] = edited_ground_truth
-                
-                # 保存到文件
-                save_modified_data()
-                st.session_state.editing_mode = False
-                st.rerun()
-        
+            selected_scene = st.selectbox("选择场景", ["全部"] + scenes, index=0)
         with col2:
-            if st.form_submit_button("❌ 取消"):
-                st.session_state.editing_mode = False
-                st.rerun()
+            selected_task = st.selectbox("选择任务类型", ["全部"] + task_types, index=0)
+        
+        # 过滤结果
+        filtered_results = results
+        if selected_scene != "全部":
+            filtered_results = [r for r in filtered_results if r.get('scene') == selected_scene]
+        if selected_task != "全部":
+            filtered_results = [r for r in filtered_results if r.get('task_id') == selected_task]  # 使用task_id字段
+        
+        # 显示详细结果
+        if filtered_results:
+            display_detailed_results(filtered_results, selected_scene, selected_task)
+        else:
+            st.info("没有符合条件的结果")
+    
+    # 返回按钮
+    if st.button("🔙 返回主界面"):
+        st.session_state.show_results = False
+        st.rerun()
+
+def display_results_statistics(results, model_name):
+    """显示结果统计信息"""
+    st.markdown('<h3>📈 总体统计</h3>', unsafe_allow_html=True)
+    
+    total_cases = len(results)
+    correct_cases = sum(1 for r in results if r.get('metrics', {}).get('MCQacc', 0) > 0)
+    avg_score = sum(r.get('metrics', {}).get('score', 0) for r in results) / total_cases if total_cases > 0 else 0
+    avg_mcq = sum(r.get('metrics', {}).get('MCQacc', 0) for r in results) / total_cases if total_cases > 0 else 0
+    avg_time_iou = sum(r.get('metrics', {}).get('TimeIoU', 0) for r in results) / total_cases if total_cases > 0 else 0
+    
+    col1, col2, col3, col4, col5 = st.columns(5)
+    
+    with col1:
+        st.metric("模型", model_name)
+    with col2:
+        st.metric("总题目数", total_cases)
+    with col3:
+        st.metric("正确题目数", correct_cases)
+    with col4:
+        st.metric("平均得分", f"{avg_score:.3f}")
+    with col5:
+        st.metric("平均MCQ", f"{avg_mcq:.3f}")
+    
+    # 按场景统计
+    st.markdown('<h4>📊 按场景统计</h4>', unsafe_allow_html=True)
+    scene_stats = {}
+    for result in results:
+        scene = result.get('scene', 'unknown')
+        if scene not in scene_stats:
+            scene_stats[scene] = {'total': 0, 'correct': 0, 'scores': [], 'mcqs': []}
+        
+        scene_stats[scene]['total'] += 1
+        if result.get('metrics', {}).get('MCQacc', 0) > 0:
+            scene_stats[scene]['correct'] += 1
+        scene_stats[scene]['scores'].append(result.get('metrics', {}).get('score', 0))
+        scene_stats[scene]['mcqs'].append(result.get('metrics', {}).get('MCQacc', 0))
+    
+    scene_df = pd.DataFrame([
+        {
+            '场景': scene,
+            '题目数': stats['total'],
+            '正确数': stats['correct'],
+            '正确率': f"{stats['correct']/stats['total']*100:.1f}%" if stats['total'] > 0 else "0%",
+            '平均得分': f"{sum(stats['scores'])/len(stats['scores']):.3f}" if stats['scores'] else "0.000",
+            '平均MCQ': f"{sum(stats['mcqs'])/len(stats['mcqs']):.3f}" if stats['mcqs'] else "0.000"
+        }
+        for scene, stats in scene_stats.items()
+    ])
+    
+    st.dataframe(scene_df, use_container_width=True)
+    
+    # 按任务类型统计
+    st.markdown('<h4>📊 按任务类型统计</h4>', unsafe_allow_html=True)
+    task_stats = {}
+    for result in results:
+        task = result.get('task_id', 'unknown')  # 使用task_id字段
+        if task not in task_stats:
+            task_stats[task] = {'total': 0, 'correct': 0, 'scores': [], 'mcqs': []}
+        
+        task_stats[task]['total'] += 1
+        if result.get('metrics', {}).get('MCQacc', 0) > 0:
+            task_stats[task]['correct'] += 1
+        task_stats[task]['scores'].append(result.get('metrics', {}).get('score', 0))
+        task_stats[task]['mcqs'].append(result.get('metrics', {}).get('MCQacc', 0))
+    
+    task_df = pd.DataFrame([
+        {
+            '任务类型': task,
+            '题目数': stats['total'],
+            '正确数': stats['correct'],
+            '正确率': f"{stats['correct']/stats['total']*100:.1f}%" if stats['total'] > 0 else "0%",
+            '平均得分': f"{sum(stats['scores'])/len(stats['scores']):.3f}" if stats['scores'] else "0.000",
+            '平均MCQ': f"{sum(stats['mcqs'])/len(stats['mcqs']):.3f}" if stats['mcqs'] else "0.000"
+        }
+        for task, stats in task_stats.items()
+    ])
+    
+    st.dataframe(task_df, use_container_width=True)
+
+def display_detailed_results(results, scene_filter, task_filter):
+    """显示详细结果"""
+    st.markdown('<h3>📋 详细结果</h3>', unsafe_allow_html=True)
+    
+    # 创建结果表格
+    display_data = []
+    for result in results:
+        # 获取ground_truth
+        ground_truth = result.get('response', {}).get('ground_truth', {})
+        if isinstance(ground_truth, dict):
+            ground_truth_str = str(ground_truth)
+        else:
+            ground_truth_str = str(ground_truth)
+        
+        display_data.append({
+            'Case ID': result.get('case_id', ''),
+            '场景': result.get('scene', ''),
+            '任务类型': result.get('task_id', ''),  # 使用task_id字段
+            '得分': f"{result.get('metrics', {}).get('score', 0):.3f}",
+            'MCQ': f"{result.get('metrics', {}).get('MCQacc', 0):.3f}",
+            'TimeIoU': f"{result.get('metrics', {}).get('TimeIoU', 0):.3f}",
+            '模型答案': result.get('response', {}).get('model_answer', '')[:100] + '...' if len(result.get('response', {}).get('model_answer', '')) > 100 else result.get('response', {}).get('model_answer', ''),
+            '提取答案': str(result.get('response', {}).get('answer', [])),
+            '时间范围': str(result.get('response', {}).get('time_duration', [])),
+            '正确答案': ground_truth_str[:100] + '...' if len(ground_truth_str) > 100 else ground_truth_str
+        })
+    
+    df = pd.DataFrame(display_data)
+    st.dataframe(df, use_container_width=True)
+    
+    # 添加题目详情查看功能
+    st.markdown('<h4>🔍 查看题目详情</h4>', unsafe_allow_html=True)
+    
+    # 选择要查看的案例
+    case_ids = [result.get('case_id', '') for result in results]
+    selected_case_id = st.selectbox("选择Case ID查看详情", case_ids, index=0)
+    
+    if selected_case_id:
+        # 从结果中找到选中的案例
+        selected_result = next((r for r in results if r.get('case_id') == selected_case_id), None)
+        if selected_result:
+            display_case_details(selected_result)
+    
+    # 导出功能
+    if st.button("📥 导出结果"):
+        csv = df.to_csv(index=False)
+        st.download_button(
+            label="下载CSV文件",
+            data=csv,
+            file_name=f"评估结果_{scene_filter}_{task_filter}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+            mime="text/csv"
+        )
+
+def display_case_details(result):
+    """显示单个案例的详细信息"""
+    case_id = result.get('case_id', '')
+    scene = result.get('scene', '')
+    task_type = result.get('task_id', '')  # 使用task_id字段
+    
+    st.markdown(f'<h5>📝 案例详情: {case_id}</h5>', unsafe_allow_html=True)
+    
+    # 尝试从原始数据中加载题目详情
+    try:
+        # 构建数据文件路径
+        data_file = f"data/{scene}/{scene}_{task_type}_30.json"
+        if os.path.exists(data_file):
+            with open(data_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # 查找对应的案例
+            case_data = None
+            for case in data.get('cases', []):
+                if case.get('case_id') == case_id:
+                    case_data = case
+                    break
+            
+            if case_data:
+                # 显示题目内容
+                st.markdown('<h6>📋 题目内容</h6>', unsafe_allow_html=True)
+                st.write(case_data.get('question', ''))
+                
+                # 显示选项
+                choices = case_data.get('choices', [])
+                if choices:
+                    st.markdown('<h6>🔘 选项</h6>', unsafe_allow_html=True)
+                    for i, choice in enumerate(choices):
+                        st.write(f"{chr(65+i)}. {choice}")
+                
+                # 显示地图图像
+                if case_data.get('map_image_path'):
+                    st.markdown('<h6>🗺️ 场景地图</h6>', unsafe_allow_html=True)
+                    map_path = case_data['map_image_path']
+                    if map_path.startswith('./'):
+                        map_path = os.path.join(
+                            os.getcwd(),
+                            map_path.replace('./', '')
+                        )
+                    
+                    if os.path.exists(map_path):
+                        try:
+                            map_image = Image.open(map_path)
+                            st.image(map_image, use_container_width=True)
+                        except Exception as e:
+                            st.error(f"无法加载地图图像: {str(e)}")
+                    else:
+                        st.warning(f"地图文件不存在: {map_path}")
+                
+                # 显示摄像头图像
+                camera_images = case_data.get('camera_images', [])
+                if camera_images:
+                    st.markdown('<h6>📹 摄像头图像</h6>', unsafe_allow_html=True)
+                    
+                    for i, camera in enumerate(camera_images):
+                        camera_id = camera.get('camera_id', f'Camera_{i}')
+                        
+                        # 对于CausalReordering任务，不显示时间范围
+                        if task_type == "CausalReordering":
+                            expander_title = f"📹 摄像头 {camera_id}"
+                        else:
+                            # 转换时间格式
+                            start_time_str = seconds_to_time_format(camera['start_timestamp'])
+                            end_time_str = seconds_to_time_format(camera['end_timestamp'])
+                            expander_title = f"📹 摄像头 {camera_id} (时间: {start_time_str} - {end_time_str})"
+                        
+                        with st.expander(expander_title):
+                            # 显示视频路径信息
+                            video_path = camera.get('video_path', '')
+                            
+                            # 处理相对路径，转换为绝对路径
+                            if video_path.startswith('./'):
+                                video_path = os.path.join(
+                                    os.getcwd(),
+                                    video_path.replace('./', '')
+                                )
+                            
+                            st.write(f"**视频路径:** {video_path}")
+                            
+                            # 检查视频文件是否存在
+                            if os.path.exists(video_path):
+                                st.success("✅ 视频文件存在")
+                                
+                                # 从视频中提取帧
+                                frames = st.session_state.video_processor.extract_frames(
+                                    video_path,
+                                    camera['frame_ids'],
+                                    camera['bboxes']
+                                )
+                                
+                                if frames:
+                                    # 显示3张均匀选择的帧
+                                    cols = st.columns(3)
+                                    for j, frame in enumerate(frames):
+                                        with cols[j]:
+                                            st.image(frame, caption=f"帧 {camera['frame_ids'][j]}", use_container_width=True)
+                                else:
+                                    st.warning(f"无法从视频中提取帧")
+                            else:
+                                st.error(f"❌ 视频文件不存在: {video_path}")
+            else:
+                st.warning(f"未找到案例 {case_id} 的原始数据")
+        else:
+            st.warning(f"数据文件不存在: {data_file}")
+    except Exception as e:
+        st.error(f"加载题目详情时出错: {str(e)}")
+    
+    # 显示评估结果
+    st.markdown('<h6>📊 评估结果</h6>', unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("得分", f"{result.get('metrics', {}).get('score', 0):.3f}")
+    with col2:
+        st.metric("MCQ", f"{result.get('metrics', {}).get('MCQacc', 0):.3f}")
+    with col3:
+        st.metric("TimeIoU", f"{result.get('metrics', {}).get('TimeIoU', 0):.3f}")
+    
+    # 显示模型回答
+    st.markdown('<h6>🤖 模型回答</h6>', unsafe_allow_html=True)
+    model_answer = result.get('response', {}).get('model_answer', '')
+    st.text_area("模型原始回答", model_answer, height=200, disabled=True)
+    
+    # 显示提取的答案
+    st.markdown('<h6>📝 提取的答案</h6>', unsafe_allow_html=True)
+    extracted_answer = result.get('response', {}).get('answer', [])
+    time_duration = result.get('response', {}).get('time_duration', [])
+    
+    st.write(f"**选择题答案**: {extracted_answer}")
+    st.write(f"**时间范围**: {time_duration}")
+    
+    # 显示正确答案
+    st.markdown('<h6>✅ 正确答案</h6>', unsafe_allow_html=True)
+    ground_truth = result.get('response', {}).get('ground_truth', {})
+    st.write(f"**Ground Truth**: {ground_truth}")
+
+def display_eval_interface():
+    """显示模型评估界面"""
+    st.markdown('<h2 class="sub-header">🤖 模型评估系统</h2>', unsafe_allow_html=True)
+    
+    # 返回按钮
+    if st.button("🔙 返回主界面"):
+        st.session_state.show_eval = False
+        st.rerun()
+    
+    # 评估配置
+    st.markdown('<h3>⚙️ 评估配置</h3>', unsafe_allow_html=True)
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # 模型配置
+        st.markdown('<h4>🔧 模型配置</h4>', unsafe_allow_html=True)
+        model_name = st.text_input("模型名称", help="例如: claude-sonnet-4-20250514-thinking, gpt-4o")
+        api_key = st.text_input("API Key", type="password", help="OpenAI API密钥")
+        base_url = st.text_input("Base URL", help="API基础URL")
+        
+        # 模型参数
+        st.markdown('<h4>🎛️ 模型参数</h4>', unsafe_allow_html=True)
+        max_tokens = st.number_input("Max Tokens", min_value=1, max_value=32768, value=16384)
+        temperature = st.slider("Temperature", min_value=0.0, max_value=2.0, value=0.1, step=0.1)
+    
+    with col2:
+        # 测试配置
+        st.markdown('<h4>📋 测试配置</h4>', unsafe_allow_html=True)
+        
+        # 测试范围选择
+        test_scope = st.radio(
+            "测试范围",
+            ["特定场景-任务", "全部场景-任务"],
+            help="选择特定场景任务或全部场景任务"
+        )
+        
+        if test_scope == "特定场景-任务":
+            # 特定场景任务选择
+            scene = st.selectbox("场景", ["indoor", "outdoor"])
+            task_type = st.selectbox(
+                "任务类型",
+                ["MotionState", "GeoLocation", "ArrivalTimeInterval", "CausalReordering", 
+                 "TrajectoryForecasting", "NextSpotForecasting", "MultiTargetTrajectoryForecasting"]
+            )
+            max_cases = st.number_input("测试案例数", min_value=1, max_value=30, value=5)
+            
+            # 计算总案例数
+            total_cases = max_cases
+            
+        else:
+            # 全部场景任务
+            max_cases_per_scene = st.number_input("每个场景测试案例数", min_value=1, max_value=30, value=5)
+            
+            # 计算总案例数 (2个场景 × 7个任务类型 × 每个场景案例数)
+            total_cases = 2 * 7 * max_cases_per_scene
+    
+    # 显示预估信息
+    st.info(f"📊 预估总测试案例数: {total_cases}")
+    
+    # 开始评估和停止评估按钮
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        if st.button("🚀 开始评估", type="primary", use_container_width=True):
+            if not model_name or not api_key or not base_url:
+                st.error("❌ 请填写完整的模型配置信息")
+            else:
+                start_evaluation(model_name, api_key, base_url, max_tokens, temperature, 
+                               test_scope, scene if test_scope == "特定场景-任务" else None,
+                               task_type if test_scope == "特定场景-任务" else None,
+                               max_cases if test_scope == "特定场景-任务" else max_cases_per_scene)
+    
+    with col2:
+        if st.button("⏹️ 停止评估", use_container_width=True):
+            stop_evaluation()
+    
+    # 显示评估进度
+    if st.session_state.eval_status == "running":
+        display_eval_progress()
+    elif st.session_state.eval_status == "completed":
+        display_eval_completion()
+    elif st.session_state.eval_status == "error":
+        display_eval_error()
+
+def start_evaluation(model_name, api_key, base_url, max_tokens, temperature, test_scope, scene, task_type, max_cases):
+    """开始评估"""
+    st.session_state.eval_status = "running"
+    st.session_state.eval_progress = 0
+    st.session_state.eval_total = 0
+    st.session_state.eval_output = []
+    
+    # 构建eval.py命令
+    cmd = [
+        "python", "eval/eval.py",
+        "--model", model_name,
+        "--api-key", api_key,
+        "--base-url", base_url,
+        "--data-dir", "data",
+        "--result-dir", "eval/results",
+        "--max-cases", str(max_cases),
+        "--max-tokens", str(max_tokens),
+        "--temperature", str(temperature),
+        "--verbose"
+    ]
+    
+    if test_scope == "特定场景-任务":
+        cmd.extend(["--scene", scene, "--task-type", task_type])
+    
+    # 使用队列在线程间传递数据
+    output_queue = queue.Queue()
+    status_queue = queue.Queue()
+    
+    # 在后台线程中运行评估
+    def run_eval():
+        try:
+            process = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                universal_newlines=True,
+                bufsize=1
+            )
+            
+            # 读取输出
+            for line in iter(process.stdout.readline, ''):
+                if line:
+                    output_queue.put(line.strip())
+                    
+                    # 解析进度信息
+                    if "Processing case" in line:
+                        # 提取当前进度
+                        try:
+                            parts = line.split("Processing case ")[1].split("/")
+                            current = int(parts[0])
+                            total = int(parts[1].split(":")[0])
+                            status_queue.put(("progress", current, total))
+                        except:
+                            pass
+            
+            # 等待进程完成
+            return_code = process.wait()
+            
+            if return_code == 0:
+                status_queue.put(("status", "completed"))
+            else:
+                status_queue.put(("status", "error"))
+                
+        except Exception as e:
+            output_queue.put(f"Error: {str(e)}")
+            status_queue.put(("status", "error"))
+    
+    # 启动后台线程
+    thread = threading.Thread(target=run_eval)
+    thread.daemon = True
+    thread.start()
+    
+    # 将队列存储到session_state中
+    st.session_state.eval_output_queue = output_queue
+    st.session_state.eval_status_queue = status_queue
+    
+    st.success("✅ 评估已开始，请查看下方进度信息")
+
+def stop_evaluation():
+    """停止评估"""
+    if 'eval_process' in st.session_state and st.session_state.eval_process:
+        try:
+            st.session_state.eval_process.terminate()
+            st.session_state.eval_status = "stopped"
+            st.success("⏹️ 评估已停止")
+        except Exception as e:
+            st.error(f"停止评估时出错: {str(e)}")
+    else:
+        st.warning("没有正在运行的评估进程")
+
+def display_eval_progress():
+    """显示评估进度"""
+    st.markdown('<h3>📊 评估进度</h3>', unsafe_allow_html=True)
+    
+    # 处理队列中的数据
+    if 'eval_output_queue' in st.session_state:
+        output_queue = st.session_state.eval_output_queue
+        while not output_queue.empty():
+            try:
+                line = output_queue.get_nowait()
+                st.session_state.eval_output.append(line)
+            except queue.Empty:
+                break
+    
+    if 'eval_status_queue' in st.session_state:
+        status_queue = st.session_state.eval_status_queue
+        while not status_queue.empty():
+            try:
+                status_data = status_queue.get_nowait()
+                if status_data[0] == "progress":
+                    st.session_state.eval_progress = status_data[1]
+                    st.session_state.eval_total = status_data[2]
+                elif status_data[0] == "status":
+                    st.session_state.eval_status = status_data[1]
+            except queue.Empty:
+                break
+    
+    # 进度条
+    if st.session_state.eval_total > 0:
+        progress = st.session_state.eval_progress / st.session_state.eval_total
+        st.progress(progress)
+        st.write(f"进度: {st.session_state.eval_progress}/{st.session_state.eval_total} ({progress*100:.1f}%)")
+    else:
+        st.progress(0)
+        st.write("正在初始化...")
+    
+    # 显示prompt文件路径
+    st.markdown('<h4>📁 Prompt文件路径</h4>', unsafe_allow_html=True)
+    
+    # 从输出中提取prompt文件路径
+    prompt_files = []
+    if st.session_state.eval_output:
+        for line in st.session_state.eval_output:
+            if "完整对话记录已导出到:" in line:
+                file_path = line.split("完整对话记录已导出到: ")[1]
+                prompt_files.append(file_path)
+    
+    if prompt_files:
+        # 显示最新的几个prompt文件路径
+        recent_files = prompt_files[-5:]  # 显示最近5个文件
+        for file_path in recent_files:
+            st.text(f"📄 {file_path}")
+    else:
+        st.info("暂无prompt文件生成")
+    
+    # 自动刷新
+    time.sleep(1)
+    st.rerun()
+
+def display_eval_completion():
+    """显示评估完成"""
+    st.markdown('<h3>✅ 评估完成</h3>', unsafe_allow_html=True)
+    
+    # 显示最终输出
+    st.markdown('<h4>📝 最终输出</h4>', unsafe_allow_html=True)
+    
+    if st.session_state.eval_output:
+        # 显示所有输出
+        for line in st.session_state.eval_output:
+            if "Error" in line or "Failed" in line:
+                st.error(line)
+            elif "Completed" in line or "Success" in line:
+                st.success(line)
+            elif "Processing case" in line:
+                st.info(line)
+            else:
+                st.text(line)
+    
+    # 重置状态按钮
+    if st.button("🔄 重新开始评估"):
+        st.session_state.eval_status = "idle"
+        st.session_state.eval_output = []
+        st.session_state.eval_progress = 0
+        st.session_state.eval_total = 0
+        # 清理队列
+        if 'eval_output_queue' in st.session_state:
+            del st.session_state.eval_output_queue
+        if 'eval_status_queue' in st.session_state:
+            del st.session_state.eval_status_queue
+        st.rerun()
+    
+    # 查看结果按钮
+    if st.button("📈 查看评估结果"):
+        st.session_state.show_eval = False
+        st.session_state.show_results = True
+        st.rerun()
+
+def display_eval_error():
+    """显示评估错误"""
+    st.markdown('<h3>❌ 评估出错</h3>', unsafe_allow_html=True)
+    
+    # 显示错误输出
+    st.markdown('<h4>📝 错误信息</h4>', unsafe_allow_html=True)
+    
+    if st.session_state.eval_output:
+        for line in st.session_state.eval_output:
+            st.error(line)
+    
+    # 重置状态按钮
+    if st.button("🔄 重新开始评估"):
+        st.session_state.eval_status = "idle"
+        st.session_state.eval_output = []
+        st.session_state.eval_progress = 0
+        st.session_state.eval_total = 0
+        # 清理队列
+        if 'eval_output_queue' in st.session_state:
+            del st.session_state.eval_output_queue
+        if 'eval_status_queue' in st.session_state:
+            del st.session_state.eval_status_queue
+        st.rerun()
 
 def display_ground_truth(case, task_type):
     """根据任务类型显示正确的GT信息"""
@@ -946,7 +1537,7 @@ def display_ground_truth(case, task_type):
         task_type = task_type.split()[-1]
     
     # 纯选择题任务：只显示选项答案
-    if task_type in ["MotionState", "GeoLocation", "ArrivalTimeInterval", "CasualReordering"]:
+    if task_type in ["MotionState", "GeoLocation", "ArrivalTimeInterval", "CausalReordering"]:
         # 尝试从correct_cam_name获取，如果没有则从ground_truth获取
         correct_cam_names = case.get('correct_cam_name', [])
         if correct_cam_names:

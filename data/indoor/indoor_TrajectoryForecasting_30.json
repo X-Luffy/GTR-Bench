@@ -1,7 +1,7 @@
 {
   "cases": [
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "bvkRrY82qj2VowVKhkruVN",
       "map_image_path": "./data/indoor/map/tf_map_4_bvkRrY82qj2VowVKhkruVN.png",
       "camera_images": [
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "DZX4CVanddFZPeczsC7PLP",
       "map_image_path": "./data/indoor/map/tf_map_4_DZX4CVanddFZPeczsC7PLP.png",
       "camera_images": [
@@ -268,7 +268,7 @@
       "ground_truth": ""
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "jGrZmBNAwct7wHNkWL6n8b",
       "map_image_path": "./data/indoor/map/tf_map_4_jGrZmBNAwct7wHNkWL6n8b.png",
       "camera_images": [
@@ -402,7 +402,7 @@
       "ground_truth": ""
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "Xatcxh7MUw5m6iYnog5gSG",
       "map_image_path": "./data/indoor/map/tf_map_5_Xatcxh7MUw5m6iYnog5gSG.png",
       "camera_images": [
@@ -534,7 +534,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "NykKwJTy99ZuicFuo2RKmZ",
       "map_image_path": "./data/indoor/map/tf_map_5_NykKwJTy99ZuicFuo2RKmZ.png",
       "camera_images": [
@@ -667,7 +667,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "8VmgX5heUyWfQVmEfkHq8G",
       "map_image_path": "./data/indoor/map/tf_map_5_8VmgX5heUyWfQVmEfkHq8G.png",
       "camera_images": [
@@ -800,7 +800,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "nscH3GEGNxVweB9GsUJkmi",
       "map_image_path": "./data/indoor/map/tf_map_7_nscH3GEGNxVweB9GsUJkmi.png",
       "camera_images": [
@@ -932,7 +932,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "8D8rWvEvJCwHQhuRXYGofg",
       "map_image_path": "./data/indoor/map/tf_map_8_8D8rWvEvJCwHQhuRXYGofg.png",
       "camera_images": [
@@ -1065,7 +1065,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "HSgsQTEbqKVSNWmA6s3Ykr",
       "map_image_path": "./data/indoor/map/tf_map_9_HSgsQTEbqKVSNWmA6s3Ykr.png",
       "camera_images": [
@@ -1199,7 +1199,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "2HFBpeoDuj5EcomoPNz3on",
       "map_image_path": "./data/indoor/map/tf_map_9_2HFBpeoDuj5EcomoPNz3on.png",
       "camera_images": [
@@ -1332,7 +1332,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "9SBhUvEhhD8UFzxE8dwYvi",
       "map_image_path": "./data/indoor/map/tf_map_9_9SBhUvEhhD8UFzxE8dwYvi.png",
       "camera_images": [
@@ -1465,7 +1465,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "5DMcRrZ2nLoGThLgQFYPxZ",
       "map_image_path": "./data/indoor/map/tf_map_10_5DMcRrZ2nLoGThLgQFYPxZ.png",
       "camera_images": [
@@ -1591,7 +1591,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "QZ6nmJGPV3W4isLpHD7F4f",
       "map_image_path": "./data/indoor/map/tf_map_10_QZ6nmJGPV3W4isLpHD7F4f.png",
       "camera_images": [
@@ -1725,7 +1725,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "c4ercgL4hQBvtVVEbogqog",
       "map_image_path": "./data/indoor/map/tf_map_10_c4ercgL4hQBvtVVEbogqog.png",
       "camera_images": [
@@ -1859,7 +1859,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "K2Y47P9W65xJ7tT87EuEef",
       "map_image_path": "./data/indoor/map/tf_map_11_K2Y47P9W65xJ7tT87EuEef.png",
       "camera_images": [
@@ -1992,7 +1992,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "irqzuXUHSLAsNimqYLgGSQ",
       "map_image_path": "./data/indoor/map/tf_map_11_irqzuXUHSLAsNimqYLgGSQ.png",
       "camera_images": [
@@ -2125,7 +2125,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "nbQqRjSbaQYowmQ3xFzSJ9",
       "map_image_path": "./data/indoor/map/tf_map_11_nbQqRjSbaQYowmQ3xFzSJ9.png",
       "camera_images": [
@@ -2259,7 +2259,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "3FLPASEr2kpJcLT7KnsD38",
       "map_image_path": "./data/indoor/map/tf_map_16_3FLPASEr2kpJcLT7KnsD38.png",
       "camera_images": [
@@ -2393,7 +2393,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "Kc8dEMN6KR7ojoyHv92bVu",
       "map_image_path": "./data/indoor/map/tf_map_16_Kc8dEMN6KR7ojoyHv92bVu.png",
       "camera_images": [
@@ -2526,7 +2526,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "A9APRiFKrfcgofutbDC5LY",
       "map_image_path": "./data/indoor/map/tf_map_16_A9APRiFKrfcgofutbDC5LY.png",
       "camera_images": [
@@ -2658,7 +2658,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "XhxWmoVMVdqTEu25tGzjqu",
       "map_image_path": "./data/indoor/map/tf_map_17_XhxWmoVMVdqTEu25tGzjqu.png",
       "camera_images": [
@@ -2792,7 +2792,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "ZfbvqdJs4gPdHYChz7nmi8",
       "map_image_path": "./data/indoor/map/tf_map_18_ZfbvqdJs4gPdHYChz7nmi8.png",
       "camera_images": [
@@ -2926,7 +2926,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "JAbHHChDXJGJzxsRvbe4n5",
       "map_image_path": "./data/indoor/map/tf_map_18_JAbHHChDXJGJzxsRvbe4n5.png",
       "camera_images": [
@@ -3053,7 +3053,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "cp74EpLNdnjzBpAv9XwCNE",
       "map_image_path": "./data/indoor/map/tf_map_18_cp74EpLNdnjzBpAv9XwCNE.png",
       "camera_images": [
@@ -3178,7 +3178,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "Ki3nyQrTFrhULEgjGeARQ2",
       "map_image_path": "./data/indoor/map/tf_map_19_Ki3nyQrTFrhULEgjGeARQ2.png",
       "camera_images": [
@@ -3297,7 +3297,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "oUCryrdjgCsmgPiMTiP3s7",
       "map_image_path": "./data/indoor/map/tf_map_19_oUCryrdjgCsmgPiMTiP3s7.png",
       "camera_images": [
@@ -3430,7 +3430,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "gkYU8iBFSTkAafKzRKvvhK",
       "map_image_path": "./data/indoor/map/tf_map_19_gkYU8iBFSTkAafKzRKvvhK.png",
       "camera_images": [
@@ -3564,7 +3564,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "Y5QJpAx6M8ef8QRq7jgdfN",
       "map_image_path": "./data/indoor/map/tf_map_20_Y5QJpAx6M8ef8QRq7jgdfN.png",
       "camera_images": [
@@ -3698,7 +3698,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "5Uau9CQAJHT4CfcXWWgWt3",
       "map_image_path": "./data/indoor/map/tf_map_20_5Uau9CQAJHT4CfcXWWgWt3.png",
       "camera_images": [
@@ -3824,7 +3824,7 @@
       ]
     },
     {
-      "task_id": "Trajectory Forecasting",
+      "task_id": "TrajectoryForecasting",
       "case_id": "RzrMeMso7my9srpKkYebmk",
       "map_image_path": "./data/indoor/map/tf_map_20_RzrMeMso7my9srpKkYebmk.png",
       "camera_images": [

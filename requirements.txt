@@ -1,14 +1,26 @@
-# Core Framework
+# Core dependencies
 streamlit>=1.28.0
-
-# Image and Video Processing
 opencv-python>=4.8.0
-pillow>=10.0.0
-
-# Data Processing and Analysis
+Pillow>=9.5.0
 numpy>=1.24.0
 pandas>=2.0.0
 
-# Additional Dependencies (if needed)
-# matplotlib>=3.7.0  # For plotting (optional)
-# seaborn>=0.12.0    # For statistical visualization (optional)
+# API and HTTP
+openai>=1.0.0
+requests>=2.31.0
+
+# Image and video processing
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+
+# Data processing
+json5>=0.9.0
+
+# Development and testing (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Jupyter notebook support (optional)
+jupyter>=1.0.0
+ipykernel>=6.25.0
