@@ -1,4 +1,4 @@
-# GTR-Bench: Human-Level Visual Reasoning Evaluation System
+# GTR-Bench Evaluation System
 
 A comprehensive visual reasoning evaluation platform based on Streamlit, supporting both human assessment and automated model evaluation.
 
