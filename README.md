@@ -1,13 +1,7 @@
-# GTR-Bench Evaluation System
-
-A comprehensive visual reasoning evaluation platform based on Streamlit, supporting both human assessment and automated model evaluation.
-
-## 🎯 Project Overview
-
-GTR-Bench is a comprehensive visual reasoning evaluation platform designed to assess model capabilities in complex visual scenarios. The system supports two evaluation modes:
-
-1. **Human Assessment**: Manual evaluation through web interface to establish human baselines
-2. **Automated Model Evaluation**: Automatic evaluation of various visual reasoning models through API calls
+## *GTR-Bench*: Evaluating Geo-Temporal Reasoning in Vision-Language Models
+## Abstract
+Recently spatial-temporal intelligence of Visual-Language Models (VLMs) has attracted much attention due to its importance for Autonomous
+Driving, Embodied AI and General Artificial Intelligence. Existing spatial-temporal benchmarks mainly focus on egocentric perspective reasoning with images/video context, or geographic perspective reasoning with graphics context (eg. a map), thus fail to assess VLMs' geographic spatial-temporal intelligence with both images/video and graphics context, which is important for areas like traffic management and emergency response. To address the gaps, we introduce Geo-Temporal Reasoning benchmark (GTR-Bench), a novel challenge for geographic temporal reasoning of moving targets in a large-scale camera network. GTR-Bench is more challenging as it requires multiple perspective switches between maps and videos, joint reasoning across multiple videos with non-overlapping fields of view, and inference over spatial-temporal regions that are unobserved by any video context. Evaluations of more than 10 popular VLMs on GTR-Bench demonstrate that even the best proprietary model, Gemini-2.5-Pro (34.9\%), significantly lags behind human performance (78.61\%) on geo-temporal reasoning. Moreover, our comprehensive analysis on GTR-Bench reveals three primary deficiencies of current models for geo-temporal reasoning. (1) VLMs' reasoning is impaired by an imbalanced utilization of spatial-temporal context. (2) VLMs are weak in temporal forecasting, which leads to worse performance on temporal-emphasized tasks than on spatial-emphasized tasks. (3) VLMs lack the proficiency to comprehend or align the map data with multi-view video inputs. We believe GTR-Bench offers valuable insights and opens up new opportunities for research and applications in spatial-temporal intelligence. Benchmark and code will be released at https://anonymous.4open.science/r/GTR-Bench-5B76.
 
 ## ✨ Key Features
 
