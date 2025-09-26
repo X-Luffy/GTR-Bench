@@ -13,8 +13,6 @@ import queue
 from utils.data_loader import DataLoader
 from utils.video_processor import VideoProcessor
 from utils.scoring import ScoringSystem
-from components.question_display import QuestionDisplay
-from components.result_display import ResultDisplay
 
 def seconds_to_time_format(seconds):
     """

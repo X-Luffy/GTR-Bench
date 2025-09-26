@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "LDqNTeKrfrnhdwWJkLkyoo",
+    "scene": "outdoor",
+    "task_id": "ArrivalTimeInterval",
+    "question": "\nBased on the provided [start video] (c036, 12:00:52.205-12:00:58.605) and [end video] (c066, 12:00:59.455-12:01:04.555),\nand knowing the target passed through camera c095, infer the time period when the target appears at the middle camera.\n",
+    "response": {
+      "model_answer": "Error: Error code: 404 - {'error': {'message': 'Invalid URL (POST /v1/chat/completions/chat/completions)', 'localized_message': '', 'type': 'invalid_request_error', 'param': '', 'code': ''}}",
+      "answer": [],
+      "time_duration": [],
+      "ground_truth": "A. 12:00:58.979-12:00:59.179"
+    },
+    "metrics": {
+      "score": 0.0,
+      "MCQacc": 0.0,
+      "TimeIoU": 0.0
+    },
+    "timestamp": "2025-09-25T15:09:54.042099"
+  }
+]
