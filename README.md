@@ -225,37 +225,42 @@ GTR-Bench/
 
 ## 📊 Evaluation Metrics
 
-| Metric | Description | Range | Weight |
-|--------|-------------|-------|--------|
-| **MCQ Accuracy** | Multiple choice question accuracy | 0-1 | 0.6 |
-| **Time IoU** | Time range intersection over union | 0-1 | 0.4 |
-| **Overall Score** | Weighted combination of above | 0-1 | - |
+### 📋 Core Metrics
 
-### 🎯 Scoring Formula
+| Metric | Description | Range | Type |
+|--------|-------------|-------|------|
+| **MCQ Accuracy** | Multiple choice question accuracy | 0 or 1 | Binary |
+| **Time IoU** | Time range intersection over union | 0-1 | Continuous |
+| **ST-IoU** | Spatial-Temporal IoU (MCQ × Time IoU) | 0-1 | Continuous |
+
+### 🎯 Task-Specific Scoring
+
+#### 📍 Pure Multiple Choice Tasks
+**Tasks**: `GeoLocation`, `ArrivalTimeInterval`, `MotionState`, `CausalReordering`
+
 ```
-Overall Score = 0.6 × MCQ_Accuracy + 0.4 × Time_IoU
+Score = MCQ_Accuracy
 ```
+- **MCQ_Accuracy**: 0 (incorrect) or 1 (correct)
+- **Final Score**: 0 or 1
 
-## 🤝 Contributing
+#### 🎯 Forecasting Tasks  
+**Tasks**: `NextSpotForecasting`, `TrajectoryForecasting`, `MultiTargetTrajectoryForecasting`
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📚 Citation
-
-If you use GTR-Bench in your research, please cite our paper:
-
-```bibtex
-@article{gtr-bench2024,
-  title={GTR-Bench: Evaluating Geo-Temporal Reasoning in Vision-Language Models},
-  author={Anonymous},
-  journal={arXiv preprint},
-  year={2024}
-}
 ```
+Score = ST-IoU = MCQ_Accuracy × Time_IoU
+```
+- **MCQ_Accuracy**: 0 (incorrect) or 1 (correct)
+- **Time_IoU**: 0-1 (continuous value)
+- **ST-IoU**: Only non-zero when MCQ is correct (1)
+- **Final Score**: 0-1 (continuous)
+
+### 🔍 Scoring Logic
+
+1. **MCQ First**: Multiple choice answer must be correct to receive any score
+2. **Time Precision**: For forecasting tasks, time accuracy determines final score
+3. **Binary vs Continuous**: Pure MCQ tasks are binary (0/1), forecasting tasks are continuous (0-1)
+
 
 ## 🙏 Acknowledgments
 
@@ -263,13 +268,6 @@ If you use GTR-Bench in your research, please cite our paper:
 - **MTMMC Dataset**: Multi-Target Multi-Modal Camera tracking team
 - **Streamlit**: For the excellent web framework
 
----
-
-<div align="center">
-
-**⭐ Star this repository if you find it helpful!**
-
-[Report Bug](https://github.com/X-Luffy/GTR-Bench/issues) · [Request Feature](https://github.com/X-Luffy/GTR-Bench/issues) · [Documentation](https://github.com/X-Luffy/GTR-Bench/wiki)
 
 </div>
 
