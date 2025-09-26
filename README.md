@@ -12,13 +12,13 @@ GTR-Bench is a comprehensive visual reasoning evaluation platform designed to as
 ## ✨ Key Features
 
 ### 🧠 Supported Task Types
-- **MotionState**: Motion state reasoning
-- **GeoLocation**: Geographic location reasoning  
-- **ArrivalTimeInterval**: Arrival time interval reasoning
-- **CausalReordering**: Causal reordering reasoning
-- **TrajectoryForecasting**: Trajectory forecasting
-- **NextSpotForecasting**: Next spot forecasting
-- **MultiTargetTrajectoryForecasting**: Multi-target trajectory forecasting
+- **MotionState**
+- **GeoLocation**
+- **ArrivalTimeInterval**
+- **CausalReordering**
+- **TrajectoryForecasting**
+- **NextSpotForecasting**
+- **MultiTargetTrajectoryForecasting**
 
 ### 🌍 Supported Data Scenarios
 - **Indoor**: Indoor scenarios
@@ -83,8 +83,6 @@ Open your browser and visit: `http://localhost:8505`
 ├── run.sh                          # Startup script
 ├── requirements.txt                 # Dependencies list
 ├── README.md                       # Project documentation
-├── README_EVAL_FEATURE.md          # Evaluation feature documentation
-├── .gitignore                      # Git ignore file
 ├── data/                           # Data directory
 │   ├── indoor/                     # Indoor scenario data
 │   └── outdoor/                    # Outdoor scenario data
