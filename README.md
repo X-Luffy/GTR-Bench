@@ -40,15 +40,22 @@ Evaluation of 10+ popular VLMs on GTR-Bench reveals significant performance gaps
 ## ✨ Key Features
 
 ### 🧠 Supported Task Types
-| Task Type | Description | Difficulty |
-|-----------|-------------|------------|
-| **MotionState** | Infer target's motion state from video information | ⭐⭐ |
-| **GeoLocation** | Determine spatial position relationships | ⭐⭐ |
-| **ArrivalTimeInterval** | Predict temporal sequence of events | ⭐⭐⭐ |
-| **CausalReordering** | Infer causal relationships between events | ⭐⭐⭐ |
-| **TrajectoryForecasting** | Predict next two camera locations + time ranges | ⭐⭐⭐⭐ |
-| **NextSpotForecasting** | Predict next location + time range | ⭐⭐⭐ |
-| **MultiTargetTrajectoryForecasting** | Predict multiple targets' trajectories | ⭐⭐⭐⭐⭐ |
+#### 📋 Basic Tasks
+
+| Task | Description | Example | Metric |
+|------|-------------|---------|--------|
+| **Geo-Location (GL)** | Given start and end locations, infer intermediate locations the target passes through | *Based on [start video] and [end video], infer which camera the target passed through between start point (C016, 12:00:10-12:00:22) and end point (C018, 12:00:37-12:00:42).*<br/>**Answer**: C. C017 | MCQ Acc |
+| **Arrival Time-Interval (ATI)** | Given start/end points and intermediate location, infer time interval of target's arrival | *Based on [start video] (C018, 12:00:37-12:00:42) and [end video] (C020, 12:00:43-12:00:50), knowing target passed through C019, infer when target arrived at intermediate camera.*<br/>**Answer**: A. 12:00:43.279-12:00:43.579 | MCQ Acc |
+| **Motion-State (MS)** | Given start/end points and intermediate location, infer target's motion state | *Based on [start video] (C016, 12:00:10-12:00:22) and [end video] (C018, 12:00:37-12:00:42), and intermediate camera C017, infer target's motion state during intermediate time period.*<br/>**Answer**: B. Target travels west at 10.0 m/s for 11.0 seconds, covering 109.6 meters | MCQ Acc |
+
+#### 🔗 Combinatorial Tasks
+
+| Task | Description | Example | Metric |
+|------|-------------|---------|--------|
+| **Causal Reordering (CR)** | Given unordered video clips from different cameras, determine correct chronological sequence | *Based on [local map] and [videos] (C019, C021, C020), analyze target's activity trajectory and infer correct order.*<br/>**Answer**: D. C019 → C020 → C021 | MCQ Acc |
+| **Next Spot Forecasting (NSF)** | Predict most probable next camera location and corresponding time interval | *Based on [local map] and [video] (C16, 12:00:10-12:00:22), which camera will likely capture target next?*<br/>**Answer**: A. C020 12:00:43.905-12:00:50.505 | ST-IoU |
+| **Trajectory Forecasting (TF)** | Predict target's complete future trajectory by forecasting sequence of cameras | *Based on [local map] and [videos] (C017, 12:01:01-12:01:27, C018, 12:00:37-12:00:42), predict next two cameras target will pass through.*<br/>**Answer**: A. C019 12:00:43.279-12:00:43.579 → D. C020 12:00:43.905-12:00:50.505 | ST-IoU |
+| **Multi-Target Trajectory Forecasting (MTTF)** | Forecast future meeting point (location and time) of two distinct targets | *Based on [local map] and [videos] (C018, 12:00:37-12:00:42, C019, 12:01:21-12:01:23) showing two targets' trajectories, predict where and when they will meet.*<br/>**Answer**: B. C018 12:00:37.755-12:00:42.855 | ST-IoU |
 
 ### 🌍 Supported Data Scenarios
 - **🏠 Indoor**: Multi-modal camera tracking scenarios
