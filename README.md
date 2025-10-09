@@ -6,36 +6,7 @@
 
 ## 📖 Abstract
 
-Recent advances in spatial-temporal intelligence of Vision-Language Models (VLMs) have gained significant attention due to their critical importance for Autonomous Driving, Embodied AI, and General Artificial Intelligence. However, existing spatial-temporal benchmarks primarily focus on either:
-
-- **Egocentric perspective reasoning** with images/video context, or
-- **Geographic perspective reasoning** with graphics context (e.g., maps)
-
-This limitation fails to assess VLMs' geographic spatial-temporal intelligence that combines both images/video and graphics context—a capability essential for applications like traffic management and emergency response.
-
-### 🎯 Our Contribution
-
-We introduce **GTR-Bench** (Geo-Temporal Reasoning Benchmark), a novel challenge for geographic temporal reasoning of moving targets in large-scale camera networks. GTR-Bench presents unique challenges:
-
-- **Multi-perspective reasoning**: Switching between maps and videos
-- **Cross-camera inference**: Joint reasoning across multiple videos with non-overlapping fields of view
-- **Spatial-temporal prediction**: Inference over unobserved regions
-
-### 📊 Key Findings
-
-Evaluation of 10+ popular VLMs on GTR-Bench reveals significant performance gaps:
-
-- **Best proprietary model** (Gemini-2.5-Pro): 34.9%
-- **Human performance**: 78.61%
-- **Performance gap**: 43.71%
-
-### 🔍 Model Deficiencies Identified
-
-1. **Imbalanced context utilization**: VLMs struggle with balanced spatial-temporal reasoning
-2. **Temporal forecasting weakness**: Poor performance on temporal-emphasized tasks
-3. **Map-video alignment**: Limited proficiency in comprehending map data with multi-view video inputs
-
-**Repository**: https://anonymous.4open.science/r/GTR-Bench-5B76
+Enhancing the spatial intelligence of Visual-Language Models (VLMs) is critical for applications like autonomous driving and embodied AI, yet existing benchmarks fail to assess complex, real-world reasoning. Current benchmarks are often confined to single or a few camera views, with limited perspective changes and understanding tasks for observed scenarios. To address these gaps, we introduce the Geo-Temporal Reasoning benchmark (GTR-Bench), a novel challenge to evaluate the spatial intelligence of VLMs. It features a hierarchical suite of tasks grounded in real-world multi-camera networks, compelling models to reason with absolute time information and infer unobserved states with multiple perspective changes. Our evaluation based on more than 10 popular VLMs reveals a critical performance gap, with even the best proprietary model, Gemini-2.5-Pro, achieving only 34.9\% accuracy. Our analysis attributes this poor performance to three primary deficiencies in current models. (1) VLMs' reasoning is impaired by an imbalanced utilization of spatial-temporal context. (2) VLMs are weak in temporal forecasting, which leads to worse performance on spatial-temporal prediction tasks than on spatial reasoning tasks. (3) VLMs lack the proficiency to comprehend or align the map data with multi-view video inputs. We believe that GTR-Bench offers valuable insights and helps bridge the gap between VLMs and generalized spatial intelligence.
 
 ## ✨ GTR-Bench
 
@@ -43,13 +14,13 @@ Evaluation of 10+ popular VLMs on GTR-Bench reveals significant performance gaps
 
 GTR-Bench includes **7 task types** across two categories, evaluated using **MCQ Accuracy** or **ST-IoU** metrics:
 
-#### 📋 Basic Tasks (MCQ Accuracy)
+#### 📋 Basic Tasks
 - **Geo-Location (GL)**: Infer intermediate locations between start/end points
 - **Arrival Time-Interval (ATI)**: Predict time interval of target's arrival at specific location  
 - **Motion-State (MS)**: Infer target's motion state at intermediate locations
-- **Causal Reordering (CR)**: Determine correct chronological sequence from unordered video clips
 
-#### 🔗 Combinatorial Tasks (ST-IoU)
+#### 🔗 Combinatorial Tasks
+- **Causal Reordering (CR)**: Determine correct chronological sequence from unordered video clips
 - **Next Spot Forecasting (NSF)**: Predict next camera location and time interval
 - **Trajectory Forecasting (TF)**: Forecast complete future trajectory sequence
 - **Multi-Target Trajectory Forecasting (MTTF)**: Predict meeting point of two targets
