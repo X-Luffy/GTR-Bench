@@ -2,13 +2,6 @@
 
 This directory contains the map images for the indoor scenario.
 
-## Download Instructions
-
-Due to file size limitations, the map images are hosted on HuggingFace.
-
-**Download from HuggingFace**: [GTR-Bench Dataset](https://huggingface.co/datasets/your-username/gtr-bench)
-
-After downloading, extract the files to this directory to use the assessment system.
 
 ## File Structure
 
