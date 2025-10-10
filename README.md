@@ -10,7 +10,7 @@ Enhancing the spatial intelligence of Visual-Language Models (VLMs) is critical 
 
 ## ✨ GTR-Bench
 
-![task fig](msic/task_fig.png)
+![task fig](misc/task_fig.png)
 
 ### 🧠 Task Types & Evaluation
 
