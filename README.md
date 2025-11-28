@@ -1,155 +1,162 @@
-# GTR-Bench Evaluation System
+# GTR-Bench: Evaluating Geo-Temporal Reasoning in Vision-Language Models
 
-A comprehensive visual reasoning evaluation platform based on Streamlit, supporting both human assessment and automated model evaluation.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## 🎯 Project Overview
+## 📖 Abstract
 
-GTR-Bench is a comprehensive visual reasoning evaluation platform designed to assess model capabilities in complex visual scenarios. The system supports two evaluation modes:
+Enhancing the spatial intelligence of Visual-Language Models (VLMs) is critical for applications like autonomous driving and embodied AI, yet existing benchmarks fail to assess complex, real-world reasoning. Current benchmarks are often confined to single or a few camera views, with limited perspective changes and understanding tasks for observed scenarios. To address these gaps, we introduce the Geo-Temporal Reasoning benchmark (GTR-Bench), a novel challenge to evaluate the spatial intelligence of VLMs. It features a hierarchical suite of tasks grounded in real-world multi-camera networks, compelling models to reason with absolute time information and infer unobserved states with multiple perspective changes. Our evaluation based on more than 10 popular VLMs reveals a critical performance gap, with even the best proprietary model, Gemini-2.5-Pro, achieving only 34.9\% accuracy. Our analysis attributes this poor performance to three primary deficiencies in current models. (1) VLMs' reasoning is impaired by an imbalanced utilization of spatial-temporal context. (2) VLMs are weak in temporal forecasting, which leads to worse performance on spatial-temporal prediction tasks than on spatial reasoning tasks. (3) VLMs lack the proficiency to comprehend or align the map data with multi-view video inputs. We believe that GTR-Bench offers valuable insights and helps bridge the gap between VLMs and generalized spatial intelligence.
 
-1. **Human Assessment**: Manual evaluation through web interface to establish human baselines
-2. **Automated Model Evaluation**: Automatic evaluation of various visual reasoning models through API calls
+## ✨ GTR-Bench
 
-## ✨ Key Features
+![task fig](misc/task_fig.png)
 
-### 🧠 Supported Task Types
-- **MotionState**
-- **GeoLocation**
-- **ArrivalTimeInterval**
-- **CausalReordering**
-- **TrajectoryForecasting**
-- **NextSpotForecasting**
-- **MultiTargetTrajectoryForecasting**
+### 🧠 Task Types & Evaluation
 
-### 🌍 Supported Data Scenarios
-- **Indoor**: Indoor scenarios
-- **Outdoor**: Outdoor scenarios
+GTR-Bench includes **7 task types** across two categories, evaluated using **MCQ Accuracy** or **ST-IoU** metrics:
 
-### 🤖 Model Evaluation Features
-- OpenAI-compatible API interface support
-- Real-time progress monitoring
-- Automatic result analysis and visualization
-- Support for batch evaluation and single case testing
+#### 📋 Basic Tasks
+- **Geo-Location (GL)**: Infer intermediate locations between start/end points
+- **Arrival Time-Interval (ATI)**: Predict time interval of target's arrival at specific location  
+- **Motion-State (MS)**: Infer target's motion state at intermediate locations
 
-## 🚀 Quick Start
+#### 🔗 Combinatorial Tasks
+- **Causal Reordering (CR)**: Determine correct chronological sequence from unordered video clips
+- **Next Spot Forecasting (NSF)**: Predict next camera location and time interval
+- **Trajectory Forecasting (TF)**: Forecast complete future trajectory sequence
+- **Multi-Target Trajectory Forecasting (MTTF)**: Predict meeting point of two targets
 
-### Prerequisites
-- Python 3.8+
-- Streamlit
-- OpenCV
-- PIL/Pillow
-- NumPy
-- Pandas
-
-### Data Preparation
-
-Before using GTR-Bench, you need to download and prepare the required datasets:
-
-#### 1. Download CityFlow Dataset (Outdoor Scenarios)
-- **Source**: [AI City Challenge](https://www.aicitychallenge.org/)
-- **Purpose**: Outdoor scenario data for vehicle tracking and re-identification
-- **Download**: Visit the official website and download the CityFlow dataset
-- **Extract**: Place the extracted data in `./data/outdoor/cityflow/` directory
-- **Expected Structure**: `./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c020/vdo.avi`
-
-#### 2. Download MTMMC Dataset (Indoor Scenarios)
-- **Source**: [MTMMC Dataset](https://sites.google.com/view/mtmmc)
-- **Purpose**: Indoor scenario data for multi-modal camera tracking
-- **Download**: Visit the official website and download the MTMMC dataset
-- **Extract**: Place the extracted data in `./data/indoor/mtmmc/` directory
-- **Expected Structure**: `./data/indoor/mtmmc/train/s01/c03/rgb`
-
-### Installation
-```bash
-pip install -r requirements.txt
-```
-
-### Launch System
-```bash
-# Method 1: Using startup script
-chmod +x run.sh
-./run.sh
-
-# Method 2: Direct launch
-streamlit run app.py --server.port 8505
-```
-
-### Access System
-Open your browser and visit: `http://localhost:8505`
+#### 🎯 Evaluation Metrics
+- **MCQ Accuracy**: Binary score (0/1) for basic tasks
+- **ST-IoU**: Continuous score (0-1) for forecasting tasks, calculated as `MCQ_Accuracy × Time_IoU`
+- **Scoring Logic**: MCQ must be correct to receive any score; time precision determines final score for forecasting tasks
 
 ## 📁 Project Structure
 
 ```
-├── app.py                          # Main application file
-├── run.sh                          # Startup script
-├── requirements.txt                 # Dependencies list
-├── README.md                       # Project documentation
-├── data/                           # Data directory
-│   ├── indoor/                     # Indoor scenario data
-│   └── outdoor/                    # Outdoor scenario data
-├── eval/                           # Evaluation module
-│   ├── eval.py                     # Main evaluation script
-│   ├── eval_type.py                # Evaluation type definitions
-│   ├── run_full_evaluation.sh      # Full evaluation script
-│   ├── results/                    # Evaluation results directory
-│   └── prompt/                     # Prompt modules
-│       ├── question_info.py        # Question information
-│       ├── map_info.py             # Map information
-│       └── video_info.py           # Video information
-├── utils/                          # Utility modules
-│   ├── data_loader.py              # Data loader
-│   ├── video_processor.py          # Video processor
-│   └── scoring.py                  # Scoring system
-└── components/                     # UI components
-    ├── question_display.py         # Question display component
-    └── result_display.py           # Result display component
+GTR-Bench/
+├── 📄 app.py                       # Main Streamlit application
+├── 🚀 run.sh                       # Startup script
+├── 📋 requirements.txt             # Python dependencies
+├── 📖 README.md                    # Project documentation
+├── 📊 LICENSE                      # MIT License
+│
+├── 📁 data/                        # Dataset directory
+│   ├── 🏠 indoor/                  # Indoor scenario data
+│   │   ├── mtmmc/                  # MTMMC dataset
+│   │   └── homography/             # Indoor Camera homography data
+│   └── 🌆 outdoor/                 # Outdoor scenario data
+│       └── cityflow/               # CityFlow dataset
+│
+├── 📁 eval/                        # Evaluation framework
+│   ├── 🐍 eval.py                  # Main evaluation script
+│   ├── 📝 eval_type.py             # Evaluation type definitions
+│   ├── 📁 prompt/                  # Benchmark Prompt Template
+│   │   ├── question_info.py        # Question Prompt Template
+│   │   ├── map_info.py             # Map Prompt Template
+│   │   └── video_info.py           # Video Prompt Template
+│   └── 📁 utils/                   # Evaluation utilities
+│       ├── image_utils.py          # Image processing
+│       ├── time_utils.py           # Time utilities
+│       └── scoring.py              # Scoring algorithms
+│
+└── 📁 utils/                       # Core utilities
+    ├── 📊 data_loader.py           # Data loading and management
+    ├── 🎥 video_processor.py       # Video processing utilities
+    └── 🎯 scoring.py               # Scoring system
 ```
+
+
+### 📊 Data Preparation
+
+> ⚠️ **Important**: Before using GTR-Bench, you need to download and prepare the required datasets.
+
+#### 🌆 Outdoor Scenarios (CityFlow Dataset)
+```bash
+# Download from AI City Challenge
+# Source: https://www.aicitychallenge.org/
+# Purpose: Vehicle tracking and re-identification
+
+# Expected directory structure:
+./data/outdoor/cityflow/
+└── AICity22_Track1_MTMC_Tracking/
+    └── train/
+        └── S04/
+            └── c020/
+                └── vdo.avi
+```
+
+#### 🏠 Indoor Scenarios (MTMMC Dataset)
+```bash
+# Download from MTMMC Dataset
+# Source: https://sites.google.com/view/mtmmc
+# Purpose: Multi-modal camera tracking
+
+# Expected directory structure:
+./data/indoor/mtmmc/
+└── train/
+    └── s01/
+        └── c03/
+            └── rgb/
+```
+
+### 🚀 Launch System
+
+#### Method 1: Using Startup Script (Recommended)
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+#### Method 2: Direct Launch
+```bash
+streamlit run app.py --server.port 8506 --server.address 0.0.0.0
+```
+
+### 🌐 Access System
+Open your browser and visit: **http://localhost:8506**
 
 ## 🎮 Usage Guide
 
-### Human Assessment
-1. Select scene and task type in the sidebar
-2. Click "🔄 Load Question Data"
-3. View map and camera images
-4. Answer questions and submit
-5. View scoring results
+### 👤 Human Assessment
 
-### Automated Model Evaluation
-1. Click "🚀 Launch Model Evaluation"
-2. Configure model parameters (API Key, Base URL, etc.)
-3. Select test scope and number of cases
-4. Click "🚀 Start Evaluation"
-5. Monitor evaluation progress in real-time
-6. View evaluation results
+1. **📋 Setup**: Select scene (indoor/outdoor) and task type in the sidebar
+2. **🔄 Load Data**: Click "🔄 Load Question Data" to load evaluation cases
+3. **👀 Review**: View map and camera images for context
+4. **✍️ Answer**: Complete questions and submit responses
+5. **📊 Results**: View scoring results and performance metrics
 
-### Result Analysis
-1. Click "📈 View Evaluation Results"
-2. Select evaluation result file
-3. View statistical information and detailed results
-4. Analyze model performance
+### 🤖 Automated Model Evaluation
 
-## 🔧 Configuration
+1. **🚀 Launch**: Click "🚀 Launch Model Evaluation" in sidebar
+2. **⚙️ Configure**: Set model parameters:
+   - Model name (e.g., `gpt-4o`, `claude-3-sonnet`)
+   - API Key and Base URL
+   - Max tokens and temperature
+3. **📋 Select Scope**: Choose test scope:
+   - **Specific Scene-Task**: Test specific scenario
+   - **All Scenes-Tasks**: Comprehensive evaluation
+4. **▶️ Start**: Click "🚀 Start Evaluation"
+5. **📈 Monitor**: Watch real-time progress and logs
+6. **📊 Analyze**: View evaluation results and statistics
 
-### Environment Setup
-- Ensure Python environment is properly installed
-- Install all required dependencies
-- Configure conda environment (if needed)
+### 📈 Result Analysis
 
-### API Configuration
-- Prepare OpenAI-compatible API key
-- Configure correct Base URL
-- Set appropriate model parameters
+1. **📁 Select**: Click "📈 View Evaluation Results"
+2. **📄 Choose File**: Select evaluation result JSON file
+3. **📊 Statistics**: View overall performance metrics
+4. **🔍 Details**: Analyze individual case results
+5. **📥 Export**: Download results as CSV for further analysis
 
-### Data Configuration
-- Ensure data files are in the correct directories
-- Check data file formats are correct
-- Verify image and video file paths
 
-## 📊 Evaluation Metrics
+## 🙏 Acknowledgments
 
-The system supports multiple evaluation metrics:
+- **CityFlow Dataset**: AI City Challenge organizers
+- **MTMMC Dataset**: Multi-Target Multi-Modal Camera tracking team
+- **Streamlit**: For the excellent web framework
 
-- **MCQ Accuracy**: Multiple choice question accuracy
-- **Time IoU**: Time range intersection over union
-- **Overall Score**: Comprehensive score
+
+</div>
 
 
