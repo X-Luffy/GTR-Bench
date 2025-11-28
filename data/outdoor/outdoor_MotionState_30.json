@@ -3844,7 +3844,7 @@
         {
           "camera_id": "c064",
           "object_id": 309,
-          "video_path": "./raw_video/outdoor_S04_c036.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c036/vdo.avi",
           "frame_ids": [
             46,
             70,
@@ -3898,7 +3898,7 @@
         {
           "camera_id": "c036",
           "object_id": 309,
-          "video_path": "./raw_video/outdoor_S04_c038.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c038/vdo.avi",
           "frame_ids": [
             84,
             96,
@@ -3984,7 +3984,7 @@
         {
           "camera_id": "c011",
           "object_id": 309,
-          "video_path": "./raw_video/outdoor_S04_c037.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c037/vdo.avi",
           "frame_ids": [
             62,
             84,
@@ -4031,7 +4031,7 @@
         {
           "camera_id": "c097",
           "object_id": 309,
-          "video_path": "./raw_video/outdoor_S04_c039.avi",
+          "video_path": "./data/outdoor/cityflow/AICity22_Track1_MTMC_Tracking/train/S04/c039/vdo.avi",
           "frame_ids": [
             157,
             175,

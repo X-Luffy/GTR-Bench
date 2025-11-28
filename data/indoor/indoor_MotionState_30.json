@@ -3753,7 +3753,7 @@
         {
           "camera_id": "c14",
           "object_id": 128,
-          "video_path": "./raw_video/indoor_s01_c14",
+          "video_path":"./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             0,
             158,
@@ -3807,7 +3807,7 @@
         {
           "camera_id": "c09",
           "object_id": 128,
-          "video_path": "./raw_video/indoor_s01_c09",
+          "video_path":"./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             1098,
             1115,
@@ -3893,7 +3893,7 @@
         {
           "camera_id": "c03",
           "object_id": 114,
-          "video_path": "./raw_video/indoor_s01_c03",
+          "video_path":"./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             4107,
             4165,
@@ -3947,7 +3947,7 @@
         {
           "camera_id": "c13",
           "object_id": 114,
-          "video_path": "./raw_video/indoor_s01_c13",
+          "video_path":"./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             4665,
             5204,
@@ -4033,7 +4033,7 @@
         {
           "camera_id": "c07",
           "object_id": 112,
-          "video_path": "./raw_video/indoor_s01_c07",
+          "video_path":"./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             1994,
             2015,
@@ -4087,7 +4087,7 @@
         {
           "camera_id": "c01",
           "object_id": 112,
-          "video_path": "./raw_video/indoor_s01_c01",
+          "video_path":"./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             2310,
             2346,
