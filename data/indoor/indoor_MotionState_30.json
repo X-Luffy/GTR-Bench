@@ -107,9 +107,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:15.440) and [end video] (c05, 12:00:28.360-12:00:34.320),\nand the intermediate camera c04, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:15.440)和[终点视频](c05, 12:00:28.360-12:00:34.320)，\n以及中间经过的摄像头c04，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target moved southeast at 1.7 m/s for 2.2 meters, then accelerated eastward to 2.3 m/s for 20.6 meters, and finally moved northeast at 1.1–2.0 m/s for 9.4 meters.",
       "choices": [
         "A. The target began moving rapidly toward the northwest at a speed of 2.4 m/s , covering a distance of 3.3 meters, and then proceeded westward at a speed of 1.8 m/s for 16.7 meters.",
@@ -240,9 +238,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c04, 12:00:13.480-12:00:30.520) and [end video] (c01, 12:00:43.840-12:01:47.400),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c04, 12:00:13.480-12:00:30.520)和[终点视频](c01, 12:00:43.840-12:01:47.400)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moved north at 1.8 m/s for 2.2 meters, then traveled northeast for 18.5 meters at a fluctuating speed, and finally turned southeast, moving with a gradual deceleration.",
       "choices": [
         "A. The target moved southeast at a speed of 1.7 m/s for 9.63 meters, then slowed down to 0.9 m/s.",
@@ -380,9 +376,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c02, 12:00:01.280-12:00:40.160) and [end video] (c05, 12:00:43.560-12:01:00.640),\nand the intermediate camera c04, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c02, 12:00:01.280-12:00:40.160)和[终点视频](c05, 12:00:43.560-12:01:00.640)，\n以及中间经过的摄像头c04，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target moved eastward for 14.9 meters at a speed of 2.0–2.3 m/s, then turned northwest and traveled 6.0 meters at a speed of 2.0–2.3 m/s, and finally moved westward for 19.7 meters at a gradually decreasing speed from 2.0 m/s to 0.9 m/s.",
       "choices": [
         "A. The target moved westward at a speed of 1.6 m/s for approximately 27.2 meters, and then moved eastward at a speed of 2.0 m/s for approximately 57.78 meters.",
@@ -520,9 +514,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c12, 12:01:04.120-12:01:12.520) and [end video] (c16, 12:01:18.440-12:01:46.880),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:01:04.120-12:01:12.520)和[终点视频](c16, 12:01:18.440-12:01:46.880)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moved eastward for 10.46 meters with gradually increasing speed.",
       "choices": [
         "A. The target moved eastward for 10.46 meters with gradually increasing speed.",
@@ -660,9 +652,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:06.240) and [end video] (c08, 12:00:26.600-12:00:37.040),\nand the intermediate camera c07, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:06.240)和[终点视频](c08, 12:00:26.600-12:00:37.040)，\n以及中间经过的摄像头c07，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target moves west at a speed of 1.4 m/s for 2.0 meters, then moves northwest at a speed of 1.4 m/s for 3.0 meters, and finally moves north at a speed of 1.3 m/s for 1.4 meters.",
       "choices": [
         "A. The target moves west at a speed of 0.6 m/s for 0.8 meters, then walks north at a speed of 0.9 m/s for 1.9 meters, and then turns southeast and moves 1.7 meters at a speed of 0.6 m/s.",
@@ -800,9 +790,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c03, 12:03:56.360-12:04:08.800) and [end video] (c13, 12:04:18.520-12:04:22.040),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:03:56.360-12:04:08.800)和[终点视频](c13, 12:04:18.520-12:04:22.040)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moves east at a speed of 1.2 m/s for 1.6 meters, then proceeds southeast at a speed of 0.8 m/s for 1.1 meters.",
       "choices": [
         "A. The target moves east at a speed of 1.2 m/s for 1.6 meters, then proceeds southeast at a speed of 0.8 m/s for 1.1 meters.",
@@ -933,9 +921,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:08.800) and [end video] (c08, 12:00:39.280-12:00:47.640),\nand the intermediate camera c07, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:08.800)和[终点视频](c08, 12:00:39.280-12:00:47.640)，\n以及中间经过的摄像头c07，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moves west at a speed of 1.0 m/s for 1.5 meters, then turns northwest and moves 1.2 meters at 1.0 m/s, then moves north again at 1.0 m/s for 1.3 meters.",
       "choices": [
         "A. The target moves east at a speed of 1.2 m/s for 1.6 meters, and then proceeds southeast at a speed of 0.8 m/s for 1.1 meters.",
@@ -1073,9 +1059,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c01, 12:02:31.560-12:03:41.200) and [end video] (c03, 12:03:56.360-12:04:08.800),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:31.560-12:03:41.200)和[终点视频](c03, 12:03:56.360-12:04:08.800)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target moves west at a speed of 1.7 m/s for 18.2 meters, then moves northwest at a speed decreasing from 1.9 m/s to 1.0 m/s, and finally moves west again at a speed of 1.3 m/s for 1.6 meters.",
       "choices": [
         "A. The target moves east for 1.4 meters at 0.6 m/s, then walks briskly northeast for 1.3 meters at 1.1 m/s, followed by a brisk walk southeast for 3.8 meters at 1.5 m/s, and finally makes a rapid dash south for 1.0 meter at 3.9 m/s.",
@@ -1206,9 +1190,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c06, 12:00:31.800-12:00:32.560) and [end video] (c01, 12:00:50.080-12:01:09.280),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c06, 12:00:31.800-12:00:32.560)和[终点视频](c01, 12:00:50.080-12:01:09.280)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moved north at approximately 1.5 m/s for about 9.7 meters, then moved east at approximately 1.4 m/s for about 4.7 meters, and finally moved northwest, gradually accelerating to 2.1 m/s, for about 17.6 meters.",
       "choices": [
         "A. The target moved north at approximately 1.5 m/s for about 9.7 meters, then moved east at approximately 1.4 m/s for about 4.7 meters, and finally moved northwest, gradually accelerating to 2.1 m/s, for about 17.6 meters.",
@@ -1346,9 +1328,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c04, 12:01:10.600-12:01:24.800) and [end video] (c01, 12:01:37.640-12:02:06.320),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c04, 12:01:10.600-12:01:24.800)和[终点视频](c01, 12:01:37.640-12:02:06.320)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moves west at 1.6 m/s for 12.6 meters.",
       "choices": [
         "A. The target accelerates southeast at 1.3 m/s for 3.3 meters, then continues to move slowly southeast at 0.7 m/s.",
@@ -1486,9 +1466,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c01, 12:02:26.440-12:02:43.560) and [end video] (c08, 12:02:45.920-12:02:50.600),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:26.440-12:02:43.560)和[终点视频](c08, 12:02:45.920-12:02:50.600)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target moves north at 0.6 m/s for 3.6 meters, then continues accelerating southwest to 0.9 m/s for 10.0 meter.",
       "choices": [
         "A. The target moves south at 0.5 m/s for 0.8 meters, then accelerates northwest to 1.3 m/s for 3.3 meters, and finally continues slowly northwest at 0.7 m/s.",
@@ -1626,9 +1604,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c01, 12:03:29.640-12:04:04.480) and [end video] (c02, 12:04:13.680-12:04:34.800),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:03:29.640-12:04:04.480)和[终点视频](c02, 12:04:13.680-12:04:34.800)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target moved north at 0.7 m/s for 3.8 meters, then walked briskly southwest at 1.1 m/s for 5.9 meters.",
       "choices": [
         "A. The target moved southwest at a speed of 0.9 m/s for 7.1 meters, then quickly moved west at a speed of 1.5 m/s for 1.8 meters.",
@@ -1759,9 +1735,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c05, 12:03:41.280-12:04:06.720) and [end video] (c04, 12:04:28.240-12:04:39.400),\nand the intermediate camera c02, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c05, 12:03:41.280-12:04:06.720)和[终点视频](c04, 12:04:28.240-12:04:39.400)，\n以及中间经过的摄像头c02，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moves southeast at a speed of 1.0 m/s for 1.7 meters, then accelerates to 1.2 m/s and continues moving southeast for another 1.6 meters, and finally proceeds east at a speed of 1.3 m/s.",
       "choices": [
         "A. The target moves southeast at a speed of 1.0 m/s for 1.7 meters, then accelerates to 1.2 m/s and continues moving southeast for another 1.6 meters, and finally proceeds east at a speed of 1.3 m/s.",
@@ -1899,9 +1873,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c04, 12:03:22.200-12:03:29.040) and [end video] (c06, 12:03:51.640-12:03:52.280),\nand the intermediate camera c02, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c04, 12:03:22.200-12:03:29.040)和[终点视频](c06, 12:03:51.640-12:03:52.280)，\n以及中间经过的摄像头c02，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moves west at a speed of 0.9 m/s for 2.4 meters, then accelerates to 1.5 m/s and continues west for another 1.5 meters, and finally moves southwest at a speed of 1.2–1.7 m/s for 15.9 meters.",
       "choices": [
         "A. The target moved 1.2 meters to the northeast at 1.1 m/s, then accelerated eastward to 1.8 m/s and traveled 2.7 meters, and finally walked 1.3 meters north at 0.9 m/s.",
@@ -2032,9 +2004,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c08, 12:00:51.800-12:01:02.360) and [end video] (c05, 12:01:14.480-12:01:16.600),\nand the intermediate camera c01, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:00:51.800-12:01:02.360)和[终点视频](c05, 12:01:14.480-12:01:16.600)，\n以及中间经过的摄像头c01，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moved northeast at 1.1 m/s for 1.2 meters, then accelerated eastward to 1.8 m/s and traveled 2.7 meters, and finally walked north at 0.9 m/s for 1.3 meters.",
       "choices": [
         "A. The target moves east at a speed of 2.1 m/s for a distance of 2.9 meters.",
@@ -2172,9 +2142,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c12, 12:02:14.560-12:02:19.240) and [end video] (c16, 12:02:25.840-12:02:32.320),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:02:14.560-12:02:19.240)和[终点视频](c16, 12:02:25.840-12:02:32.320)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target moves northeast at a speed of 1.6 m/s for 4.4 meters, then moves east at a speed of 1.5 m/s for 1.8 meters, and finally moves northeast again at a speed of 1.0 m/s for 1.6 meters.",
       "choices": [
         "A. The target quickly moves 6.1 meters to the southwest at a speed of 3.9 m/s, then gradually accelerates westward to a speed of 2.7 m/s, and finally decelerates while moving northwest at a speed of 0.8 m/s.",
@@ -2312,9 +2280,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c09, 12:03:42.400-12:03:47.640) and [end video] (c03, 12:04:08.640-12:04:19.720),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:03:42.400-12:03:47.640)和[终点视频](c03, 12:04:08.640-12:04:19.720)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moved west for 0.9 meters at a speed of 0.8 m/s, then continued west for 1.1 meters at 1.0 m/s, followed by moving north for 2.9 meters at 1.2 m/s, and finally dashed northwest for 0.8 meters at 2.2 m/s.",
       "choices": [
         "A. The target first moves west at a speed of 0.8 m/s for 12 meters, then accelerates to 2.3 m/s and quickly moves west for another 1.8 meters, and finally continues moving in the northwest direction.",
@@ -2452,9 +2418,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c08, 12:04:22.600-12:04:32.520) and [end video] (c02, 12:04:52.640-12:04:54.440),\nand the intermediate camera c07, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:04:22.600-12:04:32.520)和[终点视频](c02, 12:04:52.640-12:04:54.440)，\n以及中间经过的摄像头c07，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target moved southeast at 0.7 m/s for 6.05 meters, then accelerated to 1.2 m/s and maintained this speed for 1.2 seconds.",
       "choices": [
         "A. The target moved northeast at 1.0 m/s for 1.0 meter, then continued northeast at 1.2 m/s for 1.5 meters, and subsequently moved west at 1.3 m/s for 3.7 meters.",
@@ -2592,9 +2556,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c06, 12:00:34.520-12:00:35.560) and [end video] (c01, 12:01:24.160-12:01:55.600),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c06, 12:00:34.520-12:00:35.560)和[终点视频](c01, 12:01:24.160-12:01:55.600)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target first moved north at a speed of 1.0–1.7 m/s, then turned northeast and proceeded at a speed of 1.3–1.5 m/s, and finally completed the last 1.9 meters moving northeast at a speed of 1.2 m/s.",
       "choices": [
         "A. The target is moving northeast at a speed of 1.6 meters per second for 0.9m.",
@@ -2725,9 +2687,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c09, 12:00:32.960-12:00:41.800) and [end video] (c03, 12:01:48.440-12:02:01.000),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:00:32.960-12:00:41.800)和[终点视频](c03, 12:01:48.440-12:02:01.000)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target moved southwest at a speed of 1.4 m/s for a distance of 2.0 meters, and then moved south at a speed of 1.3 m/s for 1.4 meters.",
       "choices": [
         "A. The target moved south at a speed of 2.0 m/s for 2.3 meters, then continued heading south at a speed of 1.0–1.2 m/s for 6.2 meters, and then accelerated to 1.4 m/s to continue moving south for another 1.9 meters.",
@@ -2865,9 +2825,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c16, 12:00:00.600-12:00:11.680) and [end video] (c12, 12:01:33.520-12:01:37.760),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c16, 12:00:00.600-12:00:11.680)和[终点视频](c12, 12:01:33.520-12:01:37.760)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target continued moving westward for 19.02 meters at an average speed of 2.15 m/s.",
       "choices": [
         "A. The target moved south at a speed of 2.0 m/s for 2.3 meters, then continued south at a speed of 1.0–1.2 m/s for 6.2 meters, and then accelerated to 1.4 m/s to continue moving south for another 1.9 meters.",
@@ -3005,9 +2963,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c12, 12:01:55.680-12:02:01.880) and [end video] (c16, 12:02:08.640-12:02:52.520),\nand the intermediate camera c09, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:01:55.680-12:02:01.880)和[终点视频](c16, 12:02:08.640-12:02:52.520)，\n以及中间经过的摄像头c09，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target continued moving east at 1.4 m/s for 11.09 meters.",
       "choices": [
         "A. The target moves 2.3 meters southwest at a speed of 1.7 m/s, then remains stationary for 14.2 seconds.",
@@ -3166,9 +3122,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c03, 12:00:29.760-12:00:30.080) and [end video] (c13, 12:00:44.000-12:00:47.640),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:00:29.760-12:00:30.080)和[终点视频](c13, 12:00:44.000-12:00:47.640)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "B. The target moves southeast for 1.4 meters at a speed of 1.0 m/s, and then moves west for 1.2 meters at a speed of 0.6 m/s.",
       "choices": [
         "A. The target moved 1.39 meters to the southeast at a speed of 3.3 m/s.",
@@ -3299,9 +3253,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c09, 12:02:05.280-12:02:11.440) and [end video] (c14, 12:02:19.400-12:02:44.120),\nand the intermediate camera c16, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:02:05.280-12:02:11.440)和[终点视频](c14, 12:02:19.400-12:02:44.120)，\n以及中间经过的摄像头c16，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moved northeast at approximately 2.3 m/s for 27.2 meters, then remained stationary in the east direction for about 24.7 seconds, and finally resumed moving east at 2.0 m/s until 12:02:52.200.",
       "choices": [
         "A. The target moved northeast at approximately 2.3 m/s for 27.2 meters, then remained stationary in the east direction for about 24.7 seconds, and finally resumed moving east at 2.0 m/s until 12:02:52.200.",
@@ -3439,9 +3391,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c01, 12:02:50.520-12:03:15.640) and [end video] (c11, 12:03:39.600-12:03:50.080),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:50.520-12:03:15.640)和[终点视频](c11, 12:03:39.600-12:03:50.080)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moves rapidly toward the northeast at a speed of 2.9 m/s for a distance of 5.2 meters, then slows down to 1.9 m/s and continues moving northeast for another 3.0 meters, and finally further reduces its speed to 1.7 m/s, moving northeast for an additional 2.0 meters.",
       "choices": [
         "A. The target moves rapidly toward the northeast at a speed of 2.9 m/s for a distance of 5.2 meters, then slows down to 1.9 m/s and continues moving northeast for another 3.0 meters, and finally further reduces its speed to 1.7 m/s, moving northeast for an additional 2.0 meters.",
@@ -3579,9 +3529,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c09, 12:04:31.960-12:04:35.640) and [end video] (c12, 12:04:49.000-12:04:50.080),\nand the intermediate camera c13, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:04:31.960-12:04:35.640)和[终点视频](c12, 12:04:49.000-12:04:50.080)，\n以及中间经过的摄像头c13，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "C. The target moved 7.0 meters to the west, and then continued to move another 3.5 meters to the west.",
       "choices": [
         "A. The target first moved northwest at a speed of 1.3 m/s for approximately 3.3 meters, then traveled west at a speed of 2.0 m/s for about 8.0 meters, and finally moved southwest at a speed of 1.7 m/s for approximately 3.0 meters.",
@@ -3719,9 +3667,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c07, 12:00:04.880-12:00:09.560) and [end video] (c01, 12:00:33.720-12:00:44.160),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c07, 12:00:04.880-12:00:09.560)和[终点视频](c01, 12:00:33.720-12:00:44.160)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moved north at a speed of 2.03 m/s for 23.57 meters, then turned northwest and proceeded at a speed of 1.2 m/s.",
       "choices": [
         "A. The target moved north at a speed of 2.03 m/s for 23.57 meters, then turned northwest and proceeded at a speed of 1.2 m/s.",
@@ -3753,7 +3699,7 @@
         {
           "camera_id": "c14",
           "object_id": 128,
-          "video_path":"./data/indoor/mtmmc/train/s01/c14/rgb",
+          "video_path": "./data/indoor/mtmmc/train/s01/c14/rgb",
           "frame_ids": [
             0,
             158,
@@ -3807,7 +3753,7 @@
         {
           "camera_id": "c09",
           "object_id": 128,
-          "video_path":"./data/indoor/mtmmc/train/s01/c09/rgb",
+          "video_path": "./data/indoor/mtmmc/train/s01/c09/rgb",
           "frame_ids": [
             1098,
             1115,
@@ -3859,9 +3805,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c14, 12:00:00.000-12:00:31.680) and [end video] (c09, 12:00:43.920-12:00:47.320),\nand the intermediate camera c16, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c14, 12:00:00.000-12:00:31.680)和[终点视频](c09, 12:00:43.920-12:00:47.320)，\n以及中间经过的摄像头c16，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "D. The target moved southwest for 11.7 meters at a speed of 8.2 m/s, then moved southeast for 5.4 meters at a speed of 4.6 m/s, and finally accumulated a total movement of approximately 16.8 meters to the southwest.",
       "choices": [
         "A. The target moves 1.4 meters to the northeast at 1.0 m/s, and then continues to move 3.5 meters to the north at 1.7 m/s.",
@@ -3893,7 +3837,7 @@
         {
           "camera_id": "c03",
           "object_id": 114,
-          "video_path":"./data/indoor/mtmmc/train/s01/c03/rgb",
+          "video_path": "./data/indoor/mtmmc/train/s01/c03/rgb",
           "frame_ids": [
             4107,
             4165,
@@ -3947,7 +3891,7 @@
         {
           "camera_id": "c13",
           "object_id": 114,
-          "video_path":"./data/indoor/mtmmc/train/s01/c13/rgb",
+          "video_path": "./data/indoor/mtmmc/train/s01/c13/rgb",
           "frame_ids": [
             4665,
             5204,
@@ -3999,9 +3943,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c03, 12:02:44.280-12:02:56.000) and [end video] (c13, 12:03:06.600-12:04:54.440),\nand the intermediate camera c12, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:02:44.280-12:02:56.000)和[终点视频](c13, 12:03:06.600-12:04:54.440)，\n以及中间经过的摄像头c12，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target moves southeast for 1.1 meters at a speed of 0.9 m/s, and then continues southeast for another 1.6 meters at a speed of 0.6 m/s.",
       "choices": [
         "A. The target moves southeast for 1.1 meters at a speed of 0.9 m/s, and then continues southeast for another 1.6 meters at a speed of 0.6 m/s.",
@@ -4033,7 +3975,7 @@
         {
           "camera_id": "c07",
           "object_id": 112,
-          "video_path":"./data/indoor/mtmmc/train/s01/c07/rgb",
+          "video_path": "./data/indoor/mtmmc/train/s01/c07/rgb",
           "frame_ids": [
             1994,
             2015,
@@ -4087,7 +4029,7 @@
         {
           "camera_id": "c01",
           "object_id": 112,
-          "video_path":"./data/indoor/mtmmc/train/s01/c01/rgb",
+          "video_path": "./data/indoor/mtmmc/train/s01/c01/rgb",
           "frame_ids": [
             2310,
             2346,
@@ -4132,9 +4074,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理目标在中间时间段的运动状态",
       "question": "\nBased on the provided [start video] (c07, 12:01:19.760-12:01:24.000) and [end video] (c01, 12:01:32.400-12:01:39.560),\nand the intermediate camera c05, infer the target's motion state during the intermediate time period.\n",
-      "question_cn": "\n基于提供的[起点视频](c07, 12:01:19.760-12:01:24.000)和[终点视频](c01, 12:01:32.400-12:01:39.560)，\n以及中间经过的摄像头c05，推理目标在中间时间段的运动状态是？\n",
       "ground_truth": "A. The target first moved northeast at a speed of approximately 2.1 m/s for 18 meters, and then walked north at a speed of 0.8 m/s for 4.36 meters.",
       "choices": [
         "A. The target first moved northeast at a speed of approximately 2.1 m/s for 18 meters, and then walked north at a speed of 0.8 m/s for 4.36 meters.",

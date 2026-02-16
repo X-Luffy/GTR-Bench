@@ -57,7 +57,7 @@
           ],
           "start_timestamp": 46.073,
           "end_timestamp": 53.573,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         },
         {
           "camera_id": "c027",
@@ -111,12 +111,10 @@
           ],
           "start_timestamp": 63.022,
           "end_timestamp": 72.222,
-          "direction": "北偏东78.46°"
+          "direction": "78.46° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c038",
         "B. c092",
@@ -189,7 +187,7 @@
           ],
           "start_timestamp": 94.597,
           "end_timestamp": 111.697,
-          "direction": "南偏东81.95°"
+          "direction": "81.95° South of East"
         },
         {
           "camera_id": "c019",
@@ -243,12 +241,10 @@
           ],
           "start_timestamp": 112.51,
           "end_timestamp": 118.61,
-          "direction": "南偏东33.05°"
+          "direction": "33.05° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c076",
         "B. c012",
@@ -321,7 +317,7 @@
           ],
           "start_timestamp": 112.51,
           "end_timestamp": 118.61,
-          "direction": "南偏东33.05°"
+          "direction": "33.05° South of East"
         },
         {
           "camera_id": "c041",
@@ -375,12 +371,10 @@
           ],
           "start_timestamp": 134.288,
           "end_timestamp": 147.388,
-          "direction": "南偏东58.67°"
+          "direction": "58.67° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c085",
         "B. c048",
@@ -453,7 +447,7 @@
           ],
           "start_timestamp": 51.173,
           "end_timestamp": 59.373,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         },
         {
           "camera_id": "c027",
@@ -500,12 +494,10 @@
           ],
           "start_timestamp": 70.52199999999999,
           "end_timestamp": 80.422,
-          "direction": "北偏东78.46°"
+          "direction": "78.46° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c018",
         "B. c037",
@@ -571,7 +563,7 @@
           ],
           "start_timestamp": 70.52199999999999,
           "end_timestamp": 80.422,
-          "direction": "北偏东78.46°"
+          "direction": "78.46° North of East"
         },
         {
           "camera_id": "c073",
@@ -625,12 +617,10 @@
           ],
           "start_timestamp": 76.416,
           "end_timestamp": 84.116,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c041",
         "B. c034",
@@ -703,7 +693,7 @@
           ],
           "start_timestamp": 76.416,
           "end_timestamp": 84.116,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         },
         {
           "camera_id": "c089",
@@ -764,12 +754,10 @@
           ],
           "start_timestamp": 84.453,
           "end_timestamp": 85.053,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c021",
         "B. c067",
@@ -835,7 +823,7 @@
           ],
           "start_timestamp": 166.91799999999998,
           "end_timestamp": 179.51799999999997,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         },
         {
           "camera_id": "c025",
@@ -889,12 +877,10 @@
           ],
           "start_timestamp": 175.899,
           "end_timestamp": 183.399,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c085",
         "B. c061",
@@ -967,7 +953,7 @@
           ],
           "start_timestamp": 154.793,
           "end_timestamp": 176.593,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         },
         {
           "camera_id": "c075",
@@ -1014,12 +1000,10 @@
           ],
           "start_timestamp": 166.91799999999998,
           "end_timestamp": 179.51799999999997,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c018",
         "B. c035",
@@ -1092,7 +1076,7 @@
           ],
           "start_timestamp": 18.8,
           "end_timestamp": 31.0,
-          "direction": "南偏东49.14°"
+          "direction": "49.14° South of East"
         },
         {
           "camera_id": "c05",
@@ -1139,12 +1123,10 @@
           ],
           "start_timestamp": 35.518,
           "end_timestamp": 42.418,
-          "direction": "南偏东80.02°"
+          "direction": "80.02° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c061",
         "B. c064",
@@ -1217,7 +1199,7 @@
           ],
           "start_timestamp": 25.2,
           "end_timestamp": 31.0,
-          "direction": "南偏东49.14°"
+          "direction": "49.14° South of East"
         },
         {
           "camera_id": "c025",
@@ -1271,12 +1253,10 @@
           ],
           "start_timestamp": 56.455,
           "end_timestamp": 62.254999999999995,
-          "direction": "北偏东48.46°"
+          "direction": "48.46° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c017",
         "B. c059",
@@ -1349,7 +1329,7 @@
           ],
           "start_timestamp": 65.973,
           "end_timestamp": 70.973,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         },
         {
           "camera_id": "c047",
@@ -1403,12 +1383,10 @@
           ],
           "start_timestamp": 90.71600000000001,
           "end_timestamp": 98.01599999999999,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c057",
         "B. c064",
@@ -1481,7 +1459,7 @@
           ],
           "start_timestamp": 60.055,
           "end_timestamp": 65.055,
-          "direction": "北偏东48.46°"
+          "direction": "48.46° North of East"
         },
         {
           "camera_id": "c069",
@@ -1528,12 +1506,10 @@
           ],
           "start_timestamp": 65.279,
           "end_timestamp": 65.679,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c083",
         "B. c032",
@@ -1599,7 +1575,7 @@
           ],
           "start_timestamp": 92.816,
           "end_timestamp": 100.21600000000001,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         },
         {
           "camera_id": "c053",
@@ -1653,12 +1629,10 @@
           ],
           "start_timestamp": 100.553,
           "end_timestamp": 101.053,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c068",
         "B. c014",
@@ -1731,7 +1705,7 @@
           ],
           "start_timestamp": 131.399,
           "end_timestamp": 138.599,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c065",
@@ -1785,12 +1759,10 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 157.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c062",
         "B. c056",
@@ -1863,7 +1835,7 @@
           ],
           "start_timestamp": 124.419,
           "end_timestamp": 130.519,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         },
         {
           "camera_id": "c033",
@@ -1896,12 +1868,10 @@
           ],
           "start_timestamp": 130.933,
           "end_timestamp": 131.133,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c010",
         "B. c058",
@@ -1974,7 +1944,7 @@
           ],
           "start_timestamp": 177.36800000000002,
           "end_timestamp": 184.86800000000002,
-          "direction": "南偏东45.78°"
+          "direction": "45.78° South of East"
         },
         {
           "camera_id": "c09",
@@ -2021,12 +1991,10 @@
           ],
           "start_timestamp": 182.293,
           "end_timestamp": 184.293,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c083",
         "B. c066",
@@ -2092,7 +2060,7 @@
           ],
           "start_timestamp": 182.293,
           "end_timestamp": 184.293,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         },
         {
           "camera_id": "c028",
@@ -2139,12 +2107,10 @@
           ],
           "start_timestamp": 183.49699999999999,
           "end_timestamp": 190.397,
-          "direction": "南偏东54.13°"
+          "direction": "54.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c061",
         "B. c035",
@@ -2217,7 +2183,7 @@
           ],
           "start_timestamp": 126.319,
           "end_timestamp": 132.119,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         },
         {
           "camera_id": "c036",
@@ -2264,12 +2230,10 @@
           ],
           "start_timestamp": 132.433,
           "end_timestamp": 132.833,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c077",
         "B. c061",
@@ -2335,7 +2299,7 @@
           ],
           "start_timestamp": 150.993,
           "end_timestamp": 185.893,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         },
         {
           "camera_id": "c043",
@@ -2396,12 +2360,10 @@
           ],
           "start_timestamp": 185.268,
           "end_timestamp": 186.568,
-          "direction": "南偏东45.78°"
+          "direction": "45.78° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c079",
         "B. c056",
@@ -2474,7 +2436,7 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 178.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         },
         {
           "camera_id": "c032",
@@ -2521,12 +2483,10 @@
           ],
           "start_timestamp": 150.993,
           "end_timestamp": 185.893,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c088",
         "B. c064",
@@ -2599,7 +2559,7 @@
           ],
           "start_timestamp": 135.03300000000002,
           "end_timestamp": 135.53300000000002,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         },
         {
           "camera_id": "c045",
@@ -2653,12 +2613,10 @@
           ],
           "start_timestamp": 135.899,
           "end_timestamp": 143.699,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c058",
         "B. c042",
@@ -2731,7 +2689,7 @@
           ],
           "start_timestamp": 125.29899999999999,
           "end_timestamp": 131.899,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c09",
@@ -2785,12 +2743,10 @@
           ],
           "start_timestamp": 132.233,
           "end_timestamp": 133.333,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c049",
         "B. c034",
@@ -2856,7 +2812,7 @@
           ],
           "start_timestamp": 125.88799999999999,
           "end_timestamp": 135.288,
-          "direction": "南偏东58.67°"
+          "direction": "58.67° South of East"
         },
         {
           "camera_id": "c037",
@@ -2910,12 +2866,10 @@
           ],
           "start_timestamp": 133.619,
           "end_timestamp": 140.919,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c042",
         "B. c013",
@@ -2988,7 +2942,7 @@
           ],
           "start_timestamp": 133.619,
           "end_timestamp": 140.919,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         },
         {
           "camera_id": "c084",
@@ -3021,12 +2975,10 @@
           ],
           "start_timestamp": 141.333,
           "end_timestamp": 141.53300000000002,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c063",
         "B. c01",
@@ -3099,7 +3051,7 @@
           ],
           "start_timestamp": 136.099,
           "end_timestamp": 141.299,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c021",
@@ -3153,12 +3105,10 @@
           ],
           "start_timestamp": 141.53300000000002,
           "end_timestamp": 142.633,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c028",
         "B. c09",
@@ -3231,7 +3181,7 @@
           ],
           "start_timestamp": 137.488,
           "end_timestamp": 151.788,
-          "direction": "南偏东58.67°"
+          "direction": "58.67° South of East"
         },
         {
           "camera_id": "c057",
@@ -3278,12 +3228,10 @@
           ],
           "start_timestamp": 152.119,
           "end_timestamp": 157.519,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c030",
         "B. c078",
@@ -3349,7 +3297,7 @@
           ],
           "start_timestamp": 152.119,
           "end_timestamp": 157.519,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         },
         {
           "camera_id": "c09",
@@ -3403,12 +3351,10 @@
           ],
           "start_timestamp": 157.833,
           "end_timestamp": 158.333,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c052",
         "B. c044",
@@ -3481,7 +3427,7 @@
           ],
           "start_timestamp": 149.899,
           "end_timestamp": 156.499,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c087",
@@ -3528,12 +3474,10 @@
           ],
           "start_timestamp": 150.993,
           "end_timestamp": 151.393,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c066",
         "B. c044",
@@ -3606,7 +3550,7 @@
           ],
           "start_timestamp": 142.118,
           "end_timestamp": 153.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         },
         {
           "camera_id": "c074",
@@ -3660,12 +3604,10 @@
           ],
           "start_timestamp": 150.299,
           "end_timestamp": 156.699,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c03",
         "B. c048",
@@ -3738,7 +3680,7 @@
           ],
           "start_timestamp": 156.919,
           "end_timestamp": 163.019,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         },
         {
           "camera_id": "c098",
@@ -3785,12 +3727,10 @@
           ],
           "start_timestamp": 163.333,
           "end_timestamp": 163.733,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c087",
         "B. c058",

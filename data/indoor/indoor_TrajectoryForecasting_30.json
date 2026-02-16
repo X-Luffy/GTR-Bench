@@ -114,9 +114,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c03",
         "B. c14",
@@ -246,9 +244,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c05",
         "B. c11",
@@ -381,9 +377,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c09",
@@ -515,9 +509,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c03",
@@ -647,9 +639,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c14",
         "B. c03",
@@ -780,9 +770,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c02",
         "B. c04",
@@ -913,9 +901,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c15",
         "B. c11",
@@ -1045,9 +1031,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c02",
         "B. c07",
@@ -1178,9 +1162,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c02",
         "B. c16",
@@ -1312,9 +1294,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c04",
         "B. c01",
@@ -1445,9 +1425,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c05",
         "B. c08",
@@ -1571,9 +1549,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c05",
         "B. c01",
@@ -1704,9 +1680,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c01",
         "B. c02",
@@ -1838,9 +1812,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c06",
@@ -1972,9 +1944,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c09",
         "B. c14",
@@ -2105,9 +2075,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c06",
         "B. c02",
@@ -2238,9 +2206,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c13",
         "B. c16",
@@ -2372,9 +2338,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c08",
         "B. c03",
@@ -2506,9 +2470,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c03",
@@ -2639,9 +2601,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c14",
@@ -2771,9 +2731,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c09",
         "B. c11",
@@ -2905,9 +2863,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c11",
@@ -3032,9 +2988,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c09",
         "B. c16",
@@ -3159,9 +3113,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c12",
         "B. c14",
@@ -3277,9 +3229,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c08",
         "B. c05",
@@ -3410,9 +3360,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c06",
         "B. c07",
@@ -3543,9 +3491,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c14",
         "B. c03",
@@ -3677,9 +3623,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c11",
         "B. c03",
@@ -3804,9 +3748,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c14",
         "B. c03",
@@ -3930,9 +3872,7 @@
           "direction": ""
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标接下来经过的摄像头序列",
       "question": "\nBased on the provided [local map] and [camera information],\npredict the next two cameras that the target will likely pass through.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n预测目标接下来可能经过的两个摄像头。\n",
       "choices": [
         "A. c03",
         "B. c14",

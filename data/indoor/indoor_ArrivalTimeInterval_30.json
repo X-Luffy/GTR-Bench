@@ -114,9 +114,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c03, 12:04:08.640-12:04:19.720) and [end video] (c07, 12:04:32.920-12:04:38.600),\nand knowing the target passed through camera c08, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:04:08.640-12:04:19.720)和[终点视频](c07, 12:04:32.920-12:04:38.600)，\n以及中间经过的摄像头c08，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:04:22.600-12:04:32.520",
       "choices": [
         "A. 12:04:25.400-12:04:26.800",
@@ -254,9 +252,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:02:14.560-12:02:19.240) and [end video] (c16, 12:02:25.840-12:02:32.320),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:02:14.560-12:02:19.240)和[终点视频](c16, 12:02:25.840-12:02:32.320)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:02:23.360-12:02:30.840",
       "choices": [
         "A. 12:02:21.400-12:02:32.320",
@@ -394,9 +390,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:03:50.160-12:03:54.760) and [end video] (c08, 12:04:22.600-12:04:32.520),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:03:50.160-12:03:54.760)和[终点视频](c08, 12:04:22.600-12:04:32.520)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:04:08.640-12:04:19.720",
       "choices": [
         "A. 12:04:03.800-12:04:25.600",
@@ -534,9 +528,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c08, 12:02:03.720-12:02:14.000) and [end video] (c05, 12:02:25.680-12:02:33.800),\nand knowing the target passed through camera c01, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:02:03.720-12:02:14.000)和[终点视频](c05, 12:02:25.680-12:02:33.800)，\n以及中间经过的摄像头c01，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:02:14.320-12:02:33.160",
       "choices": [
         "A. 12:02:04.120-12:02:13.980",
@@ -674,9 +666,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c01, 12:02:43.680-12:02:51.720) and [end video] (c07, 12:03:09.240-12:03:13.240),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:43.680-12:02:51.720)和[终点视频](c07, 12:03:09.240-12:03:13.240)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:02:44.680-12:02:53.920",
       "choices": [
         "A. 12:02:50.120-12:02:51.480",
@@ -807,9 +797,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c09, 12:00:32.960-12:00:41.800) and [end video] (c03, 12:01:48.440-12:02:01.000),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:00:32.960-12:00:41.800)和[终点视频](c03, 12:01:48.440-12:02:01.000)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:01:33.520-12:01:37.760",
       "choices": [
         "A. 12:01:05.200-12:01:09.440",
@@ -940,9 +928,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c09, 12:02:05.280-12:02:11.440) and [end video] (c14, 12:02:19.400-12:02:44.120),\nand knowing the target passed through camera c16, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:02:05.280-12:02:11.440)和[终点视频](c14, 12:02:19.400-12:02:44.120)，\n以及中间经过的摄像头c16，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:08.640-12:02:52.520",
       "choices": [
         "A. 12:02:08.640-12:02:52.520",
@@ -1080,9 +1066,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:01:55.680-12:02:01.880) and [end video] (c16, 12:02:08.640-12:02:52.520),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:01:55.680-12:02:01.880)和[终点视频](c16, 12:02:08.640-12:02:52.520)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:05.280-12:02:11.440",
       "choices": [
         "A. 12:01:57.120-12:02:03.440",
@@ -1241,9 +1225,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c03, 12:00:29.760-12:00:30.080) and [end video] (c13, 12:00:44.000-12:00:47.640),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:00:29.760-12:00:30.080)和[终点视频](c13, 12:00:44.000-12:00:47.640)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:00:41.760-12:00:47.240",
       "choices": [
         "A. 12:00:38.000-12:00:47.640",
@@ -1381,9 +1363,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c01, 12:02:50.520-12:03:15.640) and [end video] (c11, 12:03:39.600-12:03:50.080),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:50.520-12:03:15.640)和[终点视频](c11, 12:03:39.600-12:03:50.080)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:02:51.640-12:03:23.080",
       "choices": [
         "A. 12:02:55.200-12:02:57.300",
@@ -1521,9 +1501,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c16, 12:00:41.360-12:01:16.000) and [end video] (c12, 12:01:22.960-12:01:27.760),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c16, 12:00:41.360-12:01:16.000)和[终点视频](c12, 12:01:22.960-12:01:27.760)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:01:17.080-12:01:20.920",
       "choices": [
         "A. 12:01:18.500-12:01:19.200",
@@ -1647,9 +1625,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c08, 12:02:16.480-12:02:19.840) and [end video] (c05, 12:02:30.200-12:02:33.560),\nand knowing the target passed through camera c01, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:02:16.480-12:02:19.840)和[终点视频](c05, 12:02:30.200-12:02:33.560)，\n以及中间经过的摄像头c01，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:20.640-12:02:32.880",
       "choices": [
         "A. 12:02:20.640-12:02:32.880",
@@ -1787,9 +1763,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c07, 12:00:04.880-12:00:09.560) and [end video] (c01, 12:00:33.720-12:00:44.160),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c07, 12:00:04.880-12:00:09.560)和[终点视频](c01, 12:00:33.720-12:00:44.160)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:00:33.320-12:00:44.920",
       "choices": [
         "A. 12:00:33.320-12:00:44.920",
@@ -1920,9 +1894,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c01, 12:01:47.640-12:02:16.400) and [end video] (c08, 12:02:18.840-12:02:32.320),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:01:47.640-12:02:16.400)和[终点视频](c08, 12:02:18.840-12:02:32.320)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:01:50.320-12:02:07.680",
       "choices": [
         "A. 12:01:55.200-12:01:57.400",
@@ -2053,9 +2025,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c03, 12:02:35.080-12:02:46.440) and [end video] (c09, 12:03:04.600-12:03:10.480),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:02:35.080-12:02:46.440)和[终点视频](c09, 12:03:04.600-12:03:10.480)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:56.280-12:03:00.880",
       "choices": [
         "A. 12:02:46.500-12:02:51.100",
@@ -2186,9 +2156,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c02, 12:00:00.000-12:00:06.480) and [end video] (c08, 12:00:26.280-12:00:38.640),\nand knowing the target passed through camera c07, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c02, 12:00:00.000-12:00:06.480)和[终点视频](c08, 12:00:26.280-12:00:38.640)，\n以及中间经过的摄像头c07，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:00:20.320-12:00:28.480",
       "choices": [
         "A. 12:00:22.500-12:00:23.800",
@@ -2319,9 +2287,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c09, 12:01:15.800-12:01:22.600) and [end video] (c14, 12:01:31.200-12:01:34.560),\nand knowing the target passed through camera c16, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:01:15.800-12:01:22.600)和[终点视频](c14, 12:01:31.200-12:01:34.560)，\n以及中间经过的摄像头c16，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:01:17.120-12:01:40.080",
       "choices": [
         "A. 12:01:23.000-12:01:30.800",
@@ -2452,9 +2418,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c08, 12:00:26.280-12:00:38.640) and [end video] (c12, 12:01:05.520-12:01:11.920),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:00:26.280-12:00:38.640)和[终点视频](c12, 12:01:05.520-12:01:11.920)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:00:40.160-12:00:54.000",
       "choices": [
         "A. 12:00:40.160-12:00:54.000",
@@ -2592,9 +2556,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c01, 12:01:13.800-12:01:30.600) and [end video] (c08, 12:01:33.880-12:01:49.200),\nand knowing the target passed through camera c05, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:01:13.800-12:01:30.600)和[终点视频](c08, 12:01:33.880-12:01:49.200)，\n以及中间经过的摄像头c05，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:01:15.040-12:01:22.280",
       "choices": [
         "A. 12:01:18.400-12:01:19.600",
@@ -2732,9 +2694,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c03, 12:01:51.760-12:02:06.160) and [end video] (c09, 12:02:21.520-12:02:26.440),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:01:51.760-12:02:06.160)和[终点视频](c09, 12:02:21.520-12:02:26.440)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:02:15.360-12:02:18.920",
       "choices": [
         "A. 12:02:07.200-12:02:10.760",
@@ -2865,9 +2825,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c08, 12:01:33.880-12:01:49.200) and [end video] (c12, 12:02:15.360-12:02:18.920),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:01:33.880-12:01:49.200)和[终点视频](c12, 12:02:15.360-12:02:18.920)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:01:51.760-12:02:06.160",
       "choices": [
         "A. 12:01:51.760-12:02:06.160",
@@ -3005,9 +2963,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:02:19.280-12:02:24.000) and [end video] (c16, 12:02:30.880-12:03:04.080),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:02:19.280-12:02:24.000)和[终点视频](c16, 12:02:30.880-12:03:04.080)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:02:28.080-12:02:34.000",
       "choices": [
         "A. 12:02:28.080-12:02:29.200",
@@ -3145,9 +3101,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c09, 12:03:18.720-12:03:22.760) and [end video] (c12, 12:03:33.320-12:03:36.400),\nand knowing the target passed through camera c13, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c09, 12:03:18.720-12:03:22.760)和[终点视频](c12, 12:03:33.320-12:03:36.400)，\n以及中间经过的摄像头c13，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:03:22.680-12:03:33.280",
       "choices": [
         "A. 12:03:33.320-12:03:34.200",
@@ -3285,9 +3239,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c08, 12:01:37.560-12:01:53.160) and [end video] (c12, 12:02:19.280-12:02:24.000),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:01:37.560-12:01:53.160)和[终点视频](c12, 12:02:19.280-12:02:24.000)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:55.720-12:02:10.360",
       "choices": [
         "A. 12:01:52.500-12:02:15.800",
@@ -3425,9 +3377,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:00:26.040-12:00:30.880) and [end video] (c16, 12:01:22.200-12:02:33.920),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:00:26.040-12:00:30.880)和[终点视频](c16, 12:01:22.200-12:02:33.920)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:00:35.480-12:00:37.160",
       "choices": [
         "A. 12:00:31.200-12:00:33.040",
@@ -3565,9 +3515,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c16, 12:03:21.800-12:03:28.480) and [end video] (c09, 12:03:37.840-12:03:44.040),\nand knowing the target passed through camera c14, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c16, 12:03:21.800-12:03:28.480)和[终点视频](c09, 12:03:37.840-12:03:44.040)，\n以及中间经过的摄像头c14，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:03:30.000-12:03:30.400",
       "choices": [
         "A. 12:03:30.000-12:03:32.500",
@@ -3705,9 +3653,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c03, 12:00:01.320-12:00:16.640) and [end video] (c09, 12:00:35.480-12:00:37.160),\nand knowing the target passed through camera c12, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c03, 12:00:01.320-12:00:16.640)和[终点视频](c09, 12:00:35.480-12:00:37.160)，\n以及中间经过的摄像头c12，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:00:26.040-12:00:30.880",
       "choices": [
         "A. 12:00:17.500-12:00:22.340",
@@ -3838,9 +3784,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c05, 12:00:31.400-12:00:50.720) and [end video] (c01, 12:01:08.400-12:01:26.760),\nand knowing the target passed through camera c08, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c05, 12:00:31.400-12:00:50.720)和[终点视频](c01, 12:01:08.400-12:01:26.760)，\n以及中间经过的摄像头c08，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:00:58.080-12:01:08.440",
       "choices": [
         "A. 12:01:08.440-12:01:20.600",
@@ -3971,9 +3915,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:01:30.360-12:01:34.320) and [end video] (c16, 12:01:37.680-12:01:41.120),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:01:30.360-12:01:34.320)和[终点视频](c16, 12:01:37.680-12:01:41.120)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:37.360-12:01:42.880",
       "choices": [
         "A. 12:01:35.600-12:01:36.400",
@@ -4111,9 +4053,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c12, 12:02:57.400-12:03:01.520) and [end video] (c08, 12:03:20.440-12:03:27.360),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c12, 12:02:57.400-12:03:01.520)和[终点视频](c08, 12:03:20.440-12:03:27.360)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:03:10.440-12:03:18.280",
       "choices": [
         "A. 12:03:02.500-12:03:10.000",

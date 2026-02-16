@@ -50,12 +50,10 @@
           ],
           "start_timestamp": 52.205,
           "end_timestamp": 58.605000000000004,
-          "direction": "北偏西80.84°"
+          "direction": "80.84° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c074",
         "B. c078",
@@ -125,12 +123,10 @@
           ],
           "start_timestamp": 37.754999999999995,
           "end_timestamp": 42.855,
-          "direction": "北偏东48.46°"
+          "direction": "48.46° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c018",
         "B. c08",
@@ -179,12 +175,10 @@
           ],
           "start_timestamp": 152.233,
           "end_timestamp": 152.433,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c078",
         "B. c038",
@@ -275,12 +269,10 @@
           ],
           "start_timestamp": 45.879,
           "end_timestamp": 46.679,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c01",
         "B. c047",
@@ -350,12 +342,10 @@
           ],
           "start_timestamp": 85.363,
           "end_timestamp": 92.863,
-          "direction": "北偏西68.77°"
+          "direction": "68.77° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c01",
         "B. c066",
@@ -418,12 +408,10 @@
           ],
           "start_timestamp": 89.75,
           "end_timestamp": 101.65,
-          "direction": "南偏东77.66°"
+          "direction": "77.66° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c041",
         "B. c045",
@@ -486,12 +474,10 @@
           ],
           "start_timestamp": 166.91799999999998,
           "end_timestamp": 179.51799999999997,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c071",
         "B. c029",
@@ -561,12 +547,10 @@
           ],
           "start_timestamp": 183.833,
           "end_timestamp": 185.333,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c039",
         "B. c023",
@@ -629,12 +613,10 @@
           ],
           "start_timestamp": 166.91799999999998,
           "end_timestamp": 179.51799999999997,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c032",
         "B. c063",
@@ -704,12 +686,10 @@
           ],
           "start_timestamp": 88.15299999999999,
           "end_timestamp": 88.65299999999999,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c042",
         "B. c035",
@@ -772,12 +752,10 @@
           ],
           "start_timestamp": 35.518,
           "end_timestamp": 42.418,
-          "direction": "南偏东80.02°"
+          "direction": "80.02° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c025",
         "B. c058",
@@ -847,12 +825,10 @@
           ],
           "start_timestamp": 25.2,
           "end_timestamp": 31.0,
-          "direction": "南偏东49.14°"
+          "direction": "49.14° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c079",
         "B. c028",
@@ -922,12 +898,10 @@
           ],
           "start_timestamp": 98.35300000000001,
           "end_timestamp": 98.85300000000001,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c093",
         "B. c01",
@@ -997,12 +971,10 @@
           ],
           "start_timestamp": 63.405,
           "end_timestamp": 69.605,
-          "direction": "北偏西80.84°"
+          "direction": "80.84° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c060",
         "B. c015",
@@ -1072,12 +1044,10 @@
           ],
           "start_timestamp": 90.71600000000001,
           "end_timestamp": 98.01599999999999,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c061",
         "B. c042",
@@ -1140,12 +1110,10 @@
           ],
           "start_timestamp": 65.279,
           "end_timestamp": 65.679,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c012",
         "B. c092",
@@ -1215,12 +1183,10 @@
           ],
           "start_timestamp": 68.173,
           "end_timestamp": 70.973,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c073",
         "B. c011",
@@ -1290,12 +1256,10 @@
           ],
           "start_timestamp": 100.553,
           "end_timestamp": 101.053,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c050",
         "B. c070",
@@ -1365,12 +1329,10 @@
           ],
           "start_timestamp": 100.553,
           "end_timestamp": 101.053,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c08",
         "B. c023",
@@ -1440,12 +1402,10 @@
           ],
           "start_timestamp": 150.993,
           "end_timestamp": 166.293,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c039",
         "B. c064",
@@ -1494,12 +1454,10 @@
           ],
           "start_timestamp": 130.933,
           "end_timestamp": 131.133,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c038",
         "B. c041",
@@ -1548,12 +1506,10 @@
           ],
           "start_timestamp": 130.933,
           "end_timestamp": 131.133,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c031",
         "B. c020",
@@ -1623,12 +1579,10 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 168.618,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c021",
         "B. c060",
@@ -1691,12 +1645,10 @@
           ],
           "start_timestamp": 182.293,
           "end_timestamp": 184.293,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c082",
         "B. c031",
@@ -1766,12 +1718,10 @@
           ],
           "start_timestamp": 177.36800000000002,
           "end_timestamp": 184.86800000000002,
-          "direction": "南偏东45.78°"
+          "direction": "45.78° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c082",
         "B. c092",
@@ -1841,12 +1791,10 @@
           ],
           "start_timestamp": 126.319,
           "end_timestamp": 132.119,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c065",
         "B. c051",
@@ -1909,12 +1857,10 @@
           ],
           "start_timestamp": 132.433,
           "end_timestamp": 132.833,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c045",
         "B. c018",
@@ -1984,12 +1930,10 @@
           ],
           "start_timestamp": 189.99699999999999,
           "end_timestamp": 206.797,
-          "direction": "南偏东54.13°"
+          "direction": "54.13° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c077",
         "B. c058",
@@ -2059,12 +2003,10 @@
           ],
           "start_timestamp": 190.267,
           "end_timestamp": 200.467,
-          "direction": "北偏东65.09°"
+          "direction": "65.09° North of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c02",
         "B. c094",
@@ -2134,12 +2076,10 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 178.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "基于局部地图和摄像头信息，预测目标下一个出现的摄像头",
       "question": "\nBased on the provided [local map] and [camera information],\nwhich camera from the following list will most likely capture the target next?\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，\n以下摄像头列表中哪个摄像头最有可能接下来捕获到目标？\n",
       "choices": [
         "A. c061",
         "B. c039",

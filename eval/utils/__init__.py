@@ -1,1 +1,0 @@
-# GTR-Bench Evaluation Utils

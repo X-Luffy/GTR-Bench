@@ -168,9 +168,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "A. c03 → c12 → c09",
       "choices": [
         "A. c03 → c12 → c09",
@@ -347,9 +345,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c08 → c03 → c12",
       "choices": [
         "A. c08 → c12 → c03",
@@ -519,9 +515,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "A. c03 → c12 → c13",
       "choices": [
         "A. c03 → c12 → c13",
@@ -691,9 +685,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c07 → c08 → c03",
       "choices": [
         "A. c08 → c07 → c03",
@@ -870,9 +862,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c05 → c11 → c10",
       "choices": [
         "A. c05 → c10 → c11",
@@ -1049,9 +1039,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c05 → c08 → c07",
       "choices": [
         "A. c07 → c05 → c08",
@@ -1228,9 +1216,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "A. c04 → c05 → c01",
       "choices": [
         "A. c04 → c05 → c01",
@@ -1407,9 +1393,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c01 → c05 → c02",
       "choices": [
         "A. c02 → c05 → c01",
@@ -1579,9 +1563,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c05 → c02 → c04",
       "choices": [
         "A. c02 → c04 → c05",
@@ -1758,9 +1740,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c15 → c10 → c11",
       "choices": [
         "A. c11 → c10 → c15",
@@ -1937,9 +1917,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c13 → c12 → c03",
       "choices": [
         "A. c12 → c03 → c13",
@@ -2102,9 +2080,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c08 → c01 → c05",
       "choices": [
         "A. c05 → c01 → c08",
@@ -2281,9 +2257,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c14 → c16 → c09",
       "choices": [
         "A. c16 → c09 → c14",
@@ -2460,9 +2434,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c16 → c09 → c12",
       "choices": [
         "A. c09 → c12 → c16",
@@ -2632,9 +2604,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c10 → c11 → c05",
       "choices": [
         "A. c10 → c05 → c11",
@@ -2811,9 +2781,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c15 → c10 → c11",
       "choices": [
         "A. c11 → c10 → c15",
@@ -2983,9 +2951,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c16 → c09 → c12",
       "choices": [
         "A. c16 → c12 → c09",
@@ -3162,9 +3128,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c01 → c05 → c11",
       "choices": [
         "A. c01 → c11 → c05",
@@ -3341,9 +3305,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c12 → c09 → c14",
       "choices": [
         "A. c01 → c09 → c14",
@@ -3506,9 +3468,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c01 → c05 → c08",
       "choices": [
         "A. c08 → c01 → c05",
@@ -3678,9 +3638,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c14 → c10 → c15",
       "choices": [
         "A. c10 → c15 → c14",
@@ -3857,9 +3815,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c02 → c05 → c01",
       "choices": [
         "A. c02 → c05 → c06",
@@ -4036,9 +3992,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c07 → c05 → c01",
       "choices": [
         "A. c05 → c07 → c01",
@@ -4208,9 +4162,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c09 → c14 → c16",
       "choices": [
         "A. c16 → c14 → c09",
@@ -4387,9 +4339,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c16 → c09 → c13",
       "choices": [
         "A. c05 → c09 → c13",
@@ -4566,9 +4516,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c04 → c05 → c11",
       "choices": [
         "A. c04 → c11 → c05",
@@ -4738,9 +4686,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "C. c09 → c16 → c12",
       "choices": [
         "A. c12 → c16 → c09",
@@ -4910,9 +4856,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c13 → c09 → c16",
       "choices": [
         "A. c16 → c09 → c13",
@@ -5089,9 +5033,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "B. c03 → c12 → c13",
       "choices": [
         "A. c12 → c03 → c13",
@@ -5261,9 +5203,7 @@
           "direction": ""
         }
       ],
-      "context": "基于时序信息推理目标行动轨迹",
       "question": "\nBased on the provided [local map] and [camera information], analyze the target's activity trajectory.\nPlease infer the correct order in which the target passed through these cameras.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]，分析目标的活动轨迹。\n请推理目标经过这些摄像头的正确顺序。\n",
       "ground_truth": "D. c06 → c02 → c04",
       "choices": [
         "A. c02 → c06 → c04",

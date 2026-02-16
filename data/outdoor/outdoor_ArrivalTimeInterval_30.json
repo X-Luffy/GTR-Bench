@@ -50,7 +50,7 @@
           ],
           "start_timestamp": 52.205,
           "end_timestamp": 58.605000000000004,
-          "direction": "北偏西80.84°"
+          "direction": "80.84° North of West"
         },
         {
           "camera_id": "c066",
@@ -104,12 +104,10 @@
           ],
           "start_timestamp": 59.455,
           "end_timestamp": 64.555,
-          "direction": "北偏东48.46°"
+          "direction": "48.46° North of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c036, 12:00:52.205-12:00:58.605) and [end video] (c066, 12:00:59.455-12:01:04.555),\nand knowing the target passed through camera c095, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c036, 12:00:52.205-12:00:58.605)和[终点视频](c066, 12:00:59.455-12:01:04.555)，\n以及中间经过的摄像头c095，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:00:58.979-12:00:59.179",
       "choices": [
         "A. 12:00:58.979-12:00:59.179",
@@ -190,7 +188,7 @@
           ],
           "start_timestamp": 25.817999999999998,
           "end_timestamp": 36.018,
-          "direction": "南偏东80.02°"
+          "direction": "80.02° South of East"
         },
         {
           "camera_id": "c043",
@@ -230,12 +228,10 @@
           ],
           "start_timestamp": 43.278999999999996,
           "end_timestamp": 43.579,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c033, 12:00:25.818-12:00:36.018) and [end video] (c043, 12:00:43.279-12:00:43.579),\nand knowing the target passed through camera c035, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c033, 12:00:25.818-12:00:36.018)和[终点视频](c043, 12:00:43.279-12:00:43.579)，\n以及中间经过的摄像头c035，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:00:37.755-12:00:42.855",
       "choices": [
         "A. 12:00:36.500-12:00:43.000",
@@ -316,7 +312,7 @@
           ],
           "start_timestamp": 63.022,
           "end_timestamp": 72.222,
-          "direction": "北偏东78.46°"
+          "direction": "78.46° North of East"
         },
         {
           "camera_id": "c018",
@@ -363,12 +359,10 @@
           ],
           "start_timestamp": 74.753,
           "end_timestamp": 75.153,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c071, 12:01:03.022-12:01:12.222) and [end video] (c018, 12:01:14.753-12:01:15.153),\nand knowing the target passed through camera c022, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c071, 12:01:03.022-12:01:12.222)和[终点视频](c018, 12:01:14.753-12:01:15.153)，\n以及中间经过的摄像头c022，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:07.916-12:01:14.416",
       "choices": [
         "A. 12:01:05.800-12:01:12.100",
@@ -428,7 +422,7 @@
           ],
           "start_timestamp": 152.233,
           "end_timestamp": 152.433,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         },
         {
           "camera_id": "c079",
@@ -482,12 +476,10 @@
           ],
           "start_timestamp": 155.31799999999998,
           "end_timestamp": 170.31799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c075, 12:02:32.233-12:02:32.433) and [end video] (c079, 12:02:35.318-12:02:50.318),\nand knowing the target passed through camera c019, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c075, 12:02:32.233-12:02:32.433)和[终点视频](c079, 12:02:35.318-12:02:50.318)，\n以及中间经过的摄像头c019，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:32.699-12:02:38.899",
       "choices": [
         "A. 12:02:32.699-12:02:38.899",
@@ -568,7 +560,7 @@
           ],
           "start_timestamp": 85.363,
           "end_timestamp": 92.863,
-          "direction": "北偏西68.77°"
+          "direction": "68.77° North of West"
         },
         {
           "camera_id": "c088",
@@ -622,12 +614,10 @@
           ],
           "start_timestamp": 110.597,
           "end_timestamp": 121.597,
-          "direction": "南偏东81.95°"
+          "direction": "81.95° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c038, 12:01:25.363-12:01:32.863) and [end video] (c088, 12:01:50.597-12:02:01.597),\nand knowing the target passed through camera c03, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c038, 12:01:25.363-12:01:32.863)和[终点视频](c088, 12:01:50.597-12:02:01.597)，\n以及中间经过的摄像头c03，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:29.750-12:01:41.650",
       "choices": [
         "A. 12:01:27.500-12:01:45.200",
@@ -708,7 +698,7 @@
           ],
           "start_timestamp": 76.416,
           "end_timestamp": 84.116,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         },
         {
           "camera_id": "c078",
@@ -762,12 +752,10 @@
           ],
           "start_timestamp": 85.363,
           "end_timestamp": 92.863,
-          "direction": "北偏西68.77°"
+          "direction": "68.77° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c081, 12:01:16.416-12:01:24.116) and [end video] (c078, 12:01:25.363-12:01:32.863),\nand knowing the target passed through camera c045, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c081, 12:01:16.416-12:01:24.116)和[终点视频](c078, 12:01:25.363-12:01:32.863)，\n以及中间经过的摄像头c045，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:24.453-12:01:25.053",
       "choices": [
         "A. 12:01:20.416-12:01:21.016",
@@ -841,7 +829,7 @@
           ],
           "start_timestamp": 166.91799999999998,
           "end_timestamp": 179.51799999999997,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         },
         {
           "camera_id": "c065",
@@ -895,12 +883,10 @@
           ],
           "start_timestamp": 183.833,
           "end_timestamp": 185.333,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c087, 12:02:46.918-12:02:59.518) and [end video] (c065, 12:03:03.833-12:03:05.333),\nand knowing the target passed through camera c04, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c087, 12:02:46.918-12:02:59.518)和[终点视频](c065, 12:03:03.833-12:03:05.333)，\n以及中间经过的摄像头c04，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:55.899-12:03:03.399",
       "choices": [
         "A. 12:02:55.899-12:03:03.399",
@@ -981,7 +967,7 @@
           ],
           "start_timestamp": 175.899,
           "end_timestamp": 183.399,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c077",
@@ -1042,12 +1028,10 @@
           ],
           "start_timestamp": 185.719,
           "end_timestamp": 187.519,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c080, 12:02:55.899-12:03:03.399) and [end video] (c077, 12:03:05.719-12:03:07.519),\nand knowing the target passed through camera c06, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c080, 12:02:55.899-12:03:03.399)和[终点视频](c077, 12:03:05.719-12:03:07.519)，\n以及中间经过的摄像头c06，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:03:03.833-12:03:05.333",
       "choices": [
         "A. 12:03:03.833-12:03:05.333",
@@ -1128,7 +1112,7 @@
           ],
           "start_timestamp": 75.322,
           "end_timestamp": 80.422,
-          "direction": "北偏东78.46°"
+          "direction": "78.46° North of East"
         },
         {
           "camera_id": "c066",
@@ -1182,12 +1166,10 @@
           ],
           "start_timestamp": 88.15299999999999,
           "end_timestamp": 88.65299999999999,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c029, 12:01:15.322-12:01:20.422) and [end video] (c066, 12:01:28.153-12:01:28.653),\nand knowing the target passed through camera c063, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c029, 12:01:15.322-12:01:20.422)和[终点视频](c066, 12:01:28.153-12:01:28.653)，\n以及中间经过的摄像头c063，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:01:20.616-12:01:27.816",
       "choices": [
         "A. 12:01:18.500-12:01:28.000",
@@ -1268,7 +1250,7 @@
           ],
           "start_timestamp": 53.479,
           "end_timestamp": 53.979,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         },
         {
           "camera_id": "c034",
@@ -1315,12 +1297,10 @@
           ],
           "start_timestamp": 56.772999999999996,
           "end_timestamp": 64.673,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c071, 12:00:53.479-12:00:53.979) and [end video] (c034, 12:00:56.773-12:01:04.673),\nand knowing the target passed through camera c030, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c071, 12:00:53.479-12:00:53.979)和[终点视频](c034, 12:00:56.773-12:01:04.673)，\n以及中间经过的摄像头c030，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:00:54.305-12:01:00.905",
       "choices": [
         "A. 12:00:54.000-12:01:03.500",
@@ -1401,7 +1381,7 @@
           ],
           "start_timestamp": 18.8,
           "end_timestamp": 31.0,
-          "direction": "南偏东49.14°"
+          "direction": "49.14° South of East"
         },
         {
           "camera_id": "c010",
@@ -1455,12 +1435,10 @@
           ],
           "start_timestamp": 47.655,
           "end_timestamp": 53.155,
-          "direction": "北偏东48.46°"
+          "direction": "48.46° North of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c014, 12:00:18.800-12:00:31.000) and [end video] (c010, 12:00:47.655-12:00:53.155),\nand knowing the target passed through camera c063, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c014, 12:00:18.800-12:00:31.000)和[终点视频](c010, 12:00:47.655-12:00:53.155)，\n以及中间经过的摄像头c063，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:00:35.518-12:00:42.418",
       "choices": [
         "A. 12:00:33.000-12:00:44.800",
@@ -1541,7 +1519,7 @@
           ],
           "start_timestamp": 63.405,
           "end_timestamp": 69.605,
-          "direction": "北偏西80.84°"
+          "direction": "80.84° North of West"
         },
         {
           "camera_id": "c085",
@@ -1595,12 +1573,10 @@
           ],
           "start_timestamp": 90.71600000000001,
           "end_timestamp": 98.01599999999999,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c084, 12:01:03.405-12:01:09.605) and [end video] (c085, 12:01:30.716-12:01:38.016),\nand knowing the target passed through camera c015, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c084, 12:01:03.405-12:01:09.605)和[终点视频](c085, 12:01:30.716-12:01:38.016)，\n以及中间经过的摄像头c015，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:01:05.973-12:01:10.973",
       "choices": [
         "A. 12:01:05.973-12:01:10.973",
@@ -1681,7 +1657,7 @@
           ],
           "start_timestamp": 25.2,
           "end_timestamp": 31.0,
-          "direction": "南偏东49.14°"
+          "direction": "49.14° South of East"
         },
         {
           "camera_id": "c054",
@@ -1735,12 +1711,10 @@
           ],
           "start_timestamp": 62.579,
           "end_timestamp": 63.079,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c034, 12:00:25.200-12:00:31.000) and [end video] (c054, 12:01:02.579-12:01:03.079),\nand knowing the target passed through camera c035, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c034, 12:00:25.200-12:00:31.000)和[终点视频](c054, 12:01:02.579-12:01:03.079)，\n以及中间经过的摄像头c035，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:00:56.455-12:01:02.255",
       "choices": [
         "A. 12:00:58.455-12:00:59.455",
@@ -1821,7 +1795,7 @@
           ],
           "start_timestamp": 62.579,
           "end_timestamp": 63.079,
-          "direction": "北偏西15.06°"
+          "direction": "15.06° North of West"
         },
         {
           "camera_id": "c094",
@@ -1875,12 +1849,10 @@
           ],
           "start_timestamp": 65.973,
           "end_timestamp": 70.973,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c04, 12:01:02.579-12:01:03.079) and [end video] (c094, 12:01:05.973-12:01:10.973),\nand knowing the target passed through camera c069, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c04, 12:01:02.579-12:01:03.079)和[终点视频](c094, 12:01:05.973-12:01:10.973)，\n以及中间经过的摄像头c069，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:01:03.405-12:01:09.605",
       "choices": [
         "A. 12:01:03.000-12:01:10.800",
@@ -1961,7 +1933,7 @@
           ],
           "start_timestamp": 68.173,
           "end_timestamp": 70.973,
-          "direction": "南偏东89.57°"
+          "direction": "89.57° South of East"
         },
         {
           "camera_id": "c083",
@@ -2015,12 +1987,10 @@
           ],
           "start_timestamp": 100.553,
           "end_timestamp": 101.053,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c017, 12:01:08.173-12:01:10.973) and [end video] (c083, 12:01:40.553-12:01:41.053),\nand knowing the target passed through camera c067, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c017, 12:01:08.173-12:01:10.973)和[终点视频](c083, 12:01:40.553-12:01:41.053)，\n以及中间经过的摄像头c067，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:01:32.816-12:01:40.216",
       "choices": [
         "A. 12:01:32.816-12:01:40.216",
@@ -2094,7 +2064,7 @@
           ],
           "start_timestamp": 92.816,
           "end_timestamp": 100.21600000000001,
-          "direction": "北偏东64.50°"
+          "direction": "64.50° North of East"
         },
         {
           "camera_id": "c073",
@@ -2148,12 +2118,10 @@
           ],
           "start_timestamp": 101.363,
           "end_timestamp": 106.163,
-          "direction": "北偏西68.77°"
+          "direction": "68.77° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c014, 12:01:32.816-12:01:40.216) and [end video] (c073, 12:01:41.363-12:01:46.163),\nand knowing the target passed through camera c04, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c014, 12:01:32.816-12:01:40.216)和[终点视频](c073, 12:01:41.363-12:01:46.163)，\n以及中间经过的摄像头c04，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:40.553-12:01:41.053",
       "choices": [
         "A. 12:01:39.500-12:01:43.500",
@@ -2234,7 +2202,7 @@
           ],
           "start_timestamp": 100.553,
           "end_timestamp": 101.053,
-          "direction": "北偏西4.78°"
+          "direction": "4.78° North of West"
         },
         {
           "camera_id": "c025",
@@ -2281,12 +2249,10 @@
           ],
           "start_timestamp": 105.85,
           "end_timestamp": 126.25,
-          "direction": "南偏东77.66°"
+          "direction": "77.66° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c017, 12:01:40.553-12:01:41.053) and [end video] (c025, 12:01:45.850-12:02:06.250),\nand knowing the target passed through camera c028, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c017, 12:01:40.553-12:01:41.053)和[终点视频](c025, 12:01:45.850-12:02:06.250)，\n以及中间经过的摄像头c028，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:01:41.363-12:01:46.163",
       "choices": [
         "A. 12:01:41.363-12:01:52.000",
@@ -2360,7 +2326,7 @@
           ],
           "start_timestamp": 34.105000000000004,
           "end_timestamp": 40.005,
-          "direction": "北偏西80.84°"
+          "direction": "80.84° North of West"
         },
         {
           "camera_id": "c015",
@@ -2407,12 +2373,10 @@
           ],
           "start_timestamp": 40.855,
           "end_timestamp": 45.254999999999995,
-          "direction": "北偏东48.46°"
+          "direction": "48.46° North of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c039, 12:00:34.105-12:00:40.005) and [end video] (c015, 12:00:40.855-12:00:45.255),\nand knowing the target passed through camera c074, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c039, 12:00:34.105-12:00:40.005)和[终点视频](c015, 12:00:40.855-12:00:45.255)，\n以及中间经过的摄像头c074，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:00:40.279-12:00:40.479",
       "choices": [
         "A. 12:00:38.105-12:00:38.305",
@@ -2493,7 +2457,7 @@
           ],
           "start_timestamp": 142.199,
           "end_timestamp": 148.899,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c091",
@@ -2547,12 +2511,10 @@
           ],
           "start_timestamp": 151.019,
           "end_timestamp": 157.81900000000002,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c039, 12:02:22.199-12:02:28.899) and [end video] (c091, 12:02:31.019-12:02:37.819),\nand knowing the target passed through camera c04, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c039, 12:02:22.199-12:02:28.899)和[终点视频](c091, 12:02:31.019-12:02:37.819)，\n以及中间经过的摄像头c04，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:29.233-12:02:30.633",
       "choices": [
         "A. 12:02:26.500-12:02:28.000",
@@ -2626,7 +2588,7 @@
           ],
           "start_timestamp": 125.333,
           "end_timestamp": 126.233,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         },
         {
           "camera_id": "c081",
@@ -2680,12 +2642,10 @@
           ],
           "start_timestamp": 130.488,
           "end_timestamp": 148.688,
-          "direction": "南偏东58.67°"
+          "direction": "58.67° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c01, 12:02:05.333-12:02:06.233) and [end video] (c081, 12:02:10.488-12:02:28.688),\nand knowing the target passed through camera c021, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:05.333-12:02:06.233)和[终点视频](c081, 12:02:10.488-12:02:28.688)，\n以及中间经过的摄像头c021，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:06.619-12:02:13.919",
       "choices": [
         "A. 12:02:06.619-12:02:13.919",
@@ -2745,7 +2705,7 @@
           ],
           "start_timestamp": 130.933,
           "end_timestamp": 131.133,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         },
         {
           "camera_id": "c02",
@@ -2799,12 +2759,10 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 157.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c01, 12:02:10.933-12:02:11.133) and [end video] (c02, 12:02:20.318-12:02:37.818),\nand knowing the target passed through camera c012, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c01, 12:02:10.933-12:02:11.133)和[终点视频](c02, 12:02:20.318-12:02:37.818)，\n以及中间经过的摄像头c012，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:11.399-12:02:18.599",
       "choices": [
         "A. 12:02:19.000-12:02:26.200",
@@ -2885,7 +2843,7 @@
           ],
           "start_timestamp": 131.399,
           "end_timestamp": 138.599,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c083",
@@ -2939,12 +2897,10 @@
           ],
           "start_timestamp": 150.993,
           "end_timestamp": 166.293,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c069, 12:02:11.399-12:02:18.599) and [end video] (c083, 12:02:30.993-12:02:46.293),\nand knowing the target passed through camera c075, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c069, 12:02:11.399-12:02:18.599)和[终点视频](c083, 12:02:30.993-12:02:46.293)，\n以及中间经过的摄像头c075，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:20.318-12:02:37.818",
       "choices": [
         "A. 12:02:20.318-12:02:37.818",
@@ -3025,7 +2981,7 @@
           ],
           "start_timestamp": 124.419,
           "end_timestamp": 130.519,
-          "direction": "南偏东43.50°"
+          "direction": "43.50° South of East"
         },
         {
           "camera_id": "c011",
@@ -3079,12 +3035,10 @@
           ],
           "start_timestamp": 131.399,
           "end_timestamp": 138.599,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c026, 12:02:04.419-12:02:10.519) and [end video] (c011, 12:02:11.399-12:02:18.599),\nand knowing the target passed through camera c02, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c026, 12:02:04.419-12:02:10.519)和[终点视频](c011, 12:02:11.399-12:02:18.599)，\n以及中间经过的摄像头c02，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "A. 12:02:10.933-12:02:11.133",
       "choices": [
         "A. 12:02:10.933-12:02:11.133",
@@ -3165,7 +3119,7 @@
           ],
           "start_timestamp": 125.88799999999999,
           "end_timestamp": 127.588,
-          "direction": "南偏东58.67°"
+          "direction": "58.67° South of East"
         },
         {
           "camera_id": "c067",
@@ -3212,12 +3166,10 @@
           ],
           "start_timestamp": 132.433,
           "end_timestamp": 132.833,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c045, 12:02:05.888-12:02:07.588) and [end video] (c067, 12:02:12.433-12:02:12.833),\nand knowing the target passed through camera c04, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c045, 12:02:05.888-12:02:07.588)和[终点视频](c067, 12:02:12.433-12:02:12.833)，\n以及中间经过的摄像头c04，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "D. 12:02:06.319-12:02:12.119",
       "choices": [
         "A. 12:02:06.100-12:02:06.900",
@@ -3298,7 +3250,7 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 168.618,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         },
         {
           "camera_id": "c058",
@@ -3345,12 +3297,10 @@
           ],
           "start_timestamp": 182.293,
           "end_timestamp": 184.293,
-          "direction": "北偏西76.27°"
+          "direction": "76.27° North of West"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c08, 12:02:20.318-12:02:48.618) and [end video] (c058, 12:03:02.293-12:03:04.293),\nand knowing the target passed through camera c035, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c08, 12:02:20.318-12:02:48.618)和[终点视频](c058, 12:03:02.293-12:03:04.293)，\n以及中间经过的摄像头c035，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:02:57.368-12:03:04.868",
       "choices": [
         "A. 12:02:58.368-12:02:59.868",
@@ -3431,7 +3381,7 @@
           ],
           "start_timestamp": 133.099,
           "end_timestamp": 139.599,
-          "direction": "北偏西85.86°"
+          "direction": "85.86° North of West"
         },
         {
           "camera_id": "c080",
@@ -3485,12 +3435,10 @@
           ],
           "start_timestamp": 177.36800000000002,
           "end_timestamp": 184.86800000000002,
-          "direction": "南偏东45.78°"
+          "direction": "45.78° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c011, 12:02:13.099-12:02:19.599) and [end video] (c080, 12:02:57.368-12:03:04.868),\nand knowing the target passed through camera c044, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c011, 12:02:13.099-12:02:19.599)和[终点视频](c080, 12:02:57.368-12:03:04.868)，\n以及中间经过的摄像头c044，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:20.318-12:02:48.618",
       "choices": [
         "A. 12:02:49.000-12:02:56.500",
@@ -3571,7 +3519,7 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 178.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         },
         {
           "camera_id": "c079",
@@ -3632,12 +3580,10 @@
           ],
           "start_timestamp": 185.268,
           "end_timestamp": 186.568,
-          "direction": "南偏东45.78°"
+          "direction": "45.78° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c029, 12:02:20.318-12:02:58.818) and [end video] (c079, 12:03:05.268-12:03:06.568),\nand knowing the target passed through camera c069, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c029, 12:02:20.318-12:02:58.818)和[终点视频](c079, 12:03:05.268-12:03:06.568)，\n以及中间经过的摄像头c069，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:30.993-12:03:05.893",
       "choices": [
         "A. 12:02:25.500-12:03:00.200",
@@ -3718,7 +3664,7 @@
           ],
           "start_timestamp": 135.03300000000002,
           "end_timestamp": 135.53300000000002,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         },
         {
           "camera_id": "c057",
@@ -3772,12 +3718,10 @@
           ],
           "start_timestamp": 140.31799999999998,
           "end_timestamp": 178.81799999999998,
-          "direction": "南偏东59.31°"
+          "direction": "59.31° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c078, 12:02:15.033-12:02:15.533) and [end video] (c057, 12:02:20.318-12:02:58.818),\nand knowing the target passed through camera c09, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c078, 12:02:15.033-12:02:15.533)和[终点视频](c057, 12:02:20.318-12:02:58.818)，\n以及中间经过的摄像头c09，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:15.899-12:02:23.699",
       "choices": [
         "A. 12:02:15.500-12:02:30.800",
@@ -3865,7 +3809,7 @@
           ],
           "start_timestamp": 185.268,
           "end_timestamp": 186.568,
-          "direction": "南偏东45.78°"
+          "direction": "45.78° South of East"
         },
         {
           "camera_id": "c077",
@@ -3919,12 +3863,10 @@
           ],
           "start_timestamp": 190.267,
           "end_timestamp": 200.467,
-          "direction": "北偏东65.09°"
+          "direction": "65.09° North of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c031, 12:03:05.268-12:03:06.568) and [end video] (c077, 12:03:10.267-12:03:20.467),\nand knowing the target passed through camera c043, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c031, 12:03:05.268-12:03:06.568)和[终点视频](c077, 12:03:10.267-12:03:20.467)，\n以及中间经过的摄像头c043，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "C. 12:03:09.997-12:03:26.797",
       "choices": [
         "A. 12:03:07.200-12:03:08.100",
@@ -4005,7 +3947,7 @@
           ],
           "start_timestamp": 132.233,
           "end_timestamp": 133.333,
-          "direction": "南偏东27.13°"
+          "direction": "27.13° South of East"
         },
         {
           "camera_id": "c032",
@@ -4059,12 +4001,10 @@
           ],
           "start_timestamp": 137.788,
           "end_timestamp": 151.788,
-          "direction": "南偏东58.67°"
+          "direction": "58.67° South of East"
         }
       ],
-      "context": "给定起点和终点视频以及中间摄像头，推理到达中间摄像头的时间",
       "question": "\nBased on the provided [start video] (c040, 12:02:12.233-12:02:13.333) and [end video] (c032, 12:02:17.788-12:02:31.788),\nand knowing the target passed through camera c082, infer the time period when the target appears at the middle camera.\n",
-      "question_cn": "\n基于提供的[起点视频](c040, 12:02:12.233-12:02:13.333)和[终点视频](c032, 12:02:17.788-12:02:31.788)，\n以及中间经过的摄像头c082，推理目标出现在中间摄像头的时间段是？\n",
       "ground_truth": "B. 12:02:13.619-12:02:20.519",
       "choices": [
         "A. 12:02:21.000-12:02:28.000",

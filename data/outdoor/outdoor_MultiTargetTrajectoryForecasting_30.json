@@ -135,9 +135,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c070",
         "B. c012",
@@ -243,9 +241,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c034",
         "B. c078",
@@ -372,9 +368,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c011",
         "B. c038",
@@ -480,9 +474,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c083",
         "B. c022",
@@ -602,9 +594,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c042",
         "B. c088"
@@ -730,9 +720,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c051",
         "B. c084",
@@ -859,9 +847,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c064",
         "B. c066",
@@ -988,9 +974,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c023",
         "B. c065",
@@ -1110,9 +1094,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c040",
         "B. c073",
@@ -1239,9 +1221,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c094",
         "B. c028",
@@ -1361,9 +1341,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c030",
         "B. c08",
@@ -1469,9 +1447,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c085",
         "B. c025",
@@ -1619,9 +1595,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c031",
         "B. c012",
@@ -1720,9 +1694,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c059",
         "B. c090"
@@ -1827,9 +1799,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c096",
         "B. c07",
@@ -1935,9 +1905,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c016",
         "B. c073",
@@ -2071,9 +2039,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c057",
         "B. c091",
@@ -2200,9 +2166,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c072",
         "B. c010",
@@ -2315,9 +2279,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c040",
         "B. c029",
@@ -2437,9 +2399,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c069",
         "B. c01",
@@ -2573,9 +2533,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c071",
         "B. c025",
@@ -2695,9 +2653,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c075",
         "B. c042",
@@ -2817,9 +2773,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c081",
         "B. c059",
@@ -2946,9 +2900,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c010",
         "B. c037",
@@ -3075,9 +3027,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c09",
         "B. c054",
@@ -3183,9 +3133,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c062",
         "B. c049",
@@ -3291,9 +3239,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c017",
         "B. c052",
@@ -3399,9 +3345,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c075",
         "B. c014",
@@ -3528,9 +3472,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c045",
         "B. c073",
@@ -3650,9 +3592,7 @@
           "direction": ""
         }
       ],
-      "context": "根据提供的地图和前序轨迹信息，预测两个车辆最可能在哪个摄像头相遇",
       "question": "\nBased on the provided [local map] and [camera information] showing the movement trajectories of two targets,\npredict where these two targets will most likely meet.\n",
-      "question_cn": "\n基于提供的[局部地图]和[摄像头信息]显示的两个目标的运动轨迹，\n预测这两个目标最有可能在哪里相遇。\n",
       "choices": [
         "A. c036",
         "B. c017",

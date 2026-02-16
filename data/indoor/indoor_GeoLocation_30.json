@@ -114,9 +114,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c11, 12:01:35.680-12:01:47.320) and end point (c15, 12:02:46.240-12:03:46.160).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c11, 12:01:35.680-12:01:47.320)\n到终点(c15, 12:02:46.240-12:03:46.160)中间经过的摄像头是？\n",
       "ground_truth": "A. c10",
       "choices": [
         "A. c10",
@@ -253,9 +251,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c15, 12:02:46.240-12:03:46.160) and end point (c14, 12:04:18.000-12:04:22.600).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c15, 12:02:46.240-12:03:46.160)\n到终点(c14, 12:04:18.000-12:04:22.600)中间经过的摄像头是？\n",
       "ground_truth": "A. c10",
       "choices": [
         "A. c10",
@@ -385,9 +381,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c02, 12:00:00.000-12:00:15.440) and end point (c05, 12:00:28.360-12:00:34.320).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c02, 12:00:00.000-12:00:15.440)\n到终点(c05, 12:00:28.360-12:00:34.320)中间经过的摄像头是？\n",
       "ground_truth": "C. c04",
       "choices": [
         "A. c14",
@@ -524,9 +518,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c02, 12:00:01.280-12:00:40.160) and end point (c05, 12:00:43.560-12:01:00.640).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c02, 12:00:01.280-12:00:40.160)\n到终点(c05, 12:00:43.560-12:01:00.640)中间经过的摄像头是？\n",
       "ground_truth": "A. c04",
       "choices": [
         "A. c04",
@@ -656,9 +648,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c04, 12:00:13.480-12:00:30.520) and end point (c01, 12:00:43.840-12:01:47.400).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c04, 12:00:13.480-12:00:30.520)\n到终点(c01, 12:00:43.840-12:01:47.400)中间经过的摄像头是？\n",
       "ground_truth": "B. c05",
       "choices": [
         "A. c06",
@@ -795,9 +785,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c05, 12:02:21.080-12:02:29.160) and end point (c07, 12:02:40.480-12:02:47.360).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c05, 12:02:21.080-12:02:29.160)\n到终点(c07, 12:02:40.480-12:02:47.360)中间经过的摄像头是？\n",
       "ground_truth": "C. c08",
       "choices": [
         "A. c01",
@@ -934,9 +922,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c03, 12:00:38.840-12:00:50.320) and end point (c09, 12:01:16.440-12:01:22.560).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c03, 12:00:38.840-12:00:50.320)\n到终点(c09, 12:01:16.440-12:01:22.560)中间经过的摄像头是？\n",
       "ground_truth": "C. c12",
       "choices": [
         "A. c08",
@@ -1073,9 +1059,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c12, 12:01:04.120-12:01:12.520) and end point (c16, 12:01:18.440-12:01:46.880).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c12, 12:01:04.120-12:01:12.520)\n到终点(c16, 12:01:18.440-12:01:46.880)中间经过的摄像头是？\n",
       "ground_truth": "C. c09",
       "choices": [
         "A. c14",
@@ -1212,9 +1196,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c14, 12:01:53.000-12:01:56.480) and end point (c15, 12:03:07.320-12:04:06.240).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c14, 12:01:53.000-12:01:56.480)\n到终点(c15, 12:03:07.320-12:04:06.240)中间经过的摄像头是？\n",
       "ground_truth": "B. c10",
       "choices": [
         "A. c08",
@@ -1344,9 +1326,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c05, 12:02:42.560-12:03:33.360) and end point (c12, 12:04:17.280-12:04:21.040).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c05, 12:02:42.560-12:03:33.360)\n到终点(c12, 12:04:17.280-12:04:21.040)中间经过的摄像头是？\n",
       "ground_truth": "C. c03",
       "choices": [
         "A. c02",
@@ -1483,9 +1463,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c07, 12:00:32.760-12:00:40.600) and end point (c03, 12:00:48.600-12:00:59.920).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c07, 12:00:32.760-12:00:40.600)\n到终点(c03, 12:00:48.600-12:00:59.920)中间经过的摄像头是？\n",
       "ground_truth": "D. c08",
       "choices": [
         "A. c05",
@@ -1615,9 +1593,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c03, 12:01:13.240-12:01:22.480) and end point (c01, 12:01:35.040-12:02:24.600).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c03, 12:01:13.240-12:01:22.480)\n到终点(c01, 12:01:35.040-12:02:24.600)中间经过的摄像头是？\n",
       "ground_truth": "C. c08",
       "choices": [
         "A. c05",
@@ -1747,9 +1723,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c06, 12:00:31.800-12:00:32.560) and end point (c01, 12:00:50.080-12:01:09.280).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c06, 12:00:31.800-12:00:32.560)\n到终点(c01, 12:00:50.080-12:01:09.280)中间经过的摄像头是？\n",
       "ground_truth": "C. c05",
       "choices": [
         "A. c10",
@@ -1886,9 +1860,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c05, 12:02:43.600-12:02:54.200) and end point (c10, 12:04:01.280-12:04:08.880).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c05, 12:02:43.600-12:02:54.200)\n到终点(c10, 12:04:01.280-12:04:08.880)中间经过的摄像头是？\n",
       "ground_truth": "C. c11",
       "choices": [
         "A. c06",
@@ -2025,9 +1997,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c11, 12:03:13.560-12:03:29.000) and end point (c15, 12:04:49.800-12:04:54.440).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c11, 12:03:13.560-12:03:29.000)\n到终点(c15, 12:04:49.800-12:04:54.440)中间经过的摄像头是？\n",
       "ground_truth": "A. c10",
       "choices": [
         "A. c10",
@@ -2164,9 +2134,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c08, 12:03:57.400-12:04:07.080) and end point (c12, 12:04:23.120-12:04:29.000).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c08, 12:03:57.400-12:04:07.080)\n到终点(c12, 12:04:23.120-12:04:29.000)中间经过的摄像头是？\n",
       "ground_truth": "B. c03",
       "choices": [
         "A. c05",
@@ -2303,9 +2271,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c04, 12:01:10.600-12:01:24.800) and end point (c01, 12:01:37.640-12:02:06.320).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c04, 12:01:10.600-12:01:24.800)\n到终点(c01, 12:01:37.640-12:02:06.320)中间经过的摄像头是？\n",
       "ground_truth": "B. c05",
       "choices": [
         "A. c12",
@@ -2442,9 +2408,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c05, 12:02:27.680-12:02:33.280) and end point (c07, 12:02:49.000-12:02:59.840).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c05, 12:02:27.680-12:02:33.280)\n到终点(c07, 12:02:49.000-12:02:59.840)中间经过的摄像头是？\n",
       "ground_truth": "A. c08",
       "choices": [
         "A. c08",
@@ -2581,9 +2545,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c15, 12:01:01.000-12:01:42.320) and end point (c11, 12:02:39.320-12:02:54.040).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c15, 12:01:01.000-12:01:42.320)\n到终点(c11, 12:02:39.320-12:02:54.040)中间经过的摄像头是？\n",
       "ground_truth": "C. c10",
       "choices": [
         "A. c02",
@@ -2720,9 +2682,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c01, 12:03:29.640-12:04:04.480) and end point (c02, 12:04:13.680-12:04:34.800).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c01, 12:03:29.640-12:04:04.480)\n到终点(c02, 12:04:13.680-12:04:34.800)中间经过的摄像头是？\n",
       "ground_truth": "D. c05",
       "choices": [
         "A. c15",
@@ -2852,9 +2812,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c05, 12:03:41.280-12:04:06.720) and end point (c04, 12:04:28.240-12:04:39.400).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c05, 12:03:41.280-12:04:06.720)\n到终点(c04, 12:04:28.240-12:04:39.400)中间经过的摄像头是？\n",
       "ground_truth": "C. c02",
       "choices": [
         "A. c01",
@@ -2984,9 +2942,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c12, 12:00:24.440-12:00:28.640) and end point (c08, 12:00:51.800-12:01:02.360).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c12, 12:00:24.440-12:00:28.640)\n到终点(c08, 12:00:51.800-12:01:02.360)中间经过的摄像头是？\n",
       "ground_truth": "D. c03",
       "choices": [
         "A. c02",
@@ -3123,9 +3079,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c13, 12:00:04.720-12:00:24.720) and end point (c03, 12:00:39.120-12:00:49.640).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c13, 12:00:04.720-12:00:24.720)\n到终点(c03, 12:00:39.120-12:00:49.640)中间经过的摄像头是？\n",
       "ground_truth": "B. c12",
       "choices": [
         "A. c02",
@@ -3255,9 +3209,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c03, 12:00:39.120-12:00:49.640) and end point (c01, 12:01:02.840-12:01:15.600).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c03, 12:00:39.120-12:00:49.640)\n到终点(c01, 12:01:02.840-12:01:15.600)中间经过的摄像头是？\n",
       "ground_truth": "A. c08",
       "choices": [
         "A. c08",
@@ -3394,9 +3346,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c08, 12:01:35.160-12:01:47.800) and end point (c12, 12:02:14.560-12:02:19.240).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c08, 12:01:35.160-12:01:47.800)\n到终点(c12, 12:02:14.560-12:02:19.240)中间经过的摄像头是？\n",
       "ground_truth": "D. c03",
       "choices": [
         "A. c14",
@@ -3533,9 +3483,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c01, 12:00:00.000-12:00:09.880) and end point (c02, 12:00:19.320-12:00:36.400).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c01, 12:00:00.000-12:00:09.880)\n到终点(c02, 12:00:19.320-12:00:36.400)中间经过的摄像头是？\n",
       "ground_truth": "B. c05",
       "choices": [
         "A. c14",
@@ -3672,9 +3620,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c12, 12:02:14.560-12:02:19.240) and end point (c16, 12:02:25.840-12:02:32.320).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c12, 12:02:14.560-12:02:19.240)\n到终点(c16, 12:02:25.840-12:02:32.320)中间经过的摄像头是？\n",
       "ground_truth": "C. c09",
       "choices": [
         "A. c03",
@@ -3811,9 +3757,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c08, 12:02:03.720-12:02:14.000) and end point (c05, 12:02:25.680-12:02:33.800).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c08, 12:02:03.720-12:02:14.000)\n到终点(c05, 12:02:25.680-12:02:33.800)中间经过的摄像头是？\n",
       "ground_truth": "B. c01",
       "choices": [
         "A. c09",
@@ -3943,9 +3887,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c03, 12:01:48.440-12:02:01.000) and end point (c01, 12:02:14.320-12:02:33.160).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c03, 12:01:48.440-12:02:01.000)\n到终点(c01, 12:02:14.320-12:02:33.160)中间经过的摄像头是？\n",
       "ground_truth": "A. c08",
       "choices": [
         "A. c08",
@@ -4082,9 +4024,7 @@
           "direction": ""
         }
       ],
-      "context": "给定起点和终点视频，推理目标中间经过的摄像头",
       "question": "\nBased on the provided [start video] and [end video], infer which camera the target passed through\nbetween the start point (c16, 12:00:00.600-12:00:11.680) and end point (c12, 12:01:33.520-12:01:37.760).\n",
-      "question_cn": "\n基于提供的[起点视频]和[终点视频]，推理目标从起点(c16, 12:00:00.600-12:00:11.680)\n到终点(c12, 12:01:33.520-12:01:37.760)中间经过的摄像头是？\n",
       "ground_truth": "D. c09",
       "choices": [
         "A. c14",
